@@ -1,0 +1,244 @@
+CREATE TABLE `companies` (
+  `company_id` integer PRIMARY KEY,
+  `name` varchar(255),
+  `industry` varchar(100),
+  `address` varchar(255),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `users` (
+  `user_id` integer PRIMARY KEY,
+  `first_name` varchar(255),
+  `last_name` varchar(255),
+  `email` varchar(320) UNIQUE,
+  `role` enum(end_user,agent,manager,admin),
+  `status` enum(active,inactive),
+  `timezone` varchar(50),
+  `company_id` integer,
+  `department_id` integer COMMENT 'Only for agents',
+  `password_hash` varchar(255),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `departments` (
+  `department_id` integer PRIMARY KEY,
+  `name` varchar(255),
+  `manager_id` integer,
+  `company_id` integer,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `categories` (
+  `category_id` integer PRIMARY KEY,
+  `name` varchar(100),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `subcategories` (
+  `subcategory_id` integer PRIMARY KEY,
+  `category_id` integer,
+  `name` varchar(100),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `incidents` (
+  `incident_id` integer PRIMARY KEY,
+  `title` varchar(255),
+  `description` text,
+  `category_id` integer,
+  `subcategory_id` integer,
+  `reported_by` integer NOT NULL,
+  `assigned_to` integer,
+  `department_id` integer,
+  `company_id` integer,
+  `status` enum(open,in_progress,resolved,closed),
+  `priority` enum(low,medium,high,critical),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `incident_history` (
+  `incident_history_id` integer PRIMARY KEY,
+  `incident_id` integer,
+  `changed_by` integer,
+  `incident_values` jsonb,
+  `task_values` jsonb,
+  `changed_at` timestamp
+);
+
+CREATE TABLE `incident_comments` (
+  `incident_comment_id` integer PRIMARY KEY,
+  `incident_id` integer,
+  `user_id` integer,
+  `comment_text` text,
+  `is_public` boolean,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `incident_attachments` (
+  `incident_attachment_id` integer PRIMARY KEY,
+  `incident_id` integer,
+  `uploaded_by` integer,
+  `file_name` varchar(500),
+  `file_url` varchar(500),
+  `uploaded_at` timestamp,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `tasks` (
+  `task_id` integer PRIMARY KEY,
+  `incident_id` integer,
+  `description` text,
+  `assigned_to` integer,
+  `status` enum(todo,in_progress,blocked,done,cancelled),
+  `priority` enum(low,medium,high,critical),
+  `due_date` timestamp,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `change_requests` (
+  `change_request_id` integer PRIMARY KEY,
+  `incident_id` integer COMMENT 'Linked incident if applicable',
+  `assigned_to` integer NOT NULL,
+  `approved_by` integer,
+  `description` varchar(255),
+  `status` enum(draft,submitted,approved,rejected,in_progress,implemented,closed),
+  `priority` enum(low,medium,high,critical),
+  `risk_level` enum(low,medium,high),
+  `affected_scope` jsonb,
+  `scheduled_start` timestamp,
+  `scheduled_end` timestamp,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `sla_policies` (
+  `sla_id` integer PRIMARY KEY,
+  `name` varchar(100),
+  `priority` enum(low,medium,high,critical),
+  `category_id` integer,
+  `response_time` integer COMMENT 'in minutes',
+  `resolve_time` integer COMMENT 'in minutes',
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `incident_sla` (
+  `incident_sla_id` integer PRIMARY KEY,
+  `incident_id` integer,
+  `sla_id` integer,
+  `response_due` timestamp,
+  `resolve_due` timestamp,
+  `breached` boolean,
+  `status` enum(Pending,Completed,Cancelled),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `knowledge_base` (
+  `knowledge_base_id` integer PRIMARY KEY,
+  `description` varchar(255),
+  `created_by` integer,
+  `category_id` integer,
+  `subcategory_id` integer,
+  `company_id` integer,
+  `department_id` integer,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `incident_knowledge` (
+  `incident_id` integer,
+  `knowledge_base_id` integer,
+  `created_at` timestamp
+);
+
+CREATE TABLE `surveys` (
+  `survey_id` integer PRIMARY KEY,
+  `incident_id` integer,
+  `user_id` integer,
+  `rating` integer,
+  `submitted_at` timestamp,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+ALTER TABLE `users` ADD FOREIGN KEY (`company_id`) REFERENCES `companies` (`company_id`);
+
+ALTER TABLE `departments` ADD FOREIGN KEY (`company_id`) REFERENCES `companies` (`company_id`);
+
+ALTER TABLE `incidents` ADD FOREIGN KEY (`company_id`) REFERENCES `companies` (`company_id`);
+
+ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`company_id`) REFERENCES `companies` (`company_id`);
+
+ALTER TABLE `users` ADD FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`);
+
+ALTER TABLE `incidents` ADD FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`);
+
+ALTER TABLE `departments` ADD FOREIGN KEY (`manager_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`);
+
+ALTER TABLE `subcategories` ADD FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`);
+
+ALTER TABLE `incidents` ADD FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`);
+
+ALTER TABLE `incidents` ADD FOREIGN KEY (`subcategory_id`) REFERENCES `subcategories` (`subcategory_id`);
+
+ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`);
+
+ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`subcategory_id`) REFERENCES `subcategories` (`subcategory_id`);
+
+ALTER TABLE `sla_policies` ADD FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`);
+
+ALTER TABLE `incidents` ADD FOREIGN KEY (`reported_by`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `incidents` ADD FOREIGN KEY (`assigned_to`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `incident_history` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+
+ALTER TABLE `incident_history` ADD FOREIGN KEY (`changed_by`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `incident_comments` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+
+ALTER TABLE `incident_comments` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `incident_attachments` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+
+ALTER TABLE `incident_attachments` ADD FOREIGN KEY (`uploaded_by`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `tasks` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+
+ALTER TABLE `tasks` ADD FOREIGN KEY (`assigned_to`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `change_requests` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+
+ALTER TABLE `change_requests` ADD FOREIGN KEY (`assigned_to`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `change_requests` ADD FOREIGN KEY (`approved_by`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `incident_sla` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+
+ALTER TABLE `incident_sla` ADD FOREIGN KEY (`sla_id`) REFERENCES `sla_policies` (`sla_id`);
+
+ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`created_by`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `incident_knowledge` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+
+ALTER TABLE `incident_knowledge` ADD FOREIGN KEY (`knowledge_base_id`) REFERENCES `knowledge_base` (`knowledge_base_id`);
+
+ALTER TABLE `surveys` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+
+ALTER TABLE `surveys` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `sla_policies` ADD FOREIGN KEY (`name`) REFERENCES `sla_policies` (`category_id`);
+
+ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`created_by`) REFERENCES `knowledge_base` (`category_id`);

@@ -1,0 +1,79 @@
+{
+    "APIs": {
+        "getcompany": {
+            "inputs": [
+                {
+                    "name": "company_id",
+                    "type": "string",
+                    "required": true,
+                    "description": "The unique identifier for the company."
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "company_name",
+                    "type": "string",
+                    "description": "The name of the company."
+                },
+                {
+                    "name": "company_address",
+                    "type": "string",
+                    "description": "The address of the company."
+                },
+                {
+                    "name": "company_id",
+                    "type": "string",
+                    "description": "The unique identifier for the company."
+                }
+            ]
+        },
+        "getUser": {
+            "inputs": [
+                {
+                    "name": "user_id",
+                    "type": "string",
+                    "required": true,
+                    "description": "The unique identifier for the user."
+                },
+                {
+                    "name": "company_id",
+                    "type": "string",
+                    "required": true,
+                    "description": "The company ID associated with the user."
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "user_name",
+                    "type": "string",
+                    "description": "The name of the user."
+                },
+                {
+                    "name": "company_id",
+                    "type": "string",
+                    "description": "The company ID of the user."
+                }
+            ]
+        }
+    },
+    "edges": [
+        {
+            "from": "getUser",
+            "to": "getcompany",
+            "connections": {
+                "output": "company_id",
+                "input": "company_id"
+            },
+            "explicit": false
+        },
+        {
+            "from": "getcompany",
+            "to": "getUser",
+            "connections": {
+                "output": "company_id",
+                "input": "company_id"
+            },
+            "explicit": true
+        }
+    ]
+}

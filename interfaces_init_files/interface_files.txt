@@ -1,0 +1,12 @@
+add_incident_comment.py     search_change_requests.py
+create_incident.py          search_departments.py
+create_incident_task.py     search_incidents.py
+create_user.py              search_kb_articles.py
+get_category_by_name.py     search_subcategories.py
+get_company_by_name.py      search_surveys.py
+get_incident.py             search_users.py
+get_incident_comments.py    update_change_request.py
+get_incident_tasks.py       update_incident.py
+link_incident_to_kb.py      update_kb_articles.py
+log_incident_change.py      update_task.py
+register_change_request.py  update_user_profile.py

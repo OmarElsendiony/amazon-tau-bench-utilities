@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive SVG Viewer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    
+    #container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    #svg-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #svg-display {
+      max-width: 100%;
+      max-height: 100%;
+      transform-origin: 0 0;
+    }
+    
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    button {
+      padding: 5px 10px;
+      margin: 0 5px 5px 0;
+      cursor: pointer;
+    }
+    
+    #file-input {
+      display: none;
+    }
+    
+    .file-input-label {
+      display: inline-block;
+      padding: 5px 10px;
+      background: #eee;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    .file-input-label:hover {
+      background: #ddd;
+    }
+    
+    #status {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="controls">
+      <label for="file-input" class="file-input-label">Load SVG</label>
+      <input type="file" id="file-input" accept=".svg">
+      <button id="zoom-in">Zoom In (+)</button>
+      <button id="zoom-out">Zoom Out (-)</button>
+      <button id="reset-view">Reset View</button>
+      <div id="status">No file loaded</div>
+    </div>
+    <div id="svg-container">
+      <div id="svg-display"></div>
+    </div>
+  </div>
+
+  <script>
+    // Global variables
+    let currentScale = 1;
+    let offsetX = 0;
+    let offsetY = 0;
+    let isDragging = false;
+    let startX, startY;
+    let svgElement = null;
+    
+    // DOM elements
+    const svgDisplay = document.getElementById('svg-display');
+    const fileInput = document.getElementById('file-input');
+    const statusDisplay = document.getElementById('status');
+    const zoomInBtn = document.getElementById('zoom-in');
+    const zoomOutBtn = document.getElementById('zoom-out');
+    const resetViewBtn = document.getElementById('reset-view');
+    const svgContainer = document.getElementById('svg-container');
+    
+    // Event listeners
+    fileInput.addEventListener('change', handleFileSelect);
+    zoomInBtn.addEventListener('click', () => zoom(1.2));
+    zoomOutBtn.addEventListener('click', () => zoom(0.8));
+    resetViewBtn.addEventListener('click', resetView);
+    
+    // Mouse events for panning
+    svgContainer.addEventListener('mousedown', startDrag);
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('mouseup', endDrag);
+    
+    // Touch events for mobile
+    svgContainer.addEventListener('touchstart', handleTouchStart);
+    svgContainer.addEventListener('touchmove', handleTouchMove);
+    svgContainer.addEventListener('touchend', handleTouchEnd);
+    
+    // Handle file selection
+    function handleFileSelect(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        svgDisplay.innerHTML = e.target.result;
+        svgElement = svgDisplay.querySelector('svg');
+        
+        if (svgElement) {
+          statusDisplay.textContent = `Loaded: ${file.name}`;
+          resetView();
+        } else {
+          statusDisplay.textContent = 'Error: Not a valid SVG file';
+        }
+      };
+      reader.readAsText(file);
+    }
+    
+    // Zoom function
+    function zoom(scaleFactor) {
+      currentScale *= scaleFactor;
+      updateTransform();
+    }
+    
+    // Reset view
+    function resetView() {
+      currentScale = 1;
+      offsetX = 0;
+      offsetY = 0;
+      updateTransform();
+    }
+    
+    // Update SVG transform
+    function updateTransform() {
+      svgDisplay.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${currentScale})`;
+    }
+    
+    // Dragging functions
+    function startDrag(e) {
+      if (!svgElement) return;
+      isDragging = true;
+      startX = e.clientX - offsetX;
+      startY = e.clientY - offsetY;
+      svgContainer.style.cursor = 'grabbing';
+    }
+    
+    function drag(e) {
+      if (!isDragging) return;
+      offsetX = e.clientX - startX;
+      offsetY = e.clientY - startY;
+      updateTransform();
+    }
+    
+    function endDrag() {
+      isDragging = false;
+      svgContainer.style.cursor = 'grab';
+    }
+    
+    // Touch event handlers
+    function handleTouchStart(e) {
+      if (!svgElement) return;
+      if (e.touches.length === 1) {
+        isDragging = true;
+        startX = e.touches[0].clientX - offsetX;
+        startY = e.touches[0].clientY - offsetY;
+      }
+      e.preventDefault();
+    }
+    
+    function handleTouchMove(e) {
+      if (!isDragging || e.touches.length !== 1) return;
+      offsetX = e.touches[0].clientX - startX;
+      offsetY = e.touches[0].clientY - startY;
+      updateTransform();
+      e.preventDefault();
+    }
+    
+    function handleTouchEnd() {
+      isDragging = false;
+    }
+    
+    // Initialize
+    svgContainer.style.cursor = 'grab';
+  </script>
+</body>
+</html>
