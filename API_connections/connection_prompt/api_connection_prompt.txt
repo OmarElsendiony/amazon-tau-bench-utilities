@@ -1,4 +1,4 @@
-You are an expert in managing API connections. We have some APIs that reside within an interface. Those APIs have input and output parameters. I want you to determine the connections between those APIs through their parameters either explicitly or implicitly. Your task is to ensure that all API connections depict correct relations that are conveyed through the db schema or the API documentation. You will be provided with the API documentation and the db schema. Your goal is to identify and describe the relationships between the APIs based on their parameters and the data they exchange but you have to adhere to the json format provided below where you add all the inputs and outputs of an api, then determine its connections implicitly or explicitly with others.
+You are an expert in managing API connections. We have some APIs that reside within an interface. Those APIs have input and output parameters. I want you to determine the connections between those APIs through their parameters either explicitly or implicitly. Your task is to ensure that all API connections depict correct relations that are conveyed through the db schema or the API documentation. You will be provided with the API documentation and the db schema. Your goal is to identify and describe the relationships between the APIs based on their parameters and the data they exchange but you have to adhere to the json format provided below where you add all the inputs and outputs of an api, then determine its connections implicitly or explicitly with others. Add only the inputs and outputs of the APIs that are related to the connections. Use the db schema to replace filters by the actual parameters that are used in the APIs.
 
 # DB schema:
 CREATE TABLE `companies` (
@@ -337,25 +337,21 @@ UpdateChangeRequest(incident_id, description, priority, risk_level, scheduled_st
                 {
                     "name": "company_id",
                     "type": "string",
-                    "required": true,
-                    "description": "The unique identifier for the company."
+                    "required": true
                 }
             ],
             "outputs": [
                 {
                     "name": "company_name",
-                    "type": "string",
-                    "description": "The name of the company."
+                    "type": "string"
                 },
                 {
                     "name": "company_address",
-                    "type": "string",
-                    "description": "The address of the company."
+                    "type": "string"
                 },
                 {
                     "name": "company_id",
-                    "type": "string",
-                    "description": "The unique identifier for the company."
+                    "type": "string"
                 }
             ]
         },
@@ -364,26 +360,22 @@ UpdateChangeRequest(incident_id, description, priority, risk_level, scheduled_st
                 {
                     "name": "user_id",
                     "type": "string",
-                    "required": true,
-                    "description": "The unique identifier for the user."
+                    "required": true
                 },
                 {
                     "name": "company_id",
                     "type": "string",
-                    "required": true,
-                    "description": "The company ID associated with the user."
+                    "required": true
                 }
             ],
             "outputs": [
                 {
                     "name": "user_name",
-                    "type": "string",
-                    "description": "The name of the user."
+                    "type": "string"
                 },
                 {
                     "name": "company_id",
-                    "type": "string",
-                    "description": "The company ID of the user."
+                    "type": "string"
                 }
             ]
         }

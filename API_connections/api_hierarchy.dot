@@ -1,0 +1,46 @@
+// API Hierarchy
+digraph {
+	rankdir=TB
+	splines=curved
+	nodesep=1.0
+	ranksep=1.5
+	bgcolor=white
+	margin=1.0
+	pad=1.0
+	node [fontname=Arial fontsize=10 margin="0.3,0.2" shape=box style="rounded,filled"]
+	edge [arrowsize=0.7 fontname=Arial fontsize=8 labelangle=0 labeldistance=2.0 labelfloat=true]
+	subgraph cluster_sources {
+		fontsize=12 label="Data Sources" style=bold
+		color=green style=rounded
+		SearchKBArticles [label=Searchkbarticles fillcolor=lightgreen]
+		GetCompanyByName [label=Getcompanybyname fillcolor=lightgreen]
+	}
+	subgraph cluster_transformers {
+		fontsize=12 label=Processors style=bold
+		color=blue style=rounded
+		SearchUsers [label=Searchusers fillcolor=lightblue]
+		GetIncident [label=Getincident fillcolor=lightblue]
+		SearchIncidents [label=Searchincidents fillcolor=lightblue]
+		SearchDepartments [label=Searchdepartments fillcolor=lightblue]
+	}
+	subgraph cluster_consumers {
+		fontsize=12 label="Data Consumers" style=bold
+		color=red style=rounded
+		SearchChangeRequests [label=Searchchangerequests fillcolor=lightcoral]
+		GetIncidentTasks [label=Getincidenttasks fillcolor=lightcoral]
+		GetIncidentComments [label=Getincidentcomments fillcolor=lightcoral]
+	}
+	GetCompanyByName -> SearchUsers [color=purple penwidth=1.0 style=dashed]
+	GetCompanyByName -> SearchDepartments [color=purple penwidth=1.0 style=dashed]
+	SearchUsers -> GetIncident [color=purple penwidth=1.0 style=dashed]
+	SearchDepartments -> SearchIncidents [color=purple penwidth=1.0 style=dashed]
+	SearchUsers -> SearchIncidents [color=purple penwidth=1.0 style=dashed]
+	SearchIncidents -> GetIncidentComments [color=black penwidth=1.5]
+	SearchIncidents -> GetIncidentTasks [color=black penwidth=1.5]
+	SearchIncidents -> SearchChangeRequests [color=purple penwidth=1.0 style=dashed]
+	GetIncident -> GetIncidentComments [color=black penwidth=1.5]
+	GetIncident -> GetIncidentTasks [color=black penwidth=1.5]
+	GetIncident -> SearchChangeRequests [color=purple penwidth=1.0 style=dashed]
+	SearchKBArticles -> LinkIncidentToKB [color=black penwidth=1.5]
+	GetIncident -> LinkIncidentToKB [color=black penwidth=1.5]
+}

@@ -5,25 +5,21 @@
                 {
                     "name": "company_id",
                     "type": "string",
-                    "required": true,
-                    "description": "The unique identifier for the company."
+                    "required": true
                 }
             ],
             "outputs": [
                 {
                     "name": "company_name",
-                    "type": "string",
-                    "description": "The name of the company."
+                    "type": "string"
                 },
                 {
                     "name": "company_address",
-                    "type": "string",
-                    "description": "The address of the company."
+                    "type": "string"
                 },
                 {
                     "name": "company_id",
-                    "type": "string",
-                    "description": "The unique identifier for the company."
+                    "type": "string"
                 }
             ]
         },
@@ -32,26 +28,22 @@
                 {
                     "name": "user_id",
                     "type": "string",
-                    "required": true,
-                    "description": "The unique identifier for the user."
+                    "required": true
                 },
                 {
                     "name": "company_id",
                     "type": "string",
-                    "required": true,
-                    "description": "The company ID associated with the user."
+                    "required": true
                 }
             ],
             "outputs": [
                 {
                     "name": "user_name",
-                    "type": "string",
-                    "description": "The name of the user."
+                    "type": "string"
                 },
                 {
                     "name": "company_id",
-                    "type": "string",
-                    "description": "The company ID of the user."
+                    "type": "string"
                 }
             ]
         }

@@ -1,0 +1,34 @@
+// API Connections
+digraph {
+	rankdir=TB
+	splines=curved
+	nodesep=1.2
+	ranksep=2.0
+	bgcolor=white
+	margin=1.0
+	pad=1.0
+	node [color=black fillcolor=lightblue fontname=Arial fontsize=11 height=0.8 margin="0.4,0.2" shape=box style="rounded,filled" width=2.0]
+	edge [arrowsize=0.8 color=black fontname=Arial fontsize=9 labelangle=0 labeldistance=2.0 labelfloat=true]
+	GetCompanyByName [label=Getcompanybyname fillcolor=lightgreen tooltip="Read API: GetCompanyByName"]
+	SearchUsers [label=Searchusers fillcolor=lightgreen tooltip="Read API: SearchUsers"]
+	SearchDepartments [label=Searchdepartments fillcolor=lightgreen tooltip="Read API: SearchDepartments"]
+	GetIncident [label=Getincident fillcolor=lightgreen tooltip="Read API: GetIncident"]
+	SearchIncidents [label=Searchincidents fillcolor=lightgreen tooltip="Read API: SearchIncidents"]
+	GetIncidentComments [label=Getincidentcomments fillcolor=lightgreen tooltip="Read API: GetIncidentComments"]
+	GetIncidentTasks [label=Getincidenttasks fillcolor=lightgreen tooltip="Read API: GetIncidentTasks"]
+	SearchChangeRequests [label=Searchchangerequests fillcolor=lightgreen tooltip="Read API: SearchChangeRequests"]
+	SearchKBArticles [label=Searchkbarticles fillcolor=lightgreen tooltip="Read API: SearchKBArticles"]
+	GetCompanyByName -> SearchUsers [label="company id" color=purple penwidth=1.5 style=dashed tooltip="Implicit: company_id → company_id"]
+	GetCompanyByName -> SearchDepartments [label="company id" color=purple penwidth=1.5 style=dashed tooltip="Implicit: company_id → company_id"]
+	SearchUsers -> GetIncident [label="user id → reported by" color=purple penwidth=1.5 style=dashed tooltip="Implicit: user_id → reported_by"]
+	SearchDepartments -> SearchIncidents [label="department id" color=purple penwidth=1.5 style=dashed tooltip="Implicit: department_id → department_id"]
+	SearchUsers -> SearchIncidents [label="user id → reported by" color=purple penwidth=1.5 style=dashed tooltip="Implicit: user_id → reported_by"]
+	SearchIncidents -> GetIncidentComments [label="incident id" color=black penwidth=1.5 style=solid tooltip="Explicit: incident_id → incident_id"]
+	SearchIncidents -> GetIncidentTasks [label="incident id" color=black penwidth=1.5 style=solid tooltip="Explicit: incident_id → incident_id"]
+	SearchIncidents -> SearchChangeRequests [label="incident id" color=purple penwidth=1.5 style=dashed tooltip="Implicit: incident_id → incident_id"]
+	GetIncident -> GetIncidentComments [label="incident id" color=black penwidth=1.5 style=solid tooltip="Explicit: incident_id → incident_id"]
+	GetIncident -> GetIncidentTasks [label="incident id" color=black penwidth=1.5 style=solid tooltip="Explicit: incident_id → incident_id"]
+	GetIncident -> SearchChangeRequests [label="incident id" color=purple penwidth=1.5 style=dashed tooltip="Implicit: incident_id → incident_id"]
+	SearchKBArticles -> LinkIncidentToKB [label="knowledge\nbase id" color=black penwidth=1.5 style=solid tooltip="Explicit: knowledge_base_id → knowledge_base_id"]
+	GetIncident -> LinkIncidentToKB [label="incident id" color=black penwidth=1.5 style=solid tooltip="Explicit: incident_id → incident_id"]
+}
