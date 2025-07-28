@@ -1,0 +1,79 @@
+Interface 1 
+API Name
+Signature
+Returns
+GET / READ (12 API - 50%)
+GetCompanyByName
+GetCompanyByName(name)
+Company
+SearchUsers
+SearchUsers(filters: id, name,...)
+List[User]
+SearchDepartments
+SearchDepartments(filters: id, name,...)
+List[Department]
+GetIncident
+GetIncident(incident_id)
+Incident
+SearchIncidents
+SearchIncidents(filters: id, name,...)
+List[Incident]
+GetIncidentComments
+GetIncidentComments(incident_id)
+List[Comment]
+GetIncidentTasks
+GetIncidentTasks(incident_id)
+List[Task]
+SearchSurveys
+SearchSurveys(filters: id, name,...)
+List[Survey]
+SearchChangeRequests
+SearchChangeRequests(filters: id, name,...)
+List[ChangeRequest]
+GetCategoryByName
+GetCategoryByName(name)
+Category
+SearchSubcategories
+SearchSubcategories(filters: id, name,...)
+List[Subcategory]
+SearchKBArticles
+SearchKBArticles(filters: id, name,...)
+List[KnowledgeBase]
+CREATE / UPDATE / DELETE (12 API - 50%)
+CreateUser
+CreateUser(first_name, last_name, email, role, timezone, company_id, department_id, password)
+{"user_id": str}
+LinkIncidentToKB
+LinkIncidentToKB(incident_id, knowledge_base_id)
+{"success": bool}
+UpdateKBArticle
+UpdateKBArticle(knowledge_base_id, description)
+{"knowledge_base_id": str}
+CreateIncident
+CreateIncident(title, description, category_id, subcategory_id, reported_by, company_id, department_id, priority)
+{"incident_id": str}
+AddIncidentComment
+AddIncidentComment(incident_id, user_id, comment_text, is_public)
+{"incident_comment_id": str}
+CreateIncidentTask
+CreateIncidentTask(incident_id, description, assigned_to, priority, due_date)
+{"task_id": str}
+UpdateIncident
+UpdateIncident(incident_id, title, description, category_id, subcategory_id, assigned_to, department_id, status, priority)
+{"incident_id": str}
+UpdateTask
+UpdateTask(task_id, description, assigned_to, status, priority, due_date)
+{"task_id": str}
+RegisterChangeRequest
+RegisterChangeRequest(incident_id, description, priority, risk_level, scheduled_start, scheduled_end, assigned_to)
+{"change_request_id": str}
+LogIncidentChange
+LogIncidentChange(incident_id, changed_by)
+{"incident_history_id": str}
+UpdateUserProfile
+UpdateUserProfile(user_id, first_name, last_name, email, role, timezone, status, password)
+{"user_id": str}
+UpdateChangeRequest
+UpdateChangeRequest(incident_id, description, priority, risk_level, scheduled_start, scheduled_end, assigned_to)
+{"change_request_id": str}
+

@@ -1,0 +1,80 @@
+Interface 5
+APIs:
+API Name
+Signature
+Returns
+GET / READ (13 APIs - 54%)
+ListUsersByFilters
+ListUsersByFilters(filters: id, name,...)
+List[User]
+ListCompaniesByFilters
+ListCompaniesByFilters(filters: id, name,...)
+List[Company]
+ListDepartmentsByFilters
+ListDepartmentsByFilters(filters: id, name,...)
+List[Department]
+ListCategoriesByFilters
+ListCategoriesByFilters(filters: id, name,...)
+List[Category]
+ListSubcategoriesByFilters
+ListSubcategoriesByFilters(filters: id, name,...)
+List[Subcategory]
+ListIncidentsByFilters
+ListIncidentsByFilters(filters: id, name,...)
+List[Incident]
+ListIncidentComments
+ListIncidentComments(incident_id)
+List[Comment]
+GetIncidentTasks
+GetIncidentTasks(incident_id)
+List[Task]
+ListKBArticlesByFilters
+ListKBArticlesByFilters(filters: id, name,...)
+List[KnowledgeBase]
+ListIncidentsByKB
+ListIncidentsByKB(knowledge_base_id)
+List[Incident]
+ListSurveysByFilters
+ListSurveysByFilters(filters: id, name,...)
+List[Survey]
+GetAverageCSAT
+GetAverageCSAT(agent_id or incident_id)
+{"average_rating": float}
+ListLowRatedIncidents
+ListLowRatedIncidents(threshold=None)
+List[Incident]
+CREATE / UPDATE / DELETE (11 APIs - 46%)
+CreateKBArticle
+CreateKBArticle(description, category_id, subcategory_id, created_by)
+{"knowledge_base_id": str}
+LinkIncidentToKB
+LinkIncidentToKB(incident_id, knowledge_base_id)
+{"success": bool}
+UpdateKBArticle
+UpdateKBArticle(knowledge_base_id, description)
+{"knowledge_base_id": str}
+CreateSurvey
+CreateSurvey(incident_id, user_id, rating, feedback_text)
+{"survey_id": str}
+CreateIncidentTask
+CreateIncidentTask(incident_id, description, assigned_to, priority, due_date)
+{"task_id": str}
+UpdateSurvey
+UpdateSurvey(survey_id, rating, feedback_text)
+{"survey_id": str}
+UpdateIncident
+UpdateIncident(incident_id, title, description, category_id, subcategory_id, assigned_to, department_id, status, priority)
+{"incident_id": str}
+UpdateTask
+UpdateTask(task_id, description, assigned_to, status, priority, due_date)
+{"task_id": str}
+AddIncidentComment
+AddIncidentComment(incident_id, user_id, comment_text, is_public)
+{"incident_comment_id": str}
+LogIncidentChange
+LogIncidentChange(incident_id, changed_by)
+{"incident_history_id": str}
+UpdateUserProfile
+UpdateUserProfile(user_id, first_name, last_name, email, role, timezone, status)
+{"user_id": str}
+

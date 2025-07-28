@@ -8,12 +8,12 @@ def create_prompt():
         example_init_file = file.read().strip()
 
     prompt = f"""I am going to give you the names of the files that hold the classes. I want you to create an __init__.py file that targets those files like the example provided below. 
-    
-    The files are:
-    {interface_files}
-    
-    Example of the __init__.py file:
-    {example_init_file}
+
+The files are:
+{interface_files}
+
+Example of the __init__.py file:
+{example_init_file}
     """
     
     return prompt

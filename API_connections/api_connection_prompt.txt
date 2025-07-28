@@ -1,3 +1,6 @@
+You are an expert in managing API connections. We have some APIs that reside within an interface. Those APIs have input and output parameters. I want you to determine the connections between those APIs through their parameters either explicitly or implicitly. Your task is to ensure that all API connections depict correct relations that are conveyed through the db schema or the API documentation. You will be provided with the API documentation and the db schema. Your goal is to identify and describe the relationships between the APIs based on their parameters and the data they exchange but you have to adhere to the json format provided below where you add all the inputs and outputs of an api, then determine its connections implicitly or explicitly with others.
+
+# DB schema:
 CREATE TABLE `companies` (
   `company_id` integer PRIMARY KEY,
   `name` varchar(255),
@@ -242,3 +245,168 @@ ALTER TABLE `surveys` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`)
 ALTER TABLE `sla_policies` ADD FOREIGN KEY (`name`) REFERENCES `sla_policies` (`category_id`);
 
 ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`created_by`) REFERENCES `knowledge_base` (`category_id`);
+
+
+# API documentation:
+Interface 1 
+API Name
+Signature
+Returns
+GET / READ (12 API - 50%)
+GetCompanyByName
+GetCompanyByName(name)
+Company
+SearchUsers
+SearchUsers(filters: id, name,...)
+List[User]
+SearchDepartments
+SearchDepartments(filters: id, name,...)
+List[Department]
+GetIncident
+GetIncident(incident_id)
+Incident
+SearchIncidents
+SearchIncidents(filters: id, name,...)
+List[Incident]
+GetIncidentComments
+GetIncidentComments(incident_id)
+List[Comment]
+GetIncidentTasks
+GetIncidentTasks(incident_id)
+List[Task]
+SearchSurveys
+SearchSurveys(filters: id, name,...)
+List[Survey]
+SearchChangeRequests
+SearchChangeRequests(filters: id, name,...)
+List[ChangeRequest]
+GetCategoryByName
+GetCategoryByName(name)
+Category
+SearchSubcategories
+SearchSubcategories(filters: id, name,...)
+List[Subcategory]
+SearchKBArticles
+SearchKBArticles(filters: id, name,...)
+List[KnowledgeBase]
+CREATE / UPDATE / DELETE (12 API - 50%)
+CreateUser
+CreateUser(first_name, last_name, email, role, timezone, company_id, department_id, password)
+{"user_id": str}
+LinkIncidentToKB
+LinkIncidentToKB(incident_id, knowledge_base_id)
+{"success": bool}
+UpdateKBArticle
+UpdateKBArticle(knowledge_base_id, description)
+{"knowledge_base_id": str}
+CreateIncident
+CreateIncident(title, description, category_id, subcategory_id, reported_by, company_id, department_id, priority)
+{"incident_id": str}
+AddIncidentComment
+AddIncidentComment(incident_id, user_id, comment_text, is_public)
+{"incident_comment_id": str}
+CreateIncidentTask
+CreateIncidentTask(incident_id, description, assigned_to, priority, due_date)
+{"task_id": str}
+UpdateIncident
+UpdateIncident(incident_id, title, description, category_id, subcategory_id, assigned_to, department_id, status, priority)
+{"incident_id": str}
+UpdateTask
+UpdateTask(task_id, description, assigned_to, status, priority, due_date)
+{"task_id": str}
+RegisterChangeRequest
+RegisterChangeRequest(incident_id, description, priority, risk_level, scheduled_start, scheduled_end, assigned_to)
+{"change_request_id": str}
+LogIncidentChange
+LogIncidentChange(incident_id, changed_by)
+{"incident_history_id": str}
+UpdateUserProfile
+UpdateUserProfile(user_id, first_name, last_name, email, role, timezone, status, password)
+{"user_id": str}
+UpdateChangeRequest
+UpdateChangeRequest(incident_id, description, priority, risk_level, scheduled_start, scheduled_end, assigned_to)
+{"change_request_id": str}
+
+
+
+# Please provide the API connections in the following JSON format:
+{
+    "APIs": {
+        "getcompany": {
+            "inputs": [
+                {
+                    "name": "company_id",
+                    "type": "string",
+                    "required": true,
+                    "description": "The unique identifier for the company."
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "company_name",
+                    "type": "string",
+                    "description": "The name of the company."
+                },
+                {
+                    "name": "company_address",
+                    "type": "string",
+                    "description": "The address of the company."
+                },
+                {
+                    "name": "company_id",
+                    "type": "string",
+                    "description": "The unique identifier for the company."
+                }
+            ]
+        },
+        "getUser": {
+            "inputs": [
+                {
+                    "name": "user_id",
+                    "type": "string",
+                    "required": true,
+                    "description": "The unique identifier for the user."
+                },
+                {
+                    "name": "company_id",
+                    "type": "string",
+                    "required": true,
+                    "description": "The company ID associated with the user."
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "user_name",
+                    "type": "string",
+                    "description": "The name of the user."
+                },
+                {
+                    "name": "company_id",
+                    "type": "string",
+                    "description": "The company ID of the user."
+                }
+            ]
+        }
+    },
+    "edges": [
+        {
+            "from": "getUser",
+            "to": "getcompany",
+            "connections": {
+                "output": "company_id",
+                "input": "company_id"
+            },
+            "explicit": false
+        },
+        {
+            "from": "getcompany",
+            "to": "getUser",
+            "connections": {
+                "output": "company_id",
+                "input": "company_id"
+            },
+            "explicit": true
+        }
+    ]
+}
+
