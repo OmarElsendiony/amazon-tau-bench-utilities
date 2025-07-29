@@ -3,7 +3,7 @@
     "incident_comment_id": "1",
     "incident_id": "1",
     "user_id": "14",
-    "comment_text": "",
+    "comment_text": "The latest patch seems to have caused some of our custom macros in the spreadsheet software to fail. We need a technician to investigate this.",
     "is_public": false,
     "created_at": "2025-04-03T15:39:48.070968",
     "updated_at": "2025-04-30T01:29:26.130474"
@@ -12,7 +12,7 @@
     "incident_comment_id": "2",
     "incident_id": "1",
     "user_id": "6",
-    "comment_text": "",
+    "comment_text": "Is there an update on this? The finance team is still experiencing issues since the software update.",
     "is_public": true,
     "created_at": "2024-05-22T04:45:42.835907",
     "updated_at": "2025-07-23T01:22:23.424323"
@@ -21,7 +21,7 @@
     "incident_comment_id": "3",
     "incident_id": "1",
     "user_id": "7",
-    "comment_text": "",
+    "comment_text": "We've identified a conflict with the new update. A fix is being prepared and should be deployed by the end of the day.",
     "is_public": true,
     "created_at": "2024-06-06T06:48:27.598712",
     "updated_at": "2025-05-30T15:56:09.053054"
@@ -30,7 +30,7 @@
     "incident_comment_id": "4",
     "incident_id": "2",
     "user_id": "8",
-    "comment_text": "",
+    "comment_text": "Any progress on this? I'm still blocked from accessing the sales analytics dashboard.",
     "is_public": true,
     "created_at": "2025-05-12T19:11:42.560342",
     "updated_at": "2025-07-14T05:00:39.494294"
@@ -39,7 +39,7 @@
     "incident_comment_id": "5",
     "incident_id": "2",
     "user_id": "18",
-    "comment_text": "",
+    "comment_text": "This has become critical. My team's weekly report is blocked until I get the necessary access.",
     "is_public": true,
     "created_at": "2025-06-14T03:15:25.937522",
     "updated_at": "2025-06-30T19:57:37.292669"
@@ -48,7 +48,7 @@
     "incident_comment_id": "6",
     "incident_id": "2",
     "user_id": "14",
-    "comment_text": "",
+    "comment_text": "Approval for the new role has been granted by the department head. We are proceeding with the assignment.",
     "is_public": false,
     "created_at": "2023-08-08T10:06:31.341587",
     "updated_at": "2024-12-06T14:13:46.965789"
@@ -57,7 +57,7 @@
     "incident_comment_id": "7",
     "incident_id": "2",
     "user_id": "3",
-    "comment_text": "",
+    "comment_text": "The requested permissions have been assigned. Please confirm that the issue is resolved on your end.",
     "is_public": true,
     "created_at": "2024-12-01T08:59:07.105761",
     "updated_at": "2025-03-06T13:58:32.447689"
@@ -66,7 +66,7 @@
     "incident_comment_id": "8",
     "incident_id": "3",
     "user_id": "1",
-    "comment_text": "",
+    "comment_text": "We are seeing a high rate of authentication failures on the VPN gateway. Investigating a possible server-side problem.",
     "is_public": false,
     "created_at": "2024-08-14T08:46:56.222977",
     "updated_at": "2025-04-07T14:41:01.799100"
@@ -75,7 +75,7 @@
     "incident_comment_id": "9",
     "incident_id": "4",
     "user_id": "10",
-    "comment_text": "",
+    "comment_text": "The user's device is not enrolling in the MDM platform correctly. It might be an OS incompatibility issue.",
     "is_public": false,
     "created_at": "2023-10-25T01:28:08.630255",
     "updated_at": "2024-07-05T03:03:36.165313"
@@ -84,7 +84,7 @@
     "incident_comment_id": "10",
     "incident_id": "4",
     "user_id": "5",
-    "comment_text": "",
+    "comment_text": "Confirmed that this is a problem with the latest Android version. Pushing a new configuration profile should fix it.",
     "is_public": false,
     "created_at": "2024-12-18T02:38:11.355324",
     "updated_at": "2025-07-24T13:29:22.362802"
@@ -93,7 +93,7 @@
     "incident_comment_id": "11",
     "incident_id": "5",
     "user_id": "17",
-    "comment_text": "",
+    "comment_text": "The latest Exchange server patch has misconfigured the SMTP relays. All outbound emails are currently stuck in the queue.",
     "is_public": false,
     "created_at": "2025-01-20T22:53:55.105119",
     "updated_at": "2025-07-09T04:13:52.153831"
@@ -102,7 +102,7 @@
     "incident_comment_id": "12",
     "incident_id": "5",
     "user_id": "6",
-    "comment_text": "",
+    "comment_text": "Working on rolling back the changes. This is our top priority.",
     "is_public": false,
     "created_at": "2023-11-30T04:11:06.978769",
     "updated_at": "2024-07-08T02:12:07.500141"
@@ -111,7 +111,7 @@
     "incident_comment_id": "13",
     "incident_id": "5",
     "user_id": "1",
-    "comment_text": "",
+    "comment_text": "We are aware of the email service outage and are actively working to resolve it. We apologize for any inconvenience caused.",
     "is_public": true,
     "created_at": "2023-12-22T07:46:08.953640",
     "updated_at": "2024-04-17T12:40:20.104610"
@@ -120,7 +120,7 @@
     "incident_comment_id": "14",
     "incident_id": "5",
     "user_id": "8",
-    "comment_text": "",
+    "comment_text": "The email service has been restored. All pending emails are now being processed. Thank you for your patience.",
     "is_public": true,
     "created_at": "2025-04-05T19:07:25.130340",
     "updated_at": "2025-05-22T04:48:03.902794"
@@ -129,7 +129,7 @@
     "incident_comment_id": "15",
     "incident_id": "6",
     "user_id": "5",
-    "comment_text": "",
+    "comment_text": "I have submitted the access request for 'Project Alpha'. Is there an estimated time for approval?",
     "is_public": true,
     "created_at": "2024-01-15T23:13:48.490413",
     "updated_at": "2024-09-10T01:26:02.778809"
@@ -138,7 +138,7 @@
     "incident_comment_id": "16",
     "incident_id": "6",
     "user_id": "10",
-    "comment_text": "",
+    "comment_text": "Checking in on this request. I am still waiting for access to the developer environment.",
     "is_public": true,
     "created_at": "2024-07-28T04:26:25.976247",
     "updated_at": "2025-05-04T09:44:10.693873"
@@ -147,7 +147,7 @@
     "incident_comment_id": "17",
     "incident_id": "6",
     "user_id": "7",
-    "comment_text": "",
+    "comment_text": "The request is awaiting manager approval. I have sent a follow-up reminder.",
     "is_public": true,
     "created_at": "2025-02-07T20:31:59.739156",
     "updated_at": "2025-05-20T19:06:40.851398"
@@ -156,7 +156,7 @@
     "incident_comment_id": "18",
     "incident_id": "6",
     "user_id": "3",
-    "comment_text": "",
+    "comment_text": "The manager has approved the request. Provisioning access now.",
     "is_public": false,
     "created_at": "2025-01-31T19:14:57.089382",
     "updated_at": "2025-06-23T23:53:48.944860"
@@ -165,7 +165,7 @@
     "incident_comment_id": "19",
     "incident_id": "6",
     "user_id": "4",
-    "comment_text": "",
+    "comment_text": "Access has been granted. Please verify that you can now log in to the system.",
     "is_public": true,
     "created_at": "2025-06-17T03:47:30.700439",
     "updated_at": "2025-07-02T06:17:40.810250"
@@ -174,7 +174,7 @@
     "incident_comment_id": "20",
     "incident_id": "8",
     "user_id": "14",
-    "comment_text": "",
+    "comment_text": "My team is unable to access the shared 'Marketing' drive. We are all getting a 'Permission Denied' error. This is halting our current campaign work.",
     "is_public": true,
     "created_at": "2024-11-27T10:07:16.915242",
     "updated_at": "2025-07-17T09:36:38.679150"
@@ -183,7 +183,7 @@
     "incident_comment_id": "21",
     "incident_id": "8",
     "user_id": "7",
-    "comment_text": "",
+    "comment_text": "We are investigating the permission issue on the Marketing drive. It seems to be a widespread problem affecting multiple users.",
     "is_public": true,
     "created_at": "2025-07-19T11:20:32.937599",
     "updated_at": "2025-07-24T15:19:42.826219"
@@ -192,7 +192,7 @@
     "incident_comment_id": "22",
     "incident_id": "8",
     "user_id": "2",
-    "comment_text": "",
+    "comment_text": "Update: A recent security policy update appears to be the root cause. We are working on a solution now.",
     "is_public": true,
     "created_at": "2023-11-14T14:24:54.964655",
     "updated_at": "2024-08-23T19:49:30.330935"
@@ -201,7 +201,7 @@
     "incident_comment_id": "23",
     "incident_id": "9",
     "user_id": "4",
-    "comment_text": "",
+    "comment_text": "New hire, Sarah Adams, requires a standard employee account with access to email and the company intranet.",
     "is_public": false,
     "created_at": "2023-10-27T05:30:18.715553",
     "updated_at": "2024-09-05T01:34:56.118986"
@@ -210,7 +210,7 @@
     "incident_comment_id": "24",
     "incident_id": "9",
     "user_id": "2",
-    "comment_text": "",
+    "comment_text": "The account for Sarah Adams has been created. Her login credentials have been forwarded to her manager.",
     "is_public": true,
     "created_at": "2024-01-14T11:22:38.766122",
     "updated_at": "2025-06-27T04:46:24.941005"
@@ -219,7 +219,7 @@
     "incident_comment_id": "25",
     "incident_id": "9",
     "user_id": "10",
-    "comment_text": "",
+    "comment_text": "Confirming that Sarah Adams has logged in successfully. This ticket can now be closed.",
     "is_public": true,
     "created_at": "2023-08-20T18:38:43.330434",
     "updated_at": "2025-01-24T17:25:57.766805"
@@ -228,7 +228,7 @@
     "incident_comment_id": "26",
     "incident_id": "12",
     "user_id": "7",
-    "comment_text": "",
+    "comment_text": "The printer on the 2nd floor (MKT-PRN-02) is jamming again. We've cleared it several times but the issue continues.",
     "is_public": true,
     "created_at": "2025-03-26T18:58:20.742202",
     "updated_at": "2025-05-27T22:47:26.373972"
@@ -237,7 +237,7 @@
     "incident_comment_id": "27",
     "incident_id": "12",
     "user_id": "6",
-    "comment_text": "",
+    "comment_text": "A technician has been dispatched to investigate. They suspect a worn-out feed roller needs to be replaced.",
     "is_public": false,
     "created_at": "2023-08-18T14:34:01.089044",
     "updated_at": "2023-12-23T22:30:53.573574"
@@ -246,7 +246,7 @@
     "incident_comment_id": "28",
     "incident_id": "12",
     "user_id": "1",
-    "comment_text": "",
+    "comment_text": "The technician has replaced the faulty roller. Please monitor the printer and inform us if the paper jam issue persists.",
     "is_public": true,
     "created_at": "2024-10-13T03:01:31.514846",
     "updated_at": "2025-01-15T18:18:27.764884"
@@ -255,7 +255,7 @@
     "incident_comment_id": "29",
     "incident_id": "12",
     "user_id": "5",
-    "comment_text": "",
+    "comment_text": "We have run several large print jobs without any issues. The problem appears to be resolved.",
     "is_public": false,
     "created_at": "2024-03-06T22:42:27.624589",
     "updated_at": "2025-01-18T13:30:39.660146"
@@ -264,7 +264,7 @@
     "incident_comment_id": "30",
     "incident_id": "13",
     "user_id": "12",
-    "comment_text": "",
+    "comment_text": "The overnight update for the main database server failed. The application is now unresponsive.",
     "is_public": false,
     "created_at": "2025-02-03T14:58:37.320352",
     "updated_at": "2025-05-30T22:35:25.167977"
@@ -273,7 +273,7 @@
     "incident_comment_id": "31",
     "incident_id": "13",
     "user_id": "6",
-    "comment_text": "",
+    "comment_text": "We are aware of the system outage. We are currently rolling back the failed update. We expect service to be restored in 1-2 hours.",
     "is_public": true,
     "created_at": "2024-08-12T09:16:34.570639",
     "updated_at": "2025-02-01T05:40:50.225595"
@@ -282,7 +282,7 @@
     "incident_comment_id": "32",
     "incident_id": "13",
     "user_id": "17",
-    "comment_text": "",
+    "comment_text": "The rollback is complete, and the system is back online. The update will be rescheduled after a full investigation.",
     "is_public": true,
     "created_at": "2024-07-04T01:08:48.424026",
     "updated_at": "2024-10-26T16:36:16.068257"
@@ -291,7 +291,7 @@
     "incident_comment_id": "33",
     "incident_id": "13",
     "user_id": "4",
-    "comment_text": "",
+    "comment_text": "Thank you for the quick response. We can now access the system.",
     "is_public": true,
     "created_at": "2024-07-27T07:14:15.909570",
     "updated_at": "2025-01-28T16:46:20.895925"
@@ -300,7 +300,7 @@
     "incident_comment_id": "34",
     "incident_id": "14",
     "user_id": "7",
-    "comment_text": "",
+    "comment_text": "We need to schedule the deployment of the 'Helios' security patch for our application servers. This is a critical update.",
     "is_public": true,
     "created_at": "2024-08-28T19:00:23.114488",
     "updated_at": "2025-05-26T19:00:28.768121"
@@ -309,7 +309,7 @@
     "incident_comment_id": "35",
     "incident_id": "14",
     "user_id": "10",
-    "comment_text": "",
+    "comment_text": "The update has been scheduled for this evening during our standard maintenance window (1 AM - 3 AM).",
     "is_public": true,
     "created_at": "2024-08-27T09:34:56.378608",
     "updated_at": "2024-09-02T08:09:01.619048"
@@ -318,7 +318,7 @@
     "incident_comment_id": "36",
     "incident_id": "14",
     "user_id": "18",
-    "comment_text": "",
+    "comment_text": "The security patch deployment has been completed successfully. All systems are online and operating as expected.",
     "is_public": true,
     "created_at": "2025-02-06T09:23:28.171880",
     "updated_at": "2025-07-27T23:10:26.145921"
@@ -327,7 +327,7 @@
     "incident_comment_id": "37",
     "incident_id": "14",
     "user_id": "4",
-    "comment_text": "",
+    "comment_text": "Excellent work, team. Thank you for handling this promptly.",
     "is_public": true,
     "created_at": "2025-05-02T03:04:41.034622",
     "updated_at": "2025-05-12T15:57:51.453445"
@@ -336,7 +336,7 @@
     "incident_comment_id": "38",
     "incident_id": "15",
     "user_id": "16",
-    "comment_text": "",
+    "comment_text": "The MDM platform has flagged a device for having a blacklisted application installed. Device ID: ABC-456. Access has been temporarily revoked.",
     "is_public": false,
     "created_at": "2024-06-22T10:40:00.232238",
     "updated_at": "2025-05-31T09:51:11.982499"
@@ -345,7 +345,7 @@
     "incident_comment_id": "39",
     "incident_id": "15",
     "user_id": "19",
-    "comment_text": "",
+    "comment_text": "We are looking into a security alert on a company mobile device. The user has been notified.",
     "is_public": true,
     "created_at": "2024-06-16T22:19:15.092589",
     "updated_at": "2024-07-01T14:20:26.343927"
@@ -354,7 +354,7 @@
     "incident_comment_id": "40",
     "incident_id": "15",
     "user_id": "15",
-    "comment_text": "",
+    "comment_text": "The user has uninstalled the unauthorized application. Access will be restored after a full device scan is completed.",
     "is_public": true,
     "created_at": "2023-12-06T02:48:03.102833",
     "updated_at": "2025-01-05T17:23:07.631998"
@@ -363,7 +363,7 @@
     "incident_comment_id": "41",
     "incident_id": "15",
     "user_id": "6",
-    "comment_text": "",
+    "comment_text": "The device scan is complete and came back clean. Re-enabling access to corporate resources.",
     "is_public": false,
     "created_at": "2025-02-17T15:18:52.022464",
     "updated_at": "2025-07-10T21:40:17.966799"
@@ -372,7 +372,7 @@
     "incident_comment_id": "42",
     "incident_id": "16",
     "user_id": "14",
-    "comment_text": "",
+    "comment_text": "The new phone for our VP is not activating. We have tried multiple times and it remains on the 'Activating' screen. This is a critical issue.",
     "is_public": true,
     "created_at": "2023-11-26T20:01:08.083810",
     "updated_at": "2024-08-15T20:50:23.818159"
@@ -381,7 +381,7 @@
     "incident_comment_id": "43",
     "incident_id": "16",
     "user_id": "17",
-    "comment_text": "",
+    "comment_text": "This appears to be a carrier-side activation issue. We are in contact with the provider to resolve it.",
     "is_public": true,
     "created_at": "2024-03-14T00:39:15.454737",
     "updated_at": "2024-09-25T13:24:10.921903"
@@ -390,7 +390,7 @@
     "incident_comment_id": "44",
     "incident_id": "16",
     "user_id": "14",
-    "comment_text": "",
+    "comment_text": "The carrier has fixed the activation issue. The device is now fully set up and configured.",
     "is_public": true,
     "created_at": "2025-02-06T10:12:02.003682",
     "updated_at": "2025-05-15T22:07:25.635739"
@@ -399,7 +399,7 @@
     "incident_comment_id": "45",
     "incident_id": "17",
     "user_id": "4",
-    "comment_text": "",
+    "comment_text": "The license for our 'AutoCAD' software is set to expire in 30 days. We need to begin the renewal process.",
     "is_public": false,
     "created_at": "2024-07-21T22:38:21.113634",
     "updated_at": "2025-02-13T07:12:24.183818"
@@ -408,7 +408,7 @@
     "incident_comment_id": "46",
     "incident_id": "17",
     "user_id": "4",
-    "comment_text": "",
+    "comment_text": "The renewal for the AutoCAD licenses has been approved and completed. The new license key has been applied to the server.",
     "is_public": true,
     "created_at": "2024-08-26T13:40:59.759376",
     "updated_at": "2025-01-31T21:37:11.230129"
@@ -417,7 +417,7 @@
     "incident_comment_id": "47",
     "incident_id": "18",
     "user_id": "12",
-    "comment_text": "",
+    "comment_text": "Users are reporting that they have reached the maximum user limit for our 'Tableau' license. Can we verify the current usage?",
     "is_public": false,
     "created_at": "2024-09-12T05:57:29.287558",
     "updated_at": "2024-11-01T07:38:56.054992"
@@ -426,7 +426,7 @@
     "incident_comment_id": "48",
     "incident_id": "18",
     "user_id": "18",
-    "comment_text": "",
+    "comment_text": "It seems we need to buy more seats for our Tableau license. The request has been forwarded to the procurement department.",
     "is_public": true,
     "created_at": "2023-09-08T18:04:44.841461",
     "updated_at": "2024-03-08T10:42:04.947327"
@@ -435,7 +435,7 @@
     "incident_comment_id": "49",
     "incident_id": "18",
     "user_id": "3",
-    "comment_text": "",
+    "comment_text": "Procurement has approved the purchase. We are adding 20 new seats to the license.",
     "is_public": false,
     "created_at": "2024-10-03T05:59:40.248485",
     "updated_at": "2025-01-24T08:00:44.085346"
@@ -444,7 +444,7 @@
     "incident_comment_id": "50",
     "incident_id": "19",
     "user_id": "4",
-    "comment_text": "",
+    "comment_text": "We are observing a large number of timeout errors when connecting to the 'ProductDB' database. This began approximately one hour ago.",
     "is_public": false,
     "created_at": "2024-12-04T13:53:01.252632",
     "updated_at": "2025-06-04T05:29:24.482609"
@@ -453,7 +453,7 @@
     "incident_comment_id": "51",
     "incident_id": "19",
     "user_id": "10",
-    "comment_text": "",
+    "comment_text": "The network team is checking for a potential problem with the switch that connects the app server to the database server.",
     "is_public": false,
     "created_at": "2024-02-22T14:03:22.286680",
     "updated_at": "2024-03-25T17:01:58.334283"
@@ -462,7 +462,7 @@
     "incident_comment_id": "52",
     "incident_id": "19",
     "user_id": "10",
-    "comment_text": "",
+    "comment_text": "A bad network cable was found and replaced. Database connection performance should now be back to normal.",
     "is_public": false,
     "created_at": "2024-10-02T19:48:37.178412",
     "updated_at": "2024-11-10T06:03:47.886210"
@@ -471,7 +471,7 @@
     "incident_comment_id": "53",
     "incident_id": "20",
     "user_id": "18",
-    "comment_text": "",
+    "comment_text": "User 'David Chen' has reached his mailbox quota. We need to archive his older emails to create more space.",
     "is_public": false,
     "created_at": "2024-04-22T09:11:32.383545",
     "updated_at": "2025-05-02T08:39:51.067433"
@@ -480,7 +480,7 @@
     "incident_comment_id": "54",
     "incident_id": "21",
     "user_id": "14",
-    "comment_text": "",
+    "comment_text": "My docking station is not detecting my external monitor. I have tried rebooting and reconnecting the cables already.",
     "is_public": true,
     "created_at": "2024-09-28T02:04:25.773999",
     "updated_at": "2025-05-19T01:53:13.397851"
@@ -489,7 +489,7 @@
     "incident_comment_id": "55",
     "incident_id": "21",
     "user_id": "3",
-    "comment_text": "",
+    "comment_text": "This is likely a driver issue with the docking station. I will remote into your machine and try reinstalling the drivers.",
     "is_public": false,
     "created_at": "2024-10-28T03:08:20.155574",
     "updated_at": "2025-02-09T13:50:21.300758"
@@ -498,7 +498,7 @@
     "incident_comment_id": "56",
     "incident_id": "22",
     "user_id": "12",
-    "comment_text": "",
+    "comment_text": "The new mobile expense app is a bit slow when I try to submit a report. It takes several seconds to respond.",
     "is_public": true,
     "created_at": "2024-06-06T10:04:23.814719",
     "updated_at": "2025-07-26T04:56:52.446576"
@@ -507,7 +507,7 @@
     "incident_comment_id": "57",
     "incident_id": "22",
     "user_id": "1",
-    "comment_text": "",
+    "comment_text": "The development team is aware of the performance issue. An update with optimizations will be included in the next release.",
     "is_public": false,
     "created_at": "2024-05-25T14:07:33.719351",
     "updated_at": "2024-06-18T20:39:45.196585"
@@ -516,7 +516,7 @@
     "incident_comment_id": "58",
     "incident_id": "22",
     "user_id": "4",
-    "comment_text": "",
+    "comment_text": "We have pushed a backend change that should improve the app's responsiveness. Can users test it again?",
     "is_public": false,
     "created_at": "2024-01-24T06:06:08.609038",
     "updated_at": "2024-06-01T20:10:37.528360"
@@ -525,7 +525,7 @@
     "incident_comment_id": "59",
     "incident_id": "22",
     "user_id": "15",
-    "comment_text": "",
+    "comment_text": "The app is much more responsive now. Thank you!",
     "is_public": true,
     "created_at": "2024-03-13T18:20:56.438622",
     "updated_at": "2024-04-25T11:22:38.886247"
@@ -534,7 +534,7 @@
     "incident_comment_id": "60",
     "incident_id": "22",
     "user_id": "4",
-    "comment_text": "",
+    "comment_text": "Glad to hear it! We will continue to monitor the app's performance.",
     "is_public": true,
     "created_at": "2024-12-12T23:16:51.803570",
     "updated_at": "2025-06-29T14:43:10.003560"
@@ -543,7 +543,7 @@
     "incident_comment_id": "61",
     "incident_id": "23",
     "user_id": "13",
-    "comment_text": "",
+    "comment_text": "I am getting an error about a missing printer driver when I try to print to the HR printer.",
     "is_public": true,
     "created_at": "2023-10-21T14:22:07.646509",
     "updated_at": "2024-02-08T10:36:02.815824"
@@ -552,7 +552,7 @@
     "incident_comment_id": "62",
     "incident_id": "23",
     "user_id": "6",
-    "comment_text": "",
+    "comment_text": "We have found an issue with the latest driver package. We are pushing the correct driver to all affected computers.",
     "is_public": true,
     "created_at": "2024-08-25T20:36:12.224055",
     "updated_at": "2024-09-07T11:33:20.055136"
@@ -561,7 +561,7 @@
     "incident_comment_id": "63",
     "incident_id": "23",
     "user_id": "12",
-    "comment_text": "",
+    "comment_text": "The driver has been updated. You should be able to print without any issues now.",
     "is_public": true,
     "created_at": "2024-11-20T22:08:34.642655",
     "updated_at": "2025-03-06T19:35:14.783463"
@@ -570,7 +570,7 @@
     "incident_comment_id": "64",
     "incident_id": "24",
     "user_id": "26",
-    "comment_text": "",
+    "comment_text": "Server 'DB-02' is showing a predictive failure alert for a drive in its RAID configuration.",
     "is_public": false,
     "created_at": "2024-08-08T14:25:41.423485",
     "updated_at": "2025-01-05T02:32:45.680741"
@@ -579,7 +579,7 @@
     "incident_comment_id": "65",
     "incident_id": "24",
     "user_id": "23",
-    "comment_text": "",
+    "comment_text": "We will be performing emergency maintenance tonight at midnight to replace a failing hard drive in a database server.",
     "is_public": true,
     "created_at": "2023-08-13T23:27:12.514243",
     "updated_at": "2024-07-15T02:13:58.811606"
@@ -588,7 +588,7 @@
     "incident_comment_id": "66",
     "incident_id": "25",
     "user_id": "43",
-    "comment_text": "",
+    "comment_text": "There is a spelling mistake in the confirmation message that appears after submitting a timesheet in the employee portal.",
     "is_public": false,
     "created_at": "2023-08-15T07:33:55.423447",
     "updated_at": "2024-03-28T09:19:19.161381"
@@ -597,7 +597,7 @@
     "incident_comment_id": "67",
     "incident_id": "25",
     "user_id": "28",
-    "comment_text": "",
+    "comment_text": "This has been reported to the development team. It will be corrected in the next software update.",
     "is_public": false,
     "created_at": "2024-09-18T03:44:10.675525",
     "updated_at": "2024-12-28T12:44:31.199966"
@@ -606,7 +606,7 @@
     "incident_comment_id": "68",
     "incident_id": "25",
     "user_id": "44",
-    "comment_text": "",
+    "comment_text": "The spelling mistake has been corrected, and the fix is now live in production.",
     "is_public": false,
     "created_at": "2023-10-09T09:11:40.033583",
     "updated_at": "2024-08-26T07:18:49.936422"
@@ -615,7 +615,7 @@
     "incident_comment_id": "69",
     "incident_id": "26",
     "user_id": "35",
-    "comment_text": "",
+    "comment_text": "The WiFi connection in the east wing conference room is dropping intermittently. It's making video conferences unstable.",
     "is_public": false,
     "created_at": "2024-12-15T01:34:29.834085",
     "updated_at": "2025-01-30T16:56:04.750927"
@@ -624,7 +624,7 @@
     "incident_comment_id": "70",
     "incident_id": "26",
     "user_id": "35",
-    "comment_text": "",
+    "comment_text": "We have checked the access point in that location and it appears to be working correctly. We will continue to monitor for further problems.",
     "is_public": false,
     "created_at": "2024-07-26T10:47:42.509838",
     "updated_at": "2025-05-21T04:00:25.987814"
@@ -633,7 +633,7 @@
     "incident_comment_id": "71",
     "incident_id": "27",
     "user_id": "44",
-    "comment_text": "",
+    "comment_text": "User 'Laura Wilson' is at 95% of her email storage capacity. We should notify her to archive old emails.",
     "is_public": false,
     "created_at": "2024-11-27T22:33:40.486507",
     "updated_at": "2025-01-07T12:52:01.104731"
@@ -642,7 +642,7 @@
     "incident_comment_id": "72",
     "incident_id": "30",
     "user_id": "35",
-    "comment_text": "",
+    "comment_text": "The new Android device is failing to enroll in the MDM. It keeps giving a generic 'enrollment failed' error.",
     "is_public": false,
     "created_at": "2024-03-04T14:07:42.178043",
     "updated_at": "2025-07-13T22:07:08.920451"
@@ -651,7 +651,7 @@
     "incident_comment_id": "73",
     "incident_id": "30",
     "user_id": "27",
-    "comment_text": "",
+    "comment_text": "After a factory reset, we were able to enroll the device successfully. The problem was likely a corrupted initial state.",
     "is_public": true,
     "created_at": "2023-12-24T06:33:12.499568",
     "updated_at": "2024-12-28T22:16:51.258526"
@@ -660,7 +660,7 @@
     "incident_comment_id": "74",
     "incident_id": "33",
     "user_id": "21",
-    "comment_text": "",
+    "comment_text": "We have noticed that the CPU usage on server 'WEB-03' has been consistently around 85% for the past few hours.",
     "is_public": true,
     "created_at": "2025-07-09T16:27:45.656701",
     "updated_at": "2025-07-11T04:24:52.700165"
@@ -669,7 +669,7 @@
     "incident_comment_id": "75",
     "incident_id": "33",
     "user_id": "35",
-    "comment_text": "",
+    "comment_text": "We are monitoring the server. A scheduled data processing task is causing the spike. It should return to normal levels soon.",
     "is_public": true,
     "created_at": "2025-04-10T09:30:18.032474",
     "updated_at": "2025-05-03T23:35:30.223699"
@@ -678,7 +678,7 @@
     "incident_comment_id": "76",
     "incident_id": "33",
     "user_id": "25",
-    "comment_text": "",
+    "comment_text": "The task has finished, and CPU usage is back to normal.",
     "is_public": false,
     "created_at": "2024-02-08T12:28:06.559106",
     "updated_at": "2024-07-17T04:43:19.301303"
@@ -687,7 +687,7 @@
     "incident_comment_id": "77",
     "incident_id": "33",
     "user_id": "39",
-    "comment_text": "",
+    "comment_text": "We will work with the application team to optimize the data processing task to avoid future spikes in CPU usage.",
     "is_public": false,
     "created_at": "2024-09-20T11:11:07.023683",
     "updated_at": "2025-05-29T14:08:26.278803"
@@ -696,7 +696,7 @@
     "incident_comment_id": "78",
     "incident_id": "33",
     "user_id": "24",
-    "comment_text": "",
+    "comment_text": "That sounds like a good plan. Closing this ticket for now.",
     "is_public": false,
     "created_at": "2024-10-27T16:58:19.694477",
     "updated_at": "2025-07-18T00:19:31.924363"
@@ -705,7 +705,7 @@
     "incident_comment_id": "79",
     "incident_id": "34",
     "user_id": "39",
-    "comment_text": "",
+    "comment_text": "The 'Order Entry' module is throwing a fatal error and crashing the application for all users. This is a critical issue.",
     "is_public": true,
     "created_at": "2025-01-03T15:31:37.871788",
     "updated_at": "2025-05-03T06:58:51.923118"
@@ -714,7 +714,7 @@
     "incident_comment_id": "80",
     "incident_id": "34",
     "user_id": "44",
-    "comment_text": "",
+    "comment_text": "Our developers are investigating this with the highest priority. We suspect a recent database update may have caused this.",
     "is_public": true,
     "created_at": "2024-10-03T20:20:33.252756",
     "updated_at": "2024-12-24T12:12:55.330192"
@@ -723,7 +723,7 @@
     "incident_comment_id": "81",
     "incident_id": "34",
     "user_id": "41",
-    "comment_text": "",
+    "comment_text": "We have identified the issue in a stored procedure and are preparing a hotfix. We will need a short maintenance window to deploy it.",
     "is_public": false,
     "created_at": "2024-09-15T07:00:53.918359",
     "updated_at": "2025-03-02T18:56:23.877183"
@@ -732,7 +732,7 @@
     "incident_comment_id": "82",
     "incident_id": "34",
     "user_id": "34",
-    "comment_text": "",
+    "comment_text": "The hotfix has been deployed, and the application is now stable. We will continue to monitor the system closely.",
     "is_public": true,
     "created_at": "2024-06-05T15:49:30.698743",
     "updated_at": "2024-10-29T03:43:45.942778"
@@ -741,7 +741,7 @@
     "incident_comment_id": "83",
     "incident_id": "35",
     "user_id": "41",
-    "comment_text": "",
+    "comment_text": "The automated weekend update for the HR server failed. The OS is not booting up correctly.",
     "is_public": false,
     "created_at": "2023-09-24T00:24:52.654404",
     "updated_at": "2025-04-01T16:13:32.351769"
@@ -750,7 +750,7 @@
     "incident_comment_id": "84",
     "incident_id": "35",
     "user_id": "35",
-    "comment_text": "",
+    "comment_text": "We are trying to boot into recovery mode to roll back the failed update. If this fails, we will need to restore from the latest backup.",
     "is_public": false,
     "created_at": "2024-08-01T05:14:49.286511",
     "updated_at": "2024-11-17T21:24:56.679573"
@@ -759,7 +759,7 @@
     "incident_comment_id": "85",
     "incident_id": "36",
     "user_id": "30",
-    "comment_text": "",
+    "comment_text": "My contacts from my phone are not appearing on my laptop. The synchronization seems to be broken.",
     "is_public": true,
     "created_at": "2024-11-25T01:44:30.030529",
     "updated_at": "2025-02-10T07:32:59.691329"
@@ -768,7 +768,7 @@
     "incident_comment_id": "86",
     "incident_id": "36",
     "user_id": "44",
-    "comment_text": "",
+    "comment_text": "We are seeing a delay in the synchronization service. The issue should be resolved shortly.",
     "is_public": true,
     "created_at": "2024-05-27T07:52:31.107299",
     "updated_at": "2024-09-11T22:21:03.415344"
@@ -777,7 +777,7 @@
     "incident_comment_id": "87",
     "incident_id": "36",
     "user_id": "33",
-    "comment_text": "",
+    "comment_text": "The synchronization service has been restored. Your data should now be syncing correctly.",
     "is_public": true,
     "created_at": "2024-08-09T01:05:50.716776",
     "updated_at": "2025-04-04T03:11:25.904688"
@@ -786,7 +786,7 @@
     "incident_comment_id": "88",
     "incident_id": "36",
     "user_id": "32",
-    "comment_text": "",
+    "comment_text": "A server reboot was necessary to fix the synchronization issue. We are monitoring for stability.",
     "is_public": false,
     "created_at": "2024-09-01T12:43:17.404143",
     "updated_at": "2025-06-20T03:29:47.400506"
@@ -795,7 +795,7 @@
     "incident_comment_id": "89",
     "incident_id": "37",
     "user_id": "32",
-    "comment_text": "",
+    "comment_text": "Attempting to install the new analytics software, but the installer fails with an 'insufficient permissions' error, even when running as admin.",
     "is_public": false,
     "created_at": "2024-10-30T02:15:01.994177",
     "updated_at": "2025-03-19T18:06:48.113866"
@@ -804,7 +804,7 @@
     "incident_comment_id": "90",
     "incident_id": "37",
     "user_id": "34",
-    "comment_text": "",
+    "comment_text": "This is a known issue with the installer package. As a workaround, please run the installer from an elevated command prompt.",
     "is_public": true,
     "created_at": "2023-12-13T04:05:40.139501",
     "updated_at": "2024-10-04T21:34:35.819570"
@@ -813,7 +813,7 @@
     "incident_comment_id": "91",
     "incident_id": "39",
     "user_id": "37",
-    "comment_text": "",
+    "comment_text": "The 'Contractor' role does not have permission to access the archived project files. This is not urgent, but would be good to update.",
     "is_public": false,
     "created_at": "2024-11-23T03:20:17.954969",
     "updated_at": "2025-06-15T19:50:30.831333"
@@ -822,7 +822,7 @@
     "incident_comment_id": "92",
     "incident_id": "40",
     "user_id": "25",
-    "comment_text": "",
+    "comment_text": "The primary network switch for the sales department is down. The entire department has lost all network connectivity.",
     "is_public": false,
     "created_at": "2025-06-13T10:07:01.938091",
     "updated_at": "2025-06-25T18:53:59.193209"
@@ -831,7 +831,7 @@
     "incident_comment_id": "93",
     "incident_id": "40",
     "user_id": "33",
-    "comment_text": "",
+    "comment_text": "We are experiencing a major network outage that is affecting the sales department. Our network team is on-site and working to restore service.",
     "is_public": true,
     "created_at": "2024-11-06T10:46:07.557713",
     "updated_at": "2025-06-08T22:01:18.385121"
@@ -840,7 +840,7 @@
     "incident_comment_id": "94",
     "incident_id": "40",
     "user_id": "29",
-    "comment_text": "",
+    "comment_text": "The switch has had a hardware failure and needs to be replaced. A replacement is being configured now. The estimated time to resolution is one hour.",
     "is_public": false,
     "created_at": "2025-04-12T04:13:46.147986",
     "updated_at": "2025-07-19T11:24:32.209663"
@@ -849,7 +849,7 @@
     "incident_comment_id": "95",
     "incident_id": "40",
     "user_id": "35",
-    "comment_text": "",
+    "comment_text": "The faulty network switch has been replaced. Network connectivity should now be restored for the sales department.",
     "is_public": true,
     "created_at": "2025-06-10T21:25:03.304821",
     "updated_at": "2025-07-16T06:22:02.999375"
@@ -858,7 +858,7 @@
     "incident_comment_id": "96",
     "incident_id": "40",
     "user_id": "38",
-    "comment_text": "",
+    "comment_text": "All services are back online. We will investigate the root cause of the switch failure.",
     "is_public": false,
     "created_at": "2023-09-11T18:38:22.775285",
     "updated_at": "2024-01-27T13:56:56.896375"
@@ -867,7 +867,7 @@
     "incident_comment_id": "97",
     "incident_id": "41",
     "user_id": "37",
-    "comment_text": "",
+    "comment_text": "My laptop has been crashing with a 'blue screen' error about once a day for the past week. It seems to happen at random times.",
     "is_public": false,
     "created_at": "2024-07-01T11:15:18.621205",
     "updated_at": "2024-10-03T23:04:08.713509"
@@ -876,7 +876,7 @@
     "incident_comment_id": "98",
     "incident_id": "41",
     "user_id": "35",
-    "comment_text": "",
+    "comment_text": "We will need to examine the system logs to determine the cause of the crashes. I will schedule a time to connect remotely.",
     "is_public": true,
     "created_at": "2025-01-24T14:27:35.986544",
     "updated_at": "2025-06-15T23:15:57.140628"
@@ -885,7 +885,7 @@
     "incident_comment_id": "99",
     "incident_id": "41",
     "user_id": "36",
-    "comment_text": "",
+    "comment_text": "The memory dump from the last crash indicates a potential problem with the display driver. We will try reinstalling it.",
     "is_public": true,
     "created_at": "2025-04-05T20:44:34.808084",
     "updated_at": "2025-05-22T22:12:16.794515"
@@ -894,7 +894,7 @@
     "incident_comment_id": "100",
     "incident_id": "41",
     "user_id": "32",
-    "comment_text": "",
+    "comment_text": "After reviewing the system logs, the crashes seem to coincide with a recent graphics driver update. I will attempt to roll back the driver to a previous version to see if that resolves the issue.",
     "is_public": false,
     "created_at": "2025-04-17T13:58:58.786989",
     "updated_at": "2025-07-20T10:07:51.267332"
@@ -903,7 +903,7 @@
     "incident_comment_id": "101",
     "incident_id": "41",
     "user_id": "35",
-    "comment_text": "",
+    "comment_text": "The user has confirmed that there have been no further system crashes since the graphics driver was rolled back. We will monitor for another 24 hours before closing this incident.",
     "is_public": false,
     "created_at": "2024-11-03T12:45:30.451237",
     "updated_at": "2025-06-18T06:52:56.995767"
@@ -912,7 +912,7 @@
     "incident_comment_id": "102",
     "incident_id": "42",
     "user_id": "41",
-    "comment_text": "",
+    "comment_text": "The VPN appliance is completely unresponsive and not reachable on the network. I am heading to the data center to perform a physical check on the hardware.",
     "is_public": false,
     "created_at": "2024-02-09T19:37:33.249674",
     "updated_at": "2024-07-12T14:29:22.539109"
@@ -921,7 +921,7 @@
     "incident_comment_id": "103",
     "incident_id": "42",
     "user_id": "44",
-    "comment_text": "",
+    "comment_text": "Confirming our entire remote workforce is unable to connect to the VPN. This is a critical outage preventing access to all internal company systems.",
     "is_public": false,
     "created_at": "2023-11-24T05:41:35.875859",
     "updated_at": "2025-01-18T12:15:25.713896"
@@ -930,7 +930,7 @@
     "incident_comment_id": "104",
     "incident_id": "42",
     "user_id": "30",
-    "comment_text": "",
+    "comment_text": "We are aware of the ongoing VPN service disruption. Our network team is currently investigating a potential hardware failure. We will post another update in 30 minutes.",
     "is_public": true,
     "created_at": "2024-01-18T08:18:28.848525",
     "updated_at": "2024-05-30T11:22:58.333532"
@@ -939,7 +939,7 @@
     "incident_comment_id": "105",
     "incident_id": "42",
     "user_id": "20",
-    "comment_text": "",
+    "comment_text": "The issue was a failed power supply unit on the VPN concentrator. The PSU has been replaced, and the VPN service is now fully restored. Please try connecting again.",
     "is_public": true,
     "created_at": "2023-11-16T11:43:38.392390",
     "updated_at": "2023-12-03T16:41:13.577100"
@@ -948,7 +948,7 @@
     "incident_comment_id": "106",
     "incident_id": "43",
     "user_id": "31",
-    "comment_text": "",
+    "comment_text": "I have reached out to the user and provided instructions on how to archive old emails to free up storage. I also offered to assist them directly if needed.",
     "is_public": false,
     "created_at": "2025-03-02T12:32:14.487822",
     "updated_at": "2025-04-17T19:24:58.722883"
@@ -957,7 +957,7 @@
     "incident_comment_id": "107",
     "incident_id": "44",
     "user_id": "38",
-    "comment_text": "",
+    "comment_text": "Requesting standard user access to the sales reporting dashboard for the new team member.",
     "is_public": true,
     "created_at": "2024-07-18T04:06:05.476659",
     "updated_at": "2025-07-26T07:07:29.967687"
@@ -966,7 +966,7 @@
     "incident_comment_id": "108",
     "incident_id": "44",
     "user_id": "44",
-    "comment_text": "",
+    "comment_text": "This request is pending manager approval. I have sent a reminder to the manager.",
     "is_public": false,
     "created_at": "2024-06-01T22:46:07.019470",
     "updated_at": "2025-06-19T16:50:38.971420"
@@ -975,7 +975,7 @@
     "incident_comment_id": "109",
     "incident_id": "44",
     "user_id": "32",
-    "comment_text": "",
+    "comment_text": "Manager approval has been received. Proceeding to grant access.",
     "is_public": true,
     "created_at": "2023-12-24T10:36:47.337068",
     "updated_at": "2024-05-31T11:15:45.316549"
@@ -984,7 +984,7 @@
     "incident_comment_id": "110",
     "incident_id": "44",
     "user_id": "33",
-    "comment_text": "",
+    "comment_text": "Access has been provisioned. The user now has the required permissions. Closing ticket.",
     "is_public": false,
     "created_at": "2023-08-20T08:27:43.587180",
     "updated_at": "2025-03-02T09:41:01.213474"
@@ -993,7 +993,7 @@
     "incident_comment_id": "111",
     "incident_id": "44",
     "user_id": "31",
-    "comment_text": "",
+    "comment_text": "The user has confirmed they are able to access the system without any issues.",
     "is_public": false,
     "created_at": "2024-02-17T17:21:32.334858",
     "updated_at": "2024-12-04T09:56:09.527099"
@@ -1002,7 +1002,7 @@
     "incident_comment_id": "112",
     "incident_id": "45",
     "user_id": "21",
-    "comment_text": "",
+    "comment_text": "The user's laptop will not power on. Tried multiple power sources and adapters. It appears to be a hardware failure, likely the motherboard.",
     "is_public": true,
     "created_at": "2024-11-11T02:14:50.061036",
     "updated_at": "2024-11-22T02:15:51.441389"
@@ -1011,7 +1011,7 @@
     "incident_comment_id": "113",
     "incident_id": "45",
     "user_id": "27",
-    "comment_text": "",
+    "comment_text": "A replacement laptop has been configured and is being sent to the user. We will arrange to have the old device shipped back for data recovery.",
     "is_public": true,
     "created_at": "2025-01-07T02:59:17.659647",
     "updated_at": "2025-06-15T06:28:22.445906"
@@ -1020,7 +1020,7 @@
     "incident_comment_id": "114",
     "incident_id": "46",
     "user_id": "29",
-    "comment_text": "",
+    "comment_text": "We're observing high CPU and memory usage on the application server, correlating with the reports of slow performance.",
     "is_public": true,
     "created_at": "2023-09-08T10:54:13.010054",
     "updated_at": "2025-05-19T03:36:47.648223"
@@ -1029,7 +1029,7 @@
     "incident_comment_id": "115",
     "incident_id": "46",
     "user_id": "42",
-    "comment_text": "",
+    "comment_text": "Our entire team is affected. The CRM application is taking over a minute to load basic customer information, which is significantly impacting our operations.",
     "is_public": true,
     "created_at": "2024-03-15T01:57:15.804705",
     "updated_at": "2024-08-11T12:22:46.928492"
@@ -1038,7 +1038,7 @@
     "incident_comment_id": "116",
     "incident_id": "46",
     "user_id": "29",
-    "comment_text": "",
+    "comment_text": "A runaway reporting query has been identified as the cause. The query has been terminated.",
     "is_public": true,
     "created_at": "2023-09-14T11:25:05.188526",
     "updated_at": "2025-06-28T20:24:23.844196"
@@ -1047,7 +1047,7 @@
     "incident_comment_id": "117",
     "incident_id": "46",
     "user_id": "30",
-    "comment_text": "",
+    "comment_text": "System performance has returned to normal levels. We are coordinating with the development team to optimize the faulty report.",
     "is_public": true,
     "created_at": "2025-05-14T06:32:08.827858",
     "updated_at": "2025-07-04T12:31:53.382348"
@@ -1056,7 +1056,7 @@
     "incident_comment_id": "118",
     "incident_id": "46",
     "user_id": "20",
-    "comment_text": "",
+    "comment_text": "The root cause was a lack of proper indexing on a new table that the report was querying. The development team is adding the index now.",
     "is_public": false,
     "created_at": "2025-05-06T05:00:34.379329",
     "updated_at": "2025-06-08T16:37:51.480304"
@@ -1065,7 +1065,7 @@
     "incident_comment_id": "119",
     "incident_id": "48",
     "user_id": "41",
-    "comment_text": "",
+    "comment_text": "The web application servers are unable to connect to the main database. Error logs confirm a connection failure.",
     "is_public": false,
     "created_at": "2025-04-02T17:15:32.189246",
     "updated_at": "2025-07-11T00:59:45.762985"
@@ -1074,7 +1074,7 @@
     "incident_comment_id": "120",
     "incident_id": "48",
     "user_id": "38",
-    "comment_text": "",
+    "comment_text": "The database listener service on the primary database server is not running. Attempting to restart it now.",
     "is_public": false,
     "created_at": "2024-01-18T06:45:19.670792",
     "updated_at": "2024-12-02T01:14:30.706748"
@@ -1083,7 +1083,7 @@
     "incident_comment_id": "121",
     "incident_id": "48",
     "user_id": "28",
-    "comment_text": "",
+    "comment_text": "The listener service has been restarted and connectivity to the database has been restored. All applications should now be functional.",
     "is_public": true,
     "created_at": "2024-07-29T00:22:17.024754",
     "updated_at": "2024-09-11T02:49:06.128518"
@@ -1092,7 +1092,7 @@
     "incident_comment_id": "122",
     "incident_id": "49",
     "user_id": "35",
-    "comment_text": "",
+    "comment_text": "The nightly database backup job failed due to insufficient space on the target storage device.",
     "is_public": true,
     "created_at": "2024-11-25T15:03:18.224437",
     "updated_at": "2025-04-17T09:06:47.801084"
@@ -1101,7 +1101,7 @@
     "incident_comment_id": "123",
     "incident_id": "49",
     "user_id": "30",
-    "comment_text": "",
+    "comment_text": "I have manually cleared some older backup archives to free up space and have re-initiated the backup job.",
     "is_public": false,
     "created_at": "2025-02-14T12:37:00.241280",
     "updated_at": "2025-05-12T05:15:28.833597"
@@ -1110,7 +1110,7 @@
     "incident_comment_id": "124",
     "incident_id": "49",
     "user_id": "38",
-    "comment_text": "",
+    "comment_text": "The manual backup is now running. We need to implement a retention policy to automatically purge old backups to prevent this in the future.",
     "is_public": false,
     "created_at": "2024-07-26T05:53:16.308453",
     "updated_at": "2024-08-28T11:40:38.493064"
@@ -1119,7 +1119,7 @@
     "incident_comment_id": "125",
     "incident_id": "49",
     "user_id": "30",
-    "comment_text": "",
+    "comment_text": "The backup job has now completed successfully. I will create a new ticket to track the implementation of the retention policy.",
     "is_public": true,
     "created_at": "2024-10-09T15:38:38.215625",
     "updated_at": "2025-05-24T03:16:52.537650"
@@ -1128,7 +1128,7 @@
     "incident_comment_id": "126",
     "incident_id": "49",
     "user_id": "35",
-    "comment_text": "",
+    "comment_text": "Confirming the backup was successful. Closing this incident.",
     "is_public": true,
     "created_at": "2024-03-14T17:17:52.389822",
     "updated_at": "2025-05-06T10:19:55.431045"
@@ -1137,7 +1137,7 @@
     "incident_comment_id": "127",
     "incident_id": "50",
     "user_id": "41",
-    "comment_text": "",
+    "comment_text": "The recent patch applied to the financial system has failed, and the application is now inaccessible. This is a critical failure.",
     "is_public": true,
     "created_at": "2025-01-17T21:26:25.744415",
     "updated_at": "2025-06-22T03:55:33.092888"
@@ -1146,7 +1146,7 @@
     "incident_comment_id": "128",
     "incident_id": "50",
     "user_id": "30",
-    "comment_text": "",
+    "comment_text": "We are initiating a rollback of the system to the snapshot taken immediately before the update was applied.",
     "is_public": false,
     "created_at": "2025-01-22T19:08:12.828946",
     "updated_at": "2025-07-17T11:06:07.910267"
@@ -1155,7 +1155,7 @@
     "incident_comment_id": "129",
     "incident_id": "50",
     "user_id": "36",
-    "comment_text": "",
+    "comment_text": "The system rollback is currently in progress. Estimated time for restoration of service is one hour.",
     "is_public": false,
     "created_at": "2024-01-05T03:02:47.189564",
     "updated_at": "2024-03-06T03:58:19.761710"
@@ -1164,7 +1164,7 @@
     "incident_comment_id": "130",
     "incident_id": "50",
     "user_id": "25",
-    "comment_text": "",
+    "comment_text": "Rollback has completed successfully. The financial system is now back online. We will perform a root cause analysis before re-attempting the update.",
     "is_public": false,
     "created_at": "2024-01-02T06:46:17.558257",
     "updated_at": "2024-06-07T22:51:35.057150"
@@ -1173,7 +1173,7 @@
     "incident_comment_id": "131",
     "incident_id": "50",
     "user_id": "31",
-    "comment_text": "",
+    "comment_text": "The failure was due to a dependency issue with the underlying operating system. We will need to patch the OS before attempting the software update again.",
     "is_public": false,
     "created_at": "2024-05-22T23:54:12.550977",
     "updated_at": "2025-05-31T06:25:27.336495"
@@ -1182,7 +1182,7 @@
     "incident_comment_id": "132",
     "incident_id": "51",
     "user_id": "35",
-    "comment_text": "",
+    "comment_text": "The user is assigned to the 'Marketing' role but does not have permission to view the 'Campaign Analytics' dashboard. Please adjust the role permissions.",
     "is_public": true,
     "created_at": "2023-09-08T21:22:31.383766",
     "updated_at": "2024-09-10T19:35:10.615613"
@@ -1191,7 +1191,7 @@
     "incident_comment_id": "133",
     "incident_id": "52",
     "user_id": "26",
-    "comment_text": "",
+    "comment_text": "Reviewing the application's performance metrics, there is a significant delay in database query response times.",
     "is_public": false,
     "created_at": "2024-12-21T10:49:53.928294",
     "updated_at": "2025-01-15T07:36:01.477232"
@@ -1200,7 +1200,7 @@
     "incident_comment_id": "134",
     "incident_id": "52",
     "user_id": "28",
-    "comment_text": "",
+    "comment_text": "The database team has identified several unoptimized queries. They are working on creating new indexes to improve performance.",
     "is_public": true,
     "created_at": "2024-08-31T04:54:08.501323",
     "updated_at": "2025-02-05T00:45:20.394769"
@@ -1209,7 +1209,7 @@
     "incident_comment_id": "135",
     "incident_id": "52",
     "user_id": "29",
-    "comment_text": "",
+    "comment_text": "The new indexes have been deployed to the database.",
     "is_public": false,
     "created_at": "2024-01-25T19:10:47.535282",
     "updated_at": "2024-06-26T18:25:53.104241"
@@ -1218,7 +1218,7 @@
     "incident_comment_id": "136",
     "incident_id": "52",
     "user_id": "27",
-    "comment_text": "",
+    "comment_text": "Users are reporting that the application performance is now much better. The issue appears to be resolved.",
     "is_public": true,
     "created_at": "2025-02-21T04:56:23.685020",
     "updated_at": "2025-03-16T03:43:31.237318"
@@ -1227,7 +1227,7 @@
     "incident_comment_id": "137",
     "incident_id": "53",
     "user_id": "38",
-    "comment_text": "",
+    "comment_text": "We have received multiple reports that the WiFi is down in the entire west wing of the building. Users cannot see the network SSID.",
     "is_public": true,
     "created_at": "2024-07-10T18:12:54.394723",
     "updated_at": "2024-11-28T21:40:10.065970"
@@ -1236,7 +1236,7 @@
     "incident_comment_id": "138",
     "incident_id": "53",
     "user_id": "38",
-    "comment_text": "",
+    "comment_text": "Monitoring tools confirm that the primary access point for the west wing is offline.",
     "is_public": false,
     "created_at": "2024-03-10T21:34:37.959084",
     "updated_at": "2025-01-31T06:15:11.907593"
@@ -1245,7 +1245,7 @@
     "incident_comment_id": "139",
     "incident_id": "53",
     "user_id": "28",
-    "comment_text": "",
+    "comment_text": "I am en route to the west wing to physically inspect the access point and attempt a reboot.",
     "is_public": true,
     "created_at": "2025-05-20T10:34:57.551515",
     "updated_at": "2025-05-22T21:10:25.169358"
@@ -1254,7 +1254,7 @@
     "incident_comment_id": "140",
     "incident_id": "53",
     "user_id": "38",
-    "comment_text": "",
+    "comment_text": "The access point was unresponsive and had to be replaced with a new unit. The network is now operational.",
     "is_public": false,
     "created_at": "2025-01-19T12:11:27.401705",
     "updated_at": "2025-06-21T03:48:27.801711"
@@ -1263,7 +1263,7 @@
     "incident_comment_id": "141",
     "incident_id": "53",
     "user_id": "33",
-    "comment_text": "",
+    "comment_text": "Users have confirmed that they are now able to connect to the WiFi network. The issue is resolved.",
     "is_public": true,
     "created_at": "2023-09-07T23:26:14.712187",
     "updated_at": "2025-06-02T13:41:20.613547"
@@ -1272,7 +1272,7 @@
     "incident_comment_id": "142",
     "incident_id": "54",
     "user_id": "22",
-    "comment_text": "",
+    "comment_text": "The user's mailbox is full. I've enabled online archiving for their account and instructed them on how to move older items to the archive.",
     "is_public": false,
     "created_at": "2024-12-01T00:17:09.856960",
     "updated_at": "2025-01-30T20:52:52.244995"
@@ -1281,7 +1281,7 @@
     "incident_comment_id": "143",
     "incident_id": "54",
     "user_id": "36",
-    "comment_text": "",
+    "comment_text": "The user has moved a significant amount of email to their archive, and their primary mailbox is now below the quota. They are able to send and receive email again.",
     "is_public": false,
     "created_at": "2024-05-05T17:13:54.722661",
     "updated_at": "2025-02-17T03:40:34.457894"
@@ -1290,7 +1290,7 @@
     "incident_comment_id": "144",
     "incident_id": "55",
     "user_id": "41",
-    "comment_text": "",
+    "comment_text": "A recently implemented firewall rule is blocking traffic from our external monitoring service, causing false downtime alerts.",
     "is_public": false,
     "created_at": "2024-12-22T04:19:22.623965",
     "updated_at": "2025-07-08T07:51:29.148171"
@@ -1299,7 +1299,7 @@
     "incident_comment_id": "145",
     "incident_id": "55",
     "user_id": "26",
-    "comment_text": "",
+    "comment_text": "I have identified the overly restrictive rule and am preparing a change to allow traffic from the monitoring service's IP range.",
     "is_public": false,
     "created_at": "2024-12-10T23:15:33.374535",
     "updated_at": "2025-04-13T07:44:01.278169"
@@ -1308,7 +1308,7 @@
     "incident_comment_id": "146",
     "incident_id": "55",
     "user_id": "32",
-    "comment_text": "",
+    "comment_text": "The firewall rule has been updated. The monitoring service should now be able to connect without issue.",
     "is_public": false,
     "created_at": "2024-01-18T12:43:15.701767",
     "updated_at": "2024-09-21T09:50:52.092049"
@@ -1317,7 +1317,7 @@
     "incident_comment_id": "147",
     "incident_id": "56",
     "user_id": "36",
-    "comment_text": "",
+    "comment_text": "The print server's spooler service has crashed, causing all print jobs to become stuck in the queue.",
     "is_public": false,
     "created_at": "2023-08-04T19:58:34.645311",
     "updated_at": "2025-07-01T03:02:17.207553"
@@ -1326,7 +1326,7 @@
     "incident_comment_id": "148",
     "incident_id": "56",
     "user_id": "41",
-    "comment_text": "",
+    "comment_text": "I am restarting the print spooler service to clear the queue.",
     "is_public": true,
     "created_at": "2025-06-05T16:36:52.702312",
     "updated_at": "2025-07-25T03:38:45.174564"
@@ -1335,7 +1335,7 @@
     "incident_comment_id": "149",
     "incident_id": "56",
     "user_id": "20",
-    "comment_text": "",
+    "comment_text": "The print queue is now clear. Users should be able to print again.",
     "is_public": true,
     "created_at": "2024-03-05T14:03:56.195018",
     "updated_at": "2025-06-27T00:51:23.089534"
@@ -1344,7 +1344,7 @@
     "incident_comment_id": "150",
     "incident_id": "56",
     "user_id": "38",
-    "comment_text": "",
+    "comment_text": "The crash was caused by a corrupted print job. The specific job has been deleted, and the spooler is stable.",
     "is_public": false,
     "created_at": "2025-02-01T01:38:21.019862",
     "updated_at": "2025-03-26T03:50:27.060244"
@@ -1353,7 +1353,7 @@
     "incident_comment_id": "151",
     "incident_id": "57",
     "user_id": "41",
-    "comment_text": "",
+    "comment_text": "The primary inventory management application is throwing a critical error upon launch for all users. This is preventing all warehouse operations. Escalating with highest priority.",
     "is_public": false,
     "created_at": "2025-04-17T00:30:57.582004",
     "updated_at": "2025-05-03T14:43:22.345339"
@@ -1362,7 +1362,7 @@
     "incident_comment_id": "152",
     "incident_id": "58",
     "user_id": "40",
-    "comment_text": "",
+    "comment_text": "User is unable to add their corporate email account to their new phone. I will reach out to them to provide assistance.",
     "is_public": false,
     "created_at": "2024-06-14T05:21:45.844972",
     "updated_at": "2024-10-22T09:07:35.650350"
@@ -1371,7 +1371,7 @@
     "incident_comment_id": "153",
     "incident_id": "58",
     "user_id": "38",
-    "comment_text": "",
+    "comment_text": "The issue was a typo in the server name during email setup. I have corrected the configuration, and the user's email is now working.",
     "is_public": true,
     "created_at": "2025-03-13T14:42:14.979254",
     "updated_at": "2025-06-10T12:27:33.091651"
@@ -1380,7 +1380,7 @@
     "incident_comment_id": "154",
     "incident_id": "59",
     "user_id": "26",
-    "comment_text": "",
+    "comment_text": "The web server hosting the application is experiencing a memory leak, causing the slow response times.",
     "is_public": false,
     "created_at": "2025-02-24T21:15:01.570136",
     "updated_at": "2025-04-08T06:37:08.761724"
@@ -1389,7 +1389,7 @@
     "incident_comment_id": "155",
     "incident_id": "59",
     "user_id": "34",
-    "comment_text": "",
+    "comment_text": "We are scheduling an emergency reboot of the web server to resolve the memory issue. A brief service interruption is expected.",
     "is_public": true,
     "created_at": "2023-09-26T12:31:02.578721",
     "updated_at": "2025-03-03T08:34:44.715276"
@@ -1398,7 +1398,7 @@
     "incident_comment_id": "156",
     "incident_id": "59",
     "user_id": "27",
-    "comment_text": "",
+    "comment_text": "The server has been rebooted, and performance has returned to normal. We will now investigate the root cause of the memory leak.",
     "is_public": true,
     "created_at": "2024-07-22T18:33:55.330498",
     "updated_at": "2025-04-22T18:27:24.794922"
@@ -1407,7 +1407,7 @@
     "incident_comment_id": "157",
     "incident_id": "59",
     "user_id": "43",
-    "comment_text": "",
+    "comment_text": "The memory leak was traced back to a faulty plugin in the application. The plugin has been disabled, and the vendor has been notified.",
     "is_public": false,
     "created_at": "2025-06-04T22:55:43.980741",
     "updated_at": "2025-06-23T03:04:41.091019"
@@ -1416,7 +1416,7 @@
     "incident_comment_id": "158",
     "incident_id": "60",
     "user_id": "33",
-    "comment_text": "",
+    "comment_text": "A recent Windows security patch appears to have caused an incompatibility with the current printer driver, leading to printing failures.",
     "is_public": false,
     "created_at": "2024-06-02T04:50:29.279351",
     "updated_at": "2025-06-25T04:05:17.049450"
@@ -1425,7 +1425,7 @@
     "incident_comment_id": "159",
     "incident_id": "60",
     "user_id": "22",
-    "comment_text": "",
+    "comment_text": "We are deploying an updated version of the printer driver that is compatible with the latest Windows patch. This should resolve the issue for all affected users.",
     "is_public": true,
     "created_at": "2023-10-11T07:56:15.592406",
     "updated_at": "2024-01-24T17:10:05.670611"
@@ -1434,7 +1434,7 @@
     "incident_comment_id": "160",
     "incident_id": "60",
     "user_id": "33",
-    "comment_text": "",
+    "comment_text": "The updated driver has been installed successfully, and users have confirmed that they are now able to print without issues.",
     "is_public": false,
     "created_at": "2024-02-05T11:11:56.689892",
     "updated_at": "2024-03-12T07:29:22.416987"
@@ -1443,7 +1443,7 @@
     "incident_comment_id": "161",
     "incident_id": "61",
     "user_id": "40",
-    "comment_text": "",
+    "comment_text": "The mobile time tracking application is frequently freezing and crashing, which is preventing our remote employees from logging their hours. This is a critical issue.",
     "is_public": true,
     "created_at": "2024-06-01T02:39:34.330051",
     "updated_at": "2025-04-05T21:55:41.721164"
@@ -1452,7 +1452,7 @@
     "incident_comment_id": "162",
     "incident_id": "61",
     "user_id": "28",
-    "comment_text": "",
+    "comment_text": "The development team has identified a major memory leak in the latest version of the application. They are developing a hotfix that will be released as soon as possible.",
     "is_public": true,
     "created_at": "2024-09-01T15:36:52.194658",
     "updated_at": "2024-12-18T18:51:46.102130"
@@ -1461,7 +1461,7 @@
     "incident_comment_id": "163",
     "incident_id": "62",
     "user_id": "27",
-    "comment_text": "",
+    "comment_text": "A user from the marketing team has been assigned an incorrect role and is unable to access their team's shared drive. This needs to be corrected as soon as possible.",
     "is_public": true,
     "created_at": "2024-12-18T05:39:53.991527",
     "updated_at": "2025-06-06T09:56:28.173165"
@@ -1470,7 +1470,7 @@
     "incident_comment_id": "164",
     "incident_id": "62",
     "user_id": "24",
-    "comment_text": "",
+    "comment_text": "I have corrected the user's role assignment. They should now have the appropriate permissions to access the marketing drive.",
     "is_public": true,
     "created_at": "2024-11-08T23:06:26.468155",
     "updated_at": "2024-12-27T05:09:28.757017"
@@ -1479,7 +1479,7 @@
     "incident_comment_id": "165",
     "incident_id": "62",
     "user_id": "20",
-    "comment_text": "",
+    "comment_text": "The user has confirmed that they can now access the shared drive. This issue is resolved.",
     "is_public": true,
     "created_at": "2024-06-17T13:10:54.032137",
     "updated_at": "2025-03-05T11:49:06.853625"
@@ -1488,7 +1488,7 @@
     "incident_comment_id": "166",
     "incident_id": "63",
     "user_id": "59",
-    "comment_text": "",
+    "comment_text": "The user is reporting that they are unable to complete the enrollment process for their new mobile device in our MDM system.",
     "is_public": false,
     "created_at": "2023-08-01T08:06:35.908900",
     "updated_at": "2023-12-25T00:57:36.787672"
@@ -1497,7 +1497,7 @@
     "incident_comment_id": "167",
     "incident_id": "63",
     "user_id": "62",
-    "comment_text": "",
+    "comment_text": "I have assisted the user with the MDM enrollment, and their device is now fully configured and compliant with company policy.",
     "is_public": false,
     "created_at": "2024-03-08T23:38:23.661625",
     "updated_at": "2024-12-26T06:13:48.357862"
@@ -1506,7 +1506,7 @@
     "incident_comment_id": "168",
     "incident_id": "64",
     "user_id": "65",
-    "comment_text": "",
+    "comment_text": "The new version of the mobile ordering app is very slow when loading the product catalog.",
     "is_public": true,
     "created_at": "2023-10-18T22:35:13.920130",
     "updated_at": "2024-03-29T02:12:15.829729"
@@ -1515,7 +1515,7 @@
     "incident_comment_id": "169",
     "incident_id": "64",
     "user_id": "51",
-    "comment_text": "",
+    "comment_text": "We have received multiple reports of this issue and have escalated it to the application development team for investigation.",
     "is_public": true,
     "created_at": "2024-12-31T14:59:42.898182",
     "updated_at": "2025-06-10T18:48:13.189522"
@@ -1524,7 +1524,7 @@
     "incident_comment_id": "170",
     "incident_id": "64",
     "user_id": "53",
-    "comment_text": "",
+    "comment_text": "A patch has been released for the app that includes performance optimizations for catalog loading. Please have users update the app.",
     "is_public": true,
     "created_at": "2024-11-14T15:48:07.336686",
     "updated_at": "2024-12-18T01:57:08.230336"
@@ -1533,7 +1533,7 @@
     "incident_comment_id": "171",
     "incident_id": "66",
     "user_id": "53",
-    "comment_text": "",
+    "comment_text": "The user's account is locked due to several incorrect password attempts. I have unlocked the account and advised the user to perform a password reset.",
     "is_public": true,
     "created_at": "2024-10-05T10:00:34.076197",
     "updated_at": "2025-02-04T08:17:26.114974"
@@ -1542,7 +1542,7 @@
     "incident_comment_id": "172",
     "incident_id": "66",
     "user_id": "65",
-    "comment_text": "",
+    "comment_text": "The user has successfully reset their password and is now able to log in.",
     "is_public": true,
     "created_at": "2025-06-14T09:08:36.878896",
     "updated_at": "2025-07-04T18:50:45.448767"
@@ -1551,7 +1551,7 @@
     "incident_comment_id": "173",
     "incident_id": "67",
     "user_id": "60",
-    "comment_text": "",
+    "comment_text": "The new manager's mobile device is failing to enroll in our MDM system, preventing setup from completing. This is a critical issue as they need access to their email.",
     "is_public": true,
     "created_at": "2025-04-27T07:10:52.702847",
     "updated_at": "2025-05-09T18:03:21.751626"
@@ -1560,7 +1560,7 @@
     "incident_comment_id": "174",
     "incident_id": "67",
     "user_id": "46",
-    "comment_text": "",
+    "comment_text": "The device will need to be factory reset before we can attempt enrollment again. I am coordinating with the user to do this.",
     "is_public": true,
     "created_at": "2023-12-03T15:26:52.044392",
     "updated_at": "2024-11-25T18:52:58.293851"
@@ -1569,7 +1569,7 @@
     "incident_comment_id": "175",
     "incident_id": "67",
     "user_id": "55",
-    "comment_text": "",
+    "comment_text": "The device has been reset. I am now re-attempting the enrollment process.",
     "is_public": false,
     "created_at": "2024-03-25T01:22:52.698496",
     "updated_at": "2024-08-10T13:34:29.579367"
@@ -1578,7 +1578,7 @@
     "incident_comment_id": "176",
     "incident_id": "67",
     "user_id": "47",
-    "comment_text": "",
+    "comment_text": "Enrollment was successful this time. The device is now fully configured.",
     "is_public": false,
     "created_at": "2023-09-29T15:52:35.745291",
     "updated_at": "2024-06-01T13:17:04.003973"
@@ -1587,7 +1587,7 @@
     "incident_comment_id": "177",
     "incident_id": "67",
     "user_id": "56",
-    "comment_text": "",
+    "comment_text": "The manager has their device and has confirmed everything is working correctly. Thank you for the prompt resolution.",
     "is_public": true,
     "created_at": "2024-05-12T03:22:03.040534",
     "updated_at": "2024-10-26T10:57:46.770746"
@@ -1596,7 +1596,7 @@
     "incident_comment_id": "178",
     "incident_id": "68",
     "user_id": "49",
-    "comment_text": "",
+    "comment_text": "The user's external keyboard is not working. I have tested it on another computer and it is still unresponsive. The device appears to have failed.",
     "is_public": true,
     "created_at": "2025-03-29T23:25:13.667713",
     "updated_at": "2025-06-07T08:01:30.995620"
@@ -1605,7 +1605,7 @@
     "incident_comment_id": "179",
     "incident_id": "68",
     "user_id": "48",
-    "comment_text": "",
+    "comment_text": "I will order a replacement keyboard for the user.",
     "is_public": true,
     "created_at": "2023-08-14T05:16:20.496221",
     "updated_at": "2023-08-30T15:38:04.121464"
@@ -1614,7 +1614,7 @@
     "incident_comment_id": "180",
     "incident_id": "68",
     "user_id": "61",
-    "comment_text": "",
+    "comment_text": "A new keyboard has been delivered to the user. The old keyboard will be recycled.",
     "is_public": false,
     "created_at": "2024-09-09T12:44:06.597788",
     "updated_at": "2025-03-26T05:37:23.546867"
@@ -1623,7 +1623,7 @@
     "incident_comment_id": "181",
     "incident_id": "69",
     "user_id": "47",
-    "comment_text": "",
+    "comment_text": "Unlocking the user's account now.",
     "is_public": true,
     "created_at": "2024-01-12T22:21:25.047222",
     "updated_at": "2024-03-03T01:58:50.389881"
@@ -1632,7 +1632,7 @@
     "incident_comment_id": "182",
     "incident_id": "69",
     "user_id": "64",
-    "comment_text": "",
+    "comment_text": "The user is being locked out repeatedly. This is likely due to a saved old password on one of their devices trying to authenticate.",
     "is_public": true,
     "created_at": "2024-07-01T10:10:23.410150",
     "updated_at": "2024-10-12T08:15:22.257171"
@@ -1641,7 +1641,7 @@
     "incident_comment_id": "183",
     "incident_id": "69",
     "user_id": "55",
-    "comment_text": "",
+    "comment_text": "I have helped the user sign out of all their devices and reset their password. This should resolve the recurring lockout issue.",
     "is_public": false,
     "created_at": "2025-04-11T11:42:22.649081",
     "updated_at": "2025-04-16T22:02:29.776766"
@@ -1650,7 +1650,7 @@
     "incident_comment_id": "184",
     "incident_id": "70",
     "user_id": "57",
-    "comment_text": "",
+    "comment_text": "A security alert has been triggered for a mobile device that has a blacklisted application installed. Corporate data access from the device has been automatically revoked.",
     "is_public": true,
     "created_at": "2024-10-22T21:58:42.728924",
     "updated_at": "2025-04-08T19:41:43.557254"
@@ -1659,7 +1659,7 @@
     "incident_comment_id": "185",
     "incident_id": "70",
     "user_id": "58",
-    "comment_text": "",
+    "comment_text": "I have contacted the user and instructed them on how to remove the unauthorized application.",
     "is_public": true,
     "created_at": "2023-11-15T23:16:43.186616",
     "updated_at": "2025-07-03T11:41:36.566904"
@@ -1668,7 +1668,7 @@
     "incident_comment_id": "186",
     "incident_id": "70",
     "user_id": "49",
-    "comment_text": "",
+    "comment_text": "The user has confirmed the application has been removed. I am initiating a full security scan of the device before restoring access.",
     "is_public": true,
     "created_at": "2023-12-01T04:41:24.247425",
     "updated_at": "2024-11-09T03:49:37.622748"
@@ -1677,7 +1677,7 @@
     "incident_comment_id": "187",
     "incident_id": "70",
     "user_id": "50",
-    "comment_text": "",
+    "comment_text": "The device has passed the security scan. Access to corporate resources has been restored.",
     "is_public": true,
     "created_at": "2023-08-09T09:22:38.245727",
     "updated_at": "2024-08-22T02:10:04.715573"
@@ -1686,7 +1686,7 @@
     "incident_comment_id": "188",
     "incident_id": "71",
     "user_id": "59",
-    "comment_text": "",
+    "comment_text": "I have unlocked the user's account. Please ask them to attempt to log in again.",
     "is_public": false,
     "created_at": "2025-02-13T05:51:50.572609",
     "updated_at": "2025-07-17T15:29:58.138429"
@@ -1695,7 +1695,7 @@
     "incident_comment_id": "189",
     "incident_id": "71",
     "user_id": "53",
-    "comment_text": "",
+    "comment_text": "The user is still unable to log in and their account is getting locked out immediately. Please investigate for a stuck session.",
     "is_public": true,
     "created_at": "2025-03-24T13:29:11.987440",
     "updated_at": "2025-05-26T07:47:52.287571"
@@ -1704,7 +1704,7 @@
     "incident_comment_id": "190",
     "incident_id": "72",
     "user_id": "62",
-    "comment_text": "",
+    "comment_text": "The user is unable to access a shared network folder that is required for their project work. They are receiving a 'Permission Denied' error.",
     "is_public": false,
     "created_at": "2024-01-09T20:25:03.066392",
     "updated_at": "2024-05-03T23:28:16.645566"
@@ -1713,7 +1713,7 @@
     "incident_comment_id": "191",
     "incident_id": "72",
     "user_id": "48",
-    "comment_text": "",
+    "comment_text": "I've checked the folder's security settings. It appears the user's security group was accidentally removed from the access control list.",
     "is_public": false,
     "created_at": "2025-06-19T05:17:25.112167",
     "updated_at": "2025-07-22T01:04:19.482617"
@@ -1722,7 +1722,7 @@
     "incident_comment_id": "192",
     "incident_id": "72",
     "user_id": "62",
-    "comment_text": "",
+    "comment_text": "I have re-added the security group to the folder's permissions. The user should now be able to access it.",
     "is_public": false,
     "created_at": "2024-02-09T06:48:42.993434",
     "updated_at": "2025-03-15T14:15:23.287305"
@@ -1731,7 +1731,7 @@
     "incident_comment_id": "193",
     "incident_id": "73",
     "user_id": "52",
-    "comment_text": "",
+    "comment_text": "The automated script for creating new user accounts is failing, which is blocking the onboarding process for new employees.",
     "is_public": false,
     "created_at": "2024-05-03T19:25:11.947616",
     "updated_at": "2024-11-14T15:49:22.629927"
@@ -1740,7 +1740,7 @@
     "incident_comment_id": "194",
     "incident_id": "73",
     "user_id": "49",
-    "comment_text": "",
+    "comment_text": "The script is failing due to an expired API key. The development team is working to generate and deploy a new key.",
     "is_public": false,
     "created_at": "2023-12-27T19:25:05.274020",
     "updated_at": "2024-04-30T18:53:23.211450"
@@ -1749,7 +1749,7 @@
     "incident_comment_id": "195",
     "incident_id": "73",
     "user_id": "60",
-    "comment_text": "",
+    "comment_text": "In the meantime, we will create the required accounts manually to unblock the new hires.",
     "is_public": false,
     "created_at": "2025-03-22T06:00:46.709162",
     "updated_at": "2025-06-24T05:32:44.369664"
@@ -1758,7 +1758,7 @@
     "incident_comment_id": "196",
     "incident_id": "74",
     "user_id": "45",
-    "comment_text": "",
+    "comment_text": "The main printer on the 2nd floor has a paper jam. I have cleared all visible paper, but the error message is still displayed.",
     "is_public": true,
     "created_at": "2023-12-15T05:32:23.137554",
     "updated_at": "2024-03-31T01:43:16.357395"
@@ -1767,7 +1767,7 @@
     "incident_comment_id": "197",
     "incident_id": "74",
     "user_id": "46",
-    "comment_text": "",
+    "comment_text": "A hardware technician has been called to inspect the printer, as it may be a faulty sensor.",
     "is_public": true,
     "created_at": "2025-02-27T04:19:53.256873",
     "updated_at": "2025-03-03T13:34:03.327375"
@@ -1776,7 +1776,7 @@
     "incident_comment_id": "198",
     "incident_id": "75",
     "user_id": "62",
-    "comment_text": "",
+    "comment_text": "The entire accounting department is reporting that the financial software is so slow it is unusable. This is severely impacting their ability to close out the quarter.",
     "is_public": false,
     "created_at": "2025-07-11T03:50:37.004583",
     "updated_at": "2025-07-15T11:54:48.036412"
@@ -1785,25 +1785,16 @@
     "incident_comment_id": "199",
     "incident_id": "75",
     "user_id": "54",
-    "comment_text": "",
+    "comment_text": "We've identified that the slowness is being caused by several very large, concurrent reports being run by a single user. We are working to cancel these reports and will advise the user on proper scheduling.",
     "is_public": false,
     "created_at": "2024-06-23T01:44:37.402318",
     "updated_at": "2024-09-30T18:32:40.472032"
-  },
-  "200": {
-    "incident_comment_id": "200",
-    "incident_id": "76",
-    "user_id": "48",
-    "comment_text": "",
-    "is_public": true,
-    "created_at": "2024-09-27T07:26:51.224288",
-    "updated_at": "2025-04-12T21:18:38.372357"
   },
   "201": {
     "incident_comment_id": "201",
     "incident_id": "76",
     "user_id": "59",
-    "comment_text": "",
+    "comment_text": "I've analyzed the headers of the latest batch of spam. A new pattern has emerged that is bypassing our current keyword filters. I'm developing a more specific rule to catch them.",
     "is_public": false,
     "created_at": "2023-09-30T15:19:54.572014",
     "updated_at": "2024-08-08T19:42:51.081038"
@@ -1812,7 +1803,7 @@
     "incident_comment_id": "202",
     "incident_id": "76",
     "user_id": "45",
-    "comment_text": "",
+    "comment_text": "The new filter rule has been deployed. We are monitoring the email quarantine to ensure no legitimate mail is being flagged.",
     "is_public": false,
     "created_at": "2025-04-25T19:04:27.656054",
     "updated_at": "2025-07-27T03:32:45.344753"
@@ -1821,7 +1812,7 @@
     "incident_comment_id": "203",
     "incident_id": "76",
     "user_id": "53",
-    "comment_text": "",
+    "comment_text": "The influx of reported spam has decreased significantly since the new rule was implemented. It appears to be effective.",
     "is_public": false,
     "created_at": "2024-05-15T02:27:26.685627",
     "updated_at": "2024-08-16T13:52:43.346037"
@@ -1830,7 +1821,7 @@
     "incident_comment_id": "204",
     "incident_id": "76",
     "user_id": "47",
-    "comment_text": "",
+    "comment_text": "The spam filtering has been stabilized. We are closing this incident but will continue to monitor for new threats.",
     "is_public": true,
     "created_at": "2024-05-04T20:18:52.672754",
     "updated_at": "2024-11-11T15:14:59.442886"
@@ -1839,7 +1830,7 @@
     "incident_comment_id": "205",
     "incident_id": "77",
     "user_id": "51",
-    "comment_text": "",
+    "comment_text": "The user's account has been locked due to too many failed login attempts. I have unlocked the account and advised the user to reset their password if needed.",
     "is_public": true,
     "created_at": "2024-10-07T17:40:48.517223",
     "updated_at": "2024-10-29T06:37:43.969397"
@@ -1848,7 +1839,7 @@
     "incident_comment_id": "206",
     "incident_id": "77",
     "user_id": "59",
-    "comment_text": "",
+    "comment_text": "The user has confirmed they are now able to log in successfully. They had their caps lock enabled.",
     "is_public": false,
     "created_at": "2024-09-08T09:56:54.489909",
     "updated_at": "2024-09-25T07:22:32.498348"
@@ -1857,7 +1848,7 @@
     "incident_comment_id": "207",
     "incident_id": "78",
     "user_id": "58",
-    "comment_text": "",
+    "comment_text": "Requesting a new user account for our new hire, Jane Doe. She requires standard access to email and the corporate network.",
     "is_public": true,
     "created_at": "2025-06-08T06:53:33.051197",
     "updated_at": "2025-07-02T10:33:26.870773"
@@ -1866,7 +1857,7 @@
     "incident_comment_id": "208",
     "incident_id": "78",
     "user_id": "53",
-    "comment_text": "",
+    "comment_text": "The account for Jane Doe has been created. Login credentials have been sent to her manager.",
     "is_public": true,
     "created_at": "2024-04-13T13:12:14.720745",
     "updated_at": "2025-01-24T18:33:47.987958"
@@ -1875,7 +1866,7 @@
     "incident_comment_id": "209",
     "incident_id": "78",
     "user_id": "60",
-    "comment_text": "",
+    "comment_text": "Please also grant her access to the 'Sales' shared drive.",
     "is_public": false,
     "created_at": "2024-11-30T10:09:23.926553",
     "updated_at": "2025-06-11T21:16:08.399189"
@@ -1884,7 +1875,7 @@
     "incident_comment_id": "210",
     "incident_id": "78",
     "user_id": "58",
-    "comment_text": "",
+    "comment_text": "Access to the 'Sales' shared drive has been granted.",
     "is_public": false,
     "created_at": "2024-12-28T17:00:02.192893",
     "updated_at": "2025-06-19T02:21:39.195484"
@@ -1893,7 +1884,7 @@
     "incident_comment_id": "211",
     "incident_id": "78",
     "user_id": "58",
-    "comment_text": "",
+    "comment_text": "The user has confirmed they have all necessary access. This ticket can be closed.",
     "is_public": true,
     "created_at": "2023-08-03T00:07:04.200319",
     "updated_at": "2024-08-03T14:09:03.066326"
@@ -1902,7 +1893,7 @@
     "incident_comment_id": "212",
     "incident_id": "79",
     "user_id": "53",
-    "comment_text": "",
+    "comment_text": "The latest security patch for the operating system is failing to install, rolling back with a generic error message.",
     "is_public": true,
     "created_at": "2024-05-02T23:32:03.295285",
     "updated_at": "2025-07-19T09:38:20.624487"
@@ -1911,7 +1902,7 @@
     "incident_comment_id": "213",
     "incident_id": "80",
     "user_id": "58",
-    "comment_text": "",
+    "comment_text": "Requesting read-only access to the financial reporting system for our new auditor.",
     "is_public": false,
     "created_at": "2024-11-30T18:23:36.737633",
     "updated_at": "2025-01-01T14:38:57.733436"
@@ -1920,7 +1911,7 @@
     "incident_comment_id": "214",
     "incident_id": "80",
     "user_id": "59",
-    "comment_text": "",
+    "comment_text": "Access has been approved and provisioned. The auditor now has the requested permissions.",
     "is_public": true,
     "created_at": "2025-05-10T22:55:26.044369",
     "updated_at": "2025-05-14T05:30:28.212340"
@@ -1929,7 +1920,7 @@
     "incident_comment_id": "215",
     "incident_id": "82",
     "user_id": "65",
-    "comment_text": "",
+    "comment_text": "We are experiencing delays in receiving emails from external clients. Some emails are arriving hours late.",
     "is_public": true,
     "created_at": "2023-12-07T22:37:23.024585",
     "updated_at": "2024-03-18T19:11:54.756667"
@@ -1938,7 +1929,7 @@
     "incident_comment_id": "216",
     "incident_id": "82",
     "user_id": "65",
-    "comment_text": "",
+    "comment_text": "Our mail gateway is showing a large queue of inbound messages. Investigating the cause of the processing delay.",
     "is_public": false,
     "created_at": "2024-07-23T14:39:48.299525",
     "updated_at": "2024-11-26T10:23:36.519182"
@@ -1947,7 +1938,7 @@
     "incident_comment_id": "217",
     "incident_id": "82",
     "user_id": "65",
-    "comment_text": "",
+    "comment_text": "A recent update to our spam filter has caused a processing bottleneck. We are rolling back the update.",
     "is_public": true,
     "created_at": "2024-07-05T13:15:55.507452",
     "updated_at": "2024-08-09T10:15:53.986497"
@@ -1956,7 +1947,7 @@
     "incident_comment_id": "218",
     "incident_id": "82",
     "user_id": "45",
-    "comment_text": "",
+    "comment_text": "The rollback is complete, and the mail queue is processing normally now.",
     "is_public": false,
     "created_at": "2024-12-29T05:04:26.242603",
     "updated_at": "2025-03-31T03:35:21.282294"
@@ -1965,7 +1956,7 @@
     "incident_comment_id": "219",
     "incident_id": "82",
     "user_id": "51",
-    "comment_text": "",
+    "comment_text": "Email delivery times have returned to normal. Closing the incident.",
     "is_public": false,
     "created_at": "2024-02-05T01:19:25.387098",
     "updated_at": "2024-07-23T09:12:00.095568"
@@ -1974,7 +1965,7 @@
     "incident_comment_id": "220",
     "incident_id": "83",
     "user_id": "63",
-    "comment_text": "",
+    "comment_text": "The installation of a required software package is failing with an 'insufficient permissions' error, despite running as an administrator.",
     "is_public": true,
     "created_at": "2025-07-12T21:39:33.326112",
     "updated_at": "2025-07-21T05:24:13.945001"
@@ -1983,7 +1974,7 @@
     "incident_comment_id": "221",
     "incident_id": "83",
     "user_id": "48",
-    "comment_text": "",
+    "comment_text": "This installer needs to be run from an elevated command prompt. I have provided the user with the correct instructions.",
     "is_public": true,
     "created_at": "2025-07-09T03:34:51.958103",
     "updated_at": "2025-07-14T21:19:37.904255"
@@ -1992,7 +1983,7 @@
     "incident_comment_id": "222",
     "incident_id": "84",
     "user_id": "61",
-    "comment_text": "",
+    "comment_text": "The main web server is experiencing intermittent reboots. This is causing brief outages for our public website.",
     "is_public": true,
     "created_at": "2024-04-18T03:20:08.072209",
     "updated_at": "2024-11-05T04:13:54.418253"
@@ -2001,7 +1992,7 @@
     "incident_comment_id": "223",
     "incident_id": "85",
     "user_id": "79",
-    "comment_text": "",
+    "comment_text": "Users are reporting that the VPN connection is dropping intermittently.",
     "is_public": false,
     "created_at": "2025-05-18T15:55:16.014417",
     "updated_at": "2025-06-06T14:11:43.899768"
@@ -2010,7 +2001,7 @@
     "incident_comment_id": "224",
     "incident_id": "85",
     "user_id": "80",
-    "comment_text": "",
+    "comment_text": "We are investigating a potential issue with the VPN server's network card.",
     "is_public": false,
     "created_at": "2025-03-26T06:18:33.907176",
     "updated_at": "2025-07-20T09:23:00.291764"
@@ -2019,7 +2010,7 @@
     "incident_comment_id": "225",
     "incident_id": "85",
     "user_id": "70",
-    "comment_text": "",
+    "comment_text": "A driver update has been applied to the VPN server's network interface. We will monitor for stability.",
     "is_public": false,
     "created_at": "2024-08-10T05:10:11.683787",
     "updated_at": "2025-01-11T04:48:39.287067"
@@ -2028,7 +2019,7 @@
     "incident_comment_id": "226",
     "incident_id": "85",
     "user_id": "71",
-    "comment_text": "",
+    "comment_text": "The VPN connection has been stable for the past 24 hours. The issue appears to be resolved.",
     "is_public": false,
     "created_at": "2023-11-27T10:43:04.026081",
     "updated_at": "2025-02-19T00:44:24.317478"
@@ -2037,7 +2028,7 @@
     "incident_comment_id": "227",
     "incident_id": "86",
     "user_id": "72",
-    "comment_text": "",
+    "comment_text": "The user's laptop is not powering on. I have tried a different power adapter and docking station with no success. It appears to be a hardware failure.",
     "is_public": true,
     "created_at": "2024-07-22T11:15:47.915994",
     "updated_at": "2025-07-10T23:42:25.829126"
@@ -2046,7 +2037,7 @@
     "incident_comment_id": "228",
     "incident_id": "86",
     "user_id": "79",
-    "comment_text": "",
+    "comment_text": "A replacement laptop is being configured and will be dispatched to the user. We will attempt to recover data from the old device's hard drive.",
     "is_public": false,
     "created_at": "2024-09-07T10:44:46.847638",
     "updated_at": "2025-07-04T11:47:53.062963"
@@ -2055,7 +2046,7 @@
     "incident_comment_id": "229",
     "incident_id": "87",
     "user_id": "78",
-    "comment_text": "",
+    "comment_text": "I am unable to access the 'Finance' shared drive, getting a permission denied error. I require access for month-end reporting.",
     "is_public": false,
     "created_at": "2024-11-05T12:27:40.573144",
     "updated_at": "2025-03-02T13:56:06.424731"
@@ -2064,7 +2055,7 @@
     "incident_comment_id": "230",
     "incident_id": "88",
     "user_id": "73",
-    "comment_text": "",
+    "comment_text": "The installation of the database server update is failing and rolling back. This is preventing us from applying critical security patches.",
     "is_public": true,
     "created_at": "2023-12-14T21:46:48.612905",
     "updated_at": "2024-01-16T05:56:36.254570"
@@ -2073,7 +2064,7 @@
     "incident_comment_id": "231",
     "incident_id": "88",
     "user_id": "66",
-    "comment_text": "",
+    "comment_text": "Checking the installation logs. The failure is due to insufficient disk space in the temporary directory.",
     "is_public": true,
     "created_at": "2023-12-10T16:36:38.238142",
     "updated_at": "2024-09-16T08:59:10.514812"
@@ -2082,7 +2073,7 @@
     "incident_comment_id": "232",
     "incident_id": "88",
     "user_id": "68",
-    "comment_text": "",
+    "comment_text": "I have cleared space in the temp directory and am re-running the installation.",
     "is_public": false,
     "created_at": "2023-11-26T09:42:07.038721",
     "updated_at": "2024-09-06T21:38:34.912218"
@@ -2091,7 +2082,7 @@
     "incident_comment_id": "233",
     "incident_id": "88",
     "user_id": "72",
-    "comment_text": "",
+    "comment_text": "The installation has now completed successfully. The security patches have been applied.",
     "is_public": false,
     "created_at": "2023-10-22T17:33:12.970338",
     "updated_at": "2025-05-22T20:58:20.524774"
@@ -2100,7 +2091,7 @@
     "incident_comment_id": "234",
     "incident_id": "89",
     "user_id": "71",
-    "comment_text": "",
+    "comment_text": "My workstation has crashed twice today while I was working on a large spreadsheet.",
     "is_public": true,
     "created_at": "2024-07-25T02:55:14.170454",
     "updated_at": "2025-01-04T05:48:49.289031"
@@ -2109,7 +2100,7 @@
     "incident_comment_id": "235",
     "incident_id": "89",
     "user_id": "78",
-    "comment_text": "",
+    "comment_text": "Reviewing the system event logs to identify the cause of the crashes.",
     "is_public": false,
     "created_at": "2025-07-20T10:01:17.070097",
     "updated_at": "2025-07-25T13:16:26.958543"
@@ -2118,7 +2109,7 @@
     "incident_comment_id": "236",
     "incident_id": "89",
     "user_id": "74",
-    "comment_text": "",
+    "comment_text": "The logs indicate a potential memory issue. I have initiated a full memory diagnostic test on the user's machine.",
     "is_public": true,
     "created_at": "2024-06-28T00:29:50.847198",
     "updated_at": "2024-08-11T15:06:17.296640"
@@ -2127,7 +2118,7 @@
     "incident_comment_id": "237",
     "incident_id": "89",
     "user_id": "68",
-    "comment_text": "",
+    "comment_text": "The memory test found a faulty RAM module. A replacement has been ordered.",
     "is_public": false,
     "created_at": "2025-01-05T03:32:32.145652",
     "updated_at": "2025-02-04T13:28:56.067004"
@@ -2136,7 +2127,7 @@
     "incident_comment_id": "238",
     "incident_id": "89",
     "user_id": "71",
-    "comment_text": "",
+    "comment_text": "The faulty RAM has been replaced, and the system is now stable.",
     "is_public": true,
     "created_at": "2024-04-10T02:57:52.504325",
     "updated_at": "2024-07-15T23:43:56.297537"
@@ -2145,7 +2136,7 @@
     "incident_comment_id": "239",
     "incident_id": "91",
     "user_id": "82",
-    "comment_text": "",
+    "comment_text": "I'm getting an 'unexpected error' message when trying to save a file in the project management application.",
     "is_public": false,
     "created_at": "2024-02-22T08:26:04.844515",
     "updated_at": "2025-05-04T05:14:10.687392"
@@ -2154,7 +2145,7 @@
     "incident_comment_id": "240",
     "incident_id": "91",
     "user_id": "80",
-    "comment_text": "",
+    "comment_text": "This is a known bug in the current version of the application. The vendor is working on a patch.",
     "is_public": false,
     "created_at": "2025-01-27T03:47:28.329755",
     "updated_at": "2025-06-27T00:44:35.059119"
@@ -2163,7 +2154,7 @@
     "incident_comment_id": "241",
     "incident_id": "91",
     "user_id": "69",
-    "comment_text": "",
+    "comment_text": "The vendor has released a patch for the saving issue. We will deploy it tonight.",
     "is_public": true,
     "created_at": "2024-09-12T23:19:30.757869",
     "updated_at": "2025-04-12T21:53:34.466790"
@@ -2172,7 +2163,7 @@
     "incident_comment_id": "242",
     "incident_id": "91",
     "user_id": "72",
-    "comment_text": "",
+    "comment_text": "The patch has been deployed, and the saving functionality is now working correctly.",
     "is_public": true,
     "created_at": "2024-01-01T00:47:24.858667",
     "updated_at": "2025-07-28T10:13:01.999821"
@@ -2181,7 +2172,7 @@
     "incident_comment_id": "243",
     "incident_id": "91",
     "user_id": "74",
-    "comment_text": "",
+    "comment_text": "Closing the incident as the application error has been resolved.",
     "is_public": false,
     "created_at": "2023-08-02T02:29:29.408967",
     "updated_at": "2025-02-09T23:06:20.477934"
@@ -2190,7 +2181,7 @@
     "incident_comment_id": "244",
     "incident_id": "92",
     "user_id": "81",
-    "comment_text": "",
+    "comment_text": "User is reporting that they are unable to send or receive any emails.",
     "is_public": false,
     "created_at": "2023-12-08T19:34:22.732331",
     "updated_at": "2025-06-11T22:06:05.038239"
@@ -2199,7 +2190,7 @@
     "incident_comment_id": "245",
     "incident_id": "92",
     "user_id": "70",
-    "comment_text": "",
+    "comment_text": "I've checked their account settings. The outgoing mail server (SMTP) is configured incorrectly.",
     "is_public": false,
     "created_at": "2024-01-25T15:51:59.431790",
     "updated_at": "2024-10-26T01:50:39.045232"
@@ -2208,7 +2199,7 @@
     "incident_comment_id": "246",
     "incident_id": "92",
     "user_id": "72",
-    "comment_text": "",
+    "comment_text": "I have remotely connected to the user's machine and corrected the email server settings.",
     "is_public": true,
     "created_at": "2023-10-06T21:18:39.135303",
     "updated_at": "2024-05-11T08:33:02.187775"
@@ -2217,7 +2208,7 @@
     "incident_comment_id": "247",
     "incident_id": "92",
     "user_id": "75",
-    "comment_text": "",
+    "comment_text": "The user has confirmed that their email is now working correctly.",
     "is_public": true,
     "created_at": "2024-02-22T11:19:11.902777",
     "updated_at": "2025-07-19T19:26:40.862318"
@@ -2226,7 +2217,7 @@
     "incident_comment_id": "248",
     "incident_id": "92",
     "user_id": "79",
-    "comment_text": "",
+    "comment_text": "Resolving the incident as the email configuration issue has been fixed.",
     "is_public": true,
     "created_at": "2023-10-27T02:01:09.036154",
     "updated_at": "2024-06-22T17:14:01.184546"
@@ -2235,7 +2226,7 @@
     "incident_comment_id": "249",
     "incident_id": "93",
     "user_id": "70",
-    "comment_text": "",
+    "comment_text": "User reports their desktop computer is frequently freezing and requires a hard reboot.",
     "is_public": true,
     "created_at": "2025-06-06T21:20:42.795467",
     "updated_at": "2025-06-12T11:27:48.781143"
@@ -2244,7 +2235,7 @@
     "incident_comment_id": "250",
     "incident_id": "93",
     "user_id": "75",
-    "comment_text": "",
+    "comment_text": "Running hardware diagnostics to check for any issues with memory or the hard drive.",
     "is_public": false,
     "created_at": "2024-03-22T02:36:50.892154",
     "updated_at": "2024-04-05T09:16:20.678783"
@@ -2253,7 +2244,7 @@
     "incident_comment_id": "251",
     "incident_id": "93",
     "user_id": "73",
-    "comment_text": "",
+    "comment_text": "Diagnostics have passed. I suspect an issue with a recently installed application. Will try uninstalling it.",
     "is_public": false,
     "created_at": "2024-06-29T19:48:06.801239",
     "updated_at": "2025-04-05T04:35:57.595685"
@@ -2262,7 +2253,7 @@
     "incident_comment_id": "252",
     "incident_id": "94",
     "user_id": "77",
-    "comment_text": "",
+    "comment_text": "The firewall is blocking access to a critical web service our team relies on. This started after the maintenance window last night.",
     "is_public": false,
     "created_at": "2024-07-14T03:19:58.544148",
     "updated_at": "2025-03-10T04:30:39.598068"
@@ -2271,7 +2262,7 @@
     "incident_comment_id": "253",
     "incident_id": "97",
     "user_id": "70",
-    "comment_text": "",
+    "comment_text": "The user is reporting that the CRM application crashes every time they try to run a specific report.",
     "is_public": false,
     "created_at": "2024-02-11T13:21:29.459409",
     "updated_at": "2025-01-27T22:38:40.777440"
@@ -2280,7 +2271,7 @@
     "incident_comment_id": "254",
     "incident_id": "97",
     "user_id": "78",
-    "comment_text": "",
+    "comment_text": "This is a known bug with the reporting module. A workaround is to export the data and create the report in Excel.",
     "is_public": true,
     "created_at": "2024-03-26T09:42:31.311392",
     "updated_at": "2024-04-16T21:31:40.281307"
@@ -2289,7 +2280,7 @@
     "incident_comment_id": "255",
     "incident_id": "97",
     "user_id": "78",
-    "comment_text": "",
+    "comment_text": "The development team is aware of the issue and is planning to release a fix in the next version.",
     "is_public": false,
     "created_at": "2024-10-26T02:19:31.585404",
     "updated_at": "2025-02-28T08:51:47.434305"
@@ -2298,7 +2289,7 @@
     "incident_comment_id": "256",
     "incident_id": "98",
     "user_id": "74",
-    "comment_text": "",
+    "comment_text": "User is requesting access to the 'Archive' folder on the shared project drive.",
     "is_public": true,
     "created_at": "2025-06-20T05:12:24.531613",
     "updated_at": "2025-07-29T13:36:40.689389"
@@ -2307,7 +2298,7 @@
     "incident_comment_id": "257",
     "incident_id": "98",
     "user_id": "69",
-    "comment_text": "",
+    "comment_text": "Access has been granted.",
     "is_public": true,
     "created_at": "2025-05-21T15:27:05.116332",
     "updated_at": "2025-07-15T14:00:24.740831"
@@ -2316,7 +2307,7 @@
     "incident_comment_id": "258",
     "incident_id": "98",
     "user_id": "67",
-    "comment_text": "",
+    "comment_text": "The user has confirmed they can now access the folder.",
     "is_public": false,
     "created_at": "2023-11-01T10:20:10.454489",
     "updated_at": "2025-05-03T14:23:51.574116"
@@ -2325,7 +2316,7 @@
     "incident_comment_id": "259",
     "incident_id": "98",
     "user_id": "73",
-    "comment_text": "",
+    "comment_text": "Closing the ticket as the access request has been fulfilled.",
     "is_public": false,
     "created_at": "2025-03-05T19:33:08.441232",
     "updated_at": "2025-04-16T01:23:23.559788"
@@ -2334,7 +2325,7 @@
     "incident_comment_id": "260",
     "incident_id": "98",
     "user_id": "77",
-    "comment_text": "",
+    "comment_text": "Re-opening ticket. The user can access the folder but does not have write permissions, which are required.",
     "is_public": true,
     "created_at": "2025-03-03T07:50:03.606781",
     "updated_at": "2025-06-21T14:14:04.045872"
@@ -2343,7 +2334,7 @@
     "incident_comment_id": "261",
     "incident_id": "100",
     "user_id": "82",
-    "comment_text": "",
+    "comment_text": "Users are reporting that the customer portal is loading very slowly.",
     "is_public": false,
     "created_at": "2024-09-01T05:36:31.587031",
     "updated_at": "2025-03-19T19:08:03.225107"
@@ -2352,9 +2343,558 @@
     "incident_comment_id": "262",
     "incident_id": "100",
     "user_id": "75",
-    "comment_text": "",
+    "comment_text": "We are investigating a potential database performance issue that may be causing the application slowness.",
     "is_public": false,
     "created_at": "2023-10-05T14:35:56.223796",
     "updated_at": "2024-03-22T18:33:28.856180"
+  },
+  "263": {
+    "incident_comment_id": "263",
+    "incident_id": "101",
+    "user_id": "77",
+    "comment_text": "The primary application server has crashed and is not responding.",
+    "is_public": true,
+    "created_at": "2024-01-21T05:28:04.817021",
+    "updated_at": "2025-03-24T07:57:49.763287"
+  },
+  "264": {
+    "incident_comment_id": "264",
+    "incident_id": "101",
+    "user_id": "83",
+    "comment_text": "This is a critical outage affecting all users. We are working to restart the server.",
+    "is_public": true,
+    "created_at": "2024-05-16T02:18:43.770390",
+    "updated_at": "2024-05-25T02:39:43.175993"
+  },
+  "265": {
+    "incident_comment_id": "265",
+    "incident_id": "101",
+    "user_id": "84",
+    "comment_text": "The server is back online. We are investigating the root cause of the crash.",
+    "is_public": true,
+    "created_at": "2023-12-28T23:43:26.664620",
+    "updated_at": "2024-08-09T18:29:49.517899"
+  },
+  "266": {
+    "incident_comment_id": "266",
+    "incident_id": "101",
+    "user_id": "74",
+    "comment_text": "The crash was caused by a memory leak in the application. The vendor has been notified.",
+    "is_public": true,
+    "created_at": "2024-05-18T15:13:13.413645",
+    "updated_at": "2025-02-25T09:47:10.868001"
+  },
+  "267": {
+    "incident_comment_id": "267",
+    "incident_id": "101",
+    "user_id": "82",
+    "comment_text": "A patch has been provided by the vendor to address the memory leak. We will deploy it during the next maintenance window.",
+    "is_public": false,
+    "created_at": "2025-06-25T08:00:20.067232",
+    "updated_at": "2025-06-30T14:40:10.288159"
+  },
+  "268": {
+    "incident_comment_id": "268",
+    "incident_id": "102",
+    "user_id": "80",
+    "comment_text": "One of the redundant power supplies on the file server has failed. The server is still operational but we need to replace the faulty PSU.",
+    "is_public": true,
+    "created_at": "2024-03-03T21:04:18.874464",
+    "updated_at": "2025-04-18T14:22:44.103663"
+  },
+  "269": {
+    "incident_comment_id": "269",
+    "incident_id": "102",
+    "user_id": "68",
+    "comment_text": "A replacement power supply has been ordered and will be installed upon arrival.",
+    "is_public": false,
+    "created_at": "2025-01-16T21:51:23.909390",
+    "updated_at": "2025-07-14T09:50:49.024282"
+  },
+  "270": {
+    "incident_comment_id": "270",
+    "incident_id": "103",
+    "user_id": "82",
+    "comment_text": "The installation of the new ERP client is failing on all machines.",
+    "is_public": false,
+    "created_at": "2025-05-19T08:24:22.021472",
+    "updated_at": "2025-07-01T08:02:12.047740"
+  },
+  "271": {
+    "incident_comment_id": "271",
+    "incident_id": "103",
+    "user_id": "70",
+    "comment_text": "This is a critical issue as it's preventing the entire finance department from working.",
+    "is_public": false,
+    "created_at": "2024-04-17T00:14:05.349607",
+    "updated_at": "2024-06-01T01:03:39.405658"
+  },
+  "272": {
+    "incident_comment_id": "272",
+    "incident_id": "103",
+    "user_id": "69",
+    "comment_text": "The installer package appears to be corrupted. I am downloading a fresh copy from the vendor's website.",
+    "is_public": false,
+    "created_at": "2024-04-23T03:31:04.917871",
+    "updated_at": "2024-07-24T13:44:29.378661"
+  },
+  "273": {
+    "incident_comment_id": "273",
+    "incident_id": "103",
+    "user_id": "67",
+    "comment_text": "The new installer package worked. The ERP client has been successfully installed.",
+    "is_public": true,
+    "created_at": "2024-06-19T00:51:08.157025",
+    "updated_at": "2024-11-23T10:05:58.777852"
+  },
+  "274": {
+    "incident_comment_id": "274",
+    "incident_id": "103",
+    "user_id": "81",
+    "comment_text": "Closing this incident as the software installation was successful.",
+    "is_public": false,
+    "created_at": "2024-02-10T22:40:07.699838",
+    "updated_at": "2024-12-27T21:42:28.101367"
+  },
+  "275": {
+    "incident_comment_id": "275",
+    "incident_id": "104",
+    "user_id": "77",
+    "comment_text": "The main application is unable to connect to the database server.",
+    "is_public": false,
+    "created_at": "2023-10-03T21:49:47.514085",
+    "updated_at": "2024-07-10T18:06:31.231558"
+  },
+  "276": {
+    "incident_comment_id": "276",
+    "incident_id": "104",
+    "user_id": "75",
+    "comment_text": "This is a critical outage affecting all services. Pinging the database server is failing.",
+    "is_public": false,
+    "created_at": "2024-04-23T17:09:35.916459",
+    "updated_at": "2024-07-18T18:50:36.288610"
+  },
+  "277": {
+    "incident_comment_id": "277",
+    "incident_id": "104",
+    "user_id": "74",
+    "comment_text": "A network switch between the application and database servers has failed. We are working to reroute traffic.",
+    "is_public": false,
+    "created_at": "2024-11-01T04:00:45.096785",
+    "updated_at": "2024-11-26T07:13:11.775014"
+  },
+  "278": {
+    "incident_comment_id": "278",
+    "incident_id": "104",
+    "user_id": "79",
+    "comment_text": "Connectivity has been restored. All applications are now back online.",
+    "is_public": true,
+    "created_at": "2024-08-07T13:35:46.109450",
+    "updated_at": "2025-07-20T01:24:34.323807"
+  },
+  "279": {
+    "incident_comment_id": "279",
+    "incident_id": "104",
+    "user_id": "76",
+    "comment_text": "The faulty switch has been replaced. Closing the incident.",
+    "is_public": false,
+    "created_at": "2024-12-04T13:02:51.600989",
+    "updated_at": "2025-05-07T01:07:52.485679"
+  },
+  "280": {
+    "incident_comment_id": "280",
+    "incident_id": "105",
+    "user_id": "83",
+    "comment_text": "Users are reporting that their outbound emails are not being delivered.",
+    "is_public": false,
+    "created_at": "2024-12-31T16:14:51.971908",
+    "updated_at": "2025-07-15T00:30:57.974491"
+  },
+  "281": {
+    "incident_comment_id": "281",
+    "incident_id": "107",
+    "user_id": "70",
+    "comment_text": "The user has forgotten their password and needs it to be reset.",
+    "is_public": true,
+    "created_at": "2024-08-17T17:36:10.289952",
+    "updated_at": "2025-03-29T13:41:18.269176"
+  },
+  "282": {
+    "incident_comment_id": "282",
+    "incident_id": "108",
+    "user_id": "71",
+    "comment_text": "The printer on the 3rd floor is jamming on every print job. I have cleared the paper path, but the issue persists.",
+    "is_public": true,
+    "created_at": "2023-09-29T08:22:06.655367",
+    "updated_at": "2024-08-07T16:37:45.591530"
+  },
+  "283": {
+    "incident_comment_id": "283",
+    "incident_id": "109",
+    "user_id": "74",
+    "comment_text": "The user is unable to configure their corporate email on their new mobile phone.",
+    "is_public": true,
+    "created_at": "2023-09-25T20:33:37.883912",
+    "updated_at": "2025-03-18T01:40:32.423474"
+  },
+  "284": {
+    "incident_comment_id": "284",
+    "incident_id": "109",
+    "user_id": "80",
+    "comment_text": "I have walked the user through the setup process and confirmed their email is now working.",
+    "is_public": false,
+    "created_at": "2024-03-05T05:24:04.290529",
+    "updated_at": "2025-07-21T11:42:27.841022"
+  },
+  "285": {
+    "incident_comment_id": "285",
+    "incident_id": "109",
+    "user_id": "69",
+    "comment_text": "Closing the incident as the user's mobile device is now fully configured.",
+    "is_public": false,
+    "created_at": "2024-12-10T06:54:00.796699",
+    "updated_at": "2025-02-17T18:25:56.876652"
+  },
+  "286": {
+    "incident_comment_id": "286",
+    "incident_id": "111",
+    "user_id": "77",
+    "comment_text": "A user's mobile device has been flagged for having a malicious application installed. Access to corporate resources has been automatically revoked.",
+    "is_public": false,
+    "created_at": "2024-01-27T11:33:59.373373",
+    "updated_at": "2024-09-18T08:18:27.451214"
+  },
+  "287": {
+    "incident_comment_id": "287",
+    "incident_id": "111",
+    "user_id": "80",
+    "comment_text": "I have contacted the user and instructed them to remove the application.",
+    "is_public": false,
+    "created_at": "2024-09-16T19:54:36.609464",
+    "updated_at": "2025-03-09T19:16:24.796002"
+  },
+  "288": {
+    "incident_comment_id": "288",
+    "incident_id": "111",
+    "user_id": "69",
+    "comment_text": "The user has removed the malicious app. A full scan of the device has been initiated before restoring access.",
+    "is_public": true,
+    "created_at": "2025-05-29T05:56:37.005200",
+    "updated_at": "2025-06-29T17:36:21.325238"
+  },
+  "289": {
+    "incident_comment_id": "289",
+    "incident_id": "113",
+    "user_id": "68",
+    "comment_text": "User is approaching their email storage quota. They have been sent a notification to archive old emails.",
+    "is_public": true,
+    "created_at": "2024-08-05T14:30:11.161465",
+    "updated_at": "2024-12-31T10:52:02.128575"
+  },
+  "290": {
+    "incident_comment_id": "290",
+    "incident_id": "113",
+    "user_id": "75",
+    "comment_text": "The user has archived their old emails and is now well below the quota. Closing this warning.",
+    "is_public": true,
+    "created_at": "2024-07-03T01:14:35.178507",
+    "updated_at": "2025-04-11T01:39:45.993562"
+  },
+  "291": {
+    "incident_comment_id": "291",
+    "incident_id": "114",
+    "user_id": "82",
+    "comment_text": "The main ERP application is responding very slowly, making it difficult to process orders.",
+    "is_public": false,
+    "created_at": "2025-03-14T00:48:21.532921",
+    "updated_at": "2025-05-01T22:09:44.656701"
+  },
+  "292": {
+    "incident_comment_id": "292",
+    "incident_id": "115",
+    "user_id": "84",
+    "comment_text": "The automated script for new account creation is failing.",
+    "is_public": true,
+    "created_at": "2024-09-29T06:06:06.233429",
+    "updated_at": "2025-05-20T09:36:11.301853"
+  },
+  "293": {
+    "incident_comment_id": "293",
+    "incident_id": "115",
+    "user_id": "84",
+    "comment_text": "The script is failing because of an expired credential. The team is working on updating it.",
+    "is_public": true,
+    "created_at": "2023-08-10T23:05:05.132930",
+    "updated_at": "2025-01-24T02:32:29.873445"
+  },
+  "294": {
+    "incident_comment_id": "294",
+    "incident_id": "115",
+    "user_id": "82",
+    "comment_text": "In the meantime, we are creating accounts manually for new hires.",
+    "is_public": true,
+    "created_at": "2024-07-01T18:07:21.519893",
+    "updated_at": "2025-05-06T13:55:51.896310"
+  },
+  "295": {
+    "incident_comment_id": "295",
+    "incident_id": "115",
+    "user_id": "79",
+    "comment_text": "The script has been fixed and is now running correctly.",
+    "is_public": true,
+    "created_at": "2025-04-04T23:31:15.122988",
+    "updated_at": "2025-04-10T05:04:48.916792"
+  },
+  "296": {
+    "incident_comment_id": "296",
+    "incident_id": "116",
+    "user_id": "81",
+    "comment_text": "Requesting access for a new team member to the project management software.",
+    "is_public": true,
+    "created_at": "2024-05-28T17:47:34.144180",
+    "updated_at": "2025-03-25T09:26:16.403925"
+  },
+  "297": {
+    "incident_comment_id": "297",
+    "incident_id": "117",
+    "user_id": "66",
+    "comment_text": "User has been locked out of their account. Unlocking now.",
+    "is_public": false,
+    "created_at": "2024-03-15T02:40:56.570136",
+    "updated_at": "2025-03-13T05:13:57.920446"
+  },
+  "298": {
+    "incident_comment_id": "298",
+    "incident_id": "117",
+    "user_id": "69",
+    "comment_text": "User is still locked out. It seems their account is being repeatedly locked. Investigating for a stale session on another device.",
+    "is_public": false,
+    "created_at": "2025-02-01T13:39:18.757190",
+    "updated_at": "2025-04-22T15:53:19.758122"
+  },
+  "299": {
+    "incident_comment_id": "299",
+    "incident_id": "118",
+    "user_id": "84",
+    "comment_text": "Users are reporting that emails sent to external recipients are bouncing back.",
+    "is_public": true,
+    "created_at": "2025-03-10T09:25:52.994710",
+    "updated_at": "2025-04-27T13:59:28.222830"
+  },
+  "300": {
+    "incident_comment_id": "300",
+    "incident_id": "118",
+    "user_id": "76",
+    "comment_text": "A misconfiguration on our outbound mail gateway is causing the delivery failures. The issue has been corrected.",
+    "is_public": true,
+    "created_at": "2025-05-29T20:07:23.517556",
+    "updated_at": "2025-07-18T00:50:02.992345"
+  },
+  "301": {
+    "incident_comment_id": "301",
+    "incident_id": "121",
+    "user_id": "81",
+    "comment_text": "The application is taking a long time to load for all users.",
+    "is_public": false,
+    "created_at": "2023-12-31T01:32:38.405048",
+    "updated_at": "2024-02-14T03:49:17.849843"
+  },
+  "302": {
+    "incident_comment_id": "302",
+    "incident_id": "121",
+    "user_id": "74",
+    "comment_text": "We've identified a bottleneck in the database. The DBA team is investigating.",
+    "is_public": true,
+    "created_at": "2025-07-15T13:54:16.578015",
+    "updated_at": "2025-07-19T05:00:10.742002"
+  },
+  "303": {
+    "incident_comment_id": "303",
+    "incident_id": "121",
+    "user_id": "76",
+    "comment_text": "An inefficient query has been optimized. Application performance should now be back to normal.",
+    "is_public": true,
+    "created_at": "2024-12-02T07:58:39.554019",
+    "updated_at": "2025-03-16T02:45:55.250672"
+  },
+  "304": {
+    "incident_comment_id": "304",
+    "incident_id": "122",
+    "user_id": "80",
+    "comment_text": "The latest software update is causing the application to crash on startup.",
+    "is_public": false,
+    "created_at": "2023-08-12T03:54:40.804873",
+    "updated_at": "2024-05-21T11:49:49.257243"
+  },
+  "305": {
+    "incident_comment_id": "305",
+    "incident_id": "122",
+    "user_id": "84",
+    "comment_text": "We are preparing a hotfix to address the crash issue.",
+    "is_public": true,
+    "created_at": "2023-08-08T19:11:26.976396",
+    "updated_at": "2024-11-23T11:37:21.032346"
+  },
+  "306": {
+    "incident_comment_id": "306",
+    "incident_id": "122",
+    "user_id": "72",
+    "comment_text": "The hotfix has been deployed. The application should now launch correctly.",
+    "is_public": true,
+    "created_at": "2024-06-29T18:34:24.623187",
+    "updated_at": "2024-12-06T16:54:00.189160"
+  },
+  "307": {
+    "incident_comment_id": "307",
+    "incident_id": "122",
+    "user_id": "75",
+    "comment_text": "Confirming the application is now stable. Closing this incident.",
+    "is_public": false,
+    "created_at": "2024-11-20T21:15:19.612102",
+    "updated_at": "2025-05-26T11:02:05.773221"
+  },
+  "308": {
+    "incident_comment_id": "308",
+    "incident_id": "122",
+    "user_id": "67",
+    "comment_text": "Users are reporting that the issue persists even after the hotfix.",
+    "is_public": true,
+    "created_at": "2025-01-09T15:10:07.378382",
+    "updated_at": "2025-03-11T11:27:19.212580"
+  },
+  "309": {
+    "incident_comment_id": "309",
+    "incident_id": "123",
+    "user_id": "78",
+    "comment_text": "The recent update has broken a key feature in the application.",
+    "is_public": true,
+    "created_at": "2025-03-14T06:11:36.336820",
+    "updated_at": "2025-06-06T22:43:46.313067"
+  },
+  "310": {
+    "incident_comment_id": "310",
+    "incident_id": "123",
+    "user_id": "78",
+    "comment_text": "We are rolling back the update to restore functionality.",
+    "is_public": false,
+    "created_at": "2024-12-14T22:02:39.017915",
+    "updated_at": "2025-07-21T05:16:49.313565"
+  },
+  "311": {
+    "incident_comment_id": "311",
+    "incident_id": "123",
+    "user_id": "71",
+    "comment_text": "The rollback is complete. The feature is now working again.",
+    "is_public": true,
+    "created_at": "2024-12-03T13:37:37.575143",
+    "updated_at": "2025-06-13T01:51:29.522827"
+  },
+  "312": {
+    "incident_comment_id": "312",
+    "incident_id": "123",
+    "user_id": "78",
+    "comment_text": "The vendor has been notified of the bug in the update.",
+    "is_public": true,
+    "created_at": "2023-10-02T00:32:02.687452",
+    "updated_at": "2023-12-31T01:59:05.973981"
+  },
+  "313": {
+    "incident_comment_id": "313",
+    "incident_id": "125",
+    "user_id": "90",
+    "comment_text": "We are experiencing a high volume of spam emails. Please investigate.",
+    "is_public": false,
+    "created_at": "2023-12-16T06:43:53.638950",
+    "updated_at": "2025-04-11T18:10:34.801504"
+  },
+  "314": {
+    "incident_comment_id": "314",
+    "incident_id": "126",
+    "user_id": "94",
+    "comment_text": "Users are reporting slow network speeds and lag in video calls.",
+    "is_public": true,
+    "created_at": "2024-12-18T20:03:43.832038",
+    "updated_at": "2025-01-29T18:14:20.211254"
+  },
+  "315": {
+    "incident_comment_id": "315",
+    "incident_id": "126",
+    "user_id": "88",
+    "comment_text": "We are investigating a potential issue with our ISP that might be affecting bandwidth.",
+    "is_public": false,
+    "created_at": "2023-08-18T15:43:46.640748",
+    "updated_at": "2024-07-25T16:34:31.660398"
+  },
+  "316": {
+    "incident_comment_id": "316",
+    "incident_id": "126",
+    "user_id": "100",
+    "comment_text": "Our ISP has confirmed a local outage affecting our area. They are working on a resolution.",
+    "is_public": false,
+    "created_at": "2023-11-12T23:33:00.611590",
+    "updated_at": "2024-04-11T23:53:28.079940"
+  },
+  "317": {
+    "incident_comment_id": "317",
+    "incident_id": "127",
+    "user_id": "94",
+    "comment_text": "Emails sent from our domain are being marked as spam by some recipients.",
+    "is_public": true,
+    "created_at": "2025-04-04T09:09:45.772148",
+    "updated_at": "2025-07-13T02:19:28.558924"
+  },
+  "318": {
+    "incident_comment_id": "318",
+    "incident_id": "127",
+    "user_id": "96",
+    "comment_text": "Investigating our domain's SPF and DKIM records to ensure they are configured correctly.",
+    "is_public": true,
+    "created_at": "2024-08-25T23:30:17.212671",
+    "updated_at": "2024-09-24T01:03:30.114750"
+  },
+  "319": {
+    "incident_comment_id": "319",
+    "incident_id": "127",
+    "user_id": "96",
+    "comment_text": "We found an error in the SPF record. It has now been corrected.",
+    "is_public": true,
+    "created_at": "2025-02-10T14:10:07.114105",
+    "updated_at": "2025-03-07T15:04:15.371962"
+  },
+  "320": {
+    "incident_comment_id": "320",
+    "incident_id": "127",
+    "user_id": "100",
+    "comment_text": "The issue should be resolved as the DNS changes propagate. Closing the incident.",
+    "is_public": false,
+    "created_at": "2024-06-01T20:19:09.266799",
+    "updated_at": "2024-07-21T01:50:51.329393"
+  },
+  "321": {
+    "incident_comment_id": "321",
+    "incident_id": "127",
+    "user_id": "97",
+    "comment_text": "We are still seeing some delivery issues. Re-opening the ticket for further investigation.",
+    "is_public": false,
+    "created_at": "2025-05-18T09:18:53.375767",
+    "updated_at": "2025-07-10T17:13:39.621660"
+  },
+  "322": {
+    "incident_comment_id": "322",
+    "incident_id": "128",
+    "user_id": "103",
+    "comment_text": "A user has reported losing their corporate mobile device. We need to initiate a remote wipe immediately.",
+    "is_public": false,
+    "created_at": "2024-06-18T21:45:45.995461",
+    "updated_at": "2025-01-01T16:11:13.670452"
+  },
+  "323": {
+    "incident_comment_id": "323",
+    "incident_id": "128",
+    "user_id": "87",
+    "comment_text": "The remote wipe command has been sent to the device. Waiting for confirmation.",
+    "is_public": false,
+    "created_at": "2023-08-13T09:53:38.419914",
+    "updated_at": "2024-06-30T08:07:43.002850"
   }
 }
