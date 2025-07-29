@@ -18,8 +18,8 @@
     "first_name": "Judy",
     "last_name": "Lambert",
     "email": "judy.lambert@gmail-taylor.com",
-    "role": "admin",
-    "status": "inactive",
+    "role": "manager",
+    "status": "active",
     "timezone": "America/Chicago",
     "company_id": "1",
     "department_id": "3",
@@ -508,7 +508,7 @@
     "first_name": "Kathleen",
     "last_name": "Gray",
     "email": "kathleen.gray@gmail.com",
-    "role": "admin",
+    "role": "manager",
     "status": "active",
     "timezone": "UTC",
     "company_id": "2",
@@ -550,7 +550,7 @@
     "first_name": "Denise",
     "last_name": "Webster",
     "email": "denise.webster@gmail.com",
-    "role": "admin",
+    "role": "manager",
     "status": "active",
     "timezone": "America/New_York",
     "company_id": "2",
@@ -760,7 +760,7 @@
     "first_name": "Nicole",
     "last_name": "Sanchez",
     "email": "nicole.sanchez@gmail-bush.com",
-    "role": "manager",
+    "role": "admin",
     "status": "active",
     "timezone": "America/Los_Angeles",
     "company_id": "3",
@@ -900,7 +900,7 @@
     "first_name": "Amanda",
     "last_name": "Gill",
     "email": "amanda.gill@gmail-bush.com",
-    "role": "manager",
+    "role": "admin",
     "status": "active",
     "timezone": "Europe/Berlin",
     "company_id": "3",
@@ -942,7 +942,7 @@
     "first_name": "Harry",
     "last_name": "Smith",
     "email": "harry.smith@gmail.com",
-    "role": "admin",
+    "role": "manager",
     "status": "active",
     "timezone": "America/New_York",
     "company_id": "4",
@@ -1264,8 +1264,8 @@
     "first_name": "Billy",
     "last_name": "Avila",
     "email": "billy.avila@gmail.com",
-    "role": "admin",
-    "status": "inactive",
+    "role": "manager",
+    "status": "active",
     "timezone": "Europe/Berlin",
     "company_id": "5",
     "department_id": "16",
@@ -1446,14 +1446,14 @@
     "first_name": "Marilyn",
     "last_name": "Jimenez",
     "email": "marilyn.jimenez@gmail.com",
-    "role": "admin",
-    "status": "inactive",
+    "role": "manager",
+    "status": "active",
     "timezone": "Europe/Berlin",
     "company_id": "5",
     "department_id": "17",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2025-01-02T20:12:26.422724",
-    "updated_at": "2025-04-18T13:13:32.985404"
+    "updated_at": "2025-07-30T01:02:14.521123"
   },
   "105": {
     "user_id": "105",
@@ -1475,13 +1475,13 @@
     "last_name": "Reyes",
     "email": "andrea.reyes@gmail.com",
     "role": "manager",
-    "status": "inactive",
+    "status": "active",
     "timezone": "Asia/Tokyo",
     "company_id": "6",
     "department_id": "19",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2025-06-01T13:53:07.260243",
-    "updated_at": "2025-07-01T01:18:11.640893"
+    "updated_at": "2025-07-30T01:02:14.521440"
   },
   "107": {
     "user_id": "107",
@@ -1516,14 +1516,14 @@
     "first_name": "Justin",
     "last_name": "Evans",
     "email": "justin.evans@gmail.com",
-    "role": "manager",
+    "role": "admin",
     "status": "active",
     "timezone": "America/Chicago",
     "company_id": "6",
     "department_id": "21",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2024-09-30T06:05:03.090113",
-    "updated_at": "2025-07-29T05:48:57.388531"
+    "updated_at": "2025-07-30T01:08:16.739188"
   },
   "110": {
     "user_id": "110",
@@ -1614,14 +1614,14 @@
     "first_name": "Brittany",
     "last_name": "Kane",
     "email": "brittany.kane@gmail.com",
-    "role": "admin",
+    "role": "manager",
     "status": "active",
     "timezone": "Asia/Tokyo",
     "company_id": "6",
     "department_id": "21",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2025-04-27T19:09:56.647228",
-    "updated_at": "2025-06-07T15:33:28.240261"
+    "updated_at": "2025-07-30T01:02:14.521460"
   },
   "117": {
     "user_id": "117",
@@ -1698,14 +1698,14 @@
     "first_name": "Casey",
     "last_name": "Welch",
     "email": "casey.welch@gmail.com",
-    "role": "admin",
-    "status": "inactive",
+    "role": "manager",
+    "status": "active",
     "timezone": "Europe/London",
     "company_id": "6",
     "department_id": "20",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2025-05-31T21:26:41.615721",
-    "updated_at": "2025-07-29T10:09:18.408795"
+    "updated_at": "2025-07-30T01:02:14.521452"
   },
   "123": {
     "user_id": "123",
@@ -1839,13 +1839,13 @@
     "last_name": "Bruce",
     "email": "john.bruce@gmail.com",
     "role": "manager",
-    "status": "inactive",
+    "status": "active",
     "timezone": "America/Denver",
     "company_id": "7",
     "department_id": "25",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2023-12-22T10:03:21.146460",
-    "updated_at": "2024-08-03T12:34:54.542888"
+    "updated_at": "2025-07-30T01:02:14.521556"
   },
   "133": {
     "user_id": "133",
@@ -1866,28 +1866,28 @@
     "first_name": "Victoria",
     "last_name": "Phillips",
     "email": "victoria.phillips@gmail.com",
-    "role": "manager",
+    "role": "admin",
     "status": "active",
     "timezone": "Europe/London",
     "company_id": "7",
     "department_id": "22",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2025-07-12T11:38:34.441429",
-    "updated_at": "2025-07-23T17:36:27.032070"
+    "updated_at": "2025-07-30T01:08:16.739234"
   },
   "135": {
     "user_id": "135",
     "first_name": "Joshua",
     "last_name": "Knight",
     "email": "joshua.knight@gmail.com",
-    "role": "admin",
-    "status": "inactive",
+    "role": "manager",
+    "status": "active",
     "timezone": "UTC",
     "company_id": "7",
     "department_id": "22",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2024-12-11T08:54:31.006110",
-    "updated_at": "2025-05-31T19:06:30.213774"
+    "updated_at": "2025-07-30T01:02:14.521468"
   },
   "136": {
     "user_id": "136",
@@ -1908,14 +1908,14 @@
     "first_name": "Justin",
     "last_name": "Lindsey",
     "email": "justin.lindsey@gmail.com",
-    "role": "manager",
+    "role": "admin",
     "status": "active",
     "timezone": "Europe/Berlin",
     "company_id": "7",
     "department_id": "25",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2024-10-14T22:27:46.347979",
-    "updated_at": "2025-01-24T06:38:46.312125"
+    "updated_at": "2025-07-30T01:08:16.739245"
   },
   "138": {
     "user_id": "138",
@@ -2034,14 +2034,14 @@
     "first_name": "Tammy",
     "last_name": "Dalton",
     "email": "tammy.dalton@gmail.com",
-    "role": "admin",
-    "status": "inactive",
+    "role": "manager",
+    "status": "active",
     "timezone": "Asia/Tokyo",
     "company_id": "8",
     "department_id": "27",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2025-01-08T09:29:55.855587",
-    "updated_at": "2025-07-25T12:27:15.804554"
+    "updated_at": "2025-07-30T01:02:14.521610"
   },
   "147": {
     "user_id": "147",
@@ -2091,27 +2091,27 @@
     "last_name": "Hall",
     "email": "daniel.hall@gmail.com",
     "role": "manager",
-    "status": "inactive",
+    "status": "active",
     "timezone": "America/Los_Angeles",
     "company_id": "8",
     "department_id": "28",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2023-08-17T08:22:47.395044",
-    "updated_at": "2025-05-08T02:57:36.419974"
+    "updated_at": "2025-07-30T01:02:14.521621"
   },
   "151": {
     "user_id": "151",
     "first_name": "Anna",
     "last_name": "Herman",
     "email": "anna.herman@gmail.com",
-    "role": "manager",
+    "role": "admin",
     "status": "active",
     "timezone": "America/New_York",
     "company_id": "8",
     "department_id": "28",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2024-01-07T13:51:03.457502",
-    "updated_at": "2024-02-12T13:08:17.833573"
+    "updated_at": "2025-07-30T01:08:16.739334"
   },
   "152": {
     "user_id": "152",
@@ -2217,13 +2217,13 @@
     "last_name": "Jennings",
     "email": "cory.jennings@gmail.com",
     "role": "manager",
-    "status": "inactive",
+    "status": "active",
     "timezone": "Asia/Tokyo",
     "company_id": "8",
     "department_id": "29",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2024-08-30T06:30:26.053177",
-    "updated_at": "2025-07-22T04:32:11.834319"
+    "updated_at": "2025-07-30T01:02:14.521628"
   },
   "160": {
     "user_id": "160",
@@ -2258,28 +2258,28 @@
     "first_name": "Carla",
     "last_name": "Smith",
     "email": "carla.smith@gmail-walker.com",
-    "role": "admin",
+    "role": "manager",
     "status": "active",
     "timezone": "America/Chicago",
     "company_id": "9",
     "department_id": "31",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2025-02-23T01:04:56.301794",
-    "updated_at": "2025-04-02T04:05:49.288532"
+    "updated_at": "2025-07-30T01:02:14.521638"
   },
   "163": {
     "user_id": "163",
     "first_name": "David",
     "last_name": "Cunningham",
     "email": "david.cunningham@gmail-walker.com",
-    "role": "manager",
+    "role": "admin",
     "status": "active",
     "timezone": "America/New_York",
     "company_id": "9",
     "department_id": "31",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2023-09-18T03:27:14.041992",
-    "updated_at": "2025-02-19T18:43:24.873655"
+    "updated_at": "2025-07-30T01:08:16.739406"
   },
   "164": {
     "user_id": "164",
@@ -2370,14 +2370,14 @@
     "first_name": "Kimberly",
     "last_name": "Palmer",
     "email": "kimberly.palmer@gmail-walker.com",
-    "role": "admin",
-    "status": "inactive",
+    "role": "manager",
+    "status": "active",
     "timezone": "America/Los_Angeles",
     "company_id": "9",
     "department_id": "32",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2023-10-17T15:31:31.940401",
-    "updated_at": "2024-09-09T14:37:18.366520"
+    "updated_at": "2025-07-30T01:02:14.521644"
   },
   "171": {
     "user_id": "171",
@@ -2510,28 +2510,28 @@
     "first_name": "Robert",
     "last_name": "Davis",
     "email": "robert.davis@gmail.com",
-    "role": "manager",
+    "role": "admin",
     "status": "active",
     "timezone": "America/Chicago",
     "company_id": "10",
     "department_id": "40",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2024-06-05T09:50:22.749618",
-    "updated_at": "2025-03-11T04:47:06.700617"
+    "updated_at": "2025-07-30T01:08:16.739495"
   },
   "181": {
     "user_id": "181",
     "first_name": "Nicholas",
     "last_name": "Hernandez",
     "email": "nicholas.hernandez@gmail.com",
-    "role": "admin",
-    "status": "inactive",
+    "role": "manager",
+    "status": "active",
     "timezone": "America/Chicago",
     "company_id": "10",
     "department_id": "39",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2025-06-02T09:26:21.302154",
-    "updated_at": "2025-06-06T05:34:08.275251"
+    "updated_at": "2025-07-30T01:02:14.521799"
   },
   "182": {
     "user_id": "182",
@@ -2594,14 +2594,14 @@
     "first_name": "Caroline",
     "last_name": "Bell",
     "email": "caroline.bell@gmail.com",
-    "role": "admin",
-    "status": "inactive",
+    "role": "manager",
+    "status": "active",
     "timezone": "America/New_York",
     "company_id": "10",
     "department_id": "38",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2024-09-23T16:10:49.068691",
-    "updated_at": "2024-11-28T09:20:26.475028"
+    "updated_at": "2025-07-30T01:02:14.521788"
   },
   "187": {
     "user_id": "187",
@@ -2777,13 +2777,13 @@
     "last_name": "Campbell",
     "email": "russell.campbell@gmail.com",
     "role": "manager",
-    "status": "inactive",
+    "status": "active",
     "timezone": "UTC",
     "company_id": "10",
     "department_id": "40",
     "password_hash": "2a647c8ed1f7e0a8133f5973673ce39794f8b3cfcbcb1f2765136951be33b876",
     "created_at": "2024-12-06T00:52:19.029777",
-    "updated_at": "2025-03-30T15:45:44.248357"
+    "updated_at": "2025-07-30T01:02:14.521807"
   },
   "200": {
     "user_id": "200",

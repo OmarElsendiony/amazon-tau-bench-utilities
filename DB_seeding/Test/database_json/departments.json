@@ -10,7 +10,7 @@
   "2": {
     "department_id": "2",
     "name": "Development",
-    "manager_id": "15",
+    "manager_id": "3",
     "company_id": "1",
     "created_at": "2023-08-01T16:20:11.401425",
     "updated_at": "2025-02-12T23:21:37.393466"
@@ -34,7 +34,7 @@
   "5": {
     "department_id": "5",
     "name": "Sales",
-    "manager_id": "34",
+    "manager_id": "23",
     "company_id": "2",
     "created_at": "2024-06-06T01:59:51.236053",
     "updated_at": "2024-06-10T03:07:04.304613"
@@ -66,7 +66,7 @@
   "9": {
     "department_id": "9",
     "name": "Development",
-    "manager_id": "54",
+    "manager_id": "62",
     "company_id": "3",
     "created_at": "2023-11-15T03:00:54.685714",
     "updated_at": "2024-02-02T10:53:37.313737"
@@ -82,7 +82,7 @@
   "11": {
     "department_id": "11",
     "name": "Finance",
-    "manager_id": "46",
+    "manager_id": "61",
     "company_id": "3",
     "created_at": "2025-03-01T20:23:14.830985",
     "updated_at": "2025-07-08T17:13:47.651819"
