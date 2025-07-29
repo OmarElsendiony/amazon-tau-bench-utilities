@@ -1,0 +1,82 @@
+{
+  "1": {
+    "company_id": "1",
+    "name": "Sanchez-Taylor",
+    "industry": "Healthcare",
+    "address": "600 Jeffery Parkways, New Jamesside, MT 29394",
+    "created_at": "2024-11-07T13:02:15.865134",
+    "updated_at": "2024-11-14T03:31:27.201087"
+  },
+  "2": {
+    "company_id": "2",
+    "name": "Blake and Sons",
+    "industry": "Technology",
+    "address": "2351 Noah Knolls Suite 940, Herrerafurt, CO 72858",
+    "created_at": "2024-06-21T18:47:47.903184",
+    "updated_at": "2024-10-11T20:03:41.340216"
+  },
+  "3": {
+    "company_id": "3",
+    "name": "Ray-Bush",
+    "industry": "Retail",
+    "address": "1316 Chavez Village, Franciscostad, IL 88342",
+    "created_at": "2024-02-28T23:05:05.651081",
+    "updated_at": "2025-01-18T17:23:53.556934"
+  },
+  "4": {
+    "company_id": "4",
+    "name": "Jones, Reid and Ferguson",
+    "industry": "Manufacturing",
+    "address": "4835 Jeremy Bypass Suite 641, New Nancy, MD 28370",
+    "created_at": "2024-02-09T20:22:47.412693",
+    "updated_at": "2025-06-25T15:19:22.579106"
+  },
+  "5": {
+    "company_id": "5",
+    "name": "Ellis, Baker and Wright",
+    "industry": "Manufacturing",
+    "address": "969 Cox Dam Suite 101, Lake Ernest, TX 55834",
+    "created_at": "2024-11-19T05:21:56.949124",
+    "updated_at": "2025-02-27T01:28:35.132592"
+  },
+  "6": {
+    "company_id": "6",
+    "name": "Ferrell, Rice and Maddox",
+    "industry": "Finance",
+    "address": "184 Rodriguez Mews, South Aaron, VA 94830",
+    "created_at": "2024-10-07T03:54:11.921394",
+    "updated_at": "2025-01-28T19:51:21.796028"
+  },
+  "7": {
+    "company_id": "7",
+    "name": "Romero Inc",
+    "industry": "Healthcare",
+    "address": "893 Nathaniel Estates Apt. 957, North Sarahport, IA 08093",
+    "created_at": "2024-02-07T05:32:57.665701",
+    "updated_at": "2024-11-02T17:14:14.777842"
+  },
+  "8": {
+    "company_id": "8",
+    "name": "Miller Group",
+    "industry": "Healthcare",
+    "address": "78248 Brandt Plains, Lake Larry, TN 85681",
+    "created_at": "2024-01-21T19:19:28.199926",
+    "updated_at": "2024-12-01T13:22:24.286531"
+  },
+  "9": {
+    "company_id": "9",
+    "name": "Martinez-Walker",
+    "industry": "Government",
+    "address": "301 Jeremy Bypass, Chadbury, KY 88185",
+    "created_at": "2024-04-27T11:55:37.899190",
+    "updated_at": "2025-06-13T14:09:08.091396"
+  },
+  "10": {
+    "company_id": "10",
+    "name": "Walls, Duncan and Kennedy",
+    "industry": "Technology",
+    "address": "11656 Owens Stream Apt. 106, Laurenville, IA 25613",
+    "created_at": "2024-07-18T04:39:51.587802",
+    "updated_at": "2025-02-06T03:37:36.768023"
+  }
+}

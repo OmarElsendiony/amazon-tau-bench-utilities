@@ -334,6 +334,26 @@
           "type": "string"
         }
       ]
+    },
+    "LinkIncidentToKB": {
+      "inputs": [
+        {
+          "name": "incident_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "knowledge_base_id",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "name": "link_id",
+          "type": "string"
+        }
+      ]
     }
   },
   "edges": [
@@ -407,7 +427,7 @@
         "output": "incident_id",
         "input": "incident_id"
       },
-      "explicit": true
+      "explicit": false
     },
     {
       "from": "SearchIncidents",
@@ -416,7 +436,7 @@
         "output": "incident_id",
         "input": "incident_id"
       },
-      "explicit": true
+      "explicit": false
     },
     {
       "from": "SearchIncidents",
@@ -434,7 +454,7 @@
         "output": "incident_id",
         "input": "incident_id"
       },
-      "explicit": true
+      "explicit": false
     },
     {
       "from": "GetIncident",
@@ -443,7 +463,7 @@
         "output": "incident_id",
         "input": "incident_id"
       },
-      "explicit": true
+      "explicit": false
     },
     {
       "from": "GetIncident",
@@ -461,7 +481,7 @@
         "output": "knowledge_base_id",
         "input": "knowledge_base_id"
       },
-      "explicit": true
+      "explicit": false
     },
     {
       "from": "GetIncident",
@@ -470,7 +490,7 @@
         "output": "incident_id",
         "input": "incident_id"
       },
-      "explicit": true
+      "explicit": false
     }
   ]
 }

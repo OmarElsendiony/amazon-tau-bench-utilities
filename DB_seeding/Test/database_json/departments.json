@@ -1,0 +1,322 @@
+{
+  "1": {
+    "department_id": "1",
+    "name": "Human Resources",
+    "manager_id": "8",
+    "company_id": "1",
+    "created_at": "2024-06-03T02:01:17.714830",
+    "updated_at": "2024-09-27T16:51:06.566097"
+  },
+  "2": {
+    "department_id": "2",
+    "name": "Development",
+    "manager_id": "15",
+    "company_id": "1",
+    "created_at": "2023-08-01T16:20:11.401425",
+    "updated_at": "2025-02-12T23:21:37.393466"
+  },
+  "3": {
+    "department_id": "3",
+    "name": "Security",
+    "manager_id": "2",
+    "company_id": "1",
+    "created_at": "2024-11-05T20:32:07.703337",
+    "updated_at": "2025-01-14T11:05:17.395299"
+  },
+  "4": {
+    "department_id": "4",
+    "name": "IT Support",
+    "manager_id": "37",
+    "company_id": "2",
+    "created_at": "2025-01-20T19:22:30.829070",
+    "updated_at": "2025-05-05T11:57:04.397849"
+  },
+  "5": {
+    "department_id": "5",
+    "name": "Sales",
+    "manager_id": "34",
+    "company_id": "2",
+    "created_at": "2024-06-06T01:59:51.236053",
+    "updated_at": "2024-06-10T03:07:04.304613"
+  },
+  "6": {
+    "department_id": "6",
+    "name": "Human Resources",
+    "manager_id": null,
+    "company_id": "2",
+    "created_at": "2023-09-22T23:35:37.186427",
+    "updated_at": "2025-05-11T14:26:43.866983"
+  },
+  "7": {
+    "department_id": "7",
+    "name": "Security",
+    "manager_id": "40",
+    "company_id": "2",
+    "created_at": "2025-05-19T11:48:28.162563",
+    "updated_at": "2025-06-27T06:34:11.306746"
+  },
+  "8": {
+    "department_id": "8",
+    "name": "Marketing",
+    "manager_id": null,
+    "company_id": "2",
+    "created_at": "2025-03-29T21:56:57.409197",
+    "updated_at": "2025-06-08T18:46:43.397124"
+  },
+  "9": {
+    "department_id": "9",
+    "name": "Development",
+    "manager_id": "54",
+    "company_id": "3",
+    "created_at": "2023-11-15T03:00:54.685714",
+    "updated_at": "2024-02-02T10:53:37.313737"
+  },
+  "10": {
+    "department_id": "10",
+    "name": "Sales",
+    "manager_id": "63",
+    "company_id": "3",
+    "created_at": "2024-03-10T23:05:58.215648",
+    "updated_at": "2025-06-08T11:57:10.387478"
+  },
+  "11": {
+    "department_id": "11",
+    "name": "Finance",
+    "manager_id": "46",
+    "company_id": "3",
+    "created_at": "2025-03-01T20:23:14.830985",
+    "updated_at": "2025-07-08T17:13:47.651819"
+  },
+  "12": {
+    "department_id": "12",
+    "name": "Finance",
+    "manager_id": "84",
+    "company_id": "4",
+    "created_at": "2025-05-15T20:12:04.788928",
+    "updated_at": "2025-05-31T12:59:24.049258"
+  },
+  "13": {
+    "department_id": "13",
+    "name": "Operations",
+    "manager_id": "68",
+    "company_id": "4",
+    "created_at": "2024-01-28T02:54:25.840144",
+    "updated_at": "2024-03-24T11:57:58.917545"
+  },
+  "14": {
+    "department_id": "14",
+    "name": "Marketing",
+    "manager_id": "70",
+    "company_id": "4",
+    "created_at": "2025-02-18T04:09:39.544801",
+    "updated_at": "2025-07-10T20:57:43.935775"
+  },
+  "15": {
+    "department_id": "15",
+    "name": "Sales",
+    "manager_id": null,
+    "company_id": "5",
+    "created_at": "2024-05-21T12:55:14.008121",
+    "updated_at": "2025-02-14T22:15:51.990401"
+  },
+  "16": {
+    "department_id": "16",
+    "name": "Human Resources",
+    "manager_id": "91",
+    "company_id": "5",
+    "created_at": "2023-11-19T20:06:21.382904",
+    "updated_at": "2025-06-16T06:13:08.558677"
+  },
+  "17": {
+    "department_id": "17",
+    "name": "Security",
+    "manager_id": "104",
+    "company_id": "5",
+    "created_at": "2025-04-20T19:21:42.467266",
+    "updated_at": "2025-07-27T04:48:27.216704"
+  },
+  "18": {
+    "department_id": "18",
+    "name": "Finance",
+    "manager_id": "85",
+    "company_id": "5",
+    "created_at": "2025-03-12T12:51:44.568247",
+    "updated_at": "2025-07-13T02:04:33.132081"
+  },
+  "19": {
+    "department_id": "19",
+    "name": "Human Resources",
+    "manager_id": "106",
+    "company_id": "6",
+    "created_at": "2023-08-17T04:12:28.815975",
+    "updated_at": "2025-01-22T21:40:20.044324"
+  },
+  "20": {
+    "department_id": "20",
+    "name": "Marketing",
+    "manager_id": "122",
+    "company_id": "6",
+    "created_at": "2024-03-28T10:00:14.405613",
+    "updated_at": "2025-06-25T19:14:04.808604"
+  },
+  "21": {
+    "department_id": "21",
+    "name": "IT Support",
+    "manager_id": "116",
+    "company_id": "6",
+    "created_at": "2025-03-06T07:24:28.862721",
+    "updated_at": "2025-07-09T19:51:24.640360"
+  },
+  "22": {
+    "department_id": "22",
+    "name": "Operations",
+    "manager_id": "135",
+    "company_id": "7",
+    "created_at": "2025-03-12T12:28:12.549685",
+    "updated_at": "2025-04-18T14:53:00.372478"
+  },
+  "23": {
+    "department_id": "23",
+    "name": "Sales",
+    "manager_id": null,
+    "company_id": "7",
+    "created_at": "2025-02-23T11:14:06.878246",
+    "updated_at": "2025-03-12T08:13:12.571134"
+  },
+  "24": {
+    "department_id": "24",
+    "name": "Finance",
+    "manager_id": "130",
+    "company_id": "7",
+    "created_at": "2025-04-26T07:44:15.622231",
+    "updated_at": "2025-07-16T05:54:43.787655"
+  },
+  "25": {
+    "department_id": "25",
+    "name": "IT Support",
+    "manager_id": "132",
+    "company_id": "7",
+    "created_at": "2024-01-08T08:31:22.930978",
+    "updated_at": "2025-04-16T08:31:28.521675"
+  },
+  "26": {
+    "department_id": "26",
+    "name": "Development",
+    "manager_id": "154",
+    "company_id": "8",
+    "created_at": "2024-06-29T21:01:42.113943",
+    "updated_at": "2024-10-28T08:01:32.575230"
+  },
+  "27": {
+    "department_id": "27",
+    "name": "Sales",
+    "manager_id": "146",
+    "company_id": "8",
+    "created_at": "2025-03-01T06:47:15.039983",
+    "updated_at": "2025-04-04T11:43:22.005605"
+  },
+  "28": {
+    "department_id": "28",
+    "name": "IT Support",
+    "manager_id": "150",
+    "company_id": "8",
+    "created_at": "2023-08-16T08:33:57.029768",
+    "updated_at": "2024-01-01T02:24:35.408696"
+  },
+  "29": {
+    "department_id": "29",
+    "name": "Marketing",
+    "manager_id": "159",
+    "company_id": "8",
+    "created_at": "2024-03-25T13:18:46.632998",
+    "updated_at": "2025-05-23T23:15:06.953987"
+  },
+  "30": {
+    "department_id": "30",
+    "name": "Operations",
+    "manager_id": "144",
+    "company_id": "8",
+    "created_at": "2025-07-04T10:05:26.176872",
+    "updated_at": "2025-07-11T10:35:43.601557"
+  },
+  "31": {
+    "department_id": "31",
+    "name": "Sales",
+    "manager_id": "162",
+    "company_id": "9",
+    "created_at": "2024-11-09T01:00:52.725908",
+    "updated_at": "2025-02-21T23:17:39.670592"
+  },
+  "32": {
+    "department_id": "32",
+    "name": "Security",
+    "manager_id": "170",
+    "company_id": "9",
+    "created_at": "2025-07-14T19:45:28.977822",
+    "updated_at": "2025-07-22T17:35:24.762945"
+  },
+  "33": {
+    "department_id": "33",
+    "name": "Operations",
+    "manager_id": null,
+    "company_id": "9",
+    "created_at": "2025-06-14T05:58:23.868320",
+    "updated_at": "2025-06-19T11:26:33.526476"
+  },
+  "34": {
+    "department_id": "34",
+    "name": "Development",
+    "manager_id": null,
+    "company_id": "9",
+    "created_at": "2025-07-06T23:34:06.179742",
+    "updated_at": "2025-07-11T00:23:23.770159"
+  },
+  "35": {
+    "department_id": "35",
+    "name": "Finance",
+    "manager_id": "166",
+    "company_id": "9",
+    "created_at": "2025-07-01T05:50:56.621974",
+    "updated_at": "2025-07-08T18:20:52.085265"
+  },
+  "36": {
+    "department_id": "36",
+    "name": "Marketing",
+    "manager_id": null,
+    "company_id": "10",
+    "created_at": "2023-10-17T04:07:12.148285",
+    "updated_at": "2024-07-26T05:56:31.813562"
+  },
+  "37": {
+    "department_id": "37",
+    "name": "Operations",
+    "manager_id": null,
+    "company_id": "10",
+    "created_at": "2025-01-11T13:16:38.993002",
+    "updated_at": "2025-03-14T23:33:28.338959"
+  },
+  "38": {
+    "department_id": "38",
+    "name": "IT Support",
+    "manager_id": "186",
+    "company_id": "10",
+    "created_at": "2024-10-14T07:28:26.044364",
+    "updated_at": "2025-03-10T17:39:19.116091"
+  },
+  "39": {
+    "department_id": "39",
+    "name": "Security",
+    "manager_id": "181",
+    "company_id": "10",
+    "created_at": "2024-05-06T02:04:37.311489",
+    "updated_at": "2025-01-20T06:08:15.731638"
+  },
+  "40": {
+    "department_id": "40",
+    "name": "Human Resources",
+    "manager_id": "199",
+    "company_id": "10",
+    "created_at": "2024-01-31T21:49:10.734417",
+    "updated_at": "2025-02-20T23:01:58.490284"
+  }
+}

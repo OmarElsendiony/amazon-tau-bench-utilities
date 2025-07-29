@@ -1,398 +1,225 @@
+import networkx as nx
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyBboxPatch, Circle
 import json
-import graphviz
-from pathlib import Path
+import numpy as np
 
-def create_graphviz_api_graph(data, output_name="api_connections"):
-    """
-    Create a simplified API connection graph using Graphviz
-    """
-    # Create a new directed graph
-    dot = graphviz.Digraph(comment='API Connections')
+with open("interface_1.json") as f:
+    mydict = json.load(f)
+
+def create_api_graph_networkx(data):
+    G = nx.DiGraph()
     
-    # Set graph attributes for better layout and complete SVG rendering
-    dot.attr(rankdir='TB')  # Top to Bottom layout
-    dot.attr(splines='curved')  # Use curved splines for smoother edges
-    dot.attr(nodesep='1.2')  # Increased horizontal separation
-    dot.attr(ranksep='2.0')  # Increased vertical separation
-    dot.attr(bgcolor='white')
+    colors = {
+        'api': '#4A90E2',
+        'input': '#7ED321',
+        'output': '#F5A623',
+        'input_edge': '#50C878',
+        'output_edge': '#FF6B35',
+        'explicit_connection': '#000000',
+        'implicit_connection': '#9013FE'
+    }
     
-    # Remove size constraints that can cause clipping
-    # dot.attr(size='12,16')  # Remove this line
-    # dot.attr(dpi='96')      # Remove this line
-    
-    # Use margin instead of size constraints
-    dot.attr(margin='1.0')
-    dot.attr(pad='1.0')
-    
-    # Set default node attributes
-    dot.attr('node', 
-             shape='box',
-             style='rounded,filled',
-             fillcolor='lightblue',
-             color='black',
-             fontname='Arial',  # Use a more standard font
-             fontsize='11',
-             margin='0.4,0.2',
-             width='2.0',   # Reduced width
-             height='0.8')  # Reduced height
-    
-    # Set default edge attributes
-    dot.attr('edge',
-             fontname='Arial',
-             fontsize='9',
-             color='black',
-             arrowsize='0.8',
-             labeldistance='2.0',  # Distance of label from edge
-             labelangle='0',       # Keep labels horizontal
-             labelfloat='true')    # Allow labels to float for better positioning
-    
-    # Add API nodes
+    node_attrs = {}
+    pos = {}
     api_names = list(data["APIs"].keys())
+    n_apis = len(api_names)
+    radius = max(15, n_apis * 2)
     
-    # Group APIs by type for better layout
-    read_apis = []
-    create_update_apis = []
-    
-    for api_name in api_names:
-        # Simple heuristic to group APIs
-        if any(keyword in api_name.lower() for keyword in ['get', 'search', 'list', 'find']):
-            read_apis.append(api_name)
-        else:
-            create_update_apis.append(api_name)
-    
-    # Add read API nodes
-    for api_name in read_apis:
-        display_name = format_api_name(api_name)
-        dot.node(api_name, 
-                display_name,
-                fillcolor='lightgreen',
-                tooltip=f'Read API: {api_name}')
-    
-    # Add create/update API nodes
-    for api_name in create_update_apis:
-        display_name = format_api_name(api_name)
-        dot.node(api_name, 
-                display_name,
-                fillcolor='lightcoral',
-                tooltip=f'Create/Update API: {api_name}')
-    
-    # Add edges based on API connections
-    add_edges_to_graph(dot, data)
-    
-    return dot
-
-def create_hierarchical_layout(data, output_name="api_hierarchy"):
-    """
-    Create a hierarchical layout based on API dependencies
-    """
-    dot = graphviz.Digraph(comment='API Hierarchy')
-    
-    # Set graph attributes for hierarchical layout
-    dot.attr(rankdir='TB')
-    dot.attr(splines='curved')  # Use curved splines for smoother edges
-    dot.attr(nodesep='1.0')
-    dot.attr(ranksep='1.5')
-    dot.attr(bgcolor='white')
-    dot.attr(margin='1.0')
-    dot.attr(pad='1.0')
-    
-    # Remove size constraints
-    # dot.attr(size='14,18')
-    # dot.attr(dpi='96')
-    
-    # Set node attributes
-    dot.attr('node',
-             shape='box',
-             style='rounded,filled',
-             fontname='Arial',
-             fontsize='10',
-             margin='0.3,0.2')
-    
-    # Set edge attributes
-    dot.attr('edge',
-             fontname='Arial',
-             fontsize='8',
-             arrowsize='0.7',
-             labeldistance='2.0',
-             labelangle='0',
-             labelfloat='true')
-    
-    # Analyze API dependencies to create layers
-    source_apis, transformer_apis, consumer_apis = categorize_apis(data)
-    
-    # Add nodes with proper clustering
-    add_clustered_nodes(dot, source_apis, transformer_apis, consumer_apis)
-    
-    # Add edges
-    add_edges_to_graph(dot, data, simplified=True)
-    
-    return dot
-
-def format_api_name(api_name):
-    """Format API name for better display"""
-    display_name = api_name.replace('_', ' ').title()
-    
-    # Handle long names by splitting intelligently
-    if len(display_name) > 18:
-        words = display_name.split()
-        if len(words) > 2:
-            # Find best split point
-            mid = len(words) // 2
-            line1 = ' '.join(words[:mid])
-            line2 = ' '.join(words[mid:])
-            
-            # Ensure neither line is too long
-            if len(line1) > 15 or len(line2) > 15:
-                # Try different split
-                for i in range(1, len(words)):
-                    line1 = ' '.join(words[:i])
-                    line2 = ' '.join(words[i:])
-                    if len(line1) <= 15 and len(line2) <= 15:
-                        break
-            
-            display_name = f"{line1}\\n{line2}"
-        elif len(display_name) > 25:
-            # Single long word, truncate with ellipsis
-            display_name = display_name[:22] + "..."
-    
-    return display_name
-
-def add_edges_to_graph(dot, data, simplified=False):
-    """Add edges to the graph, avoiding duplicates"""
-    if "edges" not in data:
-        return
-    
-    connections = {}
-    
-    for edge in data["edges"]:
-        from_api = edge["from"]
-        to_api = edge["to"]
-        is_explicit = edge.get("explicit", True)
+    for i, (api_name, api_data) in enumerate(data["APIs"].items()):
+        angle = 2 * np.pi * i / n_apis
+        api_x = radius * np.cos(angle)
+        api_y = radius * np.sin(angle)
         
-        connection_key = f"{from_api}->{to_api}"
+        G.add_node(api_name)
+        pos[api_name] = (api_x, api_y)
+        node_attrs[api_name] = {
+            'node_type': 'api',
+            'color': colors['api'],
+            'shape': 'rectangle',
+            'size': 3000
+        }
         
-        if connection_key not in connections:
-            connections[connection_key] = {
-                'explicit': is_explicit,
-                'output': edge["connections"]["output"],
-                'input': edge["connections"]["input"]
+        unique_inputs = {inp["name"]: inp for inp in api_data["inputs"]}
+        unique_outputs = {out["name"]: out for out in api_data["outputs"]}
+        
+        # Position inputs much closer to API with smaller spacing - OUTSIDE the API
+        for j, (field_name, _) in enumerate(unique_inputs.items()):
+            node_id = f"{api_name}_input_{field_name}"
+            # Reduced spacing from 0.3 to 0.15 and distance from 3 to 1.8 (increased to ensure outside)
+            input_angle = angle + (j - (len(unique_inputs) - 1) / 2) * 0.15
+            input_radius = radius + 1.8  # Increased to ensure parameters are outside API box
+            input_x = input_radius * np.cos(input_angle)
+            input_y = input_radius * np.sin(input_angle)
+            
+            G.add_node(node_id)
+            pos[node_id] = (input_x, input_y)
+            node_attrs[node_id] = {
+                'node_type': 'input',
+                'color': colors['input'],
+                'shape': 'circle',
+                'size': 200,  # Reduced from 500 to 200
+                'label': field_name
             }
-        elif is_explicit and not connections[connection_key]['explicit']:
-            connections[connection_key] = {
-                'explicit': is_explicit,
-                'output': edge["connections"]["output"],
-                'input': edge["connections"]["input"]
-            }
-    
-    # Add edges to graph
-    for connection_key, conn_info in connections.items():
-        from_api, to_api = connection_key.split('->')
+            # Input nodes should have directed edge TO the API
+            G.add_edge(node_id, api_name,
+                       edge_type='input_connection',
+                       color=colors['input_edge'])
         
-        if simplified:
-            # Simple edges for hierarchical view
-            if conn_info['explicit']:
-                dot.edge(from_api, to_api, color='black', penwidth='1.5')
-            else:
-                dot.edge(from_api, to_api, color='purple', style='dashed', penwidth='1.0')
-        else:
-            # Detailed edges with labels
-            edge_label = create_edge_label(conn_info['output'], conn_info['input'])
+        # Position outputs much closer to API with smaller spacing - OUTSIDE the API
+        for j, (field_name, _) in enumerate(unique_outputs.items()):
+            node_id = f"{api_name}_output_{field_name}"
+            # Reduced spacing from 0.3 to 0.15 and distance from 3 to 1.8 (increased to ensure outside)
+            output_angle = angle + (j - (len(unique_outputs) - 1) / 2) * 0.15
+            output_radius = radius - 1.8  # Increased distance to ensure parameters are outside API box
+            output_x = output_radius * np.cos(output_angle)
+            output_y = output_radius * np.sin(output_angle)
             
-            if conn_info['explicit']:
-                dot.edge(from_api, to_api,
-                        label=edge_label,
-                        color='black',
-                        style='solid',
-                        penwidth='1.5',
-                        tooltip=f'Explicit: {conn_info["output"]} → {conn_info["input"]}')
-            else:
-                dot.edge(from_api, to_api,
-                        label=edge_label,
-                        color='purple',
-                        style='dashed',
-                        penwidth='1.5',
-                        tooltip=f'Implicit: {conn_info["output"]} → {conn_info["input"]}')
+            G.add_node(node_id)
+            pos[node_id] = (output_x, output_y)
+            node_attrs[node_id] = {
+                'node_type': 'output',
+                'color': colors['output'],
+                'shape': 'circle',
+                'size': 200,  # Reduced from 500 to 200
+                'label': field_name
+            }
+            # Output nodes should have directed edge FROM the API
+            G.add_edge(api_name, node_id,
+                       edge_type='output_connection',
+                       color=colors['output_edge'])
 
-def create_edge_label(output_field, input_field):
-    """Create a clean edge label without truncation"""
-    if output_field == input_field:
-        # Same field name, show it in full but break long names
-        if len(output_field) > 15:
-            # Split long field names into multiple lines
-            words = output_field.replace('_', ' ').split()
-            if len(words) > 1:
-                mid = len(words) // 2
-                line1 = ' '.join(words[:mid])
-                line2 = ' '.join(words[mid:])
-                return f"{line1}\\n{line2}"
-        return output_field.replace('_', ' ')
-    else:
-        # Different field names, show full names with arrow
-        out_formatted = output_field.replace('_', ' ')
-        in_formatted = input_field.replace('_', ' ')
-        
-        # If combined length is very long, put on separate lines
-        if len(out_formatted + in_formatted) > 20:
-            return f"{out_formatted}\\n↓\\n{in_formatted}"
-        else:
-            return f"{out_formatted} → {in_formatted}"
-
-def categorize_apis(data):
-    """Categorize APIs into source, transformer, and consumer types"""
-    api_names = set(data["APIs"].keys())
-    source_apis = set()
-    consumer_apis = set()
-    transformer_apis = set()
-    
     if "edges" in data:
-        from_apis = set()
-        to_apis = set()
-        
+        connection_count = {}
         for edge in data["edges"]:
-            from_apis.add(edge["from"])
-            to_apis.add(edge["to"])
+            key = f"{edge['from']}-{edge['to']}"
+            connection_count.setdefault(key, []).append(edge)
+
+        for api_pair, edges in connection_count.items():
+            edge_to_use = edges[0]
+            for edge in edges:
+                if edge.get("explicit", True):
+                    edge_to_use = edge
+                    break
+            
+            from_api = edge_to_use["from"]
+            to_api = edge_to_use["to"]
+            output_field = edge_to_use["connections"]["output"]
+            input_field = edge_to_use["connections"]["input"]
+            is_explicit = edge_to_use.get("explicit", True)
+            edge_color = colors['explicit_connection'] if is_explicit else colors['implicit_connection']
+            
+            from_node = f"{from_api}_output_{output_field}"
+            to_node = f"{to_api}_input_{input_field}"
+            
+            if from_node in G.nodes() and to_node in G.nodes():
+                G.add_edge(from_node, to_node,
+                           edge_type='api_connection',
+                           color=edge_color,
+                           label=f"{output_field}→{input_field}",
+                           explicit=is_explicit)
+    
+    return G, pos, node_attrs, colors
+
+def draw_api_graph(G, pos, node_attrs, colors):
+    fig, ax = plt.subplots(1, 1, figsize=(24, 24))
+    edge_types = {'input_connection': [], 'output_connection': [], 'api_connection': []}
+    
+    for u, v, data in G.edges(data=True):
+        edge_type = data.get('edge_type', 'api_connection')
+        edge_types[edge_type].append((u, v, data))
+    
+    if edge_types['input_connection']:
+        edges = [(u, v) for u, v, _ in edge_types['input_connection']]
+        nx.draw_networkx_edges(G, pos, edgelist=edges,
+                               edge_color=colors['input_edge'],
+                               width=1.5, alpha=0.6,  # Reduced width from 2 to 1.5
+                               arrowsize=12, arrowstyle='-|>',  # Reduced arrowsize from 15 to 12
+                               connectionstyle="arc3,rad=0.05")  # Reduced arc from 0.1 to 0.05
+    
+    if edge_types['output_connection']:
+        edges = [(u, v) for u, v, _ in edge_types['output_connection']]
+        nx.draw_networkx_edges(G, pos, edgelist=edges,
+                               edge_color=colors['output_edge'],
+                               width=1.5, alpha=0.6,  # Reduced width from 2 to 1.5
+                               arrowsize=12, arrowstyle='-|>',  # Reduced arrowsize from 15 to 12
+                               connectionstyle="arc3,rad=0.05")  # Reduced arc from 0.1 to 0.05
+    
+    if edge_types['api_connection']:
+        explicit_edges = [(u, v) for u, v, d in edge_types['api_connection'] if d.get('explicit', True)]
+        implicit_edges = [(u, v) for u, v, d in edge_types['api_connection'] if not d.get('explicit', True)]
         
-        for api in api_names:
-            is_source = api in from_apis
-            is_consumer = api in to_apis
+        if explicit_edges:
+            # Get edge labels for explicit connections
+            explicit_labels = {(u, v): d.get('label', '') for u, v, d in edge_types['api_connection'] if d.get('explicit', True)}
+            nx.draw_networkx_edges(G, pos, edgelist=explicit_edges,
+                                   edge_color=colors['explicit_connection'],
+                                   width=3, alpha=0.8,
+                                   arrowsize=20, arrowstyle='-|>',
+                                   connectionstyle="arc3,rad=0.2")
+            # Draw edge labels for explicit connections
+            nx.draw_networkx_edge_labels(G, pos, explicit_labels, font_size=6, font_color='black')
             
-            if is_source and is_consumer:
-                transformer_apis.add(api)
-            elif is_source:
-                source_apis.add(api)
-            elif is_consumer:
-                consumer_apis.add(api)
-            else:
-                transformer_apis.add(api)
-    else:
-        # If no edges, categorize all as transformers
-        transformer_apis = api_names
+        if implicit_edges:
+            # Get edge labels for implicit connections
+            implicit_labels = {(u, v): d.get('label', '') for u, v, d in edge_types['api_connection'] if not d.get('explicit', True)}
+            nx.draw_networkx_edges(G, pos, edgelist=implicit_edges,
+                                   edge_color=colors['implicit_connection'],
+                                   width=3, alpha=0.8,
+                                   arrowsize=20, arrowstyle='-|>',
+                                   connectionstyle="arc3,rad=0.3", style='dashed')
+            # Draw edge labels for implicit connections
+            nx.draw_networkx_edge_labels(G, pos, implicit_labels, font_size=6, font_color='purple')
     
-    return source_apis, transformer_apis, consumer_apis
+    for node, attrs in node_attrs.items():
+        x, y = pos[node]
+        if attrs['node_type'] == 'api':
+            rect = FancyBboxPatch((x-2, y-0.8), 4, 1.6,
+                                  boxstyle="round,pad=0.1",
+                                  facecolor=attrs['color'], edgecolor='black', linewidth=2)
+            ax.add_patch(rect)
+            ax.text(x, y, node, ha='center', va='center',
+                    fontsize=9, fontweight='bold', color='white')
+        else:
+            # Reduced circle radius from 0.6 to 0.3
+            circle = Circle((x, y), 0.3, facecolor=attrs['color'],
+                            edgecolor='black', linewidth=1)
+            ax.add_patch(circle)
+            # Reduced font size from 7 to 5
+            ax.text(x, y, attrs['label'], ha='center', va='center',
+                    fontsize=5, fontweight='bold', color='black')
+    
+    all_x = [x for x, _ in pos.values()]
+    all_y = [y for _, y in pos.values()]
+    margin = 5
+    ax.set_xlim(min(all_x) - margin, max(all_x) + margin)
+    ax.set_ylim(min(all_y) - margin, max(all_y) + margin)
+    ax.set_aspect('equal')
+    ax.axis('off')
+    
+    legend_elements = [
+        plt.Line2D([0], [0], marker='s', color='w', markerfacecolor=colors['api'], markersize=12, label='API'),
+        plt.Line2D([0], [0], marker='o', color='w', markerfacecolor=colors['input'], markersize=6, label='Input'),  # Reduced from 8 to 6
+        plt.Line2D([0], [0], marker='o', color='w', markerfacecolor=colors['output'], markersize=6, label='Output'),  # Reduced from 8 to 6
+        plt.Line2D([0], [0], color=colors['explicit_connection'], linewidth=2, label='Explicit'),
+        plt.Line2D([0], [0], color=colors['implicit_connection'], linewidth=2, linestyle='--', label='Implicit')
+    ]
+    ax.legend(handles=legend_elements, loc='upper left', bbox_to_anchor=(0, 1),
+              fontsize=10, frameon=True, fancybox=True, shadow=True)
+    
+    plt.tight_layout()
+    return fig, ax
 
-def add_clustered_nodes(dot, source_apis, transformer_apis, consumer_apis):
-    """Add nodes with clustering"""
-    # Add source APIs
-    if source_apis:
-        with dot.subgraph(name='cluster_sources') as sources:
-            sources.attr(label='Data Sources', fontsize='12', style='bold')
-            sources.attr(color='green', style='rounded')
-            
-            for api in source_apis:
-                display_name = format_api_name(api)
-                sources.node(api, display_name, fillcolor='lightgreen')
-    
-    # Add transformer APIs
-    if transformer_apis:
-        with dot.subgraph(name='cluster_transformers') as transformers:
-            transformers.attr(label='Processors', fontsize='12', style='bold')
-            transformers.attr(color='blue', style='rounded')
-            
-            for api in transformer_apis:
-                display_name = format_api_name(api)
-                transformers.node(api, display_name, fillcolor='lightblue')
-    
-    # Add consumer APIs
-    if consumer_apis:
-        with dot.subgraph(name='cluster_consumers') as consumers:
-            consumers.attr(label='Data Consumers', fontsize='12', style='bold')
-            consumers.attr(color='red', style='rounded')
-            
-            for api in consumer_apis:
-                display_name = format_api_name(api)
-                consumers.node(api, display_name, fillcolor='lightcoral')
+# Generate and draw detailed graph
+print("Creating improved NetworkX API graph...")
+G, pos, node_attrs, colors = create_api_graph_networkx(mydict)
+print(f"Graph created with {G.number_of_nodes()} nodes and {G.number_of_edges()} edges")
 
-def generate_svg_safely(dot, filename):
-    """Generate SVG with multiple fallback methods"""
-    try:
-        # Method 1: Direct render
-        dot.format = 'svg'
-        dot.render(filename, cleanup=True)
-        print(f"✓ Generated {filename}.svg using direct render")
-        return True
-    except Exception as e:
-        print(f"Direct render failed: {e}")
-        
-        try:
-            # Method 2: Pipe method
-            svg_content = dot.pipe(format='svg', encoding='utf-8')
-            with open(f'{filename}.svg', 'w', encoding='utf-8') as f:
-                f.write(svg_content)
-            print(f"✓ Generated {filename}.svg using pipe method")
-            return True
-        except Exception as e2:
-            print(f"Pipe method failed: {e2}")
-            
-            try:
-                # Method 3: Source method with external call
-                dot_source = dot.source
-                with open(f'{filename}.dot', 'w') as f:
-                    f.write(dot_source)
-                print(f"✓ Generated {filename}.dot - you can manually convert to SVG")
-                print(f"  Run: dot -Tsvg {filename}.dot -o {filename}.svg")
-                return False
-            except Exception as e3:
-                print(f"All methods failed: {e3}")
-                return False
+fig, ax = draw_api_graph(G, pos, node_attrs, colors)
 
-def main():
-    # Load the API data
-    try:
-        with open("interface_1.json") as f:
-            api_data = json.load(f)
-    except FileNotFoundError:
-        print("Error: interface_1.json not found!")
-        return
-    except json.JSONDecodeError as e:
-        print(f"Error parsing JSON: {e}")
-        return
-    
-    print("Creating improved Graphviz API connection diagrams...")
-    
-    # Create the standard simplified view
-    print("Creating simple connection view...")
-    dot_simple = create_graphviz_api_graph(api_data, "api_connections_simple")
-    
-    # Create hierarchical view
-    print("Creating hierarchical view...")
-    dot_hierarchy = create_hierarchical_layout(api_data, "api_hierarchy")
-    
-    # Generate SVG files with improved error handling
-    print("\nGenerating SVG files...")
-    
-    simple_success = generate_svg_safely(dot_simple, 'api_connections_simple')
-    hierarchy_success = generate_svg_safely(dot_hierarchy, 'api_hierarchy')
-    
-    # Always save DOT source files
-    try:
-        with open('api_connections_simple.dot', 'w') as f:
-            f.write(dot_simple.source)
-        print("✓ Generated api_connections_simple.dot")
-        
-        with open('api_hierarchy.dot', 'w') as f:
-            f.write(dot_hierarchy.source)
-        print("✓ Generated api_hierarchy.dot")
-    except Exception as e:
-        print(f"Error saving DOT files: {e}")
-    
-    # Print summary
-    print(f"\nGeneration Summary:")
-    print(f"- Simple view SVG: {'✓' if simple_success else '✗'}")
-    print(f"- Hierarchy view SVG: {'✓' if hierarchy_success else '✗'}")
-    print(f"- DOT source files: ✓")
-    
-    # Print statistics
-    api_count = len(api_data["APIs"])
-    edge_count = len(api_data.get("edges", []))
-    print(f"\nDiagram Statistics:")
-    print(f"- {api_count} APIs")
-    print(f"- {edge_count} connections")
-    
-    if not (simple_success and hierarchy_success):
-        print(f"\nTroubleshooting:")
-        print(f"- Ensure Graphviz is installed: pip install graphviz")
-        print(f"- Check if 'dot' command is in your PATH")
-        print(f"- You can manually convert DOT files using: dot -Tsvg filename.dot -o filename.svg")
+# Save only SVG
+plt.figure(fig.number)
+plt.savefig('api_flow_graph_detailed.svg', bbox_inches='tight', facecolor='white', edgecolor='none')
+print("Detailed graph saved as api_flow_graph_detailed.svg")
 
-if __name__ == "__main__":
-    main()
+plt.show()

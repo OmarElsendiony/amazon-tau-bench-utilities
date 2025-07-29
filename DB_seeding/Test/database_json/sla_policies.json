@@ -1,0 +1,402 @@
+{
+  "1": {
+    "sla_id": "1",
+    "name": "Hardware - Low Priority",
+    "priority": "low",
+    "category_id": "1",
+    "response_time": 480,
+    "resolve_time": 2880,
+    "created_at": "2023-08-29T22:52:04.685281",
+    "updated_at": "2023-09-12T01:33:19.003330"
+  },
+  "2": {
+    "sla_id": "2",
+    "name": "Hardware - Medium Priority",
+    "priority": "medium",
+    "category_id": "1",
+    "response_time": 240,
+    "resolve_time": 1440,
+    "created_at": "2025-06-01T01:31:48.083079",
+    "updated_at": "2025-07-21T12:08:53.613923"
+  },
+  "3": {
+    "sla_id": "3",
+    "name": "Hardware - High Priority",
+    "priority": "high",
+    "category_id": "1",
+    "response_time": 60,
+    "resolve_time": 480,
+    "created_at": "2024-09-22T02:22:31.078420",
+    "updated_at": "2025-03-19T03:00:30.696944"
+  },
+  "4": {
+    "sla_id": "4",
+    "name": "Hardware - Critical Priority",
+    "priority": "critical",
+    "category_id": "1",
+    "response_time": 15,
+    "resolve_time": 240,
+    "created_at": "2024-12-28T15:49:39.134730",
+    "updated_at": "2025-03-27T14:13:26.077307"
+  },
+  "5": {
+    "sla_id": "5",
+    "name": "Software - Low Priority",
+    "priority": "low",
+    "category_id": "2",
+    "response_time": 480,
+    "resolve_time": 2880,
+    "created_at": "2023-10-22T02:39:37.451364",
+    "updated_at": "2023-11-04T14:15:08.257802"
+  },
+  "6": {
+    "sla_id": "6",
+    "name": "Software - Medium Priority",
+    "priority": "medium",
+    "category_id": "2",
+    "response_time": 240,
+    "resolve_time": 1440,
+    "created_at": "2024-03-23T00:08:44.429221",
+    "updated_at": "2025-04-22T12:18:54.325229"
+  },
+  "7": {
+    "sla_id": "7",
+    "name": "Software - High Priority",
+    "priority": "high",
+    "category_id": "2",
+    "response_time": 60,
+    "resolve_time": 480,
+    "created_at": "2024-10-23T00:06:02.475295",
+    "updated_at": "2025-06-12T14:43:40.630282"
+  },
+  "8": {
+    "sla_id": "8",
+    "name": "Software - Critical Priority",
+    "priority": "critical",
+    "category_id": "2",
+    "response_time": 15,
+    "resolve_time": 240,
+    "created_at": "2025-05-31T01:08:51.366426",
+    "updated_at": "2025-06-05T07:03:09.853646"
+  },
+  "9": {
+    "sla_id": "9",
+    "name": "Network - Low Priority",
+    "priority": "low",
+    "category_id": "3",
+    "response_time": 480,
+    "resolve_time": 2880,
+    "created_at": "2025-04-06T03:05:13.548915",
+    "updated_at": "2025-05-03T23:24:09.661429"
+  },
+  "10": {
+    "sla_id": "10",
+    "name": "Network - Medium Priority",
+    "priority": "medium",
+    "category_id": "3",
+    "response_time": 240,
+    "resolve_time": 1440,
+    "created_at": "2024-10-01T15:56:10.086600",
+    "updated_at": "2025-03-08T07:54:43.004995"
+  },
+  "11": {
+    "sla_id": "11",
+    "name": "Network - High Priority",
+    "priority": "high",
+    "category_id": "3",
+    "response_time": 60,
+    "resolve_time": 480,
+    "created_at": "2024-05-13T19:09:13.098155",
+    "updated_at": "2024-09-27T20:52:44.235913"
+  },
+  "12": {
+    "sla_id": "12",
+    "name": "Network - Critical Priority",
+    "priority": "critical",
+    "category_id": "3",
+    "response_time": 15,
+    "resolve_time": 240,
+    "created_at": "2024-04-02T18:17:45.015900",
+    "updated_at": "2024-09-10T13:43:23.935458"
+  },
+  "13": {
+    "sla_id": "13",
+    "name": "Security - Low Priority",
+    "priority": "low",
+    "category_id": "4",
+    "response_time": 480,
+    "resolve_time": 2880,
+    "created_at": "2023-11-29T17:50:49.295551",
+    "updated_at": "2024-10-05T00:44:35.041655"
+  },
+  "14": {
+    "sla_id": "14",
+    "name": "Security - Medium Priority",
+    "priority": "medium",
+    "category_id": "4",
+    "response_time": 240,
+    "resolve_time": 1440,
+    "created_at": "2023-10-21T06:35:02.239022",
+    "updated_at": "2024-09-15T08:47:21.573583"
+  },
+  "15": {
+    "sla_id": "15",
+    "name": "Security - High Priority",
+    "priority": "high",
+    "category_id": "4",
+    "response_time": 60,
+    "resolve_time": 480,
+    "created_at": "2025-05-20T22:43:14.229733",
+    "updated_at": "2025-06-14T06:32:50.962658"
+  },
+  "16": {
+    "sla_id": "16",
+    "name": "Security - Critical Priority",
+    "priority": "critical",
+    "category_id": "4",
+    "response_time": 15,
+    "resolve_time": 240,
+    "created_at": "2025-01-10T16:51:52.264605",
+    "updated_at": "2025-06-23T09:17:31.048027"
+  },
+  "17": {
+    "sla_id": "17",
+    "name": "Access - Low Priority",
+    "priority": "low",
+    "category_id": "5",
+    "response_time": 480,
+    "resolve_time": 2880,
+    "created_at": "2025-03-15T15:32:13.044070",
+    "updated_at": "2025-04-16T18:18:12.318463"
+  },
+  "18": {
+    "sla_id": "18",
+    "name": "Access - Medium Priority",
+    "priority": "medium",
+    "category_id": "5",
+    "response_time": 240,
+    "resolve_time": 1440,
+    "created_at": "2023-11-13T22:08:07.289372",
+    "updated_at": "2024-03-15T22:49:46.527446"
+  },
+  "19": {
+    "sla_id": "19",
+    "name": "Access - High Priority",
+    "priority": "high",
+    "category_id": "5",
+    "response_time": 60,
+    "resolve_time": 480,
+    "created_at": "2024-10-11T12:46:21.217539",
+    "updated_at": "2025-05-20T18:52:56.107850"
+  },
+  "20": {
+    "sla_id": "20",
+    "name": "Access - Critical Priority",
+    "priority": "critical",
+    "category_id": "5",
+    "response_time": 15,
+    "resolve_time": 240,
+    "created_at": "2024-11-19T06:35:50.602613",
+    "updated_at": "2025-01-02T23:14:58.058091"
+  },
+  "21": {
+    "sla_id": "21",
+    "name": "Performance - Low Priority",
+    "priority": "low",
+    "category_id": "6",
+    "response_time": 480,
+    "resolve_time": 2880,
+    "created_at": "2025-02-12T20:54:49.166068",
+    "updated_at": "2025-05-06T05:48:35.805368"
+  },
+  "22": {
+    "sla_id": "22",
+    "name": "Performance - Medium Priority",
+    "priority": "medium",
+    "category_id": "6",
+    "response_time": 240,
+    "resolve_time": 1440,
+    "created_at": "2025-01-30T10:44:08.347941",
+    "updated_at": "2025-06-16T07:43:06.444137"
+  },
+  "23": {
+    "sla_id": "23",
+    "name": "Performance - High Priority",
+    "priority": "high",
+    "category_id": "6",
+    "response_time": 60,
+    "resolve_time": 480,
+    "created_at": "2024-06-21T13:28:40.953806",
+    "updated_at": "2025-06-29T00:10:38.357569"
+  },
+  "24": {
+    "sla_id": "24",
+    "name": "Performance - Critical Priority",
+    "priority": "critical",
+    "category_id": "6",
+    "response_time": 15,
+    "resolve_time": 240,
+    "created_at": "2024-09-13T21:06:41.275937",
+    "updated_at": "2025-04-04T08:17:52.357384"
+  },
+  "25": {
+    "sla_id": "25",
+    "name": "Database - Low Priority",
+    "priority": "low",
+    "category_id": "7",
+    "response_time": 480,
+    "resolve_time": 2880,
+    "created_at": "2024-10-27T16:05:16.158453",
+    "updated_at": "2025-06-22T06:07:22.447205"
+  },
+  "26": {
+    "sla_id": "26",
+    "name": "Database - Medium Priority",
+    "priority": "medium",
+    "category_id": "7",
+    "response_time": 240,
+    "resolve_time": 1440,
+    "created_at": "2024-10-29T15:16:53.664325",
+    "updated_at": "2024-12-09T20:07:39.644342"
+  },
+  "27": {
+    "sla_id": "27",
+    "name": "Database - High Priority",
+    "priority": "high",
+    "category_id": "7",
+    "response_time": 60,
+    "resolve_time": 480,
+    "created_at": "2023-09-17T21:46:59.930823",
+    "updated_at": "2024-07-14T21:41:33.928906"
+  },
+  "28": {
+    "sla_id": "28",
+    "name": "Database - Critical Priority",
+    "priority": "critical",
+    "category_id": "7",
+    "response_time": 15,
+    "resolve_time": 240,
+    "created_at": "2024-03-06T23:53:42.368578",
+    "updated_at": "2024-07-24T23:07:20.791856"
+  },
+  "29": {
+    "sla_id": "29",
+    "name": "Email - Low Priority",
+    "priority": "low",
+    "category_id": "8",
+    "response_time": 480,
+    "resolve_time": 2880,
+    "created_at": "2023-09-09T01:41:41.265062",
+    "updated_at": "2024-08-23T21:08:56.059752"
+  },
+  "30": {
+    "sla_id": "30",
+    "name": "Email - Medium Priority",
+    "priority": "medium",
+    "category_id": "8",
+    "response_time": 240,
+    "resolve_time": 1440,
+    "created_at": "2024-03-12T12:43:54.949529",
+    "updated_at": "2024-10-26T07:33:20.318000"
+  },
+  "31": {
+    "sla_id": "31",
+    "name": "Email - High Priority",
+    "priority": "high",
+    "category_id": "8",
+    "response_time": 60,
+    "resolve_time": 480,
+    "created_at": "2023-09-09T14:15:50.329995",
+    "updated_at": "2025-04-04T14:47:49.820417"
+  },
+  "32": {
+    "sla_id": "32",
+    "name": "Email - Critical Priority",
+    "priority": "critical",
+    "category_id": "8",
+    "response_time": 15,
+    "resolve_time": 240,
+    "created_at": "2023-09-24T01:37:47.335591",
+    "updated_at": "2025-04-29T00:14:21.800573"
+  },
+  "33": {
+    "sla_id": "33",
+    "name": "Printing - Low Priority",
+    "priority": "low",
+    "category_id": "9",
+    "response_time": 480,
+    "resolve_time": 2880,
+    "created_at": "2025-04-14T00:19:33.903886",
+    "updated_at": "2025-06-18T13:10:54.370766"
+  },
+  "34": {
+    "sla_id": "34",
+    "name": "Printing - Medium Priority",
+    "priority": "medium",
+    "category_id": "9",
+    "response_time": 240,
+    "resolve_time": 1440,
+    "created_at": "2024-08-02T23:45:36.831990",
+    "updated_at": "2025-01-16T20:04:33.884835"
+  },
+  "35": {
+    "sla_id": "35",
+    "name": "Printing - High Priority",
+    "priority": "high",
+    "category_id": "9",
+    "response_time": 60,
+    "resolve_time": 480,
+    "created_at": "2024-09-06T10:57:54.847118",
+    "updated_at": "2025-05-22T16:22:35.878270"
+  },
+  "36": {
+    "sla_id": "36",
+    "name": "Printing - Critical Priority",
+    "priority": "critical",
+    "category_id": "9",
+    "response_time": 15,
+    "resolve_time": 240,
+    "created_at": "2025-05-13T14:50:26.405876",
+    "updated_at": "2025-06-17T05:28:17.750102"
+  },
+  "37": {
+    "sla_id": "37",
+    "name": "Mobile - Low Priority",
+    "priority": "low",
+    "category_id": "10",
+    "response_time": 480,
+    "resolve_time": 2880,
+    "created_at": "2025-03-11T20:07:43.151496",
+    "updated_at": "2025-06-10T22:09:51.758241"
+  },
+  "38": {
+    "sla_id": "38",
+    "name": "Mobile - Medium Priority",
+    "priority": "medium",
+    "category_id": "10",
+    "response_time": 240,
+    "resolve_time": 1440,
+    "created_at": "2024-03-20T15:23:47.433992",
+    "updated_at": "2024-11-11T12:30:56.405399"
+  },
+  "39": {
+    "sla_id": "39",
+    "name": "Mobile - High Priority",
+    "priority": "high",
+    "category_id": "10",
+    "response_time": 60,
+    "resolve_time": 480,
+    "created_at": "2023-11-17T03:27:48.942894",
+    "updated_at": "2023-12-25T12:46:56.418111"
+  },
+  "40": {
+    "sla_id": "40",
+    "name": "Mobile - Critical Priority",
+    "priority": "critical",
+    "category_id": "10",
+    "response_time": 15,
+    "resolve_time": 240,
+    "created_at": "2023-10-13T14:19:17.270856",
+    "updated_at": "2025-05-24T12:06:31.288153"
+  }
+}

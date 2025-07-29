@@ -1,0 +1,282 @@
+{
+  "1": {
+    "subcategory_id": "1",
+    "category_id": "1",
+    "name": "Desktop Issues",
+    "created_at": "2024-05-01T13:08:23.055823",
+    "updated_at": "2025-07-22T21:41:45.704760"
+  },
+  "2": {
+    "subcategory_id": "2",
+    "category_id": "1",
+    "name": "Laptop Problems",
+    "created_at": "2024-02-08T13:18:29.242036",
+    "updated_at": "2025-04-04T14:46:48.824511"
+  },
+  "3": {
+    "subcategory_id": "3",
+    "category_id": "1",
+    "name": "Server Hardware",
+    "created_at": "2024-06-26T00:19:42.128887",
+    "updated_at": "2024-12-11T14:35:10.005765"
+  },
+  "4": {
+    "subcategory_id": "4",
+    "category_id": "1",
+    "name": "Peripherals",
+    "created_at": "2025-06-27T10:31:04.877333",
+    "updated_at": "2025-07-29T10:14:59.891397"
+  },
+  "5": {
+    "subcategory_id": "5",
+    "category_id": "2",
+    "name": "Application Errors",
+    "created_at": "2024-09-07T12:23:07.134605",
+    "updated_at": "2025-04-29T00:58:19.216679"
+  },
+  "6": {
+    "subcategory_id": "6",
+    "category_id": "2",
+    "name": "License Issues",
+    "created_at": "2023-11-20T00:22:07.651920",
+    "updated_at": "2024-05-21T05:59:50.774955"
+  },
+  "7": {
+    "subcategory_id": "7",
+    "category_id": "2",
+    "name": "Installation Problems",
+    "created_at": "2025-07-05T17:57:31.892985",
+    "updated_at": "2025-07-19T13:08:47.221102"
+  },
+  "8": {
+    "subcategory_id": "8",
+    "category_id": "2",
+    "name": "Updates",
+    "created_at": "2024-08-28T14:45:12.995071",
+    "updated_at": "2025-05-06T03:44:56.461224"
+  },
+  "9": {
+    "subcategory_id": "9",
+    "category_id": "3",
+    "name": "Connectivity Issues",
+    "created_at": "2023-09-09T19:04:56.771440",
+    "updated_at": "2024-10-16T03:56:44.329359"
+  },
+  "10": {
+    "subcategory_id": "10",
+    "category_id": "3",
+    "name": "VPN Problems",
+    "created_at": "2024-07-30T21:55:24.289496",
+    "updated_at": "2025-06-06T00:20:26.033326"
+  },
+  "11": {
+    "subcategory_id": "11",
+    "category_id": "3",
+    "name": "WiFi Issues",
+    "created_at": "2023-11-21T22:31:00.878998",
+    "updated_at": "2025-07-05T10:16:41.644347"
+  },
+  "12": {
+    "subcategory_id": "12",
+    "category_id": "3",
+    "name": "Bandwidth",
+    "created_at": "2023-09-26T12:48:48.087744",
+    "updated_at": "2024-01-29T09:58:40.751199"
+  },
+  "13": {
+    "subcategory_id": "13",
+    "category_id": "4",
+    "name": "Password Reset",
+    "created_at": "2024-10-06T03:50:57.496753",
+    "updated_at": "2025-04-24T07:15:53.130109"
+  },
+  "14": {
+    "subcategory_id": "14",
+    "category_id": "4",
+    "name": "Account Lockout",
+    "created_at": "2024-01-17T16:05:49.824904",
+    "updated_at": "2024-03-24T16:13:04.871412"
+  },
+  "15": {
+    "subcategory_id": "15",
+    "category_id": "4",
+    "name": "Malware",
+    "created_at": "2025-05-09T12:58:59.648323",
+    "updated_at": "2025-05-29T11:49:19.128012"
+  },
+  "16": {
+    "subcategory_id": "16",
+    "category_id": "4",
+    "name": "Phishing",
+    "created_at": "2024-10-05T18:48:58.495131",
+    "updated_at": "2025-04-07T14:38:54.292929"
+  },
+  "17": {
+    "subcategory_id": "17",
+    "category_id": "5",
+    "name": "Permission Issues",
+    "created_at": "2024-05-30T21:50:55.923068",
+    "updated_at": "2025-02-02T18:35:48.117459"
+  },
+  "18": {
+    "subcategory_id": "18",
+    "category_id": "5",
+    "name": "Account Creation",
+    "created_at": "2024-08-14T10:53:20.852188",
+    "updated_at": "2025-07-06T18:41:27.970718"
+  },
+  "19": {
+    "subcategory_id": "19",
+    "category_id": "5",
+    "name": "Role Assignment",
+    "created_at": "2023-12-26T02:19:56.268730",
+    "updated_at": "2025-02-14T13:06:34.905433"
+  },
+  "20": {
+    "subcategory_id": "20",
+    "category_id": "5",
+    "name": "System Access",
+    "created_at": "2024-01-20T05:03:33.720907",
+    "updated_at": "2024-08-27T09:52:37.914943"
+  },
+  "21": {
+    "subcategory_id": "21",
+    "category_id": "6",
+    "name": "Slow Response",
+    "created_at": "2024-12-01T01:53:25.044194",
+    "updated_at": "2025-02-11T05:26:25.521711"
+  },
+  "22": {
+    "subcategory_id": "22",
+    "category_id": "6",
+    "name": "System Crashes",
+    "created_at": "2024-03-16T17:44:19.914184",
+    "updated_at": "2025-03-27T13:08:11.003285"
+  },
+  "23": {
+    "subcategory_id": "23",
+    "category_id": "6",
+    "name": "Memory Issues",
+    "created_at": "2023-09-21T00:18:37.100265",
+    "updated_at": "2024-07-27T12:42:23.598987"
+  },
+  "24": {
+    "subcategory_id": "24",
+    "category_id": "6",
+    "name": "CPU Usage",
+    "created_at": "2025-07-27T10:43:16.932453",
+    "updated_at": "2025-07-29T13:34:51.476370"
+  },
+  "25": {
+    "subcategory_id": "25",
+    "category_id": "7",
+    "name": "Connection Issues",
+    "created_at": "2023-09-21T12:52:25.743519",
+    "updated_at": "2024-02-12T20:23:53.292249"
+  },
+  "26": {
+    "subcategory_id": "26",
+    "category_id": "7",
+    "name": "Query Problems",
+    "created_at": "2024-02-08T13:15:42.634903",
+    "updated_at": "2025-06-23T17:35:33.104157"
+  },
+  "27": {
+    "subcategory_id": "27",
+    "category_id": "7",
+    "name": "Backup Issues",
+    "created_at": "2025-05-02T16:00:26.697156",
+    "updated_at": "2025-07-18T23:04:04.398124"
+  },
+  "28": {
+    "subcategory_id": "28",
+    "category_id": "7",
+    "name": "Data Corruption",
+    "created_at": "2024-04-24T15:45:47.427896",
+    "updated_at": "2024-07-06T08:45:40.434632"
+  },
+  "29": {
+    "subcategory_id": "29",
+    "category_id": "8",
+    "name": "Delivery Issues",
+    "created_at": "2025-03-29T07:04:00.285720",
+    "updated_at": "2025-06-23T07:45:17.498810"
+  },
+  "30": {
+    "subcategory_id": "30",
+    "category_id": "8",
+    "name": "Spam Problems",
+    "created_at": "2024-10-18T07:13:15.581209",
+    "updated_at": "2025-07-25T22:40:37.543729"
+  },
+  "31": {
+    "subcategory_id": "31",
+    "category_id": "8",
+    "name": "Configuration",
+    "created_at": "2024-11-18T03:45:49.462649",
+    "updated_at": "2024-11-20T03:20:37.965104"
+  },
+  "32": {
+    "subcategory_id": "32",
+    "category_id": "8",
+    "name": "Storage Limits",
+    "created_at": "2025-03-17T03:43:38.155420",
+    "updated_at": "2025-04-26T09:32:20.257891"
+  },
+  "33": {
+    "subcategory_id": "33",
+    "category_id": "9",
+    "name": "Print Queue",
+    "created_at": "2024-11-25T00:33:05.302155",
+    "updated_at": "2025-07-14T12:24:54.477975"
+  },
+  "34": {
+    "subcategory_id": "34",
+    "category_id": "9",
+    "name": "Driver Issues",
+    "created_at": "2023-11-05T01:21:52.735831",
+    "updated_at": "2024-01-17T01:37:10.777783"
+  },
+  "35": {
+    "subcategory_id": "35",
+    "category_id": "9",
+    "name": "Paper Jams",
+    "created_at": "2023-10-16T04:11:41.273682",
+    "updated_at": "2024-10-11T02:20:28.358636"
+  },
+  "36": {
+    "subcategory_id": "36",
+    "category_id": "9",
+    "name": "Quality Issues",
+    "created_at": "2024-02-13T18:24:07.386637",
+    "updated_at": "2024-12-31T10:04:25.874817"
+  },
+  "37": {
+    "subcategory_id": "37",
+    "category_id": "10",
+    "name": "App Issues",
+    "created_at": "2025-01-03T13:52:11.986875",
+    "updated_at": "2025-02-14T17:19:22.653179"
+  },
+  "38": {
+    "subcategory_id": "38",
+    "category_id": "10",
+    "name": "Device Setup",
+    "created_at": "2024-11-03T18:11:38.499783",
+    "updated_at": "2025-01-13T10:58:23.598819"
+  },
+  "39": {
+    "subcategory_id": "39",
+    "category_id": "10",
+    "name": "Synchronization",
+    "created_at": "2024-07-20T11:14:29.219712",
+    "updated_at": "2025-06-24T03:50:25.013669"
+  },
+  "40": {
+    "subcategory_id": "40",
+    "category_id": "10",
+    "name": "Mobile Security",
+    "created_at": "2025-04-07T07:26:16.657302",
+    "updated_at": "2025-04-17T18:20:11.850886"
+  }
+}

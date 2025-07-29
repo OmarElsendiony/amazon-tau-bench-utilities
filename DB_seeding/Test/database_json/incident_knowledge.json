@@ -1,0 +1,62 @@
+{
+  "133_2": {
+    "incident_id": "133",
+    "knowledge_base_id": "2",
+    "created_at": "2025-04-21T09:51:04.113327"
+  },
+  "298_30": {
+    "incident_id": "298",
+    "knowledge_base_id": "30",
+    "created_at": "2025-03-25T18:16:36.349289"
+  },
+  "164_13": {
+    "incident_id": "164",
+    "knowledge_base_id": "13",
+    "created_at": "2025-04-04T18:59:45.252564"
+  },
+  "237_29": {
+    "incident_id": "237",
+    "knowledge_base_id": "29",
+    "created_at": "2024-07-03T21:18:37.130669"
+  },
+  "28_41": {
+    "incident_id": "28",
+    "knowledge_base_id": "41",
+    "created_at": "2024-05-29T08:41:25.695021"
+  },
+  "140_7": {
+    "incident_id": "140",
+    "knowledge_base_id": "7",
+    "created_at": "2025-04-16T19:36:15.977568"
+  },
+  "215_42": {
+    "incident_id": "215",
+    "knowledge_base_id": "42",
+    "created_at": "2025-06-26T07:04:56.400855"
+  },
+  "25_32": {
+    "incident_id": "25",
+    "knowledge_base_id": "32",
+    "created_at": "2025-05-21T21:25:10.375794"
+  },
+  "149_11": {
+    "incident_id": "149",
+    "knowledge_base_id": "11",
+    "created_at": "2024-11-19T05:15:39.812041"
+  },
+  "40_8": {
+    "incident_id": "40",
+    "knowledge_base_id": "8",
+    "created_at": "2025-05-02T23:35:21.958764"
+  },
+  "264_12": {
+    "incident_id": "264",
+    "knowledge_base_id": "12",
+    "created_at": "2025-06-21T03:02:03.895324"
+  },
+  "94_19": {
+    "incident_id": "94",
+    "knowledge_base_id": "19",
+    "created_at": "2025-07-15T22:13:08.536382"
+  }
+}
