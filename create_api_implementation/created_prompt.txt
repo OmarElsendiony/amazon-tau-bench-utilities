@@ -631,33 +631,86 @@ class QueryIncidentSLAs(Tool):
 
 
 # Required tools:
+📘 Read APIs (10)
+FetchUserByMail
+Arguments: email
+Returns: User
 
-AddNewHolding
-Arguments: portfolio_id, instrument_id, quantity, cost_basis
-Returns: Holding
+RetrieveFundsWithFilter
+Arguments: name, manager_id, size, fund_type=None, base_currency=None, status=None
+Returns: List[Fund]
 
-DeleteHolding
-Arguments: holding_id
-Returns: Holding
+FetchInvestorsWithPortfolioHoldings
+Arguments: filters
+Returns: List[InvestorWithHoldings]
 
-AddPayment
-Arguments: invoice_id, payment_date, amount, payment_method
-Returns: Payment
+FetchInstrumentsWithItsPrice
+Arguments: ticker, name, instrument_type, date, price_id, open_price, close_price, high_price, low_price
+Returns: List[InstrumentPrice]
 
-UpdateInstrument
-Arguments: instrument_id, ticker, name, instrument_type
-Returns: Instrument
+GetFundTradeDetails
+Arguments: fund_id, start_date=None, instrument_id, quantity, price, side, end_date=None
+Returns: List[Trade]
+
+GetNAVRecords
+Arguments: filters
+Returns: List[NAVRecord]
+
+GetDailyProfitLossByFund
+Arguments: fund_id, date
+Returns: {"pnl": decimal}
+
+GetFundValuation
+Arguments: fund_id, date
+Returns: {"valuation": decimal, fund_id, nav_details}
+
+RetrieveSubscriptions
+Arguments: investor_id, fund_id
+Returns: List[Subscriptions]
+
+FindReports
+Arguments: filters
+Returns: List[Reports]
+
+✏️ Write APIs (10)
+AddNewUser
+Arguments: first_name, last_name, email, role, timezone, status
+Returns: User
+
+CreateNewFund
+Arguments: name, fund_type, base_currency, manager_id, size, status
+Returns: Fund
+
+AddNewTradeForFund
+Arguments: fund_id, instrument_id, trade_date, quantity, price, side
+Returns: Trade
+
+AssignUserToHandleInvestorOrFund
+Arguments: user_id, investor_id=None, fund_id=None
+Returns: Investor
+
+CreateNAVRecord
+Arguments: fund_id, nav_date, nav_value, currency
+Returns: NAV
+
+UpdateNAVRecords
+Arguments: nav_id, nav_value, currency
+Returns: NAV
+
+UpdateFundDetails
+Arguments: fund_id, name, fund_type, base_currency, size, status
+Returns: Fund
 
 UpdateInstrumentPrice
-Arguments: price_id, open_price, high_price, low_price, close_price
+Arguments: instrument_id, price_date, open_price, high_price, low_price, close_price
 Returns: InstrumentPrice
 
-UpdateReport
-Arguments: report_id, status
-Returns: Report
+UpdateTradeForFund
+Arguments: trade_id, quantity, price, status
+Returns: Trade
 
-EmailUser
-Arguments: user_id, class, reference_id
+NotifyUser
+Arguments: user_id, email, type, reference_id
 Returns: Notification
 
 Please create the tools based on the examples and the database schema. 

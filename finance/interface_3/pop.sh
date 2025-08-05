@@ -721,7 +721,7 @@ class GenerateReport(Tool):
             raise ValueError(f"Invalid report type. Must be one of {valid_types}")
         
         report_id = generate_id(reports)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_report = {
             "report_id": report_id,
@@ -794,7 +794,7 @@ class AddNewHolding(Tool):
             raise ValueError(f"Instrument {instrument_id} not found")
         
         holding_id = generate_id(holdings)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_holding = {
             "holding_id": holding_id,
@@ -898,7 +898,7 @@ class AddPayment(Tool):
             raise ValueError(f"Invalid payment method. Must be one of {valid_methods}")
         
         payment_id = generate_id(payments)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_payment = {
             "payment_id": payment_id,
@@ -1067,7 +1067,7 @@ class UpdateReport(Tool):
         
         report = reports[str(report_id)]
         report["status"] = status
-        report["updated_at"] = "2025-10-01T00:00:00ZZ"
+        report["updated_at"] = "2025-10-01T00:00:00"
         
         return json.dumps(report)
 
@@ -1123,7 +1123,7 @@ class EmailUser(Tool):
         user_email = user.get("email")
         
         notification_id = generate_id(notifications)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_notification = {
             "notification_id": notification_id,

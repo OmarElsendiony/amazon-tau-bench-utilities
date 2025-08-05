@@ -36,7 +36,7 @@ class AddSubscription(Tool):
             raise ValueError(f"Invalid currency. Must be one of {valid_currencies}")
         
         subscription_id = generate_id(subscriptions)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_subscription = {
             "subscription_id": str(subscription_id),

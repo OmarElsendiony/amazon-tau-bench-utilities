@@ -37,7 +37,7 @@ class CreateNewCommitment(Tool):
             raise ValueError(f"Invalid currency. Must be one of {valid_currencies}")
         
         commitment_id = generate_id(commitments)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_commitment = {
             "commitment_id": commitment_id,
@@ -103,7 +103,7 @@ class CreatePortfolio(Tool):
             raise ValueError(f"Invalid currency. Must be one of {valid_currencies}")
         
         portfolio_id = generate_id(portfolios)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_portfolio = {
             "portfolio_id": portfolio_id,
@@ -176,7 +176,7 @@ class SubscribeInvestorToFund(Tool):
             raise ValueError(f"Invalid currency. Must be one of {valid_currencies}")
         
         subscription_id = generate_id(subscriptions)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_subscription = {
             "subscription_id": subscription_id,
@@ -246,7 +246,7 @@ class PurchaseInstrument(Tool):
             raise ValueError(f"Instrument {instrument_id} not found")
         
         holding_id = generate_id(portfolio_holdings)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_holding = {
             "holding_id": holding_id,
@@ -437,7 +437,7 @@ class UpdateSubscription(Tool):
         if status not in valid_statuses:
             raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
         
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         # Update subscription details
         subscription = subscriptions[str(subscription_id)]
@@ -507,7 +507,7 @@ class SendNotification(Tool):
             raise ValueError(f"Invalid notification type. Must be one of {valid_types}")
         
         notification_id = generate_id(notifications)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_notification = {
             "notification_id": notification_id,

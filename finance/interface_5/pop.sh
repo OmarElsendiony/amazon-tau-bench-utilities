@@ -551,7 +551,7 @@ class CreateFund(Tool):
             raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
         
         fund_id = generate_id(funds)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_fund = {
             "fund_id": str(fund_id),
@@ -620,7 +620,7 @@ class RecordPayment(Tool):
             raise ValueError(f"Invalid payment_method. Must be one of {valid_methods}")
         
         payment_id = generate_id(payments)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_payment = {
             "payment_id": str(payment_id),
@@ -690,7 +690,7 @@ class CreateInvestor(Tool):
             raise ValueError(f"Invalid accreditation_status. Must be one of {valid_statuses}")
         
         investor_id = generate_id(investors)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_investor = {
             "investor_id": str(investor_id),
@@ -767,7 +767,7 @@ class CreateInvoice(Tool):
             raise ValueError(f"Invalid currency. Must be one of {valid_currencies}")
         
         invoice_id = generate_id(invoices)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_invoice = {
             "invoice_id": str(invoice_id),
@@ -844,7 +844,7 @@ class SubmitTicket(Tool):
             raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
         
         ticket_id = generate_id(tickets)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_ticket = {
             "ticket_id": str(ticket_id),
@@ -922,7 +922,7 @@ class AddSubscription(Tool):
             raise ValueError(f"Invalid currency. Must be one of {valid_currencies}")
         
         subscription_id = generate_id(subscriptions)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_subscription = {
             "subscription_id": str(subscription_id),
@@ -1042,7 +1042,7 @@ class ModifySubscription(Tool):
             if status == "approved":
                 subscription["approval_date"] = "2025-10-01"
         
-        subscription["updated_at"] = "2025-10-01T00:00:00ZZ"
+        subscription["updated_at"] = "2025-10-01T00:00:00"
         
         return json.dumps(subscription)
 
@@ -1105,7 +1105,7 @@ class UpdateTicket(Tool):
         if assigned_to:
             ticket["assigned_to"] = assigned_to
         
-        ticket["updated_at"] = "2025-10-01T00:00:00ZZ"
+        ticket["updated_at"] = "2025-10-01T00:00:00"
         
         return json.dumps(ticket)
 
@@ -1149,7 +1149,7 @@ class SendUpdatesViaEmail(Tool):
         notifications = data.get("notifications", {})
         
         notification_id = generate_id(notifications)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_notification = {
             "notification_id": str(notification_id),

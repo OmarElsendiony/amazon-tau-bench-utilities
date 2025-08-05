@@ -37,7 +37,7 @@ class ModifySubscription(Tool):
             if status == "approved":
                 subscription["approval_date"] = "2025-10-01"
         
-        subscription["updated_at"] = "2025-10-01T00:00:00ZZ"
+        subscription["updated_at"] = "2025-10-01T00:00:00"
         
         return json.dumps(subscription)
 

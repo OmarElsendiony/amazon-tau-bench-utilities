@@ -26,7 +26,7 @@ class AddNewHolding(Tool):
             raise ValueError(f"Instrument {instrument_id} not found")
         
         holding_id = generate_id(holdings)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_holding = {
             "holding_id": holding_id,

@@ -34,7 +34,7 @@ class UpdateTicket(Tool):
         if assigned_to:
             ticket["assigned_to"] = assigned_to
         
-        ticket["updated_at"] = "2025-10-01T00:00:00ZZ"
+        ticket["updated_at"] = "2025-10-01T00:00:00"
         
         return json.dumps(ticket)
 

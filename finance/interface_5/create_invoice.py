@@ -36,7 +36,7 @@ class CreateInvoice(Tool):
             raise ValueError(f"Invalid currency. Must be one of {valid_currencies}")
         
         invoice_id = generate_id(invoices)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_invoice = {
             "invoice_id": str(invoice_id),

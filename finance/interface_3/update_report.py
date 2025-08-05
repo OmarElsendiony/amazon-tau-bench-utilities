@@ -19,7 +19,7 @@ class UpdateReport(Tool):
         
         report = reports[str(report_id)]
         report["status"] = status
-        report["updated_at"] = "2025-10-01T00:00:00ZZ"
+        report["updated_at"] = "2025-10-01T00:00:00"
         
         return json.dumps(report)
 

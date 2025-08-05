@@ -21,7 +21,7 @@ class SendEmailNotification(Tool):
             raise ValueError(f"Invalid class. Must be one of {valid_classes}")
         
         notification_id = generate_id(notifications)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_notification = {
             "notification_id": str(notification_id),

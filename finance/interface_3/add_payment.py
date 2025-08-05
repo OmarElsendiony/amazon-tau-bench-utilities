@@ -26,7 +26,7 @@ class AddPayment(Tool):
             raise ValueError(f"Invalid payment method. Must be one of {valid_methods}")
         
         payment_id = generate_id(payments)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_payment = {
             "payment_id": payment_id,

@@ -31,7 +31,7 @@ class CreateTicket(Tool):
             raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
         
         ticket_id = generate_id(tickets)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_ticket = {
             "ticket_id": str(ticket_id),

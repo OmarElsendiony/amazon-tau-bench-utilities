@@ -556,7 +556,7 @@ class CreateReport(Tool):
             raise ValueError(f"Invalid report type. Must be one of {valid_types}")
         
         report_id = generate_id(reports)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_report = {
             "report_id": str(report_id),
@@ -619,7 +619,7 @@ class UpdateCommitmentDetails(Tool):
         commitment = commitments[str(commitment_id)]
         commitment["commitment_amount"] = commitment_amount
         commitment["status"] = status
-        commitment["updated_at"] = "2025-10-01T00:00:00ZZ"
+        commitment["updated_at"] = "2025-10-01T00:00:00"
         
         return json.dumps(commitment)
 
@@ -667,7 +667,7 @@ class UpdateInvoice(Tool):
         invoice["amount"] = amount
         invoice["due_date"] = due_date
         invoice["status"] = status
-        invoice["updated_at"] = "2025-10-01T00:00:00ZZ"
+        invoice["updated_at"] = "2025-10-01T00:00:00"
         
         return json.dumps(invoice)
 
@@ -770,7 +770,7 @@ class SendEmailNotification(Tool):
             raise ValueError(f"Invalid class. Must be one of {valid_classes}")
         
         notification_id = generate_id(notifications)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_notification = {
             "notification_id": str(notification_id),
@@ -843,7 +843,7 @@ class CreateCommitment(Tool):
             raise ValueError(f"Invalid currency. Must be one of {valid_currencies}")
         
         commitment_id = generate_id(commitments)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_commitment = {
             "commitment_id": str(commitment_id),
@@ -921,7 +921,7 @@ class IssueInvoice(Tool):
             raise ValueError(f"Invalid currency. Must be one of {valid_currencies}")
         
         invoice_id = generate_id(invoices)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_invoice = {
             "invoice_id": str(invoice_id),
@@ -993,7 +993,7 @@ class RegisterPayment(Tool):
             raise ValueError(f"Invalid payment method. Must be one of {valid_methods}")
         
         payment_id = generate_id(payments)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_payment = {
             "payment_id": str(payment_id),
@@ -1099,7 +1099,7 @@ class CreateTicket(Tool):
             raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
         
         ticket_id = generate_id(tickets)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_ticket = {
             "ticket_id": str(ticket_id),

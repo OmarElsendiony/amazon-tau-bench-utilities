@@ -15,7 +15,7 @@ class SendUpdatesViaEmail(Tool):
         notifications = data.get("notifications", {})
         
         notification_id = generate_id(notifications)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_notification = {
             "notification_id": str(notification_id),

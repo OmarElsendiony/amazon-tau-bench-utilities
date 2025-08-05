@@ -35,7 +35,7 @@ class GenerateReport(Tool):
             raise ValueError(f"Invalid report type. Must be one of {valid_types}")
         
         report_id = generate_id(reports)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_report = {
             "report_id": report_id,

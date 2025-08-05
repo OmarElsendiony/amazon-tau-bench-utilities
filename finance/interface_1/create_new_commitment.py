@@ -30,7 +30,7 @@ class CreateNewCommitment(Tool):
             raise ValueError(f"Invalid currency. Must be one of {valid_currencies}")
         
         commitment_id = generate_id(commitments)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_commitment = {
             "commitment_id": commitment_id,

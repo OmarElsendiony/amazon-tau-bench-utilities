@@ -20,7 +20,7 @@ class UpdateInvoice(Tool):
         invoice["amount"] = amount
         invoice["due_date"] = due_date
         invoice["status"] = status
-        invoice["updated_at"] = "2025-10-01T00:00:00ZZ"
+        invoice["updated_at"] = "2025-10-01T00:00:00"
         
         return json.dumps(invoice)
 

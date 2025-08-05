@@ -18,7 +18,7 @@ class UpdateSubscription(Tool):
         if status not in valid_statuses:
             raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
         
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         # Update subscription details
         subscription = subscriptions[str(subscription_id)]

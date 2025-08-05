@@ -29,7 +29,7 @@ class EmailUser(Tool):
         user_email = user.get("email")
         
         notification_id = generate_id(notifications)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_notification = {
             "notification_id": notification_id,

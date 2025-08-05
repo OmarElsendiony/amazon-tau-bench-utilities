@@ -19,7 +19,7 @@ class UpdateCommitmentDetails(Tool):
         commitment = commitments[str(commitment_id)]
         commitment["commitment_amount"] = commitment_amount
         commitment["status"] = status
-        commitment["updated_at"] = "2025-10-01T00:00:00ZZ"
+        commitment["updated_at"] = "2025-10-01T00:00:00"
         
         return json.dumps(commitment)
 

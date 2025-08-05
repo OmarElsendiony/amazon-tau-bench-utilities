@@ -32,7 +32,7 @@ class SendNotification(Tool):
             raise ValueError(f"Invalid notification type. Must be one of {valid_types}")
         
         notification_id = generate_id(notifications)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_notification = {
             "notification_id": notification_id,

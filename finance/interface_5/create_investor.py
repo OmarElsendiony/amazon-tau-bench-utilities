@@ -30,7 +30,7 @@ class CreateInvestor(Tool):
             raise ValueError(f"Invalid accreditation_status. Must be one of {valid_statuses}")
         
         investor_id = generate_id(investors)
-        timestamp = "2025-10-01T00:00:00ZZ"
+        timestamp = "2025-10-01T00:00:00"
         
         new_investor = {
             "investor_id": str(investor_id),
