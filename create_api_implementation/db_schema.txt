@@ -1,244 +1,230 @@
-CREATE TABLE `companies` (
-  `company_id` integer PRIMARY KEY,
-  `name` varchar(255),
-  `industry` varchar(100),
-  `address` varchar(255),
-  `created_at` timestamp,
-  `updated_at` timestamp
-);
-
 CREATE TABLE `users` (
-  `user_id` integer PRIMARY KEY,
-  `first_name` varchar(255),
-  `last_name` varchar(255),
-  `email` varchar(320) UNIQUE,
-  `role` enum(end_user,agent,manager,admin),
-  `status` enum(active,inactive),
-  `timezone` varchar(50),
-  `company_id` integer,
-  `department_id` integer COMMENT 'Only for agents',
-  `password_hash` varchar(255),
-  `created_at` timestamp,
-  `updated_at` timestamp
+  `user_id` int PRIMARY KEY,
+  `first_name` varchar(100) NOT NULL,
+  `last_name` varchar(100) NOT NULL,
+  `email` varchar(320) UNIQUE NOT NULL,
+  `role` enum(admin,employee) NOT NULL,
+  `timezone` varchar(50) NOT NULL,
+  `status` enum(active,inactive,suspended) NOT NULL DEFAULT 'active',
+  `created_at` timestamp NOT NULL DEFAULT (NOW()),
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
 );
 
-CREATE TABLE `departments` (
-  `department_id` integer PRIMARY KEY,
-  `name` varchar(255),
-  `manager_id` integer,
-  `company_id` integer,
-  `created_at` timestamp,
-  `updated_at` timestamp
+CREATE TABLE `funds` (
+  `fund_id` int PRIMARY KEY,
+  `name` varchar(255) NOT NULL,
+  `fund_type` enum(equity,fixed_income,multi_asset,hedge) NOT NULL,
+  `base_currency` enum(USD,EUR,GBP,NGN) NOT NULL,
+  `manager_id` int NOT NULL,
+  `size` decimal(18,2),
+  `status` enum(open,closed) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW()),
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
 );
 
-CREATE TABLE `categories` (
-  `category_id` integer PRIMARY KEY,
-  `name` varchar(100),
-  `created_at` timestamp,
-  `updated_at` timestamp
+CREATE TABLE `investors` (
+  `investor_id` int PRIMARY KEY,
+  `employee_id` int NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `investor_type` enum(organization,retail,high_net_worth) NOT NULL,
+  `contact_email` varchar(320) NOT NULL,
+  `accreditation_status` enum(accredited,non_accredited) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW())
 );
 
-CREATE TABLE `subcategories` (
-  `subcategory_id` integer PRIMARY KEY,
-  `category_id` integer,
-  `name` varchar(100),
-  `created_at` timestamp,
-  `updated_at` timestamp
+CREATE TABLE `subscriptions` (
+  `subscription_id` int PRIMARY KEY,
+  `fund_id` int NOT NULL,
+  `investor_id` int NOT NULL,
+  `amount` decimal(18,2) NOT NULL,
+  `currency` enum(USD,EUR,GBP,NGN) NOT NULL,
+  `status` enum(pending,approved,cancelled) NOT NULL,
+  `request_assigned_to` int NOT NULL,
+  `request_date` date NOT NULL,
+  `approval_date` date,
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
 );
 
-CREATE TABLE `incidents` (
-  `incident_id` integer PRIMARY KEY,
-  `title` varchar(255),
-  `description` text,
-  `category_id` integer,
-  `subcategory_id` integer,
-  `reported_by` integer NOT NULL,
-  `assigned_to` integer,
-  `department_id` integer,
-  `company_id` integer,
-  `status` enum(open,in_progress,resolved,closed),
-  `priority` enum(low,medium,high,critical),
-  `created_at` timestamp,
-  `updated_at` timestamp
+CREATE TABLE `commitments` (
+  `commitment_id` int PRIMARY KEY,
+  `fund_id` int NOT NULL,
+  `investor_id` int NOT NULL,
+  `commitment_amount` decimal(18,2) NOT NULL,
+  `currency` enum(USD,EUR,GBP,NGN) NOT NULL,
+  `commitment_date` date NOT NULL,
+  `status` enum(pending,fulfilled) NOT NULL,
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
 );
 
-CREATE TABLE `incident_history` (
-  `incident_history_id` integer PRIMARY KEY,
-  `incident_id` integer,
-  `changed_by` integer,
-  `incident_values` jsonb,
-  `task_values` jsonb,
-  `changed_at` timestamp
+CREATE TABLE `portfolios` (
+  `portfolio_id` int PRIMARY KEY,
+  `investor_id` int NOT NULL,
+  `base_currency` enum(USD,EUR,GBP,NGN) NOT NULL,
+  `status` enum(active,inactive,archived) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW()),
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
 );
 
-CREATE TABLE `incident_comments` (
-  `incident_comment_id` integer PRIMARY KEY,
-  `incident_id` integer,
-  `user_id` integer,
-  `comment_text` text,
-  `is_public` boolean,
-  `created_at` timestamp,
-  `updated_at` timestamp
+CREATE TABLE `portfolio_holdings` (
+  `holding_id` int PRIMARY KEY,
+  `portfolio_id` int NOT NULL,
+  `instrument_id` int NOT NULL,
+  `quantity` decimal(18,4) NOT NULL,
+  `cost_basis` decimal(18,4) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW())
 );
 
-CREATE TABLE `incident_attachments` (
-  `incident_attachment_id` integer PRIMARY KEY,
-  `incident_id` integer,
-  `uploaded_by` integer,
-  `file_name` varchar(500),
-  `file_url` varchar(500),
-  `uploaded_at` timestamp,
-  `created_at` timestamp,
-  `updated_at` timestamp
+CREATE TABLE `instruments` (
+  `instrument_id` int PRIMARY KEY,
+  `ticker` varchar(20) UNIQUE NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `instrument_type` enum(stock,bond,derivative,cash,other) NOT NULL
 );
 
-CREATE TABLE `tasks` (
-  `task_id` integer PRIMARY KEY,
-  `incident_id` integer,
-  `description` text,
-  `assigned_to` integer,
-  `status` enum(todo,in_progress,blocked,done,cancelled),
-  `priority` enum(low,medium,high,critical),
-  `due_date` timestamp,
-  `created_at` timestamp,
-  `updated_at` timestamp
+CREATE TABLE `instrument_prices` (
+  `price_id` int PRIMARY KEY,
+  `instrument_id` int NOT NULL,
+  `price_date` date NOT NULL,
+  `open_price` decimal(18,4) NOT NULL,
+  `high_price` decimal(18,4) NOT NULL,
+  `low_price` decimal(18,4) NOT NULL,
+  `close_price` decimal(18,4) NOT NULL
 );
 
-CREATE TABLE `change_requests` (
-  `change_request_id` integer PRIMARY KEY,
-  `incident_id` integer COMMENT 'Linked incident if applicable',
-  `assigned_to` integer NOT NULL,
-  `approved_by` integer,
-  `description` varchar(255),
-  `status` enum(draft,submitted,approved,rejected,in_progress,implemented,closed),
-  `priority` enum(low,medium,high,critical),
-  `risk_level` enum(low,medium,high),
-  `affected_scope` jsonb,
-  `scheduled_start` timestamp,
-  `scheduled_end` timestamp,
-  `created_at` timestamp,
-  `updated_at` timestamp
+CREATE TABLE `nav_records` (
+  `nav_id` int PRIMARY KEY,
+  `fund_id` int NOT NULL,
+  `nav_date` date NOT NULL,
+  `nav_value` decimal(18,4) NOT NULL,
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
 );
 
-CREATE TABLE `sla_policies` (
-  `sla_id` integer PRIMARY KEY,
-  `name` varchar(100),
-  `priority` enum(low,medium,high,critical),
-  `category_id` integer,
-  `response_time` integer COMMENT 'in minutes',
-  `resolve_time` integer COMMENT 'in minutes',
-  `created_at` timestamp,
-  `updated_at` timestamp
+CREATE TABLE `trades` (
+  `trade_id` int PRIMARY KEY,
+  `fund_id` int NOT NULL,
+  `instrument_id` int NOT NULL,
+  `trade_date` timestamp NOT NULL,
+  `quantity` decimal(18,4) NOT NULL,
+  `price` decimal(18,4) NOT NULL,
+  `side` enum(buy,sell) NOT NULL,
+  `status` enum(executed,pending,failed) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW())
 );
 
-CREATE TABLE `incident_sla` (
-  `incident_sla_id` integer PRIMARY KEY,
-  `incident_id` integer,
-  `sla_id` integer,
-  `response_due` timestamp,
-  `resolve_due` timestamp,
-  `breached` boolean,
-  `status` enum(Pending,Completed,Cancelled),
-  `created_at` timestamp,
-  `updated_at` timestamp
+CREATE TABLE `notifications` (
+  `notification_id` int PRIMARY KEY,
+  `email` varchar(320),
+  `type` enum(alert,report,reminder,subscription_update) NOT NULL,
+  `class` enum(funds,investors,portfolios,trades,invoices,reports,documents,subscriptions,commitments) NOT NULL,
+  `reference_id` int,
+  `status` enum(pending,sent,failed) NOT NULL,
+  `sent_at` timestamp,
+  `created_at` timestamp NOT NULL DEFAULT (NOW())
 );
 
-CREATE TABLE `knowledge_base` (
-  `knowledge_base_id` integer PRIMARY KEY,
-  `description` varchar(255),
-  `created_by` integer,
-  `category_id` integer,
-  `subcategory_id` integer,
-  `company_id` integer,
-  `department_id` integer,
-  `created_at` timestamp,
-  `updated_at` timestamp
+CREATE TABLE `reports` (
+  `report_id` int PRIMARY KEY,
+  `fund_id` int NOT NULL,
+  `investor_id` int,
+  `report_date` date NOT NULL,
+  `report_type` enum(performance,holding,financial) NOT NULL DEFAULT 'performance',
+  `generated_by` int NOT NULL,
+  `status` enum(pending,completed,failed) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW()),
+  `export_period_end` date NOT NULL
 );
 
-CREATE TABLE `incident_knowledge` (
-  `incident_id` integer,
-  `knowledge_base_id` integer,
-  `created_at` timestamp
+CREATE TABLE `documents` (
+  `document_id` int PRIMARY KEY,
+  `name` varchar(255) NOT NULL,
+  `type` enum(pdf,xlsx,docx,csv,other) NOT NULL,
+  `uploaded_by` int NOT NULL,
+  `upload_date` timestamp NOT NULL,
+  `report_id` int,
+  `size_bytes` bigint,
+  `status` enum(available,archived,deleted) NOT NULL
 );
 
-CREATE TABLE `surveys` (
-  `survey_id` integer PRIMARY KEY,
-  `incident_id` integer,
-  `user_id` integer,
-  `rating` integer,
-  `submitted_at` timestamp,
-  `created_at` timestamp,
-  `updated_at` timestamp
+CREATE TABLE `invoices` (
+  `invoice_id` int PRIMARY KEY,
+  `fund_id` int NOT NULL,
+  `investor_id` int NOT NULL,
+  `commitment_id` int,
+  `invoice_date` date NOT NULL,
+  `due_date` date NOT NULL,
+  `amount` decimal(18,2) NOT NULL,
+  `payment_type` enum(auto-pay,manual) NOT NULL DEFAULT 'manual',
+  `currency` enum(USD,EUR,GBP,NGN) NOT NULL,
+  `status` enum(issued,paid) NOT NULL,
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
 );
 
-ALTER TABLE `users` ADD FOREIGN KEY (`company_id`) REFERENCES `companies` (`company_id`);
+CREATE TABLE `payments` (
+  `payment_id` int PRIMARY KEY,
+  `invoice_id` int NOT NULL,
+  `payment_date` timestamp NOT NULL,
+  `amount` decimal(18,2) NOT NULL,
+  `payment_method` enum(wire,cheque,credit_card,bank_transfer) NOT NULL,
+  `status` enum(draft,completed,failed) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT (NOW())
+);
 
-ALTER TABLE `departments` ADD FOREIGN KEY (`company_id`) REFERENCES `companies` (`company_id`);
+CREATE TABLE `tickets` (
+  `ticket_id` int PRIMARY KEY,
+  `invoice_id` int,
+  `issue_date` timestamp NOT NULL,
+  `type` enum(missing_payment,overpayment,underpayment,mismatched_amount,invoice_duplicate,manual_follow_up),
+  `status` enum(open,in_review,resolved,closed) NOT NULL,
+  `assigned_to` int,
+  `resolution_date` timestamp,
+  `created_at` timestamp NOT NULL DEFAULT (NOW()),
+  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+);
 
-ALTER TABLE `incidents` ADD FOREIGN KEY (`company_id`) REFERENCES `companies` (`company_id`);
+ALTER TABLE `funds` ADD FOREIGN KEY (`manager_id`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`company_id`) REFERENCES `companies` (`company_id`);
+ALTER TABLE `reports` ADD FOREIGN KEY (`generated_by`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `users` ADD FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`);
+ALTER TABLE `documents` ADD FOREIGN KEY (`uploaded_by`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `incidents` ADD FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`);
+ALTER TABLE `tickets` ADD FOREIGN KEY (`assigned_to`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `departments` ADD FOREIGN KEY (`manager_id`) REFERENCES `users` (`user_id`);
+ALTER TABLE `subscriptions` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
 
-ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`);
+ALTER TABLE `commitments` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
 
-ALTER TABLE `subcategories` ADD FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`);
+ALTER TABLE `nav_records` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
 
-ALTER TABLE `incidents` ADD FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`);
+ALTER TABLE `trades` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
 
-ALTER TABLE `incidents` ADD FOREIGN KEY (`subcategory_id`) REFERENCES `subcategories` (`subcategory_id`);
+ALTER TABLE `reports` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
 
-ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`);
+ALTER TABLE `invoices` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
 
-ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`subcategory_id`) REFERENCES `subcategories` (`subcategory_id`);
+ALTER TABLE `subscriptions` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
 
-ALTER TABLE `sla_policies` ADD FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`);
+ALTER TABLE `commitments` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
 
-ALTER TABLE `incidents` ADD FOREIGN KEY (`reported_by`) REFERENCES `users` (`user_id`);
+ALTER TABLE `portfolios` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
 
-ALTER TABLE `incidents` ADD FOREIGN KEY (`assigned_to`) REFERENCES `users` (`user_id`);
+ALTER TABLE `invoices` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
 
-ALTER TABLE `incident_history` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+ALTER TABLE `portfolio_holdings` ADD FOREIGN KEY (`portfolio_id`) REFERENCES `portfolios` (`portfolio_id`);
 
-ALTER TABLE `incident_history` ADD FOREIGN KEY (`changed_by`) REFERENCES `users` (`user_id`);
+ALTER TABLE `portfolio_holdings` ADD FOREIGN KEY (`instrument_id`) REFERENCES `instruments` (`instrument_id`);
 
-ALTER TABLE `incident_comments` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+ALTER TABLE `instrument_prices` ADD FOREIGN KEY (`instrument_id`) REFERENCES `instruments` (`instrument_id`);
 
-ALTER TABLE `incident_comments` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+ALTER TABLE `trades` ADD FOREIGN KEY (`instrument_id`) REFERENCES `instruments` (`instrument_id`);
 
-ALTER TABLE `incident_attachments` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+ALTER TABLE `payments` ADD FOREIGN KEY (`invoice_id`) REFERENCES `invoices` (`invoice_id`);
 
-ALTER TABLE `incident_attachments` ADD FOREIGN KEY (`uploaded_by`) REFERENCES `users` (`user_id`);
+ALTER TABLE `tickets` ADD FOREIGN KEY (`invoice_id`) REFERENCES `invoices` (`invoice_id`);
 
-ALTER TABLE `tasks` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+ALTER TABLE `subscriptions` ADD FOREIGN KEY (`request_assigned_to`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `tasks` ADD FOREIGN KEY (`assigned_to`) REFERENCES `users` (`user_id`);
+ALTER TABLE `invoices` ADD FOREIGN KEY (`commitment_id`) REFERENCES `commitments` (`commitment_id`);
 
-ALTER TABLE `change_requests` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
+ALTER TABLE `investors` ADD FOREIGN KEY (`employee_id`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `change_requests` ADD FOREIGN KEY (`assigned_to`) REFERENCES `users` (`user_id`);
-
-ALTER TABLE `change_requests` ADD FOREIGN KEY (`approved_by`) REFERENCES `users` (`user_id`);
-
-ALTER TABLE `incident_sla` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
-
-ALTER TABLE `incident_sla` ADD FOREIGN KEY (`sla_id`) REFERENCES `sla_policies` (`sla_id`);
-
-ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`created_by`) REFERENCES `users` (`user_id`);
-
-ALTER TABLE `incident_knowledge` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
-
-ALTER TABLE `incident_knowledge` ADD FOREIGN KEY (`knowledge_base_id`) REFERENCES `knowledge_base` (`knowledge_base_id`);
-
-ALTER TABLE `surveys` ADD FOREIGN KEY (`incident_id`) REFERENCES `incidents` (`incident_id`);
-
-ALTER TABLE `surveys` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
-
-ALTER TABLE `sla_policies` ADD FOREIGN KEY (`name`) REFERENCES `sla_policies` (`category_id`);
-
-ALTER TABLE `knowledge_base` ADD FOREIGN KEY (`created_by`) REFERENCES `knowledge_base` (`category_id`);
+ALTER TABLE `documents` ADD FOREIGN KEY (`report_id`) REFERENCES `reports` (`report_id`);

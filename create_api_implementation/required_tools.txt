@@ -1,15 +1,28 @@
-ListIncidentsByKB(knowledge_base_id)
 
-ListSurveysByFilters(filters: id, name,...)
+AddNewHolding
+Arguments: portfolio_id, instrument_id, quantity, cost_basis
+Returns: Holding
 
-GetAverageCSAT(agent_id or incident_id)
+DeleteHolding
+Arguments: holding_id
+Returns: Holding
 
-ListLowRatedIncidents(threshold=None)
+AddPayment
+Arguments: invoice_id, payment_date, amount, payment_method
+Returns: Payment
 
-UpdateKBArticle(knowledge_base_id, description)
+UpdateInstrument
+Arguments: instrument_id, ticker, name, instrument_type
+Returns: Instrument
 
-CreateSurvey(incident_id, user_id, rating, feedback_text)
+UpdateInstrumentPrice
+Arguments: price_id, open_price, high_price, low_price, close_price
+Returns: InstrumentPrice
 
-UpdateSurvey(survey_id, rating, feedback_text)
+UpdateReport
+Arguments: report_id, status
+Returns: Report
 
-UpdateUserProfile(user_id, first_name, last_name, email, role, timezone, status)
+EmailUser
+Arguments: user_id, class, reference_id
+Returns: Notification

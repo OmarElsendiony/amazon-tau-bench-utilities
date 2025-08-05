@@ -32,10 +32,12 @@ Notes:
 - Use the generate_id function to generate unique IDs for the records.
 - Each tool should have its own imports and utility functions without being shared across tools.
 - The tools should be implemented in a way that they can be used independently.
+
+Your generated tools should be in a bash script that can be executed to create them in files that hold the same name as the class name. Each file should contain the class definition and its methods. The files should be named as follows: {{tool_name}}.py, where {{tool_name}} is the name of the tool class. Take care that all names should be in snake_case format.
     """
     return prompt
 
 
 created_prompt = create_prompt()
-with open('create_prompt.txt', 'w') as f:
+with open('created_prompt.txt', 'w') as f:
     f.write(created_prompt)
