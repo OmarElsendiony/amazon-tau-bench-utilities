@@ -1,0 +1,2549 @@
+{
+  "11": {
+    "device_id": "11",
+    "current_temperature": 70.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-09-24T17:59:28.810044",
+    "created_at": "2024-08-24T21:10:20.119724",
+    "updated_at": "2024-09-19T13:18:46.199707"
+  },
+  "12": {
+    "device_id": "12",
+    "current_temperature": 73.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-03T03:58:02.448354",
+    "created_at": "2024-08-03T22:07:05.242572",
+    "updated_at": "2025-03-02T11:18:52.281564"
+  },
+  "30": {
+    "device_id": "30",
+    "current_temperature": 71.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-23T10:37:33.354699",
+    "created_at": "2024-11-22T08:04:20.459537",
+    "updated_at": "2025-03-16T07:06:05.690382"
+  },
+  "46": {
+    "device_id": "46",
+    "current_temperature": 74.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-03T22:29:17.781308",
+    "created_at": "2024-11-16T20:42:08.233328",
+    "updated_at": "2025-01-21T15:48:39.647545"
+  },
+  "47": {
+    "device_id": "47",
+    "current_temperature": 64.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-23T18:00:56.504783",
+    "created_at": "2024-11-12T04:21:49.604543",
+    "updated_at": "2025-03-01T08:03:16.154946"
+  },
+  "66": {
+    "device_id": "66",
+    "current_temperature": 74.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-03T17:25:43.433172",
+    "created_at": "2024-12-24T16:48:19.658335",
+    "updated_at": "2025-06-08T23:53:46.441492"
+  },
+  "67": {
+    "device_id": "67",
+    "current_temperature": 67.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-02T11:00:36.735018",
+    "created_at": "2024-08-18T13:31:29.793674",
+    "updated_at": "2024-12-12T18:01:43.665083"
+  },
+  "91": {
+    "device_id": "91",
+    "current_temperature": 71.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-04T03:25:26.981168",
+    "created_at": "2024-11-16T16:26:47.905775",
+    "updated_at": "2024-11-20T02:21:11.623100"
+  },
+  "106": {
+    "device_id": "106",
+    "current_temperature": 64.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-20T05:18:16.417948",
+    "created_at": "2025-03-06T12:50:30.376260",
+    "updated_at": "2025-04-10T21:31:54.650358"
+  },
+  "107": {
+    "device_id": "107",
+    "current_temperature": 71.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-05T04:32:00.664077",
+    "created_at": "2024-09-06T12:59:49.900408",
+    "updated_at": "2024-09-16T16:18:20.636289"
+  },
+  "130": {
+    "device_id": "130",
+    "current_temperature": 61.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-16T07:27:42.564722",
+    "created_at": "2025-03-07T02:42:19.732144",
+    "updated_at": "2025-03-14T12:21:06.957447"
+  },
+  "131": {
+    "device_id": "131",
+    "current_temperature": 65.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-29T10:51:09.656179",
+    "created_at": "2025-03-23T13:23:57.437447",
+    "updated_at": "2025-05-23T08:24:54.610032"
+  },
+  "153": {
+    "device_id": "153",
+    "current_temperature": 65.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-11-29T09:27:24.195085",
+    "created_at": "2024-11-15T19:23:55.980195",
+    "updated_at": "2025-03-22T23:34:58.733675"
+  },
+  "154": {
+    "device_id": "154",
+    "current_temperature": 67.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-11T18:05:22.436246",
+    "created_at": "2025-02-25T13:44:25.660324",
+    "updated_at": "2025-06-27T12:54:57.020541"
+  },
+  "172": {
+    "device_id": "172",
+    "current_temperature": 66.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-08-19T03:24:22.825875",
+    "created_at": "2024-08-02T23:05:15.268529",
+    "updated_at": "2024-12-10T09:59:32.725621"
+  },
+  "173": {
+    "device_id": "173",
+    "current_temperature": 71.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-01T11:15:26.599739",
+    "created_at": "2025-01-25T09:28:50.605081",
+    "updated_at": "2025-02-04T12:20:21.914960"
+  },
+  "197": {
+    "device_id": "197",
+    "current_temperature": 61.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-11T09:17:51.022924",
+    "created_at": "2025-02-06T07:31:34.972024",
+    "updated_at": "2025-07-21T11:39:17.646218"
+  },
+  "198": {
+    "device_id": "198",
+    "current_temperature": 63.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-03T10:25:57.620423",
+    "created_at": "2024-12-02T21:16:14.273205",
+    "updated_at": "2025-03-03T19:01:37.906282"
+  },
+  "220": {
+    "device_id": "220",
+    "current_temperature": 60.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-09T03:56:56.313261",
+    "created_at": "2024-11-26T06:52:55.330713",
+    "updated_at": "2025-06-14T01:29:30.062797"
+  },
+  "221": {
+    "device_id": "221",
+    "current_temperature": 67.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-01T14:11:01.428525",
+    "created_at": "2025-03-02T23:19:24.825569",
+    "updated_at": "2025-07-07T09:03:34.172207"
+  },
+  "242": {
+    "device_id": "242",
+    "current_temperature": 60.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-18T08:00:20.087065",
+    "created_at": "2025-03-01T22:52:17.688956",
+    "updated_at": "2025-03-22T10:28:37.359549"
+  },
+  "253": {
+    "device_id": "253",
+    "current_temperature": 60.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-14T19:14:07.787956",
+    "created_at": "2025-03-07T00:21:04.772431",
+    "updated_at": "2025-05-06T06:30:09.117629"
+  },
+  "254": {
+    "device_id": "254",
+    "current_temperature": 61.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-28T12:39:37.440388",
+    "created_at": "2024-10-10T23:40:03.656188",
+    "updated_at": "2025-07-12T11:26:13.358582"
+  },
+  "269": {
+    "device_id": "269",
+    "current_temperature": 73.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-23T06:23:26.261942",
+    "created_at": "2025-02-11T23:33:08.451491",
+    "updated_at": "2025-06-17T23:30:54.182490"
+  },
+  "270": {
+    "device_id": "270",
+    "current_temperature": 65.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-01T12:21:28.941008",
+    "created_at": "2024-12-29T07:33:10.846311",
+    "updated_at": "2025-06-16T13:01:53.199486"
+  },
+  "293": {
+    "device_id": "293",
+    "current_temperature": 69.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-04T22:20:25.146070",
+    "created_at": "2025-02-18T23:55:13.382561",
+    "updated_at": "2025-04-21T09:27:57.468326"
+  },
+  "308": {
+    "device_id": "308",
+    "current_temperature": 72.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-28T03:05:55.803430",
+    "created_at": "2025-02-01T22:37:02.064456",
+    "updated_at": "2025-03-13T04:01:20.013092"
+  },
+  "309": {
+    "device_id": "309",
+    "current_temperature": 73.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-04T12:15:06.716462",
+    "created_at": "2024-12-09T22:41:24.802903",
+    "updated_at": "2025-03-06T07:21:58.567919"
+  },
+  "330": {
+    "device_id": "330",
+    "current_temperature": 60.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-02T23:46:55.012137",
+    "created_at": "2025-01-13T10:45:03.686145",
+    "updated_at": "2025-05-24T04:44:51.679031"
+  },
+  "331": {
+    "device_id": "331",
+    "current_temperature": 65.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-17T16:22:20.860908",
+    "created_at": "2025-04-14T11:01:11.793480",
+    "updated_at": "2025-05-04T10:21:28.397351"
+  },
+  "352": {
+    "device_id": "352",
+    "current_temperature": 63.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-28T07:19:15.376141",
+    "created_at": "2025-01-26T04:23:05.090876",
+    "updated_at": "2025-07-13T06:40:05.092495"
+  },
+  "353": {
+    "device_id": "353",
+    "current_temperature": 72.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-08T02:07:39.378907",
+    "created_at": "2024-10-20T15:21:24.386919",
+    "updated_at": "2024-12-11T23:38:23.093161"
+  },
+  "380": {
+    "device_id": "380",
+    "current_temperature": 65.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-18T01:19:08.716198",
+    "created_at": "2024-08-05T05:28:00.980509",
+    "updated_at": "2024-11-08T02:41:05.177957"
+  },
+  "381": {
+    "device_id": "381",
+    "current_temperature": 72.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-10-27T06:34:44.613984",
+    "created_at": "2024-09-08T00:33:44.004942",
+    "updated_at": "2025-02-21T23:50:19.566568"
+  },
+  "405": {
+    "device_id": "405",
+    "current_temperature": 72.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-10T06:10:40.436450",
+    "created_at": "2025-04-04T22:24:29.117476",
+    "updated_at": "2025-04-08T14:27:23.237910"
+  },
+  "406": {
+    "device_id": "406",
+    "current_temperature": 71.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-11T22:26:00.663138",
+    "created_at": "2025-03-23T05:46:35.399336",
+    "updated_at": "2025-05-22T06:59:07.124932"
+  },
+  "426": {
+    "device_id": "426",
+    "current_temperature": 69.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-21T03:07:58.676391",
+    "created_at": "2024-11-21T23:15:26.064172",
+    "updated_at": "2025-01-08T12:17:47.253099"
+  },
+  "427": {
+    "device_id": "427",
+    "current_temperature": 64.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-30T06:50:16.621701",
+    "created_at": "2024-11-06T01:28:45.268903",
+    "updated_at": "2024-12-10T03:45:18.754398"
+  },
+  "445": {
+    "device_id": "445",
+    "current_temperature": 61.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-12T11:00:12.262425",
+    "created_at": "2025-03-25T04:38:49.912050",
+    "updated_at": "2025-06-14T20:38:42.033928"
+  },
+  "446": {
+    "device_id": "446",
+    "current_temperature": 73.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-28T02:26:05.784419",
+    "created_at": "2024-11-25T17:54:44.614607",
+    "updated_at": "2025-05-02T11:37:33.701775"
+  },
+  "467": {
+    "device_id": "467",
+    "current_temperature": 71.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-16T06:00:06.255878",
+    "created_at": "2025-04-17T07:35:05.229828",
+    "updated_at": "2025-05-14T12:47:20.753561"
+  },
+  "468": {
+    "device_id": "468",
+    "current_temperature": 62.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-31T02:54:12.427844",
+    "created_at": "2024-09-05T13:25:44.186670",
+    "updated_at": "2024-09-27T22:16:25.019948"
+  },
+  "485": {
+    "device_id": "485",
+    "current_temperature": 70.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-03T05:08:43.023997",
+    "created_at": "2024-09-05T05:36:58.945903",
+    "updated_at": "2024-10-30T14:29:40.412541"
+  },
+  "486": {
+    "device_id": "486",
+    "current_temperature": 71.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-17T18:21:45.864745",
+    "created_at": "2024-11-02T06:43:04.691864",
+    "updated_at": "2025-04-05T19:20:12.143777"
+  },
+  "501": {
+    "device_id": "501",
+    "current_temperature": 60.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-01T01:14:40.864816",
+    "created_at": "2024-12-08T14:56:50.285154",
+    "updated_at": "2025-05-05T03:00:23.595167"
+  },
+  "502": {
+    "device_id": "502",
+    "current_temperature": 66.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-31T00:32:53.078164",
+    "created_at": "2024-11-24T15:08:25.148304",
+    "updated_at": "2025-01-21T15:29:47.580978"
+  },
+  "523": {
+    "device_id": "523",
+    "current_temperature": 69.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-21T12:30:06.048070",
+    "created_at": "2024-10-07T04:23:20.938368",
+    "updated_at": "2024-11-21T04:32:42.406422"
+  },
+  "524": {
+    "device_id": "524",
+    "current_temperature": 66.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-03T20:47:56.823708",
+    "created_at": "2024-08-24T18:31:03.754792",
+    "updated_at": "2024-12-06T11:36:07.208539"
+  },
+  "545": {
+    "device_id": "545",
+    "current_temperature": 70.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-22T20:08:45.597769",
+    "created_at": "2024-11-28T08:17:53.295637",
+    "updated_at": "2025-06-06T10:28:04.429417"
+  },
+  "546": {
+    "device_id": "546",
+    "current_temperature": 67.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-08T16:27:36.258995",
+    "created_at": "2025-03-05T06:42:25.921577",
+    "updated_at": "2025-03-29T20:49:18.786934"
+  },
+  "570": {
+    "device_id": "570",
+    "current_temperature": 67.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-26T19:46:39.562003",
+    "created_at": "2024-12-15T23:08:43.133658",
+    "updated_at": "2025-06-28T15:43:44.378751"
+  },
+  "571": {
+    "device_id": "571",
+    "current_temperature": 74.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-19T23:26:49.863653",
+    "created_at": "2024-09-25T06:16:53.916890",
+    "updated_at": "2025-06-21T17:34:16.184310"
+  },
+  "598": {
+    "device_id": "598",
+    "current_temperature": 68.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-21T06:01:02.979079",
+    "created_at": "2025-04-07T22:41:06.712704",
+    "updated_at": "2025-04-28T01:01:24.458335"
+  },
+  "599": {
+    "device_id": "599",
+    "current_temperature": 64.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-18T12:46:45.509919",
+    "created_at": "2024-08-29T14:33:48.392935",
+    "updated_at": "2025-06-12T06:00:08.936222"
+  },
+  "617": {
+    "device_id": "617",
+    "current_temperature": 72.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-01T03:38:38.327739",
+    "created_at": "2024-09-06T03:52:57.835204",
+    "updated_at": "2025-05-12T15:19:44.609438"
+  },
+  "636": {
+    "device_id": "636",
+    "current_temperature": 66.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-08T21:28:18.957244",
+    "created_at": "2024-11-07T14:25:19.550055",
+    "updated_at": "2025-05-21T11:11:54.167552"
+  },
+  "637": {
+    "device_id": "637",
+    "current_temperature": 66.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-28T08:15:29.395115",
+    "created_at": "2025-04-12T09:32:16.179114",
+    "updated_at": "2025-07-09T02:51:22.235233"
+  },
+  "652": {
+    "device_id": "652",
+    "current_temperature": 67.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-04T17:30:40.213223",
+    "created_at": "2024-11-11T02:23:48.096272",
+    "updated_at": "2025-06-26T07:52:44.957964"
+  },
+  "653": {
+    "device_id": "653",
+    "current_temperature": 60.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-18T11:58:03.025636",
+    "created_at": "2024-12-08T18:14:13.008298",
+    "updated_at": "2025-03-05T04:55:59.597150"
+  },
+  "673": {
+    "device_id": "673",
+    "current_temperature": 61.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-09-10T11:45:54.010718",
+    "created_at": "2024-08-21T09:05:25.956755",
+    "updated_at": "2024-12-04T04:02:28.444093"
+  },
+  "674": {
+    "device_id": "674",
+    "current_temperature": 73.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-26T18:43:24.809421",
+    "created_at": "2024-11-01T17:10:47.293793",
+    "updated_at": "2025-06-11T16:26:48.588470"
+  },
+  "691": {
+    "device_id": "691",
+    "current_temperature": 74.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-24T20:08:38.644167",
+    "created_at": "2024-12-01T22:23:19.301113",
+    "updated_at": "2025-07-23T17:58:57.031166"
+  },
+  "692": {
+    "device_id": "692",
+    "current_temperature": 62.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-13T06:49:44.615639",
+    "created_at": "2024-11-22T09:13:53.577289",
+    "updated_at": "2025-01-23T19:48:26.532028"
+  },
+  "711": {
+    "device_id": "711",
+    "current_temperature": 66.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-20T09:12:27.366456",
+    "created_at": "2024-10-03T06:59:55.147265",
+    "updated_at": "2025-01-28T02:13:39.466882"
+  },
+  "712": {
+    "device_id": "712",
+    "current_temperature": 69.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-30T17:50:37.122503",
+    "created_at": "2025-04-25T12:12:42.662165",
+    "updated_at": "2025-07-22T14:38:48.894303"
+  },
+  "734": {
+    "device_id": "734",
+    "current_temperature": 71.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-13T03:13:49.273056",
+    "created_at": "2025-01-09T06:20:13.178526",
+    "updated_at": "2025-03-12T23:58:20.538559"
+  },
+  "735": {
+    "device_id": "735",
+    "current_temperature": 65.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-04T18:27:16.502162",
+    "created_at": "2024-09-25T03:08:14.202843",
+    "updated_at": "2025-01-05T01:32:45.113375"
+  },
+  "755": {
+    "device_id": "755",
+    "current_temperature": 66.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-11T07:44:48.792250",
+    "created_at": "2025-04-21T15:48:57.633338",
+    "updated_at": "2025-07-28T11:14:54.819727"
+  },
+  "756": {
+    "device_id": "756",
+    "current_temperature": 66.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-27T16:37:44.003003",
+    "created_at": "2025-03-29T08:38:02.657307",
+    "updated_at": "2025-05-05T10:04:54.428891"
+  },
+  "777": {
+    "device_id": "777",
+    "current_temperature": 64.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-21T02:31:26.062583",
+    "created_at": "2025-03-13T12:24:33.391751",
+    "updated_at": "2025-06-01T13:46:47.127223"
+  },
+  "778": {
+    "device_id": "778",
+    "current_temperature": 71.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-14T22:08:06.939745",
+    "created_at": "2025-02-16T21:20:08.469991",
+    "updated_at": "2025-04-27T19:42:51.369060"
+  },
+  "796": {
+    "device_id": "796",
+    "current_temperature": 71.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-29T01:08:05.758415",
+    "created_at": "2025-02-27T02:06:41.370890",
+    "updated_at": "2025-07-30T19:43:18.989179"
+  },
+  "810": {
+    "device_id": "810",
+    "current_temperature": 70.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-15T19:42:48.616580",
+    "created_at": "2024-12-21T04:08:26.691869",
+    "updated_at": "2025-04-06T17:11:35.984329"
+  },
+  "811": {
+    "device_id": "811",
+    "current_temperature": 74.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-09T01:32:12.004448",
+    "created_at": "2024-11-29T18:31:39.409209",
+    "updated_at": "2025-04-27T06:15:19.351609"
+  },
+  "836": {
+    "device_id": "836",
+    "current_temperature": 70.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-29T03:05:55.608744",
+    "created_at": "2025-02-19T06:51:01.711008",
+    "updated_at": "2025-06-13T19:46:06.548353"
+  },
+  "837": {
+    "device_id": "837",
+    "current_temperature": 71.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-08T06:50:50.810803",
+    "created_at": "2024-10-12T13:42:41.693500",
+    "updated_at": "2025-05-13T06:45:53.775720"
+  },
+  "861": {
+    "device_id": "861",
+    "current_temperature": 71.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-23T07:54:42.309454",
+    "created_at": "2025-04-14T10:24:22.102146",
+    "updated_at": "2025-06-05T01:29:01.128980"
+  },
+  "862": {
+    "device_id": "862",
+    "current_temperature": 67.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-05T16:59:55.351937",
+    "created_at": "2025-04-25T11:05:56.866407",
+    "updated_at": "2025-07-02T00:49:20.010563"
+  },
+  "888": {
+    "device_id": "888",
+    "current_temperature": 65.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-16T20:04:58.022253",
+    "created_at": "2024-08-03T03:08:43.784355",
+    "updated_at": "2025-04-11T10:13:51.103153"
+  },
+  "889": {
+    "device_id": "889",
+    "current_temperature": 68.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-19T04:12:09.392946",
+    "created_at": "2024-11-03T07:53:35.076626",
+    "updated_at": "2025-01-01T17:27:17.254081"
+  },
+  "905": {
+    "device_id": "905",
+    "current_temperature": 66.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-10-17T18:04:53.523615",
+    "created_at": "2024-10-12T18:23:38.992025",
+    "updated_at": "2024-10-18T20:50:58.514392"
+  },
+  "906": {
+    "device_id": "906",
+    "current_temperature": 73.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-12T05:51:29.611365",
+    "created_at": "2025-04-15T17:15:48.831489",
+    "updated_at": "2025-06-17T00:16:20.822812"
+  },
+  "925": {
+    "device_id": "925",
+    "current_temperature": 64.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-19T11:06:22.684810",
+    "created_at": "2025-04-08T12:04:35.688057",
+    "updated_at": "2025-05-11T17:15:55.840329"
+  },
+  "926": {
+    "device_id": "926",
+    "current_temperature": 73.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-16T14:34:28.966944",
+    "created_at": "2024-10-06T08:51:02.341987",
+    "updated_at": "2024-11-25T03:39:56.649179"
+  },
+  "943": {
+    "device_id": "943",
+    "current_temperature": 62.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-08T21:24:50.031458",
+    "created_at": "2024-08-11T00:13:35.161392",
+    "updated_at": "2025-01-19T18:43:18.328242"
+  },
+  "962": {
+    "device_id": "962",
+    "current_temperature": 69.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-11-14T20:58:40.732221",
+    "created_at": "2024-10-30T09:38:33.931391",
+    "updated_at": "2025-05-04T20:35:37.393673"
+  },
+  "963": {
+    "device_id": "963",
+    "current_temperature": 61.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-03T00:32:55.215544",
+    "created_at": "2024-12-08T21:06:22.074070",
+    "updated_at": "2025-01-30T08:19:17.895740"
+  },
+  "983": {
+    "device_id": "983",
+    "current_temperature": 60.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-22T05:05:48.286525",
+    "created_at": "2024-12-17T17:19:24.841914",
+    "updated_at": "2025-02-25T20:35:00.458831"
+  },
+  "984": {
+    "device_id": "984",
+    "current_temperature": 60.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-28T02:17:05.840214",
+    "created_at": "2024-08-22T04:37:02.791296",
+    "updated_at": "2024-10-27T15:20:29.405229"
+  },
+  "999": {
+    "device_id": "999",
+    "current_temperature": 65.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-20T15:27:52.674496",
+    "created_at": "2024-08-11T10:23:19.779164",
+    "updated_at": "2025-07-07T13:57:35.047623"
+  },
+  "1000": {
+    "device_id": "1000",
+    "current_temperature": 71.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-21T16:22:08.422508",
+    "created_at": "2024-08-02T04:44:53.120823",
+    "updated_at": "2024-09-27T23:40:07.481773"
+  },
+  "1023": {
+    "device_id": "1023",
+    "current_temperature": 74.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-13T12:55:38.938369",
+    "created_at": "2025-04-11T00:24:47.929621",
+    "updated_at": "2025-07-02T19:05:23.916083"
+  },
+  "1024": {
+    "device_id": "1024",
+    "current_temperature": 72.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-10-16T20:04:20.264214",
+    "created_at": "2024-10-12T02:06:26.209367",
+    "updated_at": "2025-01-03T07:23:00.895999"
+  },
+  "1041": {
+    "device_id": "1041",
+    "current_temperature": 71.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-19T07:25:20.770158",
+    "created_at": "2025-03-04T01:34:21.423607",
+    "updated_at": "2025-07-19T06:21:40.713599"
+  },
+  "1042": {
+    "device_id": "1042",
+    "current_temperature": 62.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-25T08:24:05.982865",
+    "created_at": "2025-02-03T21:19:18.435453",
+    "updated_at": "2025-07-23T11:26:26.956530"
+  },
+  "1068": {
+    "device_id": "1068",
+    "current_temperature": 62.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-08T02:49:09.308135",
+    "created_at": "2025-01-03T07:34:49.536409",
+    "updated_at": "2025-07-28T14:30:25.793372"
+  },
+  "1069": {
+    "device_id": "1069",
+    "current_temperature": 71.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-23T16:41:15.113308",
+    "created_at": "2025-02-06T06:56:52.846938",
+    "updated_at": "2025-03-04T12:43:37.497986"
+  },
+  "1092": {
+    "device_id": "1092",
+    "current_temperature": 73.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-28T04:31:44.188358",
+    "created_at": "2025-04-23T23:23:46.715691",
+    "updated_at": "2025-05-12T02:34:22.650388"
+  },
+  "1093": {
+    "device_id": "1093",
+    "current_temperature": 61.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-10-05T07:16:34.845382",
+    "created_at": "2024-08-31T12:17:54.430445",
+    "updated_at": "2024-10-09T09:24:22.586982"
+  },
+  "1117": {
+    "device_id": "1117",
+    "current_temperature": 63.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-07T13:07:09.293344",
+    "created_at": "2024-10-05T08:14:31.667607",
+    "updated_at": "2024-11-18T19:49:11.491745"
+  },
+  "1118": {
+    "device_id": "1118",
+    "current_temperature": 63.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-25T10:56:09.210757",
+    "created_at": "2025-03-17T00:35:45.801595",
+    "updated_at": "2025-06-18T15:36:08.382711"
+  },
+  "1141": {
+    "device_id": "1141",
+    "current_temperature": 67.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-09T17:42:39.615658",
+    "created_at": "2024-10-01T20:13:56.385343",
+    "updated_at": "2025-06-06T05:50:37.057560"
+  },
+  "1142": {
+    "device_id": "1142",
+    "current_temperature": 63.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-06T21:54:27.971820",
+    "created_at": "2024-11-26T21:06:20.187088",
+    "updated_at": "2025-02-26T04:48:03.367164"
+  },
+  "1160": {
+    "device_id": "1160",
+    "current_temperature": 69.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-23T16:19:53.295405",
+    "created_at": "2024-11-10T08:56:37.604292",
+    "updated_at": "2025-05-16T05:42:39.753649"
+  },
+  "1161": {
+    "device_id": "1161",
+    "current_temperature": 68.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-07T20:17:54.737751",
+    "created_at": "2025-03-31T02:18:21.003243",
+    "updated_at": "2025-04-17T00:13:13.082764"
+  },
+  "1179": {
+    "device_id": "1179",
+    "current_temperature": 68.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-08T22:03:34.963845",
+    "created_at": "2025-01-06T13:58:48.597565",
+    "updated_at": "2025-05-12T11:45:35.727366"
+  },
+  "1180": {
+    "device_id": "1180",
+    "current_temperature": 66.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-15T17:13:06.872371",
+    "created_at": "2025-01-30T11:33:31.906150",
+    "updated_at": "2025-05-22T05:02:41.154940"
+  },
+  "1200": {
+    "device_id": "1200",
+    "current_temperature": 63.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-01T21:40:19.508109",
+    "created_at": "2024-12-25T19:52:51.538683",
+    "updated_at": "2025-03-12T15:37:30.505429"
+  },
+  "1201": {
+    "device_id": "1201",
+    "current_temperature": 73.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-27T00:03:03.069278",
+    "created_at": "2025-02-13T15:33:52.668379",
+    "updated_at": "2025-04-02T08:04:47.756893"
+  },
+  "1223": {
+    "device_id": "1223",
+    "current_temperature": 67.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-22T11:32:39.615272",
+    "created_at": "2024-08-12T18:14:07.543106",
+    "updated_at": "2025-07-24T20:35:40.578028"
+  },
+  "1224": {
+    "device_id": "1224",
+    "current_temperature": 71.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-25T05:53:14.129200",
+    "created_at": "2025-03-22T18:15:55.857978",
+    "updated_at": "2025-04-21T18:19:17.858369"
+  },
+  "1243": {
+    "device_id": "1243",
+    "current_temperature": 72.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-27T08:32:18.552546",
+    "created_at": "2025-03-31T01:24:17.486972",
+    "updated_at": "2025-07-09T03:26:50.069752"
+  },
+  "1244": {
+    "device_id": "1244",
+    "current_temperature": 70.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-11-15T21:21:46.830950",
+    "created_at": "2024-09-22T21:28:12.676237",
+    "updated_at": "2024-12-02T03:07:52.008978"
+  },
+  "1266": {
+    "device_id": "1266",
+    "current_temperature": 70.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-24T23:00:17.024993",
+    "created_at": "2025-04-24T01:53:41.893821",
+    "updated_at": "2025-05-29T05:57:14.057401"
+  },
+  "1267": {
+    "device_id": "1267",
+    "current_temperature": 74.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-05T08:47:53.821784",
+    "created_at": "2024-12-24T23:33:18.165539",
+    "updated_at": "2025-06-29T12:28:01.545713"
+  },
+  "1283": {
+    "device_id": "1283",
+    "current_temperature": 64.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-23T14:59:41.044837",
+    "created_at": "2024-10-29T17:21:06.031374",
+    "updated_at": "2025-03-10T18:40:35.760645"
+  },
+  "1284": {
+    "device_id": "1284",
+    "current_temperature": 64.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-10-04T19:32:01.088057",
+    "created_at": "2024-09-10T13:21:08.583228",
+    "updated_at": "2025-02-03T12:16:26.782964"
+  },
+  "1298": {
+    "device_id": "1298",
+    "current_temperature": 74.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-20T22:24:08.740650",
+    "created_at": "2024-12-10T10:18:49.864861",
+    "updated_at": "2025-03-13T16:26:29.926342"
+  },
+  "1299": {
+    "device_id": "1299",
+    "current_temperature": 70.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-04T09:20:47.434474",
+    "created_at": "2024-09-01T17:17:18.293668",
+    "updated_at": "2025-07-17T19:35:14.539468"
+  },
+  "1317": {
+    "device_id": "1317",
+    "current_temperature": 68.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-13T13:19:51.021227",
+    "created_at": "2024-10-18T03:18:48.197136",
+    "updated_at": "2024-11-29T20:47:41.614371"
+  },
+  "1318": {
+    "device_id": "1318",
+    "current_temperature": 74.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-05T10:52:53.651024",
+    "created_at": "2025-02-13T20:26:50.914018",
+    "updated_at": "2025-03-14T02:32:26.642061"
+  },
+  "1337": {
+    "device_id": "1337",
+    "current_temperature": 66.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-28T22:07:51.726765",
+    "created_at": "2024-11-26T00:43:10.523936",
+    "updated_at": "2025-04-17T03:29:58.181379"
+  },
+  "1338": {
+    "device_id": "1338",
+    "current_temperature": 65.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-07T22:13:26.678968",
+    "created_at": "2025-04-12T03:20:15.855867",
+    "updated_at": "2025-04-15T04:57:58.338771"
+  },
+  "1365": {
+    "device_id": "1365",
+    "current_temperature": 70.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-07T13:17:49.867349",
+    "created_at": "2024-11-30T20:14:33.265557",
+    "updated_at": "2024-12-12T06:55:46.662297"
+  },
+  "1366": {
+    "device_id": "1366",
+    "current_temperature": 74.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-21T23:47:13.419908",
+    "created_at": "2024-11-30T15:00:55.719056",
+    "updated_at": "2025-06-28T10:19:58.076307"
+  },
+  "1385": {
+    "device_id": "1385",
+    "current_temperature": 67.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-25T16:54:20.966384",
+    "created_at": "2024-08-06T12:47:31.466121",
+    "updated_at": "2025-04-12T17:40:30.772207"
+  },
+  "1386": {
+    "device_id": "1386",
+    "current_temperature": 62.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-04T05:43:08.272395",
+    "created_at": "2025-03-13T05:21:24.480006",
+    "updated_at": "2025-05-29T01:27:38.007433"
+  },
+  "1398": {
+    "device_id": "1398",
+    "current_temperature": 71.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-14T09:13:49.297385",
+    "created_at": "2025-04-07T20:42:13.707825",
+    "updated_at": "2025-06-02T22:06:44.308646"
+  },
+  "1413": {
+    "device_id": "1413",
+    "current_temperature": 70.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-08T04:40:03.532674",
+    "created_at": "2024-09-14T11:21:43.577021",
+    "updated_at": "2025-06-09T01:18:16.927869"
+  },
+  "1414": {
+    "device_id": "1414",
+    "current_temperature": 64.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-11-15T11:59:32.485187",
+    "created_at": "2024-08-05T08:57:50.028038",
+    "updated_at": "2024-08-31T04:52:31.050264"
+  },
+  "1436": {
+    "device_id": "1436",
+    "current_temperature": 71.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-22T18:17:56.405669",
+    "created_at": "2024-08-27T05:54:13.885826",
+    "updated_at": "2024-11-28T21:22:44.981755"
+  },
+  "1456": {
+    "device_id": "1456",
+    "current_temperature": 71.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-14T17:08:16.627423",
+    "created_at": "2024-12-12T03:57:52.833215",
+    "updated_at": "2025-06-22T05:10:14.844083"
+  },
+  "1457": {
+    "device_id": "1457",
+    "current_temperature": 64.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-31T20:50:01.650547",
+    "created_at": "2024-10-19T04:52:47.195277",
+    "updated_at": "2024-11-15T10:34:52.335066"
+  },
+  "1486": {
+    "device_id": "1486",
+    "current_temperature": 67.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-29T10:43:33.997056",
+    "created_at": "2024-12-27T00:30:04.034623",
+    "updated_at": "2025-05-28T18:18:09.705674"
+  },
+  "1487": {
+    "device_id": "1487",
+    "current_temperature": 70.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-13T17:13:41.851657",
+    "created_at": "2024-08-27T12:18:43.806946",
+    "updated_at": "2025-06-30T22:58:25.913481"
+  },
+  "1515": {
+    "device_id": "1515",
+    "current_temperature": 68.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-13T18:07:31.573001",
+    "created_at": "2025-02-19T06:01:17.218369",
+    "updated_at": "2025-07-22T16:46:08.757568"
+  },
+  "1516": {
+    "device_id": "1516",
+    "current_temperature": 69.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-17T04:47:03.871373",
+    "created_at": "2025-01-13T18:19:43.310444",
+    "updated_at": "2025-03-29T09:22:00.159004"
+  },
+  "1536": {
+    "device_id": "1536",
+    "current_temperature": 72.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-25T18:28:58.910146",
+    "created_at": "2025-03-11T10:52:45.308234",
+    "updated_at": "2025-03-11T23:07:01.772703"
+  },
+  "1537": {
+    "device_id": "1537",
+    "current_temperature": 64.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-07T18:02:15.605080",
+    "created_at": "2025-04-01T05:07:14.743349",
+    "updated_at": "2025-04-20T12:27:52.893524"
+  },
+  "1556": {
+    "device_id": "1556",
+    "current_temperature": 62.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-22T09:22:47.609534",
+    "created_at": "2024-12-13T02:00:32.948017",
+    "updated_at": "2025-02-28T02:59:01.283155"
+  },
+  "1570": {
+    "device_id": "1570",
+    "current_temperature": 63.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-29T21:51:11.708571",
+    "created_at": "2025-03-05T00:05:23.252446",
+    "updated_at": "2025-05-20T00:38:51.601367"
+  },
+  "1571": {
+    "device_id": "1571",
+    "current_temperature": 60.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-25T07:16:23.201321",
+    "created_at": "2024-11-23T19:35:17.890344",
+    "updated_at": "2025-03-28T19:36:39.802299"
+  },
+  "1587": {
+    "device_id": "1587",
+    "current_temperature": 72.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-14T01:09:53.152737",
+    "created_at": "2025-04-22T11:41:38.249371",
+    "updated_at": "2025-06-13T09:48:35.018312"
+  },
+  "1588": {
+    "device_id": "1588",
+    "current_temperature": 61.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-02T08:56:38.899938",
+    "created_at": "2024-10-21T02:47:56.952528",
+    "updated_at": "2025-01-30T11:23:32.252163"
+  },
+  "1608": {
+    "device_id": "1608",
+    "current_temperature": 61.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-23T12:10:04.908275",
+    "created_at": "2025-02-09T01:01:17.719722",
+    "updated_at": "2025-07-26T22:15:22.979384"
+  },
+  "1609": {
+    "device_id": "1609",
+    "current_temperature": 71.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-09-28T13:48:15.878531",
+    "created_at": "2024-09-22T11:24:42.431816",
+    "updated_at": "2024-10-19T00:53:25.593526"
+  },
+  "1628": {
+    "device_id": "1628",
+    "current_temperature": 66.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-09T15:38:38.130413",
+    "created_at": "2024-11-14T16:10:50.172712",
+    "updated_at": "2025-07-13T14:31:20.967775"
+  },
+  "1629": {
+    "device_id": "1629",
+    "current_temperature": 67.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-20T20:26:48.621645",
+    "created_at": "2024-12-17T17:46:24.490942",
+    "updated_at": "2025-02-25T21:36:58.860877"
+  },
+  "1652": {
+    "device_id": "1652",
+    "current_temperature": 60.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-18T15:45:08.066760",
+    "created_at": "2025-03-03T06:37:59.014445",
+    "updated_at": "2025-05-27T10:58:52.627255"
+  },
+  "1653": {
+    "device_id": "1653",
+    "current_temperature": 62.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-26T05:39:31.182617",
+    "created_at": "2024-12-08T01:22:52.347953",
+    "updated_at": "2025-04-03T04:29:11.074985"
+  },
+  "1675": {
+    "device_id": "1675",
+    "current_temperature": 62.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-23T01:30:35.034856",
+    "created_at": "2024-09-20T01:12:18.247975",
+    "updated_at": "2024-11-05T02:56:08.367183"
+  },
+  "1676": {
+    "device_id": "1676",
+    "current_temperature": 62.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-14T02:33:29.286275",
+    "created_at": "2024-08-06T07:20:23.672725",
+    "updated_at": "2024-11-03T12:42:56.405309"
+  },
+  "1693": {
+    "device_id": "1693",
+    "current_temperature": 65.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-10-03T13:05:57.792261",
+    "created_at": "2024-09-21T04:59:07.121089",
+    "updated_at": "2025-07-13T00:44:05.349928"
+  },
+  "1710": {
+    "device_id": "1710",
+    "current_temperature": 67.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-27T12:43:16.364097",
+    "created_at": "2024-08-06T23:08:56.986904",
+    "updated_at": "2025-05-26T19:26:35.218935"
+  },
+  "1711": {
+    "device_id": "1711",
+    "current_temperature": 66.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-23T23:47:52.989598",
+    "created_at": "2025-01-03T12:27:27.037041",
+    "updated_at": "2025-01-27T17:29:50.540838"
+  },
+  "1736": {
+    "device_id": "1736",
+    "current_temperature": 63.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-03T00:48:58.777510",
+    "created_at": "2024-12-10T19:19:07.943094",
+    "updated_at": "2025-07-26T09:47:20.852133"
+  },
+  "1737": {
+    "device_id": "1737",
+    "current_temperature": 70.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-27T23:49:24.026844",
+    "created_at": "2024-10-23T02:51:49.600074",
+    "updated_at": "2024-11-24T02:26:06.187596"
+  },
+  "1762": {
+    "device_id": "1762",
+    "current_temperature": 66.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-22T01:31:41.695044",
+    "created_at": "2025-02-09T09:50:13.181195",
+    "updated_at": "2025-03-08T05:11:55.837019"
+  },
+  "1763": {
+    "device_id": "1763",
+    "current_temperature": 71.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-09T07:30:35.119744",
+    "created_at": "2024-11-26T10:37:17.809870",
+    "updated_at": "2025-06-20T04:08:26.658607"
+  },
+  "1784": {
+    "device_id": "1784",
+    "current_temperature": 64.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-09T04:16:10.428603",
+    "created_at": "2025-04-21T03:34:41.719071",
+    "updated_at": "2025-06-08T21:07:46.879316"
+  },
+  "1785": {
+    "device_id": "1785",
+    "current_temperature": 74.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-11-09T23:59:21.671107",
+    "created_at": "2024-10-07T22:37:15.273863",
+    "updated_at": "2025-04-04T20:58:32.160381"
+  },
+  "1803": {
+    "device_id": "1803",
+    "current_temperature": 70.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-09-10T02:58:08.074968",
+    "created_at": "2024-08-01T03:09:52.651302",
+    "updated_at": "2025-07-04T19:57:19.834586"
+  },
+  "1804": {
+    "device_id": "1804",
+    "current_temperature": 71.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-08T18:55:59.912558",
+    "created_at": "2024-11-29T21:57:52.132881",
+    "updated_at": "2025-07-15T16:12:29.433635"
+  },
+  "1825": {
+    "device_id": "1825",
+    "current_temperature": 60.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-02T17:51:13.754548",
+    "created_at": "2024-11-22T17:58:27.072475",
+    "updated_at": "2025-07-21T17:56:10.647500"
+  },
+  "1826": {
+    "device_id": "1826",
+    "current_temperature": 62.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-07T11:39:34.144080",
+    "created_at": "2025-01-12T20:10:32.909690",
+    "updated_at": "2025-01-26T09:46:39.995580"
+  },
+  "1857": {
+    "device_id": "1857",
+    "current_temperature": 62.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-03T06:34:53.670380",
+    "created_at": "2025-04-21T05:05:36.588410",
+    "updated_at": "2025-06-26T21:04:45.118776"
+  },
+  "1858": {
+    "device_id": "1858",
+    "current_temperature": 73.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-17T16:19:33.432007",
+    "created_at": "2024-08-31T12:21:29.564594",
+    "updated_at": "2024-09-26T02:04:00.731076"
+  },
+  "1878": {
+    "device_id": "1878",
+    "current_temperature": 67.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-28T14:33:32.539417",
+    "created_at": "2024-08-10T04:40:18.852294",
+    "updated_at": "2025-03-27T15:24:46.520705"
+  },
+  "1898": {
+    "device_id": "1898",
+    "current_temperature": 64.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-16T04:34:30.817698",
+    "created_at": "2024-08-23T19:38:24.514526",
+    "updated_at": "2025-02-27T10:15:51.067415"
+  },
+  "1899": {
+    "device_id": "1899",
+    "current_temperature": 69.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-08T16:54:20.946355",
+    "created_at": "2024-09-24T19:45:41.153236",
+    "updated_at": "2025-07-09T20:57:28.631135"
+  },
+  "1927": {
+    "device_id": "1927",
+    "current_temperature": 63.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-12T18:32:35.500111",
+    "created_at": "2024-10-08T03:28:53.194539",
+    "updated_at": "2025-06-28T03:25:19.068325"
+  },
+  "1928": {
+    "device_id": "1928",
+    "current_temperature": 62.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-11T12:40:25.720671",
+    "created_at": "2024-11-08T17:16:30.098068",
+    "updated_at": "2025-05-28T07:02:06.183543"
+  },
+  "1947": {
+    "device_id": "1947",
+    "current_temperature": 68.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-07T00:48:52.536104",
+    "created_at": "2024-11-30T22:34:29.120890",
+    "updated_at": "2025-02-04T08:35:56.368457"
+  },
+  "1948": {
+    "device_id": "1948",
+    "current_temperature": 73.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-07T05:04:17.209966",
+    "created_at": "2025-03-15T20:02:34.882992",
+    "updated_at": "2025-03-31T07:11:55.521535"
+  },
+  "1963": {
+    "device_id": "1963",
+    "current_temperature": 65.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-13T08:07:59.495649",
+    "created_at": "2025-03-23T00:37:55.516045",
+    "updated_at": "2025-03-25T01:51:32.238509"
+  },
+  "1964": {
+    "device_id": "1964",
+    "current_temperature": 68.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-10T15:32:18.999239",
+    "created_at": "2025-01-31T07:07:14.309052",
+    "updated_at": "2025-05-11T20:11:14.676471"
+  },
+  "1978": {
+    "device_id": "1978",
+    "current_temperature": 69.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-14T14:22:40.863904",
+    "created_at": "2025-04-02T11:52:50.436826",
+    "updated_at": "2025-05-06T02:16:04.133389"
+  },
+  "1979": {
+    "device_id": "1979",
+    "current_temperature": 66.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-27T11:20:45.091287",
+    "created_at": "2025-04-13T01:31:53.758593",
+    "updated_at": "2025-05-12T13:35:01.638782"
+  },
+  "1996": {
+    "device_id": "1996",
+    "current_temperature": 66.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-04T04:02:25.977426",
+    "created_at": "2024-10-04T20:47:16.309813",
+    "updated_at": "2025-06-29T18:21:08.256093"
+  },
+  "1997": {
+    "device_id": "1997",
+    "current_temperature": 68.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-04T15:10:16.217932",
+    "created_at": "2025-03-30T22:17:50.979765",
+    "updated_at": "2025-04-23T03:19:39.579778"
+  },
+  "2023": {
+    "device_id": "2023",
+    "current_temperature": 74.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-27T05:47:46.757066",
+    "created_at": "2025-02-21T17:20:45.923562",
+    "updated_at": "2025-04-02T15:30:38.971410"
+  },
+  "2024": {
+    "device_id": "2024",
+    "current_temperature": 71.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-11-06T18:25:21.528330",
+    "created_at": "2024-09-08T12:39:55.800392",
+    "updated_at": "2025-03-14T04:31:05.254257"
+  },
+  "2049": {
+    "device_id": "2049",
+    "current_temperature": 62.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-09-17T03:09:22.730513",
+    "created_at": "2024-08-21T07:52:51.276046",
+    "updated_at": "2024-08-31T08:08:21.388491"
+  },
+  "2050": {
+    "device_id": "2050",
+    "current_temperature": 67.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-11-30T20:27:31.082724",
+    "created_at": "2024-08-22T18:43:19.761624",
+    "updated_at": "2025-02-14T04:53:49.978093"
+  },
+  "2075": {
+    "device_id": "2075",
+    "current_temperature": 74.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-24T05:45:59.673680",
+    "created_at": "2025-04-24T19:05:00.396161",
+    "updated_at": "2025-06-06T21:20:43.561950"
+  },
+  "2076": {
+    "device_id": "2076",
+    "current_temperature": 67.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-11-30T04:02:05.421952",
+    "created_at": "2024-11-07T22:34:05.134490",
+    "updated_at": "2025-05-17T10:18:57.441721"
+  },
+  "2095": {
+    "device_id": "2095",
+    "current_temperature": 64.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-06T12:49:45.026892",
+    "created_at": "2024-09-18T01:05:19.115150",
+    "updated_at": "2025-02-03T11:13:41.305640"
+  },
+  "2096": {
+    "device_id": "2096",
+    "current_temperature": 66.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-21T22:27:24.271805",
+    "created_at": "2024-12-18T18:52:16.184907",
+    "updated_at": "2025-06-06T05:04:38.301800"
+  },
+  "2116": {
+    "device_id": "2116",
+    "current_temperature": 61.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-09T23:31:08.232479",
+    "created_at": "2025-01-19T07:44:57.576619",
+    "updated_at": "2025-04-14T09:20:33.409449"
+  },
+  "2130": {
+    "device_id": "2130",
+    "current_temperature": 69.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-10-25T15:36:25.789680",
+    "created_at": "2024-08-11T23:18:52.496879",
+    "updated_at": "2024-11-12T16:44:40.391064"
+  },
+  "2131": {
+    "device_id": "2131",
+    "current_temperature": 72.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-14T18:38:22.289536",
+    "created_at": "2024-11-10T23:30:39.951943",
+    "updated_at": "2024-11-19T01:12:05.945156"
+  },
+  "2144": {
+    "device_id": "2144",
+    "current_temperature": 65.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-19T23:41:39.042858",
+    "created_at": "2024-11-26T02:50:35.593062",
+    "updated_at": "2025-01-24T03:16:05.791131"
+  },
+  "2160": {
+    "device_id": "2160",
+    "current_temperature": 67.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-07T11:30:18.628398",
+    "created_at": "2025-03-17T11:09:44.576239",
+    "updated_at": "2025-07-18T08:41:57.834806"
+  },
+  "2161": {
+    "device_id": "2161",
+    "current_temperature": 63.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-09T07:29:11.762598",
+    "created_at": "2025-02-09T06:43:57.895650",
+    "updated_at": "2025-07-27T19:02:51.370980"
+  },
+  "2188": {
+    "device_id": "2188",
+    "current_temperature": 71.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-15T21:21:59.219976",
+    "created_at": "2025-05-01T01:59:06.508333",
+    "updated_at": "2025-07-25T09:44:18.166301"
+  },
+  "2201": {
+    "device_id": "2201",
+    "current_temperature": 63.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-10T00:58:55.649119",
+    "created_at": "2024-12-22T08:13:11.965015",
+    "updated_at": "2025-07-04T22:24:23.420930"
+  },
+  "2202": {
+    "device_id": "2202",
+    "current_temperature": 74.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-27T08:54:22.247664",
+    "created_at": "2025-04-16T16:39:14.004570",
+    "updated_at": "2025-05-30T01:03:40.976552"
+  },
+  "2219": {
+    "device_id": "2219",
+    "current_temperature": 65.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-21T23:30:13.126094",
+    "created_at": "2024-11-17T08:34:38.119933",
+    "updated_at": "2025-04-06T21:57:20.632470"
+  },
+  "2220": {
+    "device_id": "2220",
+    "current_temperature": 60.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-15T16:05:43.177813",
+    "created_at": "2024-08-01T01:50:46.870849",
+    "updated_at": "2025-05-21T23:59:41.793005"
+  },
+  "2240": {
+    "device_id": "2240",
+    "current_temperature": 65.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-02T11:11:01.900348",
+    "created_at": "2024-11-22T17:52:13.118256",
+    "updated_at": "2025-06-08T21:18:16.911217"
+  },
+  "2241": {
+    "device_id": "2241",
+    "current_temperature": 64.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-10T01:40:48.978360",
+    "created_at": "2025-01-14T03:31:39.026262",
+    "updated_at": "2025-05-27T18:33:04.530203"
+  },
+  "2260": {
+    "device_id": "2260",
+    "current_temperature": 74.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-05T01:46:38.649818",
+    "created_at": "2025-01-09T22:26:17.423391",
+    "updated_at": "2025-05-31T04:25:35.448544"
+  },
+  "2261": {
+    "device_id": "2261",
+    "current_temperature": 72.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-25T06:21:17.519216",
+    "created_at": "2025-03-22T19:04:30.624664",
+    "updated_at": "2025-04-18T16:45:11.670698"
+  },
+  "2280": {
+    "device_id": "2280",
+    "current_temperature": 72.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-27T17:21:10.847722",
+    "created_at": "2024-11-09T21:50:43.172998",
+    "updated_at": "2025-01-06T23:30:15.215287"
+  },
+  "2281": {
+    "device_id": "2281",
+    "current_temperature": 71.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-06T09:03:20.476669",
+    "created_at": "2025-03-18T22:16:32.949168",
+    "updated_at": "2025-07-07T09:51:49.183188"
+  },
+  "2302": {
+    "device_id": "2302",
+    "current_temperature": 62.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-29T11:45:13.160350",
+    "created_at": "2025-03-11T16:09:16.393765",
+    "updated_at": "2025-03-21T16:51:42.193892"
+  },
+  "2303": {
+    "device_id": "2303",
+    "current_temperature": 72.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-28T17:28:26.021505",
+    "created_at": "2025-03-20T06:16:29.330664",
+    "updated_at": "2025-05-30T06:43:33.633622"
+  },
+  "2318": {
+    "device_id": "2318",
+    "current_temperature": 69.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-23T07:59:02.024617",
+    "created_at": "2024-12-19T01:07:28.278273",
+    "updated_at": "2025-05-04T21:40:04.597007"
+  },
+  "2319": {
+    "device_id": "2319",
+    "current_temperature": 69.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-25T03:02:40.045731",
+    "created_at": "2024-10-14T20:03:59.194915",
+    "updated_at": "2024-11-06T09:40:07.357353"
+  },
+  "2341": {
+    "device_id": "2341",
+    "current_temperature": 70.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-19T14:50:44.431826",
+    "created_at": "2025-01-26T09:09:23.963533",
+    "updated_at": "2025-06-27T23:42:18.131468"
+  },
+  "2342": {
+    "device_id": "2342",
+    "current_temperature": 62.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-25T18:23:11.519967",
+    "created_at": "2024-12-26T11:44:21.738703",
+    "updated_at": "2024-12-30T10:07:33.835036"
+  },
+  "2359": {
+    "device_id": "2359",
+    "current_temperature": 64.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-10-09T06:27:09.954311",
+    "created_at": "2024-08-02T11:05:53.633386",
+    "updated_at": "2025-03-15T14:57:32.725608"
+  },
+  "2377": {
+    "device_id": "2377",
+    "current_temperature": 72.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-14T07:02:29.417238",
+    "created_at": "2025-04-11T21:04:30.235474",
+    "updated_at": "2025-04-23T04:40:25.416566"
+  },
+  "2378": {
+    "device_id": "2378",
+    "current_temperature": 72.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-19T07:37:30.830251",
+    "created_at": "2024-08-05T19:44:48.173618",
+    "updated_at": "2024-11-21T23:57:52.765400"
+  },
+  "2404": {
+    "device_id": "2404",
+    "current_temperature": 66.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-11T05:03:44.407468",
+    "created_at": "2024-12-16T12:31:07.602754",
+    "updated_at": "2025-04-24T12:30:21.827861"
+  },
+  "2405": {
+    "device_id": "2405",
+    "current_temperature": 62.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-03T11:07:47.794455",
+    "created_at": "2024-08-14T12:13:56.838443",
+    "updated_at": "2024-10-05T00:31:08.548124"
+  },
+  "2427": {
+    "device_id": "2427",
+    "current_temperature": 66.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-12T11:09:15.681983",
+    "created_at": "2025-03-06T08:29:09.324946",
+    "updated_at": "2025-05-08T12:21:30.831964"
+  },
+  "2428": {
+    "device_id": "2428",
+    "current_temperature": 69.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-08T05:29:06.424146",
+    "created_at": "2024-10-11T16:45:00.637014",
+    "updated_at": "2025-07-28T04:18:35.319336"
+  },
+  "2454": {
+    "device_id": "2454",
+    "current_temperature": 68.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-09T08:50:33.488324",
+    "created_at": "2025-04-27T16:27:22.435053",
+    "updated_at": "2025-07-22T04:55:18.191076"
+  },
+  "2455": {
+    "device_id": "2455",
+    "current_temperature": 74.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-26T18:40:31.244695",
+    "created_at": "2025-03-13T06:50:44.129311",
+    "updated_at": "2025-07-29T15:41:34.539579"
+  },
+  "2474": {
+    "device_id": "2474",
+    "current_temperature": 62.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-29T12:39:41.017706",
+    "created_at": "2024-08-29T04:04:27.422150",
+    "updated_at": "2024-12-30T12:26:11.693030"
+  },
+  "2475": {
+    "device_id": "2475",
+    "current_temperature": 66.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-24T04:42:10.528958",
+    "created_at": "2025-01-11T22:46:43.027484",
+    "updated_at": "2025-02-02T01:44:38.100177"
+  },
+  "2493": {
+    "device_id": "2493",
+    "current_temperature": 64.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-24T18:49:23.083835",
+    "created_at": "2024-11-29T04:46:32.521812",
+    "updated_at": "2025-01-03T00:20:07.481295"
+  },
+  "2494": {
+    "device_id": "2494",
+    "current_temperature": 64.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-10T23:25:46.115504",
+    "created_at": "2025-03-14T03:58:09.820460",
+    "updated_at": "2025-04-27T16:21:43.909903"
+  },
+  "2514": {
+    "device_id": "2514",
+    "current_temperature": 67.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-29T11:42:04.472239",
+    "created_at": "2024-11-02T23:45:42.191136",
+    "updated_at": "2025-07-21T18:23:34.678031"
+  },
+  "2515": {
+    "device_id": "2515",
+    "current_temperature": 72.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-13T07:00:12.360035",
+    "created_at": "2025-04-21T19:53:23.665995",
+    "updated_at": "2025-04-25T05:10:03.829697"
+  },
+  "2535": {
+    "device_id": "2535",
+    "current_temperature": 68.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-07T03:38:39.035837",
+    "created_at": "2024-12-12T11:23:31.867435",
+    "updated_at": "2025-02-27T03:02:39.979071"
+  },
+  "2536": {
+    "device_id": "2536",
+    "current_temperature": 60.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-23T17:06:32.051103",
+    "created_at": "2024-08-17T16:08:40.739124",
+    "updated_at": "2025-07-23T21:45:22.557739"
+  },
+  "2557": {
+    "device_id": "2557",
+    "current_temperature": 71.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-27T18:25:56.459824",
+    "created_at": "2025-02-08T02:17:54.540339",
+    "updated_at": "2025-06-15T09:49:08.514409"
+  },
+  "2558": {
+    "device_id": "2558",
+    "current_temperature": 69.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-08T18:56:52.457783",
+    "created_at": "2025-04-25T10:11:20.120414",
+    "updated_at": "2025-07-07T21:19:07.517716"
+  },
+  "2582": {
+    "device_id": "2582",
+    "current_temperature": 72.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-10-16T01:48:27.687115",
+    "created_at": "2024-10-03T11:22:36.868915",
+    "updated_at": "2025-07-09T04:44:26.013340"
+  },
+  "2583": {
+    "device_id": "2583",
+    "current_temperature": 69.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-12T19:54:03.370841",
+    "created_at": "2024-08-19T10:19:39.422274",
+    "updated_at": "2024-08-20T15:09:25.737884"
+  },
+  "2608": {
+    "device_id": "2608",
+    "current_temperature": 62.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-02T02:21:36.343956",
+    "created_at": "2024-12-10T00:10:33.222745",
+    "updated_at": "2025-03-08T08:29:20.418191"
+  },
+  "2609": {
+    "device_id": "2609",
+    "current_temperature": 74.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-10T16:33:51.123793",
+    "created_at": "2024-09-30T04:55:33.490354",
+    "updated_at": "2025-04-26T10:56:08.811063"
+  },
+  "2630": {
+    "device_id": "2630",
+    "current_temperature": 66.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-24T03:32:42.792824",
+    "created_at": "2024-12-12T12:49:07.147412",
+    "updated_at": "2025-04-02T08:26:43.669231"
+  },
+  "2644": {
+    "device_id": "2644",
+    "current_temperature": 74.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-07T19:48:17.838998",
+    "created_at": "2025-01-04T23:09:04.610024",
+    "updated_at": "2025-06-28T02:53:16.835387"
+  },
+  "2645": {
+    "device_id": "2645",
+    "current_temperature": 68.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-14T03:33:40.425560",
+    "created_at": "2024-11-07T02:33:22.546930",
+    "updated_at": "2025-01-10T23:39:50.317559"
+  },
+  "2659": {
+    "device_id": "2659",
+    "current_temperature": 61.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-10T07:31:01.964085",
+    "created_at": "2024-11-22T00:44:15.086548",
+    "updated_at": "2025-04-11T12:55:51.957752"
+  },
+  "2660": {
+    "device_id": "2660",
+    "current_temperature": 65.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-04T07:22:39.322267",
+    "created_at": "2025-01-16T20:01:09.696705",
+    "updated_at": "2025-05-31T19:50:42.870152"
+  },
+  "2678": {
+    "device_id": "2678",
+    "current_temperature": 65.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-05T19:46:43.124757",
+    "created_at": "2024-12-31T03:08:22.215833",
+    "updated_at": "2025-05-29T13:24:30.723279"
+  },
+  "2679": {
+    "device_id": "2679",
+    "current_temperature": 60.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-19T05:55:50.559602",
+    "created_at": "2024-08-30T09:21:06.664333",
+    "updated_at": "2024-09-23T23:57:46.575111"
+  },
+  "2700": {
+    "device_id": "2700",
+    "current_temperature": 61.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-11-24T06:57:36.600033",
+    "created_at": "2024-10-02T08:51:38.522269",
+    "updated_at": "2025-05-05T19:16:58.227671"
+  },
+  "2701": {
+    "device_id": "2701",
+    "current_temperature": 62.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-25T12:21:55.807258",
+    "created_at": "2024-12-17T21:43:15.758938",
+    "updated_at": "2025-05-20T09:27:16.802509"
+  },
+  "2723": {
+    "device_id": "2723",
+    "current_temperature": 71.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-13T16:31:23.080270",
+    "created_at": "2025-04-09T12:34:09.893461",
+    "updated_at": "2025-06-24T14:54:23.014595"
+  },
+  "2724": {
+    "device_id": "2724",
+    "current_temperature": 67.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-17T01:30:53.288968",
+    "created_at": "2025-04-28T04:17:23.564640",
+    "updated_at": "2025-06-25T15:51:46.266442"
+  },
+  "2747": {
+    "device_id": "2747",
+    "current_temperature": 63.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-29T09:55:00.690822",
+    "created_at": "2025-04-19T19:37:59.310220",
+    "updated_at": "2025-07-14T07:41:13.963769"
+  },
+  "2748": {
+    "device_id": "2748",
+    "current_temperature": 73.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-14T21:30:02.065428",
+    "created_at": "2024-10-21T18:24:11.456761",
+    "updated_at": "2025-07-14T14:03:44.999653"
+  },
+  "2770": {
+    "device_id": "2770",
+    "current_temperature": 62.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-09-14T21:38:51.589447",
+    "created_at": "2024-09-09T02:18:02.494865",
+    "updated_at": "2025-05-16T05:24:18.395517"
+  },
+  "2771": {
+    "device_id": "2771",
+    "current_temperature": 64.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-09T22:20:39.165477",
+    "created_at": "2025-02-27T15:40:07.080490",
+    "updated_at": "2025-07-24T07:54:46.530461"
+  },
+  "2795": {
+    "device_id": "2795",
+    "current_temperature": 61.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-18T23:07:33.579999",
+    "created_at": "2025-03-11T17:46:00.303872",
+    "updated_at": "2025-07-14T14:13:07.450575"
+  },
+  "2796": {
+    "device_id": "2796",
+    "current_temperature": 61.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-14T03:02:36.787876",
+    "created_at": "2024-08-17T23:04:10.673333",
+    "updated_at": "2025-03-20T14:25:05.103234"
+  },
+  "2812": {
+    "device_id": "2812",
+    "current_temperature": 74.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-06T17:58:32.535540",
+    "created_at": "2025-03-10T05:17:35.676892",
+    "updated_at": "2025-05-25T09:44:33.590993"
+  },
+  "2813": {
+    "device_id": "2813",
+    "current_temperature": 60.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-21T06:06:25.376150",
+    "created_at": "2024-12-26T05:22:27.826868",
+    "updated_at": "2025-03-20T16:44:04.784161"
+  },
+  "2828": {
+    "device_id": "2828",
+    "current_temperature": 61.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-13T05:41:16.265161",
+    "created_at": "2024-11-09T01:45:37.035086",
+    "updated_at": "2024-12-29T08:38:32.418743"
+  },
+  "2844": {
+    "device_id": "2844",
+    "current_temperature": 74.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-11-17T02:33:25.040611",
+    "created_at": "2024-09-27T08:22:23.683532",
+    "updated_at": "2025-06-04T07:01:11.218646"
+  },
+  "2845": {
+    "device_id": "2845",
+    "current_temperature": 71.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-11-25T15:43:57.255786",
+    "created_at": "2024-08-16T19:23:31.372865",
+    "updated_at": "2024-09-19T21:20:12.327531"
+  },
+  "2862": {
+    "device_id": "2862",
+    "current_temperature": 64.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-17T08:45:00.112212",
+    "created_at": "2024-09-04T13:54:31.197561",
+    "updated_at": "2024-12-30T06:37:43.501020"
+  },
+  "2863": {
+    "device_id": "2863",
+    "current_temperature": 65.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-30T18:30:15.561379",
+    "created_at": "2024-12-19T06:18:52.357221",
+    "updated_at": "2025-06-01T19:58:37.482168"
+  },
+  "2879": {
+    "device_id": "2879",
+    "current_temperature": 69.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-02T19:34:36.817581",
+    "created_at": "2025-04-09T02:00:09.191238",
+    "updated_at": "2025-06-01T05:49:40.659657"
+  },
+  "2880": {
+    "device_id": "2880",
+    "current_temperature": 74.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-06T04:31:16.380365",
+    "created_at": "2024-11-10T00:37:51.449738",
+    "updated_at": "2025-07-24T04:12:30.424942"
+  },
+  "2897": {
+    "device_id": "2897",
+    "current_temperature": 71.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-20T22:16:28.068871",
+    "created_at": "2024-11-20T21:19:12.769029",
+    "updated_at": "2025-03-12T20:36:29.382770"
+  },
+  "2906": {
+    "device_id": "2906",
+    "current_temperature": 61.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-09T22:40:24.047342",
+    "created_at": "2025-03-12T22:36:58.620975",
+    "updated_at": "2025-03-31T15:23:53.402141"
+  },
+  "2917": {
+    "device_id": "2917",
+    "current_temperature": 68.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-02T14:13:01.102143",
+    "created_at": "2025-02-05T02:13:48.472297",
+    "updated_at": "2025-05-23T05:27:51.510461"
+  },
+  "2924": {
+    "device_id": "2924",
+    "current_temperature": 74.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-06T04:10:12.228107",
+    "created_at": "2024-08-26T02:33:28.062970",
+    "updated_at": "2025-05-16T06:41:34.510554"
+  },
+  "2940": {
+    "device_id": "2940",
+    "current_temperature": 73.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-17T01:59:13.046537",
+    "created_at": "2024-12-27T12:00:31.864831",
+    "updated_at": "2025-07-09T13:29:10.412899"
+  },
+  "2941": {
+    "device_id": "2941",
+    "current_temperature": 64.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-16T21:27:43.019554",
+    "created_at": "2024-11-12T14:27:26.847924",
+    "updated_at": "2025-06-22T15:34:07.032858"
+  },
+  "2956": {
+    "device_id": "2956",
+    "current_temperature": 61.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-25T14:09:10.844320",
+    "created_at": "2025-01-26T21:16:55.912247",
+    "updated_at": "2025-02-13T08:29:01.600176"
+  },
+  "2970": {
+    "device_id": "2970",
+    "current_temperature": 61.0,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-09T14:25:00.270925",
+    "created_at": "2024-09-04T17:06:53.329628",
+    "updated_at": "2024-11-06T15:22:54.512122"
+  },
+  "2971": {
+    "device_id": "2971",
+    "current_temperature": 72.7,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-09-28T08:02:19.588336",
+    "created_at": "2024-09-24T11:54:45.900720",
+    "updated_at": "2025-03-14T20:28:35.684737"
+  },
+  "2989": {
+    "device_id": "2989",
+    "current_temperature": 67.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-04T00:50:33.930033",
+    "created_at": "2025-03-24T14:49:31.981831",
+    "updated_at": "2025-04-09T02:03:32.357855"
+  },
+  "2990": {
+    "device_id": "2990",
+    "current_temperature": 72.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-06-30T03:18:37.911334",
+    "created_at": "2024-12-17T04:04:19.993585",
+    "updated_at": "2025-01-22T02:20:40.143501"
+  },
+  "3010": {
+    "device_id": "3010",
+    "current_temperature": 72.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-05-18T16:16:23.346141",
+    "created_at": "2024-11-20T23:31:37.685371",
+    "updated_at": "2024-12-03T08:21:21.413181"
+  },
+  "3011": {
+    "device_id": "3011",
+    "current_temperature": 70.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-24T11:08:24.722860",
+    "created_at": "2024-09-15T14:00:25.052824",
+    "updated_at": "2025-04-19T16:02:38.284018"
+  },
+  "3033": {
+    "device_id": "3033",
+    "current_temperature": 62.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-20T22:26:01.850198",
+    "created_at": "2025-03-27T01:48:24.390781",
+    "updated_at": "2025-04-04T04:06:44.226189"
+  },
+  "3034": {
+    "device_id": "3034",
+    "current_temperature": 68.1,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-02-27T14:48:06.831360",
+    "created_at": "2024-08-06T14:14:08.865933",
+    "updated_at": "2025-02-03T10:58:09.958392"
+  },
+  "3060": {
+    "device_id": "3060",
+    "current_temperature": 73.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-17T17:44:55.054503",
+    "created_at": "2024-12-31T07:21:10.922423",
+    "updated_at": "2025-05-29T00:24:14.117689"
+  },
+  "3061": {
+    "device_id": "3061",
+    "current_temperature": 67.5,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-04-28T08:26:52.193497",
+    "created_at": "2025-03-12T20:06:21.760190",
+    "updated_at": "2025-05-22T06:49:53.623120"
+  },
+  "3087": {
+    "device_id": "3087",
+    "current_temperature": 69.2,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-17T20:24:13.313536",
+    "created_at": "2024-12-30T14:23:36.925708",
+    "updated_at": "2025-05-01T19:31:23.233006"
+  },
+  "3088": {
+    "device_id": "3088",
+    "current_temperature": 68.9,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-23T21:54:39.621929",
+    "created_at": "2025-02-21T02:27:40.683645",
+    "updated_at": "2025-02-25T04:09:00.992289"
+  },
+  "3105": {
+    "device_id": "3105",
+    "current_temperature": 69.8,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-01-24T07:31:27.620355",
+    "created_at": "2024-12-04T07:58:05.503881",
+    "updated_at": "2025-05-01T04:12:29.760083"
+  },
+  "3106": {
+    "device_id": "3106",
+    "current_temperature": 65.3,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2024-12-20T05:11:20.804143",
+    "created_at": "2024-11-09T01:07:45.810418",
+    "updated_at": "2025-01-06T02:51:40.614543"
+  },
+  "3123": {
+    "device_id": "3123",
+    "current_temperature": 62.4,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-07-28T00:08:19.049715",
+    "created_at": "2025-04-09T06:27:42.830181",
+    "updated_at": "2025-04-28T15:22:29.076519"
+  },
+  "3124": {
+    "device_id": "3124",
+    "current_temperature": 74.6,
+    "lowest_rated_temperature": 60.0,
+    "highest_rated_temperature": 80.0,
+    "last_adjustment_time": "2025-03-22T02:23:21.036621",
+    "created_at": "2025-02-10T06:19:04.107905",
+    "updated_at": "2025-02-12T05:22:36.481281"
+  }
+}

@@ -3,236 +3,241 @@ I have a set of tools that I use to interact with a DB in a json format. These t
 Your task is to create for me the tools. Each tool is a class that comprises of two functions: one for the implementation of the tool and another for the schema of the tool. The implementation function should return a json string that represents the result of the operation, while the schema function should return a dictionary that describes the parameters and their types. The schema function should also include a description of the tool and its parameters. I will provide you with examples of tools with their implementations and schemas, and you should use them as a reference to create your own tools. Also, I will provide the database schema for you to use as a reference for the parameters and their types.
 
 # Database schema:
+CREATE TABLE `homes` (
+  `home_id` integer PRIMARY KEY,
+  `owner_id` integer,
+  `address_id` integer,
+  `home_type` enum(Home,Apartment),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
 CREATE TABLE `users` (
-  `user_id` int PRIMARY KEY,
-  `first_name` varchar(100) NOT NULL,
-  `last_name` varchar(100) NOT NULL,
-  `email` varchar(320) UNIQUE NOT NULL,
-  `role` enum(admin,employee) NOT NULL,
-  `timezone` varchar(50) NOT NULL,
-  `status` enum(active,inactive,suspended) NOT NULL DEFAULT 'active',
-  `created_at` timestamp NOT NULL DEFAULT (NOW()),
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+  `user_id` integer PRIMARY KEY,
+  `first_name` varchar(255),
+  `last_name` varchar(255),
+  `phone_number` varchar(255),
+  `role` enum(Owner,Partner,Child,Guest,Servant),
+  `parent_id` integer,
+  `email` varchar(255),
+  `primary_address_id` integer,
+  `date_of_birth` date,
+  `status` enum(active,inactive),
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `funds` (
-  `fund_id` int PRIMARY KEY,
-  `name` varchar(255) NOT NULL,
-  `fund_type` enum(equity,fixed_income,multi_asset,hedge) NOT NULL,
-  `base_currency` enum(USD,EUR,GBP,NGN) NOT NULL,
-  `manager_id` int NOT NULL,
-  `size` decimal(18,2),
-  `status` enum(open,closed) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW()),
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `rooms` (
+  `room_id` integer PRIMARY KEY,
+  `home_id` integer,
+  `room_type` enum(Bedroom,kitchen,lounge,store,diningroom),
+  `room_owner_id` integer,
+  `status` enum(vacant,occupied),
+  `width_ft` float,
+  `length_ft` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `investors` (
-  `investor_id` int PRIMARY KEY,
-  `employee_id` int NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `investor_type` enum(organization,retail,high_net_worth) NOT NULL,
-  `contact_email` varchar(320) NOT NULL,
-  `accreditation_status` enum(accredited,non_accredited) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `devices` (
+  `device_id` integer PRIMARY KEY,
+  `device_type` enum(camera,bulb,thermostat,speaker,tv,refrigerator,oven),
+  `room_id` integer,
+  `installed_on` date,
+  `insurance_expiry_date` date,
+  `home_id` integer,
+  `status` enum(on,off),
+  `width_ft` float,
+  `length_ft` float,
+  `price` float,
+  `scheduled_maintainance_date` date,
+  `last_maintainance_date` date,
+  `daily_rated_power_consumption_kWh` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `subscriptions` (
-  `subscription_id` int PRIMARY KEY,
-  `fund_id` int NOT NULL,
-  `investor_id` int NOT NULL,
-  `amount` decimal(18,2) NOT NULL,
-  `currency` enum(USD,EUR,GBP,NGN) NOT NULL,
-  `status` enum(pending,approved,cancelled) NOT NULL,
-  `request_assigned_to` int NOT NULL,
-  `request_date` date NOT NULL,
-  `approval_date` date,
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `historical_energy_consumption` (
+  `consumption_id` integer PRIMARY KEY,
+  `device_id` integer,
+  `home_id` integer,
+  `room_id` integer,
+  `date` date,
+  `power_used_kWh` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `commitments` (
-  `commitment_id` int PRIMARY KEY,
-  `fund_id` int NOT NULL,
-  `investor_id` int NOT NULL,
-  `commitment_amount` decimal(18,2) NOT NULL,
-  `currency` enum(USD,EUR,GBP,NGN) NOT NULL,
-  `commitment_date` date NOT NULL,
-  `status` enum(pending,fulfilled) NOT NULL,
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `automated_routines` (
+  `routine_id` integer PRIMARY KEY,
+  `user_id` integer,
+  `home_id` integer,
+  `start_action_date` date,
+  `action_time` timestamp,
+  `action_interval` enum(daily,one_time,every_hour),
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `portfolios` (
-  `portfolio_id` int PRIMARY KEY,
-  `investor_id` int NOT NULL,
-  `base_currency` enum(USD,EUR,GBP,NGN) NOT NULL,
-  `status` enum(active,inactive,archived) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW()),
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `device_commands` (
+  `device_command_id` integer PRIMARY KEY,
+  `routine_id` integer,
+  `device_id` integer,
+  `status` enum(on,off),
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `portfolio_holdings` (
-  `holding_id` int PRIMARY KEY,
-  `portfolio_id` int NOT NULL,
-  `instrument_id` int NOT NULL,
-  `quantity` decimal(18,4) NOT NULL,
-  `cost_basis` decimal(18,4) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `bulb_commands` (
+  `bulb_command_id` integer PRIMARY KEY,
+  `routine_id` integer,
+  `device_id` integer,
+  `brightness_level` enum(dim,half,full),
+  `color` enum(red,white,yellow,blue),
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `instruments` (
-  `instrument_id` int PRIMARY KEY,
-  `ticker` varchar(20) UNIQUE NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `instrument_type` enum(stock,bond,derivative,cash,other) NOT NULL
+CREATE TABLE `thermostat_commands` (
+  `thermostat_command_id` integer PRIMARY KEY,
+  `routine_id` integer,
+  `device_id` integer,
+  `current_temperature` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `instrument_prices` (
-  `price_id` int PRIMARY KEY,
-  `instrument_id` int NOT NULL,
-  `price_date` date NOT NULL,
-  `open_price` decimal(18,4) NOT NULL,
-  `high_price` decimal(18,4) NOT NULL,
-  `low_price` decimal(18,4) NOT NULL,
-  `close_price` decimal(18,4) NOT NULL
+CREATE TABLE `security_cameras` (
+  `device_id` integer PRIMARY KEY,
+  `resolution` enum(720p,1080p,2k),
+  `last_activity_timestamp` timestamp,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `nav_records` (
-  `nav_id` int PRIMARY KEY,
-  `fund_id` int NOT NULL,
-  `nav_date` date NOT NULL,
-  `nav_value` decimal(18,4) NOT NULL,
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `smart_thermostats` (
+  `device_id` integer PRIMARY KEY,
+  `current_temperate` float,
+  `lowest_rated_temeprature` float,
+  `highest_rated_temeprature` float,
+  `last_adjustment_time` timestamp,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `trades` (
-  `trade_id` int PRIMARY KEY,
-  `fund_id` int NOT NULL,
-  `instrument_id` int NOT NULL,
-  `trade_date` timestamp NOT NULL,
-  `quantity` decimal(18,4) NOT NULL,
-  `price` decimal(18,4) NOT NULL,
-  `side` enum(buy,sell) NOT NULL,
-  `status` enum(executed,pending,failed) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `smart_bulbs` (
+  `device_id` integer PRIMARY KEY,
+  `brightness_level` enum(dim,half,full),
+  `color` enum(red,white,yellow,blue),
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `notifications` (
-  `notification_id` int PRIMARY KEY,
-  `email` varchar(320),
-  `type` enum(alert,report,reminder,subscription_update) NOT NULL,
-  `class` enum(funds,investors,portfolios,trades,invoices,reports,documents,subscriptions,commitments) NOT NULL,
-  `reference_id` int,
-  `status` enum(pending,sent,failed) NOT NULL,
-  `sent_at` timestamp,
-  `created_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `user_feedbacks` (
+  `user_feedback_id` inetger PRIMARY KEY,
+  `user_id` integer,
+  `device_id` integer,
+  `rating` integer,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `reports` (
-  `report_id` int PRIMARY KEY,
-  `fund_id` int NOT NULL,
-  `investor_id` int,
-  `report_date` date NOT NULL,
-  `report_type` enum(performance,holding,financial) NOT NULL DEFAULT 'performance',
-  `generated_by` int NOT NULL,
-  `status` enum(pending,completed,failed) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW()),
-  `export_period_end` date NOT NULL
+CREATE TABLE `addresses` (
+  `address_id` integer PRIMARY KEY,
+  `house_number` varchar(255),
+  `building_name` varchar(255),
+  `street` varchar(255),
+  `city_name` varchar(255),
+  `state` varchar(255),
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `documents` (
-  `document_id` int PRIMARY KEY,
-  `name` varchar(255) NOT NULL,
-  `type` enum(pdf,xlsx,docx,csv,other) NOT NULL,
-  `uploaded_by` int NOT NULL,
-  `upload_date` timestamp NOT NULL,
-  `report_id` int,
-  `size_bytes` bigint,
-  `status` enum(available,archived,deleted) NOT NULL
+CREATE TABLE `emergency_alerts` (
+  `alert_id` integer PRIMARY KEY,
+  `home_id` integer,
+  `device_id` integer,
+  `alert_type` enum(camera_motion_detected,camera_offline,bulb_malfunction,thermostat_temperature_alert,thermostat_offline,speaker_offline,tv_malfunction,refrigerator_temperature_alert,refrigerator_malfunction,oven_overheating,oven_malfunction),
+  `severity_level` enum(low,medium,high,critical),
+  `triggered_at` timestamp,
+  `acknowledged_at` timestamp,
+  `acknowledged_by_user` int,
+  `resolved_at` timestamp,
+  `resolved_by_user` int,
+  `created_at` timestamp
 );
 
-CREATE TABLE `invoices` (
-  `invoice_id` int PRIMARY KEY,
-  `fund_id` int NOT NULL,
-  `investor_id` int NOT NULL,
-  `commitment_id` int,
-  `invoice_date` date NOT NULL,
-  `due_date` date NOT NULL,
-  `amount` decimal(18,2) NOT NULL,
-  `payment_type` enum(auto-pay,manual) NOT NULL DEFAULT 'manual',
-  `currency` enum(USD,EUR,GBP,NGN) NOT NULL,
-  `status` enum(issued,paid) NOT NULL,
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `energy_tariffs` (
+  `tariff_id` integer PRIMARY KEY,
+  `home_id` integer,
+  `tariff_name` varchar(255),
+  `rate_per_kWh` float,
+  `peak_hours_start` time,
+  `peak_hours_end` time,
+  `peak_rate_multiplier` float,
+  `effective_from` date,
+  `effective_until` date,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `payments` (
-  `payment_id` int PRIMARY KEY,
-  `invoice_id` int NOT NULL,
-  `payment_date` timestamp NOT NULL,
-  `amount` decimal(18,2) NOT NULL,
-  `payment_method` enum(wire,cheque,credit_card,bank_transfer) NOT NULL,
-  `status` enum(draft,completed,failed) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW())
-);
+ALTER TABLE `homes` ADD FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`);
 
-CREATE TABLE `tickets` (
-  `ticket_id` int PRIMARY KEY,
-  `invoice_id` int,
-  `issue_date` timestamp NOT NULL,
-  `type` enum(missing_payment,overpayment,underpayment,mismatched_amount,invoice_duplicate,manual_follow_up),
-  `status` enum(open,in_review,resolved,closed) NOT NULL,
-  `assigned_to` int,
-  `resolution_date` timestamp,
-  `created_at` timestamp NOT NULL DEFAULT (NOW()),
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
-);
+ALTER TABLE `users` ADD FOREIGN KEY (`parent_id`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `funds` ADD FOREIGN KEY (`manager_id`) REFERENCES `users` (`user_id`);
+ALTER TABLE `users` ADD FOREIGN KEY (`primary_address_id`) REFERENCES `addresses` (`address_id`);
 
-ALTER TABLE `reports` ADD FOREIGN KEY (`generated_by`) REFERENCES `users` (`user_id`);
+ALTER TABLE `device_commands` ADD FOREIGN KEY (`routine_id`) REFERENCES `automated_routines` (`routine_id`);
 
-ALTER TABLE `documents` ADD FOREIGN KEY (`uploaded_by`) REFERENCES `users` (`user_id`);
+ALTER TABLE `device_commands` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
 
-ALTER TABLE `tickets` ADD FOREIGN KEY (`assigned_to`) REFERENCES `users` (`user_id`);
+ALTER TABLE `bulb_commands` ADD FOREIGN KEY (`routine_id`) REFERENCES `automated_routines` (`routine_id`);
 
-ALTER TABLE `subscriptions` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+ALTER TABLE `bulb_commands` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
 
-ALTER TABLE `commitments` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+ALTER TABLE `thermostat_commands` ADD FOREIGN KEY (`routine_id`) REFERENCES `automated_routines` (`routine_id`);
 
-ALTER TABLE `nav_records` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+ALTER TABLE `thermostat_commands` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
 
-ALTER TABLE `trades` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+ALTER TABLE `user_feedbacks` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `reports` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+ALTER TABLE `user_feedbacks` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
 
-ALTER TABLE `invoices` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+ALTER TABLE `historical_energy_consumption` ADD CONSTRAINT `room_device_historical` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`room_id`);
 
-ALTER TABLE `subscriptions` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
+ALTER TABLE `security_cameras` ADD CONSTRAINT `security_cameras_device` FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
 
-ALTER TABLE `commitments` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
+ALTER TABLE `devices` ADD CONSTRAINT `smart_bulb_device` FOREIGN KEY (`device_id`) REFERENCES `smart_bulbs` (`device_id`);
 
-ALTER TABLE `portfolios` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
+ALTER TABLE `devices` ADD CONSTRAINT `smart_thermostats_device` FOREIGN KEY (`device_id`) REFERENCES `smart_thermostats` (`device_id`);
 
-ALTER TABLE `invoices` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
+ALTER TABLE `homes` ADD CONSTRAINT `home_users` FOREIGN KEY (`owner_id`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `portfolio_holdings` ADD FOREIGN KEY (`portfolio_id`) REFERENCES `portfolios` (`portfolio_id`);
+ALTER TABLE `homes` ADD CONSTRAINT `home_rooms` FOREIGN KEY (`home_id`) REFERENCES `rooms` (`home_id`);
 
-ALTER TABLE `portfolio_holdings` ADD FOREIGN KEY (`instrument_id`) REFERENCES `instruments` (`instrument_id`);
+ALTER TABLE `devices` ADD CONSTRAINT `device_rooms` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`room_id`);
 
-ALTER TABLE `instrument_prices` ADD FOREIGN KEY (`instrument_id`) REFERENCES `instruments` (`instrument_id`);
+ALTER TABLE `devices` ADD CONSTRAINT `device_homes` FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
 
-ALTER TABLE `trades` ADD FOREIGN KEY (`instrument_id`) REFERENCES `instruments` (`instrument_id`);
+ALTER TABLE `historical_energy_consumption` ADD CONSTRAINT `historical_consumption_devices` FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
 
-ALTER TABLE `payments` ADD FOREIGN KEY (`invoice_id`) REFERENCES `invoices` (`invoice_id`);
+ALTER TABLE `historical_energy_consumption` ADD CONSTRAINT `historical_consumption_homes` FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
 
-ALTER TABLE `tickets` ADD FOREIGN KEY (`invoice_id`) REFERENCES `invoices` (`invoice_id`);
+ALTER TABLE `automated_routines` ADD CONSTRAINT `routines_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `subscriptions` ADD FOREIGN KEY (`request_assigned_to`) REFERENCES `users` (`user_id`);
+ALTER TABLE `automated_routines` ADD CONSTRAINT `routines_home_id` FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
 
-ALTER TABLE `invoices` ADD FOREIGN KEY (`commitment_id`) REFERENCES `commitments` (`commitment_id`);
+ALTER TABLE `rooms` ADD CONSTRAINT `room_owner_id_user` FOREIGN KEY (`room_owner_id`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `investors` ADD FOREIGN KEY (`employee_id`) REFERENCES `users` (`user_id`);
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
 
-ALTER TABLE `documents` ADD FOREIGN KEY (`report_id`) REFERENCES `reports` (`report_id`);
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`acknowledged_by_user`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`resolved_by_user`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `energy_tariffs` ADD FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
 
 
 # Examples of a tool implementation and schema:
@@ -569,154 +574,222 @@ class SearchDepartments(Tool):
         }
 
 import json
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 from tau_bench.envs.tool import Tool
 
-
-class QueryIncidentSLAs(Tool):
+class UpdateIncident(Tool):
     @staticmethod
-    def invoke(data: Dict[str, Any], company_id, incident_id: Optional[str] = None,
-               sla_id: Optional[str] = None, status: Optional[str] = None) -> str:
-        incident_slas = data.get("incident_sla", {})
+    def invoke(data: Dict[str, Any], incident_id: str, title: Optional[str] = None,
+               description: Optional[str] = None, status: Optional[str] = None,
+               priority: Optional[str] = None, assigned_to: Optional[str] = None,
+               category_id: Optional[str] = None, subcategory_id: Optional[str] = None) -> str:
         incidents = data.get("incidents", {})
-        company_incidents_ids = [incident_k for incident_k, incident_v in incidents.items() if incident_v.get("company_id") == company_id]
-        results = []
-
-        if not company_incidents_ids:
-            return json.dumps(results)
-
+        incident = incidents.get(str(incident_id))
         
-        for sla in incident_slas.values():
-            if sla_id and sla.get("sla_id") != sla_id:
-                continue
-
-            if sla.get("incident_id") not in company_incidents_ids:
-                continue
-
-            if incident_id and (sla.get("incident_id") != incident_id or sla.get("incident_id") not in company_incidents_ids):
-                # print(f"Skipping SLA {sla.get('sla_id')} for incident {sla.get('incident_id')}, not in company {company_id}")
-                # print(f"Incident IDs in company {company_id}: {company_incidents_ids}")
-                continue
-            
-            if sla_id and sla.get("sla_id") != sla_id:
-                continue
-            
-            if sla.get("status") and status and sla.get("status") != status:
-                continue
-            
-            results.append(sla)
-
-
-        return json.dumps(results)
+        if not incident:
+            raise ValueError(f"Incident {incident_id} not found")
+        
+        # Validate status if provided
+        if status:
+            valid_statuses = ["open", "in_progress", "resolved", "closed"]
+            if status not in valid_statuses:
+                raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
+        
+        # Validate priority if provided
+        if priority:
+            valid_priorities = ["low", "medium", "high", "critical"]
+            if priority not in valid_priorities:
+                raise ValueError(f"Invalid priority. Must be one of {valid_priorities}")
+        
+        # Validate assigned user if provided
+        if assigned_to:
+            users = data.get("users", {})
+            if str(assigned_to) not in users:
+                raise ValueError(f"Assigned user {assigned_to} not found")
+        
+        # Validate category if provided
+        if category_id:
+            categories = data.get("categories", {})
+            if str(category_id) not in categories:
+                raise ValueError(f"Category {category_id} not found")
+        
+        # Validate subcategory if provided
+        if subcategory_id:
+            subcategories = data.get("subcategories", {})
+            if str(subcategory_id) not in subcategories:
+                raise ValueError(f"Subcategory {subcategory_id} not found")
+        
+        # Update fields
+        if title is not None:
+            incident["title"] = title
+        if description is not None:
+            incident["description"] = description
+        if status is not None:
+            incident["status"] = status
+        if priority is not None:
+            incident["priority"] = priority
+        if assigned_to is not None:
+            incident["assigned_to"] = assigned_to
+        if category_id is not None:
+            incident["category_id"] = category_id
+        if subcategory_id is not None:
+            incident["subcategory_id"] = subcategory_id
+        
+        incident["updated_at"] = "2025-10-01T00:00:00"
+        return json.dumps(incident)
 
     @staticmethod
     def get_info() -> Dict[str, Any]:
         return {
             "type": "function",
             "function": {
-                "name": "query_incident_slas",
-                "description": "Fetch incident SLAs of a company with optional filters",
+                "name": "update_incident",
+                "description": "Update an existing incident",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "company_id": {"type": "string", "description": "Filter by company ID"},
-                        "incident_id": {"type": "string", "description": "Filter by incident ID"},
-                        "sla_id": {"type": "string", "description": "Filter by SLA policy ID"},
-                        "status": {"type": "string", "description": "Filter by status (Pending, Completed, Cancelled)"}
+                        "incident_id": {"type": "string", "description": "ID of the incident to update"},
+                        "title": {"type": "string", "description": "New title"},
+                        "description": {"type": "string", "description": "New description"},
+                        "status": {"type": "string", "description": "New status (open, in_progress, resolved, closed)"},
+                        "priority": {"type": "string", "description": "New priority (low, medium, high, critical)"},
+                        "assigned_to": {"type": "string", "description": "New assigned user ID"},
+                        "category_id": {"type": "string", "description": "New category ID"},
+                        "subcategory_id": {"type": "string", "description": "New subcategory ID"}
                     },
-                    "required": ["company_id"]
+                    "required": ["incident_id"]
                 }
             }
         }
 
 
+
 # Required tools:
-📘 Read APIs (10)
-FetchUserByMail
-Arguments: email
-Returns: User
+Interface 1
 
-RetrieveFundsWithFilter
-Arguments: name, manager_id, size, fund_type=None, base_currency=None, status=None
-Returns: List[Fund]
 
-FetchInvestorsWithPortfolioHoldings
-Arguments: filters
-Returns: List[InvestorWithHoldings]
+API Name
+Signature
+Returns
+Description
 
-FetchInstrumentsWithItsPrice
-Arguments: ticker, name, instrument_type, date, price_id, open_price, close_price, high_price, low_price
-Returns: List[InstrumentPrice]
+acknowledge_or_resolve_alert
+acknowledge_or_resolve_alert(alert_id: str, optional: acknowledged_at: str, optional: acknowledged_by_user: str, optional: resolved_at: str, optional: resolved_by_user: str)
+{"alert_id": str, "home_id": str, ...} (updated alert record as JSON)
+Acknowledges or resolves an emergency alert by updating its timestamps and users
 
-GetFundTradeDetails
-Arguments: fund_id, start_date=None, instrument_id, quantity, price, side, end_date=None
-Returns: List[Trade]
+add_command
+add_command(device_type: str, routine_id: str, device_id: str, device_status: str, optional: bulb_brightness_level: str, optional: bulb_color: str)
+{"success": True}
+Adds a command to a device; if it's a bulb, adds brightness and color commands too
 
-GetNAVRecords
-Arguments: filters
-Returns: List[NAVRecord]
+add_feedback
+add_feedback(user_id: str, device_id: str, rating: int)
+{"user_feedback_id": str, "success": True}
+Adds user feedback (rating) for a device
 
-GetDailyProfitLossByFund
-Arguments: fund_id, date
-Returns: {"pnl": decimal}
+create_address
+create_address(house_number: str, building_name: str, street: str, city_name: str, state: str)
+{"address_id": str, "success": True}
+Creates a new address entry in the system
 
-GetFundValuation
-Arguments: fund_id, date
-Returns: {"valuation": decimal, fund_id, nav_details}
+create_emergency_alert
+create_emergency_alert(home_id: str, device_id: str, alert_type: str, severity_level: str, triggered_at: str)
+{"alert_id": str, "success": True}
+Creates a new emergency alert for a device in a home
 
-RetrieveSubscriptions
-Arguments: investor_id, fund_id
-Returns: List[Subscriptions]
+get_address
+get_address(optional: address_id: str, optional: house_number: str, optional: building_name: str, optional: street: str, optional: city_name: str, optional: state: str)
+[{"address_id": str, "house_number": str, "building_name": str, ...}]
+Retrieves address records matching the provided fields
 
-FindReports
-Arguments: filters
-Returns: List[Reports]
+get_commands
+get_commands(optional: routine_id: str, optional: device_id: str)
+[{"command_type": str, "command_id": str, "routine_id": str, ...}]
+Retrieves commands from various tables based on routine/device filters
 
-✏️ Write APIs (10)
-AddNewUser
-Arguments: first_name, last_name, email, role, timezone, status
-Returns: User
+create_routine
+create_routine(user_id: int, home_id: int, action_time: str, start_action_date: str, action_interval: str)
+{"routine_id": str, "success": True}
+Creates a new automated routine for a user at a specific home
 
-CreateNewFund
-Arguments: name, fund_type, base_currency, manager_id, size, status
-Returns: Fund
+get_emergency_alerts
+get_emergency_alerts(optional: home_id: str, optional: device_id: str, optional: alert_type: str, optional: severity_level: str, optional: resolved_by_user: str, optional: acknowledged_by_user: str)
+[{"home_id": str, "device_id": str, "alert_type": str, ...}]
+Returns alerts filtered by home, device, alert type, severity, or user IDs
 
-AddNewTradeForFund
-Arguments: fund_id, instrument_id, trade_date, quantity, price, side
-Returns: Trade
+get_historical_energy_consumption_by_device
+get_historical_energy_consumption_by_device(device_id: str, optional: date: str, optional: month: int)
+{"total_power_used_kWh": float}
+Returns device’s estimated energy usage using weighted dates or averages
 
-AssignUserToHandleInvestorOrFund
-Arguments: user_id, investor_id=None, fund_id=None
-Returns: Investor
+update_device_info
+update_device_info(device_id: str, optional: room_id: str, optional: installed_on: str, optional: insurance_expiry_date: str, optional: home_id: str, optional: status: str, optional: width_ft: float, optional: length_ft: float, optional: price: float, optional: scheduled_maintainance_date: str, optional: last_maintainance_date: str, optional: daily_rated_power_consumption_kWh: float, optional: brightness_level: str, optional: color: str)
+{"device_id": str, ..., "brightness_level": str, "color": str}
+Updates a device’s attributes; also updates smart bulb info if applicable
 
-CreateNAVRecord
-Arguments: fund_id, nav_date, nav_value, currency
-Returns: NAV
+update_room_info
+update_room_info(room_id: str, optional: room_owner_id: str, optional: status: str)
+{"room_id": str, "status": str, "room_owner_id": str}
+Updates room owner or status; assigning owner auto-occupies room
 
-UpdateNAVRecords
-Arguments: nav_id, nav_value, currency
-Returns: NAV
+update_user_info
+update_user_info(user_id: str, optional: first_name: str, optional: last_name: str, optional: phone_number: str, optional: role: str, optional: email: str, optional: primary_address_id: str)
+{"user_id": str, "first_name": str, ..., "updated_at": str}
+Updates user record fields by user_id if provided
 
-UpdateFundDetails
-Arguments: fund_id, name, fund_type, base_currency, size, status
-Returns: Fund
+add_device
+add_device(device_type: str, room_id: str, home_id: str, width_ft: float, length_ft: float, price: float, daily_rated_power_consumption_kWh: float, optional: brightness_level: str, optional: color: str, optional: insurance_expiry_date: str)
+{"device_id": str, "success": True}
+Adds a new device; if a bulb, also creates smart bulb entry
 
-UpdateInstrumentPrice
-Arguments: instrument_id, price_date, open_price, high_price, low_price, close_price
-Returns: InstrumentPrice
+get_devices_info
+get_devices_info(optional: device_id: str, optional: room_id: str, optional: device_type: str, optional: status: str)
+[{"device_id": str, "device_type": str, ..., "brightness_level": str, "color": str}]
+Retrieves device info based on filters; adds bulb info if applicable
 
-UpdateTradeForFund
-Arguments: trade_id, quantity, price, status
-Returns: Trade
+get_energy_tariffs_info
+get_energy_tariffs_info(home_id: str)
+[{"home_id": str, "tariff_name": str, "price_per_kWh": float, ...}]
+Fetches all energy tariff records for the given home ID
 
-NotifyUser
-Arguments: user_id, email, type, reference_id
-Returns: Notification
+get_home_info
+get_home_info(optional: home_id: str, optional: owner_id: str, optional: address_id: str)
+[{"home_id": str, "owner_id": str, "num_residents": int, "num_rooms_occupied": int, ...}]
+Retrieves home info, optionally filtered, with resident and room occupancy stats
+
+get_rooms_info
+get_rooms_info(optional: room_id: str, optional: home_id: str)
+[{"room_id": str, "home_id": str, "room_type": str, "room_owner_id": str, "status": str, ...}]
+Fetches room records filtered by room_id or home_id
+
+get_routines
+get_routines(optional: routine_id: str, optional: user_id: str, optional: home_id: str, optional: action_time: str, optional: action_interval: str, optional: start_action_date: str)
+[{"routine_id": str, "user_id": str, "home_id": str, "action_time": str, ...}]
+Retrieves automated routines based on various optional filters
+
+get_user_info
+get_user_info(optional: user_id: str, optional: phone_number: str, optional: email: str)
+[{"user_id": str, "first_name": str, "email": str, "role": str, ...}]
+Retrieves user records by user_id, phone, or email with case-insensitive/suffix matching
+
+update_home_info
+update_home_info(home_id: str, optional: owner_id: str, optional: address_id: str, optional: home_type: str)
+{"home_id": str, "owner_id": str, "address_id": str, "home_type": str, "updated_at": str}
+Updates a home’s owner, address, or type if provided
+
+list_children
+list_children(parent_id: str)
+[{"user_id": str, "parent_id": str, "first_name": str, ...}]
+Lists all users whose parent_id matches the given one
+
+
+
 
 Please create the tools based on the examples and the database schema. 
 
 Notes: 
-- assign this timestamp to the created_at and updated_at fields: "2025-10-01T00:00:00ZZ".
+- assign this timestamp to the created_at and updated_at fields: "2025-10-01T00:00:00".
 - All IDs are strings, not integers.
 - Use the generate_id function to generate unique IDs for the records.
 - Each tool should have its own imports and utility functions without being shared across tools.

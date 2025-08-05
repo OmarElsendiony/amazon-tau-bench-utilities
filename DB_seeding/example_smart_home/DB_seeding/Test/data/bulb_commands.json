@@ -1,0 +1,2126 @@
+{
+  "1": {
+    "bulb_command_id": "1",
+    "routine_id": "1",
+    "device_id": "1",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-25T16:39:15.906011",
+    "updated_at": "2025-07-04T22:43:40.619701"
+  },
+  "2": {
+    "bulb_command_id": "2",
+    "routine_id": "2",
+    "device_id": "8",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-25T06:01:23.717477",
+    "updated_at": "2025-07-24T18:28:43.818589"
+  },
+  "3": {
+    "bulb_command_id": "3",
+    "routine_id": "4",
+    "device_id": "60",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-10T18:17:50.075735",
+    "updated_at": "2025-06-18T19:06:15.523770"
+  },
+  "4": {
+    "bulb_command_id": "4",
+    "routine_id": "5",
+    "device_id": "61",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-02T06:29:56.626466",
+    "updated_at": "2025-07-25T18:54:35.388018"
+  },
+  "5": {
+    "bulb_command_id": "5",
+    "routine_id": "6",
+    "device_id": "61",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-06T22:48:05.979640",
+    "updated_at": "2025-06-28T17:31:26.384079"
+  },
+  "6": {
+    "bulb_command_id": "6",
+    "routine_id": "7",
+    "device_id": "61",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-20T17:14:58.088069",
+    "updated_at": "2025-07-27T00:54:25.782604"
+  },
+  "7": {
+    "bulb_command_id": "7",
+    "routine_id": "8",
+    "device_id": "105",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-11T10:44:39.963209",
+    "updated_at": "2025-06-23T08:59:30.038922"
+  },
+  "8": {
+    "bulb_command_id": "8",
+    "routine_id": "9",
+    "device_id": "105",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-07-01T08:28:28.060427",
+    "updated_at": "2025-07-14T00:50:10.224975"
+  },
+  "9": {
+    "bulb_command_id": "9",
+    "routine_id": "10",
+    "device_id": "150",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-01T23:31:55.096387",
+    "updated_at": "2025-06-06T16:30:30.187745"
+  },
+  "10": {
+    "bulb_command_id": "10",
+    "routine_id": "12",
+    "device_id": "171",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-19T16:31:18.979933",
+    "updated_at": "2025-06-26T22:16:09.552193"
+  },
+  "11": {
+    "bulb_command_id": "11",
+    "routine_id": "12",
+    "device_id": "169",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-30T23:58:45.404759",
+    "updated_at": "2025-07-19T11:02:03.167482"
+  },
+  "12": {
+    "bulb_command_id": "12",
+    "routine_id": "13",
+    "device_id": "170",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-29T01:50:09.859933",
+    "updated_at": "2025-07-26T04:17:26.466667"
+  },
+  "13": {
+    "bulb_command_id": "13",
+    "routine_id": "15",
+    "device_id": "196",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-04T20:09:12.192022",
+    "updated_at": "2025-07-30T05:51:00.944034"
+  },
+  "14": {
+    "bulb_command_id": "14",
+    "routine_id": "16",
+    "device_id": "219",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-27T06:14:15.685124",
+    "updated_at": "2025-07-07T00:11:30.871090"
+  },
+  "15": {
+    "bulb_command_id": "15",
+    "routine_id": "19",
+    "device_id": "289",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-14T06:34:34.139888",
+    "updated_at": "2025-07-14T11:56:45.696012"
+  },
+  "16": {
+    "bulb_command_id": "16",
+    "routine_id": "19",
+    "device_id": "288",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-28T09:34:04.189937",
+    "updated_at": "2025-07-09T19:14:47.784973"
+  },
+  "17": {
+    "bulb_command_id": "17",
+    "routine_id": "19",
+    "device_id": "287",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-07-01T09:33:59.435120",
+    "updated_at": "2025-07-18T04:08:06.966883"
+  },
+  "18": {
+    "bulb_command_id": "18",
+    "routine_id": "20",
+    "device_id": "290",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-24T16:54:54.791388",
+    "updated_at": "2025-07-02T22:45:42.432178"
+  },
+  "19": {
+    "bulb_command_id": "19",
+    "routine_id": "20",
+    "device_id": "287",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-25T03:39:53.547366",
+    "updated_at": "2025-07-15T23:15:53.398310"
+  },
+  "20": {
+    "bulb_command_id": "20",
+    "routine_id": "20",
+    "device_id": "289",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-18T06:02:42.269681",
+    "updated_at": "2025-07-11T10:37:01.738389"
+  },
+  "21": {
+    "bulb_command_id": "21",
+    "routine_id": "20",
+    "device_id": "292",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-08T20:01:04.527433",
+    "updated_at": "2025-07-30T05:59:07.154779"
+  },
+  "22": {
+    "bulb_command_id": "22",
+    "routine_id": "20",
+    "device_id": "291",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-20T13:48:31.525972",
+    "updated_at": "2025-07-17T01:28:11.692283"
+  },
+  "23": {
+    "bulb_command_id": "23",
+    "routine_id": "22",
+    "device_id": "306",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-24T17:57:35.496846",
+    "updated_at": "2025-07-17T16:57:29.180944"
+  },
+  "24": {
+    "bulb_command_id": "24",
+    "routine_id": "23",
+    "device_id": "376",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-06T22:49:06.543987",
+    "updated_at": "2025-07-16T01:55:09.380305"
+  },
+  "25": {
+    "bulb_command_id": "25",
+    "routine_id": "23",
+    "device_id": "379",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-12T15:31:36.302599",
+    "updated_at": "2025-06-19T03:54:32.089826"
+  },
+  "26": {
+    "bulb_command_id": "26",
+    "routine_id": "26",
+    "device_id": "496",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-22T03:30:09.216460",
+    "updated_at": "2025-07-03T02:51:03.283711"
+  },
+  "27": {
+    "bulb_command_id": "27",
+    "routine_id": "26",
+    "device_id": "500",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-18T07:41:34.215352",
+    "updated_at": "2025-06-19T21:22:41.331419"
+  },
+  "28": {
+    "bulb_command_id": "28",
+    "routine_id": "27",
+    "device_id": "496",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-25T01:49:45.706287",
+    "updated_at": "2025-06-28T16:35:49.888549"
+  },
+  "29": {
+    "bulb_command_id": "29",
+    "routine_id": "28",
+    "device_id": "568",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-11T01:23:32.619247",
+    "updated_at": "2025-07-18T19:10:20.971239"
+  },
+  "30": {
+    "bulb_command_id": "30",
+    "routine_id": "28",
+    "device_id": "564",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-24T17:53:28.876250",
+    "updated_at": "2025-06-30T21:18:08.041020"
+  },
+  "31": {
+    "bulb_command_id": "31",
+    "routine_id": "33",
+    "device_id": "650",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-25T21:25:03.443068",
+    "updated_at": "2025-07-15T13:00:34.844122"
+  },
+  "32": {
+    "bulb_command_id": "32",
+    "routine_id": "33",
+    "device_id": "648",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-21T22:02:15.003588",
+    "updated_at": "2025-07-03T22:03:44.091922"
+  },
+  "33": {
+    "bulb_command_id": "33",
+    "routine_id": "34",
+    "device_id": "729",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-03T21:56:25.826995",
+    "updated_at": "2025-06-16T13:20:27.208753"
+  },
+  "34": {
+    "bulb_command_id": "34",
+    "routine_id": "35",
+    "device_id": "751",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-24T11:08:35.900414",
+    "updated_at": "2025-07-08T14:59:04.946511"
+  },
+  "35": {
+    "bulb_command_id": "35",
+    "routine_id": "36",
+    "device_id": "775",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-25T12:35:39.952190",
+    "updated_at": "2025-06-27T19:25:19.354062"
+  },
+  "36": {
+    "bulb_command_id": "36",
+    "routine_id": "37",
+    "device_id": "775",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-12T16:05:14.223788",
+    "updated_at": "2025-07-03T14:18:03.236961"
+  },
+  "37": {
+    "bulb_command_id": "37",
+    "routine_id": "38",
+    "device_id": "827",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-16T04:55:37.652016",
+    "updated_at": "2025-06-22T00:26:12.818535"
+  },
+  "38": {
+    "bulb_command_id": "38",
+    "routine_id": "38",
+    "device_id": "833",
+    "brightness_level": "half",
+    "color": "yellow",
+    "created_at": "2025-06-06T03:14:09.214470",
+    "updated_at": "2025-07-05T15:14:42.831235"
+  },
+  "39": {
+    "bulb_command_id": "39",
+    "routine_id": "39",
+    "device_id": "829",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-17T05:13:44.424001",
+    "updated_at": "2025-06-29T07:41:40.380209"
+  },
+  "40": {
+    "bulb_command_id": "40",
+    "routine_id": "40",
+    "device_id": "829",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-05T01:54:29.183253",
+    "updated_at": "2025-07-30T22:07:32.293105"
+  },
+  "41": {
+    "bulb_command_id": "41",
+    "routine_id": "41",
+    "device_id": "899",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-15T06:20:34.570005",
+    "updated_at": "2025-06-25T07:41:29.056253"
+  },
+  "42": {
+    "bulb_command_id": "42",
+    "routine_id": "41",
+    "device_id": "900",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-13T12:09:04.705053",
+    "updated_at": "2025-07-17T10:29:31.186701"
+  },
+  "43": {
+    "bulb_command_id": "43",
+    "routine_id": "41",
+    "device_id": "904",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-27T22:45:24.153192",
+    "updated_at": "2025-07-21T23:18:37.751435"
+  },
+  "44": {
+    "bulb_command_id": "44",
+    "routine_id": "42",
+    "device_id": "955",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-28T15:13:54.531641",
+    "updated_at": "2025-06-28T21:19:14.938056"
+  },
+  "45": {
+    "bulb_command_id": "45",
+    "routine_id": "43",
+    "device_id": "956",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-27T08:27:54.623603",
+    "updated_at": "2025-06-29T08:31:26.725313"
+  },
+  "46": {
+    "bulb_command_id": "46",
+    "routine_id": "45",
+    "device_id": "1035",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-06T10:21:33.459946",
+    "updated_at": "2025-07-03T22:20:33.243231"
+  },
+  "47": {
+    "bulb_command_id": "47",
+    "routine_id": "46",
+    "device_id": "1091",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-25T22:58:42.061835",
+    "updated_at": "2025-07-28T03:29:37.723233"
+  },
+  "48": {
+    "bulb_command_id": "48",
+    "routine_id": "46",
+    "device_id": "1090",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-18T04:44:32.481547",
+    "updated_at": "2025-07-15T16:26:01.084668"
+  },
+  "49": {
+    "bulb_command_id": "49",
+    "routine_id": "48",
+    "device_id": "1140",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-12T17:40:27.640499",
+    "updated_at": "2025-06-28T22:07:15.583659"
+  },
+  "50": {
+    "bulb_command_id": "50",
+    "routine_id": "49",
+    "device_id": "1138",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-07-01T05:51:45.768539",
+    "updated_at": "2025-07-13T20:14:14.562015"
+  },
+  "51": {
+    "bulb_command_id": "51",
+    "routine_id": "49",
+    "device_id": "1137",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-20T23:45:05.196089",
+    "updated_at": "2025-07-03T08:08:23.864968"
+  },
+  "52": {
+    "bulb_command_id": "52",
+    "routine_id": "50",
+    "device_id": "1173",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-21T05:52:09.050090",
+    "updated_at": "2025-07-26T18:54:05.221939"
+  },
+  "53": {
+    "bulb_command_id": "53",
+    "routine_id": "52",
+    "device_id": "1197",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-16T16:13:18.467870",
+    "updated_at": "2025-07-06T04:34:33.441589"
+  },
+  "54": {
+    "bulb_command_id": "54",
+    "routine_id": "52",
+    "device_id": "1196",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-10T07:38:15.684962",
+    "updated_at": "2025-07-19T22:49:13.174072"
+  },
+  "55": {
+    "bulb_command_id": "55",
+    "routine_id": "52",
+    "device_id": "1193",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-03T23:47:46.088414",
+    "updated_at": "2025-07-09T15:19:50.228565"
+  },
+  "56": {
+    "bulb_command_id": "56",
+    "routine_id": "53",
+    "device_id": "1260",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-07-01T06:09:49.763248",
+    "updated_at": "2025-07-01T07:08:09.710271"
+  },
+  "57": {
+    "bulb_command_id": "57",
+    "routine_id": "54",
+    "device_id": "1264",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-14T18:47:35.048583",
+    "updated_at": "2025-07-07T01:08:23.866665"
+  },
+  "58": {
+    "bulb_command_id": "58",
+    "routine_id": "55",
+    "device_id": "1508",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-14T17:30:53.410679",
+    "updated_at": "2025-07-18T23:15:23.263666"
+  },
+  "59": {
+    "bulb_command_id": "59",
+    "routine_id": "55",
+    "device_id": "1511",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-16T05:33:22.939175",
+    "updated_at": "2025-06-27T16:58:45.892377"
+  },
+  "60": {
+    "bulb_command_id": "60",
+    "routine_id": "56",
+    "device_id": "1510",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-19T19:25:03.604945",
+    "updated_at": "2025-07-17T04:42:03.821620"
+  },
+  "61": {
+    "bulb_command_id": "61",
+    "routine_id": "58",
+    "device_id": "1534",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-30T03:57:06.259158",
+    "updated_at": "2025-07-03T15:15:09.654440"
+  },
+  "62": {
+    "bulb_command_id": "62",
+    "routine_id": "58",
+    "device_id": "1533",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-29T05:01:00.195759",
+    "updated_at": "2025-07-09T15:13:22.057393"
+  },
+  "63": {
+    "bulb_command_id": "63",
+    "routine_id": "59",
+    "device_id": "1581",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-29T12:50:13.255491",
+    "updated_at": "2025-06-29T15:21:05.276356"
+  },
+  "64": {
+    "bulb_command_id": "64",
+    "routine_id": "59",
+    "device_id": "1579",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-28T10:36:43.470483",
+    "updated_at": "2025-07-04T02:20:58.396393"
+  },
+  "65": {
+    "bulb_command_id": "65",
+    "routine_id": "60",
+    "device_id": "1651",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-30T22:46:28.483547",
+    "updated_at": "2025-07-16T16:40:34.167471"
+  },
+  "66": {
+    "bulb_command_id": "66",
+    "routine_id": "61",
+    "device_id": "1669",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-04T19:07:27.200179",
+    "updated_at": "2025-06-26T01:27:52.224746"
+  },
+  "67": {
+    "bulb_command_id": "67",
+    "routine_id": "61",
+    "device_id": "1671",
+    "brightness_level": "half",
+    "color": "yellow",
+    "created_at": "2025-06-04T05:38:15.260961",
+    "updated_at": "2025-07-16T21:57:37.935757"
+  },
+  "68": {
+    "bulb_command_id": "68",
+    "routine_id": "62",
+    "device_id": "1726",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-11T08:28:22.096584",
+    "updated_at": "2025-06-21T06:50:11.701133"
+  },
+  "69": {
+    "bulb_command_id": "69",
+    "routine_id": "62",
+    "device_id": "1730",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-02T19:48:57.068064",
+    "updated_at": "2025-07-22T03:48:49.151911"
+  },
+  "70": {
+    "bulb_command_id": "70",
+    "routine_id": "63",
+    "device_id": "1782",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-13T15:26:34.291123",
+    "updated_at": "2025-07-07T11:59:42.261432"
+  },
+  "71": {
+    "bulb_command_id": "71",
+    "routine_id": "64",
+    "device_id": "1780",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-30T20:25:52.166712",
+    "updated_at": "2025-07-11T05:41:24.580114"
+  },
+  "72": {
+    "bulb_command_id": "72",
+    "routine_id": "66",
+    "device_id": "1783",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-28T20:30:39.804729",
+    "updated_at": "2025-06-29T00:24:51.028881"
+  },
+  "73": {
+    "bulb_command_id": "73",
+    "routine_id": "67",
+    "device_id": "1802",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-11T23:25:10.583234",
+    "updated_at": "2025-07-17T08:24:51.140625"
+  },
+  "74": {
+    "bulb_command_id": "74",
+    "routine_id": "68",
+    "device_id": "1817",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-13T22:02:16.009443",
+    "updated_at": "2025-07-03T22:56:49.338569"
+  },
+  "75": {
+    "bulb_command_id": "75",
+    "routine_id": "69",
+    "device_id": "1941",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-30T11:22:20.806304",
+    "updated_at": "2025-07-31T11:21:46.865582"
+  },
+  "76": {
+    "bulb_command_id": "76",
+    "routine_id": "69",
+    "device_id": "1945",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-29T21:52:37.454474",
+    "updated_at": "2025-07-20T13:58:17.650470"
+  },
+  "77": {
+    "bulb_command_id": "77",
+    "routine_id": "73",
+    "device_id": "2113",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-09T13:11:41.917246",
+    "updated_at": "2025-07-25T17:08:01.178386"
+  },
+  "78": {
+    "bulb_command_id": "78",
+    "routine_id": "75",
+    "device_id": "2155",
+    "brightness_level": "half",
+    "color": "yellow",
+    "created_at": "2025-06-30T07:18:09.433307",
+    "updated_at": "2025-07-01T09:05:44.279444"
+  },
+  "79": {
+    "bulb_command_id": "79",
+    "routine_id": "77",
+    "device_id": "2258",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-05T04:29:14.013346",
+    "updated_at": "2025-07-30T08:40:09.422260"
+  },
+  "80": {
+    "bulb_command_id": "80",
+    "routine_id": "77",
+    "device_id": "2251",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-03T01:17:06.012948",
+    "updated_at": "2025-06-23T17:07:28.605981"
+  },
+  "81": {
+    "bulb_command_id": "81",
+    "routine_id": "78",
+    "device_id": "2251",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-11T07:47:23.561826",
+    "updated_at": "2025-07-24T06:32:52.227191"
+  },
+  "82": {
+    "bulb_command_id": "82",
+    "routine_id": "79",
+    "device_id": "2258",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-21T23:37:00.956111",
+    "updated_at": "2025-07-15T10:34:25.538829"
+  },
+  "83": {
+    "bulb_command_id": "83",
+    "routine_id": "80",
+    "device_id": "2258",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-19T21:52:19.194912",
+    "updated_at": "2025-07-31T00:48:37.707351"
+  },
+  "84": {
+    "bulb_command_id": "84",
+    "routine_id": "80",
+    "device_id": "2259",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-12T15:29:35.196362",
+    "updated_at": "2025-06-16T00:01:58.497831"
+  },
+  "85": {
+    "bulb_command_id": "85",
+    "routine_id": "81",
+    "device_id": "2317",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-17T23:24:28.234042",
+    "updated_at": "2025-07-11T00:21:23.456850"
+  },
+  "86": {
+    "bulb_command_id": "86",
+    "routine_id": "82",
+    "device_id": "2317",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-30T19:30:44.600661",
+    "updated_at": "2025-07-16T18:48:52.257235"
+  },
+  "87": {
+    "bulb_command_id": "87",
+    "routine_id": "83",
+    "device_id": "2373",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-04T09:32:03.512214",
+    "updated_at": "2025-07-25T17:15:22.018758"
+  },
+  "88": {
+    "bulb_command_id": "88",
+    "routine_id": "83",
+    "device_id": "2370",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-14T07:43:02.211519",
+    "updated_at": "2025-06-20T03:48:10.295798"
+  },
+  "89": {
+    "bulb_command_id": "89",
+    "routine_id": "84",
+    "device_id": "2401",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-27T00:21:58.728519",
+    "updated_at": "2025-07-21T16:01:46.273223"
+  },
+  "90": {
+    "bulb_command_id": "90",
+    "routine_id": "85",
+    "device_id": "2470",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-06T01:55:58.568170",
+    "updated_at": "2025-06-15T11:56:05.136857"
+  },
+  "91": {
+    "bulb_command_id": "91",
+    "routine_id": "85",
+    "device_id": "2471",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-20T01:18:59.399211",
+    "updated_at": "2025-07-07T10:11:39.793659"
+  },
+  "92": {
+    "bulb_command_id": "92",
+    "routine_id": "86",
+    "device_id": "2471",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-06T21:30:07.009031",
+    "updated_at": "2025-07-04T23:42:25.328416"
+  },
+  "93": {
+    "bulb_command_id": "93",
+    "routine_id": "87",
+    "device_id": "2529",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-02T03:46:12.824520",
+    "updated_at": "2025-06-04T10:32:48.659693"
+  },
+  "94": {
+    "bulb_command_id": "94",
+    "routine_id": "88",
+    "device_id": "2534",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-22T19:42:24.685368",
+    "updated_at": "2025-06-29T14:33:51.008507"
+  },
+  "95": {
+    "bulb_command_id": "95",
+    "routine_id": "89",
+    "device_id": "2534",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-24T10:52:55.755814",
+    "updated_at": "2025-07-15T06:35:12.133392"
+  },
+  "96": {
+    "bulb_command_id": "96",
+    "routine_id": "91",
+    "device_id": "2604",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-03T02:59:11.922429",
+    "updated_at": "2025-07-23T21:14:10.446305"
+  },
+  "97": {
+    "bulb_command_id": "97",
+    "routine_id": "92",
+    "device_id": "2607",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-23T01:20:39.245609",
+    "updated_at": "2025-07-05T15:28:17.295681"
+  },
+  "98": {
+    "bulb_command_id": "98",
+    "routine_id": "93",
+    "device_id": "2627",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-26T16:30:47.261039",
+    "updated_at": "2025-07-24T22:56:35.436331"
+  },
+  "99": {
+    "bulb_command_id": "99",
+    "routine_id": "95",
+    "device_id": "2675",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-24T20:52:57.246685",
+    "updated_at": "2025-07-05T01:07:33.751720"
+  },
+  "100": {
+    "bulb_command_id": "100",
+    "routine_id": "96",
+    "device_id": "2674",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-06T21:08:24.131468",
+    "updated_at": "2025-06-10T22:23:38.256624"
+  },
+  "101": {
+    "bulb_command_id": "101",
+    "routine_id": "97",
+    "device_id": "2714",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-05T02:21:18.994311",
+    "updated_at": "2025-07-15T20:26:47.185954"
+  },
+  "102": {
+    "bulb_command_id": "102",
+    "routine_id": "98",
+    "device_id": "2719",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-22T02:13:02.210338",
+    "updated_at": "2025-07-28T02:26:45.149184"
+  },
+  "103": {
+    "bulb_command_id": "103",
+    "routine_id": "98",
+    "device_id": "2721",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-22T16:03:53.135406",
+    "updated_at": "2025-06-23T17:34:52.862307"
+  },
+  "104": {
+    "bulb_command_id": "104",
+    "routine_id": "98",
+    "device_id": "2716",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-23T08:04:50.315008",
+    "updated_at": "2025-06-30T23:46:16.396362"
+  },
+  "105": {
+    "bulb_command_id": "105",
+    "routine_id": "98",
+    "device_id": "2720",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-29T03:45:07.853489",
+    "updated_at": "2025-07-14T01:25:35.702325"
+  },
+  "106": {
+    "bulb_command_id": "106",
+    "routine_id": "99",
+    "device_id": "2716",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-30T13:38:18.291645",
+    "updated_at": "2025-07-25T06:36:06.973187"
+  },
+  "107": {
+    "bulb_command_id": "107",
+    "routine_id": "100",
+    "device_id": "2722",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-21T07:30:04.671261",
+    "updated_at": "2025-07-16T14:35:41.904448"
+  },
+  "108": {
+    "bulb_command_id": "108",
+    "routine_id": "100",
+    "device_id": "2716",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-11T22:44:16.617611",
+    "updated_at": "2025-06-22T13:34:05.666463"
+  },
+  "109": {
+    "bulb_command_id": "109",
+    "routine_id": "101",
+    "device_id": "2768",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-19T22:46:35.206603",
+    "updated_at": "2025-07-22T21:18:06.130150"
+  },
+  "110": {
+    "bulb_command_id": "110",
+    "routine_id": "101",
+    "device_id": "2764",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-21T10:16:45.724536",
+    "updated_at": "2025-07-11T17:31:12.228211"
+  },
+  "111": {
+    "bulb_command_id": "111",
+    "routine_id": "102",
+    "device_id": "2809",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-27T21:44:19.573772",
+    "updated_at": "2025-07-25T11:35:27.887430"
+  },
+  "112": {
+    "bulb_command_id": "112",
+    "routine_id": "104",
+    "device_id": "2877",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-07T13:12:37.136023",
+    "updated_at": "2025-07-29T15:55:21.613426"
+  },
+  "113": {
+    "bulb_command_id": "113",
+    "routine_id": "104",
+    "device_id": "2872",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-01T14:58:03.786932",
+    "updated_at": "2025-06-01T21:28:00.908047"
+  },
+  "114": {
+    "bulb_command_id": "114",
+    "routine_id": "104",
+    "device_id": "2876",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-07T03:01:27.326328",
+    "updated_at": "2025-07-20T18:49:46.404482"
+  },
+  "115": {
+    "bulb_command_id": "115",
+    "routine_id": "105",
+    "device_id": "2905",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-12T06:39:10.538868",
+    "updated_at": "2025-06-26T10:55:57.917271"
+  },
+  "116": {
+    "bulb_command_id": "116",
+    "routine_id": "106",
+    "device_id": "2905",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-20T07:42:26.292305",
+    "updated_at": "2025-06-20T14:42:00.001301"
+  },
+  "117": {
+    "bulb_command_id": "117",
+    "routine_id": "107",
+    "device_id": "2915",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-23T13:20:50.153212",
+    "updated_at": "2025-07-06T00:31:23.363918"
+  },
+  "118": {
+    "bulb_command_id": "118",
+    "routine_id": "107",
+    "device_id": "2914",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-22T18:39:18.092547",
+    "updated_at": "2025-06-29T07:29:40.167311"
+  },
+  "119": {
+    "bulb_command_id": "119",
+    "routine_id": "107",
+    "device_id": "2916",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-16T13:25:54.466010",
+    "updated_at": "2025-06-28T08:49:24.743381"
+  },
+  "120": {
+    "bulb_command_id": "120",
+    "routine_id": "109",
+    "device_id": "2935",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-03T07:32:37.070733",
+    "updated_at": "2025-07-24T10:22:09.394090"
+  },
+  "121": {
+    "bulb_command_id": "121",
+    "routine_id": "111",
+    "device_id": "2955",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-03T23:50:36.855573",
+    "updated_at": "2025-07-07T05:13:22.920865"
+  },
+  "122": {
+    "bulb_command_id": "122",
+    "routine_id": "112",
+    "device_id": "2985",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-19T14:17:01.547113",
+    "updated_at": "2025-07-22T05:39:31.759100"
+  },
+  "123": {
+    "bulb_command_id": "123",
+    "routine_id": "112",
+    "device_id": "2986",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-10T04:42:51.836184",
+    "updated_at": "2025-06-16T19:19:52.908904"
+  },
+  "124": {
+    "bulb_command_id": "124",
+    "routine_id": "112",
+    "device_id": "2983",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-02T18:41:38.348357",
+    "updated_at": "2025-07-26T04:03:01.369043"
+  },
+  "125": {
+    "bulb_command_id": "125",
+    "routine_id": "113",
+    "device_id": "2983",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-30T17:56:36.685036",
+    "updated_at": "2025-07-10T00:43:29.466145"
+  },
+  "126": {
+    "bulb_command_id": "126",
+    "routine_id": "114",
+    "device_id": "3005",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-23T22:07:58.450698",
+    "updated_at": "2025-07-01T17:55:31.063455"
+  },
+  "127": {
+    "bulb_command_id": "127",
+    "routine_id": "114",
+    "device_id": "3002",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-09T13:02:35.618740",
+    "updated_at": "2025-06-09T22:43:01.453091"
+  },
+  "128": {
+    "bulb_command_id": "128",
+    "routine_id": "115",
+    "device_id": "3008",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-27T17:37:23.488368",
+    "updated_at": "2025-07-15T16:26:59.088939"
+  },
+  "129": {
+    "bulb_command_id": "129",
+    "routine_id": "115",
+    "device_id": "3007",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-08T10:23:22.324791",
+    "updated_at": "2025-07-08T20:06:33.999041"
+  },
+  "130": {
+    "bulb_command_id": "130",
+    "routine_id": "115",
+    "device_id": "3009",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-09T21:02:43.447356",
+    "updated_at": "2025-06-24T17:20:51.628749"
+  },
+  "131": {
+    "bulb_command_id": "131",
+    "routine_id": "116",
+    "device_id": "3028",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-07T02:48:23.127181",
+    "updated_at": "2025-06-19T11:12:02.781274"
+  },
+  "132": {
+    "bulb_command_id": "132",
+    "routine_id": "116",
+    "device_id": "3026",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-20T13:09:15.329089",
+    "updated_at": "2025-07-22T01:48:44.559881"
+  },
+  "133": {
+    "bulb_command_id": "133",
+    "routine_id": "117",
+    "device_id": "3082",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-26T19:49:55.074423",
+    "updated_at": "2025-07-16T03:36:35.168002"
+  },
+  "134": {
+    "bulb_command_id": "134",
+    "routine_id": "120",
+    "device_id": "59",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-07T12:21:44.579472",
+    "updated_at": "2025-07-01T04:01:10.984456"
+  },
+  "135": {
+    "bulb_command_id": "135",
+    "routine_id": "121",
+    "device_id": "104",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-07-01T05:44:08.784951",
+    "updated_at": "2025-07-14T17:04:19.308524"
+  },
+  "136": {
+    "bulb_command_id": "136",
+    "routine_id": "123",
+    "device_id": "146",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-17T14:07:37.385703",
+    "updated_at": "2025-07-07T14:05:33.014354"
+  },
+  "137": {
+    "bulb_command_id": "137",
+    "routine_id": "124",
+    "device_id": "193",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-03T09:49:27.775833",
+    "updated_at": "2025-07-07T07:29:46.394890"
+  },
+  "138": {
+    "bulb_command_id": "138",
+    "routine_id": "124",
+    "device_id": "192",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-22T19:03:30.822134",
+    "updated_at": "2025-07-11T10:24:17.554366"
+  },
+  "139": {
+    "bulb_command_id": "139",
+    "routine_id": "125",
+    "device_id": "193",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-22T14:39:46.295783",
+    "updated_at": "2025-07-01T16:02:47.179756"
+  },
+  "140": {
+    "bulb_command_id": "140",
+    "routine_id": "126",
+    "device_id": "305",
+    "brightness_level": "half",
+    "color": "yellow",
+    "created_at": "2025-06-21T18:59:13.677382",
+    "updated_at": "2025-07-22T09:37:29.630615"
+  },
+  "141": {
+    "bulb_command_id": "141",
+    "routine_id": "127",
+    "device_id": "305",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-06T03:55:19.136571",
+    "updated_at": "2025-06-27T02:56:52.827819"
+  },
+  "142": {
+    "bulb_command_id": "142",
+    "routine_id": "127",
+    "device_id": "304",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-23T01:39:10.603921",
+    "updated_at": "2025-07-15T13:16:35.798066"
+  },
+  "143": {
+    "bulb_command_id": "143",
+    "routine_id": "128",
+    "device_id": "377",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-24T00:33:15.207204",
+    "updated_at": "2025-07-02T02:57:22.583584"
+  },
+  "144": {
+    "bulb_command_id": "144",
+    "routine_id": "129",
+    "device_id": "377",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-05T15:29:20.195318",
+    "updated_at": "2025-06-25T18:33:16.283100"
+  },
+  "145": {
+    "bulb_command_id": "145",
+    "routine_id": "130",
+    "device_id": "442",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-20T01:32:00.033663",
+    "updated_at": "2025-06-22T23:52:15.111717"
+  },
+  "146": {
+    "bulb_command_id": "146",
+    "routine_id": "130",
+    "device_id": "443",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-13T21:46:56.307781",
+    "updated_at": "2025-06-26T01:02:19.308761"
+  },
+  "147": {
+    "bulb_command_id": "147",
+    "routine_id": "133",
+    "device_id": "752",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-26T14:32:05.589937",
+    "updated_at": "2025-06-26T17:02:14.422328"
+  },
+  "148": {
+    "bulb_command_id": "148",
+    "routine_id": "134",
+    "device_id": "753",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-24T01:19:09.886182",
+    "updated_at": "2025-07-26T06:24:03.384895"
+  },
+  "149": {
+    "bulb_command_id": "149",
+    "routine_id": "134",
+    "device_id": "754",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-10T13:00:43.263982",
+    "updated_at": "2025-07-28T20:39:04.533632"
+  },
+  "150": {
+    "bulb_command_id": "150",
+    "routine_id": "136",
+    "device_id": "833",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-02T03:45:36.753018",
+    "updated_at": "2025-07-15T11:29:29.630635"
+  },
+  "151": {
+    "bulb_command_id": "151",
+    "routine_id": "137",
+    "device_id": "1040",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-12T08:53:53.396036",
+    "updated_at": "2025-07-23T01:42:14.089071"
+  },
+  "152": {
+    "bulb_command_id": "152",
+    "routine_id": "139",
+    "device_id": "1059",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-29T20:10:43.282475",
+    "updated_at": "2025-07-01T06:02:34.709102"
+  },
+  "153": {
+    "bulb_command_id": "153",
+    "routine_id": "140",
+    "device_id": "1116",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-10T00:37:10.762583",
+    "updated_at": "2025-07-23T09:36:58.980741"
+  },
+  "154": {
+    "bulb_command_id": "154",
+    "routine_id": "142",
+    "device_id": "1136",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-28T18:52:31.669698",
+    "updated_at": "2025-06-29T23:19:07.811861"
+  },
+  "155": {
+    "bulb_command_id": "155",
+    "routine_id": "143",
+    "device_id": "1177",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-05T15:36:10.589588",
+    "updated_at": "2025-06-07T18:00:01.620227"
+  },
+  "156": {
+    "bulb_command_id": "156",
+    "routine_id": "144",
+    "device_id": "1177",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-09T10:51:25.400868",
+    "updated_at": "2025-07-25T11:29:12.965577"
+  },
+  "157": {
+    "bulb_command_id": "157",
+    "routine_id": "148",
+    "device_id": "1261",
+    "brightness_level": "half",
+    "color": "yellow",
+    "created_at": "2025-06-11T16:51:15.627051",
+    "updated_at": "2025-06-26T22:13:49.521930"
+  },
+  "158": {
+    "bulb_command_id": "158",
+    "routine_id": "148",
+    "device_id": "1262",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-14T08:34:43.532251",
+    "updated_at": "2025-07-08T20:00:38.599978"
+  },
+  "159": {
+    "bulb_command_id": "159",
+    "routine_id": "149",
+    "device_id": "1293",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-28T14:32:21.440088",
+    "updated_at": "2025-07-25T15:41:10.148328"
+  },
+  "160": {
+    "bulb_command_id": "160",
+    "routine_id": "151",
+    "device_id": "1335",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-23T16:53:39.113674",
+    "updated_at": "2025-07-18T11:16:20.526693"
+  },
+  "161": {
+    "bulb_command_id": "161",
+    "routine_id": "154",
+    "device_id": "1514",
+    "brightness_level": "half",
+    "color": "yellow",
+    "created_at": "2025-06-29T07:38:56.197542",
+    "updated_at": "2025-07-26T21:33:41.285976"
+  },
+  "162": {
+    "bulb_command_id": "162",
+    "routine_id": "155",
+    "device_id": "1580",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-04T02:50:12.731199",
+    "updated_at": "2025-06-11T22:17:02.496415"
+  },
+  "163": {
+    "bulb_command_id": "163",
+    "routine_id": "156",
+    "device_id": "1586",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-30T05:52:40.351236",
+    "updated_at": "2025-07-02T01:40:46.171139"
+  },
+  "164": {
+    "bulb_command_id": "164",
+    "routine_id": "157",
+    "device_id": "1586",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-24T09:58:25.083776",
+    "updated_at": "2025-06-29T15:55:15.241596"
+  },
+  "165": {
+    "bulb_command_id": "165",
+    "routine_id": "159",
+    "device_id": "1648",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-10T15:40:15.643940",
+    "updated_at": "2025-06-22T19:20:37.936646"
+  },
+  "166": {
+    "bulb_command_id": "166",
+    "routine_id": "160",
+    "device_id": "1674",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-10T18:23:38.720265",
+    "updated_at": "2025-07-28T22:44:56.539926"
+  },
+  "167": {
+    "bulb_command_id": "167",
+    "routine_id": "162",
+    "device_id": "1668",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-07T00:22:55.091006",
+    "updated_at": "2025-06-23T22:40:40.727996"
+  },
+  "168": {
+    "bulb_command_id": "168",
+    "routine_id": "164",
+    "device_id": "1822",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-26T07:01:02.735308",
+    "updated_at": "2025-06-28T06:13:07.408574"
+  },
+  "169": {
+    "bulb_command_id": "169",
+    "routine_id": "165",
+    "device_id": "1888",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-14T16:00:58.177692",
+    "updated_at": "2025-06-18T03:17:41.303070"
+  },
+  "170": {
+    "bulb_command_id": "170",
+    "routine_id": "165",
+    "device_id": "1887",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-07-01T00:49:51.508578",
+    "updated_at": "2025-07-30T09:58:52.940901"
+  },
+  "171": {
+    "bulb_command_id": "171",
+    "routine_id": "166",
+    "device_id": "1886",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-10T08:57:05.863003",
+    "updated_at": "2025-06-14T08:26:01.675098"
+  },
+  "172": {
+    "bulb_command_id": "172",
+    "routine_id": "166",
+    "device_id": "1888",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-29T03:46:23.052633",
+    "updated_at": "2025-07-20T11:32:36.357130"
+  },
+  "173": {
+    "bulb_command_id": "173",
+    "routine_id": "167",
+    "device_id": "2115",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-30T16:23:11.526846",
+    "updated_at": "2025-07-27T10:34:25.469792"
+  },
+  "174": {
+    "bulb_command_id": "174",
+    "routine_id": "168",
+    "device_id": "2115",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-27T05:03:05.128668",
+    "updated_at": "2025-07-29T02:35:32.366315"
+  },
+  "175": {
+    "bulb_command_id": "175",
+    "routine_id": "170",
+    "device_id": "2155",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-19T19:58:17.492957",
+    "updated_at": "2025-07-26T23:38:43.486880"
+  },
+  "176": {
+    "bulb_command_id": "176",
+    "routine_id": "171",
+    "device_id": "2155",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-23T15:56:00.887811",
+    "updated_at": "2025-07-23T05:42:15.198299"
+  },
+  "177": {
+    "bulb_command_id": "177",
+    "routine_id": "172",
+    "device_id": "2216",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-28T01:05:08.437241",
+    "updated_at": "2025-07-08T12:40:42.929793"
+  },
+  "178": {
+    "bulb_command_id": "178",
+    "routine_id": "173",
+    "device_id": "2254",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-15T06:05:32.598537",
+    "updated_at": "2025-06-16T07:39:03.783250"
+  },
+  "179": {
+    "bulb_command_id": "179",
+    "routine_id": "177",
+    "device_id": "2574",
+    "brightness_level": "half",
+    "color": "yellow",
+    "created_at": "2025-06-05T21:15:30.986693",
+    "updated_at": "2025-06-24T12:37:42.043994"
+  },
+  "180": {
+    "bulb_command_id": "180",
+    "routine_id": "179",
+    "device_id": "2715",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-29T23:10:53.469828",
+    "updated_at": "2025-07-24T04:33:14.213537"
+  },
+  "181": {
+    "bulb_command_id": "181",
+    "routine_id": "181",
+    "device_id": "2721",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-23T03:12:50.709481",
+    "updated_at": "2025-07-05T10:49:10.090878"
+  },
+  "182": {
+    "bulb_command_id": "182",
+    "routine_id": "182",
+    "device_id": "2767",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-06T23:29:09.670103",
+    "updated_at": "2025-07-30T01:08:09.127204"
+  },
+  "183": {
+    "bulb_command_id": "183",
+    "routine_id": "183",
+    "device_id": "2767",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-01T15:39:09.715570",
+    "updated_at": "2025-06-11T14:58:55.757907"
+  },
+  "184": {
+    "bulb_command_id": "184",
+    "routine_id": "183",
+    "device_id": "2766",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-20T03:45:35.396297",
+    "updated_at": "2025-06-24T15:04:06.554376"
+  },
+  "185": {
+    "bulb_command_id": "185",
+    "routine_id": "184",
+    "device_id": "2843",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-10T08:27:55.465682",
+    "updated_at": "2025-06-29T07:06:50.990715"
+  },
+  "186": {
+    "bulb_command_id": "186",
+    "routine_id": "185",
+    "device_id": "2843",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-05T15:23:13.281711",
+    "updated_at": "2025-06-17T04:45:11.531832"
+  },
+  "187": {
+    "bulb_command_id": "187",
+    "routine_id": "185",
+    "device_id": "2836",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-19T07:22:16.570038",
+    "updated_at": "2025-07-12T21:56:49.177730"
+  },
+  "188": {
+    "bulb_command_id": "188",
+    "routine_id": "186",
+    "device_id": "2905",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-02T12:05:55.774608",
+    "updated_at": "2025-07-31T06:37:57.925618"
+  },
+  "189": {
+    "bulb_command_id": "189",
+    "routine_id": "187",
+    "device_id": "2905",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-07-01T03:57:47.867598",
+    "updated_at": "2025-07-28T09:30:23.497796"
+  },
+  "190": {
+    "bulb_command_id": "190",
+    "routine_id": "188",
+    "device_id": "2916",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-09T22:09:37.463537",
+    "updated_at": "2025-07-04T04:07:55.868699"
+  },
+  "191": {
+    "bulb_command_id": "191",
+    "routine_id": "190",
+    "device_id": "3002",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-05T05:20:02.225998",
+    "updated_at": "2025-07-11T15:32:09.033496"
+  },
+  "192": {
+    "bulb_command_id": "192",
+    "routine_id": "192",
+    "device_id": "3083",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-18T03:37:42.629165",
+    "updated_at": "2025-06-27T02:28:30.890942"
+  },
+  "193": {
+    "bulb_command_id": "193",
+    "routine_id": "196",
+    "device_id": "2861",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-22T01:00:09.998552",
+    "updated_at": "2025-06-30T07:30:29.463657"
+  },
+  "194": {
+    "bulb_command_id": "194",
+    "routine_id": "197",
+    "device_id": "2861",
+    "brightness_level": "half",
+    "color": "yellow",
+    "created_at": "2025-06-27T22:18:16.568318",
+    "updated_at": "2025-07-05T03:02:31.479070"
+  },
+  "195": {
+    "bulb_command_id": "195",
+    "routine_id": "198",
+    "device_id": "2186",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-19T11:25:27.960643",
+    "updated_at": "2025-07-20T00:59:24.956318"
+  },
+  "196": {
+    "bulb_command_id": "196",
+    "routine_id": "198",
+    "device_id": "2187",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-02T12:13:32.315437",
+    "updated_at": "2025-07-15T00:41:04.323031"
+  },
+  "197": {
+    "bulb_command_id": "197",
+    "routine_id": "198",
+    "device_id": "2184",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-26T14:37:39.937120",
+    "updated_at": "2025-07-19T17:05:29.464583"
+  },
+  "198": {
+    "bulb_command_id": "198",
+    "routine_id": "199",
+    "device_id": "2181",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-25T14:06:48.120157",
+    "updated_at": "2025-06-25T17:23:32.148418"
+  },
+  "199": {
+    "bulb_command_id": "199",
+    "routine_id": "204",
+    "device_id": "290",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-06T11:20:47.361069",
+    "updated_at": "2025-06-15T14:07:31.119286"
+  },
+  "200": {
+    "bulb_command_id": "200",
+    "routine_id": "204",
+    "device_id": "292",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-09T07:24:46.500156",
+    "updated_at": "2025-07-23T18:26:21.715180"
+  },
+  "201": {
+    "bulb_command_id": "201",
+    "routine_id": "204",
+    "device_id": "288",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-12T04:07:13.333258",
+    "updated_at": "2025-07-27T12:46:28.130184"
+  },
+  "202": {
+    "bulb_command_id": "202",
+    "routine_id": "205",
+    "device_id": "289",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-25T10:22:42.251683",
+    "updated_at": "2025-07-14T06:29:29.563847"
+  },
+  "203": {
+    "bulb_command_id": "203",
+    "routine_id": "206",
+    "device_id": "805",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-27T07:42:53.450913",
+    "updated_at": "2025-07-15T08:46:10.546071"
+  },
+  "204": {
+    "bulb_command_id": "204",
+    "routine_id": "207",
+    "device_id": "804",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-03T14:49:29.866822",
+    "updated_at": "2025-06-15T14:45:34.250808"
+  },
+  "205": {
+    "bulb_command_id": "205",
+    "routine_id": "208",
+    "device_id": "400",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-20T16:15:09.660658",
+    "updated_at": "2025-06-28T02:50:20.205439"
+  },
+  "206": {
+    "bulb_command_id": "206",
+    "routine_id": "209",
+    "device_id": "403",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-17T19:49:24.146087",
+    "updated_at": "2025-07-06T04:27:14.644864"
+  },
+  "207": {
+    "bulb_command_id": "207",
+    "routine_id": "209",
+    "device_id": "401",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-10T18:03:05.357626",
+    "updated_at": "2025-06-18T11:55:24.979441"
+  },
+  "208": {
+    "bulb_command_id": "208",
+    "routine_id": "212",
+    "device_id": "1263",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-20T15:19:45.658431",
+    "updated_at": "2025-07-04T17:43:22.769484"
+  },
+  "209": {
+    "bulb_command_id": "209",
+    "routine_id": "212",
+    "device_id": "1264",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-10T12:09:18.757218",
+    "updated_at": "2025-06-17T09:43:16.100723"
+  },
+  "210": {
+    "bulb_command_id": "210",
+    "routine_id": "213",
+    "device_id": "2215",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-10T17:36:37.531076",
+    "updated_at": "2025-06-22T16:43:31.657074"
+  },
+  "211": {
+    "bulb_command_id": "211",
+    "routine_id": "214",
+    "device_id": "2214",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-30T20:59:14.396623",
+    "updated_at": "2025-07-26T13:35:17.016984"
+  },
+  "212": {
+    "bulb_command_id": "212",
+    "routine_id": "216",
+    "device_id": "1330",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-29T06:39:58.148191",
+    "updated_at": "2025-07-31T03:27:21.984802"
+  },
+  "213": {
+    "bulb_command_id": "213",
+    "routine_id": "216",
+    "device_id": "1331",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-11T18:19:17.948664",
+    "updated_at": "2025-07-02T15:45:51.604103"
+  },
+  "214": {
+    "bulb_command_id": "214",
+    "routine_id": "217",
+    "device_id": "373",
+    "brightness_level": "half",
+    "color": "blue",
+    "created_at": "2025-06-01T16:29:09.901833",
+    "updated_at": "2025-06-02T18:06:09.431172"
+  },
+  "215": {
+    "bulb_command_id": "215",
+    "routine_id": "218",
+    "device_id": "1707",
+    "brightness_level": "full",
+    "color": "white",
+    "created_at": "2025-06-12T19:42:00.762676",
+    "updated_at": "2025-07-23T01:52:28.527151"
+  },
+  "216": {
+    "bulb_command_id": "216",
+    "routine_id": "219",
+    "device_id": "2256",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-27T17:10:44.058164",
+    "updated_at": "2025-07-02T01:12:55.207834"
+  },
+  "217": {
+    "bulb_command_id": "217",
+    "routine_id": "220",
+    "device_id": "2251",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-10T09:30:11.188210",
+    "updated_at": "2025-07-16T08:19:36.108557"
+  },
+  "218": {
+    "bulb_command_id": "218",
+    "routine_id": "220",
+    "device_id": "2257",
+    "brightness_level": "half",
+    "color": "white",
+    "created_at": "2025-06-20T00:45:09.169708",
+    "updated_at": "2025-06-28T20:14:37.103831"
+  },
+  "219": {
+    "bulb_command_id": "219",
+    "routine_id": "221",
+    "device_id": "350",
+    "brightness_level": "half",
+    "color": "red",
+    "created_at": "2025-06-29T09:04:41.813346",
+    "updated_at": "2025-07-17T19:33:47.763228"
+  },
+  "220": {
+    "bulb_command_id": "220",
+    "routine_id": "222",
+    "device_id": "347",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-13T05:57:36.576531",
+    "updated_at": "2025-07-19T12:40:25.413027"
+  },
+  "221": {
+    "bulb_command_id": "221",
+    "routine_id": "224",
+    "device_id": "1992",
+    "brightness_level": "dim",
+    "color": "yellow",
+    "created_at": "2025-06-27T16:33:27.755890",
+    "updated_at": "2025-07-22T17:35:29.130013"
+  },
+  "222": {
+    "bulb_command_id": "222",
+    "routine_id": "225",
+    "device_id": "43",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-13T10:11:29.693421",
+    "updated_at": "2025-06-18T21:39:13.945077"
+  },
+  "223": {
+    "bulb_command_id": "223",
+    "routine_id": "225",
+    "device_id": "42",
+    "brightness_level": "half",
+    "color": "yellow",
+    "created_at": "2025-06-09T17:33:24.191858",
+    "updated_at": "2025-06-19T15:30:18.938811"
+  },
+  "224": {
+    "bulb_command_id": "224",
+    "routine_id": "226",
+    "device_id": "43",
+    "brightness_level": "half",
+    "color": "yellow",
+    "created_at": "2025-06-04T15:37:22.290686",
+    "updated_at": "2025-07-11T23:47:07.276114"
+  },
+  "225": {
+    "bulb_command_id": "225",
+    "routine_id": "229",
+    "device_id": "749",
+    "brightness_level": "full",
+    "color": "blue",
+    "created_at": "2025-06-18T21:42:03.252281",
+    "updated_at": "2025-07-21T06:09:34.542578"
+  },
+  "226": {
+    "bulb_command_id": "226",
+    "routine_id": "230",
+    "device_id": "2423",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-21T07:00:31.566657",
+    "updated_at": "2025-06-25T15:03:19.272725"
+  },
+  "227": {
+    "bulb_command_id": "227",
+    "routine_id": "235",
+    "device_id": "881",
+    "brightness_level": "dim",
+    "color": "blue",
+    "created_at": "2025-06-21T15:04:22.015162",
+    "updated_at": "2025-06-30T02:54:32.441113"
+  },
+  "228": {
+    "bulb_command_id": "228",
+    "routine_id": "235",
+    "device_id": "882",
+    "brightness_level": "dim",
+    "color": "red",
+    "created_at": "2025-06-19T15:39:49.108387",
+    "updated_at": "2025-07-05T00:37:10.370355"
+  },
+  "229": {
+    "bulb_command_id": "229",
+    "routine_id": "237",
+    "device_id": "268",
+    "brightness_level": "half",
+    "color": "yellow",
+    "created_at": "2025-06-13T06:56:02.208350",
+    "updated_at": "2025-07-20T11:13:17.620152"
+  },
+  "230": {
+    "bulb_command_id": "230",
+    "routine_id": "237",
+    "device_id": "267",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-25T17:07:33.325845",
+    "updated_at": "2025-07-04T12:25:22.300952"
+  },
+  "231": {
+    "bulb_command_id": "231",
+    "routine_id": "242",
+    "device_id": "569",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-03T06:21:14.161741",
+    "updated_at": "2025-07-13T17:35:29.462872"
+  },
+  "232": {
+    "bulb_command_id": "232",
+    "routine_id": "244",
+    "device_id": "521",
+    "brightness_level": "full",
+    "color": "yellow",
+    "created_at": "2025-06-20T11:45:29.095771",
+    "updated_at": "2025-07-15T04:41:37.031237"
+  },
+  "233": {
+    "bulb_command_id": "233",
+    "routine_id": "247",
+    "device_id": "1555",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-10T07:37:58.662746",
+    "updated_at": "2025-07-06T07:44:06.184370"
+  },
+  "234": {
+    "bulb_command_id": "234",
+    "routine_id": "248",
+    "device_id": "1316",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-01T21:42:28.926446",
+    "updated_at": "2025-06-21T02:15:17.680132"
+  },
+  "235": {
+    "bulb_command_id": "235",
+    "routine_id": "249",
+    "device_id": "1316",
+    "brightness_level": "full",
+    "color": "red",
+    "created_at": "2025-06-18T11:39:54.214301",
+    "updated_at": "2025-07-10T14:54:33.991579"
+  },
+  "236": {
+    "bulb_command_id": "236",
+    "routine_id": "252",
+    "device_id": "2449",
+    "brightness_level": "dim",
+    "color": "white",
+    "created_at": "2025-06-07T19:50:30.094056",
+    "updated_at": "2025-06-26T22:19:24.182520"
+  }
+}

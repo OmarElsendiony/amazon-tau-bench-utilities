@@ -12,7 +12,7 @@ CREATE TABLE `users` (
   `first_name` varchar(255),
   `last_name` varchar(255),
   `phone_number` varchar(255),
-  `role` enum(Owner,Partner,Child,Guest,Servant),
+  `role` enum(Parent,Child,Guest,Servant),
   `parent_id` integer,
   `email` varchar(255),
   `primary_address_id` integer,
@@ -36,7 +36,7 @@ CREATE TABLE `rooms` (
 
 CREATE TABLE `devices` (
   `device_id` integer PRIMARY KEY,
-  `device_type` enum(camera,bulb,thermostat,speaker,tv,refrigerator,oven),
+  `device_type` enum(camera,bulb,thermostat,switch,speaker,tv,refrigrator,oven),
   `room_id` integer,
   `installed_on` date,
   `insurance_expiry_date` date,
@@ -67,7 +67,6 @@ CREATE TABLE `automated_routines` (
   `routine_id` integer PRIMARY KEY,
   `user_id` integer,
   `home_id` integer,
-  `start_action_date` date,
   `action_time` timestamp,
   `action_interval` enum(daily,one_time,every_hour),
   `created_at` timestamp,
@@ -129,7 +128,7 @@ CREATE TABLE `smart_bulbs` (
 );
 
 CREATE TABLE `user_feedbacks` (
-  `user_feedback_id` inetger PRIMARY KEY,
+  `feedback_id` inetger PRIMARY KEY,
   `user_id` integer,
   `device_id` integer,
   `rating` integer,
@@ -152,7 +151,7 @@ CREATE TABLE `emergency_alerts` (
   `alert_id` integer PRIMARY KEY,
   `home_id` integer,
   `device_id` integer,
-  `alert_type` enum(camera_motion_detected,camera_offline,bulb_malfunction,thermostat_temperature_alert,thermostat_offline,speaker_offline,tv_malfunction,refrigerator_temperature_alert,refrigerator_malfunction,oven_overheating,oven_malfunction),
+  `alert_type` enum(camera_motion_detected,camera_offline,bulb_malfunction,thermostat_temperature_alert,thermostat_offline,switch_malfunction,speaker_offline,tv_malfunction,refrigerator_temperature_alert,refrigerator_malfunction,oven_overheating,oven_malfunction,power_outage,system_malfunction),
   `severity_level` enum(low,medium,high,critical),
   `triggered_at` timestamp,
   `acknowledged_at` timestamp,

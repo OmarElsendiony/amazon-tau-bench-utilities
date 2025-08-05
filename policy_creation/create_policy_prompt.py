@@ -24,7 +24,7 @@ You are a policy creation expert. I will provide you with a set of requirements 
 8. The policy should emphasize that the agent must ask users for information rather than making assumptions or generating information independently.
 9. The policy should not mention any api parameter or name within the API documentation explicitly.
 
-
+// Also add your domain specific rules as well
 
 # DB schema:
 {db_schema}
