@@ -1,0 +1,264 @@
+
+You are a Python code expert specialized in the `Faker` library and populating databases with realistic data. Your task is to create a code snippet that generates fake data for database seeding using the `Faker` library. The function should create realistic names, addresses, and other relevant fields based on the context of the application. The database is json files that resemble the tables in the database schema where the key of each entry is the id of the primary key of that entry. I will provide you with the database schema and the fields that need to be populated. Also, the relations between the tables will be provided, and you should ensure that the generated data respects these relations. Before that, I will provide you with the rules that you have to adhere to while generating the data.
+
+Rules:
+1. The one-to-many relationships should be respected, meaning that for each entry in the "one" table, there can be multiple entries in the "many" table or only one.
+2. The data IDs should be unique within each table but can be reused across different tables.
+3. The generated IDs should be strings, not integers. They also should be incremental and unique, starting from "1".
+4. The IDs should be consistent across the related tables. There can not be inconsistencies in the IDs across the tables. They also should retain the semantic meaning of the IDs.
+5. The script should fill in the all the fields in the database schema, except for the free-form text fields (comments, notes and description) but not name (and other enum types), which can be left empty.
+6. The script should generate a reasonable amount of data for each table, ensuring that the database is populated with enough records to be useful for testing and development.
+7. The connections has to be coherent. For example, if a user belongs to a department within a company, the company ID should match the one in the department table. Another example is that if a product belongs to a category and subcategory, the subcategory and category should be connected correctly having compatible IDs and names.
+8. All foreign keys must reference an existing, valid ID in the parent table.
+9. No orphan foreign keys allowed.
+10. Ensure that `created_at` and `updated_at` timestamps are generated correctly, with `created_at` being earlier than `updated_at`.
+11. Do not add null values in the entries of the database that can be filled with fake data except for the fields that are explicitly mentioned to be left empty or special cases.
+12. Only users that have role Child in users should have parent ids
+13. Parent should have less than 10 childs, guest or servants.
+14. email should be coherant with the first name and last name 
+15. phone number should look good and from USA
+16. Date of birth of child should be 20 years after that of the parent
+17. inactive status can be for the guests and/or servants
+18. The inactive status users should not be the owner of any rooms
+19. all of the bulbs. cameras and smart thermostats should have corresponding correct ids in the devices as well 
+20. all of the routines in device_commands, bulb commands and thermostats commands should exist in the automated routines as well
+21. emergency alert type should make sense for the device_id 
+22. acknowledged_at, ack_by user, resolved_at, resolved_by user can be null
+
+Database Schema:
+CREATE TABLE `homes` (
+  `home_id` integer PRIMARY KEY,
+  `owner_id` integer,
+  `address_id` integer,
+  `home_type` enum(Home,Apartment),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `users` (
+  `user_id` integer PRIMARY KEY,
+  `first_name` varchar(255),
+  `last_name` varchar(255),
+  `phone_number` varchar(255),
+  `role` enum(Parent,Child,Guest,Servant),
+  `parent_id` integer,
+  `email` varchar(255),
+  `primary_address_id` integer,
+  `date_of_birth` date,
+  `status` enum(active,inactive),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `rooms` (
+  `room_id` integer PRIMARY KEY,
+  `home_id` integer,
+  `room_type` enum(Bedroom,kitchen,lounge,store,diningroom),
+  `room_owner_id` integer,
+  `status` enum(vacant,occupied),
+  `width_ft` float,
+  `length_ft` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `devices` (
+  `device_id` integer PRIMARY KEY,
+  `device_type` enum(camera,bulb,thermostat,switch,speaker,tv,refrigrator,oven),
+  `room_id` integer,
+  `installed_on` date,
+  `insurance_expiry_date` date,
+  `home_id` integer,
+  `status` enum(on,off),
+  `width_ft` float,
+  `length_ft` float,
+  `price` float,
+  `scheduled_maintainance_date` date,
+  `last_maintainance_date` date,
+  `daily_rated_power_consumption_kWh` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `historical_energy_consumption` (
+  `consumption_id` integer PRIMARY KEY,
+  `device_id` integer,
+  `home_id` integer,
+  `room_id` integer,
+  `date` date,
+  `power_used_kWh` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `automated_routines` (
+  `routine_id` integer PRIMARY KEY,
+  `user_id` integer,
+  `home_id` integer,
+  `action_time` timestamp,
+  `action_interval` enum(daily,one_time,every_hour),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `device_commands` (
+  `device_command_id` integer PRIMARY KEY,
+  `routine_id` integer,
+  `device_id` integer,
+  `status` enum(on,off),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `bulb_commands` (
+  `bulb_command_id` integer PRIMARY KEY,
+  `routine_id` integer,
+  `device_id` integer,
+  `brightness_level` enum(dim,half,full),
+  `color` enum(red,white,yellow,blue),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `thermostat_commands` (
+  `thermostat_command_id` integer PRIMARY KEY,
+  `routine_id` integer,
+  `device_id` integer,
+  `current_temperature` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `security_cameras` (
+  `device_id` integer PRIMARY KEY,
+  `resolution` enum(720p,1080p,2k),
+  `last_activity_timestamp` timestamp,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `smart_thermostats` (
+  `device_id` integer PRIMARY KEY,
+  `current_temperate` float,
+  `lowest_rated_temeprature` float,
+  `highest_rated_temeprature` float,
+  `last_adjustment_time` timestamp,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `smart_bulbs` (
+  `device_id` integer PRIMARY KEY,
+  `brightness_level` enum(dim,half,full),
+  `color` enum(red,white,yellow,blue),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `user_feedbacks` (
+  `feedback_id` inetger PRIMARY KEY,
+  `user_id` integer,
+  `device_id` integer,
+  `rating` integer,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `addresses` (
+  `address_id` integer PRIMARY KEY,
+  `house_number` varchar(255),
+  `building_name` varchar(255),
+  `street` varchar(255),
+  `city_name` varchar(255),
+  `state` varchar(255),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `emergency_alerts` (
+  `alert_id` integer PRIMARY KEY,
+  `home_id` integer,
+  `device_id` integer,
+  `alert_type` enum(camera_motion_detected,camera_offline,bulb_malfunction,thermostat_temperature_alert,thermostat_offline,switch_malfunction,speaker_offline,tv_malfunction,refrigerator_temperature_alert,refrigerator_malfunction,oven_overheating,oven_malfunction,power_outage,system_malfunction),
+  `severity_level` enum(low,medium,high,critical),
+  `triggered_at` timestamp,
+  `acknowledged_at` timestamp,
+  `acknowledged_by_user` int,
+  `resolved_at` timestamp,
+  `resolved_by_user` int,
+  `created_at` timestamp
+);
+
+CREATE TABLE `energy_tariffs` (
+  `tariff_id` integer PRIMARY KEY,
+  `home_id` integer,
+  `tariff_name` varchar(255),
+  `rate_per_kWh` float,
+  `peak_hours_start` time,
+  `peak_hours_end` time,
+  `peak_rate_multiplier` float,
+  `effective_from` date,
+  `effective_until` date,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+ALTER TABLE `homes` ADD FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`);
+
+ALTER TABLE `users` ADD FOREIGN KEY (`parent_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `users` ADD FOREIGN KEY (`primary_address_id`) REFERENCES `addresses` (`address_id`);
+
+ALTER TABLE `device_commands` ADD FOREIGN KEY (`routine_id`) REFERENCES `automated_routines` (`routine_id`);
+
+ALTER TABLE `device_commands` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `bulb_commands` ADD FOREIGN KEY (`routine_id`) REFERENCES `automated_routines` (`routine_id`);
+
+ALTER TABLE `bulb_commands` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `thermostat_commands` ADD FOREIGN KEY (`routine_id`) REFERENCES `automated_routines` (`routine_id`);
+
+ALTER TABLE `thermostat_commands` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `user_feedbacks` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `user_feedbacks` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `historical_energy_consumption` ADD CONSTRAINT `room_device_historical` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`room_id`);
+
+ALTER TABLE `security_cameras` ADD CONSTRAINT `security_cameras_device` FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `devices` ADD CONSTRAINT `smart_bulb_device` FOREIGN KEY (`device_id`) REFERENCES `smart_bulbs` (`device_id`);
+
+ALTER TABLE `devices` ADD CONSTRAINT `smart_thermostats_device` FOREIGN KEY (`device_id`) REFERENCES `smart_thermostats` (`device_id`);
+
+ALTER TABLE `homes` ADD CONSTRAINT `home_users` FOREIGN KEY (`owner_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `homes` ADD CONSTRAINT `home_rooms` FOREIGN KEY (`home_id`) REFERENCES `rooms` (`home_id`);
+
+ALTER TABLE `devices` ADD CONSTRAINT `device_rooms` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`room_id`);
+
+ALTER TABLE `devices` ADD CONSTRAINT `device_homes` FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
+
+ALTER TABLE `historical_energy_consumption` ADD CONSTRAINT `historical_consumption_devices` FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `historical_energy_consumption` ADD CONSTRAINT `historical_consumption_homes` FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
+
+ALTER TABLE `automated_routines` ADD CONSTRAINT `routines_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `automated_routines` ADD CONSTRAINT `routines_home_id` FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
+
+ALTER TABLE `rooms` ADD CONSTRAINT `room_owner_id_user` FOREIGN KEY (`room_owner_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
+
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`acknowledged_by_user`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`resolved_by_user`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `energy_tariffs` ADD FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
+
+

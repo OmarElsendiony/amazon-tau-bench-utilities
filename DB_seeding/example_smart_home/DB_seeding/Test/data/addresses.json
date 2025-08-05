@@ -1,0 +1,1532 @@
+{
+  "1": {
+    "address_id": "1",
+    "house_number": "30265",
+    "building_name": "Sunrise Heights",
+    "street": "Lindsay Forest",
+    "city_name": "Jacksonfort",
+    "state": "New York",
+    "created_at": "2024-12-22T16:25:44.582446",
+    "updated_at": "2025-04-17T23:19:02.823481"
+  },
+  "2": {
+    "address_id": "2",
+    "house_number": "4507",
+    "building_name": "Oak Heights",
+    "street": "Anderson Heights",
+    "city_name": "Carlsonton",
+    "state": "Idaho",
+    "created_at": "2025-03-03T12:04:31.297562",
+    "updated_at": "2025-05-12T05:35:15.343542"
+  },
+  "3": {
+    "address_id": "3",
+    "house_number": "193",
+    "building_name": "Maple Arcade",
+    "street": "Bowen Cove",
+    "city_name": "North Johnny",
+    "state": "Wisconsin",
+    "created_at": "2025-01-30T03:03:19.983421",
+    "updated_at": "2025-03-22T06:50:58.818986"
+  },
+  "4": {
+    "address_id": "4",
+    "house_number": "69498",
+    "building_name": "Golden Manor",
+    "street": "Autumn Flat",
+    "city_name": "South Kristina",
+    "state": "Colorado",
+    "created_at": "2024-10-05T16:29:19.398664",
+    "updated_at": "2025-05-11T19:54:38.424079"
+  },
+  "5": {
+    "address_id": "5",
+    "house_number": "73721",
+    "building_name": "Ocean Crossing",
+    "street": "Michael Stream",
+    "city_name": "Cherylbury",
+    "state": "Louisiana",
+    "created_at": "2024-11-04T13:43:03.647640",
+    "updated_at": "2024-12-30T10:54:04.176425"
+  },
+  "6": {
+    "address_id": "6",
+    "house_number": "4466",
+    "building_name": "Royal Complex",
+    "street": "Gomez Branch",
+    "city_name": "Carriefort",
+    "state": "Iowa",
+    "created_at": "2025-05-05T03:38:49.960507",
+    "updated_at": "2025-07-11T17:04:25.929548"
+  },
+  "7": {
+    "address_id": "7",
+    "house_number": "7502",
+    "building_name": "Heritage Court",
+    "street": "Griffin Gardens",
+    "city_name": "West George",
+    "state": "Georgia",
+    "created_at": "2025-06-30T22:36:33.498241",
+    "updated_at": "2025-07-11T12:40:12.501214"
+  },
+  "8": {
+    "address_id": "8",
+    "house_number": "32173",
+    "building_name": "Heritage Terrace",
+    "street": "Kelly Flats",
+    "city_name": "Lake Lori",
+    "state": "Wyoming",
+    "created_at": "2025-02-23T09:49:37.941864",
+    "updated_at": "2025-07-31T14:15:21.104906"
+  },
+  "9": {
+    "address_id": "9",
+    "house_number": "93204",
+    "building_name": "Maple Palace",
+    "street": "Donna Centers",
+    "city_name": "Ramseystad",
+    "state": "Maine",
+    "created_at": "2025-02-27T12:58:45.148541",
+    "updated_at": "2025-04-25T12:38:12.047855"
+  },
+  "10": {
+    "address_id": "10",
+    "house_number": "2337",
+    "building_name": "Grand Place",
+    "street": "Mallory Plain",
+    "city_name": "Ashleybury",
+    "state": "Michigan",
+    "created_at": "2025-03-17T22:47:35.367134",
+    "updated_at": "2025-06-30T17:25:23.887653"
+  },
+  "11": {
+    "address_id": "11",
+    "house_number": "367",
+    "building_name": "Hill Hall",
+    "street": "Flores Pike",
+    "city_name": "Cardenasview",
+    "state": "Nevada",
+    "created_at": "2024-09-25T00:30:40.025675",
+    "updated_at": "2025-05-16T07:25:59.073745"
+  },
+  "12": {
+    "address_id": "12",
+    "house_number": "89963",
+    "building_name": "Green Court",
+    "street": "Jonathan Harbor",
+    "city_name": "Patriciaborough",
+    "state": "New Hampshire",
+    "created_at": "2025-03-28T10:19:01.235189",
+    "updated_at": "2025-07-03T02:57:11.704908"
+  },
+  "13": {
+    "address_id": "13",
+    "house_number": "8506",
+    "building_name": "Ocean Plaza",
+    "street": "Alan Plain",
+    "city_name": "Lake Margaretville",
+    "state": "California",
+    "created_at": "2025-01-29T02:04:31.681849",
+    "updated_at": "2025-07-28T06:19:18.130922"
+  },
+  "14": {
+    "address_id": "14",
+    "house_number": "63493",
+    "building_name": "Amber Retreat",
+    "street": "Cox Trafficway",
+    "city_name": "Lake Isaac",
+    "state": "Maryland",
+    "created_at": "2025-06-12T04:46:21.921896",
+    "updated_at": "2025-06-16T21:28:29.182502"
+  },
+  "15": {
+    "address_id": "15",
+    "house_number": "893",
+    "building_name": "Sunrise Arcade",
+    "street": "Christopher Spurs",
+    "city_name": "Port Billy",
+    "state": "Pennsylvania",
+    "created_at": "2025-05-19T05:08:45.045893",
+    "updated_at": "2025-06-10T12:57:29.419610"
+  },
+  "16": {
+    "address_id": "16",
+    "house_number": "468",
+    "building_name": "Royal Enclave",
+    "street": "Moon Mills",
+    "city_name": "Jamesside",
+    "state": "Oklahoma",
+    "created_at": "2024-11-01T01:15:06.148136",
+    "updated_at": "2025-02-14T06:48:07.167080"
+  },
+  "17": {
+    "address_id": "17",
+    "house_number": "3112",
+    "building_name": "Crystal Enclave",
+    "street": "Travis Ports",
+    "city_name": "North Mary",
+    "state": "Connecticut",
+    "created_at": "2025-03-24T14:57:00.168628",
+    "updated_at": "2025-05-02T19:43:16.006602"
+  },
+  "18": {
+    "address_id": "18",
+    "house_number": "813",
+    "building_name": "Crystal Crossing",
+    "street": "Steven Falls",
+    "city_name": "Buckmouth",
+    "state": "Indiana",
+    "created_at": "2025-04-09T11:05:49.005929",
+    "updated_at": "2025-07-03T20:14:33.789698"
+  },
+  "19": {
+    "address_id": "19",
+    "house_number": "4614",
+    "building_name": "Sunrise Place",
+    "street": "Aaron Stravenue",
+    "city_name": "North Kevin",
+    "state": "Nevada",
+    "created_at": "2025-06-16T12:04:17.293324",
+    "updated_at": "2025-07-30T20:01:31.112385"
+  },
+  "20": {
+    "address_id": "20",
+    "house_number": "92506",
+    "building_name": "Grand Residency",
+    "street": "Luis Drives",
+    "city_name": "Douglasside",
+    "state": "Maine",
+    "created_at": "2025-01-17T01:52:11.810428",
+    "updated_at": "2025-05-26T12:53:51.395815"
+  },
+  "21": {
+    "address_id": "21",
+    "house_number": "1621",
+    "building_name": "Lake Gardens",
+    "street": "King Corners",
+    "city_name": "Rodriguezshire",
+    "state": "Iowa",
+    "created_at": "2024-08-08T07:12:55.358146",
+    "updated_at": "2025-02-12T09:54:53.865407"
+  },
+  "22": {
+    "address_id": "22",
+    "house_number": "3168",
+    "building_name": "Golden Suites",
+    "street": "Reeves Route",
+    "city_name": "New Jesseville",
+    "state": "Michigan",
+    "created_at": "2025-06-22T07:25:20.555594",
+    "updated_at": "2025-06-29T08:04:23.907397"
+  },
+  "23": {
+    "address_id": "23",
+    "house_number": "330",
+    "building_name": "Oak Suites",
+    "street": "Michele Causeway",
+    "city_name": "East Kimberlyhaven",
+    "state": "Mississippi",
+    "created_at": "2024-11-24T16:57:34.609678",
+    "updated_at": "2025-04-11T03:40:35.434632"
+  },
+  "24": {
+    "address_id": "24",
+    "house_number": "106",
+    "building_name": "Pine Apartments",
+    "street": "Seth Meadows",
+    "city_name": "Smithmouth",
+    "state": "Nevada",
+    "created_at": "2025-05-23T17:29:12.013786",
+    "updated_at": "2025-06-01T21:56:02.286931"
+  },
+  "25": {
+    "address_id": "25",
+    "house_number": "96785",
+    "building_name": "Maple Tower",
+    "street": "Eric Canyon",
+    "city_name": "Williamsmouth",
+    "state": "Vermont",
+    "created_at": "2024-12-19T09:05:41.615436",
+    "updated_at": "2025-07-09T09:31:43.885814"
+  },
+  "26": {
+    "address_id": "26",
+    "house_number": "3739",
+    "building_name": "Pine Heights",
+    "street": "Lawrence Tunnel",
+    "city_name": "Lake Deannaland",
+    "state": "North Dakota",
+    "created_at": "2024-12-14T11:20:22.540734",
+    "updated_at": "2025-07-06T10:00:10.431502"
+  },
+  "27": {
+    "address_id": "27",
+    "house_number": "4306",
+    "building_name": "Green Court",
+    "street": "Tammy Viaduct",
+    "city_name": "East Courtneyport",
+    "state": "Indiana",
+    "created_at": "2024-10-03T08:49:08.136375",
+    "updated_at": "2025-02-24T21:29:15.287540"
+  },
+  "28": {
+    "address_id": "28",
+    "house_number": "12193",
+    "building_name": "Royal Vista",
+    "street": "Campbell Stravenue",
+    "city_name": "Lake Richard",
+    "state": "Arkansas",
+    "created_at": "2024-12-22T13:15:58.601621",
+    "updated_at": "2024-12-23T03:53:32.732914"
+  },
+  "29": {
+    "address_id": "29",
+    "house_number": "7552",
+    "building_name": "Pine Crossing",
+    "street": "Huffman Knolls",
+    "city_name": "Mendozaport",
+    "state": "Colorado",
+    "created_at": "2024-11-22T05:22:03.729538",
+    "updated_at": "2025-02-14T09:59:59.184915"
+  },
+  "30": {
+    "address_id": "30",
+    "house_number": "57000",
+    "building_name": "Spring Court",
+    "street": "Courtney Ridge",
+    "city_name": "Smithport",
+    "state": "Minnesota",
+    "created_at": "2025-03-28T03:24:03.486329",
+    "updated_at": "2025-07-03T00:35:49.613010"
+  },
+  "31": {
+    "address_id": "31",
+    "house_number": "8986",
+    "building_name": "Sky Tower",
+    "street": "Valdez Inlet",
+    "city_name": "South Ashleyfurt",
+    "state": "Tennessee",
+    "created_at": "2025-02-13T14:21:18.034617",
+    "updated_at": "2025-04-18T10:03:04.509230"
+  },
+  "32": {
+    "address_id": "32",
+    "house_number": "686",
+    "building_name": "Spring Tower",
+    "street": "Henry Corner",
+    "city_name": "Elizabethfurt",
+    "state": "Nevada",
+    "created_at": "2025-01-25T14:10:05.808277",
+    "updated_at": "2025-03-02T23:28:38.798178"
+  },
+  "33": {
+    "address_id": "33",
+    "house_number": "877",
+    "building_name": "Majestic Apartments",
+    "street": "Nina Manors",
+    "city_name": "Alexville",
+    "state": "Indiana",
+    "created_at": "2025-06-02T07:27:14.593218",
+    "updated_at": "2025-06-10T05:45:49.297330"
+  },
+  "34": {
+    "address_id": "34",
+    "house_number": "2482",
+    "building_name": "Green Retreat",
+    "street": "Reyes Groves",
+    "city_name": "Lake Micheal",
+    "state": "New Mexico",
+    "created_at": "2024-08-25T12:01:31.487386",
+    "updated_at": "2024-10-15T23:05:28.610150"
+  },
+  "35": {
+    "address_id": "35",
+    "house_number": "898",
+    "building_name": "Sky Terrace",
+    "street": "Kidd Ramp",
+    "city_name": "Harveyfort",
+    "state": "Indiana",
+    "created_at": "2025-02-26T06:05:39.850206",
+    "updated_at": "2025-07-17T11:57:32.435133"
+  },
+  "36": {
+    "address_id": "36",
+    "house_number": "963",
+    "building_name": "Oak Court",
+    "street": "Vaughn Forges",
+    "city_name": "East Ashley",
+    "state": "Kentucky",
+    "created_at": "2024-12-13T17:58:11.250238",
+    "updated_at": "2025-01-26T13:42:39.643544"
+  },
+  "37": {
+    "address_id": "37",
+    "house_number": "2999",
+    "building_name": "Oak Manor",
+    "street": "Rebecca Lock",
+    "city_name": "Beasleyberg",
+    "state": "New Mexico",
+    "created_at": "2025-06-14T04:22:50.904010",
+    "updated_at": "2025-07-19T07:12:13.626713"
+  },
+  "38": {
+    "address_id": "38",
+    "house_number": "4903",
+    "building_name": "Pine Tower",
+    "street": "Flores Street",
+    "city_name": "Briannaburgh",
+    "state": "Alabama",
+    "created_at": "2024-12-24T17:56:52.576650",
+    "updated_at": "2025-01-03T07:05:46.589176"
+  },
+  "39": {
+    "address_id": "39",
+    "house_number": "66372",
+    "building_name": "Sky Place",
+    "street": "Destiny Cliffs",
+    "city_name": "Port Gregoryview",
+    "state": "New Mexico",
+    "created_at": "2025-03-20T03:26:51.736411",
+    "updated_at": "2025-03-30T01:18:45.435124"
+  },
+  "40": {
+    "address_id": "40",
+    "house_number": "56105",
+    "building_name": "Silver Lodge",
+    "street": "Melissa Estate",
+    "city_name": "Martinezfort",
+    "state": "Arizona",
+    "created_at": "2024-11-25T04:53:33.552903",
+    "updated_at": "2024-12-27T21:27:08.822626"
+  },
+  "41": {
+    "address_id": "41",
+    "house_number": "4950",
+    "building_name": "Oak Crossing",
+    "street": "Brandi Cliffs",
+    "city_name": "Christinamouth",
+    "state": "Ohio",
+    "created_at": "2024-11-03T08:55:27.750828",
+    "updated_at": "2025-02-04T20:19:14.437530"
+  },
+  "42": {
+    "address_id": "42",
+    "house_number": "3717",
+    "building_name": "Majestic Tower",
+    "street": "Bell Keys",
+    "city_name": "Webbland",
+    "state": "Oregon",
+    "created_at": "2025-01-01T10:45:09.101403",
+    "updated_at": "2025-03-30T09:37:35.914596"
+  },
+  "43": {
+    "address_id": "43",
+    "house_number": "5174",
+    "building_name": "Royal Gardens",
+    "street": "Frank Manors",
+    "city_name": "Angelamouth",
+    "state": "Mississippi",
+    "created_at": "2025-02-05T23:12:07.477455",
+    "updated_at": "2025-02-11T15:38:49.818495"
+  },
+  "44": {
+    "address_id": "44",
+    "house_number": "9352",
+    "building_name": "Sunrise Vista",
+    "street": "Marie River",
+    "city_name": "New Jaredville",
+    "state": "Mississippi",
+    "created_at": "2025-02-28T23:31:32.206835",
+    "updated_at": "2025-03-18T11:43:28.000519"
+  },
+  "45": {
+    "address_id": "45",
+    "house_number": "29270",
+    "building_name": "Willow Residency",
+    "street": "Snyder Tunnel",
+    "city_name": "Lake Stacy",
+    "state": "North Carolina",
+    "created_at": "2024-11-19T12:29:39.435373",
+    "updated_at": "2025-01-13T12:26:14.291713"
+  },
+  "46": {
+    "address_id": "46",
+    "house_number": "4001",
+    "building_name": "Maple Plaza",
+    "street": "Short Ramp",
+    "city_name": "West Timshire",
+    "state": "Louisiana",
+    "created_at": "2024-12-29T10:33:01.679734",
+    "updated_at": "2025-07-21T01:56:56.464779"
+  },
+  "47": {
+    "address_id": "47",
+    "house_number": "7737",
+    "building_name": "Majestic Palace",
+    "street": "Downs Squares",
+    "city_name": "New Christinaside",
+    "state": "Louisiana",
+    "created_at": "2025-06-18T21:13:06.344762",
+    "updated_at": "2025-07-03T14:04:15.042420"
+  },
+  "48": {
+    "address_id": "48",
+    "house_number": "6703",
+    "building_name": "Maple Arcade",
+    "street": "Natasha Hill",
+    "city_name": "Elizabethton",
+    "state": "Utah",
+    "created_at": "2025-02-10T04:21:52.550939",
+    "updated_at": "2025-03-27T11:04:12.696070"
+  },
+  "49": {
+    "address_id": "49",
+    "house_number": "197",
+    "building_name": "Hill Retreat",
+    "street": "Aaron Coves",
+    "city_name": "West Terri",
+    "state": "Missouri",
+    "created_at": "2024-11-02T21:19:31.903513",
+    "updated_at": "2024-11-24T07:06:46.225455"
+  },
+  "50": {
+    "address_id": "50",
+    "house_number": "2005",
+    "building_name": "Sunrise Residency",
+    "street": "Charles Station",
+    "city_name": "Ericchester",
+    "state": "California",
+    "created_at": "2024-10-25T04:06:28.347816",
+    "updated_at": "2025-06-30T23:40:27.904762"
+  },
+  "51": {
+    "address_id": "51",
+    "house_number": "4541",
+    "building_name": "River Gardens",
+    "street": "Hunt Port",
+    "city_name": "Lake Jacob",
+    "state": "West Virginia",
+    "created_at": "2025-05-20T17:11:23.327206",
+    "updated_at": "2025-07-23T03:47:24.583881"
+  },
+  "52": {
+    "address_id": "52",
+    "house_number": "5102",
+    "building_name": "River Terrace",
+    "street": "Wayne Pike",
+    "city_name": "Lake Daleton",
+    "state": "South Dakota",
+    "created_at": "2024-10-25T17:38:57.724216",
+    "updated_at": "2024-12-31T02:31:49.039024"
+  },
+  "53": {
+    "address_id": "53",
+    "house_number": "8008",
+    "building_name": "Crystal Place",
+    "street": "Johnny Expressway",
+    "city_name": "New Michaeltown",
+    "state": "Delaware",
+    "created_at": "2024-12-01T16:48:54.475869",
+    "updated_at": "2025-01-09T22:27:28.924115"
+  },
+  "54": {
+    "address_id": "54",
+    "house_number": "420",
+    "building_name": "Royal Complex",
+    "street": "Santiago Lane",
+    "city_name": "Port Heather",
+    "state": "Iowa",
+    "created_at": "2024-10-04T12:04:43.477578",
+    "updated_at": "2025-07-09T20:09:05.532818"
+  },
+  "55": {
+    "address_id": "55",
+    "house_number": "715",
+    "building_name": "Silver Palace",
+    "street": "Murphy Mission",
+    "city_name": "Lake Vanessaville",
+    "state": "Utah",
+    "created_at": "2024-12-04T05:00:25.857063",
+    "updated_at": "2025-07-15T22:31:23.856827"
+  },
+  "56": {
+    "address_id": "56",
+    "house_number": "905",
+    "building_name": "Sky Hall",
+    "street": "Boyd Points",
+    "city_name": "Jenniferborough",
+    "state": "Indiana",
+    "created_at": "2025-06-21T17:34:44.297092",
+    "updated_at": "2025-07-08T16:05:37.833607"
+  },
+  "57": {
+    "address_id": "57",
+    "house_number": "4263",
+    "building_name": "Sunset Crossing",
+    "street": "Martinez Isle",
+    "city_name": "Westchester",
+    "state": "Nevada",
+    "created_at": "2025-01-13T03:26:58.007150",
+    "updated_at": "2025-05-13T06:03:13.325231"
+  },
+  "58": {
+    "address_id": "58",
+    "house_number": "5207",
+    "building_name": "Royal Tower",
+    "street": "Janice Corner",
+    "city_name": "Lopezport",
+    "state": "Hawaii",
+    "created_at": "2025-03-06T20:07:19.356021",
+    "updated_at": "2025-04-13T00:05:33.931183"
+  },
+  "59": {
+    "address_id": "59",
+    "house_number": "18060",
+    "building_name": "River Residency",
+    "street": "Lisa Row",
+    "city_name": "Port Annashire",
+    "state": "Wyoming",
+    "created_at": "2025-02-10T21:09:28.289605",
+    "updated_at": "2025-03-31T01:38:48.790284"
+  },
+  "60": {
+    "address_id": "60",
+    "house_number": "88532",
+    "building_name": "Silver Arcade",
+    "street": "Taylor Circles",
+    "city_name": "Davidburgh",
+    "state": "West Virginia",
+    "created_at": "2024-08-23T00:49:55.140761",
+    "updated_at": "2025-07-19T08:23:40.635204"
+  },
+  "61": {
+    "address_id": "61",
+    "house_number": "4368",
+    "building_name": "Hill Terrace",
+    "street": "Christine Dam",
+    "city_name": "Fosterton",
+    "state": "Virginia",
+    "created_at": "2025-05-21T07:59:31.859411",
+    "updated_at": "2025-07-10T01:21:56.599632"
+  },
+  "62": {
+    "address_id": "62",
+    "house_number": "6689",
+    "building_name": "Lake Terrace",
+    "street": "Clements Throughway",
+    "city_name": "New Melissachester",
+    "state": "Delaware",
+    "created_at": "2024-11-15T20:48:05.713733",
+    "updated_at": "2025-05-20T23:45:42.581048"
+  },
+  "63": {
+    "address_id": "63",
+    "house_number": "6808",
+    "building_name": "Heritage Retreat",
+    "street": "Lang Turnpike",
+    "city_name": "South Corey",
+    "state": "West Virginia",
+    "created_at": "2025-05-20T17:35:52.960931",
+    "updated_at": "2025-07-09T05:06:37.156288"
+  },
+  "64": {
+    "address_id": "64",
+    "house_number": "10413",
+    "building_name": "Sunrise Heights",
+    "street": "Young Mountain",
+    "city_name": "East Josephville",
+    "state": "Texas",
+    "created_at": "2025-02-03T17:05:36.889536",
+    "updated_at": "2025-05-18T19:13:00.834514"
+  },
+  "65": {
+    "address_id": "65",
+    "house_number": "6584",
+    "building_name": "Sunrise Place",
+    "street": "Brooks Roads",
+    "city_name": "East Luis",
+    "state": "Oklahoma",
+    "created_at": "2025-06-27T15:47:50.352362",
+    "updated_at": "2025-07-15T17:06:00.444183"
+  },
+  "66": {
+    "address_id": "66",
+    "house_number": "30855",
+    "building_name": "Crystal Lodge",
+    "street": "Theresa Junction",
+    "city_name": "Joannaberg",
+    "state": "Arkansas",
+    "created_at": "2024-12-08T00:14:00.700725",
+    "updated_at": "2025-05-25T01:22:59.860629"
+  },
+  "67": {
+    "address_id": "67",
+    "house_number": "7191",
+    "building_name": "Spring Retreat",
+    "street": "Erica View",
+    "city_name": "Bowershaven",
+    "state": "Tennessee",
+    "created_at": "2024-09-16T08:34:23.240710",
+    "updated_at": "2025-05-25T07:39:44.165944"
+  },
+  "68": {
+    "address_id": "68",
+    "house_number": "55325",
+    "building_name": "Lake Lodge",
+    "street": "Reilly Valleys",
+    "city_name": "Conradside",
+    "state": "New Hampshire",
+    "created_at": "2024-11-14T04:36:45.731198",
+    "updated_at": "2025-03-28T18:14:41.482234"
+  },
+  "69": {
+    "address_id": "69",
+    "house_number": "3052",
+    "building_name": "Majestic Heights",
+    "street": "Mosley Wells",
+    "city_name": "Guzmanville",
+    "state": "Virginia",
+    "created_at": "2024-08-29T14:07:14.641023",
+    "updated_at": "2024-10-29T13:59:17.557386"
+  },
+  "70": {
+    "address_id": "70",
+    "house_number": "72775",
+    "building_name": "River Hall",
+    "street": "Cannon Loaf",
+    "city_name": "New Anneberg",
+    "state": "Illinois",
+    "created_at": "2025-01-22T13:05:51.886545",
+    "updated_at": "2025-04-21T23:54:41.784923"
+  },
+  "71": {
+    "address_id": "71",
+    "house_number": "814",
+    "building_name": "Ocean Palace",
+    "street": "Anthony Fort",
+    "city_name": "Lake Elizabethville",
+    "state": "Virginia",
+    "created_at": "2025-03-11T18:17:09.266699",
+    "updated_at": "2025-06-08T08:00:13.954885"
+  },
+  "72": {
+    "address_id": "72",
+    "house_number": "58570",
+    "building_name": "Spring Complex",
+    "street": "Colton Glen",
+    "city_name": "Aliciatown",
+    "state": "Oklahoma",
+    "created_at": "2024-09-20T07:59:03.009938",
+    "updated_at": "2024-12-21T07:54:03.513574"
+  },
+  "73": {
+    "address_id": "73",
+    "house_number": "983",
+    "building_name": "Sky Court",
+    "street": "Mcclain Turnpike",
+    "city_name": "Lake Mariaville",
+    "state": "Missouri",
+    "created_at": "2025-03-26T09:20:13.104679",
+    "updated_at": "2025-03-28T04:18:08.927445"
+  },
+  "74": {
+    "address_id": "74",
+    "house_number": "615",
+    "building_name": "Silver Court",
+    "street": "Yates Route",
+    "city_name": "Miafort",
+    "state": "Pennsylvania",
+    "created_at": "2025-05-07T12:54:27.452450",
+    "updated_at": "2025-07-14T11:32:24.936445"
+  },
+  "75": {
+    "address_id": "75",
+    "house_number": "19831",
+    "building_name": "Ocean Terrace",
+    "street": "Becky Burg",
+    "city_name": "Davisville",
+    "state": "Montana",
+    "created_at": "2024-09-13T22:23:48.301408",
+    "updated_at": "2025-01-18T04:04:28.406134"
+  },
+  "76": {
+    "address_id": "76",
+    "house_number": "46542",
+    "building_name": "Sunset Heights",
+    "street": "Samuel Freeway",
+    "city_name": "Jessicabury",
+    "state": "Maine",
+    "created_at": "2024-12-06T19:56:18.689406",
+    "updated_at": "2025-01-08T22:56:54.738540"
+  },
+  "77": {
+    "address_id": "77",
+    "house_number": "57961",
+    "building_name": "Crystal Heights",
+    "street": "Davies Landing",
+    "city_name": "Port Natalieview",
+    "state": "Delaware",
+    "created_at": "2024-12-23T21:15:13.622043",
+    "updated_at": "2025-07-11T12:19:38.817962"
+  },
+  "78": {
+    "address_id": "78",
+    "house_number": "29115",
+    "building_name": "Grand Palace",
+    "street": "Robert Pines",
+    "city_name": "New Matthew",
+    "state": "Texas",
+    "created_at": "2024-11-30T23:45:09.773320",
+    "updated_at": "2025-06-25T16:17:53.418142"
+  },
+  "79": {
+    "address_id": "79",
+    "house_number": "53915",
+    "building_name": "Amber Terrace",
+    "street": "Shannon Ports",
+    "city_name": "New Sara",
+    "state": "Texas",
+    "created_at": "2024-08-08T13:54:46.782768",
+    "updated_at": "2025-04-12T10:52:51.156806"
+  },
+  "80": {
+    "address_id": "80",
+    "house_number": "644",
+    "building_name": "Spring Enclave",
+    "street": "Mariah Meadows",
+    "city_name": "Jamesmouth",
+    "state": "Wyoming",
+    "created_at": "2024-09-05T11:14:46.218158",
+    "updated_at": "2024-09-16T09:42:56.413795"
+  },
+  "81": {
+    "address_id": "81",
+    "house_number": "3465",
+    "building_name": "Green Plaza",
+    "street": "Michael Canyon",
+    "city_name": "Lake Geoffrey",
+    "state": "Minnesota",
+    "created_at": "2024-10-14T07:50:04.242876",
+    "updated_at": "2025-04-22T03:28:53.737403"
+  },
+  "82": {
+    "address_id": "82",
+    "house_number": "900",
+    "building_name": "Silver Suites",
+    "street": "Holmes Meadows",
+    "city_name": "West Kennethhaven",
+    "state": "California",
+    "created_at": "2024-11-09T16:00:07.617818",
+    "updated_at": "2025-05-19T07:26:43.199415"
+  },
+  "83": {
+    "address_id": "83",
+    "house_number": "9209",
+    "building_name": "Sky Terrace",
+    "street": "John Roads",
+    "city_name": "East Wayneland",
+    "state": "Washington",
+    "created_at": "2025-05-22T03:18:55.223738",
+    "updated_at": "2025-05-23T02:39:30.463869"
+  },
+  "84": {
+    "address_id": "84",
+    "house_number": "6703",
+    "building_name": "Silver Residency",
+    "street": "Dodson Light",
+    "city_name": "South Christophermouth",
+    "state": "Minnesota",
+    "created_at": "2024-08-21T22:34:45.604387",
+    "updated_at": "2025-03-15T16:38:16.707906"
+  },
+  "85": {
+    "address_id": "85",
+    "house_number": "7063",
+    "building_name": "Golden Terrace",
+    "street": "Smith Walks",
+    "city_name": "Port Evelyn",
+    "state": "Pennsylvania",
+    "created_at": "2024-12-12T01:28:25.449248",
+    "updated_at": "2025-07-07T21:53:11.751625"
+  },
+  "86": {
+    "address_id": "86",
+    "house_number": "202",
+    "building_name": "Ocean Hall",
+    "street": "Owens Glen",
+    "city_name": "Port Sheena",
+    "state": "North Carolina",
+    "created_at": "2024-08-10T08:58:26.318098",
+    "updated_at": "2025-01-29T16:56:33.349878"
+  },
+  "87": {
+    "address_id": "87",
+    "house_number": "999",
+    "building_name": "Heritage Gardens",
+    "street": "Garcia Glens",
+    "city_name": "Tyroneside",
+    "state": "Louisiana",
+    "created_at": "2025-02-06T08:10:55.206059",
+    "updated_at": "2025-02-08T17:19:13.045592"
+  },
+  "88": {
+    "address_id": "88",
+    "house_number": "463",
+    "building_name": "Amber Palace",
+    "street": "Robinson Corners",
+    "city_name": "Singhfurt",
+    "state": "Arizona",
+    "created_at": "2024-10-23T15:54:28.141581",
+    "updated_at": "2025-04-30T20:09:17.229514"
+  },
+  "89": {
+    "address_id": "89",
+    "house_number": "14651",
+    "building_name": "Sky Manor",
+    "street": "Lisa Cove",
+    "city_name": "Aaronbury",
+    "state": "Vermont",
+    "created_at": "2024-11-18T01:09:42.289135",
+    "updated_at": "2025-04-20T14:01:11.844195"
+  },
+  "90": {
+    "address_id": "90",
+    "house_number": "72244",
+    "building_name": "Golden Suites",
+    "street": "Patricia Village",
+    "city_name": "Lake Jamie",
+    "state": "California",
+    "created_at": "2024-08-29T22:31:40.486793",
+    "updated_at": "2025-01-09T00:02:25.076823"
+  },
+  "91": {
+    "address_id": "91",
+    "house_number": "4125",
+    "building_name": "Maple Suites",
+    "street": "Jessica River",
+    "city_name": "South Tyler",
+    "state": "Rhode Island",
+    "created_at": "2024-10-16T18:28:14.220352",
+    "updated_at": "2025-06-07T22:22:08.443522"
+  },
+  "92": {
+    "address_id": "92",
+    "house_number": "76389",
+    "building_name": "Grand Arcade",
+    "street": "Steven Rapids",
+    "city_name": "West Michellefurt",
+    "state": "Indiana",
+    "created_at": "2025-05-01T06:19:46.781992",
+    "updated_at": "2025-05-27T05:55:10.748423"
+  },
+  "93": {
+    "address_id": "93",
+    "house_number": "832",
+    "building_name": "Lake Gardens",
+    "street": "Graham Trafficway",
+    "city_name": "North Victoria",
+    "state": "North Dakota",
+    "created_at": "2024-08-16T18:14:23.478428",
+    "updated_at": "2025-06-20T16:56:49.455554"
+  },
+  "94": {
+    "address_id": "94",
+    "house_number": "10657",
+    "building_name": "Sunset Tower",
+    "street": "Micheal Lakes",
+    "city_name": "New Johnton",
+    "state": "Missouri",
+    "created_at": "2025-05-22T00:16:04.411955",
+    "updated_at": "2025-07-22T14:08:26.923535"
+  },
+  "95": {
+    "address_id": "95",
+    "house_number": "452",
+    "building_name": "Amber Terrace",
+    "street": "Matthew Crossing",
+    "city_name": "Kyleshire",
+    "state": "Hawaii",
+    "created_at": "2025-06-09T01:53:41.671297",
+    "updated_at": "2025-06-25T14:47:47.025977"
+  },
+  "96": {
+    "address_id": "96",
+    "house_number": "256",
+    "building_name": "Ocean Arcade",
+    "street": "Greer Highway",
+    "city_name": "North Angelamouth",
+    "state": "Montana",
+    "created_at": "2024-12-05T05:16:15.206967",
+    "updated_at": "2025-04-27T21:05:53.075437"
+  },
+  "97": {
+    "address_id": "97",
+    "house_number": "905",
+    "building_name": "Silver Terrace",
+    "street": "Ryan Rapids",
+    "city_name": "North Heatherview",
+    "state": "Texas",
+    "created_at": "2025-05-29T18:41:10.647248",
+    "updated_at": "2025-07-07T22:34:13.882023"
+  },
+  "98": {
+    "address_id": "98",
+    "house_number": "924",
+    "building_name": "Crystal Gardens",
+    "street": "Myers Estates",
+    "city_name": "Port Norman",
+    "state": "Delaware",
+    "created_at": "2025-04-07T16:35:35.636728",
+    "updated_at": "2025-06-16T01:43:40.132964"
+  },
+  "99": {
+    "address_id": "99",
+    "house_number": "902",
+    "building_name": "Pine Heights",
+    "street": "Jenkins Mission",
+    "city_name": "New Amandaport",
+    "state": "Vermont",
+    "created_at": "2024-10-31T01:42:39.699759",
+    "updated_at": "2025-04-01T15:01:21.272459"
+  },
+  "100": {
+    "address_id": "100",
+    "house_number": "753",
+    "building_name": "River Court",
+    "street": "Stephens Village",
+    "city_name": "Moodychester",
+    "state": "Iowa",
+    "created_at": "2025-01-05T12:46:41.496643",
+    "updated_at": "2025-06-09T17:08:28.363539"
+  },
+  "101": {
+    "address_id": "101",
+    "house_number": "2889",
+    "building_name": "Amber Heights",
+    "street": "Charles Rapids",
+    "city_name": "Greenbury",
+    "state": "Vermont",
+    "created_at": "2024-08-28T21:27:17.771340",
+    "updated_at": "2024-11-05T22:03:20.140312"
+  },
+  "102": {
+    "address_id": "102",
+    "house_number": "43915",
+    "building_name": "Green Palace",
+    "street": "Kirsten Plain",
+    "city_name": "Carterborough",
+    "state": "Missouri",
+    "created_at": "2024-10-24T04:25:15.615887",
+    "updated_at": "2025-01-26T05:41:20.047590"
+  },
+  "103": {
+    "address_id": "103",
+    "house_number": "64815",
+    "building_name": "Sky Gardens",
+    "street": "White Avenue",
+    "city_name": "Brooksfurt",
+    "state": "Vermont",
+    "created_at": "2025-04-10T01:59:38.533616",
+    "updated_at": "2025-05-02T23:23:24.591370"
+  },
+  "104": {
+    "address_id": "104",
+    "house_number": "461",
+    "building_name": "Lake Crossing",
+    "street": "Smith Islands",
+    "city_name": "New Mary",
+    "state": "Nevada",
+    "created_at": "2024-09-06T15:52:11.759090",
+    "updated_at": "2024-12-08T04:05:24.718416"
+  },
+  "105": {
+    "address_id": "105",
+    "house_number": "8911",
+    "building_name": "Green Tower",
+    "street": "Eric Forks",
+    "city_name": "Jamesmouth",
+    "state": "Rhode Island",
+    "created_at": "2025-06-13T08:51:39.506850",
+    "updated_at": "2025-07-23T18:10:42.898156"
+  },
+  "106": {
+    "address_id": "106",
+    "house_number": "98945",
+    "building_name": "Lake Heights",
+    "street": "Adkins Spring",
+    "city_name": "Mirandaside",
+    "state": "Vermont",
+    "created_at": "2024-08-30T18:28:51.968787",
+    "updated_at": "2025-01-17T01:05:23.552105"
+  },
+  "107": {
+    "address_id": "107",
+    "house_number": "7400",
+    "building_name": "Green Terrace",
+    "street": "Taylor Center",
+    "city_name": "Adamtown",
+    "state": "Wyoming",
+    "created_at": "2025-06-16T04:52:38.404813",
+    "updated_at": "2025-07-06T02:00:27.764602"
+  },
+  "108": {
+    "address_id": "108",
+    "house_number": "10061",
+    "building_name": "Sunset Vista",
+    "street": "Thomas Lake",
+    "city_name": "Jenniferton",
+    "state": "New Jersey",
+    "created_at": "2025-01-03T13:25:31.669165",
+    "updated_at": "2025-07-29T00:20:07.518413"
+  },
+  "109": {
+    "address_id": "109",
+    "house_number": "4519",
+    "building_name": "Willow Gardens",
+    "street": "Webb View",
+    "city_name": "South Dustinburgh",
+    "state": "Massachusetts",
+    "created_at": "2025-05-16T23:48:51.129329",
+    "updated_at": "2025-07-03T14:41:00.218584"
+  },
+  "110": {
+    "address_id": "110",
+    "house_number": "75075",
+    "building_name": "Pine Lodge",
+    "street": "Flores Crossing",
+    "city_name": "New Brianfort",
+    "state": "Oklahoma",
+    "created_at": "2024-11-08T19:56:16.997366",
+    "updated_at": "2025-07-01T17:34:42.475720"
+  },
+  "111": {
+    "address_id": "111",
+    "house_number": "9815",
+    "building_name": "Amber Plaza",
+    "street": "Austin Lodge",
+    "city_name": "South Donna",
+    "state": "Iowa",
+    "created_at": "2024-11-23T11:46:50.252605",
+    "updated_at": "2025-04-04T16:07:52.436058"
+  },
+  "112": {
+    "address_id": "112",
+    "house_number": "234",
+    "building_name": "Sunset Lodge",
+    "street": "Moreno Streets",
+    "city_name": "Perezville",
+    "state": "Vermont",
+    "created_at": "2025-03-03T02:40:53.780762",
+    "updated_at": "2025-06-14T10:30:54.561713"
+  },
+  "113": {
+    "address_id": "113",
+    "house_number": "265",
+    "building_name": "Spring Enclave",
+    "street": "Gregory Lodge",
+    "city_name": "Waltonberg",
+    "state": "Rhode Island",
+    "created_at": "2025-06-19T06:27:27.126297",
+    "updated_at": "2025-06-25T09:54:10.710707"
+  },
+  "114": {
+    "address_id": "114",
+    "house_number": "71890",
+    "building_name": "Green Tower",
+    "street": "James Road",
+    "city_name": "East Amandahaven",
+    "state": "Washington",
+    "created_at": "2025-03-07T02:03:44.234527",
+    "updated_at": "2025-05-23T22:35:38.117960"
+  },
+  "115": {
+    "address_id": "115",
+    "house_number": "96176",
+    "building_name": "Lake Crossing",
+    "street": "Rivera Square",
+    "city_name": "East Arielmouth",
+    "state": "Arkansas",
+    "created_at": "2025-02-26T06:46:48.986296",
+    "updated_at": "2025-06-14T00:01:02.749609"
+  },
+  "116": {
+    "address_id": "116",
+    "house_number": "30074",
+    "building_name": "Ocean Court",
+    "street": "Michael Cove",
+    "city_name": "West Corychester",
+    "state": "Kansas",
+    "created_at": "2024-11-05T02:39:39.275965",
+    "updated_at": "2025-06-25T07:26:42.262466"
+  },
+  "117": {
+    "address_id": "117",
+    "house_number": "18332",
+    "building_name": "River Place",
+    "street": "John Ridge",
+    "city_name": "Barnettchester",
+    "state": "Utah",
+    "created_at": "2025-03-25T14:52:02.891655",
+    "updated_at": "2025-05-05T20:51:38.918631"
+  },
+  "118": {
+    "address_id": "118",
+    "house_number": "749",
+    "building_name": "Maple Heights",
+    "street": "Cox Port",
+    "city_name": "Karenville",
+    "state": "Vermont",
+    "created_at": "2024-11-13T16:04:46.805259",
+    "updated_at": "2025-03-31T12:08:26.245578"
+  },
+  "119": {
+    "address_id": "119",
+    "house_number": "62836",
+    "building_name": "Sunset Plaza",
+    "street": "Lauren Underpass",
+    "city_name": "Vanessashire",
+    "state": "Arkansas",
+    "created_at": "2024-08-03T13:56:36.306551",
+    "updated_at": "2024-12-28T02:24:48.188356"
+  },
+  "120": {
+    "address_id": "120",
+    "house_number": "76810",
+    "building_name": "Royal Manor",
+    "street": "Justin Islands",
+    "city_name": "East Rickey",
+    "state": "Alaska",
+    "created_at": "2025-04-16T03:10:55.818773",
+    "updated_at": "2025-07-08T06:45:55.912746"
+  },
+  "121": {
+    "address_id": "121",
+    "house_number": "263",
+    "building_name": "Majestic Tower",
+    "street": "Moore Locks",
+    "city_name": "Petersonmouth",
+    "state": "Colorado",
+    "created_at": "2024-08-25T23:51:57.250545",
+    "updated_at": "2025-05-08T18:51:15.371496"
+  },
+  "122": {
+    "address_id": "122",
+    "house_number": "25567",
+    "building_name": "Majestic Lodge",
+    "street": "Robert Springs",
+    "city_name": "Joeview",
+    "state": "Maine",
+    "created_at": "2025-06-01T16:03:07.290443",
+    "updated_at": "2025-07-01T02:06:27.047896"
+  },
+  "123": {
+    "address_id": "123",
+    "house_number": "8531",
+    "building_name": "Sky Arcade",
+    "street": "Cole Pine",
+    "city_name": "Rebeccaton",
+    "state": "Pennsylvania",
+    "created_at": "2025-03-31T05:56:21.381594",
+    "updated_at": "2025-04-05T17:08:53.402533"
+  },
+  "124": {
+    "address_id": "124",
+    "house_number": "87706",
+    "building_name": "Crystal Residency",
+    "street": "Bates Garden",
+    "city_name": "Port Brandi",
+    "state": "Massachusetts",
+    "created_at": "2025-05-08T11:51:55.310174",
+    "updated_at": "2025-05-15T20:51:33.353124"
+  },
+  "125": {
+    "address_id": "125",
+    "house_number": "1554",
+    "building_name": "Grand Terrace",
+    "street": "Anthony Road",
+    "city_name": "Lake Theresa",
+    "state": "Utah",
+    "created_at": "2024-08-01T23:22:46.100422",
+    "updated_at": "2025-02-03T15:09:47.684277"
+  },
+  "126": {
+    "address_id": "126",
+    "house_number": "594",
+    "building_name": "Spring Hall",
+    "street": "Kathleen Station",
+    "city_name": "Kennedyburgh",
+    "state": "Iowa",
+    "created_at": "2024-10-12T03:06:02.615811",
+    "updated_at": "2025-06-29T13:04:31.134469"
+  },
+  "127": {
+    "address_id": "127",
+    "house_number": "1171",
+    "building_name": "Heritage Suites",
+    "street": "Megan Stream",
+    "city_name": "Johnsonport",
+    "state": "Alaska",
+    "created_at": "2024-08-27T00:12:35.735702",
+    "updated_at": "2025-01-30T00:17:35.711586"
+  },
+  "128": {
+    "address_id": "128",
+    "house_number": "58222",
+    "building_name": "Majestic Arcade",
+    "street": "Byrd Mill",
+    "city_name": "Gregoryview",
+    "state": "New York",
+    "created_at": "2025-02-15T23:15:55.413030",
+    "updated_at": "2025-04-25T12:41:39.613722"
+  },
+  "129": {
+    "address_id": "129",
+    "house_number": "71976",
+    "building_name": "Pine Place",
+    "street": "Gomez Spurs",
+    "city_name": "East Elizabeth",
+    "state": "Massachusetts",
+    "created_at": "2025-02-14T06:16:12.393305",
+    "updated_at": "2025-06-25T11:39:51.735756"
+  },
+  "130": {
+    "address_id": "130",
+    "house_number": "95460",
+    "building_name": "Sky Suites",
+    "street": "Hailey Dale",
+    "city_name": "Port Anthonyshire",
+    "state": "Colorado",
+    "created_at": "2025-04-10T11:48:17.698369",
+    "updated_at": "2025-04-25T15:17:42.947033"
+  },
+  "131": {
+    "address_id": "131",
+    "house_number": "59790",
+    "building_name": "Royal Retreat",
+    "street": "Thomas Shoal",
+    "city_name": "New Heathertown",
+    "state": "Florida",
+    "created_at": "2025-05-20T03:53:17.051308",
+    "updated_at": "2025-07-28T22:55:32.937518"
+  },
+  "132": {
+    "address_id": "132",
+    "house_number": "10287",
+    "building_name": "Silver Enclave",
+    "street": "Johnson Ridges",
+    "city_name": "Huynhland",
+    "state": "West Virginia",
+    "created_at": "2025-05-02T15:40:11.800254",
+    "updated_at": "2025-07-04T02:06:29.395639"
+  },
+  "133": {
+    "address_id": "133",
+    "house_number": "4434",
+    "building_name": "Crystal Residency",
+    "street": "Laura Ports",
+    "city_name": "Patriciaview",
+    "state": "Wyoming",
+    "created_at": "2024-08-18T22:29:05.815476",
+    "updated_at": "2025-02-28T23:51:33.839866"
+  },
+  "134": {
+    "address_id": "134",
+    "house_number": "744",
+    "building_name": "Grand Place",
+    "street": "Ryan River",
+    "city_name": "Livingstonfurt",
+    "state": "West Virginia",
+    "created_at": "2024-08-22T05:15:11.317356",
+    "updated_at": "2024-12-16T06:07:15.072462"
+  },
+  "135": {
+    "address_id": "135",
+    "house_number": "895",
+    "building_name": "Lake Suites",
+    "street": "Miller Inlet",
+    "city_name": "Moorefort",
+    "state": "Tennessee",
+    "created_at": "2024-09-03T01:32:52.388691",
+    "updated_at": "2025-01-12T11:51:15.629009"
+  },
+  "136": {
+    "address_id": "136",
+    "house_number": "3522",
+    "building_name": "Sky Hall",
+    "street": "Perez Island",
+    "city_name": "North Craigmouth",
+    "state": "Louisiana",
+    "created_at": "2024-12-24T10:29:43.283862",
+    "updated_at": "2025-01-22T18:54:47.909585"
+  },
+  "137": {
+    "address_id": "137",
+    "house_number": "6912",
+    "building_name": "Grand Hall",
+    "street": "Amanda Courts",
+    "city_name": "South Jeffrey",
+    "state": "New Jersey",
+    "created_at": "2025-06-13T07:00:02.531426",
+    "updated_at": "2025-07-29T04:11:46.610083"
+  },
+  "138": {
+    "address_id": "138",
+    "house_number": "68254",
+    "building_name": "Majestic Enclave",
+    "street": "Lucas Ford",
+    "city_name": "New Leahville",
+    "state": "Florida",
+    "created_at": "2024-10-17T20:23:14.991560",
+    "updated_at": "2025-05-13T23:12:11.775136"
+  },
+  "139": {
+    "address_id": "139",
+    "house_number": "12818",
+    "building_name": "Pine Retreat",
+    "street": "Nathaniel Glens",
+    "city_name": "Wileyshire",
+    "state": "New Hampshire",
+    "created_at": "2024-11-24T16:03:58.464648",
+    "updated_at": "2024-12-05T23:42:13.849737"
+  },
+  "140": {
+    "address_id": "140",
+    "house_number": "8368",
+    "building_name": "Crystal Terrace",
+    "street": "Moses Groves",
+    "city_name": "Andersonhaven",
+    "state": "Hawaii",
+    "created_at": "2025-01-11T10:15:01.953625",
+    "updated_at": "2025-05-14T13:40:04.287943"
+  },
+  "141": {
+    "address_id": "141",
+    "house_number": "89534",
+    "building_name": "Sunrise Terrace",
+    "street": "Sanford Pine",
+    "city_name": "Williamsbury",
+    "state": "South Carolina",
+    "created_at": "2025-02-05T01:23:55.422568",
+    "updated_at": "2025-06-06T04:03:47.939851"
+  },
+  "142": {
+    "address_id": "142",
+    "house_number": "259",
+    "building_name": "Golden Lodge",
+    "street": "Garcia Crest",
+    "city_name": "New Shawn",
+    "state": "Michigan",
+    "created_at": "2025-02-04T18:04:12.109428",
+    "updated_at": "2025-06-01T00:35:58.369183"
+  },
+  "143": {
+    "address_id": "143",
+    "house_number": "6321",
+    "building_name": "Crystal Gardens",
+    "street": "Gregory Glen",
+    "city_name": "Smithshire",
+    "state": "Oklahoma",
+    "created_at": "2025-03-04T09:15:25.005240",
+    "updated_at": "2025-04-21T01:36:13.540583"
+  },
+  "144": {
+    "address_id": "144",
+    "house_number": "559",
+    "building_name": "Cedar Court",
+    "street": "Romero Pines",
+    "city_name": "South Susan",
+    "state": "Pennsylvania",
+    "created_at": "2024-09-14T13:16:55.700649",
+    "updated_at": "2024-10-19T16:15:20.803722"
+  },
+  "145": {
+    "address_id": "145",
+    "house_number": "612",
+    "building_name": "Hill Enclave",
+    "street": "George Ridge",
+    "city_name": "North Richardland",
+    "state": "Texas",
+    "created_at": "2025-03-27T12:42:03.817905",
+    "updated_at": "2025-05-16T04:03:20.507064"
+  },
+  "146": {
+    "address_id": "146",
+    "house_number": "846",
+    "building_name": "Heritage Retreat",
+    "street": "Mahoney Mews",
+    "city_name": "East Wendy",
+    "state": "Virginia",
+    "created_at": "2024-11-05T12:07:10.253560",
+    "updated_at": "2025-02-03T16:31:17.791162"
+  },
+  "147": {
+    "address_id": "147",
+    "house_number": "63",
+    "building_name": "Sunrise Gardens",
+    "street": "Scott Island",
+    "city_name": "Ramirezhaven",
+    "state": "Idaho",
+    "created_at": "2024-12-30T05:29:16.927405",
+    "updated_at": "2025-02-08T11:37:09.401618"
+  },
+  "148": {
+    "address_id": "148",
+    "house_number": "22703",
+    "building_name": "Sky Retreat",
+    "street": "Fitzpatrick Causeway",
+    "city_name": "Port Danieltown",
+    "state": "California",
+    "created_at": "2024-12-28T14:26:12.854734",
+    "updated_at": "2025-03-28T23:22:32.261084"
+  },
+  "149": {
+    "address_id": "149",
+    "house_number": "83",
+    "building_name": "Spring Manor",
+    "street": "Murphy Streets",
+    "city_name": "East Laurenburgh",
+    "state": "California",
+    "created_at": "2024-08-24T11:57:41.492523",
+    "updated_at": "2025-04-19T02:09:32.135951"
+  },
+  "150": {
+    "address_id": "150",
+    "house_number": "20757",
+    "building_name": "Hill Suites",
+    "street": "Horton Drive",
+    "city_name": "North Tim",
+    "state": "New Mexico",
+    "created_at": "2024-12-09T17:20:50.066924",
+    "updated_at": "2025-01-13T22:00:13.797115"
+  },
+  "151": {
+    "address_id": "151",
+    "house_number": "382",
+    "building_name": "Lake Place",
+    "street": "Sherri Skyway",
+    "city_name": "West Stephaniemouth",
+    "state": "Pennsylvania",
+    "created_at": "2024-11-29T17:27:39.011278",
+    "updated_at": "2025-02-02T06:17:14.379870"
+  },
+  "152": {
+    "address_id": "152",
+    "house_number": "9984",
+    "building_name": "Heritage Court",
+    "street": "Kevin Ridges",
+    "city_name": "Port Geoffreyton",
+    "state": "Colorado",
+    "created_at": "2025-02-02T03:05:24.310961",
+    "updated_at": "2025-03-07T04:31:25.250050"
+  },
+  "153": {
+    "address_id": "153",
+    "house_number": "836",
+    "building_name": "Willow Plaza",
+    "street": "Carey Rest",
+    "city_name": "Teresafurt",
+    "state": "Wyoming",
+    "created_at": "2025-04-29T23:58:39.059476",
+    "updated_at": "2025-05-10T07:22:56.716486"
+  }
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "table": "addresses",
+    "rows": 153
+  },
+  {
+    "table": "users",
+    "rows": 509
+  },
+  {
+    "table": "homes",
+    "rows": 153
+  },
+  {
+    "table": "rooms",
+    "rows": 797
+  },
+  {
+    "table": "devices",
+    "rows": 3133
+  },
+  {
+    "table": "security_cameras",
+    "rows": 158
+  },
+  {
+    "table": "smart_bulbs",
+    "rows": 1179
+  },
+  {
+    "table": "smart_thermostats",
+    "rows": 283
+  },
+  {
+    "table": "historical_energy_consumption",
+    "rows": 5606
+  },
+  {
+    "table": "automated_routines",
+    "rows": 252
+  },
+  {
+    "table": "device_commands",
+    "rows": 610
+  },
+  {
+    "table": "bulb_commands",
+    "rows": 236
+  },
+  {
+    "table": "thermostat_commands",
+    "rows": 47
+  },
+  {
+    "table": "user_feedbacks",
+    "rows": 1007
+  },
+  {
+    "table": "emergency_alerts",
+    "rows": 783
+  },
+  {
+    "table": "energy_tariffs",
+    "rows": 302
+  }
+]
