@@ -13,6 +13,41 @@ Rules:
 9. No orphan foreign keys allowed.
 10. Ensure that `created_at` and `updated_at` timestamps are generated correctly, with `created_at` being earlier than `updated_at`.
 11. Do not add null values in the entries of the database that can be filled with fake data except for the fields that are explicitly mentioned to be left empty or special cases.
+12. If there are emails, then script should generate realistic emails. For example, a list of domains can be defined and the script can randomly choose domain and first name and last name can be concatenated alone with random numbers to generate fake but realistic data.
+13. If there are phone numbers, then the script should generate them in a consistent and realistic format by combining valid area codes (if applicable) with randomly generated digits, ensuring all numbers follow a standardized structure.
+14. The key of each entry in the JSON object should represent the primary ID of the record, and it must match the corresponding ID field inside the entry. For example, in the example below, the key '1' maps to a user object where 'user_id' is also '1'
+
+Here is an example:
+{
+  "1": {
+    "user_id": "1",
+    "first_name": "Zachary",
+    "last_name": "Potts",
+    "phone_number": "+14053755545",
+    "role": "Owner",
+    "parent_id": null,
+    "email": "zachary.potts@outlook.com",
+    "primary_address_id": "48",
+    "date_of_birth": "1979-09-09",
+    "status": "active",
+    "created_at": "2024-03-09T09:43:15.451684",
+    "updated_at": "2024-06-23T12:26:24.690474"
+  },
+  "2": {
+    "user_id": "2",
+    "first_name": "Angela",
+    "last_name": "Potts",
+    "phone_number": "+12079628353",
+    "role": "Partner",
+    "parent_id": null,
+    "email": "potts941@gmail.com",
+    "primary_address_id": "48",
+    "date_of_birth": "1971-12-06",
+    "status": "active",
+    "created_at": "2025-05-06T08:03:16.066091",
+    "updated_at": "2025-06-10T07:26:47.293308"
+  }
+}
 
 Database Schema:
 CREATE TABLE `companies` (

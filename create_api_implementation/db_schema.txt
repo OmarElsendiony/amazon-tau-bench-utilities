@@ -1,230 +1,235 @@
+CREATE TABLE `homes` (
+  `home_id` integer PRIMARY KEY,
+  `owner_id` integer,
+  `address_id` integer,
+  `home_type` enum(Home,Apartment),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
 CREATE TABLE `users` (
-  `user_id` int PRIMARY KEY,
-  `first_name` varchar(100) NOT NULL,
-  `last_name` varchar(100) NOT NULL,
-  `email` varchar(320) UNIQUE NOT NULL,
-  `role` enum(admin,employee) NOT NULL,
-  `timezone` varchar(50) NOT NULL,
-  `status` enum(active,inactive,suspended) NOT NULL DEFAULT 'active',
-  `created_at` timestamp NOT NULL DEFAULT (NOW()),
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+  `user_id` integer PRIMARY KEY,
+  `first_name` varchar(255),
+  `last_name` varchar(255),
+  `phone_number` varchar(255),
+  `role` enum(Owner,Partner,Child,Guest,Servant),
+  `parent_id` integer,
+  `email` varchar(255),
+  `primary_address_id` integer,
+  `date_of_birth` date,
+  `status` enum(active,inactive),
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `funds` (
-  `fund_id` int PRIMARY KEY,
-  `name` varchar(255) NOT NULL,
-  `fund_type` enum(equity,fixed_income,multi_asset,hedge) NOT NULL,
-  `base_currency` enum(USD,EUR,GBP,NGN) NOT NULL,
-  `manager_id` int NOT NULL,
-  `size` decimal(18,2),
-  `status` enum(open,closed) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW()),
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `rooms` (
+  `room_id` integer PRIMARY KEY,
+  `home_id` integer,
+  `room_type` enum(Bedroom,kitchen,lounge,store,diningroom),
+  `room_owner_id` integer,
+  `status` enum(vacant,occupied),
+  `width_ft` float,
+  `length_ft` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `investors` (
-  `investor_id` int PRIMARY KEY,
-  `employee_id` int NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `investor_type` enum(organization,retail,high_net_worth) NOT NULL,
-  `contact_email` varchar(320) NOT NULL,
-  `accreditation_status` enum(accredited,non_accredited) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `devices` (
+  `device_id` integer PRIMARY KEY,
+  `device_type` enum(camera,bulb,thermostat,speaker,tv,refrigerator,oven),
+  `room_id` integer,
+  `installed_on` date,
+  `insurance_expiry_date` date,
+  `home_id` integer,
+  `status` enum(on,off),
+  `width_ft` float,
+  `length_ft` float,
+  `price` float,
+  `scheduled_maintainance_date` date,
+  `last_maintainance_date` date,
+  `daily_rated_power_consumption_kWh` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `subscriptions` (
-  `subscription_id` int PRIMARY KEY,
-  `fund_id` int NOT NULL,
-  `investor_id` int NOT NULL,
-  `amount` decimal(18,2) NOT NULL,
-  `currency` enum(USD,EUR,GBP,NGN) NOT NULL,
-  `status` enum(pending,approved,cancelled) NOT NULL,
-  `request_assigned_to` int NOT NULL,
-  `request_date` date NOT NULL,
-  `approval_date` date,
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `historical_energy_consumption` (
+  `consumption_id` integer PRIMARY KEY,
+  `device_id` integer,
+  `home_id` integer,
+  `room_id` integer,
+  `date` date,
+  `power_used_kWh` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `commitments` (
-  `commitment_id` int PRIMARY KEY,
-  `fund_id` int NOT NULL,
-  `investor_id` int NOT NULL,
-  `commitment_amount` decimal(18,2) NOT NULL,
-  `currency` enum(USD,EUR,GBP,NGN) NOT NULL,
-  `commitment_date` date NOT NULL,
-  `status` enum(pending,fulfilled) NOT NULL,
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `automated_routines` (
+  `routine_id` integer PRIMARY KEY,
+  `user_id` integer,
+  `home_id` integer,
+  `start_action_date` date,
+  `action_time` timestamp,
+  `action_interval` enum(daily,one_time,every_hour),
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `portfolios` (
-  `portfolio_id` int PRIMARY KEY,
-  `investor_id` int NOT NULL,
-  `base_currency` enum(USD,EUR,GBP,NGN) NOT NULL,
-  `status` enum(active,inactive,archived) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW()),
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `device_commands` (
+  `device_command_id` integer PRIMARY KEY,
+  `routine_id` integer,
+  `device_id` integer,
+  `status` enum(on,off),
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `portfolio_holdings` (
-  `holding_id` int PRIMARY KEY,
-  `portfolio_id` int NOT NULL,
-  `instrument_id` int NOT NULL,
-  `quantity` decimal(18,4) NOT NULL,
-  `cost_basis` decimal(18,4) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `bulb_commands` (
+  `bulb_command_id` integer PRIMARY KEY,
+  `routine_id` integer,
+  `device_id` integer,
+  `brightness_level` enum(dim,half,full),
+  `color` enum(red,white,yellow,blue),
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `instruments` (
-  `instrument_id` int PRIMARY KEY,
-  `ticker` varchar(20) UNIQUE NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `instrument_type` enum(stock,bond,derivative,cash,other) NOT NULL
+CREATE TABLE `thermostat_commands` (
+  `thermostat_command_id` integer PRIMARY KEY,
+  `routine_id` integer,
+  `device_id` integer,
+  `current_temperature` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `instrument_prices` (
-  `price_id` int PRIMARY KEY,
-  `instrument_id` int NOT NULL,
-  `price_date` date NOT NULL,
-  `open_price` decimal(18,4) NOT NULL,
-  `high_price` decimal(18,4) NOT NULL,
-  `low_price` decimal(18,4) NOT NULL,
-  `close_price` decimal(18,4) NOT NULL
+CREATE TABLE `security_cameras` (
+  `device_id` integer PRIMARY KEY,
+  `resolution` enum(720p,1080p,2k),
+  `last_activity_timestamp` timestamp,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `nav_records` (
-  `nav_id` int PRIMARY KEY,
-  `fund_id` int NOT NULL,
-  `nav_date` date NOT NULL,
-  `nav_value` decimal(18,4) NOT NULL,
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `smart_thermostats` (
+  `device_id` integer PRIMARY KEY,
+  `current_temperate` float,
+  `lowest_rated_temeprature` float,
+  `highest_rated_temeprature` float,
+  `last_adjustment_time` timestamp,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `trades` (
-  `trade_id` int PRIMARY KEY,
-  `fund_id` int NOT NULL,
-  `instrument_id` int NOT NULL,
-  `trade_date` timestamp NOT NULL,
-  `quantity` decimal(18,4) NOT NULL,
-  `price` decimal(18,4) NOT NULL,
-  `side` enum(buy,sell) NOT NULL,
-  `status` enum(executed,pending,failed) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `smart_bulbs` (
+  `device_id` integer PRIMARY KEY,
+  `brightness_level` enum(dim,half,full),
+  `color` enum(red,white,yellow,blue),
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `notifications` (
-  `notification_id` int PRIMARY KEY,
-  `email` varchar(320),
-  `type` enum(alert,report,reminder,subscription_update) NOT NULL,
-  `class` enum(funds,investors,portfolios,trades,invoices,reports,documents,subscriptions,commitments) NOT NULL,
-  `reference_id` int,
-  `status` enum(pending,sent,failed) NOT NULL,
-  `sent_at` timestamp,
-  `created_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `user_feedbacks` (
+  `user_feedback_id` inetger PRIMARY KEY,
+  `user_id` integer,
+  `device_id` integer,
+  `rating` integer,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `reports` (
-  `report_id` int PRIMARY KEY,
-  `fund_id` int NOT NULL,
-  `investor_id` int,
-  `report_date` date NOT NULL,
-  `report_type` enum(performance,holding,financial) NOT NULL DEFAULT 'performance',
-  `generated_by` int NOT NULL,
-  `status` enum(pending,completed,failed) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW()),
-  `export_period_end` date NOT NULL
+CREATE TABLE `addresses` (
+  `address_id` integer PRIMARY KEY,
+  `house_number` varchar(255),
+  `building_name` varchar(255),
+  `street` varchar(255),
+  `city_name` varchar(255),
+  `state` varchar(255),
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `documents` (
-  `document_id` int PRIMARY KEY,
-  `name` varchar(255) NOT NULL,
-  `type` enum(pdf,xlsx,docx,csv,other) NOT NULL,
-  `uploaded_by` int NOT NULL,
-  `upload_date` timestamp NOT NULL,
-  `report_id` int,
-  `size_bytes` bigint,
-  `status` enum(available,archived,deleted) NOT NULL
+CREATE TABLE `emergency_alerts` (
+  `alert_id` integer PRIMARY KEY,
+  `home_id` integer,
+  `device_id` integer,
+  `alert_type` enum(camera_motion_detected,camera_offline,bulb_malfunction,thermostat_temperature_alert,thermostat_offline,speaker_offline,tv_malfunction,refrigerator_temperature_alert,refrigerator_malfunction,oven_overheating,oven_malfunction),
+  `severity_level` enum(low,medium,high,critical),
+  `triggered_at` timestamp,
+  `acknowledged_at` timestamp,
+  `acknowledged_by_user` int,
+  `resolved_at` timestamp,
+  `resolved_by_user` int,
+  `created_at` timestamp
 );
 
-CREATE TABLE `invoices` (
-  `invoice_id` int PRIMARY KEY,
-  `fund_id` int NOT NULL,
-  `investor_id` int NOT NULL,
-  `commitment_id` int,
-  `invoice_date` date NOT NULL,
-  `due_date` date NOT NULL,
-  `amount` decimal(18,2) NOT NULL,
-  `payment_type` enum(auto-pay,manual) NOT NULL DEFAULT 'manual',
-  `currency` enum(USD,EUR,GBP,NGN) NOT NULL,
-  `status` enum(issued,paid) NOT NULL,
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
+CREATE TABLE `energy_tariffs` (
+  `tariff_id` integer PRIMARY KEY,
+  `home_id` integer,
+  `tariff_name` varchar(255),
+  `rate_per_kWh` float,
+  `peak_hours_start` time,
+  `peak_hours_end` time,
+  `peak_rate_multiplier` float,
+  `effective_from` date,
+  `effective_until` date,
+  `created_at` timestamp,
+  `updated_at` timestamp
 );
 
-CREATE TABLE `payments` (
-  `payment_id` int PRIMARY KEY,
-  `invoice_id` int NOT NULL,
-  `payment_date` timestamp NOT NULL,
-  `amount` decimal(18,2) NOT NULL,
-  `payment_method` enum(wire,cheque,credit_card,bank_transfer) NOT NULL,
-  `status` enum(draft,completed,failed) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT (NOW())
-);
+ALTER TABLE `homes` ADD FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`);
 
-CREATE TABLE `tickets` (
-  `ticket_id` int PRIMARY KEY,
-  `invoice_id` int,
-  `issue_date` timestamp NOT NULL,
-  `type` enum(missing_payment,overpayment,underpayment,mismatched_amount,invoice_duplicate,manual_follow_up),
-  `status` enum(open,in_review,resolved,closed) NOT NULL,
-  `assigned_to` int,
-  `resolution_date` timestamp,
-  `created_at` timestamp NOT NULL DEFAULT (NOW()),
-  `updated_at` timestamp NOT NULL DEFAULT (NOW())
-);
+ALTER TABLE `users` ADD FOREIGN KEY (`parent_id`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `funds` ADD FOREIGN KEY (`manager_id`) REFERENCES `users` (`user_id`);
+ALTER TABLE `users` ADD FOREIGN KEY (`primary_address_id`) REFERENCES `addresses` (`address_id`);
 
-ALTER TABLE `reports` ADD FOREIGN KEY (`generated_by`) REFERENCES `users` (`user_id`);
+ALTER TABLE `device_commands` ADD FOREIGN KEY (`routine_id`) REFERENCES `automated_routines` (`routine_id`);
 
-ALTER TABLE `documents` ADD FOREIGN KEY (`uploaded_by`) REFERENCES `users` (`user_id`);
+ALTER TABLE `device_commands` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
 
-ALTER TABLE `tickets` ADD FOREIGN KEY (`assigned_to`) REFERENCES `users` (`user_id`);
+ALTER TABLE `bulb_commands` ADD FOREIGN KEY (`routine_id`) REFERENCES `automated_routines` (`routine_id`);
 
-ALTER TABLE `subscriptions` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+ALTER TABLE `bulb_commands` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
 
-ALTER TABLE `commitments` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+ALTER TABLE `thermostat_commands` ADD FOREIGN KEY (`routine_id`) REFERENCES `automated_routines` (`routine_id`);
 
-ALTER TABLE `nav_records` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+ALTER TABLE `thermostat_commands` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
 
-ALTER TABLE `trades` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+ALTER TABLE `user_feedbacks` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `reports` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+ALTER TABLE `user_feedbacks` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
 
-ALTER TABLE `invoices` ADD FOREIGN KEY (`fund_id`) REFERENCES `funds` (`fund_id`);
+ALTER TABLE `historical_energy_consumption` ADD CONSTRAINT `room_device_historical` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`room_id`);
 
-ALTER TABLE `subscriptions` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
+ALTER TABLE `security_cameras` ADD CONSTRAINT `security_cameras_device` FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
 
-ALTER TABLE `commitments` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
+ALTER TABLE `devices` ADD CONSTRAINT `smart_bulb_device` FOREIGN KEY (`device_id`) REFERENCES `smart_bulbs` (`device_id`);
 
-ALTER TABLE `portfolios` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
+ALTER TABLE `devices` ADD CONSTRAINT `smart_thermostats_device` FOREIGN KEY (`device_id`) REFERENCES `smart_thermostats` (`device_id`);
 
-ALTER TABLE `invoices` ADD FOREIGN KEY (`investor_id`) REFERENCES `investors` (`investor_id`);
+ALTER TABLE `homes` ADD CONSTRAINT `home_users` FOREIGN KEY (`owner_id`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `portfolio_holdings` ADD FOREIGN KEY (`portfolio_id`) REFERENCES `portfolios` (`portfolio_id`);
+ALTER TABLE `homes` ADD CONSTRAINT `home_rooms` FOREIGN KEY (`home_id`) REFERENCES `rooms` (`home_id`);
 
-ALTER TABLE `portfolio_holdings` ADD FOREIGN KEY (`instrument_id`) REFERENCES `instruments` (`instrument_id`);
+ALTER TABLE `devices` ADD CONSTRAINT `device_rooms` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`room_id`);
 
-ALTER TABLE `instrument_prices` ADD FOREIGN KEY (`instrument_id`) REFERENCES `instruments` (`instrument_id`);
+ALTER TABLE `devices` ADD CONSTRAINT `device_homes` FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
 
-ALTER TABLE `trades` ADD FOREIGN KEY (`instrument_id`) REFERENCES `instruments` (`instrument_id`);
+ALTER TABLE `historical_energy_consumption` ADD CONSTRAINT `historical_consumption_devices` FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
 
-ALTER TABLE `payments` ADD FOREIGN KEY (`invoice_id`) REFERENCES `invoices` (`invoice_id`);
+ALTER TABLE `historical_energy_consumption` ADD CONSTRAINT `historical_consumption_homes` FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
 
-ALTER TABLE `tickets` ADD FOREIGN KEY (`invoice_id`) REFERENCES `invoices` (`invoice_id`);
+ALTER TABLE `automated_routines` ADD CONSTRAINT `routines_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `subscriptions` ADD FOREIGN KEY (`request_assigned_to`) REFERENCES `users` (`user_id`);
+ALTER TABLE `automated_routines` ADD CONSTRAINT `routines_home_id` FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
 
-ALTER TABLE `invoices` ADD FOREIGN KEY (`commitment_id`) REFERENCES `commitments` (`commitment_id`);
+ALTER TABLE `rooms` ADD CONSTRAINT `room_owner_id_user` FOREIGN KEY (`room_owner_id`) REFERENCES `users` (`user_id`);
 
-ALTER TABLE `investors` ADD FOREIGN KEY (`employee_id`) REFERENCES `users` (`user_id`);
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
 
-ALTER TABLE `documents` ADD FOREIGN KEY (`report_id`) REFERENCES `reports` (`report_id`);
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`acknowledged_by_user`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`resolved_by_user`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `energy_tariffs` ADD FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);

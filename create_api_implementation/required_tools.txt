@@ -1,81 +1,119 @@
-📘 Read APIs (10)
-FetchUserByMail
-Arguments: email
-Returns: User
+Interface 1
 
-RetrieveFundsWithFilter
-Arguments: name, manager_id, size, fund_type=None, base_currency=None, status=None
-Returns: List[Fund]
 
-FetchInvestorsWithPortfolioHoldings
-Arguments: filters
-Returns: List[InvestorWithHoldings]
+API Name
+Signature
+Returns
+Description
 
-FetchInstrumentsWithItsPrice
-Arguments: ticker, name, instrument_type, date, price_id, open_price, close_price, high_price, low_price
-Returns: List[InstrumentPrice]
+acknowledge_or_resolve_alert
+acknowledge_or_resolve_alert(alert_id: str, optional: acknowledged_at: str, optional: acknowledged_by_user: str, optional: resolved_at: str, optional: resolved_by_user: str)
+{"alert_id": str, "home_id": str, ...} (updated alert record as JSON)
+Acknowledges or resolves an emergency alert by updating its timestamps and users
 
-GetFundTradeDetails
-Arguments: fund_id, start_date=None, instrument_id, quantity, price, side, end_date=None
-Returns: List[Trade]
+add_command
+add_command(device_type: str, routine_id: str, device_id: str, device_status: str, optional: bulb_brightness_level: str, optional: bulb_color: str)
+{"success": True}
+Adds a command to a device; if it's a bulb, adds brightness and color commands too
 
-GetNAVRecords
-Arguments: filters
-Returns: List[NAVRecord]
+add_feedback
+add_feedback(user_id: str, device_id: str, rating: int)
+{"user_feedback_id": str, "success": True}
+Adds user feedback (rating) for a device
 
-GetDailyProfitLossByFund
-Arguments: fund_id, date
-Returns: {"pnl": decimal}
+create_address
+create_address(house_number: str, building_name: str, street: str, city_name: str, state: str)
+{"address_id": str, "success": True}
+Creates a new address entry in the system
 
-GetFundValuation
-Arguments: fund_id, date
-Returns: {"valuation": decimal, fund_id, nav_details}
+create_emergency_alert
+create_emergency_alert(home_id: str, device_id: str, alert_type: str, severity_level: str, triggered_at: str)
+{"alert_id": str, "success": True}
+Creates a new emergency alert for a device in a home
 
-RetrieveSubscriptions
-Arguments: investor_id, fund_id
-Returns: List[Subscriptions]
+get_address
+get_address(optional: address_id: str, optional: house_number: str, optional: building_name: str, optional: street: str, optional: city_name: str, optional: state: str)
+[{"address_id": str, "house_number": str, "building_name": str, ...}]
+Retrieves address records matching the provided fields
 
-FindReports
-Arguments: filters
-Returns: List[Reports]
+get_commands
+get_commands(optional: routine_id: str, optional: device_id: str)
+[{"command_type": str, "command_id": str, "routine_id": str, ...}]
+Retrieves commands from various tables based on routine/device filters
 
-✏️ Write APIs (10)
-AddNewUser
-Arguments: first_name, last_name, email, role, timezone, status
-Returns: User
+create_routine
+create_routine(user_id: int, home_id: int, action_time: str, start_action_date: str, action_interval: str)
+{"routine_id": str, "success": True}
+Creates a new automated routine for a user at a specific home
 
-CreateNewFund
-Arguments: name, fund_type, base_currency, manager_id, size, status
-Returns: Fund
+get_emergency_alerts
+get_emergency_alerts(optional: home_id: str, optional: device_id: str, optional: alert_type: str, optional: severity_level: str, optional: resolved_by_user: str, optional: acknowledged_by_user: str)
+[{"home_id": str, "device_id": str, "alert_type": str, ...}]
+Returns alerts filtered by home, device, alert type, severity, or user IDs
 
-AddNewTradeForFund
-Arguments: fund_id, instrument_id, trade_date, quantity, price, side
-Returns: Trade
+get_historical_energy_consumption_by_device
+get_historical_energy_consumption_by_device(device_id: str, optional: date: str, optional: month: int)
+{"total_power_used_kWh": float}
+Returns device’s estimated energy usage using weighted dates or averages
 
-AssignUserToHandleInvestorOrFund
-Arguments: user_id, investor_id=None, fund_id=None
-Returns: Investor
+update_device_info
+update_device_info(device_id: str, optional: room_id: str, optional: installed_on: str, optional: insurance_expiry_date: str, optional: home_id: str, optional: status: str, optional: width_ft: float, optional: length_ft: float, optional: price: float, optional: scheduled_maintainance_date: str, optional: last_maintainance_date: str, optional: daily_rated_power_consumption_kWh: float, optional: brightness_level: str, optional: color: str)
+{"device_id": str, ..., "brightness_level": str, "color": str}
+Updates a device’s attributes; also updates smart bulb info if applicable
 
-CreateNAVRecord
-Arguments: fund_id, nav_date, nav_value, currency
-Returns: NAV
+update_room_info
+update_room_info(room_id: str, optional: room_owner_id: str, optional: status: str)
+{"room_id": str, "status": str, "room_owner_id": str}
+Updates room owner or status; assigning owner auto-occupies room
 
-UpdateNAVRecords
-Arguments: nav_id, nav_value, currency
-Returns: NAV
+update_user_info
+update_user_info(user_id: str, optional: first_name: str, optional: last_name: str, optional: phone_number: str, optional: role: str, optional: email: str, optional: primary_address_id: str)
+{"user_id": str, "first_name": str, ..., "updated_at": str}
+Updates user record fields by user_id if provided
 
-UpdateFundDetails
-Arguments: fund_id, name, fund_type, base_currency, size, status
-Returns: Fund
+add_device
+add_device(device_type: str, room_id: str, home_id: str, width_ft: float, length_ft: float, price: float, daily_rated_power_consumption_kWh: float, optional: brightness_level: str, optional: color: str, optional: insurance_expiry_date: str)
+{"device_id": str, "success": True}
+Adds a new device; if a bulb, also creates smart bulb entry
 
-UpdateInstrumentPrice
-Arguments: instrument_id, price_date, open_price, high_price, low_price, close_price
-Returns: InstrumentPrice
+get_devices_info
+get_devices_info(optional: device_id: str, optional: room_id: str, optional: device_type: str, optional: status: str)
+[{"device_id": str, "device_type": str, ..., "brightness_level": str, "color": str}]
+Retrieves device info based on filters; adds bulb info if applicable
 
-UpdateTradeForFund
-Arguments: trade_id, quantity, price, status
-Returns: Trade
+get_energy_tariffs_info
+get_energy_tariffs_info(home_id: str)
+[{"home_id": str, "tariff_name": str, "price_per_kWh": float, ...}]
+Fetches all energy tariff records for the given home ID
 
-NotifyUser
-Arguments: user_id, email, type, reference_id
-Returns: Notification
+get_home_info
+get_home_info(optional: home_id: str, optional: owner_id: str, optional: address_id: str)
+[{"home_id": str, "owner_id": str, "num_residents": int, "num_rooms_occupied": int, ...}]
+Retrieves home info, optionally filtered, with resident and room occupancy stats
+
+get_rooms_info
+get_rooms_info(optional: room_id: str, optional: home_id: str)
+[{"room_id": str, "home_id": str, "room_type": str, "room_owner_id": str, "status": str, ...}]
+Fetches room records filtered by room_id or home_id
+
+get_routines
+get_routines(optional: routine_id: str, optional: user_id: str, optional: home_id: str, optional: action_time: str, optional: action_interval: str, optional: start_action_date: str)
+[{"routine_id": str, "user_id": str, "home_id": str, "action_time": str, ...}]
+Retrieves automated routines based on various optional filters
+
+get_user_info
+get_user_info(optional: user_id: str, optional: phone_number: str, optional: email: str)
+[{"user_id": str, "first_name": str, "email": str, "role": str, ...}]
+Retrieves user records by user_id, phone, or email with case-insensitive/suffix matching
+
+update_home_info
+update_home_info(home_id: str, optional: owner_id: str, optional: address_id: str, optional: home_type: str)
+{"home_id": str, "owner_id": str, "address_id": str, "home_type": str, "updated_at": str}
+Updates a home’s owner, address, or type if provided
+
+list_children
+list_children(parent_id: str)
+[{"user_id": str, "parent_id": str, "first_name": str, ...}]
+Lists all users whose parent_id matches the given one
+
+
