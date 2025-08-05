@@ -27,7 +27,7 @@ Your task is to create for me the tools. Each tool is a class that comprises of 
 Please create the tools based on the examples and the database schema. 
 
 Notes: 
-- assign this timestamp to the created_at and updated_at fields: "2025-10-01T00:00:00ZZ".
+- assign this timestamp to the created_at and updated_at fields: "2025-10-01T00:00:00".
 - All IDs are strings, not integers.
 - Use the generate_id function to generate unique IDs for the records.
 - Each tool should have its own imports and utility functions without being shared across tools.
