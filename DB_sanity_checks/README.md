@@ -35,7 +35,7 @@ DB_sanity_checks
    * Serve the dashboard at **[http://localhost:8000/](http://localhost:8000/)**
    * Open your default browser to view the results
 
-Here is a video **[demo](http://)** on how to use this utility. 
+Here is a video **[demo](https://drive.google.com/file/d/19apuwtwPeDZ6_lm7f5tQXyaU-Nmio3In/view?usp=drive_link)** on how to use this utility. 
 
 ## 🧪 Checks Performed
 
