@@ -1,0 +1,1226 @@
+{
+  "1": {
+    "home_id": "1",
+    "owner_id": "1",
+    "address_id": "48",
+    "home_type": "Home",
+    "created_at": "2023-12-07T17:42:51.599848",
+    "updated_at": "2025-01-05T14:57:24.028735"
+  },
+  "2": {
+    "home_id": "2",
+    "owner_id": "3",
+    "address_id": "23",
+    "home_type": "Apartment",
+    "created_at": "2023-11-21T08:54:10.574643",
+    "updated_at": "2024-09-12T12:59:03.553809"
+  },
+  "3": {
+    "home_id": "3",
+    "owner_id": "3",
+    "address_id": "81",
+    "home_type": "Apartment",
+    "created_at": "2023-04-06T12:54:17.680208",
+    "updated_at": "2024-05-05T07:28:55.239413"
+  },
+  "4": {
+    "home_id": "4",
+    "owner_id": "5",
+    "address_id": "29",
+    "home_type": "Home",
+    "created_at": "2022-12-21T09:24:13.057477",
+    "updated_at": "2024-08-18T05:23:18.164277"
+  },
+  "5": {
+    "home_id": "5",
+    "owner_id": "5",
+    "address_id": "82",
+    "home_type": "Apartment",
+    "created_at": "2023-07-08T00:17:28.253046",
+    "updated_at": "2024-08-31T16:21:53.216224"
+  },
+  "6": {
+    "home_id": "6",
+    "owner_id": "7",
+    "address_id": "47",
+    "home_type": "Home",
+    "created_at": "2023-12-11T12:51:56.176998",
+    "updated_at": "2024-04-06T17:27:34.437827"
+  },
+  "7": {
+    "home_id": "7",
+    "owner_id": "7",
+    "address_id": "83",
+    "home_type": "Apartment",
+    "created_at": "2024-04-30T09:17:40.469598",
+    "updated_at": "2024-06-27T13:53:45.825720"
+  },
+  "8": {
+    "home_id": "8",
+    "owner_id": "9",
+    "address_id": "3",
+    "home_type": "Apartment",
+    "created_at": "2024-07-17T13:47:59.139283",
+    "updated_at": "2025-06-02T05:19:27.083423"
+  },
+  "9": {
+    "home_id": "9",
+    "owner_id": "11",
+    "address_id": "41",
+    "home_type": "Apartment",
+    "created_at": "2022-12-04T18:44:19.413568",
+    "updated_at": "2024-02-28T10:21:09.649702"
+  },
+  "10": {
+    "home_id": "10",
+    "owner_id": "13",
+    "address_id": "52",
+    "home_type": "Apartment",
+    "created_at": "2023-07-25T06:48:01.317345",
+    "updated_at": "2023-09-14T11:28:15.540763"
+  },
+  "11": {
+    "home_id": "11",
+    "owner_id": "15",
+    "address_id": "2",
+    "home_type": "Apartment",
+    "created_at": "2023-10-31T23:51:26.744517",
+    "updated_at": "2025-01-28T03:15:51.011133"
+  },
+  "12": {
+    "home_id": "12",
+    "owner_id": "15",
+    "address_id": "84",
+    "home_type": "Home",
+    "created_at": "2023-03-17T23:15:11.151089",
+    "updated_at": "2023-06-07T02:42:18.219288"
+  },
+  "13": {
+    "home_id": "13",
+    "owner_id": "17",
+    "address_id": "17",
+    "home_type": "Apartment",
+    "created_at": "2023-09-16T08:36:22.211790",
+    "updated_at": "2023-10-25T04:00:12.583895"
+  },
+  "14": {
+    "home_id": "14",
+    "owner_id": "17",
+    "address_id": "85",
+    "home_type": "Home",
+    "created_at": "2024-06-20T20:29:01.934548",
+    "updated_at": "2025-04-19T04:27:56.393169"
+  },
+  "15": {
+    "home_id": "15",
+    "owner_id": "19",
+    "address_id": "45",
+    "home_type": "Home",
+    "created_at": "2023-10-22T08:41:51.417751",
+    "updated_at": "2024-12-22T13:05:34.289034"
+  },
+  "16": {
+    "home_id": "16",
+    "owner_id": "21",
+    "address_id": "79",
+    "home_type": "Home",
+    "created_at": "2023-07-30T10:49:56.998696",
+    "updated_at": "2025-05-02T21:48:37.754454"
+  },
+  "17": {
+    "home_id": "17",
+    "owner_id": "21",
+    "address_id": "86",
+    "home_type": "Apartment",
+    "created_at": "2024-06-06T07:36:12.628681",
+    "updated_at": "2024-07-10T01:25:27.632132"
+  },
+  "18": {
+    "home_id": "18",
+    "owner_id": "21",
+    "address_id": "87",
+    "home_type": "Apartment",
+    "created_at": "2023-03-25T13:02:06.430248",
+    "updated_at": "2024-10-21T04:46:24.420773"
+  },
+  "19": {
+    "home_id": "19",
+    "owner_id": "23",
+    "address_id": "36",
+    "home_type": "Apartment",
+    "created_at": "2023-03-02T22:44:40.765208",
+    "updated_at": "2024-11-29T05:55:03.293597"
+  },
+  "20": {
+    "home_id": "20",
+    "owner_id": "23",
+    "address_id": "88",
+    "home_type": "Home",
+    "created_at": "2023-08-26T18:40:03.904150",
+    "updated_at": "2025-05-29T06:55:51.444184"
+  },
+  "21": {
+    "home_id": "21",
+    "owner_id": "23",
+    "address_id": "89",
+    "home_type": "Apartment",
+    "created_at": "2024-02-14T06:43:49.183009",
+    "updated_at": "2024-09-26T00:25:23.670216"
+  },
+  "22": {
+    "home_id": "22",
+    "owner_id": "25",
+    "address_id": "60",
+    "home_type": "Home",
+    "created_at": "2023-12-15T10:48:37.255563",
+    "updated_at": "2025-06-02T06:26:21.130012"
+  },
+  "23": {
+    "home_id": "23",
+    "owner_id": "25",
+    "address_id": "90",
+    "home_type": "Home",
+    "created_at": "2022-09-12T04:33:11.537186",
+    "updated_at": "2025-07-14T00:45:30.762056"
+  },
+  "24": {
+    "home_id": "24",
+    "owner_id": "25",
+    "address_id": "91",
+    "home_type": "Home",
+    "created_at": "2024-04-29T20:51:35.922684",
+    "updated_at": "2025-05-17T15:26:21.681394"
+  },
+  "25": {
+    "home_id": "25",
+    "owner_id": "27",
+    "address_id": "34",
+    "home_type": "Home",
+    "created_at": "2023-07-15T08:18:47.730383",
+    "updated_at": "2024-10-15T22:17:21.194707"
+  },
+  "26": {
+    "home_id": "26",
+    "owner_id": "27",
+    "address_id": "92",
+    "home_type": "Home",
+    "created_at": "2024-01-02T21:07:34.636579",
+    "updated_at": "2025-02-27T16:47:03.459868"
+  },
+  "27": {
+    "home_id": "27",
+    "owner_id": "27",
+    "address_id": "93",
+    "home_type": "Home",
+    "created_at": "2023-09-30T21:35:01.423645",
+    "updated_at": "2024-04-30T12:40:06.604735"
+  },
+  "28": {
+    "home_id": "28",
+    "owner_id": "29",
+    "address_id": "15",
+    "home_type": "Home",
+    "created_at": "2023-07-05T11:35:34.920027",
+    "updated_at": "2024-12-01T17:43:42.716902"
+  },
+  "29": {
+    "home_id": "29",
+    "owner_id": "29",
+    "address_id": "94",
+    "home_type": "Apartment",
+    "created_at": "2022-08-20T16:51:18.681316",
+    "updated_at": "2023-02-14T20:37:56.759585"
+  },
+  "30": {
+    "home_id": "30",
+    "owner_id": "29",
+    "address_id": "95",
+    "home_type": "Apartment",
+    "created_at": "2024-05-24T13:51:14.147301",
+    "updated_at": "2025-01-06T16:34:30.257516"
+  },
+  "31": {
+    "home_id": "31",
+    "owner_id": "31",
+    "address_id": "56",
+    "home_type": "Apartment",
+    "created_at": "2024-03-03T00:08:11.439736",
+    "updated_at": "2024-03-23T11:18:48.991365"
+  },
+  "32": {
+    "home_id": "32",
+    "owner_id": "33",
+    "address_id": "31",
+    "home_type": "Home",
+    "created_at": "2023-06-12T13:59:24.180268",
+    "updated_at": "2025-03-26T02:15:54.161646"
+  },
+  "33": {
+    "home_id": "33",
+    "owner_id": "33",
+    "address_id": "96",
+    "home_type": "Home",
+    "created_at": "2023-04-26T17:47:13.383830",
+    "updated_at": "2025-03-31T15:05:54.185280"
+  },
+  "34": {
+    "home_id": "34",
+    "owner_id": "35",
+    "address_id": "5",
+    "home_type": "Home",
+    "created_at": "2024-03-21T23:09:41.553678",
+    "updated_at": "2024-04-21T19:54:55.026232"
+  },
+  "35": {
+    "home_id": "35",
+    "owner_id": "35",
+    "address_id": "97",
+    "home_type": "Apartment",
+    "created_at": "2023-03-29T03:25:09.177371",
+    "updated_at": "2023-12-25T15:35:13.347314"
+  },
+  "36": {
+    "home_id": "36",
+    "owner_id": "37",
+    "address_id": "59",
+    "home_type": "Home",
+    "created_at": "2023-12-17T16:00:44.498720",
+    "updated_at": "2024-06-04T14:13:14.704321"
+  },
+  "37": {
+    "home_id": "37",
+    "owner_id": "39",
+    "address_id": "7",
+    "home_type": "Apartment",
+    "created_at": "2023-11-16T05:56:00.685610",
+    "updated_at": "2024-08-15T07:01:02.949949"
+  },
+  "38": {
+    "home_id": "38",
+    "owner_id": "41",
+    "address_id": "33",
+    "home_type": "Apartment",
+    "created_at": "2024-04-28T20:23:57.606740",
+    "updated_at": "2025-02-06T15:27:41.475527"
+  },
+  "39": {
+    "home_id": "39",
+    "owner_id": "43",
+    "address_id": "49",
+    "home_type": "Apartment",
+    "created_at": "2022-10-19T07:09:08.746547",
+    "updated_at": "2023-08-13T04:01:48.095026"
+  },
+  "40": {
+    "home_id": "40",
+    "owner_id": "43",
+    "address_id": "98",
+    "home_type": "Home",
+    "created_at": "2022-10-31T04:31:23.499130",
+    "updated_at": "2023-11-24T14:46:05.139202"
+  },
+  "41": {
+    "home_id": "41",
+    "owner_id": "45",
+    "address_id": "27",
+    "home_type": "Apartment",
+    "created_at": "2023-03-03T01:40:25.282212",
+    "updated_at": "2023-11-17T08:01:15.545590"
+  },
+  "42": {
+    "home_id": "42",
+    "owner_id": "45",
+    "address_id": "99",
+    "home_type": "Apartment",
+    "created_at": "2023-01-14T04:16:03.810950",
+    "updated_at": "2024-04-15T12:00:35.622281"
+  },
+  "43": {
+    "home_id": "43",
+    "owner_id": "45",
+    "address_id": "100",
+    "home_type": "Apartment",
+    "created_at": "2023-07-14T23:38:04.166952",
+    "updated_at": "2024-03-14T15:46:33.722674"
+  },
+  "44": {
+    "home_id": "44",
+    "owner_id": "47",
+    "address_id": "11",
+    "home_type": "Apartment",
+    "created_at": "2022-09-24T21:16:29.450344",
+    "updated_at": "2025-02-27T15:01:02.076107"
+  },
+  "45": {
+    "home_id": "45",
+    "owner_id": "47",
+    "address_id": "101",
+    "home_type": "Home",
+    "created_at": "2022-11-27T02:00:50.757230",
+    "updated_at": "2024-06-30T23:25:11.036922"
+  },
+  "46": {
+    "home_id": "46",
+    "owner_id": "47",
+    "address_id": "102",
+    "home_type": "Home",
+    "created_at": "2023-09-11T19:24:21.597003",
+    "updated_at": "2025-05-16T02:57:53.932036"
+  },
+  "47": {
+    "home_id": "47",
+    "owner_id": "49",
+    "address_id": "55",
+    "home_type": "Apartment",
+    "created_at": "2023-07-11T10:31:37.958518",
+    "updated_at": "2024-08-25T22:33:05.934359"
+  },
+  "48": {
+    "home_id": "48",
+    "owner_id": "51",
+    "address_id": "32",
+    "home_type": "Home",
+    "created_at": "2024-01-28T20:30:10.979534",
+    "updated_at": "2024-03-29T06:55:54.147461"
+  },
+  "49": {
+    "home_id": "49",
+    "owner_id": "51",
+    "address_id": "103",
+    "home_type": "Home",
+    "created_at": "2023-06-28T09:27:07.815047",
+    "updated_at": "2024-05-20T01:03:41.582594"
+  },
+  "50": {
+    "home_id": "50",
+    "owner_id": "51",
+    "address_id": "104",
+    "home_type": "Home",
+    "created_at": "2023-03-26T12:05:20.066502",
+    "updated_at": "2024-10-29T13:48:40.307376"
+  },
+  "51": {
+    "home_id": "51",
+    "owner_id": "53",
+    "address_id": "20",
+    "home_type": "Home",
+    "created_at": "2024-04-09T09:52:26.212659",
+    "updated_at": "2024-10-03T22:58:24.475632"
+  },
+  "52": {
+    "home_id": "52",
+    "owner_id": "55",
+    "address_id": "19",
+    "home_type": "Apartment",
+    "created_at": "2024-05-21T07:55:39.515303",
+    "updated_at": "2025-01-11T03:33:00.081276"
+  },
+  "53": {
+    "home_id": "53",
+    "owner_id": "57",
+    "address_id": "6",
+    "home_type": "Apartment",
+    "created_at": "2023-10-01T04:24:47.379815",
+    "updated_at": "2024-06-28T05:49:11.244912"
+  },
+  "54": {
+    "home_id": "54",
+    "owner_id": "59",
+    "address_id": "37",
+    "home_type": "Home",
+    "created_at": "2023-03-16T20:23:28.914557",
+    "updated_at": "2024-05-05T23:35:15.372223"
+  },
+  "55": {
+    "home_id": "55",
+    "owner_id": "61",
+    "address_id": "63",
+    "home_type": "Home",
+    "created_at": "2023-11-21T00:54:49.993893",
+    "updated_at": "2025-07-18T22:13:27.535760"
+  },
+  "56": {
+    "home_id": "56",
+    "owner_id": "61",
+    "address_id": "105",
+    "home_type": "Home",
+    "created_at": "2023-06-05T00:15:58.941217",
+    "updated_at": "2024-01-09T19:48:49.324203"
+  },
+  "57": {
+    "home_id": "57",
+    "owner_id": "63",
+    "address_id": "51",
+    "home_type": "Apartment",
+    "created_at": "2023-07-20T15:49:41.998719",
+    "updated_at": "2023-08-13T03:34:10.138592"
+  },
+  "58": {
+    "home_id": "58",
+    "owner_id": "65",
+    "address_id": "50",
+    "home_type": "Apartment",
+    "created_at": "2023-02-06T12:46:42.593045",
+    "updated_at": "2025-05-31T17:40:37.033286"
+  },
+  "59": {
+    "home_id": "59",
+    "owner_id": "65",
+    "address_id": "106",
+    "home_type": "Apartment",
+    "created_at": "2023-07-27T14:43:42.020536",
+    "updated_at": "2024-08-25T22:31:39.427413"
+  },
+  "60": {
+    "home_id": "60",
+    "owner_id": "67",
+    "address_id": "8",
+    "home_type": "Home",
+    "created_at": "2023-01-25T03:26:09.355350",
+    "updated_at": "2023-03-10T02:45:25.332105"
+  },
+  "61": {
+    "home_id": "61",
+    "owner_id": "69",
+    "address_id": "69",
+    "home_type": "Home",
+    "created_at": "2023-05-19T15:54:12.105004",
+    "updated_at": "2025-04-28T02:52:05.290165"
+  },
+  "62": {
+    "home_id": "62",
+    "owner_id": "69",
+    "address_id": "107",
+    "home_type": "Home",
+    "created_at": "2022-12-03T18:21:26.599469",
+    "updated_at": "2024-02-24T18:37:18.586654"
+  },
+  "63": {
+    "home_id": "63",
+    "owner_id": "71",
+    "address_id": "30",
+    "home_type": "Home",
+    "created_at": "2024-06-22T14:38:36.194900",
+    "updated_at": "2024-10-18T01:10:39.641439"
+  },
+  "64": {
+    "home_id": "64",
+    "owner_id": "71",
+    "address_id": "108",
+    "home_type": "Apartment",
+    "created_at": "2022-08-08T20:34:39.488445",
+    "updated_at": "2025-07-10T05:53:09.758486"
+  },
+  "65": {
+    "home_id": "65",
+    "owner_id": "73",
+    "address_id": "75",
+    "home_type": "Home",
+    "created_at": "2023-07-07T21:49:31.040707",
+    "updated_at": "2024-05-15T04:11:30.470069"
+  },
+  "66": {
+    "home_id": "66",
+    "owner_id": "73",
+    "address_id": "109",
+    "home_type": "Home",
+    "created_at": "2023-01-02T08:08:56.342976",
+    "updated_at": "2023-10-26T11:35:20.770019"
+  },
+  "67": {
+    "home_id": "67",
+    "owner_id": "73",
+    "address_id": "110",
+    "home_type": "Home",
+    "created_at": "2022-09-15T19:35:16.534656",
+    "updated_at": "2023-11-02T23:16:41.351841"
+  },
+  "68": {
+    "home_id": "68",
+    "owner_id": "74",
+    "address_id": "39",
+    "home_type": "Home",
+    "created_at": "2024-03-02T00:31:03.149856",
+    "updated_at": "2024-10-18T03:48:13.546923"
+  },
+  "69": {
+    "home_id": "69",
+    "owner_id": "74",
+    "address_id": "111",
+    "home_type": "Home",
+    "created_at": "2023-09-27T02:12:46.757792",
+    "updated_at": "2025-06-12T12:35:23.482436"
+  },
+  "70": {
+    "home_id": "70",
+    "owner_id": "74",
+    "address_id": "112",
+    "home_type": "Home",
+    "created_at": "2024-07-21T13:57:32.123260",
+    "updated_at": "2024-07-23T11:34:27.597679"
+  },
+  "71": {
+    "home_id": "71",
+    "owner_id": "76",
+    "address_id": "62",
+    "home_type": "Apartment",
+    "created_at": "2022-11-19T21:58:52.127753",
+    "updated_at": "2024-02-17T01:57:39.234354"
+  },
+  "72": {
+    "home_id": "72",
+    "owner_id": "76",
+    "address_id": "113",
+    "home_type": "Home",
+    "created_at": "2023-06-29T21:01:19.223022",
+    "updated_at": "2024-03-30T06:52:10.339278"
+  },
+  "73": {
+    "home_id": "73",
+    "owner_id": "77",
+    "address_id": "38",
+    "home_type": "Apartment",
+    "created_at": "2024-03-31T15:39:51.413522",
+    "updated_at": "2024-11-17T17:00:00.135776"
+  },
+  "74": {
+    "home_id": "74",
+    "owner_id": "79",
+    "address_id": "77",
+    "home_type": "Home",
+    "created_at": "2023-04-20T19:59:36.312129",
+    "updated_at": "2023-05-14T04:13:35.234855"
+  },
+  "75": {
+    "home_id": "75",
+    "owner_id": "79",
+    "address_id": "114",
+    "home_type": "Apartment",
+    "created_at": "2024-04-10T19:46:52.708193",
+    "updated_at": "2025-05-08T08:21:29.877666"
+  },
+  "76": {
+    "home_id": "76",
+    "owner_id": "79",
+    "address_id": "115",
+    "home_type": "Home",
+    "created_at": "2022-12-05T04:42:28.686768",
+    "updated_at": "2024-11-03T18:29:43.627295"
+  },
+  "77": {
+    "home_id": "77",
+    "owner_id": "81",
+    "address_id": "70",
+    "home_type": "Home",
+    "created_at": "2023-03-26T12:13:11.432291",
+    "updated_at": "2023-09-30T03:01:27.143522"
+  },
+  "78": {
+    "home_id": "78",
+    "owner_id": "81",
+    "address_id": "116",
+    "home_type": "Apartment",
+    "created_at": "2023-03-15T21:00:46.281040",
+    "updated_at": "2024-08-23T19:15:49.420010"
+  },
+  "79": {
+    "home_id": "79",
+    "owner_id": "81",
+    "address_id": "117",
+    "home_type": "Apartment",
+    "created_at": "2023-06-22T18:57:23.260002",
+    "updated_at": "2024-11-27T14:50:04.668512"
+  },
+  "80": {
+    "home_id": "80",
+    "owner_id": "83",
+    "address_id": "25",
+    "home_type": "Home",
+    "created_at": "2024-02-21T21:50:55.210715",
+    "updated_at": "2024-08-30T09:01:36.381780"
+  },
+  "81": {
+    "home_id": "81",
+    "owner_id": "84",
+    "address_id": "53",
+    "home_type": "Apartment",
+    "created_at": "2024-03-11T11:09:46.585680",
+    "updated_at": "2024-09-17T17:09:03.725970"
+  },
+  "82": {
+    "home_id": "82",
+    "owner_id": "84",
+    "address_id": "118",
+    "home_type": "Home",
+    "created_at": "2024-05-02T10:24:07.932370",
+    "updated_at": "2024-07-24T05:35:26.288051"
+  },
+  "83": {
+    "home_id": "83",
+    "owner_id": "84",
+    "address_id": "119",
+    "home_type": "Apartment",
+    "created_at": "2023-06-14T03:52:32.050087",
+    "updated_at": "2024-03-15T14:16:25.140186"
+  },
+  "84": {
+    "home_id": "84",
+    "owner_id": "85",
+    "address_id": "61",
+    "home_type": "Home",
+    "created_at": "2024-05-28T18:38:15.371600",
+    "updated_at": "2025-02-21T11:15:19.910780"
+  },
+  "85": {
+    "home_id": "85",
+    "owner_id": "85",
+    "address_id": "120",
+    "home_type": "Apartment",
+    "created_at": "2024-07-26T16:21:39.776391",
+    "updated_at": "2024-08-21T05:53:02.992168"
+  },
+  "86": {
+    "home_id": "86",
+    "owner_id": "87",
+    "address_id": "64",
+    "home_type": "Apartment",
+    "created_at": "2023-09-16T14:01:35.506283",
+    "updated_at": "2024-02-25T10:03:33.173110"
+  },
+  "87": {
+    "home_id": "87",
+    "owner_id": "89",
+    "address_id": "1",
+    "home_type": "Home",
+    "created_at": "2023-11-08T23:02:06.780270",
+    "updated_at": "2024-09-05T23:56:03.695418"
+  },
+  "88": {
+    "home_id": "88",
+    "owner_id": "91",
+    "address_id": "26",
+    "home_type": "Home",
+    "created_at": "2022-12-31T01:40:07.418962",
+    "updated_at": "2023-07-26T07:43:11.290393"
+  },
+  "89": {
+    "home_id": "89",
+    "owner_id": "91",
+    "address_id": "121",
+    "home_type": "Home",
+    "created_at": "2023-08-06T00:15:07.514034",
+    "updated_at": "2024-09-04T13:48:49.805102"
+  },
+  "90": {
+    "home_id": "90",
+    "owner_id": "91",
+    "address_id": "122",
+    "home_type": "Apartment",
+    "created_at": "2024-06-18T06:14:17.210330",
+    "updated_at": "2025-06-20T23:48:02.171391"
+  },
+  "91": {
+    "home_id": "91",
+    "owner_id": "93",
+    "address_id": "24",
+    "home_type": "Home",
+    "created_at": "2023-09-29T01:55:44.445064",
+    "updated_at": "2025-05-16T04:10:44.295501"
+  },
+  "92": {
+    "home_id": "92",
+    "owner_id": "93",
+    "address_id": "123",
+    "home_type": "Apartment",
+    "created_at": "2024-04-23T05:51:25.079835",
+    "updated_at": "2024-07-31T08:35:24.900519"
+  },
+  "93": {
+    "home_id": "93",
+    "owner_id": "95",
+    "address_id": "57",
+    "home_type": "Apartment",
+    "created_at": "2024-01-14T10:41:37.971814",
+    "updated_at": "2024-05-18T13:15:04.801573"
+  },
+  "94": {
+    "home_id": "94",
+    "owner_id": "95",
+    "address_id": "124",
+    "home_type": "Home",
+    "created_at": "2023-03-07T12:00:11.520550",
+    "updated_at": "2025-05-29T10:25:45.535044"
+  },
+  "95": {
+    "home_id": "95",
+    "owner_id": "95",
+    "address_id": "125",
+    "home_type": "Apartment",
+    "created_at": "2022-12-31T21:44:18.155658",
+    "updated_at": "2024-06-30T03:36:06.179780"
+  },
+  "96": {
+    "home_id": "96",
+    "owner_id": "97",
+    "address_id": "65",
+    "home_type": "Apartment",
+    "created_at": "2023-11-24T13:57:03.045223",
+    "updated_at": "2025-04-10T23:17:46.417714"
+  },
+  "97": {
+    "home_id": "97",
+    "owner_id": "97",
+    "address_id": "126",
+    "home_type": "Home",
+    "created_at": "2023-12-28T20:00:26.416600",
+    "updated_at": "2025-02-01T14:24:24.233504"
+  },
+  "98": {
+    "home_id": "98",
+    "owner_id": "97",
+    "address_id": "127",
+    "home_type": "Apartment",
+    "created_at": "2023-11-22T10:20:44.440627",
+    "updated_at": "2024-09-05T12:32:45.074954"
+  },
+  "99": {
+    "home_id": "99",
+    "owner_id": "98",
+    "address_id": "14",
+    "home_type": "Home",
+    "created_at": "2023-01-20T15:26:39.359504",
+    "updated_at": "2025-02-17T14:36:58.046874"
+  },
+  "100": {
+    "home_id": "100",
+    "owner_id": "98",
+    "address_id": "128",
+    "home_type": "Home",
+    "created_at": "2023-11-18T12:39:01.506357",
+    "updated_at": "2025-03-17T14:29:58.563717"
+  },
+  "101": {
+    "home_id": "101",
+    "owner_id": "99",
+    "address_id": "21",
+    "home_type": "Home",
+    "created_at": "2023-06-22T01:55:26.054249",
+    "updated_at": "2024-08-02T18:53:49.911358"
+  },
+  "102": {
+    "home_id": "102",
+    "owner_id": "99",
+    "address_id": "129",
+    "home_type": "Home",
+    "created_at": "2024-06-22T21:31:47.771086",
+    "updated_at": "2025-06-19T01:52:23.257104"
+  },
+  "103": {
+    "home_id": "103",
+    "owner_id": "99",
+    "address_id": "130",
+    "home_type": "Apartment",
+    "created_at": "2022-11-11T10:34:58.543639",
+    "updated_at": "2022-11-29T10:13:50.623863"
+  },
+  "104": {
+    "home_id": "104",
+    "owner_id": "101",
+    "address_id": "16",
+    "home_type": "Home",
+    "created_at": "2022-10-26T05:14:41.499157",
+    "updated_at": "2024-03-16T11:28:39.671455"
+  },
+  "105": {
+    "home_id": "105",
+    "owner_id": "101",
+    "address_id": "131",
+    "home_type": "Home",
+    "created_at": "2023-09-04T08:56:25.950633",
+    "updated_at": "2024-10-30T03:22:13.530841"
+  },
+  "106": {
+    "home_id": "106",
+    "owner_id": "103",
+    "address_id": "28",
+    "home_type": "Home",
+    "created_at": "2023-07-28T20:37:29.348933",
+    "updated_at": "2024-03-29T14:44:34.474742"
+  },
+  "107": {
+    "home_id": "107",
+    "owner_id": "105",
+    "address_id": "22",
+    "home_type": "Home",
+    "created_at": "2023-06-11T08:58:26.864357",
+    "updated_at": "2024-10-11T20:39:47.869707"
+  },
+  "108": {
+    "home_id": "108",
+    "owner_id": "105",
+    "address_id": "132",
+    "home_type": "Home",
+    "created_at": "2023-08-25T11:55:40.411475",
+    "updated_at": "2024-10-27T12:23:12.175043"
+  },
+  "109": {
+    "home_id": "109",
+    "owner_id": "107",
+    "address_id": "78",
+    "home_type": "Apartment",
+    "created_at": "2023-01-05T05:01:46.440453",
+    "updated_at": "2025-02-16T20:08:50.215099"
+  },
+  "110": {
+    "home_id": "110",
+    "owner_id": "107",
+    "address_id": "133",
+    "home_type": "Home",
+    "created_at": "2024-05-01T20:02:06.598354",
+    "updated_at": "2025-04-18T00:00:32.341355"
+  },
+  "111": {
+    "home_id": "111",
+    "owner_id": "107",
+    "address_id": "134",
+    "home_type": "Apartment",
+    "created_at": "2023-09-07T23:51:46.406932",
+    "updated_at": "2024-03-15T23:36:53.117909"
+  },
+  "112": {
+    "home_id": "112",
+    "owner_id": "109",
+    "address_id": "10",
+    "home_type": "Home",
+    "created_at": "2023-08-16T04:36:42.596113",
+    "updated_at": "2024-08-26T16:55:30.916805"
+  },
+  "113": {
+    "home_id": "113",
+    "owner_id": "109",
+    "address_id": "135",
+    "home_type": "Apartment",
+    "created_at": "2022-10-01T19:02:27.442933",
+    "updated_at": "2025-03-07T05:22:52.654493"
+  },
+  "114": {
+    "home_id": "114",
+    "owner_id": "109",
+    "address_id": "136",
+    "home_type": "Home",
+    "created_at": "2023-01-04T03:08:10.595086",
+    "updated_at": "2023-09-03T23:50:52.852829"
+  },
+  "115": {
+    "home_id": "115",
+    "owner_id": "111",
+    "address_id": "42",
+    "home_type": "Apartment",
+    "created_at": "2023-09-04T09:53:32.089442",
+    "updated_at": "2024-10-13T06:59:33.384442"
+  },
+  "116": {
+    "home_id": "116",
+    "owner_id": "112",
+    "address_id": "46",
+    "home_type": "Apartment",
+    "created_at": "2023-07-15T00:11:13.961097",
+    "updated_at": "2024-04-14T10:31:13.063291"
+  },
+  "117": {
+    "home_id": "117",
+    "owner_id": "112",
+    "address_id": "137",
+    "home_type": "Apartment",
+    "created_at": "2023-08-16T22:15:07.431217",
+    "updated_at": "2024-04-16T13:41:52.748071"
+  },
+  "118": {
+    "home_id": "118",
+    "owner_id": "112",
+    "address_id": "138",
+    "home_type": "Apartment",
+    "created_at": "2022-10-25T00:13:07.389156",
+    "updated_at": "2023-04-29T09:03:41.021417"
+  },
+  "119": {
+    "home_id": "119",
+    "owner_id": "114",
+    "address_id": "54",
+    "home_type": "Apartment",
+    "created_at": "2024-07-07T01:41:38.075878",
+    "updated_at": "2024-07-29T19:55:33.773819"
+  },
+  "120": {
+    "home_id": "120",
+    "owner_id": "114",
+    "address_id": "139",
+    "home_type": "Apartment",
+    "created_at": "2024-05-29T03:39:43.687062",
+    "updated_at": "2025-07-24T18:51:05.417662"
+  },
+  "121": {
+    "home_id": "121",
+    "owner_id": "114",
+    "address_id": "140",
+    "home_type": "Home",
+    "created_at": "2024-03-18T20:34:54.519898",
+    "updated_at": "2024-05-04T10:15:42.154730"
+  },
+  "122": {
+    "home_id": "122",
+    "owner_id": "116",
+    "address_id": "80",
+    "home_type": "Apartment",
+    "created_at": "2023-12-09T21:52:01.216390",
+    "updated_at": "2024-03-26T15:39:16.827513"
+  },
+  "123": {
+    "home_id": "123",
+    "owner_id": "116",
+    "address_id": "141",
+    "home_type": "Apartment",
+    "created_at": "2024-07-16T06:23:12.967176",
+    "updated_at": "2024-10-25T16:10:05.825358"
+  },
+  "124": {
+    "home_id": "124",
+    "owner_id": "118",
+    "address_id": "71",
+    "home_type": "Apartment",
+    "created_at": "2022-08-23T06:50:57.337531",
+    "updated_at": "2025-03-21T20:22:57.142032"
+  },
+  "125": {
+    "home_id": "125",
+    "owner_id": "120",
+    "address_id": "18",
+    "home_type": "Home",
+    "created_at": "2023-06-16T06:52:14.431082",
+    "updated_at": "2024-12-26T18:37:53.250946"
+  },
+  "126": {
+    "home_id": "126",
+    "owner_id": "122",
+    "address_id": "12",
+    "home_type": "Home",
+    "created_at": "2022-09-23T05:38:33.079582",
+    "updated_at": "2024-07-31T03:41:51.320113"
+  },
+  "127": {
+    "home_id": "127",
+    "owner_id": "122",
+    "address_id": "142",
+    "home_type": "Home",
+    "created_at": "2023-06-10T23:30:22.259277",
+    "updated_at": "2023-11-06T20:21:44.117887"
+  },
+  "128": {
+    "home_id": "128",
+    "owner_id": "122",
+    "address_id": "143",
+    "home_type": "Apartment",
+    "created_at": "2024-06-04T12:46:08.515464",
+    "updated_at": "2025-01-03T07:18:45.828490"
+  },
+  "129": {
+    "home_id": "129",
+    "owner_id": "124",
+    "address_id": "58",
+    "home_type": "Apartment",
+    "created_at": "2023-05-24T03:12:59.982767",
+    "updated_at": "2024-04-26T08:20:20.818910"
+  },
+  "130": {
+    "home_id": "130",
+    "owner_id": "124",
+    "address_id": "144",
+    "home_type": "Home",
+    "created_at": "2022-09-11T08:37:22.500804",
+    "updated_at": "2022-10-06T21:52:17.424946"
+  },
+  "131": {
+    "home_id": "131",
+    "owner_id": "126",
+    "address_id": "68",
+    "home_type": "Apartment",
+    "created_at": "2024-01-18T09:47:41.026414",
+    "updated_at": "2024-11-26T07:13:13.472927"
+  },
+  "132": {
+    "home_id": "132",
+    "owner_id": "126",
+    "address_id": "145",
+    "home_type": "Apartment",
+    "created_at": "2024-07-29T17:27:08.670371",
+    "updated_at": "2024-11-15T01:09:52.701753"
+  },
+  "133": {
+    "home_id": "133",
+    "owner_id": "128",
+    "address_id": "72",
+    "home_type": "Home",
+    "created_at": "2023-06-08T10:26:45.794921",
+    "updated_at": "2024-11-19T04:02:29.151838"
+  },
+  "134": {
+    "home_id": "134",
+    "owner_id": "130",
+    "address_id": "73",
+    "home_type": "Apartment",
+    "created_at": "2023-01-26T05:42:12.110251",
+    "updated_at": "2025-07-07T12:22:24.572056"
+  },
+  "135": {
+    "home_id": "135",
+    "owner_id": "132",
+    "address_id": "44",
+    "home_type": "Apartment",
+    "created_at": "2023-06-15T01:05:38.478736",
+    "updated_at": "2025-03-27T21:04:53.571518"
+  },
+  "136": {
+    "home_id": "136",
+    "owner_id": "132",
+    "address_id": "146",
+    "home_type": "Apartment",
+    "created_at": "2023-05-08T09:20:07.387184",
+    "updated_at": "2024-02-24T02:42:35.908931"
+  },
+  "137": {
+    "home_id": "137",
+    "owner_id": "133",
+    "address_id": "40",
+    "home_type": "Home",
+    "created_at": "2024-01-16T12:39:40.616278",
+    "updated_at": "2025-07-15T19:51:58.384811"
+  },
+  "138": {
+    "home_id": "138",
+    "owner_id": "133",
+    "address_id": "147",
+    "home_type": "Apartment",
+    "created_at": "2023-04-13T23:51:50.145954",
+    "updated_at": "2025-06-24T14:44:41.769103"
+  },
+  "139": {
+    "home_id": "139",
+    "owner_id": "135",
+    "address_id": "4",
+    "home_type": "Home",
+    "created_at": "2023-06-16T05:48:24.411808",
+    "updated_at": "2024-01-19T05:41:26.068534"
+  },
+  "140": {
+    "home_id": "140",
+    "owner_id": "135",
+    "address_id": "148",
+    "home_type": "Home",
+    "created_at": "2022-09-27T01:53:49.286398",
+    "updated_at": "2023-10-29T22:56:25.034855"
+  },
+  "141": {
+    "home_id": "141",
+    "owner_id": "137",
+    "address_id": "67",
+    "home_type": "Apartment",
+    "created_at": "2023-05-15T12:19:18.605878",
+    "updated_at": "2025-04-07T04:21:59.270364"
+  },
+  "142": {
+    "home_id": "142",
+    "owner_id": "139",
+    "address_id": "66",
+    "home_type": "Apartment",
+    "created_at": "2023-05-27T17:34:10.151592",
+    "updated_at": "2025-06-03T11:49:37.524890"
+  },
+  "143": {
+    "home_id": "143",
+    "owner_id": "139",
+    "address_id": "149",
+    "home_type": "Home",
+    "created_at": "2024-06-09T11:33:52.032922",
+    "updated_at": "2025-02-13T21:27:12.929040"
+  },
+  "144": {
+    "home_id": "144",
+    "owner_id": "141",
+    "address_id": "13",
+    "home_type": "Home",
+    "created_at": "2022-09-30T22:39:45.937204",
+    "updated_at": "2025-01-06T01:36:54.839397"
+  },
+  "145": {
+    "home_id": "145",
+    "owner_id": "143",
+    "address_id": "74",
+    "home_type": "Home",
+    "created_at": "2023-10-20T18:02:40.822664",
+    "updated_at": "2025-05-28T21:41:41.831595"
+  },
+  "146": {
+    "home_id": "146",
+    "owner_id": "143",
+    "address_id": "150",
+    "home_type": "Home",
+    "created_at": "2023-06-28T13:04:27.367153",
+    "updated_at": "2023-10-18T15:06:20.425292"
+  },
+  "147": {
+    "home_id": "147",
+    "owner_id": "145",
+    "address_id": "9",
+    "home_type": "Apartment",
+    "created_at": "2022-11-24T20:21:36.044765",
+    "updated_at": "2025-01-10T07:39:15.813162"
+  },
+  "148": {
+    "home_id": "148",
+    "owner_id": "147",
+    "address_id": "43",
+    "home_type": "Home",
+    "created_at": "2024-02-17T09:20:50.985236",
+    "updated_at": "2025-03-17T17:10:02.710237"
+  },
+  "149": {
+    "home_id": "149",
+    "owner_id": "149",
+    "address_id": "35",
+    "home_type": "Apartment",
+    "created_at": "2024-05-15T18:58:04.795030",
+    "updated_at": "2025-03-17T00:54:26.812382"
+  },
+  "150": {
+    "home_id": "150",
+    "owner_id": "149",
+    "address_id": "151",
+    "home_type": "Apartment",
+    "created_at": "2024-03-19T08:16:05.294527",
+    "updated_at": "2024-08-27T21:53:50.424377"
+  },
+  "151": {
+    "home_id": "151",
+    "owner_id": "151",
+    "address_id": "76",
+    "home_type": "Home",
+    "created_at": "2022-12-31T00:27:20.329859",
+    "updated_at": "2024-02-01T05:42:36.648592"
+  },
+  "152": {
+    "home_id": "152",
+    "owner_id": "151",
+    "address_id": "152",
+    "home_type": "Home",
+    "created_at": "2024-04-05T03:51:38.994010",
+    "updated_at": "2025-03-08T04:05:00.132236"
+  },
+  "153": {
+    "home_id": "153",
+    "owner_id": "151",
+    "address_id": "153",
+    "home_type": "Apartment",
+    "created_at": "2024-07-25T18:52:10.057634",
+    "updated_at": "2025-06-12T18:51:29.720055"
+  }
+}

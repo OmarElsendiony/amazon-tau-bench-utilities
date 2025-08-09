@@ -1,0 +1,188 @@
+foreign_keys:
+  # homes
+  - parent_table: homes
+    parent_column: address_id
+    child_table: addresses
+    child_column: address_id
+    type: 1:1
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: homes
+    child_column: owner_id
+    type: 1:N
+
+  - parent_table: homes
+    parent_column: home_id
+    child_table: rooms
+    child_column: home_id
+    type: 1:N
+
+  - parent_table: homes
+    parent_column: home_id
+    child_table: devices
+    child_column: home_id
+    type: 1:N
+
+  # users
+  - parent_table: users
+    parent_column: user_id
+    child_table: users
+    child_column: parent_id
+    type: 1:N
+
+  - parent_table: addresses
+    parent_column: address_id
+    child_table: users
+    child_column: primary_address_id
+    type: 1:N
+
+  # rooms
+  - parent_table: users
+    parent_column: user_id
+    child_table: rooms
+    child_column: room_owner_id
+    type: 1:N
+
+  - parent_table: rooms
+    parent_column: room_id
+    child_table: devices
+    child_column: room_id
+    type: 1:N
+
+  # devices
+
+  - parent_table: devices
+    parent_column: device_id
+    child_table: smart_bulbs
+    child_column: device_id
+    type: 1:1
+
+  - parent_table: devices
+    parent_column: device_id
+    child_table: smart_thermostats
+    child_column: device_id
+    type: 1:1
+
+  # historical_energy_consumption
+  - parent_table: rooms
+    parent_column: room_id
+    child_table: historical_energy_consumption
+    child_column: room_id
+    type: 1:N
+
+  - parent_table: devices
+    parent_column: device_id
+    child_table: historical_energy_consumption
+    child_column: device_id
+    type: 1:N
+
+  - parent_table: homes
+    parent_column: home_id
+    child_table: historical_energy_consumption
+    child_column: home_id
+    type: 1:N
+
+  # automated_routines
+  - parent_table: users
+    parent_column: user_id
+    child_table: automated_routines
+    child_column: user_id
+    type: 1:N
+
+  - parent_table: homes
+    parent_column: home_id
+    child_table: automated_routines
+    child_column: home_id
+    type: 1:N
+
+  # device_commands
+  - parent_table: automated_routines
+    parent_column: routine_id
+    child_table: device_commands
+    child_column: routine_id
+    type: 1:N
+
+  - parent_table: devices
+    parent_column: device_id
+    child_table: device_commands
+    child_column: device_id
+    type: 1:N
+
+  # bulb_commands
+  - parent_table: automated_routines
+    parent_column: routine_id
+    child_table: bulb_commands
+    child_column: routine_id
+    type: 1:N
+
+  - parent_table: devices
+    parent_column: device_id
+    child_table: bulb_commands
+    child_column: device_id
+    type: 1:N
+
+  # thermostat_commands
+  - parent_table: automated_routines
+    parent_column: routine_id
+    child_table: thermostat_commands
+    child_column: routine_id
+    type: 1:N
+
+  - parent_table: devices
+    parent_column: device_id
+    child_table: thermostat_commands
+    child_column: device_id
+    type: 1:N
+
+  # security_cameras
+  - parent_table: devices
+    parent_column: device_id
+    child_table: security_cameras
+    child_column: device_id
+    type: 1:1
+
+  # user_feedbacks
+  - parent_table: users
+    parent_column: user_id
+    child_table: user_feedbacks
+    child_column: user_id
+    type: 1:N
+
+  - parent_table: devices
+    parent_column: device_id
+    child_table: user_feedbacks
+    child_column: device_id
+    type: 1:N
+
+  # emergency_alerts
+  - parent_table: homes
+    parent_column: home_id
+    child_table: emergency_alerts
+    child_column: home_id
+    type: 1:N
+
+  - parent_table: devices
+    parent_column: device_id
+    child_table: emergency_alerts
+    child_column: device_id
+    type: 1:N
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: emergency_alerts
+    child_column: acknowledged_by_user
+    type: 1:N
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: emergency_alerts
+    child_column: resolved_by_user
+    type: 1:N
+
+  # energy_tariffs
+  - parent_table: home_id
+    parent_column: home_id
+    child_table: energy_tariffs
+    child_column: home_id
+    type: 1:N

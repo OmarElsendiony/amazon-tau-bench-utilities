@@ -1,0 +1,98 @@
+enums:
+  homes:
+    home_type:
+      - Home
+      - Apartment
+
+  users:
+    role:
+      - Owner
+      - Partner
+      - Child
+      - Guest
+      - Servant
+    status:
+      - active
+      - inactive
+
+  rooms:
+    room_type:
+      - Bedroom
+      - kitchen
+      - lounge
+      - store
+      - diningroom
+    status:
+      - vacant
+      - occupied
+
+  devices:
+    device_type:
+      - camera
+      - bulb
+      - thermostat
+      - speaker
+      - tv
+      - refrigerator
+      - oven
+    status:
+      - off
+      - on
+
+  automated_routines:
+    action_interval:
+      - daily
+      - one_time
+      - every_hour
+
+  device_commands:
+    status:
+      - on
+      - off
+
+  bulb_commands:
+    brightness_level:
+      - dim
+      - half
+      - full
+    color:
+      - red
+      - white
+      - yellow
+      - blue
+
+  security_cameras:
+    resolution:
+      - 720p
+      - 1080p
+      - 2k
+
+  smart_bulbs:
+    brightness_level:
+      - dim
+      - half
+      - full
+    color:
+      - red
+      - white
+      - yellow
+      - blue
+
+  emergency_alerts:
+    alert_type:
+      - camera_motion_detected
+      - camera_offline
+      - bulb_malfunction
+      - thermostat_temperature_alert
+      - thermostat_offline
+      - speaker_offline
+      - tv_malfunction
+      - refrigerator_temperature_alert
+      - refrigerator_malfunction
+      - oven_overheating
+      - oven_malfunction
+    severity_level:
+      - low
+      - medium
+      - high
+      - critical

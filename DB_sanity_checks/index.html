@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Sanity Report</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f7f7f7; }
+        .status { font-weight: bold; padding: 3px 8px; border-radius: 4px; color: white; }
+        .PASS { background-color: #28a745; }
+        .FAIL { background-color: #dc3545; }
+    </style>
+</head>
+<body>
+
+<h1>Data Sanity Report</h1>
+<p id="timestamp"></p>
+
+<h2>Table Checks</h2>
+<table id="table-checks" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Table</th>
+            <th>Row Count</th>
+            <th>Check</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<h2>Relationship Checks</h2>
+<table id="relationship-checks" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Relationship</th>
+            <th>Check</th>
+            <th>Status</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<h2>Enum Checks</h2>
+<table id="enum-checks" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Table</th>
+            <th>Check</th>
+            <th>Status</th>
+            <th>Invalid Values</th>
+            <th>Sample Keys</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+fetch('sanity_report.json')
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById('timestamp').textContent = "Generated at: " + data.timestamp;
+
+        // Table checks
+        let tableRows = [];
+        for (let tableName in data.tables) {
+            let info = data.tables[tableName];
+            info.checks.forEach(check => {
+                let status = typeof check.result === "boolean"
+                    ? (check.result ? "PASS" : "FAIL")
+                    : check.result;
+                let statusHTML = typeof check.result === "boolean"
+                    ? `<span class="status ${status}">${status}</span>`
+                    : status;
+                tableRows.push([tableName, info.row_count, check.check, statusHTML]);
+            });
+        }
+        $('#table-checks').DataTable({ data: tableRows });
+
+        // Relationship checks
+        let relRows = [];
+        data.relationships.forEach(rel => {
+            let status = typeof rel.result === "boolean"
+                ? (rel.result ? "PASS" : "FAIL")
+                : rel.result;
+            let statusHTML = typeof rel.result === "boolean"
+                ? `<span class="status ${status}">${status}</span>`
+                : rel.result;
+
+            let detailsObj = rel.details || {};
+            let detailText = Object.entries(detailsObj)
+                .map(([key, val]) => Array.isArray(val)
+                    ? `${key}: [${val.join(', ')}]`
+                    : `${key}: ${val}`)
+                .join('; ');
+
+            relRows.push([rel.relationship, rel.check, statusHTML, detailText]);
+        });
+        $('#relationship-checks').DataTable({ data: relRows });
+
+        // Enum checks
+        let enumRows = [];
+        for (let tableName in data.enum_tables) {
+            data.enum_tables[tableName].forEach(check => {
+                let status    = check.result ? "PASS" : "FAIL";
+                let statusHTML = `<span class="status ${status}">${status}</span>`;
+
+                let invalids = (check.details && check.details.invalid_values)
+                    ? check.details.invalid_values.join(', ')
+                    : '';
+
+                let samples = (check.details && check.details.sample_keys)
+                    ? check.details.sample_keys.join(', ')
+                    : '';
+
+                enumRows.push([
+                    tableName,
+                    check.check,
+                    statusHTML,
+                    invalids,
+                    samples
+                ]);
+            });
+        }
+        $('#enum-checks').DataTable({ data: enumRows });
+    });
+</script>
+
+</body>
+</html>
