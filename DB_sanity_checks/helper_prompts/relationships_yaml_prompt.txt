@@ -1,0 +1,40 @@
+You are given:
+1. A SQL schema that contains CREATE TABLE and ALTER TABLE statements.
+2. An example of how to extract foreign key relationships and represent them in a YAML format.
+
+**Example conversion:**
+
+SQL:
+ALTER TABLE `homes` ADD FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`);
+ALTER TABLE `users` ADD FOREIGN KEY (`user_id`) REFERENCES `homes` (`owner_id`);
+
+YAML:
+foreign_keys:
+
+  - parent_table: homes
+    parent_column: address_id
+    child_table: addresses
+    child_column: address_id
+    type: 1:1
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: homes
+    child_column: owner_id
+    type: 1:N
+
+---
+
+**Task:**
+From the SQL schema I will provide, extract **all foreign key constraints** and convert them into the exact YAML structure shown above:
+- The YAML root key must be `foreign_keys:`
+- Each FK must be a dictionary with:
+  - `parent_table`: the table containing the PK being referenced
+  - `parent_column`: the column in the parent table being referenced
+  - `child_table`: the table containing the FK
+  - `child_column`: the column in the child table that references the parent
+  - `type`: `"1:1"` if the FK column is also the child table's PRIMARY KEY, otherwise `"1:N"`
+- Output **only** the YAML in codeblock (no explanations, no extra formatting)
+
+**My schema:**
+<PASTE YOUR SQL SCHEMA HERE>

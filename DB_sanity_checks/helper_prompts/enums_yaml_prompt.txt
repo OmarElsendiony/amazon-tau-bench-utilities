@@ -1,0 +1,45 @@
+You are given:
+1. A CREATE TABLE SQL schema containing table definitions with columns, including `enum(...)` types.
+2. An example of how to convert those enums into a YAML format.
+
+**Example conversion:**
+
+SQL:
+CREATE TABLE `homes` (
+  `home_type` enum(Home,Apartment)
+);
+
+CREATE TABLE `users` (
+  `role` enum(Owner,Partner,Child,Guest,Servant),
+  `status` enum(active,inactive)
+);
+
+YAML:
+enums:
+  homes:
+    home_type:
+      - Home
+      - Apartment
+
+  users:
+    role:
+      - Owner
+      - Partner
+      - Child
+      - Guest
+      - Servant
+    status:
+      - active
+      - inactive
+
+---
+
+**Task:**  
+From the SQL schema I will provide, extract **all enum columns** for each table and convert them into the exact YAML structure shown above:
+- The YAML root key must be `enums:`
+- Each table name (lowercase, without backticks) becomes a key under `enums:`
+- Under each table, list each enum column name as a key, and under it, a list of its allowed values (order preserved from the SQL)
+- Output **only** the YAML in codeblocks (no explanations, no extra formatting)
+
+**My schema:**
+<PASTE YOUR SQL SCHEMA HERE>

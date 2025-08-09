@@ -1,0 +1,4882 @@
+{
+  "1": {
+    "device_command_id": "1",
+    "routine_id": "1",
+    "device_id": "19",
+    "status": "off",
+    "created_at": "2025-06-15T12:09:17.802068",
+    "updated_at": "2025-07-07T18:58:27.346637"
+  },
+  "2": {
+    "device_command_id": "2",
+    "routine_id": "1",
+    "device_id": "1",
+    "status": "off",
+    "created_at": "2025-06-25T16:39:15.906011",
+    "updated_at": "2025-07-04T22:43:40.619701"
+  },
+  "3": {
+    "device_command_id": "3",
+    "routine_id": "1",
+    "device_id": "20",
+    "status": "on",
+    "created_at": "2025-06-21T16:54:30.755528",
+    "updated_at": "2025-07-20T19:58:16.928361"
+  },
+  "4": {
+    "device_command_id": "4",
+    "routine_id": "2",
+    "device_id": "11",
+    "status": "on",
+    "created_at": "2025-06-10T01:02:16.824672",
+    "updated_at": "2025-06-11T17:13:09.845280"
+  },
+  "5": {
+    "device_command_id": "5",
+    "routine_id": "2",
+    "device_id": "8",
+    "status": "off",
+    "created_at": "2025-06-25T06:01:23.717477",
+    "updated_at": "2025-07-24T18:28:43.818589"
+  },
+  "6": {
+    "device_command_id": "6",
+    "routine_id": "2",
+    "device_id": "12",
+    "status": "on",
+    "created_at": "2025-06-11T11:46:24.902782",
+    "updated_at": "2025-07-18T14:08:22.670710"
+  },
+  "7": {
+    "device_command_id": "7",
+    "routine_id": "3",
+    "device_id": "24",
+    "status": "on",
+    "created_at": "2025-06-14T00:55:49.524962",
+    "updated_at": "2025-07-13T07:52:19.507631"
+  },
+  "8": {
+    "device_command_id": "8",
+    "routine_id": "3",
+    "device_id": "8",
+    "status": "off",
+    "created_at": "2025-06-23T23:13:35.583306",
+    "updated_at": "2025-07-15T21:30:32.774629"
+  },
+  "9": {
+    "device_command_id": "9",
+    "routine_id": "4",
+    "device_id": "71",
+    "status": "on",
+    "created_at": "2025-06-17T19:14:15.067817",
+    "updated_at": "2025-06-30T09:28:32.588422"
+  },
+  "10": {
+    "device_command_id": "10",
+    "routine_id": "4",
+    "device_id": "60",
+    "status": "off",
+    "created_at": "2025-06-10T18:17:50.075735",
+    "updated_at": "2025-06-18T19:06:15.523770"
+  },
+  "11": {
+    "device_command_id": "11",
+    "routine_id": "4",
+    "device_id": "66",
+    "status": "off",
+    "created_at": "2025-06-24T07:55:48.523735",
+    "updated_at": "2025-07-06T01:37:06.097378"
+  },
+  "12": {
+    "device_command_id": "12",
+    "routine_id": "4",
+    "device_id": "82",
+    "status": "off",
+    "created_at": "2025-06-26T13:17:41.581058",
+    "updated_at": "2025-07-25T08:23:05.730759"
+  },
+  "13": {
+    "device_command_id": "13",
+    "routine_id": "4",
+    "device_id": "68",
+    "status": "on",
+    "created_at": "2025-06-15T11:47:23.093022",
+    "updated_at": "2025-07-13T21:12:22.475395"
+  },
+  "14": {
+    "device_command_id": "14",
+    "routine_id": "5",
+    "device_id": "62",
+    "status": "off",
+    "created_at": "2025-06-22T19:57:50.922381",
+    "updated_at": "2025-07-07T09:33:50.099992"
+  },
+  "15": {
+    "device_command_id": "15",
+    "routine_id": "5",
+    "device_id": "61",
+    "status": "on",
+    "created_at": "2025-06-02T06:29:56.626466",
+    "updated_at": "2025-07-25T18:54:35.388018"
+  },
+  "16": {
+    "device_command_id": "16",
+    "routine_id": "5",
+    "device_id": "83",
+    "status": "on",
+    "created_at": "2025-06-03T18:45:45.143626",
+    "updated_at": "2025-06-24T12:13:17.543843"
+  },
+  "17": {
+    "device_command_id": "17",
+    "routine_id": "5",
+    "device_id": "72",
+    "status": "on",
+    "created_at": "2025-06-16T01:30:39.384707",
+    "updated_at": "2025-06-18T04:07:32.768938"
+  },
+  "18": {
+    "device_command_id": "18",
+    "routine_id": "5",
+    "device_id": "78",
+    "status": "off",
+    "created_at": "2025-06-08T22:36:04.076494",
+    "updated_at": "2025-07-24T05:26:03.339220"
+  },
+  "19": {
+    "device_command_id": "19",
+    "routine_id": "6",
+    "device_id": "61",
+    "status": "off",
+    "created_at": "2025-06-06T22:48:05.979640",
+    "updated_at": "2025-06-28T17:31:26.384079"
+  },
+  "20": {
+    "device_command_id": "20",
+    "routine_id": "7",
+    "device_id": "66",
+    "status": "off",
+    "created_at": "2025-06-03T10:48:40.654468",
+    "updated_at": "2025-07-04T12:48:37.225691"
+  },
+  "21": {
+    "device_command_id": "21",
+    "routine_id": "7",
+    "device_id": "79",
+    "status": "on",
+    "created_at": "2025-06-14T22:29:10.659905",
+    "updated_at": "2025-07-27T08:38:27.315343"
+  },
+  "22": {
+    "device_command_id": "22",
+    "routine_id": "7",
+    "device_id": "61",
+    "status": "on",
+    "created_at": "2025-06-20T17:14:58.088069",
+    "updated_at": "2025-07-27T00:54:25.782604"
+  },
+  "23": {
+    "device_command_id": "23",
+    "routine_id": "9",
+    "device_id": "105",
+    "status": "on",
+    "created_at": "2025-07-01T08:28:28.060427",
+    "updated_at": "2025-07-14T00:50:10.224975"
+  },
+  "24": {
+    "device_command_id": "24",
+    "routine_id": "10",
+    "device_id": "163",
+    "status": "on",
+    "created_at": "2025-06-17T15:03:39.145848",
+    "updated_at": "2025-06-25T15:42:37.259491"
+  },
+  "25": {
+    "device_command_id": "25",
+    "routine_id": "10",
+    "device_id": "154",
+    "status": "off",
+    "created_at": "2025-06-26T04:45:10.018375",
+    "updated_at": "2025-06-27T02:48:29.742433"
+  },
+  "26": {
+    "device_command_id": "26",
+    "routine_id": "10",
+    "device_id": "150",
+    "status": "on",
+    "created_at": "2025-06-01T23:31:55.096387",
+    "updated_at": "2025-06-06T16:30:30.187745"
+  },
+  "27": {
+    "device_command_id": "27",
+    "routine_id": "10",
+    "device_id": "155",
+    "status": "on",
+    "created_at": "2025-06-06T05:04:58.324653",
+    "updated_at": "2025-07-31T03:28:30.622115"
+  },
+  "28": {
+    "device_command_id": "28",
+    "routine_id": "11",
+    "device_id": "163",
+    "status": "off",
+    "created_at": "2025-06-19T19:45:37.481043",
+    "updated_at": "2025-07-22T05:38:28.476631"
+  },
+  "29": {
+    "device_command_id": "29",
+    "routine_id": "11",
+    "device_id": "155",
+    "status": "on",
+    "created_at": "2025-06-06T00:13:00.503150",
+    "updated_at": "2025-07-15T05:50:29.280764"
+  },
+  "30": {
+    "device_command_id": "30",
+    "routine_id": "12",
+    "device_id": "181",
+    "status": "on",
+    "created_at": "2025-06-06T04:39:59.019327",
+    "updated_at": "2025-07-21T11:24:54.476309"
+  },
+  "31": {
+    "device_command_id": "31",
+    "routine_id": "12",
+    "device_id": "186",
+    "status": "off",
+    "created_at": "2025-06-21T08:13:52.445830",
+    "updated_at": "2025-06-28T22:51:17.710011"
+  },
+  "32": {
+    "device_command_id": "32",
+    "routine_id": "12",
+    "device_id": "171",
+    "status": "off",
+    "created_at": "2025-06-19T16:31:18.979933",
+    "updated_at": "2025-06-26T22:16:09.552193"
+  },
+  "33": {
+    "device_command_id": "33",
+    "routine_id": "12",
+    "device_id": "169",
+    "status": "off",
+    "created_at": "2025-06-30T23:58:45.404759",
+    "updated_at": "2025-07-19T11:02:03.167482"
+  },
+  "34": {
+    "device_command_id": "34",
+    "routine_id": "13",
+    "device_id": "170",
+    "status": "on",
+    "created_at": "2025-06-29T01:50:09.859933",
+    "updated_at": "2025-07-26T04:17:26.466667"
+  },
+  "35": {
+    "device_command_id": "35",
+    "routine_id": "13",
+    "device_id": "173",
+    "status": "on",
+    "created_at": "2025-06-21T23:09:00.430667",
+    "updated_at": "2025-07-13T21:10:39.893804"
+  },
+  "36": {
+    "device_command_id": "36",
+    "routine_id": "13",
+    "device_id": "179",
+    "status": "on",
+    "created_at": "2025-06-25T21:01:52.553797",
+    "updated_at": "2025-06-29T06:18:57.878815"
+  },
+  "37": {
+    "device_command_id": "37",
+    "routine_id": "14",
+    "device_id": "194",
+    "status": "off",
+    "created_at": "2025-06-23T12:12:04.416853",
+    "updated_at": "2025-07-27T01:18:16.235799"
+  },
+  "38": {
+    "device_command_id": "38",
+    "routine_id": "14",
+    "device_id": "206",
+    "status": "on",
+    "created_at": "2025-06-20T07:00:33.557003",
+    "updated_at": "2025-07-15T04:25:17.738234"
+  },
+  "39": {
+    "device_command_id": "39",
+    "routine_id": "15",
+    "device_id": "198",
+    "status": "off",
+    "created_at": "2025-06-26T21:58:43.040977",
+    "updated_at": "2025-07-04T07:44:25.076654"
+  },
+  "40": {
+    "device_command_id": "40",
+    "routine_id": "15",
+    "device_id": "196",
+    "status": "on",
+    "created_at": "2025-06-04T20:09:12.192022",
+    "updated_at": "2025-07-30T05:51:00.944034"
+  },
+  "41": {
+    "device_command_id": "41",
+    "routine_id": "15",
+    "device_id": "205",
+    "status": "off",
+    "created_at": "2025-06-19T07:09:21.589068",
+    "updated_at": "2025-07-17T10:13:11.898638"
+  },
+  "42": {
+    "device_command_id": "42",
+    "routine_id": "15",
+    "device_id": "204",
+    "status": "on",
+    "created_at": "2025-06-19T19:43:23.740206",
+    "updated_at": "2025-07-06T16:33:56.591041"
+  },
+  "43": {
+    "device_command_id": "43",
+    "routine_id": "16",
+    "device_id": "219",
+    "status": "off",
+    "created_at": "2025-06-27T06:14:15.685124",
+    "updated_at": "2025-07-07T00:11:30.871090"
+  },
+  "44": {
+    "device_command_id": "44",
+    "routine_id": "17",
+    "device_id": "225",
+    "status": "off",
+    "created_at": "2025-06-27T02:10:58.648079",
+    "updated_at": "2025-07-12T01:43:59.593567"
+  },
+  "45": {
+    "device_command_id": "45",
+    "routine_id": "18",
+    "device_id": "253",
+    "status": "off",
+    "created_at": "2025-06-03T16:04:54.966577",
+    "updated_at": "2025-07-07T22:21:23.175222"
+  },
+  "46": {
+    "device_command_id": "46",
+    "routine_id": "18",
+    "device_id": "254",
+    "status": "off",
+    "created_at": "2025-06-30T18:56:13.218783",
+    "updated_at": "2025-07-07T15:37:18.442680"
+  },
+  "47": {
+    "device_command_id": "47",
+    "routine_id": "18",
+    "device_id": "261",
+    "status": "off",
+    "created_at": "2025-06-09T04:48:35.823058",
+    "updated_at": "2025-07-01T17:20:01.295516"
+  },
+  "48": {
+    "device_command_id": "48",
+    "routine_id": "19",
+    "device_id": "288",
+    "status": "off",
+    "created_at": "2025-06-28T09:34:04.189937",
+    "updated_at": "2025-07-09T19:14:47.784973"
+  },
+  "49": {
+    "device_command_id": "49",
+    "routine_id": "19",
+    "device_id": "294",
+    "status": "on",
+    "created_at": "2025-06-12T02:38:08.006859",
+    "updated_at": "2025-07-09T14:12:09.481764"
+  },
+  "50": {
+    "device_command_id": "50",
+    "routine_id": "19",
+    "device_id": "287",
+    "status": "off",
+    "created_at": "2025-07-01T09:33:59.435120",
+    "updated_at": "2025-07-18T04:08:06.966883"
+  },
+  "51": {
+    "device_command_id": "51",
+    "routine_id": "20",
+    "device_id": "290",
+    "status": "off",
+    "created_at": "2025-06-24T16:54:54.791388",
+    "updated_at": "2025-07-02T22:45:42.432178"
+  },
+  "52": {
+    "device_command_id": "52",
+    "routine_id": "20",
+    "device_id": "288",
+    "status": "on",
+    "created_at": "2025-06-07T15:09:54.559897",
+    "updated_at": "2025-07-28T14:22:59.814064"
+  },
+  "53": {
+    "device_command_id": "53",
+    "routine_id": "20",
+    "device_id": "287",
+    "status": "on",
+    "created_at": "2025-06-25T03:39:53.547366",
+    "updated_at": "2025-07-15T23:15:53.398310"
+  },
+  "54": {
+    "device_command_id": "54",
+    "routine_id": "20",
+    "device_id": "289",
+    "status": "on",
+    "created_at": "2025-06-18T06:02:42.269681",
+    "updated_at": "2025-07-11T10:37:01.738389"
+  },
+  "55": {
+    "device_command_id": "55",
+    "routine_id": "20",
+    "device_id": "292",
+    "status": "on",
+    "created_at": "2025-06-08T20:01:04.527433",
+    "updated_at": "2025-07-30T05:59:07.154779"
+  },
+  "56": {
+    "device_command_id": "56",
+    "routine_id": "20",
+    "device_id": "291",
+    "status": "off",
+    "created_at": "2025-06-20T13:48:31.525972",
+    "updated_at": "2025-07-17T01:28:11.692283"
+  },
+  "57": {
+    "device_command_id": "57",
+    "routine_id": "21",
+    "device_id": "310",
+    "status": "off",
+    "created_at": "2025-06-11T12:32:20.192480",
+    "updated_at": "2025-07-14T04:36:14.606517"
+  },
+  "58": {
+    "device_command_id": "58",
+    "routine_id": "22",
+    "device_id": "309",
+    "status": "off",
+    "created_at": "2025-06-30T23:04:50.570835",
+    "updated_at": "2025-07-03T08:20:34.035775"
+  },
+  "59": {
+    "device_command_id": "59",
+    "routine_id": "22",
+    "device_id": "306",
+    "status": "on",
+    "created_at": "2025-06-24T17:57:35.496846",
+    "updated_at": "2025-07-17T16:57:29.180944"
+  },
+  "60": {
+    "device_command_id": "60",
+    "routine_id": "22",
+    "device_id": "315",
+    "status": "off",
+    "created_at": "2025-06-30T02:11:59.966604",
+    "updated_at": "2025-07-14T05:16:46.321199"
+  },
+  "61": {
+    "device_command_id": "61",
+    "routine_id": "22",
+    "device_id": "310",
+    "status": "on",
+    "created_at": "2025-06-24T02:55:11.974952",
+    "updated_at": "2025-07-13T06:48:52.540169"
+  },
+  "62": {
+    "device_command_id": "62",
+    "routine_id": "23",
+    "device_id": "376",
+    "status": "off",
+    "created_at": "2025-06-06T22:49:06.543987",
+    "updated_at": "2025-07-16T01:55:09.380305"
+  },
+  "63": {
+    "device_command_id": "63",
+    "routine_id": "23",
+    "device_id": "378",
+    "status": "on",
+    "created_at": "2025-06-19T18:33:39.042836",
+    "updated_at": "2025-07-10T20:44:23.539290"
+  },
+  "64": {
+    "device_command_id": "64",
+    "routine_id": "23",
+    "device_id": "379",
+    "status": "on",
+    "created_at": "2025-06-12T15:31:36.302599",
+    "updated_at": "2025-06-19T03:54:32.089826"
+  },
+  "65": {
+    "device_command_id": "65",
+    "routine_id": "24",
+    "device_id": "381",
+    "status": "off",
+    "created_at": "2025-06-10T00:37:06.434318",
+    "updated_at": "2025-07-20T06:42:19.076438"
+  },
+  "66": {
+    "device_command_id": "66",
+    "routine_id": "24",
+    "device_id": "383",
+    "status": "on",
+    "created_at": "2025-06-27T11:17:33.503996",
+    "updated_at": "2025-07-31T04:05:35.246911"
+  },
+  "67": {
+    "device_command_id": "67",
+    "routine_id": "25",
+    "device_id": "504",
+    "status": "off",
+    "created_at": "2025-06-08T04:28:33.245122",
+    "updated_at": "2025-07-09T19:32:19.211060"
+  },
+  "68": {
+    "device_command_id": "68",
+    "routine_id": "25",
+    "device_id": "510",
+    "status": "off",
+    "created_at": "2025-06-13T00:35:30.299613",
+    "updated_at": "2025-07-19T11:32:45.742221"
+  },
+  "69": {
+    "device_command_id": "69",
+    "routine_id": "25",
+    "device_id": "517",
+    "status": "on",
+    "created_at": "2025-06-18T20:15:14.428223",
+    "updated_at": "2025-07-03T14:28:49.474646"
+  },
+  "70": {
+    "device_command_id": "70",
+    "routine_id": "26",
+    "device_id": "496",
+    "status": "off",
+    "created_at": "2025-06-22T03:30:09.216460",
+    "updated_at": "2025-07-03T02:51:03.283711"
+  },
+  "71": {
+    "device_command_id": "71",
+    "routine_id": "26",
+    "device_id": "500",
+    "status": "off",
+    "created_at": "2025-06-18T07:41:34.215352",
+    "updated_at": "2025-06-19T21:22:41.331419"
+  },
+  "72": {
+    "device_command_id": "72",
+    "routine_id": "26",
+    "device_id": "501",
+    "status": "on",
+    "created_at": "2025-06-29T20:18:53.078842",
+    "updated_at": "2025-07-22T06:09:05.976982"
+  },
+  "73": {
+    "device_command_id": "73",
+    "routine_id": "27",
+    "device_id": "501",
+    "status": "off",
+    "created_at": "2025-06-21T09:25:25.799329",
+    "updated_at": "2025-06-26T21:08:17.091143"
+  },
+  "74": {
+    "device_command_id": "74",
+    "routine_id": "27",
+    "device_id": "496",
+    "status": "off",
+    "created_at": "2025-06-25T01:49:45.706287",
+    "updated_at": "2025-06-28T16:35:49.888549"
+  },
+  "75": {
+    "device_command_id": "75",
+    "routine_id": "28",
+    "device_id": "564",
+    "status": "on",
+    "created_at": "2025-06-24T17:53:28.876250",
+    "updated_at": "2025-06-30T21:18:08.041020"
+  },
+  "76": {
+    "device_command_id": "76",
+    "routine_id": "29",
+    "device_id": "585",
+    "status": "on",
+    "created_at": "2025-06-20T11:15:12.163752",
+    "updated_at": "2025-07-18T07:30:59.324187"
+  },
+  "77": {
+    "device_command_id": "77",
+    "routine_id": "29",
+    "device_id": "584",
+    "status": "on",
+    "created_at": "2025-06-04T12:12:18.642907",
+    "updated_at": "2025-07-12T15:10:25.729335"
+  },
+  "78": {
+    "device_command_id": "78",
+    "routine_id": "29",
+    "device_id": "572",
+    "status": "off",
+    "created_at": "2025-06-12T10:02:19.494981",
+    "updated_at": "2025-07-15T06:17:01.591795"
+  },
+  "79": {
+    "device_command_id": "79",
+    "routine_id": "30",
+    "device_id": "572",
+    "status": "on",
+    "created_at": "2025-06-05T05:30:34.402706",
+    "updated_at": "2025-06-20T04:53:31.027491"
+  },
+  "80": {
+    "device_command_id": "80",
+    "routine_id": "31",
+    "device_id": "627",
+    "status": "off",
+    "created_at": "2025-06-04T12:38:07.709940",
+    "updated_at": "2025-07-18T15:03:12.889755"
+  },
+  "81": {
+    "device_command_id": "81",
+    "routine_id": "31",
+    "device_id": "640",
+    "status": "off",
+    "created_at": "2025-06-19T10:05:30.321734",
+    "updated_at": "2025-06-22T00:16:41.932758"
+  },
+  "82": {
+    "device_command_id": "82",
+    "routine_id": "32",
+    "device_id": "639",
+    "status": "on",
+    "created_at": "2025-06-24T19:10:28.658555",
+    "updated_at": "2025-07-18T03:49:32.049308"
+  },
+  "83": {
+    "device_command_id": "83",
+    "routine_id": "32",
+    "device_id": "636",
+    "status": "off",
+    "created_at": "2025-06-09T17:24:41.109349",
+    "updated_at": "2025-07-17T11:19:02.403440"
+  },
+  "84": {
+    "device_command_id": "84",
+    "routine_id": "32",
+    "device_id": "645",
+    "status": "on",
+    "created_at": "2025-06-13T23:30:00.011317",
+    "updated_at": "2025-06-25T07:11:55.312676"
+  },
+  "85": {
+    "device_command_id": "85",
+    "routine_id": "33",
+    "device_id": "650",
+    "status": "on",
+    "created_at": "2025-06-25T21:25:03.443068",
+    "updated_at": "2025-07-15T13:00:34.844122"
+  },
+  "86": {
+    "device_command_id": "86",
+    "routine_id": "33",
+    "device_id": "658",
+    "status": "on",
+    "created_at": "2025-06-02T21:19:19.809739",
+    "updated_at": "2025-07-20T15:20:22.247023"
+  },
+  "87": {
+    "device_command_id": "87",
+    "routine_id": "33",
+    "device_id": "655",
+    "status": "on",
+    "created_at": "2025-06-19T02:32:20.581331",
+    "updated_at": "2025-06-21T21:31:35.011469"
+  },
+  "88": {
+    "device_command_id": "88",
+    "routine_id": "33",
+    "device_id": "648",
+    "status": "on",
+    "created_at": "2025-06-21T22:02:15.003588",
+    "updated_at": "2025-07-03T22:03:44.091922"
+  },
+  "89": {
+    "device_command_id": "89",
+    "routine_id": "34",
+    "device_id": "744",
+    "status": "off",
+    "created_at": "2025-06-11T15:47:33.452026",
+    "updated_at": "2025-06-20T14:12:58.572703"
+  },
+  "90": {
+    "device_command_id": "90",
+    "routine_id": "34",
+    "device_id": "739",
+    "status": "off",
+    "created_at": "2025-06-29T17:07:44.407241",
+    "updated_at": "2025-07-04T20:34:14.271248"
+  },
+  "91": {
+    "device_command_id": "91",
+    "routine_id": "34",
+    "device_id": "729",
+    "status": "off",
+    "created_at": "2025-06-03T21:56:25.826995",
+    "updated_at": "2025-06-16T13:20:27.208753"
+  },
+  "92": {
+    "device_command_id": "92",
+    "routine_id": "35",
+    "device_id": "751",
+    "status": "on",
+    "created_at": "2025-06-24T11:08:35.900414",
+    "updated_at": "2025-07-08T14:59:04.946511"
+  },
+  "93": {
+    "device_command_id": "93",
+    "routine_id": "36",
+    "device_id": "775",
+    "status": "off",
+    "created_at": "2025-06-25T12:35:39.952190",
+    "updated_at": "2025-06-27T19:25:19.354062"
+  },
+  "94": {
+    "device_command_id": "94",
+    "routine_id": "36",
+    "device_id": "780",
+    "status": "on",
+    "created_at": "2025-06-03T03:31:09.138225",
+    "updated_at": "2025-06-24T10:52:23.364622"
+  },
+  "95": {
+    "device_command_id": "95",
+    "routine_id": "37",
+    "device_id": "778",
+    "status": "on",
+    "created_at": "2025-06-23T18:58:23.142347",
+    "updated_at": "2025-07-31T03:33:21.265491"
+  },
+  "96": {
+    "device_command_id": "96",
+    "routine_id": "37",
+    "device_id": "780",
+    "status": "on",
+    "created_at": "2025-06-24T18:16:25.765061",
+    "updated_at": "2025-07-30T14:44:58.707760"
+  },
+  "97": {
+    "device_command_id": "97",
+    "routine_id": "37",
+    "device_id": "775",
+    "status": "on",
+    "created_at": "2025-06-12T16:05:14.223788",
+    "updated_at": "2025-07-03T14:18:03.236961"
+  },
+  "98": {
+    "device_command_id": "98",
+    "routine_id": "38",
+    "device_id": "827",
+    "status": "on",
+    "created_at": "2025-06-16T04:55:37.652016",
+    "updated_at": "2025-06-22T00:26:12.818535"
+  },
+  "99": {
+    "device_command_id": "99",
+    "routine_id": "38",
+    "device_id": "840",
+    "status": "off",
+    "created_at": "2025-06-28T01:16:13.040897",
+    "updated_at": "2025-06-28T03:36:23.623316"
+  },
+  "100": {
+    "device_command_id": "100",
+    "routine_id": "38",
+    "device_id": "833",
+    "status": "off",
+    "created_at": "2025-06-06T03:14:09.214470",
+    "updated_at": "2025-07-05T15:14:42.831235"
+  },
+  "101": {
+    "device_command_id": "101",
+    "routine_id": "38",
+    "device_id": "844",
+    "status": "off",
+    "created_at": "2025-06-09T03:36:36.180457",
+    "updated_at": "2025-06-10T12:23:54.013123"
+  },
+  "102": {
+    "device_command_id": "102",
+    "routine_id": "39",
+    "device_id": "829",
+    "status": "on",
+    "created_at": "2025-06-17T05:13:44.424001",
+    "updated_at": "2025-06-29T07:41:40.380209"
+  },
+  "103": {
+    "device_command_id": "103",
+    "routine_id": "39",
+    "device_id": "845",
+    "status": "on",
+    "created_at": "2025-06-26T22:32:25.699956",
+    "updated_at": "2025-07-28T17:26:45.451842"
+  },
+  "104": {
+    "device_command_id": "104",
+    "routine_id": "40",
+    "device_id": "829",
+    "status": "on",
+    "created_at": "2025-06-05T01:54:29.183253",
+    "updated_at": "2025-07-30T22:07:32.293105"
+  },
+  "105": {
+    "device_command_id": "105",
+    "routine_id": "40",
+    "device_id": "845",
+    "status": "on",
+    "created_at": "2025-06-09T20:55:44.761612",
+    "updated_at": "2025-06-23T10:13:48.780221"
+  },
+  "106": {
+    "device_command_id": "106",
+    "routine_id": "41",
+    "device_id": "900",
+    "status": "on",
+    "created_at": "2025-06-13T12:09:04.705053",
+    "updated_at": "2025-07-17T10:29:31.186701"
+  },
+  "107": {
+    "device_command_id": "107",
+    "routine_id": "41",
+    "device_id": "904",
+    "status": "off",
+    "created_at": "2025-06-27T22:45:24.153192",
+    "updated_at": "2025-07-21T23:18:37.751435"
+  },
+  "108": {
+    "device_command_id": "108",
+    "routine_id": "41",
+    "device_id": "905",
+    "status": "off",
+    "created_at": "2025-06-12T19:29:45.700860",
+    "updated_at": "2025-07-03T12:13:20.907084"
+  },
+  "109": {
+    "device_command_id": "109",
+    "routine_id": "42",
+    "device_id": "973",
+    "status": "off",
+    "created_at": "2025-06-10T04:11:12.432530",
+    "updated_at": "2025-06-24T22:34:18.469068"
+  },
+  "110": {
+    "device_command_id": "110",
+    "routine_id": "43",
+    "device_id": "966",
+    "status": "off",
+    "created_at": "2025-06-26T18:36:39.396684",
+    "updated_at": "2025-07-25T08:55:40.249296"
+  },
+  "111": {
+    "device_command_id": "111",
+    "routine_id": "43",
+    "device_id": "956",
+    "status": "off",
+    "created_at": "2025-06-27T08:27:54.623603",
+    "updated_at": "2025-06-29T08:31:26.725313"
+  },
+  "112": {
+    "device_command_id": "112",
+    "routine_id": "43",
+    "device_id": "974",
+    "status": "off",
+    "created_at": "2025-06-23T02:10:03.290783",
+    "updated_at": "2025-07-02T00:59:43.725303"
+  },
+  "113": {
+    "device_command_id": "113",
+    "routine_id": "44",
+    "device_id": "1053",
+    "status": "on",
+    "created_at": "2025-06-12T00:06:24.350306",
+    "updated_at": "2025-06-13T01:17:41.719567"
+  },
+  "114": {
+    "device_command_id": "114",
+    "routine_id": "44",
+    "device_id": "1057",
+    "status": "off",
+    "created_at": "2025-06-08T11:59:07.986820",
+    "updated_at": "2025-07-04T22:37:47.557894"
+  },
+  "115": {
+    "device_command_id": "115",
+    "routine_id": "44",
+    "device_id": "1046",
+    "status": "on",
+    "created_at": "2025-06-16T07:12:24.915259",
+    "updated_at": "2025-06-20T10:10:27.240508"
+  },
+  "116": {
+    "device_command_id": "116",
+    "routine_id": "45",
+    "device_id": "1051",
+    "status": "off",
+    "created_at": "2025-06-16T17:16:01.805000",
+    "updated_at": "2025-07-06T16:05:58.159406"
+  },
+  "117": {
+    "device_command_id": "117",
+    "routine_id": "45",
+    "device_id": "1044",
+    "status": "on",
+    "created_at": "2025-06-04T08:59:12.718729",
+    "updated_at": "2025-07-03T11:40:35.191654"
+  },
+  "118": {
+    "device_command_id": "118",
+    "routine_id": "45",
+    "device_id": "1053",
+    "status": "off",
+    "created_at": "2025-06-03T08:18:23.498046",
+    "updated_at": "2025-07-02T12:13:48.057180"
+  },
+  "119": {
+    "device_command_id": "119",
+    "routine_id": "45",
+    "device_id": "1035",
+    "status": "off",
+    "created_at": "2025-06-06T10:21:33.459946",
+    "updated_at": "2025-07-03T22:20:33.243231"
+  },
+  "120": {
+    "device_command_id": "120",
+    "routine_id": "46",
+    "device_id": "1091",
+    "status": "off",
+    "created_at": "2025-06-25T22:58:42.061835",
+    "updated_at": "2025-07-28T03:29:37.723233"
+  },
+  "121": {
+    "device_command_id": "121",
+    "routine_id": "46",
+    "device_id": "1090",
+    "status": "on",
+    "created_at": "2025-06-18T04:44:32.481547",
+    "updated_at": "2025-07-15T16:26:01.084668"
+  },
+  "122": {
+    "device_command_id": "122",
+    "routine_id": "47",
+    "device_id": "1108",
+    "status": "on",
+    "created_at": "2025-06-20T21:23:45.485245",
+    "updated_at": "2025-07-06T12:17:00.151141"
+  },
+  "123": {
+    "device_command_id": "123",
+    "routine_id": "48",
+    "device_id": "1140",
+    "status": "off",
+    "created_at": "2025-06-12T17:40:27.640499",
+    "updated_at": "2025-06-28T22:07:15.583659"
+  },
+  "124": {
+    "device_command_id": "124",
+    "routine_id": "49",
+    "device_id": "1141",
+    "status": "off",
+    "created_at": "2025-06-04T11:57:27.896356",
+    "updated_at": "2025-06-23T23:40:57.096940"
+  },
+  "125": {
+    "device_command_id": "125",
+    "routine_id": "49",
+    "device_id": "1144",
+    "status": "off",
+    "created_at": "2025-06-06T23:48:27.146909",
+    "updated_at": "2025-07-10T09:43:10.528091"
+  },
+  "126": {
+    "device_command_id": "126",
+    "routine_id": "49",
+    "device_id": "1155",
+    "status": "on",
+    "created_at": "2025-06-25T23:18:50.163141",
+    "updated_at": "2025-07-08T00:37:21.047726"
+  },
+  "127": {
+    "device_command_id": "127",
+    "routine_id": "49",
+    "device_id": "1138",
+    "status": "off",
+    "created_at": "2025-07-01T05:51:45.768539",
+    "updated_at": "2025-07-13T20:14:14.562015"
+  },
+  "128": {
+    "device_command_id": "128",
+    "routine_id": "49",
+    "device_id": "1137",
+    "status": "on",
+    "created_at": "2025-06-20T23:45:05.196089",
+    "updated_at": "2025-07-03T08:08:23.864968"
+  },
+  "129": {
+    "device_command_id": "129",
+    "routine_id": "50",
+    "device_id": "1173",
+    "status": "on",
+    "created_at": "2025-06-21T05:52:09.050090",
+    "updated_at": "2025-07-26T18:54:05.221939"
+  },
+  "130": {
+    "device_command_id": "130",
+    "routine_id": "50",
+    "device_id": "1190",
+    "status": "off",
+    "created_at": "2025-06-28T08:25:43.171397",
+    "updated_at": "2025-07-03T03:46:03.542803"
+  },
+  "131": {
+    "device_command_id": "131",
+    "routine_id": "51",
+    "device_id": "1205",
+    "status": "on",
+    "created_at": "2025-06-03T07:52:37.721725",
+    "updated_at": "2025-06-06T10:54:38.720042"
+  },
+  "132": {
+    "device_command_id": "132",
+    "routine_id": "52",
+    "device_id": "1216",
+    "status": "on",
+    "created_at": "2025-06-08T07:59:10.157718",
+    "updated_at": "2025-06-30T13:14:09.437121"
+  },
+  "133": {
+    "device_command_id": "133",
+    "routine_id": "52",
+    "device_id": "1197",
+    "status": "on",
+    "created_at": "2025-06-16T16:13:18.467870",
+    "updated_at": "2025-07-06T04:34:33.441589"
+  },
+  "134": {
+    "device_command_id": "134",
+    "routine_id": "52",
+    "device_id": "1209",
+    "status": "on",
+    "created_at": "2025-06-11T01:23:24.127062",
+    "updated_at": "2025-06-14T15:31:10.871882"
+  },
+  "135": {
+    "device_command_id": "135",
+    "routine_id": "52",
+    "device_id": "1196",
+    "status": "on",
+    "created_at": "2025-06-10T07:38:15.684962",
+    "updated_at": "2025-07-19T22:49:13.174072"
+  },
+  "136": {
+    "device_command_id": "136",
+    "routine_id": "52",
+    "device_id": "1193",
+    "status": "off",
+    "created_at": "2025-06-03T23:47:46.088414",
+    "updated_at": "2025-07-09T15:19:50.228565"
+  },
+  "137": {
+    "device_command_id": "137",
+    "routine_id": "53",
+    "device_id": "1260",
+    "status": "off",
+    "created_at": "2025-07-01T06:09:49.763248",
+    "updated_at": "2025-07-01T07:08:09.710271"
+  },
+  "138": {
+    "device_command_id": "138",
+    "routine_id": "53",
+    "device_id": "1276",
+    "status": "off",
+    "created_at": "2025-06-23T22:35:10.678776",
+    "updated_at": "2025-07-09T21:29:35.585841"
+  },
+  "139": {
+    "device_command_id": "139",
+    "routine_id": "53",
+    "device_id": "1278",
+    "status": "off",
+    "created_at": "2025-06-07T11:19:31.631190",
+    "updated_at": "2025-06-23T08:36:01.278022"
+  },
+  "140": {
+    "device_command_id": "140",
+    "routine_id": "53",
+    "device_id": "1266",
+    "status": "off",
+    "created_at": "2025-06-01T19:52:32.114053",
+    "updated_at": "2025-07-13T04:31:14.029495"
+  },
+  "141": {
+    "device_command_id": "141",
+    "routine_id": "53",
+    "device_id": "1277",
+    "status": "off",
+    "created_at": "2025-06-08T23:53:09.264703",
+    "updated_at": "2025-07-20T10:58:49.689370"
+  },
+  "142": {
+    "device_command_id": "142",
+    "routine_id": "54",
+    "device_id": "1264",
+    "status": "off",
+    "created_at": "2025-06-14T18:47:35.048583",
+    "updated_at": "2025-07-07T01:08:23.866665"
+  },
+  "143": {
+    "device_command_id": "143",
+    "routine_id": "55",
+    "device_id": "1510",
+    "status": "on",
+    "created_at": "2025-06-12T04:22:14.451419",
+    "updated_at": "2025-07-28T11:29:05.131597"
+  },
+  "144": {
+    "device_command_id": "144",
+    "routine_id": "55",
+    "device_id": "1508",
+    "status": "on",
+    "created_at": "2025-06-14T17:30:53.410679",
+    "updated_at": "2025-07-18T23:15:23.263666"
+  },
+  "145": {
+    "device_command_id": "145",
+    "routine_id": "55",
+    "device_id": "1511",
+    "status": "off",
+    "created_at": "2025-06-16T05:33:22.939175",
+    "updated_at": "2025-06-27T16:58:45.892377"
+  },
+  "146": {
+    "device_command_id": "146",
+    "routine_id": "56",
+    "device_id": "1510",
+    "status": "on",
+    "created_at": "2025-06-19T19:25:03.604945",
+    "updated_at": "2025-07-17T04:42:03.821620"
+  },
+  "147": {
+    "device_command_id": "147",
+    "routine_id": "57",
+    "device_id": "1538",
+    "status": "off",
+    "created_at": "2025-06-19T04:46:17.858372",
+    "updated_at": "2025-07-13T14:16:43.417998"
+  },
+  "148": {
+    "device_command_id": "148",
+    "routine_id": "57",
+    "device_id": "1546",
+    "status": "off",
+    "created_at": "2025-06-17T13:23:49.354672",
+    "updated_at": "2025-07-07T17:19:15.045870"
+  },
+  "149": {
+    "device_command_id": "149",
+    "routine_id": "57",
+    "device_id": "1547",
+    "status": "off",
+    "created_at": "2025-06-11T11:20:12.017848",
+    "updated_at": "2025-07-01T13:09:32.176478"
+  },
+  "150": {
+    "device_command_id": "150",
+    "routine_id": "57",
+    "device_id": "1540",
+    "status": "off",
+    "created_at": "2025-06-26T17:42:53.229955",
+    "updated_at": "2025-07-21T14:12:39.765382"
+  },
+  "151": {
+    "device_command_id": "151",
+    "routine_id": "58",
+    "device_id": "1534",
+    "status": "on",
+    "created_at": "2025-06-30T03:57:06.259158",
+    "updated_at": "2025-07-03T15:15:09.654440"
+  },
+  "152": {
+    "device_command_id": "152",
+    "routine_id": "58",
+    "device_id": "1533",
+    "status": "off",
+    "created_at": "2025-06-29T05:01:00.195759",
+    "updated_at": "2025-07-09T15:13:22.057393"
+  },
+  "153": {
+    "device_command_id": "153",
+    "routine_id": "58",
+    "device_id": "1540",
+    "status": "on",
+    "created_at": "2025-06-08T15:22:53.635768",
+    "updated_at": "2025-07-29T05:05:31.096869"
+  },
+  "154": {
+    "device_command_id": "154",
+    "routine_id": "59",
+    "device_id": "1592",
+    "status": "off",
+    "created_at": "2025-06-07T09:16:17.473853",
+    "updated_at": "2025-07-18T16:00:00.110375"
+  },
+  "155": {
+    "device_command_id": "155",
+    "routine_id": "59",
+    "device_id": "1600",
+    "status": "on",
+    "created_at": "2025-06-26T23:34:07.164256",
+    "updated_at": "2025-07-23T07:42:40.391740"
+  },
+  "156": {
+    "device_command_id": "156",
+    "routine_id": "59",
+    "device_id": "1599",
+    "status": "off",
+    "created_at": "2025-06-01T20:33:48.705152",
+    "updated_at": "2025-06-20T17:43:34.325044"
+  },
+  "157": {
+    "device_command_id": "157",
+    "routine_id": "59",
+    "device_id": "1591",
+    "status": "on",
+    "created_at": "2025-06-24T07:08:54.616998",
+    "updated_at": "2025-07-30T22:45:50.056588"
+  },
+  "158": {
+    "device_command_id": "158",
+    "routine_id": "60",
+    "device_id": "1664",
+    "status": "off",
+    "created_at": "2025-06-18T15:57:44.894451",
+    "updated_at": "2025-07-25T11:49:21.609827"
+  },
+  "159": {
+    "device_command_id": "159",
+    "routine_id": "60",
+    "device_id": "1655",
+    "status": "on",
+    "created_at": "2025-06-02T05:15:51.990808",
+    "updated_at": "2025-07-12T03:10:04.364969"
+  },
+  "160": {
+    "device_command_id": "160",
+    "routine_id": "60",
+    "device_id": "1651",
+    "status": "off",
+    "created_at": "2025-06-30T22:46:28.483547",
+    "updated_at": "2025-07-16T16:40:34.167471"
+  },
+  "161": {
+    "device_command_id": "161",
+    "routine_id": "61",
+    "device_id": "1669",
+    "status": "off",
+    "created_at": "2025-06-04T19:07:27.200179",
+    "updated_at": "2025-06-26T01:27:52.224746"
+  },
+  "162": {
+    "device_command_id": "162",
+    "routine_id": "61",
+    "device_id": "1683",
+    "status": "off",
+    "created_at": "2025-06-24T16:44:39.923262",
+    "updated_at": "2025-06-25T07:35:37.991844"
+  },
+  "163": {
+    "device_command_id": "163",
+    "routine_id": "61",
+    "device_id": "1671",
+    "status": "on",
+    "created_at": "2025-06-04T05:38:15.260961",
+    "updated_at": "2025-07-16T21:57:37.935757"
+  },
+  "164": {
+    "device_command_id": "164",
+    "routine_id": "62",
+    "device_id": "1747",
+    "status": "off",
+    "created_at": "2025-06-04T20:42:17.911180",
+    "updated_at": "2025-07-03T16:03:27.432556"
+  },
+  "165": {
+    "device_command_id": "165",
+    "routine_id": "62",
+    "device_id": "1726",
+    "status": "off",
+    "created_at": "2025-06-11T08:28:22.096584",
+    "updated_at": "2025-06-21T06:50:11.701133"
+  },
+  "166": {
+    "device_command_id": "166",
+    "routine_id": "62",
+    "device_id": "1730",
+    "status": "on",
+    "created_at": "2025-06-02T19:48:57.068064",
+    "updated_at": "2025-07-22T03:48:49.151911"
+  },
+  "167": {
+    "device_command_id": "167",
+    "routine_id": "63",
+    "device_id": "1782",
+    "status": "off",
+    "created_at": "2025-06-13T15:26:34.291123",
+    "updated_at": "2025-07-07T11:59:42.261432"
+  },
+  "168": {
+    "device_command_id": "168",
+    "routine_id": "64",
+    "device_id": "1780",
+    "status": "off",
+    "created_at": "2025-06-30T20:25:52.166712",
+    "updated_at": "2025-07-11T05:41:24.580114"
+  },
+  "169": {
+    "device_command_id": "169",
+    "routine_id": "64",
+    "device_id": "1795",
+    "status": "off",
+    "created_at": "2025-06-02T23:29:43.753815",
+    "updated_at": "2025-07-21T02:25:55.198918"
+  },
+  "170": {
+    "device_command_id": "170",
+    "routine_id": "64",
+    "device_id": "1793",
+    "status": "on",
+    "created_at": "2025-06-08T13:39:17.773669",
+    "updated_at": "2025-07-02T13:58:21.531006"
+  },
+  "171": {
+    "device_command_id": "171",
+    "routine_id": "65",
+    "device_id": "1795",
+    "status": "off",
+    "created_at": "2025-06-06T03:04:13.594504",
+    "updated_at": "2025-06-26T07:49:15.800948"
+  },
+  "172": {
+    "device_command_id": "172",
+    "routine_id": "65",
+    "device_id": "1786",
+    "status": "off",
+    "created_at": "2025-06-06T21:51:18.396821",
+    "updated_at": "2025-07-13T01:45:08.827791"
+  },
+  "173": {
+    "device_command_id": "173",
+    "routine_id": "66",
+    "device_id": "1795",
+    "status": "off",
+    "created_at": "2025-06-16T05:43:55.858607",
+    "updated_at": "2025-06-27T18:34:03.970213"
+  },
+  "174": {
+    "device_command_id": "174",
+    "routine_id": "66",
+    "device_id": "1783",
+    "status": "off",
+    "created_at": "2025-06-28T20:30:39.804729",
+    "updated_at": "2025-06-29T00:24:51.028881"
+  },
+  "175": {
+    "device_command_id": "175",
+    "routine_id": "67",
+    "device_id": "1802",
+    "status": "on",
+    "created_at": "2025-06-11T23:25:10.583234",
+    "updated_at": "2025-07-17T08:24:51.140625"
+  },
+  "176": {
+    "device_command_id": "176",
+    "routine_id": "69",
+    "device_id": "1941",
+    "status": "on",
+    "created_at": "2025-06-30T11:22:20.806304",
+    "updated_at": "2025-07-31T11:21:46.865582"
+  },
+  "177": {
+    "device_command_id": "177",
+    "routine_id": "69",
+    "device_id": "1950",
+    "status": "on",
+    "created_at": "2025-06-27T20:46:35.886147",
+    "updated_at": "2025-07-22T19:16:27.341703"
+  },
+  "178": {
+    "device_command_id": "178",
+    "routine_id": "69",
+    "device_id": "1947",
+    "status": "on",
+    "created_at": "2025-06-02T00:21:40.404390",
+    "updated_at": "2025-06-08T18:26:12.954004"
+  },
+  "179": {
+    "device_command_id": "179",
+    "routine_id": "69",
+    "device_id": "1945",
+    "status": "off",
+    "created_at": "2025-06-29T21:52:37.454474",
+    "updated_at": "2025-07-20T13:58:17.650470"
+  },
+  "180": {
+    "device_command_id": "180",
+    "routine_id": "70",
+    "device_id": "2007",
+    "status": "off",
+    "created_at": "2025-06-14T17:51:28.010715",
+    "updated_at": "2025-07-08T06:57:34.960615"
+  },
+  "181": {
+    "device_command_id": "181",
+    "routine_id": "70",
+    "device_id": "2009",
+    "status": "off",
+    "created_at": "2025-06-19T18:13:50.107743",
+    "updated_at": "2025-06-23T15:22:18.334991"
+  },
+  "182": {
+    "device_command_id": "182",
+    "routine_id": "70",
+    "device_id": "2002",
+    "status": "on",
+    "created_at": "2025-06-15T08:20:14.372992",
+    "updated_at": "2025-07-06T07:28:30.737243"
+  },
+  "183": {
+    "device_command_id": "183",
+    "routine_id": "70",
+    "device_id": "2012",
+    "status": "on",
+    "created_at": "2025-06-11T09:37:23.974157",
+    "updated_at": "2025-06-28T09:50:50.263289"
+  },
+  "184": {
+    "device_command_id": "184",
+    "routine_id": "71",
+    "device_id": "2086",
+    "status": "on",
+    "created_at": "2025-06-01T22:20:02.812615",
+    "updated_at": "2025-07-17T01:28:48.593988"
+  },
+  "185": {
+    "device_command_id": "185",
+    "routine_id": "72",
+    "device_id": "2082",
+    "status": "off",
+    "created_at": "2025-06-26T21:32:53.854830",
+    "updated_at": "2025-07-02T04:36:38.005555"
+  },
+  "186": {
+    "device_command_id": "186",
+    "routine_id": "72",
+    "device_id": "2085",
+    "status": "on",
+    "created_at": "2025-06-03T21:31:14.895581",
+    "updated_at": "2025-07-07T14:08:38.146988"
+  },
+  "187": {
+    "device_command_id": "187",
+    "routine_id": "73",
+    "device_id": "2117",
+    "status": "off",
+    "created_at": "2025-06-11T02:21:10.319105",
+    "updated_at": "2025-06-20T02:13:31.477317"
+  },
+  "188": {
+    "device_command_id": "188",
+    "routine_id": "73",
+    "device_id": "2113",
+    "status": "on",
+    "created_at": "2025-06-09T13:11:41.917246",
+    "updated_at": "2025-07-25T17:08:01.178386"
+  },
+  "189": {
+    "device_command_id": "189",
+    "routine_id": "74",
+    "device_id": "2171",
+    "status": "off",
+    "created_at": "2025-06-26T15:50:46.959478",
+    "updated_at": "2025-07-14T17:00:03.164007"
+  },
+  "190": {
+    "device_command_id": "190",
+    "routine_id": "74",
+    "device_id": "2179",
+    "status": "on",
+    "created_at": "2025-06-15T12:01:19.576783",
+    "updated_at": "2025-06-25T23:04:44.048791"
+  },
+  "191": {
+    "device_command_id": "191",
+    "routine_id": "74",
+    "device_id": "2161",
+    "status": "off",
+    "created_at": "2025-06-22T06:30:33.077156",
+    "updated_at": "2025-07-22T09:23:25.240876"
+  },
+  "192": {
+    "device_command_id": "192",
+    "routine_id": "74",
+    "device_id": "2162",
+    "status": "on",
+    "created_at": "2025-06-19T14:11:48.518326",
+    "updated_at": "2025-07-17T01:16:39.527131"
+  },
+  "193": {
+    "device_command_id": "193",
+    "routine_id": "75",
+    "device_id": "2167",
+    "status": "on",
+    "created_at": "2025-06-05T17:36:59.800165",
+    "updated_at": "2025-07-27T11:22:34.113059"
+  },
+  "194": {
+    "device_command_id": "194",
+    "routine_id": "75",
+    "device_id": "2176",
+    "status": "on",
+    "created_at": "2025-06-15T16:08:37.124895",
+    "updated_at": "2025-07-08T20:37:34.036088"
+  },
+  "195": {
+    "device_command_id": "195",
+    "routine_id": "75",
+    "device_id": "2160",
+    "status": "off",
+    "created_at": "2025-06-14T10:54:23.238100",
+    "updated_at": "2025-07-25T16:55:39.245042"
+  },
+  "196": {
+    "device_command_id": "196",
+    "routine_id": "75",
+    "device_id": "2178",
+    "status": "off",
+    "created_at": "2025-06-04T23:55:04.939506",
+    "updated_at": "2025-06-29T12:52:00.174720"
+  },
+  "197": {
+    "device_command_id": "197",
+    "routine_id": "75",
+    "device_id": "2155",
+    "status": "on",
+    "created_at": "2025-06-30T07:18:09.433307",
+    "updated_at": "2025-07-01T09:05:44.279444"
+  },
+  "198": {
+    "device_command_id": "198",
+    "routine_id": "76",
+    "device_id": "2203",
+    "status": "on",
+    "created_at": "2025-06-18T08:16:11.669250",
+    "updated_at": "2025-06-26T00:59:46.786861"
+  },
+  "199": {
+    "device_command_id": "199",
+    "routine_id": "76",
+    "device_id": "2205",
+    "status": "on",
+    "created_at": "2025-06-10T21:57:34.640904",
+    "updated_at": "2025-06-22T11:05:32.989856"
+  },
+  "200": {
+    "device_command_id": "200",
+    "routine_id": "76",
+    "device_id": "2210",
+    "status": "on",
+    "created_at": "2025-06-02T21:15:51.935843",
+    "updated_at": "2025-07-17T16:54:32.723692"
+  },
+  "201": {
+    "device_command_id": "201",
+    "routine_id": "76",
+    "device_id": "2202",
+    "status": "off",
+    "created_at": "2025-06-24T21:57:49.857820",
+    "updated_at": "2025-07-12T04:59:46.228165"
+  },
+  "202": {
+    "device_command_id": "202",
+    "routine_id": "77",
+    "device_id": "2273",
+    "status": "off",
+    "created_at": "2025-06-03T20:08:00.473977",
+    "updated_at": "2025-06-08T03:55:28.483291"
+  },
+  "203": {
+    "device_command_id": "203",
+    "routine_id": "77",
+    "device_id": "2272",
+    "status": "off",
+    "created_at": "2025-06-14T06:01:17.805339",
+    "updated_at": "2025-06-30T15:16:09.313368"
+  },
+  "204": {
+    "device_command_id": "204",
+    "routine_id": "77",
+    "device_id": "2258",
+    "status": "off",
+    "created_at": "2025-06-05T04:29:14.013346",
+    "updated_at": "2025-07-30T08:40:09.422260"
+  },
+  "205": {
+    "device_command_id": "205",
+    "routine_id": "77",
+    "device_id": "2251",
+    "status": "off",
+    "created_at": "2025-06-03T01:17:06.012948",
+    "updated_at": "2025-06-23T17:07:28.605981"
+  },
+  "206": {
+    "device_command_id": "206",
+    "routine_id": "78",
+    "device_id": "2251",
+    "status": "on",
+    "created_at": "2025-06-11T07:47:23.561826",
+    "updated_at": "2025-07-24T06:32:52.227191"
+  },
+  "207": {
+    "device_command_id": "207",
+    "routine_id": "79",
+    "device_id": "2258",
+    "status": "off",
+    "created_at": "2025-06-21T23:37:00.956111",
+    "updated_at": "2025-07-15T10:34:25.538829"
+  },
+  "208": {
+    "device_command_id": "208",
+    "routine_id": "80",
+    "device_id": "2258",
+    "status": "on",
+    "created_at": "2025-06-19T21:52:19.194912",
+    "updated_at": "2025-07-31T00:48:37.707351"
+  },
+  "209": {
+    "device_command_id": "209",
+    "routine_id": "80",
+    "device_id": "2259",
+    "status": "on",
+    "created_at": "2025-06-12T15:29:35.196362",
+    "updated_at": "2025-06-16T00:01:58.497831"
+  },
+  "210": {
+    "device_command_id": "210",
+    "routine_id": "81",
+    "device_id": "2317",
+    "status": "off",
+    "created_at": "2025-06-17T23:24:28.234042",
+    "updated_at": "2025-07-11T00:21:23.456850"
+  },
+  "211": {
+    "device_command_id": "211",
+    "routine_id": "82",
+    "device_id": "2317",
+    "status": "off",
+    "created_at": "2025-06-30T19:30:44.600661",
+    "updated_at": "2025-07-16T18:48:52.257235"
+  },
+  "212": {
+    "device_command_id": "212",
+    "routine_id": "83",
+    "device_id": "2373",
+    "status": "off",
+    "created_at": "2025-06-04T09:32:03.512214",
+    "updated_at": "2025-07-25T17:15:22.018758"
+  },
+  "213": {
+    "device_command_id": "213",
+    "routine_id": "83",
+    "device_id": "2370",
+    "status": "off",
+    "created_at": "2025-06-14T07:43:02.211519",
+    "updated_at": "2025-06-20T03:48:10.295798"
+  },
+  "214": {
+    "device_command_id": "214",
+    "routine_id": "84",
+    "device_id": "2417",
+    "status": "off",
+    "created_at": "2025-06-28T23:58:11.502227",
+    "updated_at": "2025-07-12T09:35:35.808820"
+  },
+  "215": {
+    "device_command_id": "215",
+    "routine_id": "84",
+    "device_id": "2401",
+    "status": "off",
+    "created_at": "2025-06-27T00:21:58.728519",
+    "updated_at": "2025-07-21T16:01:46.273223"
+  },
+  "216": {
+    "device_command_id": "216",
+    "routine_id": "85",
+    "device_id": "2481",
+    "status": "on",
+    "created_at": "2025-06-21T03:47:28.297174",
+    "updated_at": "2025-07-26T03:28:21.697845"
+  },
+  "217": {
+    "device_command_id": "217",
+    "routine_id": "85",
+    "device_id": "2470",
+    "status": "on",
+    "created_at": "2025-06-06T01:55:58.568170",
+    "updated_at": "2025-06-15T11:56:05.136857"
+  },
+  "218": {
+    "device_command_id": "218",
+    "routine_id": "85",
+    "device_id": "2471",
+    "status": "off",
+    "created_at": "2025-06-20T01:18:59.399211",
+    "updated_at": "2025-07-07T10:11:39.793659"
+  },
+  "219": {
+    "device_command_id": "219",
+    "routine_id": "86",
+    "device_id": "2471",
+    "status": "off",
+    "created_at": "2025-06-06T21:30:07.009031",
+    "updated_at": "2025-07-04T23:42:25.328416"
+  },
+  "220": {
+    "device_command_id": "220",
+    "routine_id": "87",
+    "device_id": "2530",
+    "status": "on",
+    "created_at": "2025-06-08T12:58:11.593728",
+    "updated_at": "2025-07-13T18:59:54.869613"
+  },
+  "221": {
+    "device_command_id": "221",
+    "routine_id": "87",
+    "device_id": "2535",
+    "status": "off",
+    "created_at": "2025-06-21T06:05:16.476013",
+    "updated_at": "2025-07-12T10:05:54.552904"
+  },
+  "222": {
+    "device_command_id": "222",
+    "routine_id": "87",
+    "device_id": "2529",
+    "status": "on",
+    "created_at": "2025-06-02T03:46:12.824520",
+    "updated_at": "2025-06-04T10:32:48.659693"
+  },
+  "223": {
+    "device_command_id": "223",
+    "routine_id": "87",
+    "device_id": "2539",
+    "status": "off",
+    "created_at": "2025-06-10T02:09:42.772871",
+    "updated_at": "2025-07-08T14:53:08.819689"
+  },
+  "224": {
+    "device_command_id": "224",
+    "routine_id": "87",
+    "device_id": "2546",
+    "status": "on",
+    "created_at": "2025-06-28T18:18:35.116296",
+    "updated_at": "2025-07-07T02:24:09.869717"
+  },
+  "225": {
+    "device_command_id": "225",
+    "routine_id": "88",
+    "device_id": "2534",
+    "status": "on",
+    "created_at": "2025-06-22T19:42:24.685368",
+    "updated_at": "2025-06-29T14:33:51.008507"
+  },
+  "226": {
+    "device_command_id": "226",
+    "routine_id": "88",
+    "device_id": "2536",
+    "status": "off",
+    "created_at": "2025-06-15T22:23:55.264783",
+    "updated_at": "2025-06-20T22:57:22.514413"
+  },
+  "227": {
+    "device_command_id": "227",
+    "routine_id": "88",
+    "device_id": "2540",
+    "status": "on",
+    "created_at": "2025-06-26T04:26:54.601847",
+    "updated_at": "2025-07-26T19:27:43.570100"
+  },
+  "228": {
+    "device_command_id": "228",
+    "routine_id": "88",
+    "device_id": "2546",
+    "status": "off",
+    "created_at": "2025-06-13T04:32:19.156938",
+    "updated_at": "2025-06-24T14:37:31.265715"
+  },
+  "229": {
+    "device_command_id": "229",
+    "routine_id": "89",
+    "device_id": "2548",
+    "status": "off",
+    "created_at": "2025-06-28T16:50:19.077288",
+    "updated_at": "2025-07-09T00:38:47.537748"
+  },
+  "230": {
+    "device_command_id": "230",
+    "routine_id": "89",
+    "device_id": "2536",
+    "status": "off",
+    "created_at": "2025-06-25T06:01:30.022606",
+    "updated_at": "2025-07-29T00:18:02.950514"
+  },
+  "231": {
+    "device_command_id": "231",
+    "routine_id": "89",
+    "device_id": "2534",
+    "status": "on",
+    "created_at": "2025-06-24T10:52:55.755814",
+    "updated_at": "2025-07-15T06:35:12.133392"
+  },
+  "232": {
+    "device_command_id": "232",
+    "routine_id": "90",
+    "device_id": "2583",
+    "status": "on",
+    "created_at": "2025-06-17T14:08:25.371403",
+    "updated_at": "2025-06-26T08:24:46.677145"
+  },
+  "233": {
+    "device_command_id": "233",
+    "routine_id": "91",
+    "device_id": "2615",
+    "status": "on",
+    "created_at": "2025-06-18T18:31:57.607634",
+    "updated_at": "2025-06-30T23:43:45.815849"
+  },
+  "234": {
+    "device_command_id": "234",
+    "routine_id": "91",
+    "device_id": "2604",
+    "status": "off",
+    "created_at": "2025-06-03T02:59:11.922429",
+    "updated_at": "2025-07-23T21:14:10.446305"
+  },
+  "235": {
+    "device_command_id": "235",
+    "routine_id": "91",
+    "device_id": "2612",
+    "status": "off",
+    "created_at": "2025-06-16T00:11:06.726551",
+    "updated_at": "2025-07-26T17:14:53.734733"
+  },
+  "236": {
+    "device_command_id": "236",
+    "routine_id": "92",
+    "device_id": "2607",
+    "status": "on",
+    "created_at": "2025-06-23T01:20:39.245609",
+    "updated_at": "2025-07-05T15:28:17.295681"
+  },
+  "237": {
+    "device_command_id": "237",
+    "routine_id": "92",
+    "device_id": "2609",
+    "status": "off",
+    "created_at": "2025-06-26T11:40:13.339663",
+    "updated_at": "2025-07-09T17:30:42.874966"
+  },
+  "238": {
+    "device_command_id": "238",
+    "routine_id": "93",
+    "device_id": "2633",
+    "status": "off",
+    "created_at": "2025-06-28T17:51:58.271715",
+    "updated_at": "2025-07-26T11:09:46.299606"
+  },
+  "239": {
+    "device_command_id": "239",
+    "routine_id": "93",
+    "device_id": "2627",
+    "status": "on",
+    "created_at": "2025-06-26T16:30:47.261039",
+    "updated_at": "2025-07-24T22:56:35.436331"
+  },
+  "240": {
+    "device_command_id": "240",
+    "routine_id": "93",
+    "device_id": "2631",
+    "status": "on",
+    "created_at": "2025-06-14T21:29:47.077441",
+    "updated_at": "2025-07-09T08:03:40.223891"
+  },
+  "241": {
+    "device_command_id": "241",
+    "routine_id": "93",
+    "device_id": "2636",
+    "status": "off",
+    "created_at": "2025-06-28T18:08:45.369314",
+    "updated_at": "2025-07-27T14:14:31.373802"
+  },
+  "242": {
+    "device_command_id": "242",
+    "routine_id": "94",
+    "device_id": "2635",
+    "status": "on",
+    "created_at": "2025-06-03T13:30:18.625901",
+    "updated_at": "2025-07-09T04:07:45.991622"
+  },
+  "243": {
+    "device_command_id": "243",
+    "routine_id": "95",
+    "device_id": "2675",
+    "status": "on",
+    "created_at": "2025-06-24T20:52:57.246685",
+    "updated_at": "2025-07-05T01:07:33.751720"
+  },
+  "244": {
+    "device_command_id": "244",
+    "routine_id": "95",
+    "device_id": "2674",
+    "status": "on",
+    "created_at": "2025-06-02T07:18:26.120639",
+    "updated_at": "2025-07-25T09:44:49.958362"
+  },
+  "245": {
+    "device_command_id": "245",
+    "routine_id": "95",
+    "device_id": "2684",
+    "status": "off",
+    "created_at": "2025-06-30T09:38:25.049582",
+    "updated_at": "2025-07-02T12:33:00.295576"
+  },
+  "246": {
+    "device_command_id": "246",
+    "routine_id": "95",
+    "device_id": "2680",
+    "status": "off",
+    "created_at": "2025-06-15T05:06:44.243103",
+    "updated_at": "2025-06-16T12:36:19.667242"
+  },
+  "247": {
+    "device_command_id": "247",
+    "routine_id": "96",
+    "device_id": "2690",
+    "status": "off",
+    "created_at": "2025-06-04T19:35:25.267669",
+    "updated_at": "2025-07-04T02:32:57.621354"
+  },
+  "248": {
+    "device_command_id": "248",
+    "routine_id": "97",
+    "device_id": "2739",
+    "status": "off",
+    "created_at": "2025-06-23T03:33:53.091771",
+    "updated_at": "2025-06-28T00:27:17.573012"
+  },
+  "249": {
+    "device_command_id": "249",
+    "routine_id": "97",
+    "device_id": "2714",
+    "status": "off",
+    "created_at": "2025-06-05T02:21:18.994311",
+    "updated_at": "2025-07-15T20:26:47.185954"
+  },
+  "250": {
+    "device_command_id": "250",
+    "routine_id": "97",
+    "device_id": "2723",
+    "status": "off",
+    "created_at": "2025-06-24T19:11:09.471287",
+    "updated_at": "2025-07-23T10:25:54.063047"
+  },
+  "251": {
+    "device_command_id": "251",
+    "routine_id": "97",
+    "device_id": "2735",
+    "status": "on",
+    "created_at": "2025-06-16T07:41:00.614925",
+    "updated_at": "2025-07-08T22:06:50.489619"
+  },
+  "252": {
+    "device_command_id": "252",
+    "routine_id": "98",
+    "device_id": "2719",
+    "status": "on",
+    "created_at": "2025-06-22T02:13:02.210338",
+    "updated_at": "2025-07-28T02:26:45.149184"
+  },
+  "253": {
+    "device_command_id": "253",
+    "routine_id": "98",
+    "device_id": "2721",
+    "status": "off",
+    "created_at": "2025-06-22T16:03:53.135406",
+    "updated_at": "2025-06-23T17:34:52.862307"
+  },
+  "254": {
+    "device_command_id": "254",
+    "routine_id": "98",
+    "device_id": "2716",
+    "status": "on",
+    "created_at": "2025-06-23T08:04:50.315008",
+    "updated_at": "2025-06-30T23:46:16.396362"
+  },
+  "255": {
+    "device_command_id": "255",
+    "routine_id": "98",
+    "device_id": "2720",
+    "status": "off",
+    "created_at": "2025-06-29T03:45:07.853489",
+    "updated_at": "2025-07-14T01:25:35.702325"
+  },
+  "256": {
+    "device_command_id": "256",
+    "routine_id": "98",
+    "device_id": "2734",
+    "status": "on",
+    "created_at": "2025-07-01T12:18:41.478225",
+    "updated_at": "2025-07-12T18:01:09.667430"
+  },
+  "257": {
+    "device_command_id": "257",
+    "routine_id": "99",
+    "device_id": "2716",
+    "status": "on",
+    "created_at": "2025-06-30T13:38:18.291645",
+    "updated_at": "2025-07-25T06:36:06.973187"
+  },
+  "258": {
+    "device_command_id": "258",
+    "routine_id": "99",
+    "device_id": "2722",
+    "status": "on",
+    "created_at": "2025-06-17T01:29:28.889568",
+    "updated_at": "2025-07-28T19:31:21.886049"
+  },
+  "259": {
+    "device_command_id": "259",
+    "routine_id": "100",
+    "device_id": "2722",
+    "status": "off",
+    "created_at": "2025-06-21T07:30:04.671261",
+    "updated_at": "2025-07-16T14:35:41.904448"
+  },
+  "260": {
+    "device_command_id": "260",
+    "routine_id": "100",
+    "device_id": "2716",
+    "status": "on",
+    "created_at": "2025-06-11T22:44:16.617611",
+    "updated_at": "2025-06-22T13:34:05.666463"
+  },
+  "261": {
+    "device_command_id": "261",
+    "routine_id": "101",
+    "device_id": "2768",
+    "status": "off",
+    "created_at": "2025-06-19T22:46:35.206603",
+    "updated_at": "2025-07-22T21:18:06.130150"
+  },
+  "262": {
+    "device_command_id": "262",
+    "routine_id": "101",
+    "device_id": "2774",
+    "status": "off",
+    "created_at": "2025-06-08T17:09:25.683417",
+    "updated_at": "2025-06-09T22:36:28.668608"
+  },
+  "263": {
+    "device_command_id": "263",
+    "routine_id": "101",
+    "device_id": "2776",
+    "status": "off",
+    "created_at": "2025-06-05T06:23:47.824230",
+    "updated_at": "2025-07-11T00:23:01.944615"
+  },
+  "264": {
+    "device_command_id": "264",
+    "routine_id": "101",
+    "device_id": "2764",
+    "status": "on",
+    "created_at": "2025-06-21T10:16:45.724536",
+    "updated_at": "2025-07-11T17:31:12.228211"
+  },
+  "265": {
+    "device_command_id": "265",
+    "routine_id": "102",
+    "device_id": "2819",
+    "status": "on",
+    "created_at": "2025-06-21T23:57:50.332976",
+    "updated_at": "2025-07-09T13:46:49.609342"
+  },
+  "266": {
+    "device_command_id": "266",
+    "routine_id": "102",
+    "device_id": "2818",
+    "status": "off",
+    "created_at": "2025-06-08T14:12:43.624537",
+    "updated_at": "2025-07-09T00:54:40.764727"
+  },
+  "267": {
+    "device_command_id": "267",
+    "routine_id": "102",
+    "device_id": "2822",
+    "status": "off",
+    "created_at": "2025-06-12T07:04:01.041697",
+    "updated_at": "2025-07-25T04:21:21.157562"
+  },
+  "268": {
+    "device_command_id": "268",
+    "routine_id": "102",
+    "device_id": "2809",
+    "status": "on",
+    "created_at": "2025-06-27T21:44:19.573772",
+    "updated_at": "2025-07-25T11:35:27.887430"
+  },
+  "269": {
+    "device_command_id": "269",
+    "routine_id": "102",
+    "device_id": "2814",
+    "status": "on",
+    "created_at": "2025-06-24T01:23:55.594782",
+    "updated_at": "2025-07-27T23:07:37.106467"
+  },
+  "270": {
+    "device_command_id": "270",
+    "routine_id": "102",
+    "device_id": "2823",
+    "status": "on",
+    "created_at": "2025-06-23T03:41:36.791470",
+    "updated_at": "2025-07-05T19:08:36.719911"
+  },
+  "271": {
+    "device_command_id": "271",
+    "routine_id": "103",
+    "device_id": "2812",
+    "status": "on",
+    "created_at": "2025-06-12T05:11:11.131215",
+    "updated_at": "2025-06-12T18:24:29.642073"
+  },
+  "272": {
+    "device_command_id": "272",
+    "routine_id": "103",
+    "device_id": "2822",
+    "status": "off",
+    "created_at": "2025-06-06T00:01:39.649791",
+    "updated_at": "2025-06-30T19:32:51.511070"
+  },
+  "273": {
+    "device_command_id": "273",
+    "routine_id": "104",
+    "device_id": "2885",
+    "status": "on",
+    "created_at": "2025-06-23T22:06:38.695019",
+    "updated_at": "2025-07-31T09:50:07.451205"
+  },
+  "274": {
+    "device_command_id": "274",
+    "routine_id": "104",
+    "device_id": "2877",
+    "status": "on",
+    "created_at": "2025-06-07T13:12:37.136023",
+    "updated_at": "2025-07-29T15:55:21.613426"
+  },
+  "275": {
+    "device_command_id": "275",
+    "routine_id": "104",
+    "device_id": "2872",
+    "status": "off",
+    "created_at": "2025-06-01T14:58:03.786932",
+    "updated_at": "2025-06-01T21:28:00.908047"
+  },
+  "276": {
+    "device_command_id": "276",
+    "routine_id": "104",
+    "device_id": "2876",
+    "status": "on",
+    "created_at": "2025-06-07T03:01:27.326328",
+    "updated_at": "2025-07-20T18:49:46.404482"
+  },
+  "277": {
+    "device_command_id": "277",
+    "routine_id": "105",
+    "device_id": "2910",
+    "status": "off",
+    "created_at": "2025-06-08T04:31:45.183342",
+    "updated_at": "2025-07-06T08:14:59.886118"
+  },
+  "278": {
+    "device_command_id": "278",
+    "routine_id": "105",
+    "device_id": "2908",
+    "status": "on",
+    "created_at": "2025-06-07T14:16:41.679098",
+    "updated_at": "2025-06-22T00:56:53.359108"
+  },
+  "279": {
+    "device_command_id": "279",
+    "routine_id": "105",
+    "device_id": "2905",
+    "status": "off",
+    "created_at": "2025-06-12T06:39:10.538868",
+    "updated_at": "2025-06-26T10:55:57.917271"
+  },
+  "280": {
+    "device_command_id": "280",
+    "routine_id": "105",
+    "device_id": "2903",
+    "status": "on",
+    "created_at": "2025-06-14T14:46:41.428698",
+    "updated_at": "2025-07-04T09:51:41.895733"
+  },
+  "281": {
+    "device_command_id": "281",
+    "routine_id": "106",
+    "device_id": "2902",
+    "status": "on",
+    "created_at": "2025-06-15T16:05:30.203149",
+    "updated_at": "2025-07-16T07:54:39.909608"
+  },
+  "282": {
+    "device_command_id": "282",
+    "routine_id": "106",
+    "device_id": "2909",
+    "status": "off",
+    "created_at": "2025-06-05T16:36:59.963234",
+    "updated_at": "2025-06-11T05:17:04.024146"
+  },
+  "283": {
+    "device_command_id": "283",
+    "routine_id": "106",
+    "device_id": "2910",
+    "status": "on",
+    "created_at": "2025-06-14T00:27:33.509122",
+    "updated_at": "2025-07-16T08:43:55.517557"
+  },
+  "284": {
+    "device_command_id": "284",
+    "routine_id": "106",
+    "device_id": "2905",
+    "status": "off",
+    "created_at": "2025-06-20T07:42:26.292305",
+    "updated_at": "2025-06-20T14:42:00.001301"
+  },
+  "285": {
+    "device_command_id": "285",
+    "routine_id": "106",
+    "device_id": "2907",
+    "status": "off",
+    "created_at": "2025-06-09T07:24:00.109292",
+    "updated_at": "2025-07-16T01:33:16.332531"
+  },
+  "286": {
+    "device_command_id": "286",
+    "routine_id": "107",
+    "device_id": "2915",
+    "status": "on",
+    "created_at": "2025-06-23T13:20:50.153212",
+    "updated_at": "2025-07-06T00:31:23.363918"
+  },
+  "287": {
+    "device_command_id": "287",
+    "routine_id": "107",
+    "device_id": "2914",
+    "status": "off",
+    "created_at": "2025-06-22T18:39:18.092547",
+    "updated_at": "2025-06-29T07:29:40.167311"
+  },
+  "288": {
+    "device_command_id": "288",
+    "routine_id": "107",
+    "device_id": "2916",
+    "status": "on",
+    "created_at": "2025-06-16T13:25:54.466010",
+    "updated_at": "2025-06-28T08:49:24.743381"
+  },
+  "289": {
+    "device_command_id": "289",
+    "routine_id": "108",
+    "device_id": "2915",
+    "status": "off",
+    "created_at": "2025-06-09T04:44:33.268724",
+    "updated_at": "2025-06-14T10:38:52.407116"
+  },
+  "290": {
+    "device_command_id": "290",
+    "routine_id": "109",
+    "device_id": "2935",
+    "status": "on",
+    "created_at": "2025-06-03T07:32:37.070733",
+    "updated_at": "2025-07-24T10:22:09.394090"
+  },
+  "291": {
+    "device_command_id": "291",
+    "routine_id": "110",
+    "device_id": "2947",
+    "status": "off",
+    "created_at": "2025-06-19T18:51:45.653179",
+    "updated_at": "2025-06-30T15:01:05.128278"
+  },
+  "292": {
+    "device_command_id": "292",
+    "routine_id": "110",
+    "device_id": "2944",
+    "status": "on",
+    "created_at": "2025-06-27T16:27:54.256060",
+    "updated_at": "2025-07-16T17:58:18.356743"
+  },
+  "293": {
+    "device_command_id": "293",
+    "routine_id": "110",
+    "device_id": "2941",
+    "status": "on",
+    "created_at": "2025-06-23T08:13:26.149917",
+    "updated_at": "2025-06-29T03:39:09.455384"
+  },
+  "294": {
+    "device_command_id": "294",
+    "routine_id": "111",
+    "device_id": "2955",
+    "status": "off",
+    "created_at": "2025-06-03T23:50:36.855573",
+    "updated_at": "2025-07-07T05:13:22.920865"
+  },
+  "295": {
+    "device_command_id": "295",
+    "routine_id": "112",
+    "device_id": "2985",
+    "status": "on",
+    "created_at": "2025-06-19T14:17:01.547113",
+    "updated_at": "2025-07-22T05:39:31.759100"
+  },
+  "296": {
+    "device_command_id": "296",
+    "routine_id": "112",
+    "device_id": "2986",
+    "status": "off",
+    "created_at": "2025-06-10T04:42:51.836184",
+    "updated_at": "2025-06-16T19:19:52.908904"
+  },
+  "297": {
+    "device_command_id": "297",
+    "routine_id": "112",
+    "device_id": "2983",
+    "status": "off",
+    "created_at": "2025-06-02T18:41:38.348357",
+    "updated_at": "2025-07-26T04:03:01.369043"
+  },
+  "298": {
+    "device_command_id": "298",
+    "routine_id": "112",
+    "device_id": "2991",
+    "status": "on",
+    "created_at": "2025-06-29T06:01:11.135768",
+    "updated_at": "2025-07-09T06:16:44.725671"
+  },
+  "299": {
+    "device_command_id": "299",
+    "routine_id": "113",
+    "device_id": "3000",
+    "status": "on",
+    "created_at": "2025-06-14T16:40:09.206337",
+    "updated_at": "2025-07-07T08:49:56.589164"
+  },
+  "300": {
+    "device_command_id": "300",
+    "routine_id": "113",
+    "device_id": "2991",
+    "status": "on",
+    "created_at": "2025-06-23T03:26:07.619581",
+    "updated_at": "2025-07-03T11:51:38.263736"
+  },
+  "301": {
+    "device_command_id": "301",
+    "routine_id": "113",
+    "device_id": "2990",
+    "status": "on",
+    "created_at": "2025-06-04T05:14:00.352568",
+    "updated_at": "2025-06-18T10:57:34.950201"
+  },
+  "302": {
+    "device_command_id": "302",
+    "routine_id": "113",
+    "device_id": "2983",
+    "status": "on",
+    "created_at": "2025-06-30T17:56:36.685036",
+    "updated_at": "2025-07-10T00:43:29.466145"
+  },
+  "303": {
+    "device_command_id": "303",
+    "routine_id": "114",
+    "device_id": "3012",
+    "status": "off",
+    "created_at": "2025-06-11T20:45:54.717171",
+    "updated_at": "2025-07-06T03:42:38.922731"
+  },
+  "304": {
+    "device_command_id": "304",
+    "routine_id": "114",
+    "device_id": "3005",
+    "status": "off",
+    "created_at": "2025-06-23T22:07:58.450698",
+    "updated_at": "2025-07-01T17:55:31.063455"
+  },
+  "305": {
+    "device_command_id": "305",
+    "routine_id": "114",
+    "device_id": "3017",
+    "status": "off",
+    "created_at": "2025-06-12T19:10:00.043490",
+    "updated_at": "2025-07-25T06:27:58.910730"
+  },
+  "306": {
+    "device_command_id": "306",
+    "routine_id": "114",
+    "device_id": "3020",
+    "status": "off",
+    "created_at": "2025-06-08T13:33:43.654671",
+    "updated_at": "2025-06-25T10:10:27.284594"
+  },
+  "307": {
+    "device_command_id": "307",
+    "routine_id": "114",
+    "device_id": "3002",
+    "status": "on",
+    "created_at": "2025-06-09T13:02:35.618740",
+    "updated_at": "2025-06-09T22:43:01.453091"
+  },
+  "308": {
+    "device_command_id": "308",
+    "routine_id": "115",
+    "device_id": "3010",
+    "status": "off",
+    "created_at": "2025-06-28T22:12:07.065165",
+    "updated_at": "2025-07-12T23:25:17.013626"
+  },
+  "309": {
+    "device_command_id": "309",
+    "routine_id": "115",
+    "device_id": "3008",
+    "status": "off",
+    "created_at": "2025-06-27T17:37:23.488368",
+    "updated_at": "2025-07-15T16:26:59.088939"
+  },
+  "310": {
+    "device_command_id": "310",
+    "routine_id": "115",
+    "device_id": "3007",
+    "status": "on",
+    "created_at": "2025-06-08T10:23:22.324791",
+    "updated_at": "2025-07-08T20:06:33.999041"
+  },
+  "311": {
+    "device_command_id": "311",
+    "routine_id": "115",
+    "device_id": "3009",
+    "status": "on",
+    "created_at": "2025-06-09T21:02:43.447356",
+    "updated_at": "2025-06-24T17:20:51.628749"
+  },
+  "312": {
+    "device_command_id": "312",
+    "routine_id": "115",
+    "device_id": "3012",
+    "status": "off",
+    "created_at": "2025-06-17T23:33:44.930010",
+    "updated_at": "2025-07-23T06:53:04.009713"
+  },
+  "313": {
+    "device_command_id": "313",
+    "routine_id": "116",
+    "device_id": "3028",
+    "status": "on",
+    "created_at": "2025-06-07T02:48:23.127181",
+    "updated_at": "2025-06-19T11:12:02.781274"
+  },
+  "314": {
+    "device_command_id": "314",
+    "routine_id": "116",
+    "device_id": "3034",
+    "status": "on",
+    "created_at": "2025-06-20T19:43:43.189938",
+    "updated_at": "2025-06-27T02:25:54.913599"
+  },
+  "315": {
+    "device_command_id": "315",
+    "routine_id": "116",
+    "device_id": "3026",
+    "status": "off",
+    "created_at": "2025-06-20T13:09:15.329089",
+    "updated_at": "2025-07-22T01:48:44.559881"
+  },
+  "316": {
+    "device_command_id": "316",
+    "routine_id": "116",
+    "device_id": "3042",
+    "status": "off",
+    "created_at": "2025-06-13T16:56:42.706659",
+    "updated_at": "2025-06-16T16:48:00.545546"
+  },
+  "317": {
+    "device_command_id": "317",
+    "routine_id": "117",
+    "device_id": "3096",
+    "status": "off",
+    "created_at": "2025-06-13T10:13:18.931671",
+    "updated_at": "2025-06-18T06:46:37.695128"
+  },
+  "318": {
+    "device_command_id": "318",
+    "routine_id": "117",
+    "device_id": "3087",
+    "status": "on",
+    "created_at": "2025-06-29T10:10:39.362900",
+    "updated_at": "2025-07-23T04:00:28.590287"
+  },
+  "319": {
+    "device_command_id": "319",
+    "routine_id": "117",
+    "device_id": "3088",
+    "status": "on",
+    "created_at": "2025-06-30T12:10:50.418592",
+    "updated_at": "2025-07-10T09:01:53.538297"
+  },
+  "320": {
+    "device_command_id": "320",
+    "routine_id": "117",
+    "device_id": "3093",
+    "status": "off",
+    "created_at": "2025-06-12T04:10:11.682991",
+    "updated_at": "2025-07-08T20:17:29.563553"
+  },
+  "321": {
+    "device_command_id": "321",
+    "routine_id": "117",
+    "device_id": "3082",
+    "status": "off",
+    "created_at": "2025-06-26T19:49:55.074423",
+    "updated_at": "2025-07-16T03:36:35.168002"
+  },
+  "322": {
+    "device_command_id": "322",
+    "routine_id": "118",
+    "device_id": "22",
+    "status": "on",
+    "created_at": "2025-06-11T03:45:12.560118",
+    "updated_at": "2025-06-16T10:25:19.326596"
+  },
+  "323": {
+    "device_command_id": "323",
+    "routine_id": "118",
+    "device_id": "14",
+    "status": "on",
+    "created_at": "2025-06-15T10:08:43.840045",
+    "updated_at": "2025-07-15T11:37:55.958797"
+  },
+  "324": {
+    "device_command_id": "324",
+    "routine_id": "119",
+    "device_id": "14",
+    "status": "off",
+    "created_at": "2025-06-21T13:41:15.449729",
+    "updated_at": "2025-07-22T14:28:41.130125"
+  },
+  "325": {
+    "device_command_id": "325",
+    "routine_id": "120",
+    "device_id": "76",
+    "status": "on",
+    "created_at": "2025-06-11T10:13:41.890478",
+    "updated_at": "2025-06-26T12:01:10.543765"
+  },
+  "326": {
+    "device_command_id": "326",
+    "routine_id": "120",
+    "device_id": "77",
+    "status": "off",
+    "created_at": "2025-06-13T19:11:09.543771",
+    "updated_at": "2025-07-06T16:35:05.257162"
+  },
+  "327": {
+    "device_command_id": "327",
+    "routine_id": "120",
+    "device_id": "78",
+    "status": "on",
+    "created_at": "2025-06-22T23:20:41.034768",
+    "updated_at": "2025-07-20T12:15:25.314015"
+  },
+  "328": {
+    "device_command_id": "328",
+    "routine_id": "121",
+    "device_id": "114",
+    "status": "off",
+    "created_at": "2025-06-09T04:05:59.085958",
+    "updated_at": "2025-06-21T14:25:56.788458"
+  },
+  "329": {
+    "device_command_id": "329",
+    "routine_id": "121",
+    "device_id": "108",
+    "status": "off",
+    "created_at": "2025-07-01T01:04:47.762034",
+    "updated_at": "2025-07-11T00:31:50.004677"
+  },
+  "330": {
+    "device_command_id": "330",
+    "routine_id": "121",
+    "device_id": "115",
+    "status": "off",
+    "created_at": "2025-06-22T02:03:47.934046",
+    "updated_at": "2025-07-22T00:31:54.987166"
+  },
+  "331": {
+    "device_command_id": "331",
+    "routine_id": "121",
+    "device_id": "104",
+    "status": "off",
+    "created_at": "2025-07-01T05:44:08.784951",
+    "updated_at": "2025-07-14T17:04:19.308524"
+  },
+  "332": {
+    "device_command_id": "332",
+    "routine_id": "121",
+    "device_id": "116",
+    "status": "off",
+    "created_at": "2025-06-12T13:33:03.056483",
+    "updated_at": "2025-06-28T20:53:45.605947"
+  },
+  "333": {
+    "device_command_id": "333",
+    "routine_id": "122",
+    "device_id": "108",
+    "status": "on",
+    "created_at": "2025-06-18T15:41:54.775246",
+    "updated_at": "2025-07-01T02:24:18.790524"
+  },
+  "334": {
+    "device_command_id": "334",
+    "routine_id": "122",
+    "device_id": "116",
+    "status": "on",
+    "created_at": "2025-06-24T06:25:22.522106",
+    "updated_at": "2025-06-27T01:56:56.167937"
+  },
+  "335": {
+    "device_command_id": "335",
+    "routine_id": "122",
+    "device_id": "107",
+    "status": "off",
+    "created_at": "2025-06-06T04:09:43.406061",
+    "updated_at": "2025-06-14T09:26:54.172728"
+  },
+  "336": {
+    "device_command_id": "336",
+    "routine_id": "123",
+    "device_id": "146",
+    "status": "off",
+    "created_at": "2025-06-17T14:07:37.385703",
+    "updated_at": "2025-07-07T14:05:33.014354"
+  },
+  "337": {
+    "device_command_id": "337",
+    "routine_id": "123",
+    "device_id": "156",
+    "status": "on",
+    "created_at": "2025-06-29T13:12:57.651037",
+    "updated_at": "2025-07-21T00:42:50.758543"
+  },
+  "338": {
+    "device_command_id": "338",
+    "routine_id": "123",
+    "device_id": "162",
+    "status": "on",
+    "created_at": "2025-06-08T21:05:29.889564",
+    "updated_at": "2025-07-27T18:49:05.493338"
+  },
+  "339": {
+    "device_command_id": "339",
+    "routine_id": "124",
+    "device_id": "193",
+    "status": "on",
+    "created_at": "2025-06-03T09:49:27.775833",
+    "updated_at": "2025-07-07T07:29:46.394890"
+  },
+  "340": {
+    "device_command_id": "340",
+    "routine_id": "124",
+    "device_id": "208",
+    "status": "on",
+    "created_at": "2025-06-15T16:02:39.947473",
+    "updated_at": "2025-07-27T18:03:45.754347"
+  },
+  "341": {
+    "device_command_id": "341",
+    "routine_id": "124",
+    "device_id": "200",
+    "status": "off",
+    "created_at": "2025-06-12T18:26:14.423756",
+    "updated_at": "2025-07-24T21:13:40.484324"
+  },
+  "342": {
+    "device_command_id": "342",
+    "routine_id": "125",
+    "device_id": "200",
+    "status": "on",
+    "created_at": "2025-06-25T08:25:09.044573",
+    "updated_at": "2025-07-08T10:50:33.610049"
+  },
+  "343": {
+    "device_command_id": "343",
+    "routine_id": "125",
+    "device_id": "193",
+    "status": "off",
+    "created_at": "2025-06-22T14:39:46.295783",
+    "updated_at": "2025-07-01T16:02:47.179756"
+  },
+  "344": {
+    "device_command_id": "344",
+    "routine_id": "126",
+    "device_id": "320",
+    "status": "off",
+    "created_at": "2025-06-26T12:00:13.325302",
+    "updated_at": "2025-07-12T06:15:11.457839"
+  },
+  "345": {
+    "device_command_id": "345",
+    "routine_id": "126",
+    "device_id": "305",
+    "status": "on",
+    "created_at": "2025-06-21T18:59:13.677382",
+    "updated_at": "2025-07-22T09:37:29.630615"
+  },
+  "346": {
+    "device_command_id": "346",
+    "routine_id": "126",
+    "device_id": "319",
+    "status": "on",
+    "created_at": "2025-06-26T18:58:51.032064",
+    "updated_at": "2025-07-09T00:28:54.720166"
+  },
+  "347": {
+    "device_command_id": "347",
+    "routine_id": "127",
+    "device_id": "305",
+    "status": "off",
+    "created_at": "2025-06-06T03:55:19.136571",
+    "updated_at": "2025-06-27T02:56:52.827819"
+  },
+  "348": {
+    "device_command_id": "348",
+    "routine_id": "127",
+    "device_id": "320",
+    "status": "on",
+    "created_at": "2025-06-27T18:25:17.050411",
+    "updated_at": "2025-07-18T18:21:18.018526"
+  },
+  "349": {
+    "device_command_id": "349",
+    "routine_id": "127",
+    "device_id": "304",
+    "status": "on",
+    "created_at": "2025-06-23T01:39:10.603921",
+    "updated_at": "2025-07-15T13:16:35.798066"
+  },
+  "350": {
+    "device_command_id": "350",
+    "routine_id": "127",
+    "device_id": "311",
+    "status": "on",
+    "created_at": "2025-06-17T05:30:58.015664",
+    "updated_at": "2025-06-19T20:20:12.414690"
+  },
+  "351": {
+    "device_command_id": "351",
+    "routine_id": "128",
+    "device_id": "377",
+    "status": "off",
+    "created_at": "2025-06-24T00:33:15.207204",
+    "updated_at": "2025-07-02T02:57:22.583584"
+  },
+  "352": {
+    "device_command_id": "352",
+    "routine_id": "128",
+    "device_id": "382",
+    "status": "off",
+    "created_at": "2025-06-23T06:48:48.607055",
+    "updated_at": "2025-07-10T18:44:04.292214"
+  },
+  "353": {
+    "device_command_id": "353",
+    "routine_id": "128",
+    "device_id": "394",
+    "status": "on",
+    "created_at": "2025-06-15T22:15:23.430387",
+    "updated_at": "2025-07-28T07:09:45.472160"
+  },
+  "354": {
+    "device_command_id": "354",
+    "routine_id": "129",
+    "device_id": "377",
+    "status": "on",
+    "created_at": "2025-06-05T15:29:20.195318",
+    "updated_at": "2025-06-25T18:33:16.283100"
+  },
+  "355": {
+    "device_command_id": "355",
+    "routine_id": "130",
+    "device_id": "457",
+    "status": "on",
+    "created_at": "2025-06-10T03:01:40.799374",
+    "updated_at": "2025-07-29T15:57:48.730714"
+  },
+  "356": {
+    "device_command_id": "356",
+    "routine_id": "130",
+    "device_id": "447",
+    "status": "off",
+    "created_at": "2025-06-22T12:56:12.131154",
+    "updated_at": "2025-07-31T08:30:13.621186"
+  },
+  "357": {
+    "device_command_id": "357",
+    "routine_id": "130",
+    "device_id": "443",
+    "status": "on",
+    "created_at": "2025-06-13T21:46:56.307781",
+    "updated_at": "2025-06-26T01:02:19.308761"
+  },
+  "358": {
+    "device_command_id": "358",
+    "routine_id": "131",
+    "device_id": "573",
+    "status": "on",
+    "created_at": "2025-06-12T08:15:17.794844",
+    "updated_at": "2025-06-13T00:46:44.067199"
+  },
+  "359": {
+    "device_command_id": "359",
+    "routine_id": "132",
+    "device_id": "752",
+    "status": "on",
+    "created_at": "2025-06-04T14:31:02.723116",
+    "updated_at": "2025-07-18T12:02:23.909183"
+  },
+  "360": {
+    "device_command_id": "360",
+    "routine_id": "132",
+    "device_id": "758",
+    "status": "on",
+    "created_at": "2025-06-05T01:47:54.027256",
+    "updated_at": "2025-07-25T08:57:25.192584"
+  },
+  "361": {
+    "device_command_id": "361",
+    "routine_id": "132",
+    "device_id": "767",
+    "status": "on",
+    "created_at": "2025-06-04T08:34:16.928609",
+    "updated_at": "2025-07-03T02:01:34.985301"
+  },
+  "362": {
+    "device_command_id": "362",
+    "routine_id": "133",
+    "device_id": "767",
+    "status": "off",
+    "created_at": "2025-06-22T08:26:17.141977",
+    "updated_at": "2025-07-30T04:39:02.665188"
+  },
+  "363": {
+    "device_command_id": "363",
+    "routine_id": "133",
+    "device_id": "752",
+    "status": "on",
+    "created_at": "2025-06-26T14:32:05.589937",
+    "updated_at": "2025-06-26T17:02:14.422328"
+  },
+  "364": {
+    "device_command_id": "364",
+    "routine_id": "134",
+    "device_id": "753",
+    "status": "off",
+    "created_at": "2025-06-24T01:19:09.886182",
+    "updated_at": "2025-07-26T06:24:03.384895"
+  },
+  "365": {
+    "device_command_id": "365",
+    "routine_id": "134",
+    "device_id": "754",
+    "status": "on",
+    "created_at": "2025-06-10T13:00:43.263982",
+    "updated_at": "2025-07-28T20:39:04.533632"
+  },
+  "366": {
+    "device_command_id": "366",
+    "routine_id": "135",
+    "device_id": "838",
+    "status": "off",
+    "created_at": "2025-06-22T06:19:19.126047",
+    "updated_at": "2025-07-30T16:38:56.486203"
+  },
+  "367": {
+    "device_command_id": "367",
+    "routine_id": "136",
+    "device_id": "833",
+    "status": "off",
+    "created_at": "2025-06-02T03:45:36.753018",
+    "updated_at": "2025-07-15T11:29:29.630635"
+  },
+  "368": {
+    "device_command_id": "368",
+    "routine_id": "137",
+    "device_id": "1040",
+    "status": "off",
+    "created_at": "2025-06-12T08:53:53.396036",
+    "updated_at": "2025-07-23T01:42:14.089071"
+  },
+  "369": {
+    "device_command_id": "369",
+    "routine_id": "138",
+    "device_id": "1057",
+    "status": "on",
+    "created_at": "2025-06-09T11:09:48.008554",
+    "updated_at": "2025-07-10T07:52:38.667328"
+  },
+  "370": {
+    "device_command_id": "370",
+    "routine_id": "139",
+    "device_id": "1059",
+    "status": "off",
+    "created_at": "2025-06-29T20:10:43.282475",
+    "updated_at": "2025-07-01T06:02:34.709102"
+  },
+  "371": {
+    "device_command_id": "371",
+    "routine_id": "139",
+    "device_id": "1068",
+    "status": "on",
+    "created_at": "2025-06-23T17:06:56.192579",
+    "updated_at": "2025-07-12T15:34:13.937983"
+  },
+  "372": {
+    "device_command_id": "372",
+    "routine_id": "140",
+    "device_id": "1116",
+    "status": "on",
+    "created_at": "2025-06-10T00:37:10.762583",
+    "updated_at": "2025-07-23T09:36:58.980741"
+  },
+  "373": {
+    "device_command_id": "373",
+    "routine_id": "141",
+    "device_id": "1151",
+    "status": "off",
+    "created_at": "2025-06-28T09:10:20.937974",
+    "updated_at": "2025-07-11T08:01:07.668561"
+  },
+  "374": {
+    "device_command_id": "374",
+    "routine_id": "142",
+    "device_id": "1136",
+    "status": "on",
+    "created_at": "2025-06-28T18:52:31.669698",
+    "updated_at": "2025-06-29T23:19:07.811861"
+  },
+  "375": {
+    "device_command_id": "375",
+    "routine_id": "142",
+    "device_id": "1143",
+    "status": "off",
+    "created_at": "2025-06-03T21:23:59.364653",
+    "updated_at": "2025-07-18T13:11:17.123131"
+  },
+  "376": {
+    "device_command_id": "376",
+    "routine_id": "143",
+    "device_id": "1177",
+    "status": "off",
+    "created_at": "2025-06-05T15:36:10.589588",
+    "updated_at": "2025-06-07T18:00:01.620227"
+  },
+  "377": {
+    "device_command_id": "377",
+    "routine_id": "144",
+    "device_id": "1177",
+    "status": "on",
+    "created_at": "2025-06-09T10:51:25.400868",
+    "updated_at": "2025-07-25T11:29:12.965577"
+  },
+  "378": {
+    "device_command_id": "378",
+    "routine_id": "145",
+    "device_id": "1212",
+    "status": "off",
+    "created_at": "2025-06-02T15:47:49.875789",
+    "updated_at": "2025-06-23T01:36:44.883500"
+  },
+  "379": {
+    "device_command_id": "379",
+    "routine_id": "145",
+    "device_id": "1213",
+    "status": "off",
+    "created_at": "2025-06-24T19:07:24.707024",
+    "updated_at": "2025-07-23T02:54:12.473607"
+  },
+  "380": {
+    "device_command_id": "380",
+    "routine_id": "146",
+    "device_id": "1245",
+    "status": "off",
+    "created_at": "2025-06-10T17:33:20.836877",
+    "updated_at": "2025-07-18T14:42:50.982426"
+  },
+  "381": {
+    "device_command_id": "381",
+    "routine_id": "147",
+    "device_id": "1257",
+    "status": "off",
+    "created_at": "2025-06-19T22:26:25.694461",
+    "updated_at": "2025-06-29T17:16:12.211491"
+  },
+  "382": {
+    "device_command_id": "382",
+    "routine_id": "147",
+    "device_id": "1240",
+    "status": "off",
+    "created_at": "2025-06-19T11:44:43.104194",
+    "updated_at": "2025-06-26T05:50:10.906607"
+  },
+  "383": {
+    "device_command_id": "383",
+    "routine_id": "147",
+    "device_id": "1245",
+    "status": "off",
+    "created_at": "2025-06-24T16:51:52.208539",
+    "updated_at": "2025-06-26T06:48:47.372704"
+  },
+  "384": {
+    "device_command_id": "384",
+    "routine_id": "148",
+    "device_id": "1261",
+    "status": "off",
+    "created_at": "2025-06-11T16:51:15.627051",
+    "updated_at": "2025-06-26T22:13:49.521930"
+  },
+  "385": {
+    "device_command_id": "385",
+    "routine_id": "148",
+    "device_id": "1276",
+    "status": "off",
+    "created_at": "2025-06-28T21:43:49.553326",
+    "updated_at": "2025-07-10T18:10:00.748780"
+  },
+  "386": {
+    "device_command_id": "386",
+    "routine_id": "148",
+    "device_id": "1262",
+    "status": "on",
+    "created_at": "2025-06-14T08:34:43.532251",
+    "updated_at": "2025-07-08T20:00:38.599978"
+  },
+  "387": {
+    "device_command_id": "387",
+    "routine_id": "149",
+    "device_id": "1308",
+    "status": "off",
+    "created_at": "2025-06-05T13:48:13.705348",
+    "updated_at": "2025-07-23T02:35:52.595926"
+  },
+  "388": {
+    "device_command_id": "388",
+    "routine_id": "149",
+    "device_id": "1293",
+    "status": "on",
+    "created_at": "2025-06-28T14:32:21.440088",
+    "updated_at": "2025-07-25T15:41:10.148328"
+  },
+  "389": {
+    "device_command_id": "389",
+    "routine_id": "150",
+    "device_id": "1299",
+    "status": "on",
+    "created_at": "2025-06-15T19:45:09.969458",
+    "updated_at": "2025-07-11T04:26:37.257329"
+  },
+  "390": {
+    "device_command_id": "390",
+    "routine_id": "151",
+    "device_id": "1335",
+    "status": "on",
+    "created_at": "2025-06-23T16:53:39.113674",
+    "updated_at": "2025-07-18T11:16:20.526693"
+  },
+  "391": {
+    "device_command_id": "391",
+    "routine_id": "152",
+    "device_id": "1337",
+    "status": "on",
+    "created_at": "2025-07-01T07:58:26.851864",
+    "updated_at": "2025-07-25T03:49:12.145632"
+  },
+  "392": {
+    "device_command_id": "392",
+    "routine_id": "152",
+    "device_id": "1340",
+    "status": "off",
+    "created_at": "2025-06-17T21:26:15.228857",
+    "updated_at": "2025-06-22T00:42:31.937110"
+  },
+  "393": {
+    "device_command_id": "393",
+    "routine_id": "153",
+    "device_id": "1352",
+    "status": "off",
+    "created_at": "2025-06-29T11:46:07.375670",
+    "updated_at": "2025-07-30T21:16:01.428581"
+  },
+  "394": {
+    "device_command_id": "394",
+    "routine_id": "154",
+    "device_id": "1514",
+    "status": "on",
+    "created_at": "2025-06-29T07:38:56.197542",
+    "updated_at": "2025-07-26T21:33:41.285976"
+  },
+  "395": {
+    "device_command_id": "395",
+    "routine_id": "155",
+    "device_id": "1594",
+    "status": "off",
+    "created_at": "2025-06-29T23:11:09.276516",
+    "updated_at": "2025-07-14T11:09:05.116338"
+  },
+  "396": {
+    "device_command_id": "396",
+    "routine_id": "155",
+    "device_id": "1580",
+    "status": "off",
+    "created_at": "2025-06-04T02:50:12.731199",
+    "updated_at": "2025-06-11T22:17:02.496415"
+  },
+  "397": {
+    "device_command_id": "397",
+    "routine_id": "155",
+    "device_id": "1595",
+    "status": "off",
+    "created_at": "2025-06-07T06:50:42.277041",
+    "updated_at": "2025-06-14T18:49:11.514118"
+  },
+  "398": {
+    "device_command_id": "398",
+    "routine_id": "156",
+    "device_id": "1600",
+    "status": "off",
+    "created_at": "2025-06-09T06:13:40.025608",
+    "updated_at": "2025-07-16T02:50:18.228666"
+  },
+  "399": {
+    "device_command_id": "399",
+    "routine_id": "156",
+    "device_id": "1589",
+    "status": "off",
+    "created_at": "2025-06-17T04:19:51.024926",
+    "updated_at": "2025-07-26T06:45:43.296328"
+  },
+  "400": {
+    "device_command_id": "400",
+    "routine_id": "157",
+    "device_id": "1587",
+    "status": "on",
+    "created_at": "2025-06-24T01:58:36.981183",
+    "updated_at": "2025-07-07T10:31:06.126648"
+  },
+  "401": {
+    "device_command_id": "401",
+    "routine_id": "157",
+    "device_id": "1586",
+    "status": "off",
+    "created_at": "2025-06-24T09:58:25.083776",
+    "updated_at": "2025-06-29T15:55:15.241596"
+  },
+  "402": {
+    "device_command_id": "402",
+    "routine_id": "157",
+    "device_id": "1589",
+    "status": "off",
+    "created_at": "2025-06-09T02:47:31.449596",
+    "updated_at": "2025-07-30T16:34:47.964365"
+  },
+  "403": {
+    "device_command_id": "403",
+    "routine_id": "157",
+    "device_id": "1600",
+    "status": "on",
+    "created_at": "2025-06-20T02:27:15.990511",
+    "updated_at": "2025-07-07T17:54:56.918834"
+  },
+  "404": {
+    "device_command_id": "404",
+    "routine_id": "158",
+    "device_id": "1666",
+    "status": "on",
+    "created_at": "2025-06-24T14:26:58.203186",
+    "updated_at": "2025-07-27T10:53:01.634460"
+  },
+  "405": {
+    "device_command_id": "405",
+    "routine_id": "158",
+    "device_id": "1654",
+    "status": "off",
+    "created_at": "2025-06-05T03:28:57.564121",
+    "updated_at": "2025-07-25T19:05:52.984188"
+  },
+  "406": {
+    "device_command_id": "406",
+    "routine_id": "158",
+    "device_id": "1665",
+    "status": "on",
+    "created_at": "2025-06-12T18:28:58.243772",
+    "updated_at": "2025-07-02T07:04:13.455114"
+  },
+  "407": {
+    "device_command_id": "407",
+    "routine_id": "159",
+    "device_id": "1666",
+    "status": "on",
+    "created_at": "2025-06-04T11:38:34.848459",
+    "updated_at": "2025-07-22T06:34:43.771856"
+  },
+  "408": {
+    "device_command_id": "408",
+    "routine_id": "159",
+    "device_id": "1665",
+    "status": "on",
+    "created_at": "2025-06-26T16:21:20.901018",
+    "updated_at": "2025-07-19T10:27:15.706733"
+  },
+  "409": {
+    "device_command_id": "409",
+    "routine_id": "159",
+    "device_id": "1648",
+    "status": "off",
+    "created_at": "2025-06-10T15:40:15.643940",
+    "updated_at": "2025-06-22T19:20:37.936646"
+  },
+  "410": {
+    "device_command_id": "410",
+    "routine_id": "160",
+    "device_id": "1674",
+    "status": "off",
+    "created_at": "2025-06-10T18:23:38.720265",
+    "updated_at": "2025-07-28T22:44:56.539926"
+  },
+  "411": {
+    "device_command_id": "411",
+    "routine_id": "161",
+    "device_id": "1677",
+    "status": "on",
+    "created_at": "2025-06-11T11:36:50.118688",
+    "updated_at": "2025-07-25T00:33:22.498627"
+  },
+  "412": {
+    "device_command_id": "412",
+    "routine_id": "162",
+    "device_id": "1668",
+    "status": "on",
+    "created_at": "2025-06-07T00:22:55.091006",
+    "updated_at": "2025-06-23T22:40:40.727996"
+  },
+  "413": {
+    "device_command_id": "413",
+    "routine_id": "162",
+    "device_id": "1676",
+    "status": "on",
+    "created_at": "2025-06-12T23:28:25.873862",
+    "updated_at": "2025-07-03T01:49:06.202972"
+  },
+  "414": {
+    "device_command_id": "414",
+    "routine_id": "162",
+    "device_id": "1675",
+    "status": "on",
+    "created_at": "2025-06-27T01:21:01.349221",
+    "updated_at": "2025-07-27T08:18:01.528956"
+  },
+  "415": {
+    "device_command_id": "415",
+    "routine_id": "162",
+    "device_id": "1677",
+    "status": "on",
+    "created_at": "2025-06-26T06:51:48.854719",
+    "updated_at": "2025-07-23T02:44:34.951328"
+  },
+  "416": {
+    "device_command_id": "416",
+    "routine_id": "163",
+    "device_id": "1842",
+    "status": "off",
+    "created_at": "2025-06-08T08:08:10.650288",
+    "updated_at": "2025-06-19T03:01:38.357231"
+  },
+  "417": {
+    "device_command_id": "417",
+    "routine_id": "164",
+    "device_id": "1842",
+    "status": "on",
+    "created_at": "2025-06-23T23:29:04.606980",
+    "updated_at": "2025-07-19T08:51:54.801162"
+  },
+  "418": {
+    "device_command_id": "418",
+    "routine_id": "164",
+    "device_id": "1825",
+    "status": "on",
+    "created_at": "2025-06-25T14:31:55.066512",
+    "updated_at": "2025-07-27T16:10:56.214181"
+  },
+  "419": {
+    "device_command_id": "419",
+    "routine_id": "164",
+    "device_id": "1822",
+    "status": "on",
+    "created_at": "2025-06-26T07:01:02.735308",
+    "updated_at": "2025-06-28T06:13:07.408574"
+  },
+  "420": {
+    "device_command_id": "420",
+    "routine_id": "164",
+    "device_id": "1828",
+    "status": "off",
+    "created_at": "2025-06-25T05:22:52.148060",
+    "updated_at": "2025-07-24T00:19:13.098241"
+  },
+  "421": {
+    "device_command_id": "421",
+    "routine_id": "165",
+    "device_id": "1911",
+    "status": "on",
+    "created_at": "2025-06-14T12:28:35.811263",
+    "updated_at": "2025-07-10T03:12:15.768353"
+  },
+  "422": {
+    "device_command_id": "422",
+    "routine_id": "165",
+    "device_id": "1888",
+    "status": "on",
+    "created_at": "2025-06-14T16:00:58.177692",
+    "updated_at": "2025-06-18T03:17:41.303070"
+  },
+  "423": {
+    "device_command_id": "423",
+    "routine_id": "165",
+    "device_id": "1887",
+    "status": "off",
+    "created_at": "2025-07-01T00:49:51.508578",
+    "updated_at": "2025-07-30T09:58:52.940901"
+  },
+  "424": {
+    "device_command_id": "424",
+    "routine_id": "165",
+    "device_id": "1914",
+    "status": "on",
+    "created_at": "2025-06-06T00:19:10.046983",
+    "updated_at": "2025-07-12T07:02:31.993153"
+  },
+  "425": {
+    "device_command_id": "425",
+    "routine_id": "166",
+    "device_id": "1914",
+    "status": "off",
+    "created_at": "2025-06-13T05:16:10.473225",
+    "updated_at": "2025-07-10T06:37:30.064438"
+  },
+  "426": {
+    "device_command_id": "426",
+    "routine_id": "166",
+    "device_id": "1913",
+    "status": "on",
+    "created_at": "2025-06-24T03:50:43.591370",
+    "updated_at": "2025-06-24T13:18:20.594810"
+  },
+  "427": {
+    "device_command_id": "427",
+    "routine_id": "166",
+    "device_id": "1886",
+    "status": "on",
+    "created_at": "2025-06-10T08:57:05.863003",
+    "updated_at": "2025-06-14T08:26:01.675098"
+  },
+  "428": {
+    "device_command_id": "428",
+    "routine_id": "166",
+    "device_id": "1888",
+    "status": "off",
+    "created_at": "2025-06-29T03:46:23.052633",
+    "updated_at": "2025-07-20T11:32:36.357130"
+  },
+  "429": {
+    "device_command_id": "429",
+    "routine_id": "167",
+    "device_id": "2115",
+    "status": "on",
+    "created_at": "2025-06-30T16:23:11.526846",
+    "updated_at": "2025-07-27T10:34:25.469792"
+  },
+  "430": {
+    "device_command_id": "430",
+    "routine_id": "168",
+    "device_id": "2115",
+    "status": "off",
+    "created_at": "2025-06-27T05:03:05.128668",
+    "updated_at": "2025-07-29T02:35:32.366315"
+  },
+  "431": {
+    "device_command_id": "431",
+    "routine_id": "169",
+    "device_id": "2171",
+    "status": "on",
+    "created_at": "2025-06-25T07:58:05.256488",
+    "updated_at": "2025-07-07T17:39:54.665082"
+  },
+  "432": {
+    "device_command_id": "432",
+    "routine_id": "169",
+    "device_id": "2170",
+    "status": "off",
+    "created_at": "2025-06-03T23:08:42.369999",
+    "updated_at": "2025-06-11T17:40:28.936920"
+  },
+  "433": {
+    "device_command_id": "433",
+    "routine_id": "169",
+    "device_id": "2173",
+    "status": "on",
+    "created_at": "2025-06-24T14:03:15.222691",
+    "updated_at": "2025-07-28T19:47:48.977878"
+  },
+  "434": {
+    "device_command_id": "434",
+    "routine_id": "169",
+    "device_id": "2152",
+    "status": "on",
+    "created_at": "2025-06-12T01:57:03.761959",
+    "updated_at": "2025-06-23T06:48:34.709997"
+  },
+  "435": {
+    "device_command_id": "435",
+    "routine_id": "170",
+    "device_id": "2163",
+    "status": "on",
+    "created_at": "2025-07-01T10:51:29.452393",
+    "updated_at": "2025-07-01T20:47:20.280470"
+  },
+  "436": {
+    "device_command_id": "436",
+    "routine_id": "170",
+    "device_id": "2155",
+    "status": "off",
+    "created_at": "2025-06-19T19:58:17.492957",
+    "updated_at": "2025-07-26T23:38:43.486880"
+  },
+  "437": {
+    "device_command_id": "437",
+    "routine_id": "170",
+    "device_id": "2176",
+    "status": "off",
+    "created_at": "2025-06-30T06:47:04.855288",
+    "updated_at": "2025-07-17T23:43:29.493433"
+  },
+  "438": {
+    "device_command_id": "438",
+    "routine_id": "170",
+    "device_id": "2175",
+    "status": "on",
+    "created_at": "2025-06-03T09:58:47.643434",
+    "updated_at": "2025-07-23T09:22:27.344748"
+  },
+  "439": {
+    "device_command_id": "439",
+    "routine_id": "171",
+    "device_id": "2174",
+    "status": "off",
+    "created_at": "2025-06-30T06:29:11.472742",
+    "updated_at": "2025-07-04T09:37:34.491190"
+  },
+  "440": {
+    "device_command_id": "440",
+    "routine_id": "171",
+    "device_id": "2176",
+    "status": "off",
+    "created_at": "2025-06-17T14:10:46.245632",
+    "updated_at": "2025-07-25T20:49:17.300768"
+  },
+  "441": {
+    "device_command_id": "441",
+    "routine_id": "172",
+    "device_id": "2216",
+    "status": "off",
+    "created_at": "2025-06-28T01:05:08.437241",
+    "updated_at": "2025-07-08T12:40:42.929793"
+  },
+  "442": {
+    "device_command_id": "442",
+    "routine_id": "172",
+    "device_id": "2229",
+    "status": "off",
+    "created_at": "2025-06-18T15:39:19.075341",
+    "updated_at": "2025-07-22T12:32:23.834282"
+  },
+  "443": {
+    "device_command_id": "443",
+    "routine_id": "173",
+    "device_id": "2254",
+    "status": "on",
+    "created_at": "2025-06-15T06:05:32.598537",
+    "updated_at": "2025-06-16T07:39:03.783250"
+  },
+  "444": {
+    "device_command_id": "444",
+    "routine_id": "174",
+    "device_id": "2262",
+    "status": "off",
+    "created_at": "2025-06-26T11:38:34.893760",
+    "updated_at": "2025-07-16T18:27:17.115789"
+  },
+  "445": {
+    "device_command_id": "445",
+    "routine_id": "174",
+    "device_id": "2255",
+    "status": "on",
+    "created_at": "2025-06-03T04:42:41.442161",
+    "updated_at": "2025-07-22T17:33:04.447223"
+  },
+  "446": {
+    "device_command_id": "446",
+    "routine_id": "174",
+    "device_id": "2272",
+    "status": "off",
+    "created_at": "2025-06-10T18:08:19.992047",
+    "updated_at": "2025-07-25T19:19:12.972376"
+  },
+  "447": {
+    "device_command_id": "447",
+    "routine_id": "174",
+    "device_id": "2273",
+    "status": "off",
+    "created_at": "2025-06-29T19:01:28.317082",
+    "updated_at": "2025-07-04T05:35:17.705258"
+  },
+  "448": {
+    "device_command_id": "448",
+    "routine_id": "175",
+    "device_id": "2330",
+    "status": "on",
+    "created_at": "2025-06-14T13:02:43.066346",
+    "updated_at": "2025-07-10T05:32:08.599234"
+  },
+  "449": {
+    "device_command_id": "449",
+    "routine_id": "175",
+    "device_id": "2328",
+    "status": "on",
+    "created_at": "2025-06-04T05:19:27.877251",
+    "updated_at": "2025-06-25T15:21:27.819345"
+  },
+  "450": {
+    "device_command_id": "450",
+    "routine_id": "175",
+    "device_id": "2327",
+    "status": "on",
+    "created_at": "2025-06-12T04:56:22.575864",
+    "updated_at": "2025-07-23T22:17:47.354711"
+  },
+  "451": {
+    "device_command_id": "451",
+    "routine_id": "175",
+    "device_id": "2319",
+    "status": "on",
+    "created_at": "2025-06-21T08:42:33.538925",
+    "updated_at": "2025-07-25T00:30:50.298689"
+  },
+  "452": {
+    "device_command_id": "452",
+    "routine_id": "176",
+    "device_id": "2326",
+    "status": "off",
+    "created_at": "2025-06-03T12:52:34.129076",
+    "updated_at": "2025-06-18T05:42:47.867209"
+  },
+  "453": {
+    "device_command_id": "453",
+    "routine_id": "176",
+    "device_id": "2331",
+    "status": "on",
+    "created_at": "2025-06-26T15:23:01.327831",
+    "updated_at": "2025-07-14T04:01:31.392989"
+  },
+  "454": {
+    "device_command_id": "454",
+    "routine_id": "176",
+    "device_id": "2319",
+    "status": "off",
+    "created_at": "2025-06-30T06:22:47.305124",
+    "updated_at": "2025-07-10T03:31:39.696839"
+  },
+  "455": {
+    "device_command_id": "455",
+    "routine_id": "176",
+    "device_id": "2318",
+    "status": "on",
+    "created_at": "2025-06-25T23:56:25.730236",
+    "updated_at": "2025-07-08T16:47:53.354526"
+  },
+  "456": {
+    "device_command_id": "456",
+    "routine_id": "177",
+    "device_id": "2592",
+    "status": "on",
+    "created_at": "2025-06-10T23:30:23.316395",
+    "updated_at": "2025-07-12T12:59:14.099891"
+  },
+  "457": {
+    "device_command_id": "457",
+    "routine_id": "178",
+    "device_id": "2591",
+    "status": "off",
+    "created_at": "2025-06-06T22:47:43.834716",
+    "updated_at": "2025-06-10T13:42:11.854887"
+  },
+  "458": {
+    "device_command_id": "458",
+    "routine_id": "179",
+    "device_id": "2733",
+    "status": "off",
+    "created_at": "2025-06-25T16:49:06.715876",
+    "updated_at": "2025-07-01T06:41:29.885433"
+  },
+  "459": {
+    "device_command_id": "459",
+    "routine_id": "179",
+    "device_id": "2714",
+    "status": "on",
+    "created_at": "2025-06-21T01:44:47.614481",
+    "updated_at": "2025-07-23T19:42:00.530112"
+  },
+  "460": {
+    "device_command_id": "460",
+    "routine_id": "179",
+    "device_id": "2715",
+    "status": "on",
+    "created_at": "2025-06-29T23:10:53.469828",
+    "updated_at": "2025-07-24T04:33:14.213537"
+  },
+  "461": {
+    "device_command_id": "461",
+    "routine_id": "180",
+    "device_id": "2740",
+    "status": "off",
+    "created_at": "2025-06-06T13:34:13.033727",
+    "updated_at": "2025-06-11T11:46:18.597055"
+  },
+  "462": {
+    "device_command_id": "462",
+    "routine_id": "180",
+    "device_id": "2741",
+    "status": "on",
+    "created_at": "2025-06-30T18:16:09.832866",
+    "updated_at": "2025-07-18T12:54:24.558588"
+  },
+  "463": {
+    "device_command_id": "463",
+    "routine_id": "181",
+    "device_id": "2721",
+    "status": "off",
+    "created_at": "2025-06-23T03:12:50.709481",
+    "updated_at": "2025-07-05T10:49:10.090878"
+  },
+  "464": {
+    "device_command_id": "464",
+    "routine_id": "182",
+    "device_id": "2767",
+    "status": "off",
+    "created_at": "2025-06-06T23:29:09.670103",
+    "updated_at": "2025-07-30T01:08:09.127204"
+  },
+  "465": {
+    "device_command_id": "465",
+    "routine_id": "183",
+    "device_id": "2767",
+    "status": "on",
+    "created_at": "2025-06-01T15:39:09.715570",
+    "updated_at": "2025-06-11T14:58:55.757907"
+  },
+  "466": {
+    "device_command_id": "466",
+    "routine_id": "183",
+    "device_id": "2773",
+    "status": "off",
+    "created_at": "2025-06-15T07:30:27.251800",
+    "updated_at": "2025-06-27T06:20:28.693473"
+  },
+  "467": {
+    "device_command_id": "467",
+    "routine_id": "183",
+    "device_id": "2766",
+    "status": "on",
+    "created_at": "2025-06-20T03:45:35.396297",
+    "updated_at": "2025-06-24T15:04:06.554376"
+  },
+  "468": {
+    "device_command_id": "468",
+    "routine_id": "184",
+    "device_id": "2843",
+    "status": "on",
+    "created_at": "2025-06-10T08:27:55.465682",
+    "updated_at": "2025-06-29T07:06:50.990715"
+  },
+  "469": {
+    "device_command_id": "469",
+    "routine_id": "184",
+    "device_id": "2847",
+    "status": "on",
+    "created_at": "2025-06-30T05:03:12.544496",
+    "updated_at": "2025-07-11T10:45:36.764737"
+  },
+  "470": {
+    "device_command_id": "470",
+    "routine_id": "184",
+    "device_id": "2854",
+    "status": "off",
+    "created_at": "2025-06-26T04:42:58.705362",
+    "updated_at": "2025-07-15T06:25:01.709830"
+  },
+  "471": {
+    "device_command_id": "471",
+    "routine_id": "185",
+    "device_id": "2852",
+    "status": "on",
+    "created_at": "2025-06-04T18:19:35.811274",
+    "updated_at": "2025-06-21T13:02:24.063102"
+  },
+  "472": {
+    "device_command_id": "472",
+    "routine_id": "185",
+    "device_id": "2843",
+    "status": "off",
+    "created_at": "2025-06-05T15:23:13.281711",
+    "updated_at": "2025-06-17T04:45:11.531832"
+  },
+  "473": {
+    "device_command_id": "473",
+    "routine_id": "185",
+    "device_id": "2836",
+    "status": "on",
+    "created_at": "2025-06-19T07:22:16.570038",
+    "updated_at": "2025-07-12T21:56:49.177730"
+  },
+  "474": {
+    "device_command_id": "474",
+    "routine_id": "185",
+    "device_id": "2854",
+    "status": "off",
+    "created_at": "2025-06-20T23:53:37.976735",
+    "updated_at": "2025-07-15T06:07:27.738761"
+  },
+  "475": {
+    "device_command_id": "475",
+    "routine_id": "186",
+    "device_id": "2905",
+    "status": "off",
+    "created_at": "2025-06-02T12:05:55.774608",
+    "updated_at": "2025-07-31T06:37:57.925618"
+  },
+  "476": {
+    "device_command_id": "476",
+    "routine_id": "188",
+    "device_id": "2916",
+    "status": "on",
+    "created_at": "2025-06-09T22:09:37.463537",
+    "updated_at": "2025-07-04T04:07:55.868699"
+  },
+  "477": {
+    "device_command_id": "477",
+    "routine_id": "188",
+    "device_id": "2915",
+    "status": "on",
+    "created_at": "2025-06-14T03:16:17.507036",
+    "updated_at": "2025-06-28T21:12:44.345624"
+  },
+  "478": {
+    "device_command_id": "478",
+    "routine_id": "189",
+    "device_id": "2915",
+    "status": "off",
+    "created_at": "2025-06-22T00:41:24.120186",
+    "updated_at": "2025-07-27T14:36:28.838062"
+  },
+  "479": {
+    "device_command_id": "479",
+    "routine_id": "190",
+    "device_id": "3023",
+    "status": "off",
+    "created_at": "2025-06-01T21:25:26.869330",
+    "updated_at": "2025-06-05T01:11:19.132001"
+  },
+  "480": {
+    "device_command_id": "480",
+    "routine_id": "190",
+    "device_id": "3002",
+    "status": "off",
+    "created_at": "2025-06-05T05:20:02.225998",
+    "updated_at": "2025-07-11T15:32:09.033496"
+  },
+  "481": {
+    "device_command_id": "481",
+    "routine_id": "190",
+    "device_id": "3003",
+    "status": "off",
+    "created_at": "2025-06-05T17:56:31.670639",
+    "updated_at": "2025-07-27T13:07:51.271507"
+  },
+  "482": {
+    "device_command_id": "482",
+    "routine_id": "192",
+    "device_id": "3088",
+    "status": "off",
+    "created_at": "2025-06-12T10:21:08.010454",
+    "updated_at": "2025-07-10T22:27:39.455573"
+  },
+  "483": {
+    "device_command_id": "483",
+    "routine_id": "192",
+    "device_id": "3083",
+    "status": "on",
+    "created_at": "2025-06-18T03:37:42.629165",
+    "updated_at": "2025-06-27T02:28:30.890942"
+  },
+  "484": {
+    "device_command_id": "484",
+    "routine_id": "193",
+    "device_id": "3088",
+    "status": "off",
+    "created_at": "2025-06-15T04:22:05.086807",
+    "updated_at": "2025-07-12T04:30:05.898781"
+  },
+  "485": {
+    "device_command_id": "485",
+    "routine_id": "193",
+    "device_id": "3095",
+    "status": "on",
+    "created_at": "2025-06-09T22:25:56.230077",
+    "updated_at": "2025-06-25T22:00:07.419294"
+  },
+  "486": {
+    "device_command_id": "486",
+    "routine_id": "194",
+    "device_id": "1721",
+    "status": "on",
+    "created_at": "2025-06-05T19:55:50.624242",
+    "updated_at": "2025-07-27T14:32:30.342769"
+  },
+  "487": {
+    "device_command_id": "487",
+    "routine_id": "194",
+    "device_id": "1710",
+    "status": "off",
+    "created_at": "2025-06-15T21:47:59.151954",
+    "updated_at": "2025-07-27T10:52:24.681200"
+  },
+  "488": {
+    "device_command_id": "488",
+    "routine_id": "195",
+    "device_id": "1721",
+    "status": "on",
+    "created_at": "2025-06-21T20:35:54.738908",
+    "updated_at": "2025-07-25T02:19:30.024428"
+  },
+  "489": {
+    "device_command_id": "489",
+    "routine_id": "195",
+    "device_id": "1710",
+    "status": "off",
+    "created_at": "2025-06-17T01:00:06.667855",
+    "updated_at": "2025-06-30T03:49:26.009049"
+  },
+  "490": {
+    "device_command_id": "490",
+    "routine_id": "196",
+    "device_id": "2861",
+    "status": "off",
+    "created_at": "2025-06-22T01:00:09.998552",
+    "updated_at": "2025-06-30T07:30:29.463657"
+  },
+  "491": {
+    "device_command_id": "491",
+    "routine_id": "196",
+    "device_id": "2867",
+    "status": "on",
+    "created_at": "2025-06-20T02:19:47.956753",
+    "updated_at": "2025-07-09T20:31:33.604565"
+  },
+  "492": {
+    "device_command_id": "492",
+    "routine_id": "197",
+    "device_id": "2867",
+    "status": "on",
+    "created_at": "2025-06-11T01:05:17.181162",
+    "updated_at": "2025-07-30T04:07:24.465472"
+  },
+  "493": {
+    "device_command_id": "493",
+    "routine_id": "197",
+    "device_id": "2861",
+    "status": "off",
+    "created_at": "2025-06-27T22:18:16.568318",
+    "updated_at": "2025-07-05T03:02:31.479070"
+  },
+  "494": {
+    "device_command_id": "494",
+    "routine_id": "197",
+    "device_id": "2863",
+    "status": "off",
+    "created_at": "2025-06-08T09:37:29.905663",
+    "updated_at": "2025-07-23T08:06:33.736935"
+  },
+  "495": {
+    "device_command_id": "495",
+    "routine_id": "197",
+    "device_id": "2870",
+    "status": "on",
+    "created_at": "2025-06-16T13:52:59.955066",
+    "updated_at": "2025-07-11T09:00:41.532870"
+  },
+  "496": {
+    "device_command_id": "496",
+    "routine_id": "198",
+    "device_id": "2186",
+    "status": "off",
+    "created_at": "2025-06-19T11:25:27.960643",
+    "updated_at": "2025-07-20T00:59:24.956318"
+  },
+  "497": {
+    "device_command_id": "497",
+    "routine_id": "198",
+    "device_id": "2187",
+    "status": "on",
+    "created_at": "2025-06-02T12:13:32.315437",
+    "updated_at": "2025-07-15T00:41:04.323031"
+  },
+  "498": {
+    "device_command_id": "498",
+    "routine_id": "198",
+    "device_id": "2195",
+    "status": "off",
+    "created_at": "2025-06-29T08:21:06.426165",
+    "updated_at": "2025-07-11T10:44:41.363523"
+  },
+  "499": {
+    "device_command_id": "499",
+    "routine_id": "198",
+    "device_id": "2184",
+    "status": "off",
+    "created_at": "2025-06-26T14:37:39.937120",
+    "updated_at": "2025-07-19T17:05:29.464583"
+  },
+  "500": {
+    "device_command_id": "500",
+    "routine_id": "199",
+    "device_id": "2181",
+    "status": "on",
+    "created_at": "2025-06-25T14:06:48.120157",
+    "updated_at": "2025-06-25T17:23:32.148418"
+  },
+  "501": {
+    "device_command_id": "501",
+    "routine_id": "199",
+    "device_id": "2195",
+    "status": "off",
+    "created_at": "2025-06-30T12:16:16.852953",
+    "updated_at": "2025-07-12T03:28:52.295158"
+  },
+  "502": {
+    "device_command_id": "502",
+    "routine_id": "200",
+    "device_id": "389",
+    "status": "on",
+    "created_at": "2025-06-25T01:23:35.410757",
+    "updated_at": "2025-07-24T19:42:22.461880"
+  },
+  "503": {
+    "device_command_id": "503",
+    "routine_id": "201",
+    "device_id": "388",
+    "status": "off",
+    "created_at": "2025-06-06T16:02:10.872910",
+    "updated_at": "2025-06-17T19:58:57.804681"
+  },
+  "504": {
+    "device_command_id": "504",
+    "routine_id": "202",
+    "device_id": "204",
+    "status": "off",
+    "created_at": "2025-06-22T16:02:04.131355",
+    "updated_at": "2025-07-05T11:32:24.122007"
+  },
+  "505": {
+    "device_command_id": "505",
+    "routine_id": "203",
+    "device_id": "2702",
+    "status": "on",
+    "created_at": "2025-06-24T17:23:03.166736",
+    "updated_at": "2025-07-10T21:38:43.751776"
+  },
+  "506": {
+    "device_command_id": "506",
+    "routine_id": "203",
+    "device_id": "2711",
+    "status": "on",
+    "created_at": "2025-06-15T04:40:27.057262",
+    "updated_at": "2025-07-13T19:02:50.946470"
+  },
+  "507": {
+    "device_command_id": "507",
+    "routine_id": "203",
+    "device_id": "2706",
+    "status": "off",
+    "created_at": "2025-06-02T10:32:53.472975",
+    "updated_at": "2025-06-30T01:26:08.522386"
+  },
+  "508": {
+    "device_command_id": "508",
+    "routine_id": "203",
+    "device_id": "2701",
+    "status": "on",
+    "created_at": "2025-06-03T20:22:02.926381",
+    "updated_at": "2025-06-07T12:32:05.522581"
+  },
+  "509": {
+    "device_command_id": "509",
+    "routine_id": "204",
+    "device_id": "290",
+    "status": "on",
+    "created_at": "2025-06-06T11:20:47.361069",
+    "updated_at": "2025-06-15T14:07:31.119286"
+  },
+  "510": {
+    "device_command_id": "510",
+    "routine_id": "204",
+    "device_id": "294",
+    "status": "on",
+    "created_at": "2025-06-21T01:58:36.708550",
+    "updated_at": "2025-07-26T06:29:43.217380"
+  },
+  "511": {
+    "device_command_id": "511",
+    "routine_id": "204",
+    "device_id": "292",
+    "status": "on",
+    "created_at": "2025-06-09T07:24:46.500156",
+    "updated_at": "2025-07-23T18:26:21.715180"
+  },
+  "512": {
+    "device_command_id": "512",
+    "routine_id": "204",
+    "device_id": "288",
+    "status": "on",
+    "created_at": "2025-06-12T04:07:13.333258",
+    "updated_at": "2025-07-27T12:46:28.130184"
+  },
+  "513": {
+    "device_command_id": "513",
+    "routine_id": "205",
+    "device_id": "289",
+    "status": "on",
+    "created_at": "2025-06-25T10:22:42.251683",
+    "updated_at": "2025-07-14T06:29:29.563847"
+  },
+  "514": {
+    "device_command_id": "514",
+    "routine_id": "206",
+    "device_id": "811",
+    "status": "on",
+    "created_at": "2025-06-09T07:17:13.871230",
+    "updated_at": "2025-07-22T06:18:24.325475"
+  },
+  "515": {
+    "device_command_id": "515",
+    "routine_id": "206",
+    "device_id": "805",
+    "status": "on",
+    "created_at": "2025-06-27T07:42:53.450913",
+    "updated_at": "2025-07-15T08:46:10.546071"
+  },
+  "516": {
+    "device_command_id": "516",
+    "routine_id": "207",
+    "device_id": "804",
+    "status": "off",
+    "created_at": "2025-06-03T14:49:29.866822",
+    "updated_at": "2025-06-15T14:45:34.250808"
+  },
+  "517": {
+    "device_command_id": "517",
+    "routine_id": "207",
+    "device_id": "813",
+    "status": "off",
+    "created_at": "2025-06-30T16:38:43.618121",
+    "updated_at": "2025-07-09T05:56:28.476247"
+  },
+  "518": {
+    "device_command_id": "518",
+    "routine_id": "207",
+    "device_id": "812",
+    "status": "off",
+    "created_at": "2025-06-01T22:23:49.845286",
+    "updated_at": "2025-06-08T07:41:32.771562"
+  },
+  "519": {
+    "device_command_id": "519",
+    "routine_id": "207",
+    "device_id": "815",
+    "status": "on",
+    "created_at": "2025-06-13T04:54:34.402768",
+    "updated_at": "2025-07-06T17:21:44.441266"
+  },
+  "520": {
+    "device_command_id": "520",
+    "routine_id": "208",
+    "device_id": "401",
+    "status": "off",
+    "created_at": "2025-06-11T00:55:31.496007",
+    "updated_at": "2025-06-11T18:07:33.866949"
+  },
+  "521": {
+    "device_command_id": "521",
+    "routine_id": "208",
+    "device_id": "400",
+    "status": "on",
+    "created_at": "2025-06-20T16:15:09.660658",
+    "updated_at": "2025-06-28T02:50:20.205439"
+  },
+  "522": {
+    "device_command_id": "522",
+    "routine_id": "209",
+    "device_id": "403",
+    "status": "off",
+    "created_at": "2025-06-17T19:49:24.146087",
+    "updated_at": "2025-07-06T04:27:14.644864"
+  },
+  "523": {
+    "device_command_id": "523",
+    "routine_id": "209",
+    "device_id": "401",
+    "status": "off",
+    "created_at": "2025-06-10T18:03:05.357626",
+    "updated_at": "2025-06-18T11:55:24.979441"
+  },
+  "524": {
+    "device_command_id": "524",
+    "routine_id": "210",
+    "device_id": "1034",
+    "status": "on",
+    "created_at": "2025-06-22T16:29:23.849894",
+    "updated_at": "2025-07-16T12:34:26.969926"
+  },
+  "525": {
+    "device_command_id": "525",
+    "routine_id": "211",
+    "device_id": "1029",
+    "status": "on",
+    "created_at": "2025-06-15T20:37:36.213214",
+    "updated_at": "2025-06-22T16:29:36.540121"
+  },
+  "526": {
+    "device_command_id": "526",
+    "routine_id": "211",
+    "device_id": "1034",
+    "status": "on",
+    "created_at": "2025-06-04T17:10:23.050659",
+    "updated_at": "2025-06-26T03:26:32.901774"
+  },
+  "527": {
+    "device_command_id": "527",
+    "routine_id": "211",
+    "device_id": "1025",
+    "status": "off",
+    "created_at": "2025-06-05T07:52:36.615506",
+    "updated_at": "2025-07-31T06:47:26.027977"
+  },
+  "528": {
+    "device_command_id": "528",
+    "routine_id": "212",
+    "device_id": "1263",
+    "status": "on",
+    "created_at": "2025-06-20T15:19:45.658431",
+    "updated_at": "2025-07-04T17:43:22.769484"
+  },
+  "529": {
+    "device_command_id": "529",
+    "routine_id": "212",
+    "device_id": "1264",
+    "status": "off",
+    "created_at": "2025-06-10T12:09:18.757218",
+    "updated_at": "2025-06-17T09:43:16.100723"
+  },
+  "530": {
+    "device_command_id": "530",
+    "routine_id": "213",
+    "device_id": "2215",
+    "status": "on",
+    "created_at": "2025-06-10T17:36:37.531076",
+    "updated_at": "2025-06-22T16:43:31.657074"
+  },
+  "531": {
+    "device_command_id": "531",
+    "routine_id": "213",
+    "device_id": "2222",
+    "status": "on",
+    "created_at": "2025-06-03T11:01:13.775390",
+    "updated_at": "2025-07-26T10:28:27.508490"
+  },
+  "532": {
+    "device_command_id": "532",
+    "routine_id": "214",
+    "device_id": "2222",
+    "status": "off",
+    "created_at": "2025-06-27T01:15:55.506347",
+    "updated_at": "2025-07-25T10:31:02.472134"
+  },
+  "533": {
+    "device_command_id": "533",
+    "routine_id": "214",
+    "device_id": "2227",
+    "status": "on",
+    "created_at": "2025-06-20T03:10:52.350577",
+    "updated_at": "2025-07-07T07:02:30.802052"
+  },
+  "534": {
+    "device_command_id": "534",
+    "routine_id": "215",
+    "device_id": "1343",
+    "status": "on",
+    "created_at": "2025-06-22T13:32:45.456554",
+    "updated_at": "2025-06-27T16:29:18.836139"
+  },
+  "535": {
+    "device_command_id": "535",
+    "routine_id": "215",
+    "device_id": "1342",
+    "status": "off",
+    "created_at": "2025-06-09T17:39:18.555714",
+    "updated_at": "2025-07-06T17:15:54.043839"
+  },
+  "536": {
+    "device_command_id": "536",
+    "routine_id": "216",
+    "device_id": "1345",
+    "status": "off",
+    "created_at": "2025-06-24T08:23:18.770190",
+    "updated_at": "2025-06-28T17:03:53.123439"
+  },
+  "537": {
+    "device_command_id": "537",
+    "routine_id": "216",
+    "device_id": "1330",
+    "status": "off",
+    "created_at": "2025-06-29T06:39:58.148191",
+    "updated_at": "2025-07-31T03:27:21.984802"
+  },
+  "538": {
+    "device_command_id": "538",
+    "routine_id": "216",
+    "device_id": "1331",
+    "status": "on",
+    "created_at": "2025-06-11T18:19:17.948664",
+    "updated_at": "2025-07-02T15:45:51.604103"
+  },
+  "539": {
+    "device_command_id": "539",
+    "routine_id": "217",
+    "device_id": "373",
+    "status": "on",
+    "created_at": "2025-06-01T16:29:09.901833",
+    "updated_at": "2025-06-02T18:06:09.431172"
+  },
+  "540": {
+    "device_command_id": "540",
+    "routine_id": "217",
+    "device_id": "386",
+    "status": "on",
+    "created_at": "2025-06-29T17:42:43.432419",
+    "updated_at": "2025-07-24T05:41:06.265644"
+  },
+  "541": {
+    "device_command_id": "541",
+    "routine_id": "218",
+    "device_id": "1715",
+    "status": "on",
+    "created_at": "2025-06-06T12:38:41.075365",
+    "updated_at": "2025-07-02T23:47:39.537759"
+  },
+  "542": {
+    "device_command_id": "542",
+    "routine_id": "218",
+    "device_id": "1716",
+    "status": "on",
+    "created_at": "2025-06-26T12:41:53.741277",
+    "updated_at": "2025-07-29T05:03:58.228509"
+  },
+  "543": {
+    "device_command_id": "543",
+    "routine_id": "218",
+    "device_id": "1707",
+    "status": "on",
+    "created_at": "2025-06-12T19:42:00.762676",
+    "updated_at": "2025-07-23T01:52:28.527151"
+  },
+  "544": {
+    "device_command_id": "544",
+    "routine_id": "219",
+    "device_id": "2256",
+    "status": "off",
+    "created_at": "2025-06-27T17:10:44.058164",
+    "updated_at": "2025-07-02T01:12:55.207834"
+  },
+  "545": {
+    "device_command_id": "545",
+    "routine_id": "220",
+    "device_id": "2251",
+    "status": "on",
+    "created_at": "2025-06-10T09:30:11.188210",
+    "updated_at": "2025-07-16T08:19:36.108557"
+  },
+  "546": {
+    "device_command_id": "546",
+    "routine_id": "220",
+    "device_id": "2257",
+    "status": "on",
+    "created_at": "2025-06-20T00:45:09.169708",
+    "updated_at": "2025-06-28T20:14:37.103831"
+  },
+  "547": {
+    "device_command_id": "547",
+    "routine_id": "220",
+    "device_id": "2265",
+    "status": "off",
+    "created_at": "2025-06-17T13:59:58.010599",
+    "updated_at": "2025-07-26T19:13:19.881846"
+  },
+  "548": {
+    "device_command_id": "548",
+    "routine_id": "221",
+    "device_id": "350",
+    "status": "off",
+    "created_at": "2025-06-29T09:04:41.813346",
+    "updated_at": "2025-07-17T19:33:47.763228"
+  },
+  "549": {
+    "device_command_id": "549",
+    "routine_id": "222",
+    "device_id": "347",
+    "status": "on",
+    "created_at": "2025-06-13T05:57:36.576531",
+    "updated_at": "2025-07-19T12:40:25.413027"
+  },
+  "550": {
+    "device_command_id": "550",
+    "routine_id": "222",
+    "device_id": "360",
+    "status": "on",
+    "created_at": "2025-06-26T09:25:42.338940",
+    "updated_at": "2025-07-30T04:15:27.251577"
+  },
+  "551": {
+    "device_command_id": "551",
+    "routine_id": "222",
+    "device_id": "355",
+    "status": "off",
+    "created_at": "2025-06-27T00:47:34.219845",
+    "updated_at": "2025-07-25T03:33:57.143284"
+  },
+  "552": {
+    "device_command_id": "552",
+    "routine_id": "223",
+    "device_id": "360",
+    "status": "on",
+    "created_at": "2025-06-27T21:14:02.560569",
+    "updated_at": "2025-07-17T21:40:01.054929"
+  },
+  "553": {
+    "device_command_id": "553",
+    "routine_id": "224",
+    "device_id": "1992",
+    "status": "off",
+    "created_at": "2025-06-27T16:33:27.755890",
+    "updated_at": "2025-07-22T17:35:29.130013"
+  },
+  "554": {
+    "device_command_id": "554",
+    "routine_id": "224",
+    "device_id": "2012",
+    "status": "on",
+    "created_at": "2025-06-10T03:59:03.027694",
+    "updated_at": "2025-07-30T10:36:21.951671"
+  },
+  "555": {
+    "device_command_id": "555",
+    "routine_id": "224",
+    "device_id": "2010",
+    "status": "off",
+    "created_at": "2025-06-23T20:04:10.880604",
+    "updated_at": "2025-06-28T13:22:54.184947"
+  },
+  "556": {
+    "device_command_id": "556",
+    "routine_id": "225",
+    "device_id": "43",
+    "status": "off",
+    "created_at": "2025-06-13T10:11:29.693421",
+    "updated_at": "2025-06-18T21:39:13.945077"
+  },
+  "557": {
+    "device_command_id": "557",
+    "routine_id": "225",
+    "device_id": "50",
+    "status": "off",
+    "created_at": "2025-06-22T10:34:35.817960",
+    "updated_at": "2025-06-25T05:24:28.582330"
+  },
+  "558": {
+    "device_command_id": "558",
+    "routine_id": "225",
+    "device_id": "42",
+    "status": "on",
+    "created_at": "2025-06-09T17:33:24.191858",
+    "updated_at": "2025-06-19T15:30:18.938811"
+  },
+  "559": {
+    "device_command_id": "559",
+    "routine_id": "226",
+    "device_id": "50",
+    "status": "off",
+    "created_at": "2025-06-01T18:07:48.169123",
+    "updated_at": "2025-06-08T04:13:40.849655"
+  },
+  "560": {
+    "device_command_id": "560",
+    "routine_id": "226",
+    "device_id": "49",
+    "status": "on",
+    "created_at": "2025-06-19T18:58:42.829248",
+    "updated_at": "2025-07-01T21:36:05.293535"
+  },
+  "561": {
+    "device_command_id": "561",
+    "routine_id": "226",
+    "device_id": "43",
+    "status": "off",
+    "created_at": "2025-06-04T15:37:22.290686",
+    "updated_at": "2025-07-11T23:47:07.276114"
+  },
+  "562": {
+    "device_command_id": "562",
+    "routine_id": "227",
+    "device_id": "2362",
+    "status": "off",
+    "created_at": "2025-06-17T03:57:32.612294",
+    "updated_at": "2025-06-26T05:54:51.561725"
+  },
+  "563": {
+    "device_command_id": "563",
+    "routine_id": "228",
+    "device_id": "2476",
+    "status": "off",
+    "created_at": "2025-06-26T14:25:00.557632",
+    "updated_at": "2025-06-28T17:10:36.125197"
+  },
+  "564": {
+    "device_command_id": "564",
+    "routine_id": "228",
+    "device_id": "2477",
+    "status": "on",
+    "created_at": "2025-06-21T04:11:13.240276",
+    "updated_at": "2025-07-03T09:55:59.279096"
+  },
+  "565": {
+    "device_command_id": "565",
+    "routine_id": "229",
+    "device_id": "749",
+    "status": "on",
+    "created_at": "2025-06-18T21:42:03.252281",
+    "updated_at": "2025-07-21T06:09:34.542578"
+  },
+  "566": {
+    "device_command_id": "566",
+    "routine_id": "230",
+    "device_id": "2423",
+    "status": "on",
+    "created_at": "2025-06-21T07:00:31.566657",
+    "updated_at": "2025-06-25T15:03:19.272725"
+  },
+  "567": {
+    "device_command_id": "567",
+    "routine_id": "231",
+    "device_id": "2433",
+    "status": "on",
+    "created_at": "2025-06-04T11:39:13.029360",
+    "updated_at": "2025-06-15T20:56:07.179215"
+  },
+  "568": {
+    "device_command_id": "568",
+    "routine_id": "231",
+    "device_id": "2432",
+    "status": "on",
+    "created_at": "2025-06-13T19:42:12.604444",
+    "updated_at": "2025-07-09T12:13:42.571351"
+  },
+  "569": {
+    "device_command_id": "569",
+    "routine_id": "232",
+    "device_id": "1979",
+    "status": "off",
+    "created_at": "2025-06-03T06:26:07.787626",
+    "updated_at": "2025-06-08T18:03:50.118769"
+  },
+  "570": {
+    "device_command_id": "570",
+    "routine_id": "232",
+    "device_id": "1988",
+    "status": "on",
+    "created_at": "2025-06-22T18:18:15.539755",
+    "updated_at": "2025-07-21T23:12:20.367491"
+  },
+  "571": {
+    "device_command_id": "571",
+    "routine_id": "232",
+    "device_id": "1985",
+    "status": "off",
+    "created_at": "2025-06-10T19:14:36.913884",
+    "updated_at": "2025-07-09T08:27:32.574127"
+  },
+  "572": {
+    "device_command_id": "572",
+    "routine_id": "233",
+    "device_id": "3044",
+    "status": "on",
+    "created_at": "2025-06-13T23:00:09.550459",
+    "updated_at": "2025-07-17T23:51:47.263528"
+  },
+  "573": {
+    "device_command_id": "573",
+    "routine_id": "233",
+    "device_id": "3035",
+    "status": "on",
+    "created_at": "2025-06-09T16:00:04.001952",
+    "updated_at": "2025-07-12T13:58:32.893096"
+  },
+  "574": {
+    "device_command_id": "574",
+    "routine_id": "233",
+    "device_id": "3034",
+    "status": "off",
+    "created_at": "2025-06-21T07:43:19.970959",
+    "updated_at": "2025-07-31T04:28:59.019603"
+  },
+  "575": {
+    "device_command_id": "575",
+    "routine_id": "234",
+    "device_id": "2438",
+    "status": "off",
+    "created_at": "2025-06-30T07:59:59.036403",
+    "updated_at": "2025-07-16T06:48:25.915451"
+  },
+  "576": {
+    "device_command_id": "576",
+    "routine_id": "234",
+    "device_id": "2429",
+    "status": "on",
+    "created_at": "2025-06-27T11:15:35.164501",
+    "updated_at": "2025-07-29T22:15:00.494888"
+  },
+  "577": {
+    "device_command_id": "577",
+    "routine_id": "234",
+    "device_id": "2439",
+    "status": "off",
+    "created_at": "2025-06-01T19:05:05.940216",
+    "updated_at": "2025-07-10T06:34:30.382919"
+  },
+  "578": {
+    "device_command_id": "578",
+    "routine_id": "235",
+    "device_id": "882",
+    "status": "off",
+    "created_at": "2025-06-19T15:39:49.108387",
+    "updated_at": "2025-07-05T00:37:10.370355"
+  },
+  "579": {
+    "device_command_id": "579",
+    "routine_id": "236",
+    "device_id": "283",
+    "status": "on",
+    "created_at": "2025-06-08T17:30:19.487776",
+    "updated_at": "2025-06-24T11:03:19.079502"
+  },
+  "580": {
+    "device_command_id": "580",
+    "routine_id": "236",
+    "device_id": "272",
+    "status": "on",
+    "created_at": "2025-06-09T23:09:30.766170",
+    "updated_at": "2025-07-09T18:35:24.166172"
+  },
+  "581": {
+    "device_command_id": "581",
+    "routine_id": "236",
+    "device_id": "285",
+    "status": "off",
+    "created_at": "2025-06-05T13:00:50.857219",
+    "updated_at": "2025-06-26T22:47:14.033667"
+  },
+  "582": {
+    "device_command_id": "582",
+    "routine_id": "237",
+    "device_id": "268",
+    "status": "on",
+    "created_at": "2025-06-13T06:56:02.208350",
+    "updated_at": "2025-07-20T11:13:17.620152"
+  },
+  "583": {
+    "device_command_id": "583",
+    "routine_id": "237",
+    "device_id": "267",
+    "status": "on",
+    "created_at": "2025-06-25T17:07:33.325845",
+    "updated_at": "2025-07-04T12:25:22.300952"
+  },
+  "584": {
+    "device_command_id": "584",
+    "routine_id": "237",
+    "device_id": "271",
+    "status": "off",
+    "created_at": "2025-06-15T20:24:27.996738",
+    "updated_at": "2025-06-15T23:35:58.672061"
+  },
+  "585": {
+    "device_command_id": "585",
+    "routine_id": "238",
+    "device_id": "2281",
+    "status": "on",
+    "created_at": "2025-06-04T19:02:04.965377",
+    "updated_at": "2025-06-07T06:38:15.765248"
+  },
+  "586": {
+    "device_command_id": "586",
+    "routine_id": "239",
+    "device_id": "2281",
+    "status": "on",
+    "created_at": "2025-06-13T02:04:21.070394",
+    "updated_at": "2025-06-20T12:57:55.123303"
+  },
+  "587": {
+    "device_command_id": "587",
+    "routine_id": "239",
+    "device_id": "2291",
+    "status": "on",
+    "created_at": "2025-06-08T21:27:05.442398",
+    "updated_at": "2025-06-15T09:17:54.029830"
+  },
+  "588": {
+    "device_command_id": "588",
+    "routine_id": "240",
+    "device_id": "2670",
+    "status": "on",
+    "created_at": "2025-06-27T10:42:21.149465",
+    "updated_at": "2025-07-08T00:10:35.796773"
+  },
+  "589": {
+    "device_command_id": "589",
+    "routine_id": "240",
+    "device_id": "2658",
+    "status": "on",
+    "created_at": "2025-06-15T07:56:31.435574",
+    "updated_at": "2025-07-05T09:02:14.283885"
+  },
+  "590": {
+    "device_command_id": "590",
+    "routine_id": "241",
+    "device_id": "568",
+    "status": "off",
+    "created_at": "2025-06-05T01:27:42.545793",
+    "updated_at": "2025-06-11T14:08:09.109455"
+  },
+  "591": {
+    "device_command_id": "591",
+    "routine_id": "242",
+    "device_id": "569",
+    "status": "on",
+    "created_at": "2025-06-03T06:21:14.161741",
+    "updated_at": "2025-07-13T17:35:29.462872"
+  },
+  "592": {
+    "device_command_id": "592",
+    "routine_id": "242",
+    "device_id": "568",
+    "status": "off",
+    "created_at": "2025-06-19T04:45:29.982790",
+    "updated_at": "2025-07-24T05:06:33.284132"
+  },
+  "593": {
+    "device_command_id": "593",
+    "routine_id": "243",
+    "device_id": "2795",
+    "status": "on",
+    "created_at": "2025-06-10T16:37:52.057357",
+    "updated_at": "2025-06-19T21:16:52.454624"
+  },
+  "594": {
+    "device_command_id": "594",
+    "routine_id": "244",
+    "device_id": "532",
+    "status": "off",
+    "created_at": "2025-06-25T00:46:23.774991",
+    "updated_at": "2025-07-09T14:57:27.628029"
+  },
+  "595": {
+    "device_command_id": "595",
+    "routine_id": "244",
+    "device_id": "521",
+    "status": "on",
+    "created_at": "2025-06-20T11:45:29.095771",
+    "updated_at": "2025-07-15T04:41:37.031237"
+  },
+  "596": {
+    "device_command_id": "596",
+    "routine_id": "244",
+    "device_id": "531",
+    "status": "on",
+    "created_at": "2025-06-25T19:33:26.764879",
+    "updated_at": "2025-07-21T00:46:12.857777"
+  },
+  "597": {
+    "device_command_id": "597",
+    "routine_id": "245",
+    "device_id": "525",
+    "status": "on",
+    "created_at": "2025-06-11T05:09:38.046313",
+    "updated_at": "2025-07-20T16:15:20.394153"
+  },
+  "598": {
+    "device_command_id": "598",
+    "routine_id": "245",
+    "device_id": "523",
+    "status": "on",
+    "created_at": "2025-06-12T06:48:04.451004",
+    "updated_at": "2025-07-29T23:59:41.378673"
+  },
+  "599": {
+    "device_command_id": "599",
+    "routine_id": "246",
+    "device_id": "3113",
+    "status": "on",
+    "created_at": "2025-06-28T17:15:16.396808",
+    "updated_at": "2025-07-16T21:12:24.841945"
+  },
+  "600": {
+    "device_command_id": "600",
+    "routine_id": "247",
+    "device_id": "1555",
+    "status": "off",
+    "created_at": "2025-06-10T07:37:58.662746",
+    "updated_at": "2025-07-06T07:44:06.184370"
+  },
+  "601": {
+    "device_command_id": "601",
+    "routine_id": "248",
+    "device_id": "1316",
+    "status": "on",
+    "created_at": "2025-06-01T21:42:28.926446",
+    "updated_at": "2025-06-21T02:15:17.680132"
+  },
+  "602": {
+    "device_command_id": "602",
+    "routine_id": "249",
+    "device_id": "1316",
+    "status": "off",
+    "created_at": "2025-06-18T11:39:54.214301",
+    "updated_at": "2025-07-10T14:54:33.991579"
+  },
+  "603": {
+    "device_command_id": "603",
+    "routine_id": "250",
+    "device_id": "1780",
+    "status": "on",
+    "created_at": "2025-06-11T10:57:12.654051",
+    "updated_at": "2025-07-19T01:46:28.475406"
+  },
+  "604": {
+    "device_command_id": "604",
+    "routine_id": "250",
+    "device_id": "1784",
+    "status": "off",
+    "created_at": "2025-06-23T11:32:37.982480",
+    "updated_at": "2025-06-30T18:28:49.483553"
+  },
+  "605": {
+    "device_command_id": "605",
+    "routine_id": "251",
+    "device_id": "2465",
+    "status": "on",
+    "created_at": "2025-06-14T19:31:18.320164",
+    "updated_at": "2025-07-26T19:58:49.403678"
+  },
+  "606": {
+    "device_command_id": "606",
+    "routine_id": "251",
+    "device_id": "2455",
+    "status": "off",
+    "created_at": "2025-06-06T12:55:48.771446",
+    "updated_at": "2025-06-17T22:59:00.644117"
+  },
+  "607": {
+    "device_command_id": "607",
+    "routine_id": "251",
+    "device_id": "2466",
+    "status": "off",
+    "created_at": "2025-06-08T14:51:26.859798",
+    "updated_at": "2025-07-15T20:11:13.104170"
+  },
+  "608": {
+    "device_command_id": "608",
+    "routine_id": "252",
+    "device_id": "2449",
+    "status": "off",
+    "created_at": "2025-06-07T19:50:30.094056",
+    "updated_at": "2025-06-26T22:19:24.182520"
+  },
+  "609": {
+    "device_command_id": "609",
+    "routine_id": "252",
+    "device_id": "2465",
+    "status": "on",
+    "created_at": "2025-06-10T15:54:03.177161",
+    "updated_at": "2025-06-29T03:52:58.549663"
+  },
+  "610": {
+    "device_command_id": "610",
+    "routine_id": "252",
+    "device_id": "2466",
+    "status": "on",
+    "created_at": "2025-06-26T08:47:18.235777",
+    "updated_at": "2025-07-22T18:06:41.801089"
+  }
+}

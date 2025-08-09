@@ -1,0 +1,1108 @@
+{
+  "13": {
+    "device_id": "13",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-06-09T13:51:09.478793",
+    "created_at": "2024-09-26T02:40:26.905982",
+    "updated_at": "2025-03-04T15:17:30.339161"
+  },
+  "14": {
+    "device_id": "14",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-04-28T13:33:53.277242",
+    "created_at": "2025-01-26T12:18:05.490716",
+    "updated_at": "2025-04-15T17:11:47.322961"
+  },
+  "48": {
+    "device_id": "48",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-04-25T15:32:35.003872",
+    "created_at": "2025-04-11T08:12:06.583000",
+    "updated_at": "2025-05-28T21:17:43.543246"
+  },
+  "68": {
+    "device_id": "68",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2024-12-18T12:11:32.603118",
+    "created_at": "2024-12-17T18:47:47.600278",
+    "updated_at": "2025-06-30T22:40:36.679899"
+  },
+  "69": {
+    "device_id": "69",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-01-02T19:23:48.044856",
+    "created_at": "2024-10-29T08:18:33.033109",
+    "updated_at": "2025-07-28T22:40:21.398806"
+  },
+  "108": {
+    "device_id": "108",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-04-22T18:42:16.709154",
+    "created_at": "2025-04-04T02:50:17.828233",
+    "updated_at": "2025-06-05T02:18:40.364168"
+  },
+  "132": {
+    "device_id": "132",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-04-19T13:28:44.214028",
+    "created_at": "2025-03-24T16:04:20.261681",
+    "updated_at": "2025-07-12T08:34:19.185655"
+  },
+  "133": {
+    "device_id": "133",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-06-05T00:42:25.119998",
+    "created_at": "2025-03-01T15:38:31.123639",
+    "updated_at": "2025-06-10T04:40:17.822066"
+  },
+  "155": {
+    "device_id": "155",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-07-02T12:22:35.659302",
+    "created_at": "2025-04-27T08:16:03.390457",
+    "updated_at": "2025-05-19T03:02:53.003793"
+  },
+  "156": {
+    "device_id": "156",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-05-06T23:38:14.450818",
+    "created_at": "2024-11-05T22:08:06.118728",
+    "updated_at": "2025-03-11T00:11:33.969436"
+  },
+  "174": {
+    "device_id": "174",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2024-12-21T12:02:50.059273",
+    "created_at": "2024-12-01T14:11:34.660876",
+    "updated_at": "2025-04-04T21:16:32.484532"
+  },
+  "199": {
+    "device_id": "199",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-06-15T05:45:52.192212",
+    "created_at": "2024-12-11T23:13:46.089282",
+    "updated_at": "2025-01-14T05:31:15.235484"
+  },
+  "200": {
+    "device_id": "200",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2024-11-16T04:35:15.899558",
+    "created_at": "2024-11-10T07:19:21.449235",
+    "updated_at": "2025-06-08T23:55:34.759871"
+  },
+  "222": {
+    "device_id": "222",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-01-01T07:38:53.280793",
+    "created_at": "2024-10-28T13:59:50.830576",
+    "updated_at": "2025-04-07T07:24:58.293805"
+  },
+  "223": {
+    "device_id": "223",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-06-11T16:15:26.333240",
+    "created_at": "2025-04-21T09:26:38.184071",
+    "updated_at": "2025-07-17T19:14:36.429787"
+  },
+  "271": {
+    "device_id": "271",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-02-15T01:59:36.380029",
+    "created_at": "2025-01-29T19:37:40.756386",
+    "updated_at": "2025-03-13T20:42:57.969001"
+  },
+  "272": {
+    "device_id": "272",
+    "resolution": "720p",
+    "last_activity_timestamp": "2024-12-16T15:39:18.462064",
+    "created_at": "2024-11-20T11:49:42.255834",
+    "updated_at": "2025-01-09T05:08:09.914876"
+  },
+  "310": {
+    "device_id": "310",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-02-21T04:19:14.684556",
+    "created_at": "2024-09-04T04:08:41.342938",
+    "updated_at": "2025-01-04T15:59:46.846554"
+  },
+  "311": {
+    "device_id": "311",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-03-06T15:47:10.260372",
+    "created_at": "2025-02-03T04:19:04.717067",
+    "updated_at": "2025-02-28T19:05:58.682866"
+  },
+  "332": {
+    "device_id": "332",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-03-11T23:37:52.425980",
+    "created_at": "2024-11-08T17:32:43.575912",
+    "updated_at": "2025-05-18T17:56:13.419068"
+  },
+  "354": {
+    "device_id": "354",
+    "resolution": "2k",
+    "last_activity_timestamp": "2024-11-03T17:09:21.147814",
+    "created_at": "2024-10-05T16:43:08.663266",
+    "updated_at": "2025-05-18T18:21:26.253230"
+  },
+  "382": {
+    "device_id": "382",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-04-27T09:04:19.522632",
+    "created_at": "2025-03-16T22:12:58.855396",
+    "updated_at": "2025-07-09T06:09:03.861048"
+  },
+  "383": {
+    "device_id": "383",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-07-10T02:10:24.302065",
+    "created_at": "2025-02-02T08:45:18.476820",
+    "updated_at": "2025-07-04T18:37:34.832109"
+  },
+  "407": {
+    "device_id": "407",
+    "resolution": "720p",
+    "last_activity_timestamp": "2024-10-24T04:05:57.610022",
+    "created_at": "2024-10-17T14:07:12.394089",
+    "updated_at": "2024-12-02T07:18:16.089646"
+  },
+  "408": {
+    "device_id": "408",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-03-21T03:43:32.946162",
+    "created_at": "2025-03-18T00:29:39.686653",
+    "updated_at": "2025-07-10T18:02:11.361330"
+  },
+  "447": {
+    "device_id": "447",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-01-24T09:29:42.726598",
+    "created_at": "2024-09-03T23:44:39.433994",
+    "updated_at": "2025-02-23T03:13:10.212542"
+  },
+  "469": {
+    "device_id": "469",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-01-06T11:03:43.673374",
+    "created_at": "2024-09-30T09:18:44.434586",
+    "updated_at": "2024-11-14T23:32:15.462127"
+  },
+  "487": {
+    "device_id": "487",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-06-14T18:33:41.578646",
+    "created_at": "2024-10-04T03:45:42.306603",
+    "updated_at": "2025-04-24T20:37:17.635605"
+  },
+  "503": {
+    "device_id": "503",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-04-15T02:11:31.684795",
+    "created_at": "2025-01-21T14:21:21.968215",
+    "updated_at": "2025-03-28T14:29:22.931873"
+  },
+  "504": {
+    "device_id": "504",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-07-11T11:02:41.122442",
+    "created_at": "2025-01-15T22:48:50.042982",
+    "updated_at": "2025-03-24T08:21:34.494599"
+  },
+  "525": {
+    "device_id": "525",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-01-26T02:12:52.528623",
+    "created_at": "2024-10-23T22:25:21.212593",
+    "updated_at": "2024-11-26T21:27:21.980708"
+  },
+  "547": {
+    "device_id": "547",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-07-29T20:43:02.405634",
+    "created_at": "2025-04-27T03:33:56.246022",
+    "updated_at": "2025-07-16T12:26:47.338834"
+  },
+  "548": {
+    "device_id": "548",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-03-01T02:11:43.134028",
+    "created_at": "2024-12-03T23:03:08.675712",
+    "updated_at": "2025-07-18T08:23:04.272574"
+  },
+  "572": {
+    "device_id": "572",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-04-21T14:48:18.905435",
+    "created_at": "2025-02-11T00:01:13.574793",
+    "updated_at": "2025-02-11T03:34:04.040273"
+  },
+  "573": {
+    "device_id": "573",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-03-16T00:45:42.146593",
+    "created_at": "2024-09-27T04:54:05.107067",
+    "updated_at": "2025-03-08T02:55:42.319536"
+  },
+  "600": {
+    "device_id": "600",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-05-06T23:50:47.732149",
+    "created_at": "2025-04-21T14:28:07.114688",
+    "updated_at": "2025-07-07T12:52:10.281686"
+  },
+  "601": {
+    "device_id": "601",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-04-30T19:35:02.608165",
+    "created_at": "2025-04-19T16:04:58.017357",
+    "updated_at": "2025-05-21T17:24:46.305919"
+  },
+  "638": {
+    "device_id": "638",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-06-24T18:23:55.194848",
+    "created_at": "2024-08-16T04:58:18.513785",
+    "updated_at": "2024-11-26T10:12:43.631693"
+  },
+  "639": {
+    "device_id": "639",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-05-31T07:27:47.376796",
+    "created_at": "2024-12-17T14:11:06.169946",
+    "updated_at": "2025-03-24T00:37:33.562064"
+  },
+  "654": {
+    "device_id": "654",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-04-13T02:09:58.498691",
+    "created_at": "2025-03-03T09:50:04.138756",
+    "updated_at": "2025-05-29T04:36:05.424927"
+  },
+  "675": {
+    "device_id": "675",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-07-24T00:38:56.908235",
+    "created_at": "2025-01-04T15:43:29.321121",
+    "updated_at": "2025-03-18T16:41:02.870072"
+  },
+  "676": {
+    "device_id": "676",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-03-18T10:02:23.788753",
+    "created_at": "2025-03-01T18:21:41.181310",
+    "updated_at": "2025-06-07T13:20:54.057429"
+  },
+  "713": {
+    "device_id": "713",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-03-28T23:59:04.226482",
+    "created_at": "2025-02-25T19:13:18.833427",
+    "updated_at": "2025-07-30T20:39:24.212065"
+  },
+  "714": {
+    "device_id": "714",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-05-16T17:42:39.118464",
+    "created_at": "2025-03-08T18:17:59.101060",
+    "updated_at": "2025-03-25T07:09:48.382177"
+  },
+  "757": {
+    "device_id": "757",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-07-01T07:57:38.869855",
+    "created_at": "2024-12-27T13:50:07.477190",
+    "updated_at": "2025-01-08T03:46:12.828548"
+  },
+  "758": {
+    "device_id": "758",
+    "resolution": "720p",
+    "last_activity_timestamp": "2024-09-01T08:14:16.268748",
+    "created_at": "2024-08-01T17:56:39.276353",
+    "updated_at": "2024-08-22T00:13:16.828455"
+  },
+  "779": {
+    "device_id": "779",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-07-24T19:18:22.673230",
+    "created_at": "2025-04-24T11:53:58.761540",
+    "updated_at": "2025-06-30T03:11:04.494377"
+  },
+  "780": {
+    "device_id": "780",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-06-02T04:59:20.522310",
+    "created_at": "2025-03-13T10:22:57.784852",
+    "updated_at": "2025-03-20T15:49:34.499525"
+  },
+  "812": {
+    "device_id": "812",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-06-01T15:18:36.878639",
+    "created_at": "2024-11-23T16:42:34.050468",
+    "updated_at": "2025-06-02T07:54:02.783649"
+  },
+  "813": {
+    "device_id": "813",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-03-20T11:40:20.230959",
+    "created_at": "2025-02-28T23:21:32.360866",
+    "updated_at": "2025-03-09T03:45:10.386801"
+  },
+  "838": {
+    "device_id": "838",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-06-22T12:45:32.446948",
+    "created_at": "2025-04-11T03:57:01.060699",
+    "updated_at": "2025-04-15T07:24:02.936816"
+  },
+  "863": {
+    "device_id": "863",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-06-21T22:08:17.915717",
+    "created_at": "2024-08-14T20:33:30.777973",
+    "updated_at": "2025-01-03T20:06:22.391433"
+  },
+  "864": {
+    "device_id": "864",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-05-17T14:12:43.252453",
+    "created_at": "2025-01-23T00:41:36.800523",
+    "updated_at": "2025-04-01T07:50:40.845505"
+  },
+  "907": {
+    "device_id": "907",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-02-22T00:26:03.985293",
+    "created_at": "2024-12-20T18:33:33.477242",
+    "updated_at": "2025-05-20T05:49:44.184000"
+  },
+  "964": {
+    "device_id": "964",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-07-21T18:34:45.939644",
+    "created_at": "2025-04-26T12:02:40.690548",
+    "updated_at": "2025-05-17T20:32:05.628317"
+  },
+  "965": {
+    "device_id": "965",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-06-01T02:33:50.116420",
+    "created_at": "2024-10-10T01:33:43.514338",
+    "updated_at": "2025-03-05T22:16:36.614347"
+  },
+  "1025": {
+    "device_id": "1025",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-07-23T02:23:36.527044",
+    "created_at": "2025-04-18T06:01:54.843514",
+    "updated_at": "2025-04-20T16:34:49.922159"
+  },
+  "1043": {
+    "device_id": "1043",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-05-03T09:31:39.726291",
+    "created_at": "2024-12-13T10:28:43.042032",
+    "updated_at": "2024-12-15T11:27:21.427249"
+  },
+  "1070": {
+    "device_id": "1070",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-03-09T07:17:37.382117",
+    "created_at": "2025-02-13T22:28:27.470832",
+    "updated_at": "2025-03-28T04:44:50.792691"
+  },
+  "1094": {
+    "device_id": "1094",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-05-19T19:44:42.014182",
+    "created_at": "2025-03-14T01:16:36.976411",
+    "updated_at": "2025-07-26T03:48:20.493815"
+  },
+  "1119": {
+    "device_id": "1119",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-06-05T21:02:54.090165",
+    "created_at": "2025-02-13T12:00:41.053759",
+    "updated_at": "2025-03-25T03:46:41.651359"
+  },
+  "1120": {
+    "device_id": "1120",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-07-03T12:06:17.767956",
+    "created_at": "2025-04-01T10:22:39.223891",
+    "updated_at": "2025-04-29T10:01:33.246275"
+  },
+  "1143": {
+    "device_id": "1143",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2024-11-20T15:03:33.358666",
+    "created_at": "2024-10-10T07:18:15.705248",
+    "updated_at": "2025-07-09T10:28:52.918383"
+  },
+  "1144": {
+    "device_id": "1144",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2024-12-25T19:42:48.937844",
+    "created_at": "2024-11-11T09:45:45.009280",
+    "updated_at": "2025-06-05T11:47:35.123548"
+  },
+  "1162": {
+    "device_id": "1162",
+    "resolution": "720p",
+    "last_activity_timestamp": "2024-11-22T04:49:39.817233",
+    "created_at": "2024-10-11T22:13:00.719249",
+    "updated_at": "2025-01-18T11:17:26.074031"
+  },
+  "1181": {
+    "device_id": "1181",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-05-20T05:17:35.804624",
+    "created_at": "2025-04-20T15:31:00.379195",
+    "updated_at": "2025-06-10T04:38:48.827497"
+  },
+  "1182": {
+    "device_id": "1182",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-02-06T16:48:11.770961",
+    "created_at": "2024-08-30T07:29:21.248443",
+    "updated_at": "2024-11-18T14:53:57.162502"
+  },
+  "1202": {
+    "device_id": "1202",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2024-11-01T14:16:17.431064",
+    "created_at": "2024-10-14T22:53:42.451805",
+    "updated_at": "2025-01-31T05:03:33.861914"
+  },
+  "1203": {
+    "device_id": "1203",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-04-03T11:23:23.457309",
+    "created_at": "2024-08-19T05:33:44.974861",
+    "updated_at": "2024-09-07T03:19:09.120399"
+  },
+  "1245": {
+    "device_id": "1245",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-06-24T23:59:27.447665",
+    "created_at": "2024-08-02T07:21:28.292045",
+    "updated_at": "2025-07-31T04:53:07.938319"
+  },
+  "1246": {
+    "device_id": "1246",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-06-07T18:45:41.485356",
+    "created_at": "2024-09-27T09:52:23.831634",
+    "updated_at": "2025-04-05T19:08:35.581290"
+  },
+  "1268": {
+    "device_id": "1268",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-06-26T03:30:56.392885",
+    "created_at": "2025-03-07T11:42:08.985665",
+    "updated_at": "2025-04-09T13:31:29.503733"
+  },
+  "1269": {
+    "device_id": "1269",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-07-08T21:36:17.732009",
+    "created_at": "2025-04-12T21:18:50.604231",
+    "updated_at": "2025-06-21T01:02:05.865146"
+  },
+  "1285": {
+    "device_id": "1285",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-07-02T04:09:47.811386",
+    "created_at": "2025-04-29T21:24:42.556262",
+    "updated_at": "2025-07-07T06:38:41.199089"
+  },
+  "1339": {
+    "device_id": "1339",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-04-23T14:47:23.645809",
+    "created_at": "2024-10-19T11:31:23.855733",
+    "updated_at": "2024-12-21T02:29:36.142899"
+  },
+  "1340": {
+    "device_id": "1340",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-04-14T05:37:19.926544",
+    "created_at": "2025-01-19T04:34:42.441686",
+    "updated_at": "2025-07-16T23:01:07.713989"
+  },
+  "1367": {
+    "device_id": "1367",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-06-25T20:09:04.474697",
+    "created_at": "2024-11-25T16:26:35.316477",
+    "updated_at": "2024-12-19T11:37:03.449318"
+  },
+  "1387": {
+    "device_id": "1387",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-06-13T07:00:26.707845",
+    "created_at": "2024-09-27T20:30:53.209397",
+    "updated_at": "2024-12-14T20:01:52.889733"
+  },
+  "1415": {
+    "device_id": "1415",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-07-20T06:40:56.479213",
+    "created_at": "2025-04-23T13:43:27.321112",
+    "updated_at": "2025-07-28T18:30:13.764297"
+  },
+  "1458": {
+    "device_id": "1458",
+    "resolution": "720p",
+    "last_activity_timestamp": "2024-11-26T09:30:06.102439",
+    "created_at": "2024-10-19T09:26:00.457817",
+    "updated_at": "2024-11-25T03:38:00.603331"
+  },
+  "1459": {
+    "device_id": "1459",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-03-31T06:18:56.417442",
+    "created_at": "2024-09-28T00:17:45.152076",
+    "updated_at": "2025-07-31T06:31:55.918112"
+  },
+  "1488": {
+    "device_id": "1488",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-06-18T14:39:40.955080",
+    "created_at": "2025-02-06T12:13:40.713055",
+    "updated_at": "2025-04-20T13:03:29.320168"
+  },
+  "1489": {
+    "device_id": "1489",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-01-13T00:31:39.613987",
+    "created_at": "2025-01-01T08:11:01.689704",
+    "updated_at": "2025-01-11T13:10:54.695282"
+  },
+  "1589": {
+    "device_id": "1589",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-01-12T21:25:00.909034",
+    "created_at": "2024-08-14T02:57:47.722065",
+    "updated_at": "2024-09-02T20:58:57.100242"
+  },
+  "1610": {
+    "device_id": "1610",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-04-19T01:20:55.047528",
+    "created_at": "2024-10-17T00:47:49.911986",
+    "updated_at": "2025-04-04T00:28:15.443058"
+  },
+  "1611": {
+    "device_id": "1611",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-01-25T00:57:01.815611",
+    "created_at": "2025-01-09T09:29:42.060769",
+    "updated_at": "2025-06-02T02:08:40.532925"
+  },
+  "1630": {
+    "device_id": "1630",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-06-05T23:03:09.249970",
+    "created_at": "2025-02-05T11:00:45.716501",
+    "updated_at": "2025-04-11T15:14:31.886715"
+  },
+  "1631": {
+    "device_id": "1631",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-02-25T14:33:49.476278",
+    "created_at": "2025-02-23T05:36:44.877248",
+    "updated_at": "2025-06-25T14:05:40.561179"
+  },
+  "1654": {
+    "device_id": "1654",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-07-28T18:06:46.914602",
+    "created_at": "2024-10-13T10:47:25.927444",
+    "updated_at": "2024-10-29T17:52:27.544802"
+  },
+  "1655": {
+    "device_id": "1655",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-04-04T17:55:19.929489",
+    "created_at": "2025-03-05T23:20:44.126232",
+    "updated_at": "2025-04-29T08:51:02.570437"
+  },
+  "1677": {
+    "device_id": "1677",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-04-21T17:05:21.364749",
+    "created_at": "2025-01-31T11:54:27.422551",
+    "updated_at": "2025-03-12T11:47:54.559368"
+  },
+  "1678": {
+    "device_id": "1678",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-01-06T11:55:28.520690",
+    "created_at": "2024-08-24T03:22:17.983611",
+    "updated_at": "2025-06-09T00:31:03.276238"
+  },
+  "1764": {
+    "device_id": "1764",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-04-01T10:39:59.970834",
+    "created_at": "2025-03-13T17:15:48.736887",
+    "updated_at": "2025-06-21T16:55:31.862662"
+  },
+  "1765": {
+    "device_id": "1765",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-05-14T05:20:53.775874",
+    "created_at": "2025-01-21T14:52:04.622722",
+    "updated_at": "2025-04-20T01:13:34.885969"
+  },
+  "1786": {
+    "device_id": "1786",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-06-26T07:30:36.517524",
+    "created_at": "2025-04-05T12:29:21.898447",
+    "updated_at": "2025-05-27T07:02:18.314766"
+  },
+  "1787": {
+    "device_id": "1787",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-05-22T01:07:21.639277",
+    "created_at": "2025-04-30T04:06:35.244881",
+    "updated_at": "2025-06-10T04:50:27.354611"
+  },
+  "1827": {
+    "device_id": "1827",
+    "resolution": "720p",
+    "last_activity_timestamp": "2024-11-06T13:36:25.457104",
+    "created_at": "2024-11-01T20:53:12.086815",
+    "updated_at": "2025-04-19T07:42:37.997109"
+  },
+  "1828": {
+    "device_id": "1828",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-05-17T16:36:36.684617",
+    "created_at": "2024-11-24T22:23:32.048431",
+    "updated_at": "2025-02-18T20:00:15.989185"
+  },
+  "1859": {
+    "device_id": "1859",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-04-13T07:36:39.007366",
+    "created_at": "2024-11-11T08:45:23.369967",
+    "updated_at": "2024-12-20T19:37:21.262063"
+  },
+  "1900": {
+    "device_id": "1900",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-03-18T11:37:38.626750",
+    "created_at": "2025-03-04T02:56:12.419907",
+    "updated_at": "2025-05-19T00:01:36.978680"
+  },
+  "1929": {
+    "device_id": "1929",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-07-23T18:36:08.643768",
+    "created_at": "2024-09-22T22:53:17.629366",
+    "updated_at": "2024-10-17T21:16:48.915991"
+  },
+  "1949": {
+    "device_id": "1949",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-07-04T18:39:30.631311",
+    "created_at": "2024-11-07T00:25:35.300175",
+    "updated_at": "2025-04-13T00:21:08.780260"
+  },
+  "1998": {
+    "device_id": "1998",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-02-22T15:03:11.418142",
+    "created_at": "2025-02-20T00:54:14.931404",
+    "updated_at": "2025-03-24T19:15:32.341832"
+  },
+  "1999": {
+    "device_id": "1999",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-05-07T16:32:53.878077",
+    "created_at": "2025-01-24T17:49:27.968954",
+    "updated_at": "2025-06-29T11:54:12.118151"
+  },
+  "2051": {
+    "device_id": "2051",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-01-15T12:43:29.564225",
+    "created_at": "2024-10-02T00:09:39.383248",
+    "updated_at": "2024-11-26T09:58:10.422533"
+  },
+  "2052": {
+    "device_id": "2052",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-02-26T03:07:26.965287",
+    "created_at": "2024-12-03T07:15:36.532869",
+    "updated_at": "2025-01-25T14:04:21.612457"
+  },
+  "2097": {
+    "device_id": "2097",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-05-23T11:25:40.281727",
+    "created_at": "2025-03-09T17:11:34.498024",
+    "updated_at": "2025-07-09T17:12:08.933331"
+  },
+  "2098": {
+    "device_id": "2098",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-07-14T05:23:38.903348",
+    "created_at": "2025-02-02T19:06:36.116487",
+    "updated_at": "2025-05-02T09:39:05.363768"
+  },
+  "2132": {
+    "device_id": "2132",
+    "resolution": "720p",
+    "last_activity_timestamp": "2024-10-01T08:14:02.856780",
+    "created_at": "2024-08-12T17:23:03.766340",
+    "updated_at": "2024-11-02T12:43:28.416653"
+  },
+  "2162": {
+    "device_id": "2162",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-05-19T00:15:07.072497",
+    "created_at": "2025-03-07T11:33:43.044568",
+    "updated_at": "2025-05-01T02:28:52.536905"
+  },
+  "2163": {
+    "device_id": "2163",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-05-19T06:53:00.409396",
+    "created_at": "2025-04-22T20:57:05.535846",
+    "updated_at": "2025-07-05T06:22:18.746409"
+  },
+  "2221": {
+    "device_id": "2221",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-02-11T13:34:15.120360",
+    "created_at": "2025-02-10T12:20:49.897335",
+    "updated_at": "2025-03-26T22:58:37.064282"
+  },
+  "2262": {
+    "device_id": "2262",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-06-21T11:36:46.857616",
+    "created_at": "2025-01-09T06:24:53.494747",
+    "updated_at": "2025-05-19T04:24:35.340877"
+  },
+  "2263": {
+    "device_id": "2263",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-05-26T21:05:42.507157",
+    "created_at": "2024-11-07T17:00:22.366149",
+    "updated_at": "2025-02-01T20:17:01.942923"
+  },
+  "2304": {
+    "device_id": "2304",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-06-01T09:50:18.594087",
+    "created_at": "2025-02-01T02:53:57.466718",
+    "updated_at": "2025-03-28T08:47:39.501429"
+  },
+  "2305": {
+    "device_id": "2305",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-05-27T23:15:58.512429",
+    "created_at": "2024-11-21T05:51:41.462830",
+    "updated_at": "2025-05-03T11:30:17.991036"
+  },
+  "2320": {
+    "device_id": "2320",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-03-19T16:46:08.444117",
+    "created_at": "2024-10-09T07:10:49.202427",
+    "updated_at": "2025-01-05T14:23:31.256821"
+  },
+  "2343": {
+    "device_id": "2343",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-06-20T08:47:31.973857",
+    "created_at": "2024-09-05T12:39:38.130527",
+    "updated_at": "2024-12-04T09:31:58.143971"
+  },
+  "2379": {
+    "device_id": "2379",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-01-12T08:47:41.698651",
+    "created_at": "2024-12-16T00:25:49.629675",
+    "updated_at": "2025-03-20T21:52:08.334883"
+  },
+  "2380": {
+    "device_id": "2380",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-04-20T20:03:42.950633",
+    "created_at": "2025-02-15T05:00:19.738864",
+    "updated_at": "2025-03-30T14:19:48.146321"
+  },
+  "2406": {
+    "device_id": "2406",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-01-24T06:22:48.913798",
+    "created_at": "2024-12-22T08:39:24.007210",
+    "updated_at": "2025-05-20T05:45:12.738697"
+  },
+  "2429": {
+    "device_id": "2429",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-03-04T19:13:28.021048",
+    "created_at": "2025-02-19T09:34:54.563532",
+    "updated_at": "2025-05-16T11:02:06.679518"
+  },
+  "2430": {
+    "device_id": "2430",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-01-10T17:00:16.704312",
+    "created_at": "2024-12-08T04:26:16.144423",
+    "updated_at": "2025-01-30T01:37:19.423132"
+  },
+  "2456": {
+    "device_id": "2456",
+    "resolution": "720p",
+    "last_activity_timestamp": "2024-11-28T09:41:08.871519",
+    "created_at": "2024-10-18T02:56:28.620469",
+    "updated_at": "2025-01-18T08:02:36.241197"
+  },
+  "2457": {
+    "device_id": "2457",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-05-01T21:29:17.904050",
+    "created_at": "2025-01-26T11:18:48.473919",
+    "updated_at": "2025-05-22T06:22:11.516867"
+  },
+  "2495": {
+    "device_id": "2495",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-03-08T18:53:39.659959",
+    "created_at": "2024-10-29T10:29:42.505545",
+    "updated_at": "2025-03-02T11:32:58.056679"
+  },
+  "2496": {
+    "device_id": "2496",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-07-09T01:58:02.434959",
+    "created_at": "2025-01-05T01:33:33.504441",
+    "updated_at": "2025-02-11T12:05:32.881064"
+  },
+  "2516": {
+    "device_id": "2516",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-06-23T16:37:57.571132",
+    "created_at": "2025-02-10T03:22:45.166058",
+    "updated_at": "2025-02-20T14:54:31.900659"
+  },
+  "2517": {
+    "device_id": "2517",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-04-25T02:40:07.160426",
+    "created_at": "2024-10-02T09:20:59.164217",
+    "updated_at": "2025-01-27T11:49:16.208537"
+  },
+  "2537": {
+    "device_id": "2537",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-02-13T20:57:09.588843",
+    "created_at": "2024-11-14T00:41:40.556812",
+    "updated_at": "2025-07-27T17:24:26.417606"
+  },
+  "2559": {
+    "device_id": "2559",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-07-25T07:43:59.283831",
+    "created_at": "2024-12-07T04:59:02.266554",
+    "updated_at": "2025-06-29T04:51:14.417432"
+  },
+  "2610": {
+    "device_id": "2610",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-07-17T02:54:01.503730",
+    "created_at": "2025-04-21T17:41:54.602680",
+    "updated_at": "2025-05-25T18:12:49.949375"
+  },
+  "2611": {
+    "device_id": "2611",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-05-05T22:35:49.435396",
+    "created_at": "2024-09-16T18:16:40.180528",
+    "updated_at": "2025-01-03T08:53:01.717577"
+  },
+  "2646": {
+    "device_id": "2646",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2024-12-24T19:22:12.171445",
+    "created_at": "2024-12-02T19:55:57.777581",
+    "updated_at": "2025-03-02T04:40:12.444453"
+  },
+  "2661": {
+    "device_id": "2661",
+    "resolution": "2k",
+    "last_activity_timestamp": "2024-10-04T12:57:48.733897",
+    "created_at": "2024-09-04T16:11:13.945941",
+    "updated_at": "2024-11-13T16:17:38.944204"
+  },
+  "2680": {
+    "device_id": "2680",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-07-22T11:52:21.259140",
+    "created_at": "2025-01-26T14:33:42.135882",
+    "updated_at": "2025-04-17T15:13:26.770351"
+  },
+  "2702": {
+    "device_id": "2702",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-04-09T14:34:41.309555",
+    "created_at": "2025-03-03T21:44:51.114993",
+    "updated_at": "2025-04-14T23:16:07.379391"
+  },
+  "2725": {
+    "device_id": "2725",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-07-19T19:18:55.657493",
+    "created_at": "2024-08-03T01:30:17.222617",
+    "updated_at": "2025-04-22T13:28:52.562151"
+  },
+  "2726": {
+    "device_id": "2726",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-06-24T00:41:17.789643",
+    "created_at": "2024-09-01T02:33:41.623006",
+    "updated_at": "2025-03-22T08:32:48.145506"
+  },
+  "2749": {
+    "device_id": "2749",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-07-23T05:44:55.530500",
+    "created_at": "2025-04-29T14:04:56.697949",
+    "updated_at": "2025-05-04T07:42:29.686276"
+  },
+  "2772": {
+    "device_id": "2772",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-07-10T07:13:06.489007",
+    "created_at": "2025-02-03T08:45:55.732620",
+    "updated_at": "2025-02-27T10:23:02.247321"
+  },
+  "2773": {
+    "device_id": "2773",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-03-09T22:04:54.687592",
+    "created_at": "2025-01-29T08:24:56.157294",
+    "updated_at": "2025-07-28T12:13:10.062160"
+  },
+  "2797": {
+    "device_id": "2797",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-06-11T13:02:45.714482",
+    "created_at": "2024-12-31T11:06:31.438463",
+    "updated_at": "2025-04-26T20:06:24.592971"
+  },
+  "2814": {
+    "device_id": "2814",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-03-22T12:02:08.498846",
+    "created_at": "2025-02-23T23:10:53.174530",
+    "updated_at": "2025-07-12T13:47:23.812414"
+  },
+  "2846": {
+    "device_id": "2846",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-02-26T08:57:16.526164",
+    "created_at": "2025-01-25T02:17:29.697039",
+    "updated_at": "2025-07-20T13:27:02.042790"
+  },
+  "2847": {
+    "device_id": "2847",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-03-16T05:52:24.921639",
+    "created_at": "2025-01-06T15:57:51.791168",
+    "updated_at": "2025-01-15T11:31:28.858877"
+  },
+  "2864": {
+    "device_id": "2864",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-04-07T21:59:00.271851",
+    "created_at": "2025-01-04T06:48:19.421618",
+    "updated_at": "2025-05-29T02:06:58.727136"
+  },
+  "2942": {
+    "device_id": "2942",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-05-15T18:34:51.084169",
+    "created_at": "2024-09-12T12:08:55.781444",
+    "updated_at": "2025-02-23T21:32:07.292228"
+  },
+  "2943": {
+    "device_id": "2943",
+    "resolution": "720p",
+    "last_activity_timestamp": "2024-12-31T11:06:06.664122",
+    "created_at": "2024-11-01T14:33:17.933078",
+    "updated_at": "2025-02-05T11:54:32.572953"
+  },
+  "2972": {
+    "device_id": "2972",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-04-18T01:56:07.698901",
+    "created_at": "2024-12-21T13:46:21.524855",
+    "updated_at": "2025-05-07T02:16:58.581150"
+  },
+  "3012": {
+    "device_id": "3012",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-07-07T08:57:19.454223",
+    "created_at": "2024-12-26T07:40:04.153905",
+    "updated_at": "2025-06-13T18:37:16.866739"
+  },
+  "3035": {
+    "device_id": "3035",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-03-10T19:58:30.178915",
+    "created_at": "2025-02-03T14:26:43.858230",
+    "updated_at": "2025-05-02T14:34:17.534226"
+  },
+  "3062": {
+    "device_id": "3062",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-01-05T01:39:59.131543",
+    "created_at": "2024-10-27T11:08:08.440695",
+    "updated_at": "2025-02-12T00:46:28.237472"
+  },
+  "3063": {
+    "device_id": "3063",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-04-01T01:45:48.064118",
+    "created_at": "2024-12-09T01:52:59.789576",
+    "updated_at": "2025-04-09T14:44:44.069125"
+  },
+  "3089": {
+    "device_id": "3089",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2025-06-07T16:05:30.007620",
+    "created_at": "2024-12-25T03:42:50.106839",
+    "updated_at": "2025-05-12T22:08:14.506114"
+  },
+  "3107": {
+    "device_id": "3107",
+    "resolution": "1080p",
+    "last_activity_timestamp": "2024-12-28T03:26:15.466132",
+    "created_at": "2024-11-12T10:35:25.584476",
+    "updated_at": "2025-05-06T23:57:08.718371"
+  },
+  "3125": {
+    "device_id": "3125",
+    "resolution": "720p",
+    "last_activity_timestamp": "2025-01-09T15:22:43.662163",
+    "created_at": "2024-11-19T07:42:04.580852",
+    "updated_at": "2025-06-15T03:30:07.995181"
+  },
+  "3126": {
+    "device_id": "3126",
+    "resolution": "2k",
+    "last_activity_timestamp": "2025-06-22T00:00:56.039583",
+    "created_at": "2024-10-15T22:06:58.499846",
+    "updated_at": "2024-12-09T16:49:08.995515"
+  }
+}

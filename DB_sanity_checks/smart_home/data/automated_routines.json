@@ -1,0 +1,2522 @@
+{
+  "1": {
+    "routine_id": "1",
+    "user_id": "1",
+    "home_id": "1",
+    "start_action_date": "2025-08-04",
+    "action_time": "09:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-28T14:37:15.875580",
+    "updated_at": "2025-04-30T14:12:45.421380"
+  },
+  "2": {
+    "routine_id": "2",
+    "user_id": "1",
+    "home_id": "1",
+    "start_action_date": "2025-07-28",
+    "action_time": "14:30",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-12T02:52:09.090709",
+    "updated_at": "2025-07-11T14:36:10.206366"
+  },
+  "3": {
+    "routine_id": "3",
+    "user_id": "2",
+    "home_id": "1",
+    "start_action_date": "2025-08-12",
+    "action_time": "15:45",
+    "action_interval": "daily",
+    "created_at": "2025-04-12T23:30:11.186989",
+    "updated_at": "2025-04-17T08:57:31.676841"
+  },
+  "4": {
+    "routine_id": "4",
+    "user_id": "5",
+    "home_id": "4",
+    "start_action_date": "2025-08-23",
+    "action_time": "16:30",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-21T03:42:15.013002",
+    "updated_at": "2025-07-05T16:58:21.966623"
+  },
+  "5": {
+    "routine_id": "5",
+    "user_id": "5",
+    "home_id": "4",
+    "start_action_date": "2025-08-20",
+    "action_time": "21:15",
+    "action_interval": "one_time",
+    "created_at": "2025-03-29T23:35:15.525960",
+    "updated_at": "2025-04-30T22:07:28.142276"
+  },
+  "6": {
+    "routine_id": "6",
+    "user_id": "6",
+    "home_id": "4",
+    "start_action_date": "2025-08-05",
+    "action_time": "14:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-27T07:37:42.450444",
+    "updated_at": "2025-04-27T17:47:37.014438"
+  },
+  "7": {
+    "routine_id": "7",
+    "user_id": "6",
+    "home_id": "4",
+    "start_action_date": "2025-08-18",
+    "action_time": "21:30",
+    "action_interval": "daily",
+    "created_at": "2025-03-05T23:24:47.262771",
+    "updated_at": "2025-05-17T06:29:16.709176"
+  },
+  "8": {
+    "routine_id": "8",
+    "user_id": "8",
+    "home_id": "6",
+    "start_action_date": "2025-07-23",
+    "action_time": "07:15",
+    "action_interval": "one_time",
+    "created_at": "2025-02-24T11:47:58.391494",
+    "updated_at": "2025-05-15T09:07:52.203996"
+  },
+  "9": {
+    "routine_id": "9",
+    "user_id": "8",
+    "home_id": "6",
+    "start_action_date": "2025-07-20",
+    "action_time": "22:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-04T16:41:47.696873",
+    "updated_at": "2025-04-17T10:07:46.540251"
+  },
+  "10": {
+    "routine_id": "10",
+    "user_id": "10",
+    "home_id": "8",
+    "start_action_date": "2025-07-29",
+    "action_time": "21:00",
+    "action_interval": "daily",
+    "created_at": "2025-04-02T04:30:51.416910",
+    "updated_at": "2025-05-14T11:46:07.280340"
+  },
+  "11": {
+    "routine_id": "11",
+    "user_id": "10",
+    "home_id": "8",
+    "start_action_date": "2025-08-06",
+    "action_time": "02:45",
+    "action_interval": "daily",
+    "created_at": "2025-03-01T20:29:15.350000",
+    "updated_at": "2025-03-25T14:49:11.628865"
+  },
+  "12": {
+    "routine_id": "12",
+    "user_id": "11",
+    "home_id": "9",
+    "start_action_date": "2025-08-07",
+    "action_time": "05:45",
+    "action_interval": "one_time",
+    "created_at": "2025-04-10T06:11:42.440982",
+    "updated_at": "2025-06-24T04:29:32.724665"
+  },
+  "13": {
+    "routine_id": "13",
+    "user_id": "11",
+    "home_id": "9",
+    "start_action_date": "2025-08-06",
+    "action_time": "09:45",
+    "action_interval": "one_time",
+    "created_at": "2025-04-30T21:38:21.151459",
+    "updated_at": "2025-06-12T16:45:33.455861"
+  },
+  "14": {
+    "routine_id": "14",
+    "user_id": "13",
+    "home_id": "10",
+    "start_action_date": "2025-07-31",
+    "action_time": "21:45",
+    "action_interval": "daily",
+    "created_at": "2025-04-30T20:40:10.502065",
+    "updated_at": "2025-06-06T19:30:13.654912"
+  },
+  "15": {
+    "routine_id": "15",
+    "user_id": "13",
+    "home_id": "10",
+    "start_action_date": "2025-08-29",
+    "action_time": "07:30",
+    "action_interval": "one_time",
+    "created_at": "2025-04-09T09:13:50.280921",
+    "updated_at": "2025-07-26T04:02:37.194397"
+  },
+  "16": {
+    "routine_id": "16",
+    "user_id": "15",
+    "home_id": "11",
+    "start_action_date": "2025-08-12",
+    "action_time": "14:30",
+    "action_interval": "one_time",
+    "created_at": "2025-03-22T00:59:25.119170",
+    "updated_at": "2025-04-30T03:14:26.969681"
+  },
+  "17": {
+    "routine_id": "17",
+    "user_id": "15",
+    "home_id": "11",
+    "start_action_date": "2025-08-03",
+    "action_time": "05:00",
+    "action_interval": "one_time",
+    "created_at": "2025-04-12T16:50:40.657850",
+    "updated_at": "2025-04-22T13:17:00.017756"
+  },
+  "18": {
+    "routine_id": "18",
+    "user_id": "17",
+    "home_id": "13",
+    "start_action_date": "2025-07-16",
+    "action_time": "15:30",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-28T04:10:08.601305",
+    "updated_at": "2025-05-19T10:11:49.174616"
+  },
+  "19": {
+    "routine_id": "19",
+    "user_id": "19",
+    "home_id": "15",
+    "start_action_date": "2025-08-25",
+    "action_time": "06:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-27T02:13:04.509694",
+    "updated_at": "2025-05-23T00:49:10.474116"
+  },
+  "20": {
+    "routine_id": "20",
+    "user_id": "19",
+    "home_id": "15",
+    "start_action_date": "2025-08-13",
+    "action_time": "10:15",
+    "action_interval": "daily",
+    "created_at": "2025-04-20T00:15:30.445842",
+    "updated_at": "2025-06-01T11:47:55.661602"
+  },
+  "21": {
+    "routine_id": "21",
+    "user_id": "21",
+    "home_id": "16",
+    "start_action_date": "2025-07-28",
+    "action_time": "23:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-22T12:02:06.760136",
+    "updated_at": "2025-07-30T11:36:05.809944"
+  },
+  "22": {
+    "routine_id": "22",
+    "user_id": "21",
+    "home_id": "16",
+    "start_action_date": "2025-08-01",
+    "action_time": "23:30",
+    "action_interval": "daily",
+    "created_at": "2025-02-21T02:29:47.673951",
+    "updated_at": "2025-07-10T12:35:30.276082"
+  },
+  "23": {
+    "routine_id": "23",
+    "user_id": "24",
+    "home_id": "19",
+    "start_action_date": "2025-08-20",
+    "action_time": "01:15",
+    "action_interval": "one_time",
+    "created_at": "2025-04-07T21:36:11.607872",
+    "updated_at": "2025-07-18T22:11:19.241534"
+  },
+  "24": {
+    "routine_id": "24",
+    "user_id": "24",
+    "home_id": "19",
+    "start_action_date": "2025-07-31",
+    "action_time": "23:00",
+    "action_interval": "daily",
+    "created_at": "2025-02-19T04:48:47.167573",
+    "updated_at": "2025-03-07T16:46:49.941221"
+  },
+  "25": {
+    "routine_id": "25",
+    "user_id": "27",
+    "home_id": "25",
+    "start_action_date": "2025-07-22",
+    "action_time": "17:30",
+    "action_interval": "one_time",
+    "created_at": "2025-04-27T05:37:41.682235",
+    "updated_at": "2025-06-09T12:07:14.836669"
+  },
+  "26": {
+    "routine_id": "26",
+    "user_id": "28",
+    "home_id": "25",
+    "start_action_date": "2025-07-26",
+    "action_time": "15:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-25T10:45:54.770327",
+    "updated_at": "2025-05-25T01:03:21.973914"
+  },
+  "27": {
+    "routine_id": "27",
+    "user_id": "28",
+    "home_id": "25",
+    "start_action_date": "2025-08-24",
+    "action_time": "00:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-17T20:31:25.865725",
+    "updated_at": "2025-04-22T11:36:33.771243"
+  },
+  "28": {
+    "routine_id": "28",
+    "user_id": "29",
+    "home_id": "28",
+    "start_action_date": "2025-07-27",
+    "action_time": "01:30",
+    "action_interval": "daily",
+    "created_at": "2025-02-03T14:21:36.133315",
+    "updated_at": "2025-05-19T12:08:09.823839"
+  },
+  "29": {
+    "routine_id": "29",
+    "user_id": "30",
+    "home_id": "28",
+    "start_action_date": "2025-08-12",
+    "action_time": "22:00",
+    "action_interval": "daily",
+    "created_at": "2025-04-11T06:02:40.979362",
+    "updated_at": "2025-05-13T10:52:00.741943"
+  },
+  "30": {
+    "routine_id": "30",
+    "user_id": "30",
+    "home_id": "28",
+    "start_action_date": "2025-07-29",
+    "action_time": "17:15",
+    "action_interval": "one_time",
+    "created_at": "2025-02-11T11:16:59.844487",
+    "updated_at": "2025-04-11T10:02:19.191741"
+  },
+  "31": {
+    "routine_id": "31",
+    "user_id": "31",
+    "home_id": "31",
+    "start_action_date": "2025-08-26",
+    "action_time": "05:30",
+    "action_interval": "one_time",
+    "created_at": "2025-03-25T20:08:32.904483",
+    "updated_at": "2025-04-01T03:05:46.487220"
+  },
+  "32": {
+    "routine_id": "32",
+    "user_id": "31",
+    "home_id": "31",
+    "start_action_date": "2025-08-09",
+    "action_time": "03:30",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-18T23:13:26.337690",
+    "updated_at": "2025-06-18T03:30:05.514075"
+  },
+  "33": {
+    "routine_id": "33",
+    "user_id": "33",
+    "home_id": "32",
+    "start_action_date": "2025-08-18",
+    "action_time": "20:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-10T05:53:18.087378",
+    "updated_at": "2025-04-27T20:21:54.074814"
+  },
+  "34": {
+    "routine_id": "34",
+    "user_id": "37",
+    "home_id": "36",
+    "start_action_date": "2025-07-16",
+    "action_time": "19:30",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-12T10:34:16.492953",
+    "updated_at": "2025-04-16T20:39:43.021342"
+  },
+  "35": {
+    "routine_id": "35",
+    "user_id": "39",
+    "home_id": "37",
+    "start_action_date": "2025-07-23",
+    "action_time": "14:00",
+    "action_interval": "one_time",
+    "created_at": "2025-04-11T03:43:35.692996",
+    "updated_at": "2025-05-21T07:53:45.801398"
+  },
+  "36": {
+    "routine_id": "36",
+    "user_id": "42",
+    "home_id": "38",
+    "start_action_date": "2025-07-22",
+    "action_time": "10:45",
+    "action_interval": "daily",
+    "created_at": "2025-02-19T09:14:01.143313",
+    "updated_at": "2025-02-20T04:53:47.944024"
+  },
+  "37": {
+    "routine_id": "37",
+    "user_id": "42",
+    "home_id": "38",
+    "start_action_date": "2025-07-29",
+    "action_time": "09:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-17T01:39:08.608653",
+    "updated_at": "2025-05-22T02:38:53.777888"
+  },
+  "38": {
+    "routine_id": "38",
+    "user_id": "45",
+    "home_id": "41",
+    "start_action_date": "2025-08-27",
+    "action_time": "11:15",
+    "action_interval": "one_time",
+    "created_at": "2025-04-24T13:39:37.707750",
+    "updated_at": "2025-07-16T17:57:02.378459"
+  },
+  "39": {
+    "routine_id": "39",
+    "user_id": "46",
+    "home_id": "41",
+    "start_action_date": "2025-08-05",
+    "action_time": "08:30",
+    "action_interval": "one_time",
+    "created_at": "2025-03-01T13:42:28.350743",
+    "updated_at": "2025-05-04T00:48:41.853578"
+  },
+  "40": {
+    "routine_id": "40",
+    "user_id": "46",
+    "home_id": "41",
+    "start_action_date": "2025-08-25",
+    "action_time": "17:00",
+    "action_interval": "daily",
+    "created_at": "2025-02-02T01:53:17.118971",
+    "updated_at": "2025-07-26T06:53:48.910536"
+  },
+  "41": {
+    "routine_id": "41",
+    "user_id": "47",
+    "home_id": "44",
+    "start_action_date": "2025-08-06",
+    "action_time": "02:30",
+    "action_interval": "daily",
+    "created_at": "2025-03-23T01:26:07.225010",
+    "updated_at": "2025-04-17T18:26:53.355457"
+  },
+  "42": {
+    "routine_id": "42",
+    "user_id": "49",
+    "home_id": "47",
+    "start_action_date": "2025-08-22",
+    "action_time": "01:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-17T19:46:27.609526",
+    "updated_at": "2025-07-31T09:27:58.908581"
+  },
+  "43": {
+    "routine_id": "43",
+    "user_id": "49",
+    "home_id": "47",
+    "start_action_date": "2025-07-16",
+    "action_time": "15:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-23T07:45:37.114370",
+    "updated_at": "2025-07-09T23:08:57.991209"
+  },
+  "44": {
+    "routine_id": "44",
+    "user_id": "53",
+    "home_id": "51",
+    "start_action_date": "2025-08-15",
+    "action_time": "17:30",
+    "action_interval": "one_time",
+    "created_at": "2025-02-20T11:30:49.794015",
+    "updated_at": "2025-05-05T15:25:35.366674"
+  },
+  "45": {
+    "routine_id": "45",
+    "user_id": "53",
+    "home_id": "51",
+    "start_action_date": "2025-08-09",
+    "action_time": "15:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-07T22:10:01.514684",
+    "updated_at": "2025-07-20T19:54:32.900993"
+  },
+  "46": {
+    "routine_id": "46",
+    "user_id": "58",
+    "home_id": "53",
+    "start_action_date": "2025-07-30",
+    "action_time": "16:30",
+    "action_interval": "daily",
+    "created_at": "2025-03-01T12:57:06.638803",
+    "updated_at": "2025-03-14T07:16:21.981447"
+  },
+  "47": {
+    "routine_id": "47",
+    "user_id": "59",
+    "home_id": "54",
+    "start_action_date": "2025-08-04",
+    "action_time": "02:30",
+    "action_interval": "daily",
+    "created_at": "2025-04-29T03:56:11.585611",
+    "updated_at": "2025-07-24T03:10:15.378126"
+  },
+  "48": {
+    "routine_id": "48",
+    "user_id": "61",
+    "home_id": "55",
+    "start_action_date": "2025-08-03",
+    "action_time": "08:30",
+    "action_interval": "one_time",
+    "created_at": "2025-03-27T01:05:23.569184",
+    "updated_at": "2025-07-15T16:49:13.895391"
+  },
+  "49": {
+    "routine_id": "49",
+    "user_id": "62",
+    "home_id": "55",
+    "start_action_date": "2025-08-20",
+    "action_time": "21:00",
+    "action_interval": "one_time",
+    "created_at": "2025-02-26T16:50:13.745528",
+    "updated_at": "2025-04-17T05:40:03.302777"
+  },
+  "50": {
+    "routine_id": "50",
+    "user_id": "63",
+    "home_id": "57",
+    "start_action_date": "2025-08-23",
+    "action_time": "21:00",
+    "action_interval": "daily",
+    "created_at": "2025-02-07T08:17:41.346216",
+    "updated_at": "2025-07-07T09:35:02.034298"
+  },
+  "51": {
+    "routine_id": "51",
+    "user_id": "65",
+    "home_id": "58",
+    "start_action_date": "2025-07-30",
+    "action_time": "03:30",
+    "action_interval": "daily",
+    "created_at": "2025-04-03T23:45:06.707093",
+    "updated_at": "2025-06-01T14:09:12.181793"
+  },
+  "52": {
+    "routine_id": "52",
+    "user_id": "65",
+    "home_id": "58",
+    "start_action_date": "2025-08-19",
+    "action_time": "02:30",
+    "action_interval": "one_time",
+    "created_at": "2025-02-07T22:14:59.437744",
+    "updated_at": "2025-04-12T00:56:58.221537"
+  },
+  "53": {
+    "routine_id": "53",
+    "user_id": "69",
+    "home_id": "61",
+    "start_action_date": "2025-07-20",
+    "action_time": "04:15",
+    "action_interval": "daily",
+    "created_at": "2025-02-11T17:34:57.106100",
+    "updated_at": "2025-03-17T18:19:08.131271"
+  },
+  "54": {
+    "routine_id": "54",
+    "user_id": "69",
+    "home_id": "61",
+    "start_action_date": "2025-08-20",
+    "action_time": "16:30",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-13T00:37:05.723795",
+    "updated_at": "2025-03-10T23:26:32.363183"
+  },
+  "55": {
+    "routine_id": "55",
+    "user_id": "77",
+    "home_id": "73",
+    "start_action_date": "2025-08-03",
+    "action_time": "13:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-08T18:43:41.192625",
+    "updated_at": "2025-06-15T10:56:23.865769"
+  },
+  "56": {
+    "routine_id": "56",
+    "user_id": "77",
+    "home_id": "73",
+    "start_action_date": "2025-08-05",
+    "action_time": "10:30",
+    "action_interval": "daily",
+    "created_at": "2025-04-09T15:33:37.833742",
+    "updated_at": "2025-04-27T13:57:08.873389"
+  },
+  "57": {
+    "routine_id": "57",
+    "user_id": "79",
+    "home_id": "74",
+    "start_action_date": "2025-08-16",
+    "action_time": "12:00",
+    "action_interval": "one_time",
+    "created_at": "2025-03-23T06:39:53.965105",
+    "updated_at": "2025-07-29T03:50:42.481475"
+  },
+  "58": {
+    "routine_id": "58",
+    "user_id": "79",
+    "home_id": "74",
+    "start_action_date": "2025-08-28",
+    "action_time": "08:30",
+    "action_interval": "one_time",
+    "created_at": "2025-02-17T15:19:25.351796",
+    "updated_at": "2025-06-29T23:14:07.497612"
+  },
+  "59": {
+    "routine_id": "59",
+    "user_id": "81",
+    "home_id": "77",
+    "start_action_date": "2025-08-13",
+    "action_time": "12:15",
+    "action_interval": "one_time",
+    "created_at": "2025-03-27T23:58:31.616031",
+    "updated_at": "2025-07-12T18:40:45.204202"
+  },
+  "60": {
+    "routine_id": "60",
+    "user_id": "83",
+    "home_id": "80",
+    "start_action_date": "2025-07-31",
+    "action_time": "13:45",
+    "action_interval": "one_time",
+    "created_at": "2025-02-19T15:26:02.605720",
+    "updated_at": "2025-06-19T15:50:57.077056"
+  },
+  "61": {
+    "routine_id": "61",
+    "user_id": "84",
+    "home_id": "81",
+    "start_action_date": "2025-08-09",
+    "action_time": "10:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-11T00:14:33.780887",
+    "updated_at": "2025-06-07T02:40:53.122614"
+  },
+  "62": {
+    "routine_id": "62",
+    "user_id": "85",
+    "home_id": "84",
+    "start_action_date": "2025-07-31",
+    "action_time": "16:00",
+    "action_interval": "daily",
+    "created_at": "2025-03-07T13:25:21.410251",
+    "updated_at": "2025-03-10T06:47:18.391694"
+  },
+  "63": {
+    "routine_id": "63",
+    "user_id": "87",
+    "home_id": "86",
+    "start_action_date": "2025-08-05",
+    "action_time": "12:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-21T03:59:50.973947",
+    "updated_at": "2025-05-14T12:38:16.465554"
+  },
+  "64": {
+    "routine_id": "64",
+    "user_id": "87",
+    "home_id": "86",
+    "start_action_date": "2025-07-24",
+    "action_time": "00:45",
+    "action_interval": "one_time",
+    "created_at": "2025-03-22T09:29:42.628230",
+    "updated_at": "2025-06-26T13:50:48.514425"
+  },
+  "65": {
+    "routine_id": "65",
+    "user_id": "88",
+    "home_id": "86",
+    "start_action_date": "2025-07-25",
+    "action_time": "10:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-26T04:00:53.690749",
+    "updated_at": "2025-07-10T07:41:44.011070"
+  },
+  "66": {
+    "routine_id": "66",
+    "user_id": "88",
+    "home_id": "86",
+    "start_action_date": "2025-08-04",
+    "action_time": "07:00",
+    "action_interval": "one_time",
+    "created_at": "2025-04-11T02:53:21.640431",
+    "updated_at": "2025-06-04T06:17:25.538917"
+  },
+  "67": {
+    "routine_id": "67",
+    "user_id": "89",
+    "home_id": "87",
+    "start_action_date": "2025-08-19",
+    "action_time": "14:30",
+    "action_interval": "daily",
+    "created_at": "2025-02-25T22:58:24.629798",
+    "updated_at": "2025-06-25T07:37:01.332790"
+  },
+  "68": {
+    "routine_id": "68",
+    "user_id": "92",
+    "home_id": "88",
+    "start_action_date": "2025-08-15",
+    "action_time": "17:00",
+    "action_interval": "one_time",
+    "created_at": "2025-03-24T11:37:54.318411",
+    "updated_at": "2025-07-16T09:15:47.644643"
+  },
+  "69": {
+    "routine_id": "69",
+    "user_id": "95",
+    "home_id": "93",
+    "start_action_date": "2025-08-28",
+    "action_time": "00:30",
+    "action_interval": "one_time",
+    "created_at": "2025-02-28T21:59:25.517255",
+    "updated_at": "2025-07-11T20:02:33.753400"
+  },
+  "70": {
+    "routine_id": "70",
+    "user_id": "97",
+    "home_id": "96",
+    "start_action_date": "2025-08-26",
+    "action_time": "13:15",
+    "action_interval": "daily",
+    "created_at": "2025-02-18T17:46:19.052635",
+    "updated_at": "2025-02-23T04:46:26.304527"
+  },
+  "71": {
+    "routine_id": "71",
+    "user_id": "98",
+    "home_id": "99",
+    "start_action_date": "2025-08-03",
+    "action_time": "03:15",
+    "action_interval": "one_time",
+    "created_at": "2025-04-04T18:56:32.792602",
+    "updated_at": "2025-07-14T00:44:56.668197"
+  },
+  "72": {
+    "routine_id": "72",
+    "user_id": "98",
+    "home_id": "99",
+    "start_action_date": "2025-08-28",
+    "action_time": "21:30",
+    "action_interval": "daily",
+    "created_at": "2025-04-09T13:09:55.855232",
+    "updated_at": "2025-06-07T10:24:02.154898"
+  },
+  "73": {
+    "routine_id": "73",
+    "user_id": "99",
+    "home_id": "101",
+    "start_action_date": "2025-08-22",
+    "action_time": "15:45",
+    "action_interval": "one_time",
+    "created_at": "2025-02-28T09:23:18.664253",
+    "updated_at": "2025-04-24T19:55:45.140936"
+  },
+  "74": {
+    "routine_id": "74",
+    "user_id": "101",
+    "home_id": "104",
+    "start_action_date": "2025-08-16",
+    "action_time": "18:15",
+    "action_interval": "daily",
+    "created_at": "2025-03-29T08:05:07.745548",
+    "updated_at": "2025-06-06T11:02:52.542959"
+  },
+  "75": {
+    "routine_id": "75",
+    "user_id": "101",
+    "home_id": "104",
+    "start_action_date": "2025-08-13",
+    "action_time": "18:15",
+    "action_interval": "daily",
+    "created_at": "2025-03-27T09:34:50.521285",
+    "updated_at": "2025-05-16T01:18:50.655406"
+  },
+  "76": {
+    "routine_id": "76",
+    "user_id": "103",
+    "home_id": "106",
+    "start_action_date": "2025-08-16",
+    "action_time": "13:30",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-03T10:46:54.643900",
+    "updated_at": "2025-04-04T08:21:17.610541"
+  },
+  "77": {
+    "routine_id": "77",
+    "user_id": "107",
+    "home_id": "109",
+    "start_action_date": "2025-08-23",
+    "action_time": "09:30",
+    "action_interval": "daily",
+    "created_at": "2025-03-11T01:58:36.957695",
+    "updated_at": "2025-07-30T16:34:31.156672"
+  },
+  "78": {
+    "routine_id": "78",
+    "user_id": "107",
+    "home_id": "109",
+    "start_action_date": "2025-07-21",
+    "action_time": "07:15",
+    "action_interval": "one_time",
+    "created_at": "2025-03-14T21:50:59.336487",
+    "updated_at": "2025-05-06T06:31:18.785179"
+  },
+  "79": {
+    "routine_id": "79",
+    "user_id": "108",
+    "home_id": "109",
+    "start_action_date": "2025-07-30",
+    "action_time": "19:00",
+    "action_interval": "daily",
+    "created_at": "2025-04-14T17:35:24.240087",
+    "updated_at": "2025-05-02T02:40:58.783775"
+  },
+  "80": {
+    "routine_id": "80",
+    "user_id": "108",
+    "home_id": "109",
+    "start_action_date": "2025-08-01",
+    "action_time": "09:30",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-26T11:30:36.434352",
+    "updated_at": "2025-07-14T06:58:53.589485"
+  },
+  "81": {
+    "routine_id": "81",
+    "user_id": "110",
+    "home_id": "112",
+    "start_action_date": "2025-07-17",
+    "action_time": "05:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-21T21:03:14.154579",
+    "updated_at": "2025-06-26T21:11:15.787079"
+  },
+  "82": {
+    "routine_id": "82",
+    "user_id": "110",
+    "home_id": "112",
+    "start_action_date": "2025-07-18",
+    "action_time": "07:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-16T10:02:40.066076",
+    "updated_at": "2025-05-27T02:52:21.276099"
+  },
+  "83": {
+    "routine_id": "83",
+    "user_id": "111",
+    "home_id": "115",
+    "start_action_date": "2025-07-29",
+    "action_time": "21:00",
+    "action_interval": "daily",
+    "created_at": "2025-02-23T16:32:28.790048",
+    "updated_at": "2025-05-10T09:39:24.824774"
+  },
+  "84": {
+    "routine_id": "84",
+    "user_id": "113",
+    "home_id": "116",
+    "start_action_date": "2025-08-18",
+    "action_time": "09:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-02T05:29:07.466663",
+    "updated_at": "2025-07-18T05:46:09.849504"
+  },
+  "85": {
+    "routine_id": "85",
+    "user_id": "114",
+    "home_id": "119",
+    "start_action_date": "2025-07-22",
+    "action_time": "07:30",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-21T08:26:13.615399",
+    "updated_at": "2025-05-25T04:18:56.732038"
+  },
+  "86": {
+    "routine_id": "86",
+    "user_id": "114",
+    "home_id": "119",
+    "start_action_date": "2025-08-18",
+    "action_time": "21:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-06T13:28:42.873458",
+    "updated_at": "2025-06-06T01:58:11.783949"
+  },
+  "87": {
+    "routine_id": "87",
+    "user_id": "116",
+    "home_id": "122",
+    "start_action_date": "2025-08-12",
+    "action_time": "03:30",
+    "action_interval": "daily",
+    "created_at": "2025-02-09T10:37:06.914079",
+    "updated_at": "2025-07-26T18:16:59.424773"
+  },
+  "88": {
+    "routine_id": "88",
+    "user_id": "116",
+    "home_id": "122",
+    "start_action_date": "2025-07-23",
+    "action_time": "02:15",
+    "action_interval": "one_time",
+    "created_at": "2025-04-09T07:59:17.707845",
+    "updated_at": "2025-07-21T02:16:25.640303"
+  },
+  "89": {
+    "routine_id": "89",
+    "user_id": "117",
+    "home_id": "122",
+    "start_action_date": "2025-07-18",
+    "action_time": "10:30",
+    "action_interval": "daily",
+    "created_at": "2025-04-29T01:57:06.390481",
+    "updated_at": "2025-07-07T07:55:52.976933"
+  },
+  "90": {
+    "routine_id": "90",
+    "user_id": "118",
+    "home_id": "124",
+    "start_action_date": "2025-08-12",
+    "action_time": "02:45",
+    "action_interval": "one_time",
+    "created_at": "2025-04-12T08:40:24.863871",
+    "updated_at": "2025-05-17T16:55:03.361735"
+  },
+  "91": {
+    "routine_id": "91",
+    "user_id": "120",
+    "home_id": "125",
+    "start_action_date": "2025-07-19",
+    "action_time": "03:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-12T17:24:34.728039",
+    "updated_at": "2025-06-29T04:42:46.602760"
+  },
+  "92": {
+    "routine_id": "92",
+    "user_id": "121",
+    "home_id": "125",
+    "start_action_date": "2025-07-27",
+    "action_time": "09:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-05-01T11:48:05.929547",
+    "updated_at": "2025-05-12T07:07:55.189614"
+  },
+  "93": {
+    "routine_id": "93",
+    "user_id": "122",
+    "home_id": "126",
+    "start_action_date": "2025-07-19",
+    "action_time": "21:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-07T14:59:17.753316",
+    "updated_at": "2025-06-28T08:46:54.045392"
+  },
+  "94": {
+    "routine_id": "94",
+    "user_id": "122",
+    "home_id": "126",
+    "start_action_date": "2025-08-28",
+    "action_time": "16:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-24T22:09:56.486570",
+    "updated_at": "2025-07-27T00:27:45.918255"
+  },
+  "95": {
+    "routine_id": "95",
+    "user_id": "124",
+    "home_id": "129",
+    "start_action_date": "2025-08-24",
+    "action_time": "21:15",
+    "action_interval": "daily",
+    "created_at": "2025-04-20T20:35:15.961878",
+    "updated_at": "2025-06-23T03:06:19.345195"
+  },
+  "96": {
+    "routine_id": "96",
+    "user_id": "125",
+    "home_id": "129",
+    "start_action_date": "2025-08-06",
+    "action_time": "18:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-25T19:52:22.946741",
+    "updated_at": "2025-07-17T21:07:28.119603"
+  },
+  "97": {
+    "routine_id": "97",
+    "user_id": "126",
+    "home_id": "131",
+    "start_action_date": "2025-07-28",
+    "action_time": "19:15",
+    "action_interval": "daily",
+    "created_at": "2025-02-09T20:13:57.489684",
+    "updated_at": "2025-05-22T11:30:01.603218"
+  },
+  "98": {
+    "routine_id": "98",
+    "user_id": "126",
+    "home_id": "131",
+    "start_action_date": "2025-08-02",
+    "action_time": "11:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-07T18:11:27.292088",
+    "updated_at": "2025-02-27T18:23:48.306209"
+  },
+  "99": {
+    "routine_id": "99",
+    "user_id": "127",
+    "home_id": "131",
+    "start_action_date": "2025-07-22",
+    "action_time": "03:00",
+    "action_interval": "daily",
+    "created_at": "2025-02-02T11:40:06.202920",
+    "updated_at": "2025-04-13T22:21:01.213323"
+  },
+  "100": {
+    "routine_id": "100",
+    "user_id": "127",
+    "home_id": "131",
+    "start_action_date": "2025-08-26",
+    "action_time": "07:15",
+    "action_interval": "one_time",
+    "created_at": "2025-03-24T22:21:01.174428",
+    "updated_at": "2025-06-24T09:34:25.448364"
+  },
+  "101": {
+    "routine_id": "101",
+    "user_id": "128",
+    "home_id": "133",
+    "start_action_date": "2025-08-07",
+    "action_time": "19:15",
+    "action_interval": "one_time",
+    "created_at": "2025-02-25T02:17:24.131574",
+    "updated_at": "2025-07-11T13:27:51.558307"
+  },
+  "102": {
+    "routine_id": "102",
+    "user_id": "132",
+    "home_id": "135",
+    "start_action_date": "2025-07-26",
+    "action_time": "19:45",
+    "action_interval": "daily",
+    "created_at": "2025-03-24T03:43:22.519152",
+    "updated_at": "2025-05-14T01:02:33.026747"
+  },
+  "103": {
+    "routine_id": "103",
+    "user_id": "132",
+    "home_id": "135",
+    "start_action_date": "2025-08-07",
+    "action_time": "11:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-30T14:26:53.196680",
+    "updated_at": "2025-05-06T12:52:30.257512"
+  },
+  "104": {
+    "routine_id": "104",
+    "user_id": "135",
+    "home_id": "139",
+    "start_action_date": "2025-08-08",
+    "action_time": "13:00",
+    "action_interval": "one_time",
+    "created_at": "2025-03-30T16:15:08.978108",
+    "updated_at": "2025-06-23T22:12:39.503252"
+  },
+  "105": {
+    "routine_id": "105",
+    "user_id": "137",
+    "home_id": "141",
+    "start_action_date": "2025-08-11",
+    "action_time": "20:30",
+    "action_interval": "daily",
+    "created_at": "2025-03-24T18:44:06.966893",
+    "updated_at": "2025-05-21T10:49:35.044583"
+  },
+  "106": {
+    "routine_id": "106",
+    "user_id": "137",
+    "home_id": "141",
+    "start_action_date": "2025-07-16",
+    "action_time": "01:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-29T04:33:37.106143",
+    "updated_at": "2025-07-18T23:49:12.778444"
+  },
+  "107": {
+    "routine_id": "107",
+    "user_id": "139",
+    "home_id": "142",
+    "start_action_date": "2025-08-04",
+    "action_time": "02:00",
+    "action_interval": "daily",
+    "created_at": "2025-04-29T03:19:41.401739",
+    "updated_at": "2025-07-20T16:01:09.043381"
+  },
+  "108": {
+    "routine_id": "108",
+    "user_id": "139",
+    "home_id": "142",
+    "start_action_date": "2025-08-19",
+    "action_time": "07:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-05-01T01:52:56.175889",
+    "updated_at": "2025-05-12T20:04:14.633126"
+  },
+  "109": {
+    "routine_id": "109",
+    "user_id": "141",
+    "home_id": "144",
+    "start_action_date": "2025-08-13",
+    "action_time": "05:15",
+    "action_interval": "one_time",
+    "created_at": "2025-04-05T17:35:48.046166",
+    "updated_at": "2025-04-14T13:49:49.749295"
+  },
+  "110": {
+    "routine_id": "110",
+    "user_id": "141",
+    "home_id": "144",
+    "start_action_date": "2025-08-05",
+    "action_time": "22:45",
+    "action_interval": "one_time",
+    "created_at": "2025-03-03T21:09:45.373836",
+    "updated_at": "2025-07-29T01:43:47.714148"
+  },
+  "111": {
+    "routine_id": "111",
+    "user_id": "143",
+    "home_id": "145",
+    "start_action_date": "2025-08-13",
+    "action_time": "20:00",
+    "action_interval": "daily",
+    "created_at": "2025-04-25T18:52:57.405136",
+    "updated_at": "2025-04-30T18:53:31.175811"
+  },
+  "112": {
+    "routine_id": "112",
+    "user_id": "145",
+    "home_id": "147",
+    "start_action_date": "2025-07-24",
+    "action_time": "00:15",
+    "action_interval": "one_time",
+    "created_at": "2025-04-13T08:17:27.664095",
+    "updated_at": "2025-06-30T11:53:09.702254"
+  },
+  "113": {
+    "routine_id": "113",
+    "user_id": "145",
+    "home_id": "147",
+    "start_action_date": "2025-08-18",
+    "action_time": "05:45",
+    "action_interval": "one_time",
+    "created_at": "2025-02-03T04:50:33.287429",
+    "updated_at": "2025-03-04T01:30:43.836158"
+  },
+  "114": {
+    "routine_id": "114",
+    "user_id": "147",
+    "home_id": "148",
+    "start_action_date": "2025-07-25",
+    "action_time": "00:45",
+    "action_interval": "daily",
+    "created_at": "2025-03-22T01:43:47.259002",
+    "updated_at": "2025-05-08T03:25:29.623754"
+  },
+  "115": {
+    "routine_id": "115",
+    "user_id": "148",
+    "home_id": "148",
+    "start_action_date": "2025-07-17",
+    "action_time": "00:45",
+    "action_interval": "one_time",
+    "created_at": "2025-03-02T17:32:18.179179",
+    "updated_at": "2025-04-20T01:21:07.312542"
+  },
+  "116": {
+    "routine_id": "116",
+    "user_id": "149",
+    "home_id": "149",
+    "start_action_date": "2025-08-15",
+    "action_time": "22:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-26T02:33:12.693797",
+    "updated_at": "2025-04-20T01:59:51.017322"
+  },
+  "117": {
+    "routine_id": "117",
+    "user_id": "151",
+    "home_id": "151",
+    "start_action_date": "2025-07-31",
+    "action_time": "12:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-03T03:44:19.569718",
+    "updated_at": "2025-06-23T19:47:57.511756"
+  },
+  "118": {
+    "routine_id": "118",
+    "user_id": "154",
+    "home_id": "1",
+    "start_action_date": "2025-08-14",
+    "action_time": "02:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-13T06:30:40.707391",
+    "updated_at": "2025-06-12T18:25:58.115573"
+  },
+  "119": {
+    "routine_id": "119",
+    "user_id": "154",
+    "home_id": "1",
+    "start_action_date": "2025-08-26",
+    "action_time": "17:15",
+    "action_interval": "one_time",
+    "created_at": "2025-02-18T16:59:30.196660",
+    "updated_at": "2025-03-08T23:13:51.633036"
+  },
+  "120": {
+    "routine_id": "120",
+    "user_id": "157",
+    "home_id": "4",
+    "start_action_date": "2025-08-14",
+    "action_time": "15:45",
+    "action_interval": "one_time",
+    "created_at": "2025-04-01T05:01:48.425531",
+    "updated_at": "2025-06-08T07:51:11.044338"
+  },
+  "121": {
+    "routine_id": "121",
+    "user_id": "162",
+    "home_id": "6",
+    "start_action_date": "2025-07-23",
+    "action_time": "05:30",
+    "action_interval": "daily",
+    "created_at": "2025-04-18T05:59:45.156266",
+    "updated_at": "2025-07-23T17:43:19.535655"
+  },
+  "122": {
+    "routine_id": "122",
+    "user_id": "162",
+    "home_id": "6",
+    "start_action_date": "2025-08-28",
+    "action_time": "04:45",
+    "action_interval": "one_time",
+    "created_at": "2025-04-15T11:37:49.714206",
+    "updated_at": "2025-05-13T17:56:52.563552"
+  },
+  "123": {
+    "routine_id": "123",
+    "user_id": "163",
+    "home_id": "8",
+    "start_action_date": "2025-08-09",
+    "action_time": "14:15",
+    "action_interval": "daily",
+    "created_at": "2025-04-22T09:54:25.466208",
+    "updated_at": "2025-06-20T16:10:36.641364"
+  },
+  "124": {
+    "routine_id": "124",
+    "user_id": "168",
+    "home_id": "10",
+    "start_action_date": "2025-08-21",
+    "action_time": "05:15",
+    "action_interval": "daily",
+    "created_at": "2025-03-29T03:36:37.187578",
+    "updated_at": "2025-05-14T12:40:32.114681"
+  },
+  "125": {
+    "routine_id": "125",
+    "user_id": "168",
+    "home_id": "10",
+    "start_action_date": "2025-08-25",
+    "action_time": "22:45",
+    "action_interval": "daily",
+    "created_at": "2025-03-10T08:15:20.613404",
+    "updated_at": "2025-03-20T06:20:00.311339"
+  },
+  "126": {
+    "routine_id": "126",
+    "user_id": "177",
+    "home_id": "16",
+    "start_action_date": "2025-08-12",
+    "action_time": "08:45",
+    "action_interval": "one_time",
+    "created_at": "2025-03-08T18:52:54.290562",
+    "updated_at": "2025-03-30T12:50:03.609464"
+  },
+  "127": {
+    "routine_id": "127",
+    "user_id": "177",
+    "home_id": "16",
+    "start_action_date": "2025-08-19",
+    "action_time": "14:15",
+    "action_interval": "one_time",
+    "created_at": "2025-04-21T22:21:59.046681",
+    "updated_at": "2025-07-08T00:17:09.215174"
+  },
+  "128": {
+    "routine_id": "128",
+    "user_id": "181",
+    "home_id": "19",
+    "start_action_date": "2025-07-19",
+    "action_time": "17:00",
+    "action_interval": "daily",
+    "created_at": "2025-04-28T01:50:13.561368",
+    "updated_at": "2025-05-03T19:25:25.330508"
+  },
+  "129": {
+    "routine_id": "129",
+    "user_id": "181",
+    "home_id": "19",
+    "start_action_date": "2025-08-21",
+    "action_time": "17:00",
+    "action_interval": "one_time",
+    "created_at": "2025-04-30T03:09:39.634578",
+    "updated_at": "2025-06-13T20:26:55.222906"
+  },
+  "130": {
+    "routine_id": "130",
+    "user_id": "183",
+    "home_id": "22",
+    "start_action_date": "2025-08-06",
+    "action_time": "06:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-14T07:58:53.439486",
+    "updated_at": "2025-05-04T03:02:51.903184"
+  },
+  "131": {
+    "routine_id": "131",
+    "user_id": "186",
+    "home_id": "28",
+    "start_action_date": "2025-08-01",
+    "action_time": "05:00",
+    "action_interval": "daily",
+    "created_at": "2025-03-11T02:59:31.724187",
+    "updated_at": "2025-03-30T06:28:19.827339"
+  },
+  "132": {
+    "routine_id": "132",
+    "user_id": "192",
+    "home_id": "37",
+    "start_action_date": "2025-07-29",
+    "action_time": "16:15",
+    "action_interval": "one_time",
+    "created_at": "2025-04-15T02:00:39.894748",
+    "updated_at": "2025-04-24T01:27:36.707706"
+  },
+  "133": {
+    "routine_id": "133",
+    "user_id": "192",
+    "home_id": "37",
+    "start_action_date": "2025-08-16",
+    "action_time": "23:30",
+    "action_interval": "daily",
+    "created_at": "2025-04-03T15:35:21.144599",
+    "updated_at": "2025-07-04T14:35:58.295161"
+  },
+  "134": {
+    "routine_id": "134",
+    "user_id": "194",
+    "home_id": "37",
+    "start_action_date": "2025-08-13",
+    "action_time": "09:00",
+    "action_interval": "daily",
+    "created_at": "2025-04-08T01:53:44.360574",
+    "updated_at": "2025-05-09T07:27:09.166593"
+  },
+  "135": {
+    "routine_id": "135",
+    "user_id": "204",
+    "home_id": "41",
+    "start_action_date": "2025-08-07",
+    "action_time": "17:00",
+    "action_interval": "daily",
+    "created_at": "2025-02-12T07:03:32.390335",
+    "updated_at": "2025-05-23T11:14:52.335417"
+  },
+  "136": {
+    "routine_id": "136",
+    "user_id": "204",
+    "home_id": "41",
+    "start_action_date": "2025-08-19",
+    "action_time": "11:00",
+    "action_interval": "one_time",
+    "created_at": "2025-02-11T07:26:37.732473",
+    "updated_at": "2025-07-02T00:33:42.189901"
+  },
+  "137": {
+    "routine_id": "137",
+    "user_id": "207",
+    "home_id": "51",
+    "start_action_date": "2025-08-05",
+    "action_time": "02:00",
+    "action_interval": "one_time",
+    "created_at": "2025-04-06T06:34:09.368438",
+    "updated_at": "2025-06-13T09:17:00.760776"
+  },
+  "138": {
+    "routine_id": "138",
+    "user_id": "209",
+    "home_id": "51",
+    "start_action_date": "2025-08-25",
+    "action_time": "05:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-17T15:24:18.220461",
+    "updated_at": "2025-07-11T14:19:38.650457"
+  },
+  "139": {
+    "routine_id": "139",
+    "user_id": "213",
+    "home_id": "52",
+    "start_action_date": "2025-08-25",
+    "action_time": "01:45",
+    "action_interval": "one_time",
+    "created_at": "2025-03-27T13:11:05.562231",
+    "updated_at": "2025-05-04T19:33:54.116598"
+  },
+  "140": {
+    "routine_id": "140",
+    "user_id": "222",
+    "home_id": "54",
+    "start_action_date": "2025-08-20",
+    "action_time": "17:15",
+    "action_interval": "daily",
+    "created_at": "2025-03-01T04:42:24.875424",
+    "updated_at": "2025-03-30T09:46:43.235710"
+  },
+  "141": {
+    "routine_id": "141",
+    "user_id": "223",
+    "home_id": "55",
+    "start_action_date": "2025-07-20",
+    "action_time": "03:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-10T21:39:05.664074",
+    "updated_at": "2025-04-23T16:57:38.938198"
+  },
+  "142": {
+    "routine_id": "142",
+    "user_id": "223",
+    "home_id": "55",
+    "start_action_date": "2025-07-16",
+    "action_time": "15:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-26T01:12:09.328296",
+    "updated_at": "2025-07-08T13:16:58.658183"
+  },
+  "143": {
+    "routine_id": "143",
+    "user_id": "228",
+    "home_id": "57",
+    "start_action_date": "2025-08-05",
+    "action_time": "14:30",
+    "action_interval": "one_time",
+    "created_at": "2025-03-13T02:01:11.697784",
+    "updated_at": "2025-07-01T03:27:28.549537"
+  },
+  "144": {
+    "routine_id": "144",
+    "user_id": "228",
+    "home_id": "57",
+    "start_action_date": "2025-07-24",
+    "action_time": "14:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-21T17:57:42.274150",
+    "updated_at": "2025-05-04T07:15:03.657621"
+  },
+  "145": {
+    "routine_id": "145",
+    "user_id": "230",
+    "home_id": "58",
+    "start_action_date": "2025-07-24",
+    "action_time": "08:30",
+    "action_interval": "one_time",
+    "created_at": "2025-03-17T17:21:33.405786",
+    "updated_at": "2025-03-23T23:04:12.299202"
+  },
+  "146": {
+    "routine_id": "146",
+    "user_id": "231",
+    "home_id": "60",
+    "start_action_date": "2025-08-08",
+    "action_time": "02:45",
+    "action_interval": "daily",
+    "created_at": "2025-04-18T07:28:46.603292",
+    "updated_at": "2025-07-03T06:42:59.023252"
+  },
+  "147": {
+    "routine_id": "147",
+    "user_id": "231",
+    "home_id": "60",
+    "start_action_date": "2025-08-04",
+    "action_time": "12:00",
+    "action_interval": "daily",
+    "created_at": "2025-02-11T10:27:35.458116",
+    "updated_at": "2025-04-23T03:28:57.825322"
+  },
+  "148": {
+    "routine_id": "148",
+    "user_id": "235",
+    "home_id": "61",
+    "start_action_date": "2025-07-16",
+    "action_time": "14:30",
+    "action_interval": "daily",
+    "created_at": "2025-04-01T08:31:34.590347",
+    "updated_at": "2025-06-17T01:12:41.236759"
+  },
+  "149": {
+    "routine_id": "149",
+    "user_id": "241",
+    "home_id": "63",
+    "start_action_date": "2025-08-23",
+    "action_time": "04:30",
+    "action_interval": "daily",
+    "created_at": "2025-04-02T20:46:01.970526",
+    "updated_at": "2025-05-12T07:00:45.560244"
+  },
+  "150": {
+    "routine_id": "150",
+    "user_id": "241",
+    "home_id": "63",
+    "start_action_date": "2025-08-02",
+    "action_time": "04:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-31T20:37:15.526721",
+    "updated_at": "2025-07-06T19:14:19.858512"
+  },
+  "151": {
+    "routine_id": "151",
+    "user_id": "243",
+    "home_id": "65",
+    "start_action_date": "2025-08-11",
+    "action_time": "02:30",
+    "action_interval": "one_time",
+    "created_at": "2025-03-27T19:06:32.695874",
+    "updated_at": "2025-06-12T00:56:44.997476"
+  },
+  "152": {
+    "routine_id": "152",
+    "user_id": "245",
+    "home_id": "65",
+    "start_action_date": "2025-07-24",
+    "action_time": "10:45",
+    "action_interval": "one_time",
+    "created_at": "2025-02-05T12:41:49.879040",
+    "updated_at": "2025-02-22T04:58:23.380014"
+  },
+  "153": {
+    "routine_id": "153",
+    "user_id": "245",
+    "home_id": "65",
+    "start_action_date": "2025-08-10",
+    "action_time": "23:00",
+    "action_interval": "one_time",
+    "created_at": "2025-02-07T21:07:01.250833",
+    "updated_at": "2025-03-08T17:20:06.452521"
+  },
+  "154": {
+    "routine_id": "154",
+    "user_id": "253",
+    "home_id": "73",
+    "start_action_date": "2025-08-21",
+    "action_time": "08:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-31T07:41:22.898447",
+    "updated_at": "2025-04-25T12:04:35.431368"
+  },
+  "155": {
+    "routine_id": "155",
+    "user_id": "255",
+    "home_id": "77",
+    "start_action_date": "2025-07-28",
+    "action_time": "04:30",
+    "action_interval": "one_time",
+    "created_at": "2025-02-08T10:23:52.325935",
+    "updated_at": "2025-07-29T07:22:15.673535"
+  },
+  "156": {
+    "routine_id": "156",
+    "user_id": "257",
+    "home_id": "77",
+    "start_action_date": "2025-07-17",
+    "action_time": "08:30",
+    "action_interval": "daily",
+    "created_at": "2025-02-12T01:04:08.652489",
+    "updated_at": "2025-03-27T22:42:41.495659"
+  },
+  "157": {
+    "routine_id": "157",
+    "user_id": "257",
+    "home_id": "77",
+    "start_action_date": "2025-08-21",
+    "action_time": "07:15",
+    "action_interval": "daily",
+    "created_at": "2025-04-25T22:04:39.714154",
+    "updated_at": "2025-06-08T05:42:39.145404"
+  },
+  "158": {
+    "routine_id": "158",
+    "user_id": "261",
+    "home_id": "80",
+    "start_action_date": "2025-07-27",
+    "action_time": "17:30",
+    "action_interval": "daily",
+    "created_at": "2025-02-06T03:38:25.843590",
+    "updated_at": "2025-03-26T19:47:59.750249"
+  },
+  "159": {
+    "routine_id": "159",
+    "user_id": "261",
+    "home_id": "80",
+    "start_action_date": "2025-08-13",
+    "action_time": "22:15",
+    "action_interval": "daily",
+    "created_at": "2025-04-12T14:29:33.230878",
+    "updated_at": "2025-06-05T04:51:29.301410"
+  },
+  "160": {
+    "routine_id": "160",
+    "user_id": "264",
+    "home_id": "81",
+    "start_action_date": "2025-08-04",
+    "action_time": "12:30",
+    "action_interval": "daily",
+    "created_at": "2025-03-26T19:01:00.440361",
+    "updated_at": "2025-04-19T05:55:40.458412"
+  },
+  "161": {
+    "routine_id": "161",
+    "user_id": "265",
+    "home_id": "81",
+    "start_action_date": "2025-07-21",
+    "action_time": "14:00",
+    "action_interval": "one_time",
+    "created_at": "2025-04-14T00:54:57.509497",
+    "updated_at": "2025-07-12T12:13:07.725563"
+  },
+  "162": {
+    "routine_id": "162",
+    "user_id": "265",
+    "home_id": "81",
+    "start_action_date": "2025-07-27",
+    "action_time": "11:00",
+    "action_interval": "one_time",
+    "created_at": "2025-03-02T08:17:13.069093",
+    "updated_at": "2025-06-26T16:00:50.900624"
+  },
+  "163": {
+    "routine_id": "163",
+    "user_id": "273",
+    "home_id": "88",
+    "start_action_date": "2025-08-05",
+    "action_time": "02:30",
+    "action_interval": "daily",
+    "created_at": "2025-03-14T22:32:57.902953",
+    "updated_at": "2025-04-06T01:08:46.484809"
+  },
+  "164": {
+    "routine_id": "164",
+    "user_id": "273",
+    "home_id": "88",
+    "start_action_date": "2025-07-26",
+    "action_time": "20:15",
+    "action_interval": "one_time",
+    "created_at": "2025-02-25T23:08:28.386784",
+    "updated_at": "2025-07-10T08:57:02.960546"
+  },
+  "165": {
+    "routine_id": "165",
+    "user_id": "274",
+    "home_id": "91",
+    "start_action_date": "2025-08-24",
+    "action_time": "07:15",
+    "action_interval": "daily",
+    "created_at": "2025-04-26T21:18:43.198343",
+    "updated_at": "2025-06-13T23:30:51.618773"
+  },
+  "166": {
+    "routine_id": "166",
+    "user_id": "274",
+    "home_id": "91",
+    "start_action_date": "2025-08-07",
+    "action_time": "12:30",
+    "action_interval": "daily",
+    "created_at": "2025-03-15T15:54:33.847725",
+    "updated_at": "2025-07-25T02:09:11.959596"
+  },
+  "167": {
+    "routine_id": "167",
+    "user_id": "282",
+    "home_id": "101",
+    "start_action_date": "2025-07-31",
+    "action_time": "06:30",
+    "action_interval": "one_time",
+    "created_at": "2025-02-28T20:36:12.499576",
+    "updated_at": "2025-03-11T16:16:01.860757"
+  },
+  "168": {
+    "routine_id": "168",
+    "user_id": "282",
+    "home_id": "101",
+    "start_action_date": "2025-08-05",
+    "action_time": "05:30",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-30T02:45:56.812287",
+    "updated_at": "2025-04-02T21:13:21.739306"
+  },
+  "169": {
+    "routine_id": "169",
+    "user_id": "285",
+    "home_id": "104",
+    "start_action_date": "2025-07-25",
+    "action_time": "12:45",
+    "action_interval": "one_time",
+    "created_at": "2025-03-11T13:54:02.709944",
+    "updated_at": "2025-04-08T09:04:27.219333"
+  },
+  "170": {
+    "routine_id": "170",
+    "user_id": "286",
+    "home_id": "104",
+    "start_action_date": "2025-08-29",
+    "action_time": "15:00",
+    "action_interval": "one_time",
+    "created_at": "2025-02-04T23:47:48.529098",
+    "updated_at": "2025-05-06T13:36:56.755508"
+  },
+  "171": {
+    "routine_id": "171",
+    "user_id": "286",
+    "home_id": "104",
+    "start_action_date": "2025-07-24",
+    "action_time": "04:45",
+    "action_interval": "one_time",
+    "created_at": "2025-02-16T19:40:16.408735",
+    "updated_at": "2025-03-02T20:56:13.170006"
+  },
+  "172": {
+    "routine_id": "172",
+    "user_id": "289",
+    "home_id": "107",
+    "start_action_date": "2025-08-04",
+    "action_time": "07:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-28T09:00:45.612261",
+    "updated_at": "2025-03-28T21:36:29.837211"
+  },
+  "173": {
+    "routine_id": "173",
+    "user_id": "294",
+    "home_id": "109",
+    "start_action_date": "2025-08-07",
+    "action_time": "18:30",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-11T04:12:02.839490",
+    "updated_at": "2025-03-29T11:02:44.518743"
+  },
+  "174": {
+    "routine_id": "174",
+    "user_id": "294",
+    "home_id": "109",
+    "start_action_date": "2025-08-14",
+    "action_time": "23:00",
+    "action_interval": "one_time",
+    "created_at": "2025-03-22T05:07:24.911118",
+    "updated_at": "2025-06-10T02:52:58.201702"
+  },
+  "175": {
+    "routine_id": "175",
+    "user_id": "295",
+    "home_id": "112",
+    "start_action_date": "2025-08-01",
+    "action_time": "09:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-10T15:36:08.392392",
+    "updated_at": "2025-03-06T20:46:25.829364"
+  },
+  "176": {
+    "routine_id": "176",
+    "user_id": "295",
+    "home_id": "112",
+    "start_action_date": "2025-08-10",
+    "action_time": "13:00",
+    "action_interval": "daily",
+    "created_at": "2025-04-07T02:52:30.618666",
+    "updated_at": "2025-05-29T20:54:50.142715"
+  },
+  "177": {
+    "routine_id": "177",
+    "user_id": "313",
+    "home_id": "124",
+    "start_action_date": "2025-08-17",
+    "action_time": "15:45",
+    "action_interval": "daily",
+    "created_at": "2025-02-07T12:24:21.688647",
+    "updated_at": "2025-05-28T10:00:27.808305"
+  },
+  "178": {
+    "routine_id": "178",
+    "user_id": "313",
+    "home_id": "124",
+    "start_action_date": "2025-08-07",
+    "action_time": "08:45",
+    "action_interval": "one_time",
+    "created_at": "2025-04-03T20:47:28.649146",
+    "updated_at": "2025-06-24T09:07:35.080014"
+  },
+  "179": {
+    "routine_id": "179",
+    "user_id": "317",
+    "home_id": "131",
+    "start_action_date": "2025-08-09",
+    "action_time": "15:30",
+    "action_interval": "daily",
+    "created_at": "2025-03-13T21:41:50.143056",
+    "updated_at": "2025-03-29T15:10:47.029213"
+  },
+  "180": {
+    "routine_id": "180",
+    "user_id": "318",
+    "home_id": "131",
+    "start_action_date": "2025-07-30",
+    "action_time": "17:45",
+    "action_interval": "daily",
+    "created_at": "2025-04-20T13:37:50.994645",
+    "updated_at": "2025-06-28T16:35:55.033117"
+  },
+  "181": {
+    "routine_id": "181",
+    "user_id": "318",
+    "home_id": "131",
+    "start_action_date": "2025-08-12",
+    "action_time": "15:15",
+    "action_interval": "one_time",
+    "created_at": "2025-03-21T13:27:34.809204",
+    "updated_at": "2025-07-14T06:24:36.968045"
+  },
+  "182": {
+    "routine_id": "182",
+    "user_id": "322",
+    "home_id": "133",
+    "start_action_date": "2025-07-27",
+    "action_time": "22:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-18T16:17:21.251187",
+    "updated_at": "2025-04-04T02:38:22.899970"
+  },
+  "183": {
+    "routine_id": "183",
+    "user_id": "322",
+    "home_id": "133",
+    "start_action_date": "2025-07-16",
+    "action_time": "04:30",
+    "action_interval": "daily",
+    "created_at": "2025-02-20T09:54:14.925396",
+    "updated_at": "2025-04-29T11:43:15.173438"
+  },
+  "184": {
+    "routine_id": "184",
+    "user_id": "328",
+    "home_id": "137",
+    "start_action_date": "2025-07-22",
+    "action_time": "22:15",
+    "action_interval": "daily",
+    "created_at": "2025-04-10T05:16:49.047415",
+    "updated_at": "2025-07-05T08:20:16.094700"
+  },
+  "185": {
+    "routine_id": "185",
+    "user_id": "328",
+    "home_id": "137",
+    "start_action_date": "2025-08-23",
+    "action_time": "14:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-15T07:05:45.237087",
+    "updated_at": "2025-05-02T11:54:04.214305"
+  },
+  "186": {
+    "routine_id": "186",
+    "user_id": "331",
+    "home_id": "141",
+    "start_action_date": "2025-07-28",
+    "action_time": "22:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-09T07:55:38.108926",
+    "updated_at": "2025-05-25T04:53:04.280663"
+  },
+  "187": {
+    "routine_id": "187",
+    "user_id": "331",
+    "home_id": "141",
+    "start_action_date": "2025-07-21",
+    "action_time": "11:00",
+    "action_interval": "daily",
+    "created_at": "2025-04-25T17:53:32.662291",
+    "updated_at": "2025-04-28T10:03:19.283164"
+  },
+  "188": {
+    "routine_id": "188",
+    "user_id": "335",
+    "home_id": "142",
+    "start_action_date": "2025-08-20",
+    "action_time": "19:45",
+    "action_interval": "one_time",
+    "created_at": "2025-04-19T06:30:41.589781",
+    "updated_at": "2025-07-24T23:40:33.481493"
+  },
+  "189": {
+    "routine_id": "189",
+    "user_id": "335",
+    "home_id": "142",
+    "start_action_date": "2025-08-09",
+    "action_time": "23:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-25T03:55:10.333115",
+    "updated_at": "2025-05-14T10:49:41.000571"
+  },
+  "190": {
+    "routine_id": "190",
+    "user_id": "343",
+    "home_id": "148",
+    "start_action_date": "2025-08-09",
+    "action_time": "17:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-16T22:40:41.151477",
+    "updated_at": "2025-07-20T06:13:45.402936"
+  },
+  "191": {
+    "routine_id": "191",
+    "user_id": "343",
+    "home_id": "148",
+    "start_action_date": "2025-08-12",
+    "action_time": "15:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-22T18:38:05.536620",
+    "updated_at": "2025-06-13T18:37:34.508573"
+  },
+  "192": {
+    "routine_id": "192",
+    "user_id": "349",
+    "home_id": "151",
+    "start_action_date": "2025-07-18",
+    "action_time": "17:30",
+    "action_interval": "daily",
+    "created_at": "2025-04-05T23:04:18.225619",
+    "updated_at": "2025-06-18T03:52:33.985496"
+  },
+  "193": {
+    "routine_id": "193",
+    "user_id": "349",
+    "home_id": "151",
+    "start_action_date": "2025-08-18",
+    "action_time": "16:30",
+    "action_interval": "daily",
+    "created_at": "2025-04-18T14:22:46.034945",
+    "updated_at": "2025-05-26T00:24:24.945843"
+  },
+  "194": {
+    "routine_id": "194",
+    "user_id": "352",
+    "home_id": "83",
+    "start_action_date": "2025-08-27",
+    "action_time": "17:45",
+    "action_interval": "daily",
+    "created_at": "2025-02-25T13:04:16.902874",
+    "updated_at": "2025-07-23T12:45:01.101118"
+  },
+  "195": {
+    "routine_id": "195",
+    "user_id": "352",
+    "home_id": "83",
+    "start_action_date": "2025-08-21",
+    "action_time": "06:00",
+    "action_interval": "daily",
+    "created_at": "2025-02-27T11:25:26.212597",
+    "updated_at": "2025-07-20T07:41:05.493466"
+  },
+  "196": {
+    "routine_id": "196",
+    "user_id": "353",
+    "home_id": "138",
+    "start_action_date": "2025-07-16",
+    "action_time": "02:15",
+    "action_interval": "daily",
+    "created_at": "2025-04-23T14:54:09.457393",
+    "updated_at": "2025-04-25T12:30:36.853810"
+  },
+  "197": {
+    "routine_id": "197",
+    "user_id": "353",
+    "home_id": "138",
+    "start_action_date": "2025-08-29",
+    "action_time": "20:30",
+    "action_interval": "one_time",
+    "created_at": "2025-03-09T10:23:33.301926",
+    "updated_at": "2025-06-29T05:25:48.874721"
+  },
+  "198": {
+    "routine_id": "198",
+    "user_id": "356",
+    "home_id": "105",
+    "start_action_date": "2025-08-14",
+    "action_time": "20:00",
+    "action_interval": "one_time",
+    "created_at": "2025-03-05T20:05:24.787755",
+    "updated_at": "2025-03-23T18:56:33.961556"
+  },
+  "199": {
+    "routine_id": "199",
+    "user_id": "356",
+    "home_id": "105",
+    "start_action_date": "2025-07-19",
+    "action_time": "21:00",
+    "action_interval": "one_time",
+    "created_at": "2025-04-01T04:19:53.031399",
+    "updated_at": "2025-04-04T23:39:29.916007"
+  },
+  "200": {
+    "routine_id": "200",
+    "user_id": "357",
+    "home_id": "19",
+    "start_action_date": "2025-08-11",
+    "action_time": "06:15",
+    "action_interval": "daily",
+    "created_at": "2025-02-25T19:18:55.080399",
+    "updated_at": "2025-02-26T12:26:05.121775"
+  },
+  "201": {
+    "routine_id": "201",
+    "user_id": "357",
+    "home_id": "19",
+    "start_action_date": "2025-08-29",
+    "action_time": "13:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-25T09:26:01.213756",
+    "updated_at": "2025-07-17T09:19:37.359626"
+  },
+  "202": {
+    "routine_id": "202",
+    "user_id": "358",
+    "home_id": "10",
+    "start_action_date": "2025-08-21",
+    "action_time": "06:15",
+    "action_interval": "daily",
+    "created_at": "2025-02-14T21:13:26.463972",
+    "updated_at": "2025-04-18T23:23:03.373522"
+  },
+  "203": {
+    "routine_id": "203",
+    "user_id": "359",
+    "home_id": "130",
+    "start_action_date": "2025-07-23",
+    "action_time": "21:00",
+    "action_interval": "one_time",
+    "created_at": "2025-02-15T02:13:57.742216",
+    "updated_at": "2025-04-08T05:07:14.643461"
+  },
+  "204": {
+    "routine_id": "204",
+    "user_id": "362",
+    "home_id": "15",
+    "start_action_date": "2025-07-31",
+    "action_time": "19:45",
+    "action_interval": "one_time",
+    "created_at": "2025-02-26T16:38:27.262788",
+    "updated_at": "2025-03-08T23:48:52.526288"
+  },
+  "205": {
+    "routine_id": "205",
+    "user_id": "362",
+    "home_id": "15",
+    "start_action_date": "2025-07-18",
+    "action_time": "04:30",
+    "action_interval": "one_time",
+    "created_at": "2025-03-14T08:45:39.822565",
+    "updated_at": "2025-04-05T08:22:27.705950"
+  },
+  "206": {
+    "routine_id": "206",
+    "user_id": "363",
+    "home_id": "40",
+    "start_action_date": "2025-08-27",
+    "action_time": "13:30",
+    "action_interval": "one_time",
+    "created_at": "2025-03-22T04:31:37.983254",
+    "updated_at": "2025-05-11T20:23:25.241108"
+  },
+  "207": {
+    "routine_id": "207",
+    "user_id": "363",
+    "home_id": "40",
+    "start_action_date": "2025-08-09",
+    "action_time": "15:45",
+    "action_interval": "one_time",
+    "created_at": "2025-02-02T14:13:17.780139",
+    "updated_at": "2025-06-12T21:47:03.805854"
+  },
+  "208": {
+    "routine_id": "208",
+    "user_id": "365",
+    "home_id": "20",
+    "start_action_date": "2025-08-09",
+    "action_time": "22:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-31T06:28:58.647972",
+    "updated_at": "2025-07-28T23:12:33.755170"
+  },
+  "209": {
+    "routine_id": "209",
+    "user_id": "365",
+    "home_id": "20",
+    "start_action_date": "2025-08-07",
+    "action_time": "21:00",
+    "action_interval": "one_time",
+    "created_at": "2025-02-26T10:28:14.202375",
+    "updated_at": "2025-04-24T13:38:31.782026"
+  },
+  "210": {
+    "routine_id": "210",
+    "user_id": "367",
+    "home_id": "50",
+    "start_action_date": "2025-08-27",
+    "action_time": "22:45",
+    "action_interval": "daily",
+    "created_at": "2025-04-20T12:57:44.270900",
+    "updated_at": "2025-04-29T18:53:34.985993"
+  },
+  "211": {
+    "routine_id": "211",
+    "user_id": "367",
+    "home_id": "50",
+    "start_action_date": "2025-08-13",
+    "action_time": "23:45",
+    "action_interval": "daily",
+    "created_at": "2025-04-06T11:03:39.932420",
+    "updated_at": "2025-04-07T03:23:48.492642"
+  },
+  "212": {
+    "routine_id": "212",
+    "user_id": "370",
+    "home_id": "61",
+    "start_action_date": "2025-08-01",
+    "action_time": "12:45",
+    "action_interval": "daily",
+    "created_at": "2025-04-04T22:15:17.451877",
+    "updated_at": "2025-07-08T08:44:48.887873"
+  },
+  "213": {
+    "routine_id": "213",
+    "user_id": "375",
+    "home_id": "107",
+    "start_action_date": "2025-07-16",
+    "action_time": "01:15",
+    "action_interval": "daily",
+    "created_at": "2025-04-24T18:23:25.003348",
+    "updated_at": "2025-05-24T09:07:35.218665"
+  },
+  "214": {
+    "routine_id": "214",
+    "user_id": "375",
+    "home_id": "107",
+    "start_action_date": "2025-08-21",
+    "action_time": "13:45",
+    "action_interval": "daily",
+    "created_at": "2025-04-19T14:27:51.955435",
+    "updated_at": "2025-06-01T03:02:28.738705"
+  },
+  "215": {
+    "routine_id": "215",
+    "user_id": "382",
+    "home_id": "65",
+    "start_action_date": "2025-07-18",
+    "action_time": "20:00",
+    "action_interval": "one_time",
+    "created_at": "2025-04-08T10:41:47.077612",
+    "updated_at": "2025-05-12T18:11:09.277580"
+  },
+  "216": {
+    "routine_id": "216",
+    "user_id": "382",
+    "home_id": "65",
+    "start_action_date": "2025-07-29",
+    "action_time": "15:15",
+    "action_interval": "daily",
+    "created_at": "2025-04-28T06:38:50.006261",
+    "updated_at": "2025-05-13T07:14:11.060823"
+  },
+  "217": {
+    "routine_id": "217",
+    "user_id": "388",
+    "home_id": "19",
+    "start_action_date": "2025-07-25",
+    "action_time": "11:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-03T04:17:14.495487",
+    "updated_at": "2025-05-21T00:02:42.427705"
+  },
+  "218": {
+    "routine_id": "218",
+    "user_id": "402",
+    "home_id": "83",
+    "start_action_date": "2025-07-23",
+    "action_time": "21:30",
+    "action_interval": "one_time",
+    "created_at": "2025-04-19T11:05:48.341587",
+    "updated_at": "2025-05-29T11:21:00.154173"
+  },
+  "219": {
+    "routine_id": "219",
+    "user_id": "404",
+    "home_id": "109",
+    "start_action_date": "2025-07-19",
+    "action_time": "13:30",
+    "action_interval": "one_time",
+    "created_at": "2025-04-26T06:04:19.322289",
+    "updated_at": "2025-05-07T20:02:59.371030"
+  },
+  "220": {
+    "routine_id": "220",
+    "user_id": "404",
+    "home_id": "109",
+    "start_action_date": "2025-07-23",
+    "action_time": "20:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-06T23:33:29.966598",
+    "updated_at": "2025-05-12T12:45:10.069256"
+  },
+  "221": {
+    "routine_id": "221",
+    "user_id": "406",
+    "home_id": "18",
+    "start_action_date": "2025-08-05",
+    "action_time": "07:30",
+    "action_interval": "daily",
+    "created_at": "2025-03-19T22:30:21.298053",
+    "updated_at": "2025-05-17T03:09:55.973881"
+  },
+  "222": {
+    "routine_id": "222",
+    "user_id": "408",
+    "home_id": "18",
+    "start_action_date": "2025-08-04",
+    "action_time": "06:15",
+    "action_interval": "one_time",
+    "created_at": "2025-04-02T00:53:44.071151",
+    "updated_at": "2025-05-25T03:28:03.335558"
+  },
+  "223": {
+    "routine_id": "223",
+    "user_id": "408",
+    "home_id": "18",
+    "start_action_date": "2025-08-08",
+    "action_time": "13:15",
+    "action_interval": "daily",
+    "created_at": "2025-04-21T23:17:39.833448",
+    "updated_at": "2025-04-26T10:53:21.658657"
+  },
+  "224": {
+    "routine_id": "224",
+    "user_id": "411",
+    "home_id": "96",
+    "start_action_date": "2025-08-28",
+    "action_time": "03:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-03T10:41:04.292950",
+    "updated_at": "2025-05-26T01:43:08.358802"
+  },
+  "225": {
+    "routine_id": "225",
+    "user_id": "417",
+    "home_id": "3",
+    "start_action_date": "2025-08-01",
+    "action_time": "09:45",
+    "action_interval": "daily",
+    "created_at": "2025-02-28T21:55:30.573685",
+    "updated_at": "2025-07-03T13:48:21.348695"
+  },
+  "226": {
+    "routine_id": "226",
+    "user_id": "417",
+    "home_id": "3",
+    "start_action_date": "2025-08-19",
+    "action_time": "17:45",
+    "action_interval": "one_time",
+    "created_at": "2025-04-06T04:26:26.197650",
+    "updated_at": "2025-07-27T14:02:45.446562"
+  },
+  "227": {
+    "routine_id": "227",
+    "user_id": "422",
+    "home_id": "114",
+    "start_action_date": "2025-07-29",
+    "action_time": "15:15",
+    "action_interval": "daily",
+    "created_at": "2025-02-08T23:52:45.124393",
+    "updated_at": "2025-02-26T07:18:56.192199"
+  },
+  "228": {
+    "routine_id": "228",
+    "user_id": "424",
+    "home_id": "119",
+    "start_action_date": "2025-08-20",
+    "action_time": "13:30",
+    "action_interval": "daily",
+    "created_at": "2025-04-25T02:07:29.096237",
+    "updated_at": "2025-05-29T02:10:34.457366"
+  },
+  "229": {
+    "routine_id": "229",
+    "user_id": "425",
+    "home_id": "37",
+    "start_action_date": "2025-08-05",
+    "action_time": "18:45",
+    "action_interval": "daily",
+    "created_at": "2025-04-28T21:06:52.573964",
+    "updated_at": "2025-06-01T02:49:51.878780"
+  },
+  "230": {
+    "routine_id": "230",
+    "user_id": "426",
+    "home_id": "117",
+    "start_action_date": "2025-08-28",
+    "action_time": "07:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-16T10:04:43.754820",
+    "updated_at": "2025-04-19T17:55:04.276618"
+  },
+  "231": {
+    "routine_id": "231",
+    "user_id": "426",
+    "home_id": "117",
+    "start_action_date": "2025-08-18",
+    "action_time": "21:45",
+    "action_interval": "one_time",
+    "created_at": "2025-03-05T00:04:56.198981",
+    "updated_at": "2025-05-11T01:05:40.883617"
+  },
+  "232": {
+    "routine_id": "232",
+    "user_id": "438",
+    "home_id": "95",
+    "start_action_date": "2025-07-23",
+    "action_time": "08:30",
+    "action_interval": "daily",
+    "created_at": "2025-03-16T15:22:52.889811",
+    "updated_at": "2025-05-27T20:47:13.691606"
+  },
+  "233": {
+    "routine_id": "233",
+    "user_id": "440",
+    "home_id": "149",
+    "start_action_date": "2025-08-09",
+    "action_time": "10:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-16T01:59:04.581262",
+    "updated_at": "2025-02-23T23:39:58.009766"
+  },
+  "234": {
+    "routine_id": "234",
+    "user_id": "443",
+    "home_id": "117",
+    "start_action_date": "2025-08-18",
+    "action_time": "01:30",
+    "action_interval": "daily",
+    "created_at": "2025-03-08T00:17:02.760332",
+    "updated_at": "2025-07-24T12:39:44.830813"
+  },
+  "235": {
+    "routine_id": "235",
+    "user_id": "458",
+    "home_id": "43",
+    "start_action_date": "2025-08-07",
+    "action_time": "18:00",
+    "action_interval": "one_time",
+    "created_at": "2025-04-15T00:43:35.139946",
+    "updated_at": "2025-05-16T06:42:36.918772"
+  },
+  "236": {
+    "routine_id": "236",
+    "user_id": "468",
+    "home_id": "14",
+    "start_action_date": "2025-08-17",
+    "action_time": "07:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-19T16:32:32.660430",
+    "updated_at": "2025-04-02T23:53:39.194640"
+  },
+  "237": {
+    "routine_id": "237",
+    "user_id": "468",
+    "home_id": "14",
+    "start_action_date": "2025-07-19",
+    "action_time": "17:30",
+    "action_interval": "one_time",
+    "created_at": "2025-02-11T10:53:37.329536",
+    "updated_at": "2025-04-26T23:57:49.449639"
+  },
+  "238": {
+    "routine_id": "238",
+    "user_id": "474",
+    "home_id": "110",
+    "start_action_date": "2025-07-29",
+    "action_time": "11:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-02T02:37:44.338050",
+    "updated_at": "2025-04-19T09:24:51.677000"
+  },
+  "239": {
+    "routine_id": "239",
+    "user_id": "474",
+    "home_id": "110",
+    "start_action_date": "2025-08-03",
+    "action_time": "08:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-09T12:01:53.033858",
+    "updated_at": "2025-04-17T02:31:36.120273"
+  },
+  "240": {
+    "routine_id": "240",
+    "user_id": "477",
+    "home_id": "128",
+    "start_action_date": "2025-08-18",
+    "action_time": "00:45",
+    "action_interval": "one_time",
+    "created_at": "2025-03-18T21:28:10.801842",
+    "updated_at": "2025-04-28T00:01:47.689484"
+  },
+  "241": {
+    "routine_id": "241",
+    "user_id": "478",
+    "home_id": "28",
+    "start_action_date": "2025-07-23",
+    "action_time": "13:00",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-27T02:24:36.886185",
+    "updated_at": "2025-06-25T15:35:23.075330"
+  },
+  "242": {
+    "routine_id": "242",
+    "user_id": "478",
+    "home_id": "28",
+    "start_action_date": "2025-08-05",
+    "action_time": "20:45",
+    "action_interval": "every_hour",
+    "created_at": "2025-03-01T10:05:19.429436",
+    "updated_at": "2025-05-19T01:45:18.670494"
+  },
+  "243": {
+    "routine_id": "243",
+    "user_id": "480",
+    "home_id": "134",
+    "start_action_date": "2025-07-22",
+    "action_time": "17:30",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-04T01:07:06.013560",
+    "updated_at": "2025-05-11T06:47:10.598948"
+  },
+  "244": {
+    "routine_id": "244",
+    "user_id": "487",
+    "home_id": "26",
+    "start_action_date": "2025-07-24",
+    "action_time": "16:15",
+    "action_interval": "daily",
+    "created_at": "2025-04-23T21:44:54.306019",
+    "updated_at": "2025-05-06T06:32:00.952464"
+  },
+  "245": {
+    "routine_id": "245",
+    "user_id": "487",
+    "home_id": "26",
+    "start_action_date": "2025-08-22",
+    "action_time": "16:15",
+    "action_interval": "daily",
+    "created_at": "2025-03-13T20:20:38.856036",
+    "updated_at": "2025-07-22T04:09:41.867169"
+  },
+  "246": {
+    "routine_id": "246",
+    "user_id": "490",
+    "home_id": "152",
+    "start_action_date": "2025-07-16",
+    "action_time": "18:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-04-07T21:51:45.380292",
+    "updated_at": "2025-05-15T03:19:26.648330"
+  },
+  "247": {
+    "routine_id": "247",
+    "user_id": "496",
+    "home_id": "75",
+    "start_action_date": "2025-07-25",
+    "action_time": "02:15",
+    "action_interval": "one_time",
+    "created_at": "2025-04-27T20:40:47.661701",
+    "updated_at": "2025-05-20T05:25:44.857478"
+  },
+  "248": {
+    "routine_id": "248",
+    "user_id": "503",
+    "home_id": "64",
+    "start_action_date": "2025-07-24",
+    "action_time": "03:00",
+    "action_interval": "one_time",
+    "created_at": "2025-03-08T09:14:58.348603",
+    "updated_at": "2025-05-19T06:48:22.020640"
+  },
+  "249": {
+    "routine_id": "249",
+    "user_id": "503",
+    "home_id": "64",
+    "start_action_date": "2025-08-03",
+    "action_time": "00:15",
+    "action_interval": "every_hour",
+    "created_at": "2025-02-17T21:20:33.960951",
+    "updated_at": "2025-06-25T05:22:44.939103"
+  },
+  "250": {
+    "routine_id": "250",
+    "user_id": "508",
+    "home_id": "86",
+    "start_action_date": "2025-08-02",
+    "action_time": "04:00",
+    "action_interval": "one_time",
+    "created_at": "2025-02-02T22:25:52.313945",
+    "updated_at": "2025-05-29T10:50:12.522995"
+  },
+  "251": {
+    "routine_id": "251",
+    "user_id": "509",
+    "home_id": "118",
+    "start_action_date": "2025-08-01",
+    "action_time": "17:00",
+    "action_interval": "one_time",
+    "created_at": "2025-03-23T22:17:39.960268",
+    "updated_at": "2025-07-17T23:22:01.211427"
+  },
+  "252": {
+    "routine_id": "252",
+    "user_id": "509",
+    "home_id": "118",
+    "start_action_date": "2025-08-08",
+    "action_time": "11:15",
+    "action_interval": "daily",
+    "created_at": "2025-02-13T11:01:18.255839",
+    "updated_at": "2025-02-28T10:34:38.398987"
+  }
+}

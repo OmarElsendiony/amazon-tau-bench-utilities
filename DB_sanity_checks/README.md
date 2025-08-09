@@ -1,5 +1,3 @@
-# amazon-tau-bench-utilities
-
 
 # Database Sanity Checks
 

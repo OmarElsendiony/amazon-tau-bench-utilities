@@ -1,0 +1,1203 @@
+{
+  "timestamp": "2025-08-09T21:54:28.743637",
+  "tables": {
+    "security_cameras": {
+      "row_count": 158,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "device_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "historical_energy_consumption": {
+      "row_count": 5606,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "consumption_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "thermostat_commands": {
+      "row_count": 47,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "thermostat_command_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "addresses": {
+      "row_count": 153,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "address_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "bulb_commands": {
+      "row_count": 236,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "bulb_command_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "homes": {
+      "row_count": 153,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "home_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "users": {
+      "row_count": 509,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "user_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "rooms": {
+      "row_count": 797,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "home_id matches key",
+          "result": false
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "smart_bulbs": {
+      "row_count": 1179,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "device_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "user_feedbacks": {
+      "row_count": 1007,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "user_feedback_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "automated_routines": {
+      "row_count": 252,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "routine_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "energy_tariffs": {
+      "row_count": 302,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "tariff_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "devices": {
+      "row_count": 3133,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "device_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "device_commands": {
+      "row_count": 610,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "device_command_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "emergency_alerts": {
+      "row_count": 783,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "alert_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "smart_thermostats": {
+      "row_count": 283,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "device_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    }
+  },
+  "enum_tables": {
+    "security_cameras": [
+      {
+        "check": "resolution in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "historical_energy_consumption": [],
+    "thermostat_commands": [],
+    "addresses": [],
+    "bulb_commands": [
+      {
+        "check": "brightness_level in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
+      {
+        "check": "color in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "homes": [
+      {
+        "check": "home_type in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "users": [
+      {
+        "check": "role in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
+      {
+        "check": "status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "rooms": [
+      {
+        "check": "room_type in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
+      {
+        "check": "status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "smart_bulbs": [
+      {
+        "check": "brightness_level in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
+      {
+        "check": "color in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "user_feedbacks": [],
+    "automated_routines": [
+      {
+        "check": "action_interval in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "energy_tariffs": [],
+    "devices": [
+      {
+        "check": "device_type in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
+      {
+        "check": "status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "device_commands": [
+      {
+        "check": "status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "emergency_alerts": [
+      {
+        "check": "alert_type in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
+      {
+        "check": "severity_level in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "smart_thermostats": []
+  },
+  "relationships": [
+    {
+      "relationship": "homes.address_id \u2192 addresses.address_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "address_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "homes.address_id \u2192 addresses.address_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "address_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 homes.owner_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "owner_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 homes.owner_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 homes.owner_id",
+      "check": "Average children per parent",
+      "result": 1.9125,
+      "details": {}
+    },
+    {
+      "relationship": "homes.home_id \u2192 rooms.home_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "home_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "homes.home_id \u2192 rooms.home_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "home_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "homes.home_id \u2192 rooms.home_id",
+      "check": "Average children per parent",
+      "result": 5.209150326797386,
+      "details": {}
+    },
+    {
+      "relationship": "homes.home_id \u2192 devices.home_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "home_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "homes.home_id \u2192 devices.home_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "home_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "homes.home_id \u2192 devices.home_id",
+      "check": "Average children per parent",
+      "result": 20.477124183006534,
+      "details": {}
+    },
+    {
+      "relationship": "users.user_id \u2192 users.parent_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "parent_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 users.parent_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 users.parent_id",
+      "check": "Average children per parent",
+      "result": 2.9402985074626864,
+      "details": {}
+    },
+    {
+      "relationship": "addresses.address_id \u2192 users.primary_address_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "primary_address_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "addresses.address_id \u2192 users.primary_address_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "address_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "addresses.address_id \u2192 users.primary_address_id",
+      "check": "Average children per parent",
+      "result": 3.9765625,
+      "details": {}
+    },
+    {
+      "relationship": "users.user_id \u2192 rooms.room_owner_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "room_owner_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 rooms.room_owner_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 rooms.room_owner_id",
+      "check": "Average children per parent",
+      "result": 2.9063829787234043,
+      "details": {}
+    },
+    {
+      "relationship": "rooms.room_id \u2192 devices.room_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "room_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "rooms.room_id \u2192 devices.room_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "room_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "rooms.room_id \u2192 devices.room_id",
+      "check": "Average children per parent",
+      "result": 3.93099121706399,
+      "details": {}
+    },
+    {
+      "relationship": "devices.device_id \u2192 smart_bulbs.device_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 smart_bulbs.device_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 smart_thermostats.device_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 smart_thermostats.device_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "rooms.room_id \u2192 historical_energy_consumption.room_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "room_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "rooms.room_id \u2192 historical_energy_consumption.room_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "room_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "rooms.room_id \u2192 historical_energy_consumption.room_id",
+      "check": "Average children per parent",
+      "result": 11.057199211045365,
+      "details": {}
+    },
+    {
+      "relationship": "devices.device_id \u2192 historical_energy_consumption.device_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 historical_energy_consumption.device_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 historical_energy_consumption.device_id",
+      "check": "Average children per parent",
+      "result": 5.821391484942887,
+      "details": {}
+    },
+    {
+      "relationship": "homes.home_id \u2192 historical_energy_consumption.home_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "home_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "homes.home_id \u2192 historical_energy_consumption.home_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "home_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "homes.home_id \u2192 historical_energy_consumption.home_id",
+      "check": "Average children per parent",
+      "result": 36.64052287581699,
+      "details": {}
+    },
+    {
+      "relationship": "users.user_id \u2192 automated_routines.user_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 automated_routines.user_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 automated_routines.user_id",
+      "check": "Average children per parent",
+      "result": 1.5365853658536586,
+      "details": {}
+    },
+    {
+      "relationship": "homes.home_id \u2192 automated_routines.home_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "home_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "homes.home_id \u2192 automated_routines.home_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "home_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "homes.home_id \u2192 automated_routines.home_id",
+      "check": "Average children per parent",
+      "result": 2.6526315789473682,
+      "details": {}
+    },
+    {
+      "relationship": "automated_routines.routine_id \u2192 device_commands.routine_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "routine_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "automated_routines.routine_id \u2192 device_commands.routine_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "routine_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "automated_routines.routine_id \u2192 device_commands.routine_id",
+      "check": "Average children per parent",
+      "result": 2.4596774193548385,
+      "details": {}
+    },
+    {
+      "relationship": "devices.device_id \u2192 device_commands.device_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 device_commands.device_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 device_commands.device_id",
+      "check": "Average children per parent",
+      "result": 1.222444889779559,
+      "details": {}
+    },
+    {
+      "relationship": "automated_routines.routine_id \u2192 bulb_commands.routine_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "routine_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "automated_routines.routine_id \u2192 bulb_commands.routine_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "routine_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "automated_routines.routine_id \u2192 bulb_commands.routine_id",
+      "check": "Average children per parent",
+      "result": 1.3641618497109826,
+      "details": {}
+    },
+    {
+      "relationship": "devices.device_id \u2192 bulb_commands.device_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 bulb_commands.device_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 bulb_commands.device_id",
+      "check": "Average children per parent",
+      "result": 1.2291666666666667,
+      "details": {}
+    },
+    {
+      "relationship": "automated_routines.routine_id \u2192 thermostat_commands.routine_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "routine_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "automated_routines.routine_id \u2192 thermostat_commands.routine_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "routine_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "automated_routines.routine_id \u2192 thermostat_commands.routine_id",
+      "check": "Average children per parent",
+      "result": 1.0217391304347827,
+      "details": {}
+    },
+    {
+      "relationship": "devices.device_id \u2192 thermostat_commands.device_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 thermostat_commands.device_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 thermostat_commands.device_id",
+      "check": "Average children per parent",
+      "result": 1.0930232558139534,
+      "details": {}
+    },
+    {
+      "relationship": "devices.device_id \u2192 security_cameras.device_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 security_cameras.device_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 user_feedbacks.user_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 user_feedbacks.user_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 user_feedbacks.user_id",
+      "check": "Average children per parent",
+      "result": 1.9783889980353635,
+      "details": {}
+    },
+    {
+      "relationship": "devices.device_id \u2192 user_feedbacks.device_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 user_feedbacks.device_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 user_feedbacks.device_id",
+      "check": "Average children per parent",
+      "result": 1.7332185886402753,
+      "details": {}
+    },
+    {
+      "relationship": "homes.home_id \u2192 emergency_alerts.home_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "home_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "homes.home_id \u2192 emergency_alerts.home_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "home_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "homes.home_id \u2192 emergency_alerts.home_id",
+      "check": "Average children per parent",
+      "result": 5.185430463576159,
+      "details": {}
+    },
+    {
+      "relationship": "devices.device_id \u2192 emergency_alerts.device_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 emergency_alerts.device_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "device_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "devices.device_id \u2192 emergency_alerts.device_id",
+      "check": "Average children per parent",
+      "result": 1.1380813953488371,
+      "details": {}
+    },
+    {
+      "relationship": "users.user_id \u2192 emergency_alerts.acknowledged_by_user",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "acknowledged_by_user",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 emergency_alerts.acknowledged_by_user",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 emergency_alerts.acknowledged_by_user",
+      "check": "Average children per parent",
+      "result": 2.0126050420168067,
+      "details": {}
+    },
+    {
+      "relationship": "users.user_id \u2192 emergency_alerts.resolved_by_user",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "resolved_by_user",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 emergency_alerts.resolved_by_user",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 emergency_alerts.resolved_by_user",
+      "check": "Average children per parent",
+      "result": 1.5657894736842106,
+      "details": {}
+    }
+  ]
+}

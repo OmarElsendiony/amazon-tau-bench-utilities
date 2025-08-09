@@ -1,0 +1,378 @@
+{
+  "1": {
+    "thermostat_command_id": "1",
+    "routine_id": "2",
+    "device_id": "11",
+    "current_temperature": 71.8,
+    "created_at": "2025-06-10T01:02:16.824672",
+    "updated_at": "2025-06-11T17:13:09.845280"
+  },
+  "2": {
+    "thermostat_command_id": "2",
+    "routine_id": "2",
+    "device_id": "12",
+    "current_temperature": 72.1,
+    "created_at": "2025-06-11T11:46:24.902782",
+    "updated_at": "2025-07-18T14:08:22.670710"
+  },
+  "3": {
+    "thermostat_command_id": "3",
+    "routine_id": "7",
+    "device_id": "66",
+    "current_temperature": 72.3,
+    "created_at": "2025-06-03T10:48:40.654468",
+    "updated_at": "2025-07-04T12:48:37.225691"
+  },
+  "4": {
+    "thermostat_command_id": "4",
+    "routine_id": "10",
+    "device_id": "154",
+    "current_temperature": 68.1,
+    "created_at": "2025-06-26T04:45:10.018375",
+    "updated_at": "2025-06-27T02:48:29.742433"
+  },
+  "5": {
+    "thermostat_command_id": "5",
+    "routine_id": "13",
+    "device_id": "173",
+    "current_temperature": 70.0,
+    "created_at": "2025-06-21T23:09:00.430667",
+    "updated_at": "2025-07-13T21:10:39.893804"
+  },
+  "6": {
+    "thermostat_command_id": "6",
+    "routine_id": "15",
+    "device_id": "198",
+    "current_temperature": 72.9,
+    "created_at": "2025-06-26T21:58:43.040977",
+    "updated_at": "2025-07-04T07:44:25.076654"
+  },
+  "7": {
+    "thermostat_command_id": "7",
+    "routine_id": "18",
+    "device_id": "253",
+    "current_temperature": 73.9,
+    "created_at": "2025-06-03T16:04:54.966577",
+    "updated_at": "2025-07-07T22:21:23.175222"
+  },
+  "8": {
+    "thermostat_command_id": "8",
+    "routine_id": "22",
+    "device_id": "309",
+    "current_temperature": 65.7,
+    "created_at": "2025-06-30T23:04:50.570835",
+    "updated_at": "2025-07-03T08:20:34.035775"
+  },
+  "9": {
+    "thermostat_command_id": "9",
+    "routine_id": "26",
+    "device_id": "501",
+    "current_temperature": 66.7,
+    "created_at": "2025-06-29T20:18:53.078842",
+    "updated_at": "2025-07-22T06:09:05.976982"
+  },
+  "10": {
+    "thermostat_command_id": "10",
+    "routine_id": "27",
+    "device_id": "501",
+    "current_temperature": 70.7,
+    "created_at": "2025-06-21T09:25:25.799329",
+    "updated_at": "2025-06-26T21:08:17.091143"
+  },
+  "11": {
+    "thermostat_command_id": "11",
+    "routine_id": "37",
+    "device_id": "778",
+    "current_temperature": 70.8,
+    "created_at": "2025-06-23T18:58:23.142347",
+    "updated_at": "2025-07-31T03:33:21.265491"
+  },
+  "12": {
+    "thermostat_command_id": "12",
+    "routine_id": "49",
+    "device_id": "1141",
+    "current_temperature": 69.6,
+    "created_at": "2025-06-04T11:57:27.896356",
+    "updated_at": "2025-06-23T23:40:57.096940"
+  },
+  "13": {
+    "thermostat_command_id": "13",
+    "routine_id": "69",
+    "device_id": "1947",
+    "current_temperature": 68.3,
+    "created_at": "2025-06-02T00:21:40.404390",
+    "updated_at": "2025-06-08T18:26:12.954004"
+  },
+  "14": {
+    "thermostat_command_id": "14",
+    "routine_id": "72",
+    "device_id": "2075",
+    "current_temperature": 68.6,
+    "created_at": "2025-06-12T21:21:03.371852",
+    "updated_at": "2025-07-19T17:03:18.238333"
+  },
+  "15": {
+    "thermostat_command_id": "15",
+    "routine_id": "74",
+    "device_id": "2161",
+    "current_temperature": 68.0,
+    "created_at": "2025-06-22T06:30:33.077156",
+    "updated_at": "2025-07-22T09:23:25.240876"
+  },
+  "16": {
+    "thermostat_command_id": "16",
+    "routine_id": "75",
+    "device_id": "2160",
+    "current_temperature": 71.9,
+    "created_at": "2025-06-14T10:54:23.238100",
+    "updated_at": "2025-07-25T16:55:39.245042"
+  },
+  "17": {
+    "thermostat_command_id": "17",
+    "routine_id": "76",
+    "device_id": "2202",
+    "current_temperature": 70.1,
+    "created_at": "2025-06-24T21:57:49.857820",
+    "updated_at": "2025-07-12T04:59:46.228165"
+  },
+  "18": {
+    "thermostat_command_id": "18",
+    "routine_id": "87",
+    "device_id": "2535",
+    "current_temperature": 69.9,
+    "created_at": "2025-06-21T06:05:16.476013",
+    "updated_at": "2025-07-12T10:05:54.552904"
+  },
+  "19": {
+    "thermostat_command_id": "19",
+    "routine_id": "88",
+    "device_id": "2536",
+    "current_temperature": 73.0,
+    "created_at": "2025-06-15T22:23:55.264783",
+    "updated_at": "2025-06-20T22:57:22.514413"
+  },
+  "20": {
+    "thermostat_command_id": "20",
+    "routine_id": "89",
+    "device_id": "2536",
+    "current_temperature": 72.6,
+    "created_at": "2025-06-25T06:01:30.022606",
+    "updated_at": "2025-07-29T00:18:02.950514"
+  },
+  "21": {
+    "thermostat_command_id": "21",
+    "routine_id": "90",
+    "device_id": "2583",
+    "current_temperature": 69.6,
+    "created_at": "2025-06-17T14:08:25.371403",
+    "updated_at": "2025-06-26T08:24:46.677145"
+  },
+  "22": {
+    "thermostat_command_id": "22",
+    "routine_id": "92",
+    "device_id": "2609",
+    "current_temperature": 74.6,
+    "created_at": "2025-06-26T11:40:13.339663",
+    "updated_at": "2025-07-09T17:30:42.874966"
+  },
+  "23": {
+    "thermostat_command_id": "23",
+    "routine_id": "101",
+    "device_id": "2770",
+    "current_temperature": 74.1,
+    "created_at": "2025-06-17T07:10:38.312617",
+    "updated_at": "2025-07-08T07:14:47.636009"
+  },
+  "24": {
+    "thermostat_command_id": "24",
+    "routine_id": "103",
+    "device_id": "2812",
+    "current_temperature": 75.0,
+    "created_at": "2025-06-12T05:11:11.131215",
+    "updated_at": "2025-06-12T18:24:29.642073"
+  },
+  "25": {
+    "thermostat_command_id": "25",
+    "routine_id": "110",
+    "device_id": "2941",
+    "current_temperature": 66.8,
+    "created_at": "2025-06-23T08:13:26.149917",
+    "updated_at": "2025-06-29T03:39:09.455384"
+  },
+  "26": {
+    "thermostat_command_id": "26",
+    "routine_id": "115",
+    "device_id": "3010",
+    "current_temperature": 70.9,
+    "created_at": "2025-06-28T22:12:07.065165",
+    "updated_at": "2025-07-12T23:25:17.013626"
+  },
+  "27": {
+    "thermostat_command_id": "27",
+    "routine_id": "116",
+    "device_id": "3034",
+    "current_temperature": 69.9,
+    "created_at": "2025-06-20T19:43:43.189938",
+    "updated_at": "2025-06-27T02:25:54.913599"
+  },
+  "28": {
+    "thermostat_command_id": "28",
+    "routine_id": "122",
+    "device_id": "107",
+    "current_temperature": 74.1,
+    "created_at": "2025-06-06T04:09:43.406061",
+    "updated_at": "2025-06-14T09:26:54.172728"
+  },
+  "29": {
+    "thermostat_command_id": "29",
+    "routine_id": "139",
+    "device_id": "1068",
+    "current_temperature": 74.2,
+    "created_at": "2025-06-23T17:06:56.192579",
+    "updated_at": "2025-07-12T15:34:13.937983"
+  },
+  "30": {
+    "thermostat_command_id": "30",
+    "routine_id": "150",
+    "device_id": "1299",
+    "current_temperature": 72.0,
+    "created_at": "2025-06-15T19:45:09.969458",
+    "updated_at": "2025-07-11T04:26:37.257329"
+  },
+  "31": {
+    "thermostat_command_id": "31",
+    "routine_id": "152",
+    "device_id": "1337",
+    "current_temperature": 65.5,
+    "created_at": "2025-07-01T07:58:26.851864",
+    "updated_at": "2025-07-25T03:49:12.145632"
+  },
+  "32": {
+    "thermostat_command_id": "32",
+    "routine_id": "157",
+    "device_id": "1587",
+    "current_temperature": 71.5,
+    "created_at": "2025-06-24T01:58:36.981183",
+    "updated_at": "2025-07-07T10:31:06.126648"
+  },
+  "33": {
+    "thermostat_command_id": "33",
+    "routine_id": "162",
+    "device_id": "1676",
+    "current_temperature": 65.7,
+    "created_at": "2025-06-12T23:28:25.873862",
+    "updated_at": "2025-07-03T01:49:06.202972"
+  },
+  "34": {
+    "thermostat_command_id": "34",
+    "routine_id": "175",
+    "device_id": "2319",
+    "current_temperature": 65.2,
+    "created_at": "2025-06-21T08:42:33.538925",
+    "updated_at": "2025-07-25T00:30:50.298689"
+  },
+  "35": {
+    "thermostat_command_id": "35",
+    "routine_id": "176",
+    "device_id": "2318",
+    "current_temperature": 69.7,
+    "created_at": "2025-06-25T23:56:25.730236",
+    "updated_at": "2025-07-08T16:47:53.354526"
+  },
+  "36": {
+    "thermostat_command_id": "36",
+    "routine_id": "192",
+    "device_id": "3088",
+    "current_temperature": 68.3,
+    "created_at": "2025-06-12T10:21:08.010454",
+    "updated_at": "2025-07-10T22:27:39.455573"
+  },
+  "37": {
+    "thermostat_command_id": "37",
+    "routine_id": "194",
+    "device_id": "1710",
+    "current_temperature": 72.8,
+    "created_at": "2025-06-15T21:47:59.151954",
+    "updated_at": "2025-07-27T10:52:24.681200"
+  },
+  "38": {
+    "thermostat_command_id": "38",
+    "routine_id": "195",
+    "device_id": "1710",
+    "current_temperature": 73.5,
+    "created_at": "2025-06-17T01:00:06.667855",
+    "updated_at": "2025-06-30T03:49:26.009049"
+  },
+  "39": {
+    "thermostat_command_id": "39",
+    "routine_id": "197",
+    "device_id": "2863",
+    "current_temperature": 71.5,
+    "created_at": "2025-06-08T09:37:29.905663",
+    "updated_at": "2025-07-23T08:06:33.736935"
+  },
+  "40": {
+    "thermostat_command_id": "40",
+    "routine_id": "206",
+    "device_id": "811",
+    "current_temperature": 69.1,
+    "created_at": "2025-06-09T07:17:13.871230",
+    "updated_at": "2025-07-22T06:18:24.325475"
+  },
+  "41": {
+    "thermostat_command_id": "41",
+    "routine_id": "232",
+    "device_id": "1979",
+    "current_temperature": 65.4,
+    "created_at": "2025-06-03T06:26:07.787626",
+    "updated_at": "2025-06-08T18:03:50.118769"
+  },
+  "42": {
+    "thermostat_command_id": "42",
+    "routine_id": "233",
+    "device_id": "3034",
+    "current_temperature": 69.1,
+    "created_at": "2025-06-21T07:43:19.970959",
+    "updated_at": "2025-07-31T04:28:59.019603"
+  },
+  "43": {
+    "thermostat_command_id": "43",
+    "routine_id": "239",
+    "device_id": "2281",
+    "current_temperature": 70.0,
+    "created_at": "2025-06-13T02:04:21.070394",
+    "updated_at": "2025-06-20T12:57:55.123303"
+  },
+  "44": {
+    "thermostat_command_id": "44",
+    "routine_id": "243",
+    "device_id": "2795",
+    "current_temperature": 65.0,
+    "created_at": "2025-06-10T16:37:52.057357",
+    "updated_at": "2025-06-19T21:16:52.454624"
+  },
+  "45": {
+    "thermostat_command_id": "45",
+    "routine_id": "245",
+    "device_id": "523",
+    "current_temperature": 65.6,
+    "created_at": "2025-06-12T06:48:04.451004",
+    "updated_at": "2025-07-29T23:59:41.378673"
+  },
+  "46": {
+    "thermostat_command_id": "46",
+    "routine_id": "250",
+    "device_id": "1784",
+    "current_temperature": 65.4,
+    "created_at": "2025-06-23T11:32:37.982480",
+    "updated_at": "2025-06-30T18:28:49.483553"
+  },
+  "47": {
+    "thermostat_command_id": "47",
+    "routine_id": "251",
+    "device_id": "2455",
+    "current_temperature": 69.1,
+    "created_at": "2025-06-06T12:55:48.771446",
+    "updated_at": "2025-06-17T22:59:00.644117"
+  }
+}
