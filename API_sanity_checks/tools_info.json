@@ -1,0 +1,3096 @@
+{
+  "params": [
+    {
+      "interface": "interface_1",
+      "api_name": "acknowledge_or_resolve_alert",
+      "params": [
+        {
+          "name": "alert_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "acknowledged_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "add_command",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_status",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "bulb_brightness_level",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "bulb_color",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "add_device",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "brightness_level",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "color",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "add_feedback",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "rating",
+          "type": "int",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_address",
+      "params": [
+        {
+          "name": "house_number",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "building_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "street",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "city_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "state",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_emergency_alert",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "triggered_at",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_routine",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_address",
+      "params": [
+        {
+          "name": "address_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "house_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "building_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "street",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "city_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "state",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_commands",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_devices_info",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_emergency_alerts",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_energy_tariffs_info",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_historical_energy_consumption_by_device",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "month",
+          "type": "int",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_home_info",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "address_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_rooms_info",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_routines",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_user_info",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "list_children",
+      "params": [
+        {
+          "name": "parent_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_device_info",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "installed_on",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "scheduled_maintainance_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_maintainance_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "brightness_level",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "color",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_home_info",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "address_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_type",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_room_info",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_user_info",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "first_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "primary_address_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "add_command",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_status",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "thermostat_new_current_temperature",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "add_device",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "scheduled_maintainance_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "current_temperate",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "lowest_rated_temeprature",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "highest_rated_temeprature",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "last_adjustment_time",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "add_user_feedback",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "rating",
+          "type": "int",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "create_address",
+      "params": [
+        {
+          "name": "house_number",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "building_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "street",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "city_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "state",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "create_emergency_alert",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "triggered_at",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "create_routine",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "create_user",
+      "params": [
+        {
+          "name": "first_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "last_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "parent_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "primary_address_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date_of_birth",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_address_details",
+      "params": [
+        {
+          "name": "house_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "building_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "street",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "city_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "state",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_alerts_by_alert_type",
+      "params": [
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_devices_details",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "scheduled_maintaince_date",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_energy_tariffs_details",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "effective_date",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_historical_energy_consumption_by_device",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "month",
+          "type": "int",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_home_details",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_room_details",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_routine",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_user_details",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "list_rooms",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "update_alert",
+      "params": [
+        {
+          "name": "alert_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "update_device_details",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "scheduled_maintainance_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_maintainance_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "current_temperate",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "lowest_rated_temeprature",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "highest_rated_temeprature",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "last_adjustment_time",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "update_room_details",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "add_alert",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "triggered_at",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "add_command",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_status",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "create_address",
+      "params": [
+        {
+          "name": "house_number",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "building_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "street",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "city_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "state",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "create_device",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "create_new_routine",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_alerts_info",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_commands",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_devices_info",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "less_than_width_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "less_than_length_ft",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_energy_tariffs_info",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_historical_energy_consumption_by_home",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "month",
+          "type": "int",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_home_info",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "address_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_room_info",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_routine",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_user_info",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "list_addresses",
+      "params": [
+        {
+          "name": "address_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "building_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "street",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "city_name",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "list_children",
+      "params": [
+        {
+          "name": "parent_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_alert_info",
+      "params": [
+        {
+          "name": "alert_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_device_info",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "installed_on",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_room_info",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_routine",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_user_info",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "first_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "parent_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "primary_address_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "date_of_birth",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_command",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_status",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_device_feedback",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "rating",
+          "type": "float",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_energy_consumption_record",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "power_used_kWh",
+          "type": "float",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_new_device",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "resolution",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_routine",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "create_alert",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "triggered_at",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_alert_details",
+      "params": [
+        {
+          "name": "alert_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_devices_details",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "less_than_width_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "less_than_length_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_energy_tariffs_details",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_historical_energy_consumption_by_home",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "month",
+          "type": "int",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_home_by_owner_id",
+      "params": [
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_home_details",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_room_details",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_routine",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_user_details",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "first_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "date_of_birth",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "list_alert_ids",
+      "params": [
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "list_commands",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "list_feedbacks",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "mark_user_inactive",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "new_status",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "update_alert",
+      "params": [
+        {
+          "name": "alert_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "update_device_details",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "scheduled_maintainance_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_maintainance_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "resolution",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_activity_timestamp",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "update_room_status",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "average_rating_device",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_alert",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "triggered_at",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_command",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_status",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_device",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_energy_consumption_record",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "power_used_kWh",
+          "type": "float",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_routine",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "is_expired_warranty_devices",
+      "params": [
+        {
+          "name": "current_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": true
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "list_commands",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": true
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "list_devices",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "less_than_width_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "less_than_length_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "list_homes_and_rooms",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "post_feedback",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "rating",
+          "type": "float",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "retrieve_device_info",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "retrieve_energy_tariffs_details",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "retrieve_historical_energy_consumption_by_device",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "month",
+          "type": "int",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "retrieve_room_info",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "retrieve_routine",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "retrieve_user_profile",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "first_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "date_of_birth",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "update_alert_details",
+      "params": [
+        {
+          "name": "alert_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "update_device_info",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "installed_on",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "update_room_details",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "update_user_profile",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "parent_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "date_of_birth",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    }
+  ]
+}

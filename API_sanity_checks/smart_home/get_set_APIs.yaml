@@ -1,0 +1,122 @@
+interface_1:
+  set:
+    - update_device_info
+    - create_routine
+    - add_command
+    - add_feedback
+    - create_emergency_alert
+    - update_user_info
+    - acknowledge_or_resolve_alert
+    - add_device
+    - update_home_info
+    - update_room_info
+    - create_address
+  get:
+    - get_user_info
+    - get_home_info
+    - get_address
+    - get_rooms_info
+    - get_devices_info
+    - get_energy_tariffs_info
+    - list_children
+    - get_routines
+    - get_commands
+    - get_historical_energy_consumption_by_device
+    - get_emergency_alerts
+interface_2:
+  set:
+    - update_room_details
+    - create_emergency_alert
+    - update_device_details
+    - create_routine
+    - add_command
+    - create_user
+    - update_alert
+    - add_device
+    - add_user_feedback
+    - create_address
+  get:
+    - get_user_details
+    - get_home_details
+    - get_address_details
+    - get_room_details
+    - get_devices_details
+    - get_energy_tariffs_details
+    - get_routine
+    - get_commands
+    - list_rooms
+    - get_historical_energy_consumption_by_device
+    - get_alerts_by_alert_type
+interface_3:
+  set:
+    - update_device_info
+    - create_new_routine
+    - add_command
+    - add_alert
+    - update_user_info
+    - update_room_info
+    - update_routine
+    - update_alert_info
+    - create_device
+    - create_address
+  get:
+    - fetch_user_info
+    - fetch_home_info
+    - list_addresses
+    - fetch_alerts_info
+    - fetch_devices_info
+    - fetch_routine
+    - fetch_commands
+    - fetch_historical_energy_consumption_by_home
+    - fetch_energy_tariffs_info
+    - fetch_room_info
+    - list_children
+interface_4:
+  set:
+    - update_device_details
+    - create_alert
+    - add_routine
+    - add_command
+    - add_device_feedback
+    - update_alert
+    - update_room_status
+    - add_new_device
+    - add_energy_consumption_record
+    - mark_user_inactive
+  get:
+    - fetch_user_details
+    - fetch_home_details
+    - fetch_room_details
+    - fetch_devices_details
+    - fetch_energy_tariffs_details
+    - fetch_alert_details
+    - fetch_routine
+    - list_commands
+    - list_feedbacks
+    - list_alert_ids
+    - fetch_home_by_owner_id
+    - fetch_historical_energy_consumption_by_home
+interface_5:
+  set:
+    - update_device_info
+    - create_routine
+    - create_command
+    - post_feedback
+    - create_alert
+    - update_user_profile
+    - update_room_details
+    - create_device
+    - create_energy_consumption_record
+    - update_alert_details
+  get:
+    - retrieve_user_profile
+    - list_homes_and_rooms
+    - retrieve_energy_tariffs_details
+    - retrieve_device_info
+    - list_devices
+    - is_expired_warranty_devices
+    - retrieve_room_info
+    - retrieve_routine
+    - list_commands
+    - average_rating_device
+    - retrieve_historical_energy_consumption_by_device
