@@ -1,0 +1,4169 @@
+{
+  "base_folder": "/Users/zain/Documents/turing_work/amazon-tau-bench-utilities/API_sanity_checks/smart_home",
+  "timestamp": "2025-08-12T23:46:51.858400Z",
+  "interfaces": [
+    "interface_1",
+    "interface_2",
+    "interface_3",
+    "interface_4",
+    "interface_5"
+  ],
+  "ignored_files": [
+    "__init__.py",
+    "policy.md"
+  ],
+  "yaml_path": "/Users/zain/Documents/turing_work/amazon-tau-bench-utilities/API_sanity_checks/smart_home/get_set_APIs.yaml",
+  "tools_info_path": "/Users/zain/Documents/turing_work/amazon-tau-bench-utilities/API_sanity_checks/tools_info.json",
+  "summary": {
+    "interfaces": {
+      "interface_1": {
+        "total_apis": 22,
+        "get": {
+          "count": 11,
+          "percent": 50.0
+        },
+        "set": {
+          "count": 11,
+          "percent": 50.0
+        }
+      },
+      "interface_2": {
+        "total_apis": 21,
+        "get": {
+          "count": 11,
+          "percent": 52.38
+        },
+        "set": {
+          "count": 10,
+          "percent": 47.62
+        }
+      },
+      "interface_3": {
+        "total_apis": 21,
+        "get": {
+          "count": 11,
+          "percent": 52.38
+        },
+        "set": {
+          "count": 10,
+          "percent": 47.62
+        }
+      },
+      "interface_4": {
+        "total_apis": 22,
+        "get": {
+          "count": 12,
+          "percent": 54.55
+        },
+        "set": {
+          "count": 10,
+          "percent": 45.45
+        }
+      },
+      "interface_5": {
+        "total_apis": 21,
+        "get": {
+          "count": 11,
+          "percent": 52.38
+        },
+        "set": {
+          "count": 10,
+          "percent": 47.62
+        }
+      }
+    },
+    "overall": {
+      "total_apis": 107,
+      "get": {
+        "count": 56,
+        "percent": 52.34
+      },
+      "set": {
+        "count": 51,
+        "percent": 47.66
+      }
+    }
+  },
+  "duplicates": [
+    {
+      "api_name": "add_command",
+      "interfaces_involved": [
+        "interface_1",
+        "interface_2",
+        "interface_3",
+        "interface_4"
+      ]
+    },
+    {
+      "api_name": "add_device",
+      "interfaces_involved": [
+        "interface_1",
+        "interface_2"
+      ]
+    },
+    {
+      "api_name": "create_address",
+      "interfaces_involved": [
+        "interface_1",
+        "interface_2",
+        "interface_3"
+      ]
+    },
+    {
+      "api_name": "create_alert",
+      "interfaces_involved": [
+        "interface_4",
+        "interface_5"
+      ]
+    },
+    {
+      "api_name": "create_device",
+      "interfaces_involved": [
+        "interface_3",
+        "interface_5"
+      ]
+    },
+    {
+      "api_name": "create_emergency_alert",
+      "interfaces_involved": [
+        "interface_1",
+        "interface_2"
+      ]
+    },
+    {
+      "api_name": "create_routine",
+      "interfaces_involved": [
+        "interface_1",
+        "interface_2",
+        "interface_5"
+      ]
+    },
+    {
+      "api_name": "fetch_historical_energy_consumption_by_home",
+      "interfaces_involved": [
+        "interface_3",
+        "interface_4"
+      ]
+    },
+    {
+      "api_name": "fetch_routine",
+      "interfaces_involved": [
+        "interface_3",
+        "interface_4"
+      ]
+    },
+    {
+      "api_name": "get_commands",
+      "interfaces_involved": [
+        "interface_1",
+        "interface_2"
+      ]
+    },
+    {
+      "api_name": "get_historical_energy_consumption_by_device",
+      "interfaces_involved": [
+        "interface_1",
+        "interface_2"
+      ]
+    },
+    {
+      "api_name": "list_children",
+      "interfaces_involved": [
+        "interface_1",
+        "interface_3"
+      ]
+    },
+    {
+      "api_name": "list_commands",
+      "interfaces_involved": [
+        "interface_4",
+        "interface_5"
+      ]
+    },
+    {
+      "api_name": "update_alert",
+      "interfaces_involved": [
+        "interface_2",
+        "interface_4"
+      ]
+    },
+    {
+      "api_name": "update_device_details",
+      "interfaces_involved": [
+        "interface_2",
+        "interface_4"
+      ]
+    },
+    {
+      "api_name": "update_device_info",
+      "interfaces_involved": [
+        "interface_1",
+        "interface_3",
+        "interface_5"
+      ]
+    },
+    {
+      "api_name": "update_room_details",
+      "interfaces_involved": [
+        "interface_2",
+        "interface_5"
+      ]
+    },
+    {
+      "api_name": "update_room_info",
+      "interfaces_involved": [
+        "interface_1",
+        "interface_3"
+      ]
+    },
+    {
+      "api_name": "update_user_info",
+      "interfaces_involved": [
+        "interface_1",
+        "interface_3"
+      ]
+    }
+  ],
+  "interface_file_yaml_comparison": {
+    "interface_1": {
+      "files_count": 22,
+      "yaml_count": 22,
+      "missing_in_yaml": [],
+      "extra_in_yaml": []
+    },
+    "interface_2": {
+      "files_count": 21,
+      "yaml_count": 21,
+      "missing_in_yaml": [],
+      "extra_in_yaml": []
+    },
+    "interface_3": {
+      "files_count": 21,
+      "yaml_count": 21,
+      "missing_in_yaml": [],
+      "extra_in_yaml": []
+    },
+    "interface_4": {
+      "files_count": 22,
+      "yaml_count": 22,
+      "missing_in_yaml": [],
+      "extra_in_yaml": []
+    },
+    "interface_5": {
+      "files_count": 21,
+      "yaml_count": 21,
+      "missing_in_yaml": [],
+      "extra_in_yaml": []
+    }
+  },
+  "extra_apis_in_tools_info": [],
+  "apis": [
+    {
+      "interface": "interface_1",
+      "api_name": "get_user_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_home_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "address_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_address",
+      "classification": "get",
+      "params": [
+        {
+          "name": "address_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "house_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "building_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "street",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "city_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "state",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_rooms_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_devices_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_energy_tariffs_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "list_children",
+      "classification": "get",
+      "params": [
+        {
+          "name": "parent_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_routines",
+      "classification": "get",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_commands",
+      "classification": "get",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_historical_energy_consumption_by_device",
+      "classification": "get",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "month",
+          "type": "int",
+          "optional": true
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": [
+          {
+            "name": "device_id",
+            "parsed": {
+              "type": "str",
+              "optional": true
+            },
+            "tools": {
+              "type": "str",
+              "optional": false
+            }
+          }
+        ]
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_emergency_alerts",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_device_info",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "installed_on",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "scheduled_maintainance_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_maintainance_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "brightness_level",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "color",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_routine",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "add_command",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_status",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "bulb_brightness_level",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "bulb_color",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "add_feedback",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "rating",
+          "type": "int",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_emergency_alert",
+      "classification": "set",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "triggered_at",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_user_info",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "first_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "primary_address_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "acknowledge_or_resolve_alert",
+      "classification": "set",
+      "params": [
+        {
+          "name": "alert_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "acknowledged_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "add_device",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "brightness_level",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "color",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_home_info",
+      "classification": "set",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "address_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_type",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_room_info",
+      "classification": "set",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_address",
+      "classification": "set",
+      "params": [
+        {
+          "name": "house_number",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "building_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "street",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "city_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "state",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_user_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_home_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_address_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "house_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "building_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "street",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "city_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "state",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_room_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_devices_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "scheduled_maintaince_date",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_energy_tariffs_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "effective_date",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_routine",
+      "classification": "get",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_commands",
+      "classification": "get",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "list_rooms",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_historical_energy_consumption_by_device",
+      "classification": "get",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "month",
+          "type": "int",
+          "optional": true
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": [
+          {
+            "name": "device_id",
+            "parsed": {
+              "type": "str",
+              "optional": true
+            },
+            "tools": {
+              "type": "str",
+              "optional": false
+            }
+          }
+        ]
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "get_alerts_by_alert_type",
+      "classification": "get",
+      "params": [
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "update_room_details",
+      "classification": "set",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "create_emergency_alert",
+      "classification": "set",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "triggered_at",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "update_device_details",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "scheduled_maintainance_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_maintainance_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "current_temperate",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "lowest_rated_temeprature",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "highest_rated_temeprature",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "last_adjustment_time",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "create_routine",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "add_command",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_status",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "thermostat_new_current_temperature",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "create_user",
+      "classification": "set",
+      "params": [
+        {
+          "name": "first_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "last_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "parent_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "primary_address_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date_of_birth",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": [
+          {
+            "name": "parent_id",
+            "parsed": {
+              "type": "str",
+              "optional": false
+            },
+            "tools": {
+              "type": "str",
+              "optional": true
+            }
+          }
+        ]
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "update_alert",
+      "classification": "set",
+      "params": [
+        {
+          "name": "alert_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "add_device",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "scheduled_maintainance_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "current_temperate",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "lowest_rated_temeprature",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "highest_rated_temeprature",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "last_adjustment_time",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "add_user_feedback",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "rating",
+          "type": "int",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "create_address",
+      "classification": "set",
+      "params": [
+        {
+          "name": "house_number",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "building_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "street",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "city_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "state",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_user_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_home_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "address_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "list_addresses",
+      "classification": "get",
+      "params": [
+        {
+          "name": "address_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "city_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "building_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "street",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_alerts_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_devices_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "less_than_width_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "less_than_length_ft",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_routine",
+      "classification": "get",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_commands",
+      "classification": "get",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_historical_energy_consumption_by_home",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "month",
+          "type": "int",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_energy_tariffs_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "fetch_room_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "list_children",
+      "classification": "get",
+      "params": [
+        {
+          "name": "parent_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_device_info",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "installed_on",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "create_new_routine",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "add_command",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_status",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "add_alert",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "triggered_at",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_user_info",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "first_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "parent_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "primary_address_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "date_of_birth",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_room_info",
+      "classification": "set",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_routine",
+      "classification": "set",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_alert_info",
+      "classification": "set",
+      "params": [
+        {
+          "name": "alert_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "create_device",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "create_address",
+      "classification": "set",
+      "params": [
+        {
+          "name": "house_number",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "building_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "street",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "city_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "state",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_user_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "first_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "date_of_birth",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_home_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_room_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_devices_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "less_than_width_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "less_than_length_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_energy_tariffs_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_alert_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "alert_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_routine",
+      "classification": "get",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "list_commands",
+      "classification": "get",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "list_feedbacks",
+      "classification": "get",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "list_alert_ids",
+      "classification": "get",
+      "params": [
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_home_by_owner_id",
+      "classification": "get",
+      "params": [
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "fetch_historical_energy_consumption_by_home",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "month",
+          "type": "int",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "update_device_details",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "scheduled_maintainance_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_maintainance_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "resolution",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_activity_timestamp",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "create_alert",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "triggered_at",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_routine",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_command",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_status",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_device_feedback",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "rating",
+          "type": "float",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "update_alert",
+      "classification": "set",
+      "params": [
+        {
+          "name": "alert_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "update_room_status",
+      "classification": "set",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_new_device",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "resolution",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_energy_consumption_record",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "power_used_kWh",
+          "type": "float",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "mark_user_inactive",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "new_status",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "retrieve_user_profile",
+      "classification": "get",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "first_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "last_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "date_of_birth",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "phone_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "list_homes_and_rooms",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "owner_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "retrieve_energy_tariffs_details",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "retrieve_device_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "list_devices",
+      "classification": "get",
+      "params": [
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "less_than_width_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "less_than_length_ft",
+          "type": "float",
+          "optional": true
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "is_expired_warranty_devices",
+      "classification": "get",
+      "params": [
+        {
+          "name": "current_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "retrieve_room_info",
+      "classification": "get",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "retrieve_routine",
+      "classification": "get",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "list_commands",
+      "classification": "get",
+      "params": [
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "average_rating_device",
+      "classification": "get",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "retrieve_historical_energy_consumption_by_device",
+      "classification": "get",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "month",
+          "type": "int",
+          "optional": true
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": [
+          {
+            "name": "device_id",
+            "parsed": {
+              "type": "str",
+              "optional": true
+            },
+            "tools": {
+              "type": "str",
+              "optional": false
+            }
+          }
+        ]
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "update_device_info",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "installed_on",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_routine",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "action_time",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "start_action_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_interval",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_command",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "routine_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_status",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "post_feedback",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "rating",
+          "type": "float",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_alert",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "triggered_at",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "update_user_profile",
+      "classification": "set",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "parent_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "date_of_birth",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "update_room_details",
+      "classification": "set",
+      "params": [
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_owner_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_device",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "insurance_expiry_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "width_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "length_ft",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "daily_rated_power_consumption_kWh",
+          "type": "float",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_energy_consumption_record",
+      "classification": "set",
+      "params": [
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "home_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "room_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "power_used_kWh",
+          "type": "float",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "update_alert_details",
+      "classification": "set",
+      "params": [
+        {
+          "name": "alert_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "device_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "alert_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "acknowledged_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    }
+  ]
+}

@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>API Sanity Report</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root { 
+    --bg: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    --surface: rgba(255, 255, 255, 0.05);
+    --card: rgba(255, 255, 255, 0.08);
+    --card-hover: rgba(255, 255, 255, 0.12);
+    --text: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.6);
+    --text-dim: rgba(255, 255, 255, 0.4);
+    --accent: #00d4ff;
+    --accent-glow: rgba(0, 212, 255, 0.3);
+    --success: #00ff88;
+    --warning: #ffab00;
+    --error: #ff4757;
+    --border: rgba(255, 255, 255, 0.1);
+    --border-hover: rgba(255, 255, 255, 0.2);
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 16px 48px rgba(0, 0, 0, 0.4);
+  }
+  
+  * { 
+    box-sizing: border-box; 
+  }
+  
+  body { 
+    margin: 0; 
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  .aurora-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(255, 171, 0, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 40% 70%, rgba(0, 255, 136, 0.06) 0%, transparent 50%);
+    animation: aurora 20s ease-in-out infinite alternate;
+  }
+
+  @keyframes aurora {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(1deg) scale(1.05); }
+  }
+  
+  header { 
+    padding: 2rem 2rem 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(20px);
+    z-index: -1;
+  }
+  
+  h1 { 
+    margin: 0 0 0.5rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--success) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px var(--accent-glow);
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    0% { filter: brightness(1) drop-shadow(0 0 20px var(--accent-glow)); }
+    100% { filter: brightness(1.1) drop-shadow(0 0 30px var(--accent-glow)); }
+  }
+  
+  .meta { 
+    color: var(--text-muted);
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+  
+  main { 
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .grid { 
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .grid.cards { 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .card { 
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .card:hover::before {
+    opacity: 1;
+  }
+  
+  .card:hover { 
+    background: var(--card-hover);
+    border-color: var(--border-hover);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+  }
+  
+  .card h3 { 
+    margin: 0 0 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .card h3::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+  }
+  
+  .kpi { 
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--accent), var(--success));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+  }
+  
+  .kpi-sub { 
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .table-container {
+    overflow: auto;
+    border-radius: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(20px);
+  }
+
+  table { 
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  
+  th, td { 
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  th { 
+    background: rgba(255, 255, 255, 0.02);
+    font-weight: 600;
+    color: var(--text);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(20px);
+  }
+  
+  tr:last-child td { 
+    border-bottom: none;
+  }
+
+  tr:hover td {
+    background: rgba(255, 255, 255, 0.03);
+  }
+  
+  code { 
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--accent);
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    font-size: 0.85em;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+  }
+
+  .filters { 
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    background: var(--surface);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    backdrop-filter: blur(20px);
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 140px;
+  }
+
+  .filter-group label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  select, input[type="search"] { 
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  select:focus, input[type="search"]:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+  }
+
+  input[type="search"] {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .badge { 
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .badge.get { 
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.2), rgba(0, 255, 136, 0.1));
+    color: var(--success);
+    border: 1px solid rgba(0, 255, 136, 0.3);
+  }
+  
+  .badge.set { 
+    background: linear-gradient(135deg, rgba(255, 171, 0, 0.2), rgba(255, 171, 0, 0.1));
+    color: var(--warning);
+    border: 1px solid rgba(255, 171, 0, 0.3);
+  }
+
+  .status-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .status-match {
+    background: rgba(0, 255, 136, 0.1);
+    color: var(--success);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+  }
+
+  .status-mismatch {
+    background: rgba(255, 71, 87, 0.1);
+    color: var(--error);
+    border: 1px solid rgba(255, 71, 87, 0.2);
+  }
+
+  .status-match::before {
+    content: '✓';
+    font-weight: bold;
+  }
+
+  .status-mismatch::before {
+    content: '✗';
+    font-weight: bold;
+  }
+
+  .muted { 
+    color: var(--text-dim);
+  }
+  
+  footer { 
+    padding: 3rem 2rem;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+  }
+
+  .sortable { 
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+  }
+
+  .sortable:hover {
+    color: var(--accent);
+  }
+  
+  .sortable::after {
+    content: attr(data-sort-ind);
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    color: var(--text-muted);
+  }
+
+  .spinner {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--border);
+    border-top: 2px solid var(--accent);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 1rem;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-muted);
+  }
+
+  .empty-state::before {
+    content: '🔍';
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+    margin: 3rem 0;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      padding: 1rem;
+    }
+    
+    .filters {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .filter-group {
+      min-width: auto;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .card {
+      padding: 1.5rem;
+    }
+    
+    th, td {
+      padding: 0.8rem;
+    }
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-icon {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, var(--accent), var(--success));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>API Sanity Check Report</h1>
+  <div class="meta" id="meta">Loading…</div>
+</header>
+
+<main class="grid" style="gap:24px;">
+  <!-- Overall cards -->
+  <section class="grid cards" id="overall-cards"></section>
+
+  <!-- Per-interface summary -->
+  <section class="card">
+    <h3>Per-Interface Summary</h3>
+    <div class="muted" style="margin-bottom:8px;">Counts and percentages of GET/SET per interface (from YAML).</div>
+    <div style="overflow:auto;">
+      <table id="iface-table">
+        <thead>
+          <tr>
+            <th>Interface</th>
+            <th>Total APIs</th>
+            <th>GET</th>
+            <th>SET</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Duplicates -->
+  <section class="card">
+    <h3>Duplicate API Names Across Interfaces</h3>
+    <div class="muted" style="margin-bottom:8px;">Same API name appearing in 2+ interfaces (from YAML).</div>
+    <div style="overflow:auto;">
+      <table id="dups-table">
+        <thead>
+          <tr>
+            <th>API Name</th>
+            <th>Interfaces Involved</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="2" class="muted">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Folder vs YAML checks -->
+  <section class="card">
+    <h3>Folder vs YAML Checks</h3>
+    <div class="muted" style="margin-bottom:8px;">Files in the interface folders vs entries in <code>get_set_APIs.yaml</code>.</div>
+    <div style="overflow:auto;">
+      <table id="cmp-table">
+        <thead>
+          <tr>
+            <th>Interface</th>
+            <th>Files Count</th>
+            <th>YAML Count</th>
+            <th>Files not in YAML</th>
+            <th>YAML entries missing files</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="5" class="muted">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Name mismatch list -->
+  <section class="card">
+    <h3>APIs with Name Mismatch</h3>
+    <div class="muted" style="margin-bottom:8px;">From <code>tools_info.json</code> where <code>name_mismatch=true</code>.<br/>When the API file name does not match the function name in <code>get_info()</code>.</div>
+    <div style="overflow:auto;">
+      <table id="mismatch-table">
+        <thead>
+          <tr>
+            <th>Interface</th>
+            <th>API Name</th>
+          </tr>
+        </thead>
+        <tbody id="mismatch-body">
+          <tr><td colspan="2" class="muted">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- All APIs with filters -->
+  <section class="card">
+    <h3>All APIs</h3>
+    <div class="filters">
+      <label>
+        Interface:
+        <select id="filter-interface">
+          <option value="__all__">All</option>
+        </select>
+      </label>
+      <label>
+        Type:
+        <select id="filter-type">
+          <option value="__all__">All</option>
+          <option value="get">GET</option>
+          <option value="set">SET</option>
+        </select>
+      </label>
+      <label>
+        Match:
+        <select id="filter-match">
+          <option value="__all__">All</option>
+          <option value="match">Match</option>
+          <option value="mismatch">Mismatch</option>
+        </select>
+      </label>
+      <label style="flex:1 1 240px;">
+        Search:
+        <input type="search" id="filter-search" placeholder="Search api_name, params or details…" />
+      </label>
+    </div>
+
+    <div style="overflow:auto;">
+      <table id="apis-table">
+        <thead>
+          <tr>
+            <th id="th-interface" class="sortable" data-key="interface" data-sort-ind="">Interface</th>
+            <th id="th-api"       class="sortable" data-key="api"       data-sort-ind="">API (parsed signature)</th>
+            <th id="th-type"      class="sortable" data-key="type"      data-sort-ind="">Type</th>
+            <th id="th-match"     class="sortable" data-key="match"     data-sort-ind="">Params Match</th>
+            <th id="th-details"   class="sortable" data-key="details"   data-sort-ind="">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="5" class="muted">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Built from <code>sanity_report.json</code>
+</footer>
+
+<script>
+(async function () {
+  const fmtPct = (n) => (typeof n === 'number' ? `${n.toFixed(2)}%` : n);
+
+  function badge(kind) {
+    const k = (kind || '').toLowerCase();
+    if (k === 'get' || k === 'set') {
+      return `<span class="badge ${k}">${k.toUpperCase()}</span>`;
+    }
+    return `<span class="badge">${(kind || '').toUpperCase()}</span>`;
+  }
+
+  let data;
+  try {
+    const res = await fetch('sanity_report.json', { cache: 'no-store' });
+    data = await res.json();
+  } catch (e) {
+    document.getElementById('meta').textContent = 'Failed to load sanity_report.json';
+    console.error(e);
+    return;
+  }
+
+  // Meta header
+  const meta = document.getElementById('meta');
+  const yamlPath = data.yaml_path || 'get_set_APIs.yaml';
+  meta.textContent = `Base folder: ${data.base_folder} • Timestamp: ${data.timestamp} • YAML: ${yamlPath}`;
+
+  // Overall cards
+  const overall = data.summary?.overall || { total_apis: 0, get:{count:0,percent:0}, set:{count:0,percent:0} };
+  const cards = document.getElementById('overall-cards');
+  cards.innerHTML = `
+    <div class="card">
+      <h3>Total APIs</h3>
+      <div class="kpi">${overall.total_apis}</div>
+      <div class="kpi-sub">Across all interfaces</div>
+    </div>
+    <div class="card">
+      <h3>GET</h3>
+      <div class="kpi">${overall.get.count}</div>
+      <div class="kpi-sub">${fmtPct(overall.get.percent)} of total</div>
+    </div>
+    <div class="card">
+      <h3>SET</h3>
+      <div class="kpi">${overall.set.count}</div>
+      <div class="kpi-sub">${fmtPct(overall.set.percent)} of total</div>
+    </div>
+  `;
+
+  // Per-interface table
+  const ifaceTbody = document.querySelector('#iface-table tbody');
+  const ifaceSummary = data.summary?.interfaces || {};
+  ifaceTbody.innerHTML = '';
+  Object.keys(ifaceSummary).sort().forEach(iface => {
+    const s = ifaceSummary[iface];
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><code>${iface}</code></td>
+      <td>${s.total_apis}</td>
+      <td>${s.get.count} <span class="muted">(${fmtPct(s.get.percent)})</span></td>
+      <td>${s.set.count} <span class="muted">(${fmtPct(s.set.percent)})</span></td>
+    `;
+    ifaceTbody.appendChild(tr);
+  });
+
+  // Duplicates table
+  const dupsBody = document.querySelector('#dups-table tbody');
+  const dups = data.duplicates || [];
+  dupsBody.innerHTML = dups.length
+    ? dups.map(d => `<tr><td><code>${d.api_name}</code></td><td>${(d.interfaces_involved || []).join(', ')}</td></tr>`).join('')
+    : `<tr><td colspan="2">✅ No duplicates found.</td></tr>`;
+
+  // Folder vs YAML comparison
+  const cmpBody = document.querySelector('#cmp-table tbody');
+  const cmp = data.interface_file_yaml_comparison || {};
+  cmpBody.innerHTML = '';
+  Object.keys(cmp).sort().forEach(iface => {
+    const c = cmp[iface];
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><code>${iface}</code></td>
+      <td>${c.files_count}</td>
+      <td>${c.yaml_count}</td>
+      <td>${(c.missing_in_yaml || []).map(n => `<code>${n}</code>`).join(', ') || '<span class="muted">None</span>'}</td>
+      <td>${(c.extra_in_yaml || []).map(n => `<code>${n}</code>`).join(', ') || '<span class="muted">None</span>'}</td>
+    `;
+    cmpBody.appendChild(tr);
+  });
+
+  // Name mismatch table
+  try {
+    const tres = await fetch('tools_info.json', { cache: 'no-store' });
+    const tdata = await tres.json();
+    const list = (tdata.params || []).filter(p => p.name_mismatch);
+    const tbody = document.getElementById('mismatch-body');
+    if (!list.length) {
+      tbody.innerHTML = `<tr><td colspan="2">✅ No name mismatches found.</td></tr>`;
+    } else {
+      tbody.innerHTML = list
+        .slice()
+        .sort((a, b) =>
+          (a.interface || '').localeCompare(b.interface || '') ||
+          (a.api_name || '').localeCompare(b.api_name || '')
+        )
+        .map(p => `<tr><td><code>${p.interface || ''}</code></td><td><code>${p.api_name}</code></td></tr>`)
+        .join('');
+    }
+  } catch (e) {
+    const tbody = document.getElementById('mismatch-body');
+    if (tbody) tbody.innerHTML = `<tr><td colspan="2" class="muted">Failed to load tools_info.json</td></tr>`;
+  }
+
+  // Filters + sorting for All APIs
+  const ifaceFilter = document.getElementById('filter-interface');
+  (data.interfaces || []).sort().forEach(iface => {
+    const opt = document.createElement('option');
+    opt.value = iface;
+    opt.textContent = iface;
+    ifaceFilter.appendChild(opt);
+  });
+  const typeFilter = document.getElementById('filter-type');
+  const matchFilter = document.getElementById('filter-match');
+  const searchFilter = document.getElementById('filter-search');
+
+  const allApis = (data.apis || []).slice().sort((a,b) => {
+    if (a.interface !== b.interface) return a.interface.localeCompare(b.interface);
+    return a.api_name.localeCompare(b.api_name);
+  });
+
+  function formatSignature(r) {
+    const sigArgs = (r.params || []).map(p => {
+      const opt = p.optional ? '?' : '';
+      const ty = p.type ? `: ${p.type}` : '';
+      return `${p.name}${opt}${ty}`;
+    }).join(', ');
+    return `${r.api_name}(${sigArgs})`;
+  }
+
+  function summarizeMismatch(mm) {
+    if (!mm) return '<span class="muted">—</span>';
+    if (mm.not_in_tools_info) return '<code>not in tools_info.json</code>';
+
+    const parts = [];
+    if ((mm.missing_in_tools || []).length) {
+      parts.push(`-missing: ${mm.missing_in_tools.map(x=>`<code>${x}</code>`).join(', ')}`);
+    }
+    if ((mm.extra_in_tools || []).length) {
+      parts.push(`-extra: ${mm.extra_in_tools.map(x=>`<code>${x}</code>`).join(', ')}`);
+    }
+    if ((mm.type_or_optional_diff || []).length) {
+      const diffs = mm.type_or_optional_diff.map(d => {
+        const p = d.parsed || {};
+        const t = d.tools || {};
+        return `${d.name} (parsed: ${p.type||'""'}/${p.optional?'opt':'req'} vs tools: ${t.type||'""'}/${t.optional?'opt':'req'})`;
+      }).join('; ');
+      parts.push(`-diff: ${diffs}`);
+    }
+    return parts.length ? parts.join('<br>') : '<span class="muted">—</span>';
+  }
+
+  // Sorting state
+  const sortState = { key: null, dir: 'asc' }; // key ∈ interface|api|type|match|details
+  const headCells = {
+    interface: document.getElementById('th-interface'),
+    api:       document.getElementById('th-api'),
+    type:      document.getElementById('th-type'),
+    match:     document.getElementById('th-match'),
+    details:   document.getElementById('th-details')
+  };
+
+  function setSort(key) {
+    if (sortState.key === key) {
+      sortState.dir = (sortState.dir === 'asc') ? 'desc' : 'asc';
+    } else {
+      sortState.key = key;
+      sortState.dir = 'asc';
+    }
+    // update sort indicator
+    for (const k of Object.keys(headCells)) {
+      headCells[k].dataset.sortInd = (k === sortState.key) ? (sortState.dir === 'asc' ? '▲' : '▼') : '';
+    }
+    renderApis();
+  }
+
+  Object.entries(headCells).forEach(([k, th]) => {
+    th.addEventListener('click', () => setSort(k));
+  });
+
+  function compareRows(a, b) {
+    const dir = (sortState.dir === 'asc') ? 1 : -1;
+    const key = sortState.key;
+    if (!key) return 0;
+
+    const aval = a._sort[key];
+    const bval = b._sort[key];
+
+    if (typeof aval === 'number' && typeof bval === 'number') {
+      return (aval - bval) * dir;
+    }
+    return String(aval).localeCompare(String(bval)) * dir;
+  }
+
+  function renderApis() {
+    const ifaceVal = ifaceFilter.value;
+    const typeVal  = typeFilter.value;
+    const matchVal = matchFilter.value;
+    const q        = (searchFilter.value || '').toLowerCase();
+
+    const apisBody = document.querySelector('#apis-table tbody');
+    let filtered = allApis.filter(r => {
+      const ifaceOk = ifaceVal === '__all__' || r.interface === ifaceVal;
+      const typeOk  = typeVal === '__all__' || (r.classification || '') === typeVal;
+      const matchOk = matchVal === '__all__' ||
+                      (matchVal === 'match' && r.param_match) ||
+                      (matchVal === 'mismatch' && !r.param_match);
+
+      const details = summarizeMismatch(r.param_mismatch).replace(/<[^>]+>/g,''); // strip HTML for search
+      const paramsText = (r.params || []).map(p => `${p.name}:${p.type||''}`).join(' ');
+      const sig = `${r.api_name}(${(r.params||[]).map(p=>p.name).join(',')})`;
+      const qOk = !q ||
+        r.api_name.toLowerCase().includes(q) ||
+        r.interface.toLowerCase().includes(q) ||
+        paramsText.toLowerCase().includes(q) ||
+        details.toLowerCase().includes(q) ||
+        (r.param_match ? 'match' : 'mismatch').includes(q);
+
+      return ifaceOk && typeOk && matchOk && qOk;
+    });
+
+    // sorting prep values
+    filtered = filtered.map(r => {
+      const typeText = (r.classification || '').toUpperCase();
+      const matchText = r.param_match ? 'Match' : 'Mismatch';
+      const detailsPlain = summarizeMismatch(r.param_mismatch).replace(/<[^>]+>/g,'');
+      return Object.assign({_sort:{
+        interface: r.interface || '',
+        api: r.api_name || '',
+        type: typeText,
+        match: r.param_match ? 1 : 0, // numeric sort: 1=Match, 0=Mismatch
+        details: detailsPlain
+      }}, r);
+    });
+
+    if (sortState.key) {
+      filtered.sort(compareRows);
+    }
+
+    if (!filtered.length) {
+      apisBody.innerHTML = `<tr><td colspan="5" class="muted">No APIs match the filters.</td></tr>`;
+      return;
+    }
+
+    apisBody.innerHTML = '';
+    filtered.forEach(r => {
+      const tr = document.createElement('tr');
+      const sig = formatSignature(r);
+      const match = r.param_match ? '✅ Match' : '❌ Mismatch';
+      const details = summarizeMismatch(r.param_mismatch);
+      tr.innerHTML = `
+        <td><code>${r.interface}</code></td>
+        <td><code>${sig}</code></td>
+        <td>${badge(r.classification)}</td>
+        <td>${match}</td>
+        <td>${details}</td>
+      `;
+      apisBody.appendChild(tr);
+    });
+  }
+
+  ifaceFilter.addEventListener('change', renderApis);
+  typeFilter.addEventListener('change', renderApis);
+  matchFilter.addEventListener('change', renderApis);
+  searchFilter.addEventListener('input', renderApis);
+
+  // Initial render + default sort indicator cleared
+  renderApis();
+})();
+</script>
+</body>
+</html>

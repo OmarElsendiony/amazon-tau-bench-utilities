@@ -1,0 +1,57 @@
+You are given API documentation containing multiple APIs, it can contain one ore more fields like these:
+
+* **API Name** 
+* **Signature** 
+* **Returns** 
+* A category: either **Get APIs** or **Set APIs**
+
+Your task is to produce a YAML file in the following structure:
+
+```yaml
+interface_x:
+  set:
+    - <list of all Set API names from the provided documentation>
+  get:
+    - <list of all Get API names from the provided documentation>
+```
+interface_x can be interface_1 to interface_5 depending on the API documentation.
+
+**Rules:**
+
+1. If the API name given to you says "AddDevice" you have to use "add_device"
+2. Group all APIs under `set` if they are in the **Set APIs** section.
+3. Group all APIs under `get` if they are in the **Get APIs** section.
+4. Keep the YAML indentation exactly 2 spaces per level.
+5. The output should be **pure YAML only**, without explanations or extra text.
+6. Output should be enclosed in code block i,e within ```yaml ```
+
+**Example:**
+
+If given:
+
+Get APIs
+
+ get_address
+ get_commands
+
+Set APIs
+
+acknowledge_or_resolve_alert
+
+Then the output should be:
+
+```yaml
+interface_1:
+  set:
+    - acknowledge_or_resolve_alert
+  get:
+    - get_address
+    - get_commands
+```
+
+** Paste API Documentation here ** 
+
+
+
+
+
