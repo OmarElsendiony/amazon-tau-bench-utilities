@@ -456,6 +456,23 @@
     justify-content: center;
     font-size: 0.8rem;
   }
+
+  /* Style all question marks to be red */
+  code:has-text("?"),
+  code *:contains("?") {
+    color: var(--error) !important;
+  }
+
+  /* More specific targeting for question marks in parameter signatures */
+  code {
+    position: relative;
+  }
+
+  /* Use JavaScript to target question marks specifically */
+  .param-optional {
+    color: var(--error) !important;
+    font-weight: bold;
+  }
 </style>
 </head>
 <body>
@@ -734,7 +751,7 @@
     const sigArgs = (r.params || []).map(p => {
       const opt = p.optional ? '?' : '';
       const ty = p.type ? `: ${p.type}` : '';
-      return `${p.name}${opt}${ty}`;
+     return `${p.name}<span class="param-optional">${opt}</span>${ty}`;
     }).join(', ');
     return `${r.api_name}(${sigArgs})`;
   }
