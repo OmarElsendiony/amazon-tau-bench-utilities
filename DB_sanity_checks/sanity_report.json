@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-08-09T21:54:28.743637",
+  "timestamp": "2025-08-17T18:48:36.124748",
   "tables": {
-    "security_cameras": {
-      "row_count": 158,
+    "trades": {
+      "row_count": 2500,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "device_id matches key",
+          "check": "trade_id matches key",
           "result": true
         },
         {
@@ -22,15 +22,15 @@
         }
       ]
     },
-    "historical_energy_consumption": {
-      "row_count": 5606,
+    "reports": {
+      "row_count": 1000,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "consumption_id matches key",
+          "check": "report_id matches key",
           "result": true
         },
         {
@@ -43,15 +43,15 @@
         }
       ]
     },
-    "thermostat_commands": {
-      "row_count": 47,
+    "investors": {
+      "row_count": 175,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "thermostat_command_id matches key",
+          "check": "investor_id matches key",
           "result": true
         },
         {
@@ -64,15 +64,15 @@
         }
       ]
     },
-    "addresses": {
-      "row_count": 153,
+    "instrument_prices": {
+      "row_count": 2477,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "address_id matches key",
+          "check": "price_id matches key",
           "result": true
         },
         {
@@ -85,15 +85,15 @@
         }
       ]
     },
-    "bulb_commands": {
-      "row_count": 236,
+    "invoices": {
+      "row_count": 1750,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "bulb_command_id matches key",
+          "check": "invoice_id matches key",
           "result": true
         },
         {
@@ -106,15 +106,57 @@
         }
       ]
     },
-    "homes": {
-      "row_count": 153,
+    "redemptions": {
+      "row_count": 1000,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "home_id matches key",
+          "check": "redemption_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "instruments": {
+      "row_count": 200,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "instrument_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "audit_trails": {
+      "row_count": 3500,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "audit_trail_id matches key",
           "result": true
         },
         {
@@ -128,7 +170,7 @@
       ]
     },
     "users": {
-      "row_count": 509,
+      "row_count": 125,
       "checks": [
         {
           "check": "Keys are strings",
@@ -148,36 +190,15 @@
         }
       ]
     },
-    "rooms": {
-      "row_count": 797,
+    "portfolio_holdings": {
+      "row_count": 1210,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "home_id matches key",
-          "result": false
-        },
-        {
-          "check": "Primary keys non-null",
-          "result": true
-        },
-        {
-          "check": "Primary keys unique",
-          "result": true
-        }
-      ]
-    },
-    "smart_bulbs": {
-      "row_count": 1179,
-      "checks": [
-        {
-          "check": "Keys are strings",
-          "result": true
-        },
-        {
-          "check": "device_id matches key",
+          "check": "holding_id matches key",
           "result": true
         },
         {
@@ -190,15 +211,15 @@
         }
       ]
     },
-    "user_feedbacks": {
-      "row_count": 1007,
+    "portfolios": {
+      "row_count": 175,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "user_feedback_id matches key",
+          "check": "portfolio_id matches key",
           "result": true
         },
         {
@@ -211,15 +232,15 @@
         }
       ]
     },
-    "automated_routines": {
-      "row_count": 252,
+    "subscriptions": {
+      "row_count": 2500,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "routine_id matches key",
+          "check": "subscription_id matches key",
           "result": true
         },
         {
@@ -232,15 +253,15 @@
         }
       ]
     },
-    "energy_tariffs": {
-      "row_count": 302,
+    "payments": {
+      "row_count": 2046,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "tariff_id matches key",
+          "check": "payment_id matches key",
           "result": true
         },
         {
@@ -253,15 +274,15 @@
         }
       ]
     },
-    "devices": {
-      "row_count": 3133,
+    "notifications": {
+      "row_count": 1500,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "device_id matches key",
+          "check": "notification_id matches key",
           "result": true
         },
         {
@@ -274,15 +295,15 @@
         }
       ]
     },
-    "device_commands": {
-      "row_count": 610,
+    "documents": {
+      "row_count": 1000,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "device_command_id matches key",
+          "check": "document_id matches key",
           "result": true
         },
         {
@@ -295,15 +316,15 @@
         }
       ]
     },
-    "emergency_alerts": {
-      "row_count": 783,
+    "funds": {
+      "row_count": 100,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "alert_id matches key",
+          "check": "fund_id matches key",
           "result": true
         },
         {
@@ -316,15 +337,36 @@
         }
       ]
     },
-    "smart_thermostats": {
-      "row_count": 283,
+    "commitments": {
+      "row_count": 2000,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "device_id matches key",
+          "check": "commitment_id matches key",
+          "result": true
+        },
+        {
+          "check": "Primary keys non-null",
+          "result": true
+        },
+        {
+          "check": "Primary keys unique",
+          "result": true
+        }
+      ]
+    },
+    "nav_records": {
+      "row_count": 1285,
+      "checks": [
+        {
+          "check": "Keys are strings",
+          "result": true
+        },
+        {
+          "check": "nav_id matches key",
           "result": true
         },
         {
@@ -339,22 +381,9 @@
     }
   },
   "enum_tables": {
-    "security_cameras": [
+    "trades": [
       {
-        "check": "resolution in enum",
-        "result": true,
-        "details": {
-          "invalid_values": [],
-          "sample_keys": []
-        }
-      }
-    ],
-    "historical_energy_consumption": [],
-    "thermostat_commands": [],
-    "addresses": [],
-    "bulb_commands": [
-      {
-        "check": "brightness_level in enum",
+        "check": "side in enum",
         "result": true,
         "details": {
           "invalid_values": [],
@@ -362,7 +391,7 @@
         }
       },
       {
-        "check": "color in enum",
+        "check": "status in enum",
         "result": true,
         "details": {
           "invalid_values": [],
@@ -370,9 +399,100 @@
         }
       }
     ],
-    "homes": [
+    "reports": [
       {
-        "check": "home_type in enum",
+        "check": "report_type in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
+      {
+        "check": "status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "investors": [
+      {
+        "check": "source_of_funds in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
+      {
+        "check": "status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
+      {
+        "check": "accreditation_status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "instrument_prices": [],
+    "invoices": [
+      {
+        "check": "status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "redemptions": [
+      {
+        "check": "status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "instruments": [
+      {
+        "check": "status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
+      {
+        "check": "instrument_type in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "audit_trails": [
+      {
+        "check": "reference_type in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
+      {
+        "check": "action in enum",
         "result": true,
         "details": {
           "invalid_values": [],
@@ -398,9 +518,30 @@
         }
       }
     ],
-    "rooms": [
+    "portfolio_holdings": [],
+    "portfolios": [
       {
-        "check": "room_type in enum",
+        "check": "status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "subscriptions": [
+      {
+        "check": "status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "payments": [
+      {
+        "check": "payment_method in enum",
         "result": true,
         "details": {
           "invalid_values": [],
@@ -416,9 +557,9 @@
         }
       }
     ],
-    "smart_bulbs": [
+    "notifications": [
       {
-        "check": "brightness_level in enum",
+        "check": "type in enum",
         "result": true,
         "details": {
           "invalid_values": [],
@@ -426,29 +567,7 @@
         }
       },
       {
-        "check": "color in enum",
-        "result": true,
-        "details": {
-          "invalid_values": [],
-          "sample_keys": []
-        }
-      }
-    ],
-    "user_feedbacks": [],
-    "automated_routines": [
-      {
-        "check": "action_interval in enum",
-        "result": true,
-        "details": {
-          "invalid_values": [],
-          "sample_keys": []
-        }
-      }
-    ],
-    "energy_tariffs": [],
-    "devices": [
-      {
-        "check": "device_type in enum",
+        "check": "class in enum",
         "result": true,
         "details": {
           "invalid_values": [],
@@ -464,7 +583,23 @@
         }
       }
     ],
-    "device_commands": [
+    "documents": [
+      {
+        "check": "format in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
+      {
+        "check": "confidentiality_level in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      },
       {
         "check": "status in enum",
         "result": true,
@@ -474,9 +609,9 @@
         }
       }
     ],
-    "emergency_alerts": [
+    "funds": [
       {
-        "check": "alert_type in enum",
+        "check": "fund_type in enum",
         "result": true,
         "details": {
           "invalid_values": [],
@@ -484,7 +619,7 @@
         }
       },
       {
-        "check": "severity_level in enum",
+        "check": "status in enum",
         "result": true,
         "details": {
           "invalid_values": [],
@@ -492,331 +627,73 @@
         }
       }
     ],
-    "smart_thermostats": []
+    "commitments": [
+      {
+        "check": "status in enum",
+        "result": true,
+        "details": {
+          "invalid_values": [],
+          "sample_keys": []
+        }
+      }
+    ],
+    "nav_records": []
   },
   "relationships": [
     {
-      "relationship": "homes.address_id \u2192 addresses.address_id",
+      "relationship": "subscriptions.subscription_id \u2192 payments.subscription_id",
       "check": "All children have parents",
       "result": true,
       "details": {
-        "column": "address_id",
+        "column": "subscription_id",
         "missing_ids": [],
         "count": 0
       }
     },
     {
-      "relationship": "homes.address_id \u2192 addresses.address_id",
+      "relationship": "subscriptions.subscription_id \u2192 payments.subscription_id",
       "check": "Parent column unique",
       "result": true,
       "details": {
-        "column": "address_id",
+        "column": "subscription_id",
         "duplicate_parent_ids": [],
         "count": 0
       }
     },
     {
-      "relationship": "users.user_id \u2192 homes.owner_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "owner_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 homes.owner_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 homes.owner_id",
+      "relationship": "subscriptions.subscription_id \u2192 payments.subscription_id",
       "check": "Average children per parent",
-      "result": 1.9125,
+      "result": 1.2916188289322619,
       "details": {}
     },
     {
-      "relationship": "homes.home_id \u2192 rooms.home_id",
+      "relationship": "subscriptions.subscription_id \u2192 redemptions.subscription_id",
       "check": "All children have parents",
       "result": true,
       "details": {
-        "column": "home_id",
+        "column": "subscription_id",
         "missing_ids": [],
         "count": 0
       }
     },
     {
-      "relationship": "homes.home_id \u2192 rooms.home_id",
+      "relationship": "subscriptions.subscription_id \u2192 redemptions.subscription_id",
       "check": "Parent column unique",
       "result": true,
       "details": {
-        "column": "home_id",
+        "column": "subscription_id",
         "duplicate_parent_ids": [],
         "count": 0
       }
     },
     {
-      "relationship": "homes.home_id \u2192 rooms.home_id",
+      "relationship": "subscriptions.subscription_id \u2192 redemptions.subscription_id",
       "check": "Average children per parent",
-      "result": 5.209150326797386,
+      "result": 1.4064697609001406,
       "details": {}
     },
     {
-      "relationship": "homes.home_id \u2192 devices.home_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "home_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "homes.home_id \u2192 devices.home_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "home_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "homes.home_id \u2192 devices.home_id",
-      "check": "Average children per parent",
-      "result": 20.477124183006534,
-      "details": {}
-    },
-    {
-      "relationship": "users.user_id \u2192 users.parent_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "parent_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 users.parent_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 users.parent_id",
-      "check": "Average children per parent",
-      "result": 2.9402985074626864,
-      "details": {}
-    },
-    {
-      "relationship": "addresses.address_id \u2192 users.primary_address_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "primary_address_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "addresses.address_id \u2192 users.primary_address_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "address_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "addresses.address_id \u2192 users.primary_address_id",
-      "check": "Average children per parent",
-      "result": 3.9765625,
-      "details": {}
-    },
-    {
-      "relationship": "users.user_id \u2192 rooms.room_owner_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "room_owner_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 rooms.room_owner_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 rooms.room_owner_id",
-      "check": "Average children per parent",
-      "result": 2.9063829787234043,
-      "details": {}
-    },
-    {
-      "relationship": "rooms.room_id \u2192 devices.room_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "room_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "rooms.room_id \u2192 devices.room_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "room_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "rooms.room_id \u2192 devices.room_id",
-      "check": "Average children per parent",
-      "result": 3.93099121706399,
-      "details": {}
-    },
-    {
-      "relationship": "devices.device_id \u2192 smart_bulbs.device_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 smart_bulbs.device_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 smart_thermostats.device_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 smart_thermostats.device_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "rooms.room_id \u2192 historical_energy_consumption.room_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "room_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "rooms.room_id \u2192 historical_energy_consumption.room_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "room_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "rooms.room_id \u2192 historical_energy_consumption.room_id",
-      "check": "Average children per parent",
-      "result": 11.057199211045365,
-      "details": {}
-    },
-    {
-      "relationship": "devices.device_id \u2192 historical_energy_consumption.device_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 historical_energy_consumption.device_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 historical_energy_consumption.device_id",
-      "check": "Average children per parent",
-      "result": 5.821391484942887,
-      "details": {}
-    },
-    {
-      "relationship": "homes.home_id \u2192 historical_energy_consumption.home_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "home_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "homes.home_id \u2192 historical_energy_consumption.home_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "home_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "homes.home_id \u2192 historical_energy_consumption.home_id",
-      "check": "Average children per parent",
-      "result": 36.64052287581699,
-      "details": {}
-    },
-    {
-      "relationship": "users.user_id \u2192 automated_routines.user_id",
+      "relationship": "users.user_id \u2192 audit_trails.user_id",
       "check": "All children have parents",
       "result": true,
       "details": {
@@ -826,7 +703,7 @@
       }
     },
     {
-      "relationship": "users.user_id \u2192 automated_routines.user_id",
+      "relationship": "users.user_id \u2192 audit_trails.user_id",
       "check": "Parent column unique",
       "result": true,
       "details": {
@@ -836,225 +713,23 @@
       }
     },
     {
-      "relationship": "users.user_id \u2192 automated_routines.user_id",
+      "relationship": "users.user_id \u2192 audit_trails.user_id",
       "check": "Average children per parent",
-      "result": 1.5365853658536586,
+      "result": 28.0,
       "details": {}
     },
     {
-      "relationship": "homes.home_id \u2192 automated_routines.home_id",
+      "relationship": "users.user_id \u2192 funds.manager_id",
       "check": "All children have parents",
       "result": true,
       "details": {
-        "column": "home_id",
+        "column": "manager_id",
         "missing_ids": [],
         "count": 0
       }
     },
     {
-      "relationship": "homes.home_id \u2192 automated_routines.home_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "home_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "homes.home_id \u2192 automated_routines.home_id",
-      "check": "Average children per parent",
-      "result": 2.6526315789473682,
-      "details": {}
-    },
-    {
-      "relationship": "automated_routines.routine_id \u2192 device_commands.routine_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "routine_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "automated_routines.routine_id \u2192 device_commands.routine_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "routine_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "automated_routines.routine_id \u2192 device_commands.routine_id",
-      "check": "Average children per parent",
-      "result": 2.4596774193548385,
-      "details": {}
-    },
-    {
-      "relationship": "devices.device_id \u2192 device_commands.device_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 device_commands.device_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 device_commands.device_id",
-      "check": "Average children per parent",
-      "result": 1.222444889779559,
-      "details": {}
-    },
-    {
-      "relationship": "automated_routines.routine_id \u2192 bulb_commands.routine_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "routine_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "automated_routines.routine_id \u2192 bulb_commands.routine_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "routine_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "automated_routines.routine_id \u2192 bulb_commands.routine_id",
-      "check": "Average children per parent",
-      "result": 1.3641618497109826,
-      "details": {}
-    },
-    {
-      "relationship": "devices.device_id \u2192 bulb_commands.device_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 bulb_commands.device_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 bulb_commands.device_id",
-      "check": "Average children per parent",
-      "result": 1.2291666666666667,
-      "details": {}
-    },
-    {
-      "relationship": "automated_routines.routine_id \u2192 thermostat_commands.routine_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "routine_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "automated_routines.routine_id \u2192 thermostat_commands.routine_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "routine_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "automated_routines.routine_id \u2192 thermostat_commands.routine_id",
-      "check": "Average children per parent",
-      "result": 1.0217391304347827,
-      "details": {}
-    },
-    {
-      "relationship": "devices.device_id \u2192 thermostat_commands.device_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 thermostat_commands.device_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 thermostat_commands.device_id",
-      "check": "Average children per parent",
-      "result": 1.0930232558139534,
-      "details": {}
-    },
-    {
-      "relationship": "devices.device_id \u2192 security_cameras.device_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 security_cameras.device_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 user_feedbacks.user_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 user_feedbacks.user_id",
+      "relationship": "users.user_id \u2192 funds.manager_id",
       "check": "Parent column unique",
       "result": true,
       "details": {
@@ -1064,101 +739,23 @@
       }
     },
     {
-      "relationship": "users.user_id \u2192 user_feedbacks.user_id",
+      "relationship": "users.user_id \u2192 funds.manager_id",
       "check": "Average children per parent",
-      "result": 1.9783889980353635,
+      "result": 4.3478260869565215,
       "details": {}
     },
     {
-      "relationship": "devices.device_id \u2192 user_feedbacks.device_id",
+      "relationship": "users.user_id \u2192 reports.generated_by",
       "check": "All children have parents",
       "result": true,
       "details": {
-        "column": "device_id",
+        "column": "generated_by",
         "missing_ids": [],
         "count": 0
       }
     },
     {
-      "relationship": "devices.device_id \u2192 user_feedbacks.device_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 user_feedbacks.device_id",
-      "check": "Average children per parent",
-      "result": 1.7332185886402753,
-      "details": {}
-    },
-    {
-      "relationship": "homes.home_id \u2192 emergency_alerts.home_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "home_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "homes.home_id \u2192 emergency_alerts.home_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "home_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "homes.home_id \u2192 emergency_alerts.home_id",
-      "check": "Average children per parent",
-      "result": 5.185430463576159,
-      "details": {}
-    },
-    {
-      "relationship": "devices.device_id \u2192 emergency_alerts.device_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 emergency_alerts.device_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "device_id",
-        "duplicate_parent_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "devices.device_id \u2192 emergency_alerts.device_id",
-      "check": "Average children per parent",
-      "result": 1.1380813953488371,
-      "details": {}
-    },
-    {
-      "relationship": "users.user_id \u2192 emergency_alerts.acknowledged_by_user",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "acknowledged_by_user",
-        "missing_ids": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 emergency_alerts.acknowledged_by_user",
+      "relationship": "users.user_id \u2192 reports.generated_by",
       "check": "Parent column unique",
       "result": true,
       "details": {
@@ -1168,23 +765,349 @@
       }
     },
     {
-      "relationship": "users.user_id \u2192 emergency_alerts.acknowledged_by_user",
+      "relationship": "users.user_id \u2192 reports.generated_by",
       "check": "Average children per parent",
-      "result": 2.0126050420168067,
+      "result": 19.607843137254903,
       "details": {}
     },
     {
-      "relationship": "users.user_id \u2192 emergency_alerts.resolved_by_user",
+      "relationship": "funds.fund_id \u2192 subscriptions.fund_id",
       "check": "All children have parents",
       "result": true,
       "details": {
-        "column": "resolved_by_user",
+        "column": "fund_id",
         "missing_ids": [],
         "count": 0
       }
     },
     {
-      "relationship": "users.user_id \u2192 emergency_alerts.resolved_by_user",
+      "relationship": "funds.fund_id \u2192 subscriptions.fund_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 subscriptions.fund_id",
+      "check": "Average children per parent",
+      "result": 25.0,
+      "details": {}
+    },
+    {
+      "relationship": "funds.fund_id \u2192 commitments.fund_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 commitments.fund_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 commitments.fund_id",
+      "check": "Average children per parent",
+      "result": 20.0,
+      "details": {}
+    },
+    {
+      "relationship": "funds.fund_id \u2192 nav_records.fund_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 nav_records.fund_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 nav_records.fund_id",
+      "check": "Average children per parent",
+      "result": 12.85,
+      "details": {}
+    },
+    {
+      "relationship": "funds.fund_id \u2192 trades.fund_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 trades.fund_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 trades.fund_id",
+      "check": "Average children per parent",
+      "result": 25.0,
+      "details": {}
+    },
+    {
+      "relationship": "funds.fund_id \u2192 reports.fund_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 reports.fund_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 reports.fund_id",
+      "check": "Average children per parent",
+      "result": 10.0,
+      "details": {}
+    },
+    {
+      "relationship": "investors.investor_id \u2192 subscriptions.investor_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "investor_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 subscriptions.investor_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "investor_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 subscriptions.investor_id",
+      "check": "Average children per parent",
+      "result": 14.285714285714286,
+      "details": {}
+    },
+    {
+      "relationship": "investors.investor_id \u2192 commitments.investor_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "investor_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 commitments.investor_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "investor_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 commitments.investor_id",
+      "check": "Average children per parent",
+      "result": 11.428571428571429,
+      "details": {}
+    },
+    {
+      "relationship": "investors.investor_id \u2192 portfolios.investor_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "investor_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 portfolios.investor_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "investor_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "portfolios.portfolio_id \u2192 portfolio_holdings.portfolio_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "portfolio_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "portfolios.portfolio_id \u2192 portfolio_holdings.portfolio_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "portfolio_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "portfolios.portfolio_id \u2192 portfolio_holdings.portfolio_id",
+      "check": "Average children per parent",
+      "result": 6.914285714285715,
+      "details": {}
+    },
+    {
+      "relationship": "funds.fund_id \u2192 portfolio_holdings.fund_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 portfolio_holdings.fund_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "instruments.instrument_id \u2192 instrument_prices.instrument_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "instrument_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "instruments.instrument_id \u2192 instrument_prices.instrument_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "instrument_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "instruments.instrument_id \u2192 instrument_prices.instrument_id",
+      "check": "Average children per parent",
+      "result": 12.385,
+      "details": {}
+    },
+    {
+      "relationship": "instruments.instrument_id \u2192 trades.instrument_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "instrument_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "instruments.instrument_id \u2192 trades.instrument_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "instrument_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "instruments.instrument_id \u2192 trades.instrument_id",
+      "check": "Average children per parent",
+      "result": 12.5,
+      "details": {}
+    },
+    {
+      "relationship": "invoices.invoice_id \u2192 payments.invoice_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "invoice_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "invoices.invoice_id \u2192 payments.invoice_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "invoice_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "invoices.invoice_id \u2192 payments.invoice_id",
+      "check": "Average children per parent",
+      "result": 1.1123188405797102,
+      "details": {}
+    },
+    {
+      "relationship": "users.user_id \u2192 subscriptions.request_assigned_to",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "request_assigned_to",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 subscriptions.request_assigned_to",
       "check": "Parent column unique",
       "result": true,
       "details": {
@@ -1194,10 +1117,2408 @@
       }
     },
     {
-      "relationship": "users.user_id \u2192 emergency_alerts.resolved_by_user",
+      "relationship": "users.user_id \u2192 subscriptions.request_assigned_to",
       "check": "Average children per parent",
-      "result": 1.5657894736842106,
+      "result": 92.5925925925926,
       "details": {}
+    },
+    {
+      "relationship": "commitments.commitment_id \u2192 invoices.commitment_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "commitment_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "commitments.commitment_id \u2192 invoices.commitment_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "commitment_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "commitments.commitment_id \u2192 invoices.commitment_id",
+      "check": "Average children per parent",
+      "result": 1.5350877192982457,
+      "details": {}
+    },
+    {
+      "relationship": "reports.report_id \u2192 documents.report_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "report_id",
+        "missing_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "reports.report_id \u2192 documents.report_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "report_id",
+        "duplicate_parent_ids": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "reports.report_id \u2192 documents.report_id",
+      "check": "Average children per parent",
+      "result": 1.2551546391752577,
+      "details": {}
+    },
+    {
+      "relationship": "audit_trails.reference_id (type via reference_type)",
+      "check": "All type values are mapped",
+      "result": true,
+      "details": {
+        "unmapped_types": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='commitments') \u2192 commitments.commitment_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "commitments",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='commitments') \u2192 commitments.commitment_id",
+      "check": "Average children per parent (info)",
+      "result": 1.053921568627451,
+      "details": {
+        "type": "commitments",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='commitments') \u2192 commitments.commitment_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "commitments",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "commitment_amount",
+          "commitment_date",
+          "commitment_id",
+          "fund_id",
+          "investor_id",
+          "status",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='documents') \u2192 documents.document_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "documents",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='documents') \u2192 documents.document_id",
+      "check": "Average children per parent (info)",
+      "result": 1.1384615384615384,
+      "details": {
+        "type": "documents",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='documents') \u2192 documents.document_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "documents",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "confidentiality_level",
+          "document_id",
+          "format",
+          "name",
+          "report_id",
+          "size_bytes",
+          "status",
+          "upload_date",
+          "uploaded_by_id",
+          "uploaded_by_role"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "funds",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "Average children per parent (info)",
+      "result": 2.447058823529412,
+      "details": {
+        "type": "funds",
+        "max_children_for_single_parent": 6
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "funds",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "created_at",
+          "fund_id",
+          "fund_type",
+          "manager_id",
+          "name",
+          "size",
+          "status",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "funds",
+        "violations": 21
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='instrument_prices') \u2192 instrument_prices.price_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "instrument_prices",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='instrument_prices') \u2192 instrument_prices.price_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0402010050251256,
+      "details": {
+        "type": "instrument_prices",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='instrument_prices') \u2192 instrument_prices.price_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "instrument_prices",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "close_price",
+          "high_price",
+          "instrument_id",
+          "low_price",
+          "open_price",
+          "price_date",
+          "price_id"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='instruments') \u2192 instruments.instrument_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "instruments",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='instruments') \u2192 instruments.instrument_id",
+      "check": "Average children per parent (info)",
+      "result": 1.6299212598425197,
+      "details": {
+        "type": "instruments",
+        "max_children_for_single_parent": 5
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='instruments') \u2192 instruments.instrument_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "instruments",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "instrument_id",
+          "instrument_type",
+          "name",
+          "status",
+          "ticker"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "investors",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "Average children per parent (info)",
+      "result": 1.6752136752136753,
+      "details": {
+        "type": "investors",
+        "max_children_for_single_parent": 4
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "investors",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "accreditation_status",
+          "address",
+          "contact_email",
+          "country",
+          "created_at",
+          "date_of_incorporation",
+          "investor_id",
+          "name",
+          "registration_number",
+          "source_of_funds"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "investors",
+        "violations": 35
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='invoices') \u2192 invoices.invoice_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "invoices",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='invoices') \u2192 invoices.invoice_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0555555555555556,
+      "details": {
+        "type": "invoices",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='invoices') \u2192 invoices.invoice_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "invoices",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "amount",
+          "commitment_id",
+          "due_date",
+          "invoice_date",
+          "invoice_id",
+          "status",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='nav_records') \u2192 nav_records.nav_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "nav_records",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='nav_records') \u2192 nav_records.nav_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0698924731182795,
+      "details": {
+        "type": "nav_records",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='nav_records') \u2192 nav_records.nav_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "nav_records",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "fund_id",
+          "nav_date",
+          "nav_id",
+          "nav_value",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='notifications') \u2192 notifications.notification_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "notifications",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='notifications') \u2192 notifications.notification_id",
+      "check": "Average children per parent (info)",
+      "result": 1.088235294117647,
+      "details": {
+        "type": "notifications",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='notifications') \u2192 notifications.notification_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "notifications",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "class",
+          "created_at",
+          "email",
+          "notification_id",
+          "reference_id",
+          "sent_at",
+          "status",
+          "type"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='notifications') \u2192 notifications.notification_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "notifications",
+        "violations": 75
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='payments') \u2192 payments.payment_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "payments",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='payments') \u2192 payments.payment_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0171428571428571,
+      "details": {
+        "type": "payments",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='payments') \u2192 payments.payment_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "payments",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "amount",
+          "created_at",
+          "invoice_id",
+          "payment_date",
+          "payment_id",
+          "payment_method",
+          "status",
+          "subscription_id"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='payments') \u2192 payments.payment_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "payments",
+        "violations": 139
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolio_holdings') \u2192 portfolio_holdings.holding_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "portfolio_holdings",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolio_holdings') \u2192 portfolio_holdings.holding_id",
+      "check": "Average children per parent (info)",
+      "result": 1.1011904761904763,
+      "details": {
+        "type": "portfolio_holdings",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolio_holdings') \u2192 portfolio_holdings.holding_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "portfolio_holdings",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "cost_basis",
+          "created_at",
+          "fund_id",
+          "holding_id",
+          "portfolio_id",
+          "quantity"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolio_holdings') \u2192 portfolio_holdings.holding_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "portfolio_holdings",
+        "violations": 26
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "portfolios",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "Average children per parent (info)",
+      "result": 1.6581196581196582,
+      "details": {
+        "type": "portfolios",
+        "max_children_for_single_parent": 7
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "portfolios",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "created_at",
+          "investor_id",
+          "portfolio_id",
+          "status",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "portfolios",
+        "violations": 23
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "redemptions",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
+      "check": "Average children per parent (info)",
+      "result": 1.1428571428571428,
+      "details": {
+        "type": "redemptions",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "redemptions",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "processed_date",
+          "redemption_amount",
+          "redemption_fee",
+          "redemption_id",
+          "request_date",
+          "status",
+          "subscription_id",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "reports",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "Average children per parent (info)",
+      "result": 1.067357512953368,
+      "details": {
+        "type": "reports",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "reports",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "created_at",
+          "export_period_end",
+          "fund_id",
+          "generated_by",
+          "investor_id",
+          "report_date",
+          "report_id",
+          "report_type",
+          "status"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "reports",
+        "violations": 133
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "subscriptions",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0388349514563107,
+      "details": {
+        "type": "subscriptions",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "subscriptions",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "amount",
+          "approval_date",
+          "fund_id",
+          "investor_id",
+          "request_assigned_to",
+          "request_date",
+          "status",
+          "subscription_id",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "trades",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0478468899521531,
+      "details": {
+        "type": "trades",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "trades",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "created_at",
+          "fund_id",
+          "instrument_id",
+          "price",
+          "quantity",
+          "side",
+          "status",
+          "trade_date",
+          "trade_id"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "trades",
+        "violations": 132
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='users') \u2192 users.user_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "users",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='users') \u2192 users.user_id",
+      "check": "Average children per parent (info)",
+      "result": 2.0103092783505154,
+      "details": {
+        "type": "users",
+        "max_children_for_single_parent": 8
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='users') \u2192 users.user_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "users",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "created_at",
+          "email",
+          "first_name",
+          "last_name",
+          "role",
+          "status",
+          "timezone",
+          "updated_at",
+          "user_id"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='users') \u2192 users.user_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "users",
+        "violations": 29
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.user_id \u2192 users.user_id",
+      "check": "All children have valid users",
+      "result": true,
+      "details": {
+        "missing_user_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type via class)",
+      "check": "All type values are mapped",
+      "result": true,
+      "details": {
+        "unmapped_types": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='commitments') \u2192 commitments.commitment_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "commitments",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='commitments') \u2192 commitments.commitment_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0292397660818713,
+      "details": {
+        "type": "commitments",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='documents') \u2192 documents.document_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "documents",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='documents') \u2192 documents.document_id",
+      "check": "Average children per parent (info)",
+      "result": 1.1007194244604317,
+      "details": {
+        "type": "documents",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "funds",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "Average children per parent (info)",
+      "result": 1.7012987012987013,
+      "details": {
+        "type": "funds",
+        "max_children_for_single_parent": 5
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "funds",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "investors",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "Average children per parent (info)",
+      "result": 1.3936170212765957,
+      "details": {
+        "type": "investors",
+        "max_children_for_single_parent": 4
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "investors",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='invoices') \u2192 invoices.invoice_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "invoices",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='invoices') \u2192 invoices.invoice_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0215827338129497,
+      "details": {
+        "type": "invoices",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "portfolios",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "Average children per parent (info)",
+      "result": 1.5294117647058822,
+      "details": {
+        "type": "portfolios",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "portfolios",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "redemptions",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0845070422535212,
+      "details": {
+        "type": "redemptions",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "reports",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0952380952380953,
+      "details": {
+        "type": "reports",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "reports",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "subscriptions",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0328947368421053,
+      "details": {
+        "type": "subscriptions",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "trades",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0145985401459854,
+      "details": {
+        "type": "trades",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "trades",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "documents.uploaded_by_id (type via uploaded_by_role)",
+      "check": "All type values are mapped",
+      "result": true,
+      "details": {
+        "unmapped_types": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "documents.uploaded_by_id (type='investor') \u2192 investors.investor_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "investor",
+        "child_column": "uploaded_by_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "documents.uploaded_by_id (type='investor') \u2192 investors.investor_id",
+      "check": "Average children per parent (info)",
+      "result": 1.9342105263157894,
+      "details": {
+        "type": "investor",
+        "max_children_for_single_parent": 7
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "documents.uploaded_by_id (type='user') \u2192 users.user_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "user",
+        "child_column": "uploaded_by_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "documents.uploaded_by_id (type='user') \u2192 users.user_id",
+      "check": "Average children per parent (info)",
+      "result": 5.648,
+      "details": {
+        "type": "user",
+        "max_children_for_single_parent": 15
+      },
+      "kind": "generic"
     }
-  ]
+  ],
+  "generic_relationships": [
+    {
+      "relationship": "audit_trails.reference_id (type via reference_type)",
+      "check": "All type values are mapped",
+      "result": true,
+      "details": {
+        "unmapped_types": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='commitments') \u2192 commitments.commitment_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "commitments",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='commitments') \u2192 commitments.commitment_id",
+      "check": "Average children per parent (info)",
+      "result": 1.053921568627451,
+      "details": {
+        "type": "commitments",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='commitments') \u2192 commitments.commitment_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "commitments",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "commitment_amount",
+          "commitment_date",
+          "commitment_id",
+          "fund_id",
+          "investor_id",
+          "status",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='documents') \u2192 documents.document_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "documents",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='documents') \u2192 documents.document_id",
+      "check": "Average children per parent (info)",
+      "result": 1.1384615384615384,
+      "details": {
+        "type": "documents",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='documents') \u2192 documents.document_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "documents",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "confidentiality_level",
+          "document_id",
+          "format",
+          "name",
+          "report_id",
+          "size_bytes",
+          "status",
+          "upload_date",
+          "uploaded_by_id",
+          "uploaded_by_role"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "funds",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "Average children per parent (info)",
+      "result": 2.447058823529412,
+      "details": {
+        "type": "funds",
+        "max_children_for_single_parent": 6
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "funds",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "created_at",
+          "fund_id",
+          "fund_type",
+          "manager_id",
+          "name",
+          "size",
+          "status",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "funds",
+        "violations": 21
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='instrument_prices') \u2192 instrument_prices.price_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "instrument_prices",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='instrument_prices') \u2192 instrument_prices.price_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0402010050251256,
+      "details": {
+        "type": "instrument_prices",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='instrument_prices') \u2192 instrument_prices.price_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "instrument_prices",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "close_price",
+          "high_price",
+          "instrument_id",
+          "low_price",
+          "open_price",
+          "price_date",
+          "price_id"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='instruments') \u2192 instruments.instrument_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "instruments",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='instruments') \u2192 instruments.instrument_id",
+      "check": "Average children per parent (info)",
+      "result": 1.6299212598425197,
+      "details": {
+        "type": "instruments",
+        "max_children_for_single_parent": 5
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='instruments') \u2192 instruments.instrument_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "instruments",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "instrument_id",
+          "instrument_type",
+          "name",
+          "status",
+          "ticker"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "investors",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "Average children per parent (info)",
+      "result": 1.6752136752136753,
+      "details": {
+        "type": "investors",
+        "max_children_for_single_parent": 4
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "investors",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "accreditation_status",
+          "address",
+          "contact_email",
+          "country",
+          "created_at",
+          "date_of_incorporation",
+          "investor_id",
+          "name",
+          "registration_number",
+          "source_of_funds"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "investors",
+        "violations": 35
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='invoices') \u2192 invoices.invoice_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "invoices",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='invoices') \u2192 invoices.invoice_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0555555555555556,
+      "details": {
+        "type": "invoices",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='invoices') \u2192 invoices.invoice_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "invoices",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "amount",
+          "commitment_id",
+          "due_date",
+          "invoice_date",
+          "invoice_id",
+          "status",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='nav_records') \u2192 nav_records.nav_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "nav_records",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='nav_records') \u2192 nav_records.nav_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0698924731182795,
+      "details": {
+        "type": "nav_records",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='nav_records') \u2192 nav_records.nav_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "nav_records",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "fund_id",
+          "nav_date",
+          "nav_id",
+          "nav_value",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='notifications') \u2192 notifications.notification_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "notifications",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='notifications') \u2192 notifications.notification_id",
+      "check": "Average children per parent (info)",
+      "result": 1.088235294117647,
+      "details": {
+        "type": "notifications",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='notifications') \u2192 notifications.notification_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "notifications",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "class",
+          "created_at",
+          "email",
+          "notification_id",
+          "reference_id",
+          "sent_at",
+          "status",
+          "type"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='notifications') \u2192 notifications.notification_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "notifications",
+        "violations": 75
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='payments') \u2192 payments.payment_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "payments",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='payments') \u2192 payments.payment_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0171428571428571,
+      "details": {
+        "type": "payments",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='payments') \u2192 payments.payment_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "payments",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "amount",
+          "created_at",
+          "invoice_id",
+          "payment_date",
+          "payment_id",
+          "payment_method",
+          "status",
+          "subscription_id"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='payments') \u2192 payments.payment_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "payments",
+        "violations": 139
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolio_holdings') \u2192 portfolio_holdings.holding_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "portfolio_holdings",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolio_holdings') \u2192 portfolio_holdings.holding_id",
+      "check": "Average children per parent (info)",
+      "result": 1.1011904761904763,
+      "details": {
+        "type": "portfolio_holdings",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolio_holdings') \u2192 portfolio_holdings.holding_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "portfolio_holdings",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "cost_basis",
+          "created_at",
+          "fund_id",
+          "holding_id",
+          "portfolio_id",
+          "quantity"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolio_holdings') \u2192 portfolio_holdings.holding_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "portfolio_holdings",
+        "violations": 26
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "portfolios",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "Average children per parent (info)",
+      "result": 1.6581196581196582,
+      "details": {
+        "type": "portfolios",
+        "max_children_for_single_parent": 7
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "portfolios",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "created_at",
+          "investor_id",
+          "portfolio_id",
+          "status",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "portfolios",
+        "violations": 23
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "redemptions",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
+      "check": "Average children per parent (info)",
+      "result": 1.1428571428571428,
+      "details": {
+        "type": "redemptions",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "redemptions",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "processed_date",
+          "redemption_amount",
+          "redemption_fee",
+          "redemption_id",
+          "request_date",
+          "status",
+          "subscription_id",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "reports",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "Average children per parent (info)",
+      "result": 1.067357512953368,
+      "details": {
+        "type": "reports",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "reports",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "created_at",
+          "export_period_end",
+          "fund_id",
+          "generated_by",
+          "investor_id",
+          "report_date",
+          "report_id",
+          "report_type",
+          "status"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "reports",
+        "violations": 133
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "subscriptions",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0388349514563107,
+      "details": {
+        "type": "subscriptions",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "subscriptions",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "amount",
+          "approval_date",
+          "fund_id",
+          "investor_id",
+          "request_assigned_to",
+          "request_date",
+          "status",
+          "subscription_id",
+          "updated_at"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "trades",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0478468899521531,
+      "details": {
+        "type": "trades",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "trades",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "created_at",
+          "fund_id",
+          "instrument_id",
+          "price",
+          "quantity",
+          "side",
+          "status",
+          "trade_date",
+          "trade_id"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "trades",
+        "violations": 132
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='users') \u2192 users.user_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "users",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='users') \u2192 users.user_id",
+      "check": "Average children per parent (info)",
+      "result": 2.0103092783505154,
+      "details": {
+        "type": "users",
+        "max_children_for_single_parent": 8
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='users') \u2192 users.user_id",
+      "check": "field_name valid for parent type",
+      "result": true,
+      "details": {
+        "type": "users",
+        "invalid_field_names": [],
+        "count": 0,
+        "parent_table_columns_sample": [
+          "created_at",
+          "email",
+          "first_name",
+          "last_name",
+          "role",
+          "status",
+          "timezone",
+          "updated_at",
+          "user_id"
+        ]
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.reference_id (type='users') \u2192 users.user_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": false,
+      "details": {
+        "type": "users",
+        "violations": 29
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "audit_trails.user_id \u2192 users.user_id",
+      "check": "All children have valid users",
+      "result": true,
+      "details": {
+        "missing_user_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type via class)",
+      "check": "All type values are mapped",
+      "result": true,
+      "details": {
+        "unmapped_types": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='commitments') \u2192 commitments.commitment_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "commitments",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='commitments') \u2192 commitments.commitment_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0292397660818713,
+      "details": {
+        "type": "commitments",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='documents') \u2192 documents.document_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "documents",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='documents') \u2192 documents.document_id",
+      "check": "Average children per parent (info)",
+      "result": 1.1007194244604317,
+      "details": {
+        "type": "documents",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "funds",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "Average children per parent (info)",
+      "result": 1.7012987012987013,
+      "details": {
+        "type": "funds",
+        "max_children_for_single_parent": 5
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='funds') \u2192 funds.fund_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "funds",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "investors",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "Average children per parent (info)",
+      "result": 1.3936170212765957,
+      "details": {
+        "type": "investors",
+        "max_children_for_single_parent": 4
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='investors') \u2192 investors.investor_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "investors",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='invoices') \u2192 invoices.invoice_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "invoices",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='invoices') \u2192 invoices.invoice_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0215827338129497,
+      "details": {
+        "type": "invoices",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "portfolios",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "Average children per parent (info)",
+      "result": 1.5294117647058822,
+      "details": {
+        "type": "portfolios",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "portfolios",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "redemptions",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0845070422535212,
+      "details": {
+        "type": "redemptions",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "reports",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0952380952380953,
+      "details": {
+        "type": "reports",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='reports') \u2192 reports.report_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "reports",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "subscriptions",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0328947368421053,
+      "details": {
+        "type": "subscriptions",
+        "max_children_for_single_parent": 3
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "trades",
+        "child_column": "reference_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "Average children per parent (info)",
+      "result": 1.0145985401459854,
+      "details": {
+        "type": "trades",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.reference_id (type='trades') \u2192 trades.trade_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "trades",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "documents.uploaded_by_id (type via uploaded_by_role)",
+      "check": "All type values are mapped",
+      "result": true,
+      "details": {
+        "unmapped_types": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "documents.uploaded_by_id (type='investor') \u2192 investors.investor_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "investor",
+        "child_column": "uploaded_by_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "documents.uploaded_by_id (type='investor') \u2192 investors.investor_id",
+      "check": "Average children per parent (info)",
+      "result": 1.9342105263157894,
+      "details": {
+        "type": "investor",
+        "max_children_for_single_parent": 7
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "documents.uploaded_by_id (type='user') \u2192 users.user_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "user",
+        "child_column": "uploaded_by_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "documents.uploaded_by_id (type='user') \u2192 users.user_id",
+      "check": "Average children per parent (info)",
+      "result": 5.648,
+      "details": {
+        "type": "user",
+        "max_children_for_single_parent": 15
+      },
+      "kind": "generic"
+    }
+  ],
+  "generic_fk_summary": {
+    "total_checks": 93,
+    "passes": 55,
+    "fails": 9,
+    "info_metrics_count": 29
+  }
 }

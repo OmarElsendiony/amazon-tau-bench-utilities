@@ -1,0 +1,188 @@
+enums:
+  users:
+    role:
+      - system_administrator
+      - fund_manager
+      - compliance_officer
+      - finance_officer
+      - trader
+    status:
+      - active
+      - inactive
+      - suspended
+
+  funds:
+    fund_type:
+      - mutual_funds
+      - exchange_traded_funds
+      - pension_funds
+      - private_equity_funds
+      - hedge_funds
+      - sovereign_wealth_funds
+      - money_market_funds
+      - real_estate_investment_trusts
+      - infrastructure_funds
+      - multi_asset_funds
+    status:
+      - open
+      - closed
+
+  investors:
+    source_of_funds:
+      - retained_earnings
+      - shareholder_capital
+      - asset_sale
+      - loan_facility
+      - external_investment
+      - government_grant
+      - merger_or_acquisition_proceeds
+      - royalty_or_licensing_income
+      - dividend_income
+      - other
+    status:
+      - onboarded
+      - offboarded
+    accreditation_status:
+      - accredited
+      - non_accredited
+
+  subscriptions:
+    status:
+      - pending
+      - approved
+      - cancelled
+
+  commitments:
+    status:
+      - pending
+      - fulfilled
+
+  portfolios:
+    status:
+      - active
+      - inactive
+      - archived
+
+  instruments:
+    status:
+      - active
+      - inactive
+    instrument_type:
+      - equities
+      - bonds
+      - money_market_instruments
+      - commodities
+      - derivatives
+      - real_estate
+      - private_equity
+      - financing_and_debt
+      - alternative_assets
+
+  trades:
+    side:
+      - buy
+      - sell
+    status:
+      - approved
+      - executed
+      - pending
+      - failed
+
+  notifications:
+    type:
+      - alert
+      - report
+      - reminder
+      - subscription_update
+    class:
+      - funds
+      - investors
+      - portfolios
+      - trades
+      - invoices
+      - reports
+      - documents
+      - subscriptions
+      - commitments
+      - redemptions
+    status:
+      - pending
+      - sent
+      - failed
+
+  reports:
+    report_type:
+      - performance
+      - holding
+      - financial
+    status:
+      - pending
+      - completed
+      - failed
+
+  documents:
+    format:
+      - pdf
+      - xlsx
+      - docx
+      - csv
+      - other
+    confidentiality_level:
+      - public
+      - internal
+      - confidential
+      - restricted
+    status:
+      - available
+      - archived
+      - deleted
+
+  invoices:
+    status:
+      - issued
+      - paid
+
+  payments:
+    payment_method:
+      - wire
+      - cheque
+      - credit_card
+      - bank_transfer
+    status:
+      - draft
+      - completed
+      - failed
+
+  redemptions:
+    status:
+      - pending
+      - approved
+      - processed
+      - cancelled
+
+  audit_trails:
+    reference_type:
+      - invoices
+      - commitments
+      - subscriptions
+      - trades
+      - funds
+      - investors
+      - portfolios
+      - portfolio_holdings
+      - payments
+      - redemptions
+      - users
+      - nav_records
+      - documents
+      - reports
+      - notifications
+      - instruments
+      - instrument_prices
+    action:
+      - create
+      - update
+      - delete
+      - approve
+      - cancel
+      - process
