@@ -5,10 +5,24 @@
     <title>Data Sanity Report</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f7f7f7; }
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f7f7f7; color:#222; }
         .status { font-weight: bold; padding: 3px 8px; border-radius: 4px; color: white; }
         .PASS { background-color: #28a745; }
         .FAIL { background-color: #dc3545; }
+
+        /* Sections */
+        h1 { margin-bottom: 0.25rem; }
+        #timestamp { color:#555; margin-top: 0.25rem; }
+
+        /* Summary cards */
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 10px 0 20px; }
+        .card { background:#fff; border:1px solid #e8e8e8; border-radius: 8px; padding:14px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+        .card .label { font-size: 12px; color:#666; text-transform: uppercase; letter-spacing: .03em; }
+        .card .value { font-size: 22px; font-weight: 700; margin-top: 6px; }
+
+        table.dataTable { background: #fff; }
+        table.dataTable thead th { background:#fafafa; }
+        .section { margin-top: 28px; }
     </style>
 </head>
 <body>
@@ -16,45 +30,72 @@
 <h1>Data Sanity Report</h1>
 <p id="timestamp"></p>
 
-<h2>Table Checks</h2>
-<table id="table-checks" class="display" style="width:100%">
-    <thead>
-        <tr>
-            <th>Table</th>
-            <th>Row Count</th>
-            <th>Check</th>
-            <th>Status</th>
-        </tr>
-    </thead>
-    <tbody></tbody>
-</table>
+<div class="section">
+    <h2>Table Checks</h2>
+    <table id="table-checks" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Table</th>
+                <th>Row Count</th>
+                <th>Check</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
 
-<h2>Relationship Checks</h2>
-<table id="relationship-checks" class="display" style="width:100%">
-    <thead>
-        <tr>
-            <th>Relationship</th>
-            <th>Check</th>
-            <th>Status</th>
-            <th>Details</th>
-        </tr>
-    </thead>
-    <tbody></tbody>
-</table>
+<div class="section">
+    <h2>Relationship Checks</h2>
+    <table id="relationship-checks" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Relationship</th>
+                <th>Check</th>
+                <th>Status</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
 
-<h2>Enum Checks</h2>
-<table id="enum-checks" class="display" style="width:100%">
-    <thead>
-        <tr>
-            <th>Table</th>
-            <th>Check</th>
-            <th>Status</th>
-            <th>Invalid Values</th>
-            <th>Sample Keys</th>
-        </tr>
-    </thead>
-    <tbody></tbody>
-</table>
+<div class="section">
+    <h2>Generic Relationship Checks</h2>
+
+    <!-- Summary header for quick glance -->
+    <div id="generic-summary" class="summary-grid" aria-live="polite">
+        <!-- Cards will be injected -->
+    </div>
+
+    <table id="generic-relationship-checks" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Relationship</th>
+                <th>Check</th>
+                <th>Status</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<div class="section">
+    <h2>Enum Checks</h2>
+    <table id="enum-checks" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Table</th>
+                <th>Check</th>
+                <th>Status</th>
+                <th>Invalid Values</th>
+                <th>Sample Keys</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
@@ -64,68 +105,106 @@ fetch('sanity_report.json')
     .then(data => {
         document.getElementById('timestamp').textContent = "Generated at: " + data.timestamp;
 
-        // Table checks
-        let tableRows = [];
-        for (let tableName in data.tables) {
-            let info = data.tables[tableName];
-            info.checks.forEach(check => {
-                let status = typeof check.result === "boolean"
-                    ? (check.result ? "PASS" : "FAIL")
-                    : check.result;
-                let statusHTML = typeof check.result === "boolean"
+        // ---------- Table checks ----------
+        const tableRows = [];
+        for (const tableName in data.tables) {
+            const info = data.tables[tableName];
+            (info.checks || []).forEach(check => {
+                const isBool = typeof check.result === "boolean";
+                const status = isBool ? (check.result ? "PASS" : "FAIL") : check.result;
+                const statusHTML = isBool
                     ? `<span class="status ${status}">${status}</span>`
-                    : status;
+                    : String(status);
                 tableRows.push([tableName, info.row_count, check.check, statusHTML]);
             });
         }
         $('#table-checks').DataTable({ data: tableRows });
 
-        // Relationship checks
-        let relRows = [];
-        data.relationships.forEach(rel => {
-            let status = typeof rel.result === "boolean"
-                ? (rel.result ? "PASS" : "FAIL")
-                : rel.result;
-            let statusHTML = typeof rel.result === "boolean"
+        // ---------- Relationship checks (exclude generic) ----------
+        const relRows = [];
+        (data.relationships || []).forEach(rel => {
+            if (rel.kind === "generic") return; // skip; shown in its own section
+            const isBool = typeof rel.result === "boolean";
+            const status = isBool ? (rel.result ? "PASS" : "FAIL") : rel.result;
+            const statusHTML = isBool
                 ? `<span class="status ${status}">${status}</span>`
-                : rel.result;
+                : String(rel.result);
 
-            let detailsObj = rel.details || {};
-            let detailText = Object.entries(detailsObj)
-                .map(([key, val]) => Array.isArray(val)
-                    ? `${key}: [${val.join(', ')}]`
-                    : `${key}: ${val}`)
+            const detailsObj = rel.details || {};
+            const detailText = Object.entries(detailsObj)
+                .map(([key, val]) =>
+                    Array.isArray(val) ? `${key}: [${val.join(', ')}]` : `${key}: ${val}`
+                )
                 .join('; ');
 
             relRows.push([rel.relationship, rel.check, statusHTML, detailText]);
         });
         $('#relationship-checks').DataTable({ data: relRows });
 
-        // Enum checks
-        let enumRows = [];
-        for (let tableName in data.enum_tables) {
-            data.enum_tables[tableName].forEach(check => {
-                let status    = check.result ? "PASS" : "FAIL";
-                let statusHTML = `<span class="status ${status}">${status}</span>`;
+        // ---------- Generic Relationship checks ----------
+        // Prefer the pre-filtered section; fall back to filtering if not present.
+        const genericList = Array.isArray(data.generic_relationships)
+            ? data.generic_relationships
+            : (data.relationships || []).filter(r => r.kind === "generic");
 
-                let invalids = (check.details && check.details.invalid_values)
+        // Summary header
+        const summary = data.generic_fk_summary || {};
+        const cards = [
+            {label: 'Total Checks', value: summary.total_checks ?? genericList.length},
+            {label: 'Passes', value: summary.passes ?? genericList.filter(r => r.result === true).length},
+            {label: 'Fails', value: summary.fails ?? genericList.filter(r => r.result === false).length},
+            {label: 'Info Metrics', value: summary.info_metrics_count ?? genericList.filter(r => typeof r.result !== 'boolean').length},
+        ];
+        const summaryRoot = document.getElementById('generic-summary');
+        summaryRoot.innerHTML = cards.map(c => `
+            <div class="card">
+                <div class="label">${c.label}</div>
+                <div class="value">${c.value}</div>
+            </div>
+        `).join('');
+
+        const genRows = [];
+        genericList.forEach(rel => {
+            const isBool = typeof rel.result === "boolean";
+            const status = isBool ? (rel.result ? "PASS" : "FAIL") : rel.result;
+            const statusHTML = isBool
+                ? `<span class="status ${status}">${status}</span>`
+                : String(rel.result);
+
+            const detailsObj = rel.details || {};
+            const detailText = Object.entries(detailsObj)
+                .map(([key, val]) =>
+                    Array.isArray(val) ? `${key}: [${val.join(', ')}]` : `${key}: ${val}`
+                )
+                .join('; ');
+
+            genRows.push([rel.relationship, rel.check, statusHTML, detailText]);
+        });
+        $('#generic-relationship-checks').DataTable({ data: genRows });
+
+        // ---------- Enum checks ----------
+        const enumRows = [];
+        for (const tableName in data.enum_tables) {
+            (data.enum_tables[tableName] || []).forEach(check => {
+                const status = check.result ? "PASS" : "FAIL";
+                const statusHTML = `<span class="status ${status}">${status}</span>`;
+
+                const invalids = (check.details && Array.isArray(check.details.invalid_values))
                     ? check.details.invalid_values.join(', ')
                     : '';
 
-                let samples = (check.details && check.details.sample_keys)
+                const samples = (check.details && Array.isArray(check.details.sample_keys))
                     ? check.details.sample_keys.join(', ')
                     : '';
 
-                enumRows.push([
-                    tableName,
-                    check.check,
-                    statusHTML,
-                    invalids,
-                    samples
-                ]);
+                enumRows.push([tableName, check.check, statusHTML, invalids, samples]);
             });
         }
         $('#enum-checks').DataTable({ data: enumRows });
+    })
+    .catch(err => {
+        console.error("Failed to load sanity_report.json:", err);
+        document.getElementById('timestamp').textContent = "Failed to load sanity_report.json";
     });
 </script>
 

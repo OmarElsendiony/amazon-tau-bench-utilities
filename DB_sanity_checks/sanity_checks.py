@@ -8,7 +8,7 @@ import argparse
 import webbrowser
 from datetime import datetime
 
-SERVER_PORT = 8000
+SERVER_PORT = 8080
 
 def load_json_as_df(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
@@ -217,6 +217,182 @@ def check_foreign_keys(relationships, dfs, report):
             })
             print(f"[INFO] {check_name}: Avg children per parent = {avg_count:.2f}")
 
+import pandas as pd
+
+def check_generic_foreign_keys(gfk_configs, dfs, report):
+    """
+    gfk_configs: list of dicts, each like:
+      {
+        "child_table": "audit_trails",
+        "type_column": "reference_type",
+        "id_column":   "reference_id",
+        "mapping": {
+          "funds":     {"parent_table": "funds",     "parent_column": "fund_id",     "allowed_actions": ["create","update","approve"]},
+          "investors": {"parent_table": "investors", "parent_column": "investor_id"},
+          ...
+        }
+      }
+
+    dfs: dict[str, pd.DataFrame]  # table -> dataframe
+    report: dict with key "relationships": list
+    """
+    if "relationships" not in report:
+        report["relationships"] = []
+
+    # Helper to push a result into the report with consistent shape
+    def add_result(relationship, check, result, details=None, kind="generic"):
+        report["relationships"].append({
+            "relationship": relationship,
+            "check": check,
+            "result": result,
+            "details": details or {},
+            "kind": kind
+        })
+
+    # Cache table->set(columns) for field_name validation (if used)
+    table_columns = {t: set(df.columns) for t, df in dfs.items()}
+
+    for cfg in (gfk_configs or []):
+        child_table = cfg.get("child_table")
+        type_col    = cfg.get("type_column")
+        id_col      = cfg.get("id_column")
+        mapping     = cfg.get("mapping", {})
+
+        # Basic presence checks
+        rel_label = f"{child_table}.{id_col} (type via {type_col})"
+        if not child_table or child_table not in dfs:
+            # Nothing to do if child table is missing
+            add_result(rel_label, "Child table present", False, {"child_table": child_table})
+            print(f"[FAIL] {rel_label} – child table missing: {child_table}")
+            continue
+
+        child_df = dfs[child_table]
+
+        for col_name, label in [(type_col, "type column"), (id_col, "id column")]:
+            if not col_name or col_name not in child_df.columns:
+                add_result(rel_label, f"Child {label} present", False, {"column": col_name})
+                print(f"[FAIL] {rel_label} – missing child {label}: {col_name}")
+                # If critical columns are missing, skip this config
+                continue
+
+        # 0) Type coverage sanity (config ↔ data)
+        # - Unmapped types found in data
+        type_values = child_df[type_col].dropna().astype(str).unique().tolist()
+        mapped_types = set(mapping.keys())
+        data_types   = set(type_values)
+
+        unmapped_types = sorted(list(data_types - mapped_types))
+        stale_mapping  = sorted(list(mapped_types - data_types))  # mapping entries not seen in data (not an error, just info)
+
+        add_result(rel_label, "All type values are mapped", len(unmapped_types) == 0,
+                   {"unmapped_types": unmapped_types[:10], "count": len(unmapped_types)})
+        print(f"[{'PASS' if len(unmapped_types)==0 else 'FAIL'}] {rel_label} – {len(unmapped_types)} unmapped type(s)")
+
+        if stale_mapping:
+            add_result(rel_label, "Stale mapping entries (info)", True,
+                       {"stale_types": stale_mapping[:10], "count": len(stale_mapping)})
+            print(f"[INFO] {rel_label} – {len(stale_mapping)} stale mapping type(s) in config")
+
+        # 1) Per-type parent existence check (+ metrics)
+        for tval in sorted(data_types):
+            # Skip NaNs (already dropped), and types not in mapping are reported above
+            if tval not in mapping:
+                continue
+
+            m = mapping[tval] or {}
+            p_table = m.get("parent_table")
+            p_col   = m.get("parent_column")
+            relationship_name = f"{child_table}.{id_col} (type='{tval}') → {p_table}.{p_col}"
+
+            # Validate parent table/column presence
+            if p_table not in dfs or not p_col or p_col not in dfs.get(p_table, pd.DataFrame()).columns:
+                add_result(relationship_name, "Parent table/column present", False,
+                           {"parent_table": p_table, "parent_column": p_col})
+                print(f"[FAIL] {relationship_name} – missing parent table/column")
+                continue
+
+            parent_df = dfs[p_table]
+            # Sets for fast membership
+            parent_ids = set(parent_df[p_col].dropna().tolist())
+
+            # Rows in this type
+            type_mask = child_df[type_col] == tval
+            ids = child_df.loc[type_mask, id_col].dropna()
+
+            # 1a) Existence
+            missing_mask = ~ids.isin(parent_ids)
+            missing_ids = ids[missing_mask].unique().tolist()
+            total_missing = len(missing_ids)
+
+            add_result(relationship_name, "All children have parents (polymorphic)", total_missing == 0,
+                       {"type": tval, "child_column": id_col, "missing_ids": missing_ids[:5], "count": total_missing})
+            print(f"[{'PASS' if total_missing==0 else 'FAIL'}] {relationship_name} – missing {total_missing} ID(s)")
+
+            # 1b) Metrics: average & max children per parent in this type (observability)
+            vc = ids.value_counts()
+            avg_children = float(vc.mean()) if not vc.empty else 0.0
+            max_children = int(vc.max()) if not vc.empty else 0
+            add_result(relationship_name, "Average children per parent (info)", avg_children,
+                       {"type": tval, "max_children_for_single_parent": max_children})
+            print(f"[INFO] {relationship_name}: Avg children/parent = {avg_children:.2f}, Max = {max_children}")
+
+            # 1c) Action policy (optional)
+            allowed_actions = set((m.get("allowed_actions") or []))
+            if allowed_actions and "action" in child_df.columns:
+                actions = child_df.loc[type_mask, "action"].dropna().astype(str)
+                invalid = actions[~actions.isin(allowed_actions)]
+                invalid_count = int(invalid.shape[0])
+                sample = invalid.head(5).tolist()
+                add_result(relationship_name, "Action allowed for type", invalid_count == 0,
+                           {"type": tval, "invalid_actions": sample, "count": invalid_count,
+                            "allowed_actions": sorted(list(allowed_actions))})
+                print(f"[{'PASS' if invalid_count==0 else 'FAIL'}] {relationship_name} – {invalid_count} invalid action(s)")
+
+            # 1d) field_name validity (optional)
+            if "field_name" in child_df.columns:
+                # Only check non-null field names
+                field_series = child_df.loc[type_mask, "field_name"].dropna().astype(str)
+                if not field_series.empty:
+                    valid_cols = table_columns.get(p_table, set())
+                    invalid_fields = field_series[~field_series.isin(valid_cols)]
+                    inv_count = int(invalid_fields.shape[0])
+                    sample_inv = invalid_fields.head(5).tolist()
+                    add_result(relationship_name, "field_name valid for parent type", inv_count == 0,
+                               {"type": tval, "invalid_field_names": sample_inv, "count": inv_count,
+                                "parent_table_columns_sample": list(sorted(list(valid_cols)))[:10]})
+                    print(f"[{'PASS' if inv_count==0 else 'FAIL'}] {relationship_name} – {inv_count} invalid field_name value(s)")
+
+            # 1e) Temporal sanity (optional)
+            child_has_ts  = "created_at" in child_df.columns
+            parent_has_ts = "created_at" in parent_df.columns
+            if child_has_ts and parent_has_ts:
+                # Make a light join on id to compare timestamps
+                c_tmp = child_df.loc[type_mask, [id_col, "created_at"]].rename(columns={id_col: "_pid", "created_at": "_child_ts"})
+                p_tmp = parent_df[[p_col, "created_at"]].rename(columns={p_col: "_pid", "created_at": "_parent_ts"})
+                merged = pd.merge(c_tmp, p_tmp, how="left", on="_pid")
+                # Coerce datetimes
+                cts = pd.to_datetime(merged["_child_ts"], errors="coerce", utc=True)
+                pts = pd.to_datetime(merged["_parent_ts"], errors="coerce", utc=True)
+                bad_order = (cts < pts) & pts.notna() & cts.notna()
+                viol_count = int(bad_order.sum())
+                add_result(relationship_name, "created_at sequence valid (child ≥ parent)", viol_count == 0,
+                           {"type": tval, "violations": int(viol_count)})
+                print(f"[{'PASS' if viol_count==0 else 'FAIL'}] {relationship_name} – {viol_count} temporal violation(s)")
+
+        # 2) User link validity (if applicable)
+        if "user_id" in child_df.columns:
+            if "users" in dfs and "user_id" in dfs["users"].columns:
+                user_ids = set(dfs["users"]["user_id"].dropna().tolist())
+                non_null_u = child_df["user_id"].dropna()
+                missing_users = non_null_u[~non_null_u.isin(user_ids)].unique().tolist()
+                miss_count = len(missing_users)
+                add_result(f"{child_table}.user_id → users.user_id", "All children have valid users", miss_count == 0,
+                           {"missing_user_ids": missing_users[:5], "count": miss_count})
+                print(f"[{'PASS' if miss_count==0 else 'FAIL'}] {child_table}.user_id → users.user_id – missing {miss_count} user(s)")
+            else:
+                add_result(f"{child_table}.user_id → users.user_id", "Users table present", False,
+                           {"reason": "users table or user_id column not found"})
+                print(f"[FAIL] {child_table}.user_id → users.user_id – users table/column missing")
 
 
 def main(folder):
@@ -238,14 +414,17 @@ def main(folder):
     enum_defs = load_enum_defs(ENUM_FILE)
     enum_defs = fix_yaml_boolean_conversion(enum_defs)
 
-    # Initialize report, now including an enum_tables section
+    # Initialize report (added generic containers)
     sanity_report = {
         "timestamp": datetime.now().isoformat(),
         "tables": {},
         "enum_tables": {},
-        "relationships": []
+        "relationships": [],
+        "generic_relationships": [],   # ← for index.html separate section
+        "generic_fk_summary": {}       # ← quick summary numbers for header/widgets
     }
 
+    # Load dataframes
     dfs = {}
     for filename in os.listdir(DATA_DIR):
         if not filename.endswith(".json"):
@@ -265,23 +444,66 @@ def main(folder):
             "row_count": len(df),
             "checks": []
         }
-        # Prepare an empty list for enum checks
         sanity_report["enum_tables"][table_name] = []
 
-        # Run existing checks
+        # Run existing per-table checks
         report_entry = sanity_report["tables"][table_name]
         sanity_check_keys_are_strings(table_name, data, report_entry)
         sanity_check_id_matches_key(table_name, data, report_entry)
         sanity_check_pk_from_json(table_name, data, report_entry)
 
-        # Run enum validity checks into the separate enum_tables section
+        # Enum validity checks into enum_tables section
         enum_report = {"checks": sanity_report["enum_tables"][table_name]}
         sanity_check_enums(table_name, df, enum_defs, enum_report)
 
-    # Load and validate foreign key relationships
+    # Load relationships YAML (support both normal and generic FKs)
     with open(REL_FILE, "r", encoding="utf-8") as f:
-        relationships = yaml.safe_load(f).get("foreign_keys", [])
-    check_foreign_keys(relationships, dfs, sanity_report)
+        rel_yaml = yaml.safe_load(f) or {}
+
+    relationships = rel_yaml.get("foreign_keys", []) or []
+    gfk_configs   = rel_yaml.get("generic_foreign_keys", []) or []
+
+    # 1) Normal FK checks
+    if relationships:
+        check_foreign_keys(relationships, dfs, sanity_report)
+    else:
+        print("[INFO] No 'foreign_keys' entries found in relationships.yaml")
+
+    # 2) Generic (polymorphic) FK checks
+    if gfk_configs:
+        # This function appends entries into sanity_report["relationships"] with kind="generic"
+        check_generic_foreign_keys(gfk_configs, dfs, sanity_report)
+    else:
+        print("[INFO] No 'generic_foreign_keys' entries found in relationships.yaml")
+
+    # 3) Build a dedicated section for generic checks for index.html rendering
+    generic_entries = [r for r in sanity_report["relationships"] if r.get("kind") == "generic"]
+    sanity_report["generic_relationships"] = generic_entries
+
+    # 4) Compute a compact summary for quick display (counts)
+    #    - total checks
+    #    - passes / fails
+    #    - info metrics (numeric results)
+    total = len(generic_entries)
+    passes = sum(1 for r in generic_entries if isinstance(r.get("result"), bool) and r["result"] is True)
+    fails  = sum(1 for r in generic_entries if isinstance(r.get("result"), bool) and r["result"] is False)
+
+    # numeric/info-style results: capture averages etc. for possible small charts
+    info_numeric = []
+    for r in generic_entries:
+        if not isinstance(r.get("result"), bool):
+            info_numeric.append({
+                "relationship": r.get("relationship"),
+                "check": r.get("check"),
+                "value": r.get("result")
+            })
+
+    sanity_report["generic_fk_summary"] = {
+        "total_checks": total,
+        "passes": passes,
+        "fails": fails,
+        "info_metrics_count": len(info_numeric)
+    }
 
     # Write out the complete report
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)

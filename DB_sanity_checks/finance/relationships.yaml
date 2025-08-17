@@ -1,0 +1,230 @@
+foreign_keys:
+
+  - parent_table: subscriptions
+    parent_column: subscription_id
+    child_table: payments
+    child_column: subscription_id
+    type: 1:N
+
+  - parent_table: subscriptions
+    parent_column: subscription_id
+    child_table: redemptions
+    child_column: subscription_id
+    type: 1:N
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: audit_trails
+    child_column: user_id
+    type: 1:N
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: funds
+    child_column: manager_id
+    type: 1:N
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: reports
+    child_column: generated_by
+    type: 1:N
+
+  - parent_table: funds
+    parent_column: fund_id
+    child_table: subscriptions
+    child_column: fund_id
+    type: 1:N
+
+  - parent_table: funds
+    parent_column: fund_id
+    child_table: commitments
+    child_column: fund_id
+    type: 1:N
+
+  - parent_table: funds
+    parent_column: fund_id
+    child_table: nav_records
+    child_column: fund_id
+    type: 1:N
+
+  - parent_table: funds
+    parent_column: fund_id
+    child_table: trades
+    child_column: fund_id
+    type: 1:N
+
+  - parent_table: funds
+    parent_column: fund_id
+    child_table: reports
+    child_column: fund_id
+    type: 1:N
+
+  - parent_table: investors
+    parent_column: investor_id
+    child_table: subscriptions
+    child_column: investor_id
+    type: 1:N
+
+  - parent_table: investors
+    parent_column: investor_id
+    child_table: commitments
+    child_column: investor_id
+    type: 1:N
+
+  - parent_table: investors
+    parent_column: investor_id
+    child_table: portfolios
+    child_column: investor_id
+    type: 1:1
+
+  - parent_table: portfolios
+    parent_column: portfolio_id
+    child_table: portfolio_holdings
+    child_column: portfolio_id
+    type: 1:N
+
+  - parent_table: funds
+    parent_column: fund_id
+    child_table: portfolio_holdings
+    child_column: fund_id
+    type: 1:1
+
+  - parent_table: instruments
+    parent_column: instrument_id
+    child_table: instrument_prices
+    child_column: instrument_id
+    type: 1:N
+
+  - parent_table: instruments
+    parent_column: instrument_id
+    child_table: trades
+    child_column: instrument_id
+    type: 1:N
+
+  - parent_table: invoices
+    parent_column: invoice_id
+    child_table: payments
+    child_column: invoice_id
+    type: 1:N
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: subscriptions
+    child_column: request_assigned_to
+    type: 1:N
+
+  - parent_table: commitments
+    parent_column: commitment_id
+    child_table: invoices
+    child_column: commitment_id
+    type: 1:N
+
+  - parent_table: reports
+    parent_column: report_id
+    child_table: documents
+    child_column: report_id
+    type: 1:N
+
+generic_foreign_keys:
+  - child_table: audit_trails
+    type_column: reference_type
+    id_column: reference_id
+    mapping:
+      invoices:
+        parent_table: invoices
+        parent_column: invoice_id
+      commitments:
+        parent_table: commitments
+        parent_column: commitment_id
+      subscriptions:
+        parent_table: subscriptions
+        parent_column: subscription_id
+      trades:
+        parent_table: trades
+        parent_column: trade_id
+      funds:
+        parent_table: funds
+        parent_column: fund_id
+      investors:
+        parent_table: investors
+        parent_column: investor_id
+      portfolios:
+        parent_table: portfolios
+        parent_column: portfolio_id
+      portfolio_holdings:
+        parent_table: portfolio_holdings
+        parent_column: holding_id
+      payments:
+        parent_table: payments
+        parent_column: payment_id
+      redemptions:
+        parent_table: redemptions
+        parent_column: redemption_id
+      users:
+        parent_table: users
+        parent_column: user_id
+      nav_records:
+        parent_table: nav_records
+        parent_column: nav_id
+      documents:
+        parent_table: documents
+        parent_column: document_id
+      reports:
+        parent_table: reports
+        parent_column: report_id
+      notifications:
+        parent_table: notifications
+        parent_column: notification_id
+      instruments:
+        parent_table: instruments
+        parent_column: instrument_id
+      instrument_prices:
+        parent_table: instrument_prices
+        parent_column: price_id
+
+
+  - child_table: notifications
+    type_column: class
+    id_column: reference_id
+    mapping:
+      funds:
+        parent_table: funds
+        parent_column: fund_id
+      investors:
+        parent_table: investors
+        parent_column: investor_id
+      portfolios:
+        parent_table: portfolios
+        parent_column: portfolio_id
+      trades:
+        parent_table: trades
+        parent_column: trade_id
+      invoices:
+        parent_table: invoices
+        parent_column: invoice_id
+      reports:
+        parent_table: reports
+        parent_column: report_id
+      documents:
+        parent_table: documents
+        parent_column: document_id
+      subscriptions:
+        parent_table: subscriptions
+        parent_column: subscription_id
+      commitments:
+        parent_table: commitments
+        parent_column: commitment_id
+      redemptions:
+        parent_table: redemptions
+        parent_column: redemption_id
+  - child_table: documents
+    type_column: uploaded_by_role
+    id_column: uploaded_by_id
+    mapping:
+      user:
+        parent_table: users
+        parent_column: user_id
+      investor:
+        parent_table: investors
+        parent_column: investor_id
