@@ -8,7 +8,7 @@ import argparse
 import webbrowser
 from datetime import datetime
 
-SERVER_PORT = 8080
+SERVER_PORT = 1000
 
 def load_json_as_df(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
@@ -141,81 +141,279 @@ def sanity_check_enums(table_name, df, enum_defs, report):
     return all_valid
 
 
+def normalize_type(t):
+    s = str(t).strip().upper()
+    if s == "61":   # YAML 1.1 sexagesimal for 1:1
+        s = "1:1"
+    if s not in {"1:1", "1:N", "M:N"}:
+        raise ValueError(f"Unsupported relationship type: {t!r}")
+    return s
+
 def check_foreign_keys(relationships, dfs, report):
+    """
+    relationships: list of dicts like:
+      {
+        "parent_table": "funds",
+        "parent_column": "fund_id",
+        "child_table": "portfolio_holdings",
+        "child_column": "fund_id",
+        "type": "1:1" | "1:N" | "M:N",
+        # optional:
+        "mandatory": False,           # if True, enforce full coverage (1:1 exactly once; 1:N at least once)
+        "min_children": None,         # only for 1:N
+        "max_children": None,         # only for 1:N
+        # for M:N only (when child_table is a link table):
+        "link_parent_column": None,   # e.g., "fund_id"
+        "link_child_column": None     # e.g., "portfolio_id"
+      }
+
+    dfs: dict[str, pandas.DataFrame]
+    report: dict with a "relationships": list to append records to
+    """
     for rel in relationships:
-        p_table, p_col = rel["parent_table"], rel["parent_column"]
-        c_table, c_col = rel["child_table"],  rel["child_column"]
-        rel_type      = rel["type"]
-        check_name    = f"{p_table}.{p_col} → {c_table}.{c_col}"
+        p_table = rel["parent_table"]
+        p_col   = rel["parent_column"]
+        c_table = rel["child_table"]
+        c_col   = rel["child_column"]
+        rtype_raw   = rel["type"]
+        rtype = normalize_type(rtype_raw)
+        mandatory    = rel.get("mandatory", False)
+        min_children = rel.get("min_children")
+        max_children = rel.get("max_children")
+
+        check_name = f"{p_table}.{p_col} → {c_table}.{c_col}"
+
+        # Skip if missing tables
         if p_table not in dfs or c_table not in dfs:
+            report["relationships"].append({
+                "relationship": check_name,
+                "check": "Tables present",
+                "result": False,
+                "details": {"reason": "Missing table(s)"}
+            })
             continue
 
         parent_df = dfs[p_table]
         child_df  = dfs[c_table]
-        non_null  = child_df[c_col].dropna()
 
-        # 1) All children have parents
-        missing_mask   = ~non_null.isin(parent_df[p_col])
-        missing_ids    = non_null[missing_mask].unique().tolist()
-        total_missing  = len(missing_ids)
-        top5_missing   = missing_ids[:5]
-        exists_ok      = total_missing == 0
+        # Basic column existence check (useful in evolving seeds)
+        for tname, df, col, role in ((p_table, parent_df, p_col, "parent"),
+                                     (c_table, child_df, c_col, "child")):
+            exists = col in df.columns
+            report["relationships"].append({
+                "relationship": check_name,
+                "check": f"{role.capitalize()} column exists",
+                "result": exists,
+                "details": {"table": tname, "column": col}
+            })
+            if not exists:
+                # If a critical column is missing, no further checks can run
+                # (but still continue to next relationship rather than raising)
+                parent_missing = (role == "parent")
+                # Only break once we’ve appended both existence checks
+                break
+        if p_col not in parent_df.columns or c_col not in child_df.columns:
+            continue
+
+        # Normalize types where possible to reduce false negatives on isin
+        p_series = parent_df[p_col]
+        c_series = child_df[c_col]
+        # If dtypes mismatch in int/str, try best-effort cast of child to parent dtype
+        try:
+            c_cast = c_series.astype(p_series.dtype, copy=False)
+        except Exception:
+            c_cast = c_series  # fall back silently
+
+        # Null handling
+        null_count = c_cast.isna().sum()
+        non_null = c_cast.dropna()
+
         report["relationships"].append({
             "relationship": check_name,
-            "check":        "All children have parents",
-            "result":       exists_ok,
-            "details": {
-                "column":      c_col,
-                "missing_ids": top5_missing,
-                "count":       total_missing
-            }
+            "check": "Child column nulls",
+            "result": True,  # informative metric
+            "details": {"column": c_col, "null_count": int(null_count), "non_null_count": int(non_null.shape[0])}
         })
-        print(f"[{'PASS' if exists_ok else 'FAIL'}] {check_name} – missing {total_missing} IDs in `{c_col}`")
 
-        # 2) Parent column must be unique
-        dup_parents   = parent_df[p_col][parent_df[p_col].duplicated(keep=False)].unique().tolist()
+        # 1) All children have parents (referential integrity)
+        missing_mask  = ~non_null.isin(p_series)
+        missing_ids   = non_null[missing_mask].unique().tolist()
+        total_missing = len(missing_ids)
+        exists_ok     = total_missing == 0
+        report["relationships"].append({
+            "relationship": check_name,
+            "check": "All children have parents",
+            "result": exists_ok,
+            "details": {"column": c_col, "missing_ids_sample": missing_ids[:5], "count": total_missing}
+        })
+        print(f"[{'PASS' if exists_ok else 'FAIL'}] {check_name} – {total_missing} missing IDs in `{c_col}`")
+
+        # 2) Parent column unique (PK-like)
+        dup_parents   = p_series[p_series.duplicated(keep=False)].unique().tolist()
         total_dups    = len(dup_parents)
-        top5_parents  = dup_parents[:5]
         parent_unique = total_dups == 0
         report["relationships"].append({
             "relationship": check_name,
-            "check":        "Parent column unique",
-            "result":       parent_unique,
-            "details": {
-                "column":                p_col,
-                "duplicate_parent_ids":  top5_parents,
-                "count":                 total_dups
-            }
+            "check": "Parent column unique",
+            "result": parent_unique,
+            "details": {"column": p_col, "duplicate_parent_ids_sample": dup_parents[:5], "count": total_dups}
         })
         print(f"[{'PASS' if parent_unique else 'FAIL'}] {p_table}.{p_col} – {total_dups} duplicates")
 
-        # 3) Depending on relationship type…
-        if rel_type == "1:1":
-            dup_children     = child_df[c_col][child_df[c_col].duplicated(keep=False)].unique().tolist()
+        # Cardinality-specific checks
+        if rtype == "1:1":
+            # 3a) Child column unique (no parent referenced more than once)
+            dup_children = non_null[non_null.duplicated(keep=False)].unique().tolist()
             total_child_dups = len(dup_children)
-            top5_children    = dup_children[:5]
-            child_unique     = total_child_dups == 0
+            child_unique = total_child_dups == 0
             report["relationships"].append({
                 "relationship": check_name,
-                "check":        "Child column unique",
-                "result":       child_unique,
-                "details": {
-                    "column":               c_col,
-                    "duplicate_child_ids":  top5_children,
-                    "count":               total_child_dups
-                }
+                "check": "Child column unique (1:1)",
+                "result": child_unique,
+                "details": {"column": c_col, "duplicate_child_ids_sample": dup_children[:5], "count": total_child_dups}
             })
             print(f"[{'PASS' if child_unique else 'FAIL'}] {c_table}.{c_col} – {total_child_dups} duplicates")
 
-        elif rel_type == "1:N":
-            avg_count = non_null.value_counts().mean()
+            # 3b) Coverage: if mandatory 1:1, every parent must appear exactly once in child
+            if mandatory:
+                # parents that appear in child
+                used_parents = set(non_null.unique().tolist())
+                all_parents  = set(p_series.unique().tolist())
+                missing_parents = list(all_parents - used_parents)
+                extra_refs      = list(used_parents - all_parents)  # should be empty if check #1 passed
+
+                # check exact multiplicity == 1
+                vc = non_null.value_counts(dropna=False)
+                not_exact_one = vc[vc != 1].index.tolist()  # parents referenced 0 or >1 times are already covered by missing/dup
+                ok = (len(missing_parents) == 0) and (len(not_exact_one) == 0)
+
+                report["relationships"].append({
+                    "relationship": check_name,
+                    "check": "Mandatory 1:1 coverage (each parent exactly once)",
+                    "result": ok,
+                    "details": {
+                        "missing_parent_ids_sample": missing_parents[:5],
+                        "over_or_under_referenced_ids_sample": not_exact_one[:5],
+                        "missing_count": len(missing_parents),
+                        "over_or_under_count": len(not_exact_one)
+                    }
+                })
+                status = 'PASS' if ok else 'FAIL'
+                print(f"[{status}] {check_name} – mandatory 1:1 coverage")
+
+        elif rtype == "1:N":
+            # 3c) Distribution stats
+            vc = non_null.value_counts()
+            avg_count = round(float(vc.mean()), 2) if not vc.empty else 0.0
+            min_count = int(vc.min()) if not vc.empty else 0
+            max_count = int(vc.max()) if not vc.empty else 0
+            # Top parents by load
+            top5 = vc.sort_values(ascending=False).head(5).to_dict()
+
             report["relationships"].append({
                 "relationship": check_name,
-                "check":        "Average children per parent",
-                "result":       avg_count,
-                "details":      {}
+                "check": "Children per parent (distribution)",
+                "result": True,  # informative
+                "details": {
+                    "avg": avg_count, "min": min_count, "max": max_count,
+                    "top5_parents_by_children": top5
+                }
             })
-            print(f"[INFO] {check_name}: Avg children per parent = {avg_count:.2f}")
+            print(f"[INFO] {check_name}: avg={avg_count:.2f}, min={min_count}, max={max_count}")
+
+            # 3d) Optional policy bounds
+            if min_children is not None:
+                below = vc[vc < min_children]
+                ok = below.empty
+                report["relationships"].append({
+                    "relationship": check_name,
+                    "check": f"Min children per parent ≥ {min_children}",
+                    "result": ok,
+                    "details": {
+                        "violating_parent_ids_sample": below.index.tolist()[:5],
+                        "violations": int((vc < min_children).sum())
+                    }
+                })
+            if max_children is not None:
+                above = vc[vc > max_children]
+                ok = above.empty
+                report["relationships"].append({
+                    "relationship": check_name,
+                    "check": f"Max children per parent ≤ {max_children}",
+                    "result": ok,
+                    "details": {
+                        "violating_parent_ids_sample": above.index.tolist()[:5],
+                        "violations": int((vc > max_children).sum())
+                    }
+                })
+
+            # 3e) Mandatory coverage: each parent appears at least once
+            if mandatory:
+                used_parents = set(non_null.unique().tolist())
+                all_parents  = set(parent_df[p_col].unique().tolist())
+                missing_parents = list(all_parents - used_parents)
+                ok = (len(missing_parents) == 0)
+                report["relationships"].append({
+                    "relationship": check_name,
+                    "check": "Mandatory 1:N coverage (each parent at least once)",
+                    "result": ok,
+                    "details": {
+                        "missing_parent_ids_sample": missing_parents[:5],
+                        "missing_count": len(missing_parents)
+                    }
+                })
+
+        elif rtype == "M:N":
+            # Here, c_table is assumed to be a link table with two FK columns
+            lp = rel.get("link_parent_column")
+            lc = rel.get("link_child_column")
+            ok_meta = bool(lp and lc and lp in child_df.columns and lc in child_df.columns)
+            report["relationships"].append({
+                "relationship": f"{c_table} ({lp},{lc})",
+                "check": "Link columns present (M:N)",
+                "result": ok_meta,
+                "details": {"table": c_table, "parent_link_col": lp, "child_link_col": lc}
+            })
+            if ok_meta:
+                # Uniqueness of pairs (no duplicate relationships)
+                pair_dups = (
+                    child_df[[lp, lc]]
+                    .assign(_pair=lambda d: d[lp].astype(str) + "§" + d[lc].astype(str))
+                )
+                dup_pairs = pair_dups["_pair"][pair_dups["_pair"].duplicated(keep=False)].unique().tolist()
+                ok_pairs = len(dup_pairs) == 0
+                report["relationships"].append({
+                    "relationship": f"{c_table} ({lp},{lc})",
+                    "check": "Composite uniqueness (parent, child)",
+                    "result": ok_pairs,
+                    "details": {
+                        "duplicate_pairs_sample": dup_pairs[:5],
+                        "count": len(dup_pairs)
+                    }
+                })
+                # Existence for both sides
+                # Parent side
+                parent_exists = child_df[lp].dropna().isin(parent_df[p_col]).all()
+                report["relationships"].append({
+                    "relationship": f"{p_table}.{p_col} → {c_table}.{lp}",
+                    "check": "All link parent IDs have parents",
+                    "result": parent_exists,
+                    "details": {}
+                })
+                # Child side existence requires child entity DF; you can pass another rel for that side
+            else:
+                # Nothing else can be done for this M:N without proper link columns
+                pass
+
+        else:
+            # Unknown type (record it but don't fail the whole run)
+            report["relationships"].append({
+                "relationship": check_name,
+                "check": "Unknown relationship type",
+                "result": False,
+                "details": {"type": rtype}
+            })
+
 
 import pandas as pd
 
@@ -330,7 +528,7 @@ def check_generic_foreign_keys(gfk_configs, dfs, report):
 
             # 1b) Metrics: average & max children per parent in this type (observability)
             vc = ids.value_counts()
-            avg_children = float(vc.mean()) if not vc.empty else 0.0
+            avg_children = round(float(vc.mean()), 2) if not vc.empty else 0.0
             max_children = int(vc.max()) if not vc.empty else 0
             add_result(relationship_name, "Average children per parent (info)", avg_children,
                        {"type": tval, "max_children_for_single_parent": max_children})
