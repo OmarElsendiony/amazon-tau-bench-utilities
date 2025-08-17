@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-17T18:48:36.124748",
+  "timestamp": "2025-08-18T01:59:09.345640",
   "tables": {
     "trades": {
       "row_count": 2500,
@@ -642,11 +642,39 @@
   "relationships": [
     {
       "relationship": "subscriptions.subscription_id \u2192 payments.subscription_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "subscriptions",
+        "column": "subscription_id"
+      }
+    },
+    {
+      "relationship": "subscriptions.subscription_id \u2192 payments.subscription_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "payments",
+        "column": "subscription_id"
+      }
+    },
+    {
+      "relationship": "subscriptions.subscription_id \u2192 payments.subscription_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "subscription_id",
+        "null_count": 921,
+        "non_null_count": 1125
+      }
+    },
+    {
+      "relationship": "subscriptions.subscription_id \u2192 payments.subscription_id",
       "check": "All children have parents",
       "result": true,
       "details": {
         "column": "subscription_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -656,15 +684,54 @@
       "result": true,
       "details": {
         "column": "subscription_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "subscriptions.subscription_id \u2192 payments.subscription_id",
-      "check": "Average children per parent",
-      "result": 1.2916188289322619,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 1.29,
+        "min": 1,
+        "max": 4,
+        "top5_parents_by_children": {
+          "293": 4,
+          "683": 4,
+          "1754": 3,
+          "1384": 3,
+          "1554": 3
+        }
+      }
+    },
+    {
+      "relationship": "subscriptions.subscription_id \u2192 redemptions.subscription_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "subscriptions",
+        "column": "subscription_id"
+      }
+    },
+    {
+      "relationship": "subscriptions.subscription_id \u2192 redemptions.subscription_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "redemptions",
+        "column": "subscription_id"
+      }
+    },
+    {
+      "relationship": "subscriptions.subscription_id \u2192 redemptions.subscription_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "subscription_id",
+        "null_count": 0,
+        "non_null_count": 1000
+      }
     },
     {
       "relationship": "subscriptions.subscription_id \u2192 redemptions.subscription_id",
@@ -672,7 +739,7 @@
       "result": true,
       "details": {
         "column": "subscription_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -682,15 +749,54 @@
       "result": true,
       "details": {
         "column": "subscription_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "subscriptions.subscription_id \u2192 redemptions.subscription_id",
-      "check": "Average children per parent",
-      "result": 1.4064697609001406,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 1.41,
+        "min": 1,
+        "max": 4,
+        "top5_parents_by_children": {
+          "718": 4,
+          "2121": 4,
+          "2230": 4,
+          "2460": 4,
+          "591": 4
+        }
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 audit_trails.user_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "users",
+        "column": "user_id"
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 audit_trails.user_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "audit_trails",
+        "column": "user_id"
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 audit_trails.user_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "null_count": 0,
+        "non_null_count": 3500
+      }
     },
     {
       "relationship": "users.user_id \u2192 audit_trails.user_id",
@@ -698,7 +804,7 @@
       "result": true,
       "details": {
         "column": "user_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -708,15 +814,54 @@
       "result": true,
       "details": {
         "column": "user_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "users.user_id \u2192 audit_trails.user_id",
-      "check": "Average children per parent",
-      "result": 28.0,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 28.0,
+        "min": 15,
+        "max": 39,
+        "top5_parents_by_children": {
+          "123": 39,
+          "88": 39,
+          "29": 37,
+          "79": 37,
+          "105": 37
+        }
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 funds.manager_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "users",
+        "column": "user_id"
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 funds.manager_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "funds",
+        "column": "manager_id"
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 funds.manager_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "manager_id",
+        "null_count": 0,
+        "non_null_count": 100
+      }
     },
     {
       "relationship": "users.user_id \u2192 funds.manager_id",
@@ -724,7 +869,7 @@
       "result": true,
       "details": {
         "column": "manager_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -734,15 +879,54 @@
       "result": true,
       "details": {
         "column": "user_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "users.user_id \u2192 funds.manager_id",
-      "check": "Average children per parent",
-      "result": 4.3478260869565215,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 4.35,
+        "min": 1,
+        "max": 7,
+        "top5_parents_by_children": {
+          "43": 7,
+          "83": 7,
+          "20": 7,
+          "12": 6,
+          "73": 6
+        }
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 reports.generated_by",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "users",
+        "column": "user_id"
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 reports.generated_by",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "reports",
+        "column": "generated_by"
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 reports.generated_by",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "generated_by",
+        "null_count": 0,
+        "non_null_count": 1000
+      }
     },
     {
       "relationship": "users.user_id \u2192 reports.generated_by",
@@ -750,7 +934,7 @@
       "result": true,
       "details": {
         "column": "generated_by",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -760,15 +944,54 @@
       "result": true,
       "details": {
         "column": "user_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "users.user_id \u2192 reports.generated_by",
-      "check": "Average children per parent",
-      "result": 19.607843137254903,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 19.61,
+        "min": 8,
+        "max": 27,
+        "top5_parents_by_children": {
+          "94": 27,
+          "107": 27,
+          "54": 27,
+          "63": 26,
+          "99": 25
+        }
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 subscriptions.fund_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "funds",
+        "column": "fund_id"
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 subscriptions.fund_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "subscriptions",
+        "column": "fund_id"
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 subscriptions.fund_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "null_count": 0,
+        "non_null_count": 2500
+      }
     },
     {
       "relationship": "funds.fund_id \u2192 subscriptions.fund_id",
@@ -776,7 +999,7 @@
       "result": true,
       "details": {
         "column": "fund_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -786,15 +1009,54 @@
       "result": true,
       "details": {
         "column": "fund_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "funds.fund_id \u2192 subscriptions.fund_id",
-      "check": "Average children per parent",
-      "result": 25.0,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 25.0,
+        "min": 17,
+        "max": 38,
+        "top5_parents_by_children": {
+          "90": 38,
+          "34": 36,
+          "19": 34,
+          "89": 33,
+          "54": 33
+        }
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 commitments.fund_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "funds",
+        "column": "fund_id"
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 commitments.fund_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "commitments",
+        "column": "fund_id"
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 commitments.fund_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "null_count": 0,
+        "non_null_count": 2000
+      }
     },
     {
       "relationship": "funds.fund_id \u2192 commitments.fund_id",
@@ -802,7 +1064,7 @@
       "result": true,
       "details": {
         "column": "fund_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -812,15 +1074,54 @@
       "result": true,
       "details": {
         "column": "fund_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "funds.fund_id \u2192 commitments.fund_id",
-      "check": "Average children per parent",
-      "result": 20.0,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 20.0,
+        "min": 13,
+        "max": 31,
+        "top5_parents_by_children": {
+          "19": 31,
+          "90": 30,
+          "85": 28,
+          "34": 27,
+          "89": 27
+        }
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 nav_records.fund_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "funds",
+        "column": "fund_id"
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 nav_records.fund_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "nav_records",
+        "column": "fund_id"
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 nav_records.fund_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "null_count": 0,
+        "non_null_count": 1285
+      }
     },
     {
       "relationship": "funds.fund_id \u2192 nav_records.fund_id",
@@ -828,7 +1129,7 @@
       "result": true,
       "details": {
         "column": "fund_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -838,15 +1139,54 @@
       "result": true,
       "details": {
         "column": "fund_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "funds.fund_id \u2192 nav_records.fund_id",
-      "check": "Average children per parent",
-      "result": 12.85,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 12.85,
+        "min": 5,
+        "max": 20,
+        "top5_parents_by_children": {
+          "32": 20,
+          "53": 20,
+          "60": 20,
+          "91": 20,
+          "69": 20
+        }
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 trades.fund_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "funds",
+        "column": "fund_id"
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 trades.fund_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "trades",
+        "column": "fund_id"
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 trades.fund_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "null_count": 0,
+        "non_null_count": 2500
+      }
     },
     {
       "relationship": "funds.fund_id \u2192 trades.fund_id",
@@ -854,7 +1194,7 @@
       "result": true,
       "details": {
         "column": "fund_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -864,15 +1204,54 @@
       "result": true,
       "details": {
         "column": "fund_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "funds.fund_id \u2192 trades.fund_id",
-      "check": "Average children per parent",
-      "result": 25.0,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 25.0,
+        "min": 12,
+        "max": 41,
+        "top5_parents_by_children": {
+          "47": 41,
+          "89": 39,
+          "41": 38,
+          "73": 36,
+          "40": 36
+        }
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 reports.fund_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "funds",
+        "column": "fund_id"
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 reports.fund_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "reports",
+        "column": "fund_id"
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 reports.fund_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "null_count": 0,
+        "non_null_count": 1000
+      }
     },
     {
       "relationship": "funds.fund_id \u2192 reports.fund_id",
@@ -880,7 +1259,7 @@
       "result": true,
       "details": {
         "column": "fund_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -890,15 +1269,54 @@
       "result": true,
       "details": {
         "column": "fund_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "funds.fund_id \u2192 reports.fund_id",
-      "check": "Average children per parent",
-      "result": 10.0,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 10.0,
+        "min": 4,
+        "max": 16,
+        "top5_parents_by_children": {
+          "47": 16,
+          "89": 16,
+          "81": 16,
+          "7": 16,
+          "52": 15
+        }
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 subscriptions.investor_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "investors",
+        "column": "investor_id"
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 subscriptions.investor_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "subscriptions",
+        "column": "investor_id"
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 subscriptions.investor_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "investor_id",
+        "null_count": 0,
+        "non_null_count": 2500
+      }
     },
     {
       "relationship": "investors.investor_id \u2192 subscriptions.investor_id",
@@ -906,7 +1324,7 @@
       "result": true,
       "details": {
         "column": "investor_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -916,15 +1334,54 @@
       "result": true,
       "details": {
         "column": "investor_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "investors.investor_id \u2192 subscriptions.investor_id",
-      "check": "Average children per parent",
-      "result": 14.285714285714286,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 14.29,
+        "min": 6,
+        "max": 26,
+        "top5_parents_by_children": {
+          "126": 26,
+          "45": 22,
+          "155": 21,
+          "24": 21,
+          "117": 21
+        }
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 commitments.investor_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "investors",
+        "column": "investor_id"
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 commitments.investor_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "commitments",
+        "column": "investor_id"
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 commitments.investor_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "investor_id",
+        "null_count": 0,
+        "non_null_count": 2000
+      }
     },
     {
       "relationship": "investors.investor_id \u2192 commitments.investor_id",
@@ -932,7 +1389,7 @@
       "result": true,
       "details": {
         "column": "investor_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -942,15 +1399,54 @@
       "result": true,
       "details": {
         "column": "investor_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "investors.investor_id \u2192 commitments.investor_id",
-      "check": "Average children per parent",
-      "result": 11.428571428571429,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 11.43,
+        "min": 3,
+        "max": 22,
+        "top5_parents_by_children": {
+          "126": 22,
+          "175": 19,
+          "155": 18,
+          "117": 18,
+          "45": 17
+        }
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 portfolios.investor_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "investors",
+        "column": "investor_id"
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 portfolios.investor_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "portfolios",
+        "column": "investor_id"
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 portfolios.investor_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "investor_id",
+        "null_count": 0,
+        "non_null_count": 175
+      }
     },
     {
       "relationship": "investors.investor_id \u2192 portfolios.investor_id",
@@ -958,7 +1454,7 @@
       "result": true,
       "details": {
         "column": "investor_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -968,8 +1464,46 @@
       "result": true,
       "details": {
         "column": "investor_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
+      }
+    },
+    {
+      "relationship": "investors.investor_id \u2192 portfolios.investor_id",
+      "check": "Child column unique (1:1)",
+      "result": true,
+      "details": {
+        "column": "investor_id",
+        "duplicate_child_ids_sample": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "portfolios.portfolio_id \u2192 portfolio_holdings.portfolio_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "portfolios",
+        "column": "portfolio_id"
+      }
+    },
+    {
+      "relationship": "portfolios.portfolio_id \u2192 portfolio_holdings.portfolio_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "portfolio_holdings",
+        "column": "portfolio_id"
+      }
+    },
+    {
+      "relationship": "portfolios.portfolio_id \u2192 portfolio_holdings.portfolio_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "portfolio_id",
+        "null_count": 0,
+        "non_null_count": 1210
       }
     },
     {
@@ -978,7 +1512,7 @@
       "result": true,
       "details": {
         "column": "portfolio_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -988,15 +1522,54 @@
       "result": true,
       "details": {
         "column": "portfolio_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "portfolios.portfolio_id \u2192 portfolio_holdings.portfolio_id",
-      "check": "Average children per parent",
-      "result": 6.914285714285715,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 6.91,
+        "min": 4,
+        "max": 10,
+        "top5_parents_by_children": {
+          "34": 10,
+          "58": 10,
+          "136": 10,
+          "166": 10,
+          "6": 10
+        }
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 portfolio_holdings.fund_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "funds",
+        "column": "fund_id"
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 portfolio_holdings.fund_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "portfolio_holdings",
+        "column": "fund_id"
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 portfolio_holdings.fund_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "fund_id",
+        "null_count": 0,
+        "non_null_count": 1210
+      }
     },
     {
       "relationship": "funds.fund_id \u2192 portfolio_holdings.fund_id",
@@ -1004,7 +1577,7 @@
       "result": true,
       "details": {
         "column": "fund_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -1014,8 +1587,53 @@
       "result": true,
       "details": {
         "column": "fund_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
+      }
+    },
+    {
+      "relationship": "funds.fund_id \u2192 portfolio_holdings.fund_id",
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 12.1,
+        "min": 4,
+        "max": 23,
+        "top5_parents_by_children": {
+          "54": 23,
+          "78": 21,
+          "96": 19,
+          "87": 17,
+          "16": 17
+        }
+      }
+    },
+    {
+      "relationship": "instruments.instrument_id \u2192 instrument_prices.instrument_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "instruments",
+        "column": "instrument_id"
+      }
+    },
+    {
+      "relationship": "instruments.instrument_id \u2192 instrument_prices.instrument_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "instrument_prices",
+        "column": "instrument_id"
+      }
+    },
+    {
+      "relationship": "instruments.instrument_id \u2192 instrument_prices.instrument_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "instrument_id",
+        "null_count": 0,
+        "non_null_count": 2477
       }
     },
     {
@@ -1024,7 +1642,7 @@
       "result": true,
       "details": {
         "column": "instrument_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -1034,15 +1652,54 @@
       "result": true,
       "details": {
         "column": "instrument_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "instruments.instrument_id \u2192 instrument_prices.instrument_id",
-      "check": "Average children per parent",
-      "result": 12.385,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 12.38,
+        "min": 5,
+        "max": 20,
+        "top5_parents_by_children": {
+          "200": 20,
+          "119": 20,
+          "150": 20,
+          "3": 20,
+          "157": 20
+        }
+      }
+    },
+    {
+      "relationship": "instruments.instrument_id \u2192 trades.instrument_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "instruments",
+        "column": "instrument_id"
+      }
+    },
+    {
+      "relationship": "instruments.instrument_id \u2192 trades.instrument_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "trades",
+        "column": "instrument_id"
+      }
+    },
+    {
+      "relationship": "instruments.instrument_id \u2192 trades.instrument_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "instrument_id",
+        "null_count": 0,
+        "non_null_count": 2500
+      }
     },
     {
       "relationship": "instruments.instrument_id \u2192 trades.instrument_id",
@@ -1050,7 +1707,7 @@
       "result": true,
       "details": {
         "column": "instrument_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -1060,15 +1717,54 @@
       "result": true,
       "details": {
         "column": "instrument_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "instruments.instrument_id \u2192 trades.instrument_id",
-      "check": "Average children per parent",
-      "result": 12.5,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 12.5,
+        "min": 5,
+        "max": 22,
+        "top5_parents_by_children": {
+          "86": 22,
+          "124": 20,
+          "84": 20,
+          "114": 20,
+          "132": 20
+        }
+      }
+    },
+    {
+      "relationship": "invoices.invoice_id \u2192 payments.invoice_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "invoices",
+        "column": "invoice_id"
+      }
+    },
+    {
+      "relationship": "invoices.invoice_id \u2192 payments.invoice_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "payments",
+        "column": "invoice_id"
+      }
+    },
+    {
+      "relationship": "invoices.invoice_id \u2192 payments.invoice_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "invoice_id",
+        "null_count": 1125,
+        "non_null_count": 921
+      }
     },
     {
       "relationship": "invoices.invoice_id \u2192 payments.invoice_id",
@@ -1076,7 +1772,7 @@
       "result": true,
       "details": {
         "column": "invoice_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -1086,15 +1782,54 @@
       "result": true,
       "details": {
         "column": "invoice_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "invoices.invoice_id \u2192 payments.invoice_id",
-      "check": "Average children per parent",
-      "result": 1.1123188405797102,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 1.11,
+        "min": 1,
+        "max": 4,
+        "top5_parents_by_children": {
+          "1577": 4,
+          "1349": 4,
+          "1017": 4,
+          "618": 4,
+          "937": 3
+        }
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 subscriptions.request_assigned_to",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "users",
+        "column": "user_id"
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 subscriptions.request_assigned_to",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "subscriptions",
+        "column": "request_assigned_to"
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 subscriptions.request_assigned_to",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "request_assigned_to",
+        "null_count": 0,
+        "non_null_count": 2500
+      }
     },
     {
       "relationship": "users.user_id \u2192 subscriptions.request_assigned_to",
@@ -1102,7 +1837,7 @@
       "result": true,
       "details": {
         "column": "request_assigned_to",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -1112,15 +1847,54 @@
       "result": true,
       "details": {
         "column": "user_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "users.user_id \u2192 subscriptions.request_assigned_to",
-      "check": "Average children per parent",
-      "result": 92.5925925925926,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 92.59,
+        "min": 72,
+        "max": 124,
+        "top5_parents_by_children": {
+          "74": 124,
+          "117": 107,
+          "24": 104,
+          "67": 102,
+          "104": 102
+        }
+      }
+    },
+    {
+      "relationship": "commitments.commitment_id \u2192 invoices.commitment_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "commitments",
+        "column": "commitment_id"
+      }
+    },
+    {
+      "relationship": "commitments.commitment_id \u2192 invoices.commitment_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "invoices",
+        "column": "commitment_id"
+      }
+    },
+    {
+      "relationship": "commitments.commitment_id \u2192 invoices.commitment_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "commitment_id",
+        "null_count": 0,
+        "non_null_count": 1750
+      }
     },
     {
       "relationship": "commitments.commitment_id \u2192 invoices.commitment_id",
@@ -1128,7 +1902,7 @@
       "result": true,
       "details": {
         "column": "commitment_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -1138,15 +1912,54 @@
       "result": true,
       "details": {
         "column": "commitment_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "commitments.commitment_id \u2192 invoices.commitment_id",
-      "check": "Average children per parent",
-      "result": 1.5350877192982457,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 1.54,
+        "min": 1,
+        "max": 5,
+        "top5_parents_by_children": {
+          "1564": 5,
+          "1984": 5,
+          "1346": 5,
+          "1408": 5,
+          "1977": 5
+        }
+      }
+    },
+    {
+      "relationship": "reports.report_id \u2192 documents.report_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "reports",
+        "column": "report_id"
+      }
+    },
+    {
+      "relationship": "reports.report_id \u2192 documents.report_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "documents",
+        "column": "report_id"
+      }
+    },
+    {
+      "relationship": "reports.report_id \u2192 documents.report_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "report_id",
+        "null_count": 513,
+        "non_null_count": 487
+      }
     },
     {
       "relationship": "reports.report_id \u2192 documents.report_id",
@@ -1154,7 +1967,7 @@
       "result": true,
       "details": {
         "column": "report_id",
-        "missing_ids": [],
+        "missing_ids_sample": [],
         "count": 0
       }
     },
@@ -1164,15 +1977,26 @@
       "result": true,
       "details": {
         "column": "report_id",
-        "duplicate_parent_ids": [],
+        "duplicate_parent_ids_sample": [],
         "count": 0
       }
     },
     {
       "relationship": "reports.report_id \u2192 documents.report_id",
-      "check": "Average children per parent",
-      "result": 1.2551546391752577,
-      "details": {}
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 1.26,
+        "min": 1,
+        "max": 3,
+        "top5_parents_by_children": {
+          "872": 3,
+          "586": 3,
+          "330": 3,
+          "461": 3,
+          "890": 3
+        }
+      }
     },
     {
       "relationship": "audit_trails.reference_id (type via reference_type)",
@@ -1199,7 +2023,7 @@
     {
       "relationship": "audit_trails.reference_id (type='commitments') \u2192 commitments.commitment_id",
       "check": "Average children per parent (info)",
-      "result": 1.053921568627451,
+      "result": 1.05,
       "details": {
         "type": "commitments",
         "max_children_for_single_parent": 2
@@ -1241,7 +2065,7 @@
     {
       "relationship": "audit_trails.reference_id (type='documents') \u2192 documents.document_id",
       "check": "Average children per parent (info)",
-      "result": 1.1384615384615384,
+      "result": 1.14,
       "details": {
         "type": "documents",
         "max_children_for_single_parent": 3
@@ -1286,7 +2110,7 @@
     {
       "relationship": "audit_trails.reference_id (type='funds') \u2192 funds.fund_id",
       "check": "Average children per parent (info)",
-      "result": 2.447058823529412,
+      "result": 2.45,
       "details": {
         "type": "funds",
         "max_children_for_single_parent": 6
@@ -1339,7 +2163,7 @@
     {
       "relationship": "audit_trails.reference_id (type='instrument_prices') \u2192 instrument_prices.price_id",
       "check": "Average children per parent (info)",
-      "result": 1.0402010050251256,
+      "result": 1.04,
       "details": {
         "type": "instrument_prices",
         "max_children_for_single_parent": 2
@@ -1381,7 +2205,7 @@
     {
       "relationship": "audit_trails.reference_id (type='instruments') \u2192 instruments.instrument_id",
       "check": "Average children per parent (info)",
-      "result": 1.6299212598425197,
+      "result": 1.63,
       "details": {
         "type": "instruments",
         "max_children_for_single_parent": 5
@@ -1421,7 +2245,7 @@
     {
       "relationship": "audit_trails.reference_id (type='investors') \u2192 investors.investor_id",
       "check": "Average children per parent (info)",
-      "result": 1.6752136752136753,
+      "result": 1.68,
       "details": {
         "type": "investors",
         "max_children_for_single_parent": 4
@@ -1476,7 +2300,7 @@
     {
       "relationship": "audit_trails.reference_id (type='invoices') \u2192 invoices.invoice_id",
       "check": "Average children per parent (info)",
-      "result": 1.0555555555555556,
+      "result": 1.06,
       "details": {
         "type": "invoices",
         "max_children_for_single_parent": 3
@@ -1518,7 +2342,7 @@
     {
       "relationship": "audit_trails.reference_id (type='nav_records') \u2192 nav_records.nav_id",
       "check": "Average children per parent (info)",
-      "result": 1.0698924731182795,
+      "result": 1.07,
       "details": {
         "type": "nav_records",
         "max_children_for_single_parent": 3
@@ -1558,7 +2382,7 @@
     {
       "relationship": "audit_trails.reference_id (type='notifications') \u2192 notifications.notification_id",
       "check": "Average children per parent (info)",
-      "result": 1.088235294117647,
+      "result": 1.09,
       "details": {
         "type": "notifications",
         "max_children_for_single_parent": 3
@@ -1611,7 +2435,7 @@
     {
       "relationship": "audit_trails.reference_id (type='payments') \u2192 payments.payment_id",
       "check": "Average children per parent (info)",
-      "result": 1.0171428571428571,
+      "result": 1.02,
       "details": {
         "type": "payments",
         "max_children_for_single_parent": 2
@@ -1664,7 +2488,7 @@
     {
       "relationship": "audit_trails.reference_id (type='portfolio_holdings') \u2192 portfolio_holdings.holding_id",
       "check": "Average children per parent (info)",
-      "result": 1.1011904761904763,
+      "result": 1.1,
       "details": {
         "type": "portfolio_holdings",
         "max_children_for_single_parent": 2
@@ -1715,7 +2539,7 @@
     {
       "relationship": "audit_trails.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
       "check": "Average children per parent (info)",
-      "result": 1.6581196581196582,
+      "result": 1.66,
       "details": {
         "type": "portfolios",
         "max_children_for_single_parent": 7
@@ -1765,7 +2589,7 @@
     {
       "relationship": "audit_trails.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
       "check": "Average children per parent (info)",
-      "result": 1.1428571428571428,
+      "result": 1.14,
       "details": {
         "type": "redemptions",
         "max_children_for_single_parent": 3
@@ -1808,7 +2632,7 @@
     {
       "relationship": "audit_trails.reference_id (type='reports') \u2192 reports.report_id",
       "check": "Average children per parent (info)",
-      "result": 1.067357512953368,
+      "result": 1.07,
       "details": {
         "type": "reports",
         "max_children_for_single_parent": 2
@@ -1862,7 +2686,7 @@
     {
       "relationship": "audit_trails.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
       "check": "Average children per parent (info)",
-      "result": 1.0388349514563107,
+      "result": 1.04,
       "details": {
         "type": "subscriptions",
         "max_children_for_single_parent": 2
@@ -1906,7 +2730,7 @@
     {
       "relationship": "audit_trails.reference_id (type='trades') \u2192 trades.trade_id",
       "check": "Average children per parent (info)",
-      "result": 1.0478468899521531,
+      "result": 1.05,
       "details": {
         "type": "trades",
         "max_children_for_single_parent": 2
@@ -1960,7 +2784,7 @@
     {
       "relationship": "audit_trails.reference_id (type='users') \u2192 users.user_id",
       "check": "Average children per parent (info)",
-      "result": 2.0103092783505154,
+      "result": 2.01,
       "details": {
         "type": "users",
         "max_children_for_single_parent": 8
@@ -2034,7 +2858,7 @@
     {
       "relationship": "notifications.reference_id (type='commitments') \u2192 commitments.commitment_id",
       "check": "Average children per parent (info)",
-      "result": 1.0292397660818713,
+      "result": 1.03,
       "details": {
         "type": "commitments",
         "max_children_for_single_parent": 2
@@ -2056,7 +2880,7 @@
     {
       "relationship": "notifications.reference_id (type='documents') \u2192 documents.document_id",
       "check": "Average children per parent (info)",
-      "result": 1.1007194244604317,
+      "result": 1.1,
       "details": {
         "type": "documents",
         "max_children_for_single_parent": 2
@@ -2078,7 +2902,7 @@
     {
       "relationship": "notifications.reference_id (type='funds') \u2192 funds.fund_id",
       "check": "Average children per parent (info)",
-      "result": 1.7012987012987013,
+      "result": 1.7,
       "details": {
         "type": "funds",
         "max_children_for_single_parent": 5
@@ -2110,7 +2934,7 @@
     {
       "relationship": "notifications.reference_id (type='investors') \u2192 investors.investor_id",
       "check": "Average children per parent (info)",
-      "result": 1.3936170212765957,
+      "result": 1.39,
       "details": {
         "type": "investors",
         "max_children_for_single_parent": 4
@@ -2142,7 +2966,7 @@
     {
       "relationship": "notifications.reference_id (type='invoices') \u2192 invoices.invoice_id",
       "check": "Average children per parent (info)",
-      "result": 1.0215827338129497,
+      "result": 1.02,
       "details": {
         "type": "invoices",
         "max_children_for_single_parent": 2
@@ -2164,7 +2988,7 @@
     {
       "relationship": "notifications.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
       "check": "Average children per parent (info)",
-      "result": 1.5294117647058822,
+      "result": 1.53,
       "details": {
         "type": "portfolios",
         "max_children_for_single_parent": 3
@@ -2196,7 +3020,7 @@
     {
       "relationship": "notifications.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
       "check": "Average children per parent (info)",
-      "result": 1.0845070422535212,
+      "result": 1.08,
       "details": {
         "type": "redemptions",
         "max_children_for_single_parent": 2
@@ -2218,7 +3042,7 @@
     {
       "relationship": "notifications.reference_id (type='reports') \u2192 reports.report_id",
       "check": "Average children per parent (info)",
-      "result": 1.0952380952380953,
+      "result": 1.1,
       "details": {
         "type": "reports",
         "max_children_for_single_parent": 3
@@ -2250,7 +3074,7 @@
     {
       "relationship": "notifications.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
       "check": "Average children per parent (info)",
-      "result": 1.0328947368421053,
+      "result": 1.03,
       "details": {
         "type": "subscriptions",
         "max_children_for_single_parent": 3
@@ -2272,7 +3096,7 @@
     {
       "relationship": "notifications.reference_id (type='trades') \u2192 trades.trade_id",
       "check": "Average children per parent (info)",
-      "result": 1.0145985401459854,
+      "result": 1.01,
       "details": {
         "type": "trades",
         "max_children_for_single_parent": 2
@@ -2314,7 +3138,7 @@
     {
       "relationship": "documents.uploaded_by_id (type='investor') \u2192 investors.investor_id",
       "check": "Average children per parent (info)",
-      "result": 1.9342105263157894,
+      "result": 1.93,
       "details": {
         "type": "investor",
         "max_children_for_single_parent": 7
@@ -2336,7 +3160,7 @@
     {
       "relationship": "documents.uploaded_by_id (type='user') \u2192 users.user_id",
       "check": "Average children per parent (info)",
-      "result": 5.648,
+      "result": 5.65,
       "details": {
         "type": "user",
         "max_children_for_single_parent": 15
@@ -2370,7 +3194,7 @@
     {
       "relationship": "audit_trails.reference_id (type='commitments') \u2192 commitments.commitment_id",
       "check": "Average children per parent (info)",
-      "result": 1.053921568627451,
+      "result": 1.05,
       "details": {
         "type": "commitments",
         "max_children_for_single_parent": 2
@@ -2412,7 +3236,7 @@
     {
       "relationship": "audit_trails.reference_id (type='documents') \u2192 documents.document_id",
       "check": "Average children per parent (info)",
-      "result": 1.1384615384615384,
+      "result": 1.14,
       "details": {
         "type": "documents",
         "max_children_for_single_parent": 3
@@ -2457,7 +3281,7 @@
     {
       "relationship": "audit_trails.reference_id (type='funds') \u2192 funds.fund_id",
       "check": "Average children per parent (info)",
-      "result": 2.447058823529412,
+      "result": 2.45,
       "details": {
         "type": "funds",
         "max_children_for_single_parent": 6
@@ -2510,7 +3334,7 @@
     {
       "relationship": "audit_trails.reference_id (type='instrument_prices') \u2192 instrument_prices.price_id",
       "check": "Average children per parent (info)",
-      "result": 1.0402010050251256,
+      "result": 1.04,
       "details": {
         "type": "instrument_prices",
         "max_children_for_single_parent": 2
@@ -2552,7 +3376,7 @@
     {
       "relationship": "audit_trails.reference_id (type='instruments') \u2192 instruments.instrument_id",
       "check": "Average children per parent (info)",
-      "result": 1.6299212598425197,
+      "result": 1.63,
       "details": {
         "type": "instruments",
         "max_children_for_single_parent": 5
@@ -2592,7 +3416,7 @@
     {
       "relationship": "audit_trails.reference_id (type='investors') \u2192 investors.investor_id",
       "check": "Average children per parent (info)",
-      "result": 1.6752136752136753,
+      "result": 1.68,
       "details": {
         "type": "investors",
         "max_children_for_single_parent": 4
@@ -2647,7 +3471,7 @@
     {
       "relationship": "audit_trails.reference_id (type='invoices') \u2192 invoices.invoice_id",
       "check": "Average children per parent (info)",
-      "result": 1.0555555555555556,
+      "result": 1.06,
       "details": {
         "type": "invoices",
         "max_children_for_single_parent": 3
@@ -2689,7 +3513,7 @@
     {
       "relationship": "audit_trails.reference_id (type='nav_records') \u2192 nav_records.nav_id",
       "check": "Average children per parent (info)",
-      "result": 1.0698924731182795,
+      "result": 1.07,
       "details": {
         "type": "nav_records",
         "max_children_for_single_parent": 3
@@ -2729,7 +3553,7 @@
     {
       "relationship": "audit_trails.reference_id (type='notifications') \u2192 notifications.notification_id",
       "check": "Average children per parent (info)",
-      "result": 1.088235294117647,
+      "result": 1.09,
       "details": {
         "type": "notifications",
         "max_children_for_single_parent": 3
@@ -2782,7 +3606,7 @@
     {
       "relationship": "audit_trails.reference_id (type='payments') \u2192 payments.payment_id",
       "check": "Average children per parent (info)",
-      "result": 1.0171428571428571,
+      "result": 1.02,
       "details": {
         "type": "payments",
         "max_children_for_single_parent": 2
@@ -2835,7 +3659,7 @@
     {
       "relationship": "audit_trails.reference_id (type='portfolio_holdings') \u2192 portfolio_holdings.holding_id",
       "check": "Average children per parent (info)",
-      "result": 1.1011904761904763,
+      "result": 1.1,
       "details": {
         "type": "portfolio_holdings",
         "max_children_for_single_parent": 2
@@ -2886,7 +3710,7 @@
     {
       "relationship": "audit_trails.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
       "check": "Average children per parent (info)",
-      "result": 1.6581196581196582,
+      "result": 1.66,
       "details": {
         "type": "portfolios",
         "max_children_for_single_parent": 7
@@ -2936,7 +3760,7 @@
     {
       "relationship": "audit_trails.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
       "check": "Average children per parent (info)",
-      "result": 1.1428571428571428,
+      "result": 1.14,
       "details": {
         "type": "redemptions",
         "max_children_for_single_parent": 3
@@ -2979,7 +3803,7 @@
     {
       "relationship": "audit_trails.reference_id (type='reports') \u2192 reports.report_id",
       "check": "Average children per parent (info)",
-      "result": 1.067357512953368,
+      "result": 1.07,
       "details": {
         "type": "reports",
         "max_children_for_single_parent": 2
@@ -3033,7 +3857,7 @@
     {
       "relationship": "audit_trails.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
       "check": "Average children per parent (info)",
-      "result": 1.0388349514563107,
+      "result": 1.04,
       "details": {
         "type": "subscriptions",
         "max_children_for_single_parent": 2
@@ -3077,7 +3901,7 @@
     {
       "relationship": "audit_trails.reference_id (type='trades') \u2192 trades.trade_id",
       "check": "Average children per parent (info)",
-      "result": 1.0478468899521531,
+      "result": 1.05,
       "details": {
         "type": "trades",
         "max_children_for_single_parent": 2
@@ -3131,7 +3955,7 @@
     {
       "relationship": "audit_trails.reference_id (type='users') \u2192 users.user_id",
       "check": "Average children per parent (info)",
-      "result": 2.0103092783505154,
+      "result": 2.01,
       "details": {
         "type": "users",
         "max_children_for_single_parent": 8
@@ -3205,7 +4029,7 @@
     {
       "relationship": "notifications.reference_id (type='commitments') \u2192 commitments.commitment_id",
       "check": "Average children per parent (info)",
-      "result": 1.0292397660818713,
+      "result": 1.03,
       "details": {
         "type": "commitments",
         "max_children_for_single_parent": 2
@@ -3227,7 +4051,7 @@
     {
       "relationship": "notifications.reference_id (type='documents') \u2192 documents.document_id",
       "check": "Average children per parent (info)",
-      "result": 1.1007194244604317,
+      "result": 1.1,
       "details": {
         "type": "documents",
         "max_children_for_single_parent": 2
@@ -3249,7 +4073,7 @@
     {
       "relationship": "notifications.reference_id (type='funds') \u2192 funds.fund_id",
       "check": "Average children per parent (info)",
-      "result": 1.7012987012987013,
+      "result": 1.7,
       "details": {
         "type": "funds",
         "max_children_for_single_parent": 5
@@ -3281,7 +4105,7 @@
     {
       "relationship": "notifications.reference_id (type='investors') \u2192 investors.investor_id",
       "check": "Average children per parent (info)",
-      "result": 1.3936170212765957,
+      "result": 1.39,
       "details": {
         "type": "investors",
         "max_children_for_single_parent": 4
@@ -3313,7 +4137,7 @@
     {
       "relationship": "notifications.reference_id (type='invoices') \u2192 invoices.invoice_id",
       "check": "Average children per parent (info)",
-      "result": 1.0215827338129497,
+      "result": 1.02,
       "details": {
         "type": "invoices",
         "max_children_for_single_parent": 2
@@ -3335,7 +4159,7 @@
     {
       "relationship": "notifications.reference_id (type='portfolios') \u2192 portfolios.portfolio_id",
       "check": "Average children per parent (info)",
-      "result": 1.5294117647058822,
+      "result": 1.53,
       "details": {
         "type": "portfolios",
         "max_children_for_single_parent": 3
@@ -3367,7 +4191,7 @@
     {
       "relationship": "notifications.reference_id (type='redemptions') \u2192 redemptions.redemption_id",
       "check": "Average children per parent (info)",
-      "result": 1.0845070422535212,
+      "result": 1.08,
       "details": {
         "type": "redemptions",
         "max_children_for_single_parent": 2
@@ -3389,7 +4213,7 @@
     {
       "relationship": "notifications.reference_id (type='reports') \u2192 reports.report_id",
       "check": "Average children per parent (info)",
-      "result": 1.0952380952380953,
+      "result": 1.1,
       "details": {
         "type": "reports",
         "max_children_for_single_parent": 3
@@ -3421,7 +4245,7 @@
     {
       "relationship": "notifications.reference_id (type='subscriptions') \u2192 subscriptions.subscription_id",
       "check": "Average children per parent (info)",
-      "result": 1.0328947368421053,
+      "result": 1.03,
       "details": {
         "type": "subscriptions",
         "max_children_for_single_parent": 3
@@ -3443,7 +4267,7 @@
     {
       "relationship": "notifications.reference_id (type='trades') \u2192 trades.trade_id",
       "check": "Average children per parent (info)",
-      "result": 1.0145985401459854,
+      "result": 1.01,
       "details": {
         "type": "trades",
         "max_children_for_single_parent": 2
@@ -3485,7 +4309,7 @@
     {
       "relationship": "documents.uploaded_by_id (type='investor') \u2192 investors.investor_id",
       "check": "Average children per parent (info)",
-      "result": 1.9342105263157894,
+      "result": 1.93,
       "details": {
         "type": "investor",
         "max_children_for_single_parent": 7
@@ -3507,7 +4331,7 @@
     {
       "relationship": "documents.uploaded_by_id (type='user') \u2192 users.user_id",
       "check": "Average children per parent (info)",
-      "result": 5.648,
+      "result": 5.65,
       "details": {
         "type": "user",
         "max_children_for_single_parent": 15
