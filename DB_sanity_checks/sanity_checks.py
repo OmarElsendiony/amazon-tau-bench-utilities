@@ -414,30 +414,34 @@ def check_foreign_keys(relationships, dfs, report):
                 "details": {"type": rtype}
             })
 
-
+import json
 import pandas as pd
 
 def check_generic_foreign_keys(gfk_configs, dfs, report):
     """
     gfk_configs: list of dicts, each like:
       {
-        "child_table": "audit_trails",
-        "type_column": "reference_type",
-        "id_column":   "reference_id",
+        "child_table": "page_version_components",
+        "type_column": "component_type",
+        "id_column": "component_data",
+        "json_column": "component_data",      # Optional: the JSON column
         "mapping": {
-          "funds":     {"parent_table": "funds",     "parent_column": "fund_id",     "allowed_actions": ["create","update","approve"]},
-          "investors": {"parent_table": "investors", "parent_column": "investor_id"},
-          ...
+          "whiteboard": {
+            "parent_table": "whiteboards",
+            "parent_column": "whiteboard_id",
+            "json_id_key": "whiteboard_id"    # Optional: key to extract from JSON
+          },
+          "smart_link": {
+            "parent_table": "smart_links",
+            "parent_column": "smart_link_id",
+            "json_id_key": "smart_link_id"
+          }
         }
       }
-
-    dfs: dict[str, pd.DataFrame]  # table -> dataframe
-    report: dict with key "relationships": list
     """
     if "relationships" not in report:
         report["relationships"] = []
 
-    # Helper to push a result into the report with consistent shape
     def add_result(relationship, check, result, details=None, kind="generic"):
         report["relationships"].append({
             "relationship": relationship,
@@ -447,7 +451,6 @@ def check_generic_foreign_keys(gfk_configs, dfs, report):
             "kind": kind
         })
 
-    # Cache table->set(columns) for field_name validation (if used)
     table_columns = {t: set(df.columns) for t, df in dfs.items()}
 
     for cfg in (gfk_configs or []):
@@ -455,32 +458,30 @@ def check_generic_foreign_keys(gfk_configs, dfs, report):
         type_col    = cfg.get("type_column")
         id_col      = cfg.get("id_column")
         mapping     = cfg.get("mapping", {})
+        json_col    = cfg.get("json_column")
 
-        # Basic presence checks
         rel_label = f"{child_table}.{id_col} (type via {type_col})"
         if not child_table or child_table not in dfs:
-            # Nothing to do if child table is missing
             add_result(rel_label, "Child table present", False, {"child_table": child_table})
             print(f"[FAIL] {rel_label} – child table missing: {child_table}")
             continue
 
         child_df = dfs[child_table]
 
+        # Basic column existence check
         for col_name, label in [(type_col, "type column"), (id_col, "id column")]:
             if not col_name or col_name not in child_df.columns:
                 add_result(rel_label, f"Child {label} present", False, {"column": col_name})
                 print(f"[FAIL] {rel_label} – missing child {label}: {col_name}")
-                # If critical columns are missing, skip this config
                 continue
 
-        # 0) Type coverage sanity (config ↔ data)
-        # - Unmapped types found in data
+        # 0) Type coverage sanity
         type_values = child_df[type_col].dropna().astype(str).unique().tolist()
         mapped_types = set(mapping.keys())
         data_types   = set(type_values)
 
         unmapped_types = sorted(list(data_types - mapped_types))
-        stale_mapping  = sorted(list(mapped_types - data_types))  # mapping entries not seen in data (not an error, just info)
+        stale_mapping  = sorted(list(mapped_types - data_types))
 
         add_result(rel_label, "All type values are mapped", len(unmapped_types) == 0,
                    {"unmapped_types": unmapped_types[:10], "count": len(unmapped_types)})
@@ -493,13 +494,13 @@ def check_generic_foreign_keys(gfk_configs, dfs, report):
 
         # 1) Per-type parent existence check (+ metrics)
         for tval in sorted(data_types):
-            # Skip NaNs (already dropped), and types not in mapping are reported above
             if tval not in mapping:
                 continue
 
             m = mapping[tval] or {}
             p_table = m.get("parent_table")
             p_col   = m.get("parent_column")
+            json_id_key_for_type = m.get("json_id_key")  # FIX: Get from TYPE mapping, not config
             relationship_name = f"{child_table}.{id_col} (type='{tval}') → {p_table}.{p_col}"
 
             # Validate parent table/column presence
@@ -510,14 +511,29 @@ def check_generic_foreign_keys(gfk_configs, dfs, report):
                 continue
 
             parent_df = dfs[p_table]
-            # Sets for fast membership
-            parent_ids = set(parent_df[p_col].dropna().tolist())
+            parent_ids = set(parent_df[p_col].dropna().astype(str).tolist())
 
-            # Rows in this type
+            # Type mask
             type_mask = child_df[type_col] == tval
-            ids = child_df.loc[type_mask, id_col].dropna()
+            
+            # FIXED: Extract IDs from JSON using the TYPE-SPECIFIC key
+            if json_col and json_id_key_for_type and json_col in child_df.columns:
+                ids_list = []
+                for json_str in child_df.loc[type_mask, json_col].dropna():
+                    try:
+                        data = json.loads(json_str)
+                        if isinstance(data, dict) and json_id_key_for_type in data:
+                            extracted_id = data[json_id_key_for_type]
+                            if extracted_id is not None:
+                                ids_list.append(str(extracted_id))
+                    except (json.JSONDecodeError, TypeError):
+                        pass
+                ids = pd.Series(ids_list)
+            else:
+                # Normal case: ID is directly in the column
+                ids = child_df.loc[type_mask, id_col].dropna().astype(str)
 
-            # 1a) Existence
+            # 1a) Existence (referential integrity)
             missing_mask = ~ids.isin(parent_ids)
             missing_ids = ids[missing_mask].unique().tolist()
             total_missing = len(missing_ids)
@@ -526,7 +542,7 @@ def check_generic_foreign_keys(gfk_configs, dfs, report):
                        {"type": tval, "child_column": id_col, "missing_ids": missing_ids[:5], "count": total_missing})
             print(f"[{'PASS' if total_missing==0 else 'FAIL'}] {relationship_name} – missing {total_missing} ID(s)")
 
-            # 1b) Metrics: average & max children per parent in this type (observability)
+            # 1b) Metrics: average & max children per parent
             vc = ids.value_counts()
             avg_children = round(float(vc.mean()), 2) if not vc.empty else 0.0
             max_children = int(vc.max()) if not vc.empty else 0
@@ -548,7 +564,6 @@ def check_generic_foreign_keys(gfk_configs, dfs, report):
 
             # 1d) field_name validity (optional)
             if "field_name" in child_df.columns:
-                # Only check non-null field names
                 field_series = child_df.loc[type_mask, "field_name"].dropna().astype(str)
                 if not field_series.empty:
                     valid_cols = table_columns.get(p_table, set())
@@ -563,19 +578,20 @@ def check_generic_foreign_keys(gfk_configs, dfs, report):
             # 1e) Temporal sanity (optional)
             child_has_ts  = "created_at" in child_df.columns
             parent_has_ts = "created_at" in parent_df.columns
-            if child_has_ts and parent_has_ts:
-                # Make a light join on id to compare timestamps
-                c_tmp = child_df.loc[type_mask, [id_col, "created_at"]].rename(columns={id_col: "_pid", "created_at": "_child_ts"})
-                p_tmp = parent_df[[p_col, "created_at"]].rename(columns={p_col: "_pid", "created_at": "_parent_ts"})
-                merged = pd.merge(c_tmp, p_tmp, how="left", on="_pid")
-                # Coerce datetimes
-                cts = pd.to_datetime(merged["_child_ts"], errors="coerce", utc=True)
-                pts = pd.to_datetime(merged["_parent_ts"], errors="coerce", utc=True)
-                bad_order = (cts < pts) & pts.notna() & cts.notna()
-                viol_count = int(bad_order.sum())
-                add_result(relationship_name, "created_at sequence valid (child ≥ parent)", viol_count == 0,
-                           {"type": tval, "violations": int(viol_count)})
-                print(f"[{'PASS' if viol_count==0 else 'FAIL'}] {relationship_name} – {viol_count} temporal violation(s)")
+            if child_has_ts and parent_has_ts and not ids.empty:
+                # Build alignment: ids -> child timestamps
+                c_rows = child_df.loc[type_mask, ["created_at"]].reset_index(drop=True)
+                if len(c_rows) == len(ids):
+                    c_rows["_pid"] = ids.reset_index(drop=True).values
+                    p_rows = parent_df[[p_col, "created_at"]].rename(columns={p_col: "_pid"})
+                    merged = pd.merge(c_rows, p_rows, how="left", on="_pid")
+                    cts = pd.to_datetime(merged["created_at_x"], errors="coerce", utc=True)
+                    pts = pd.to_datetime(merged["created_at_y"], errors="coerce", utc=True)
+                    bad_order = (cts < pts) & pts.notna() & cts.notna()
+                    viol_count = int(bad_order.sum())
+                    add_result(relationship_name, "created_at sequence valid (child ≥ parent)", viol_count == 0,
+                               {"type": tval, "violations": int(viol_count)})
+                    print(f"[{'PASS' if viol_count==0 else 'FAIL'}] {relationship_name} – {viol_count} temporal violation(s)")
 
         # 2) User link validity (if applicable)
         if "user_id" in child_df.columns:
@@ -591,8 +607,7 @@ def check_generic_foreign_keys(gfk_configs, dfs, report):
                 add_result(f"{child_table}.user_id → users.user_id", "Users table present", False,
                            {"reason": "users table or user_id column not found"})
                 print(f"[FAIL] {child_table}.user_id → users.user_id – users table/column missing")
-
-
+                
 def main(folder):
 
     DATA_DIR    = os.path.join(folder, "data")
@@ -714,6 +729,7 @@ def main(folder):
     web_dir = os.path.dirname(OUTPUT_FILE)
     os.chdir(web_dir)
     handler = http.server.SimpleHTTPRequestHandler
+    SERVER_PORT = 8002
     with socketserver.TCPServer(("", SERVER_PORT), handler) as httpd:
         url = f"http://localhost:{SERVER_PORT}/"
         print(f"[INFO] Serving at {url}")
@@ -723,6 +739,8 @@ def main(folder):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run sanity checks for a data folder.")
     parser.add_argument("folder", help="Target folder (e.g., smart_home)")
+    parser.add_argument("--port", type=int, default=8001, help="Port for HTTP server")
+
     args = parser.parse_args()
 
     # If your run_checks already defaults to: copy index, serve, and port 8000:

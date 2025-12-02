@@ -1,37 +1,34 @@
 You are given:
 1. A SQL schema that contains CREATE TABLE and ALTER TABLE statements.
-2. Examples showing how to extract (a) standard foreign keys and (b) generic/typed foreign keys into YAML.
+2. Examples showing how to extract (a) standard foreign keys, (b) generic/typed foreign keys, and (c) JSON-embedded generic foreign keys into YAML.
 
 Example A — standard FKs
 
 SQL:
 ALTER TABLE `homes` ADD FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`);
-ALTER TABLE `users` ADD FOREIGN KEY (`user_id`) REFERENCES `homes` (`owner_id`);
+ALTER TABLE `users` ADD FOREIGN KEY (`owner_id`) REFERENCES `homes` (`home_id`);
 
 YAML:
 foreign_keys:
+  - parent_table: addresses
+    parent_column: address_id
+    child_table: homes
+    child_column: address_id
+    type: 1:N
 
   - parent_table: homes
-    parent_column: address_id
-    child_table: addresses
-    child_column: address_id
-    type: 1:1
-
-  - parent_table: users
-    parent_column: user_id
-    child_table: homes
+    parent_column: home_id
+    child_table: users
     child_column: owner_id
     type: 1:N
 
 
 Example B — generic (typed) FKs
 
-Pattern: A table has a type-discriminator column (often ENUM of table names) and a companion ID column. For each enum value, map to the referenced table and its PK column discovered from CREATE TABLE definitions.
-
 SQL:
 CREATE TABLE `notifications` (
   `notification_id` int PRIMARY KEY,
-  `class` enum(funds,investors,portfolios,trades,invoices,reports,documents,subscriptions,commitments,redemptions) NOT NULL,
+  `class` enum('funds','investors','portfolios') NOT NULL,
   `reference_id` int
 );
 
@@ -50,46 +47,51 @@ generic_foreign_keys:
       portfolios:
         parent_table: portfolios
         parent_column: portfolio_id
-      trades:
-        parent_table: trades
-        parent_column: trade_id
-      invoices:
-        parent_table: invoices
-        parent_column: invoice_id
-      reports:
-        parent_table: reports
-        parent_column: report_id
-      documents:
-        parent_table: documents
-        parent_column: document_id
-      subscriptions:
-        parent_table: subscriptions
-        parent_column: subscription_id
-      commitments:
-        parent_table: commitments
-        parent_column: commitment_id
-      redemptions:
-        parent_table: redemptions
-        parent_column: redemption_id
+
+
+Example C — JSON-embedded generic FKs
+
+SQL:
+CREATE TABLE `page_version_components` (
+  `component_id` varchar PRIMARY KEY,
+  `component_type` enum('whiteboard','smart_link') NOT NULL,
+  `component_data` json NOT NULL
+);
+
+-- component_data contains: {"whiteboard_id": "6", ...} or {"smart_link_id": "5", ...}
+
+YAML:
+generic_foreign_keys:
+  - child_table: page_version_components
+    type_column: component_type
+    id_column: component_data
+    json_column: component_data
+    mapping:
+      whiteboard:
+        parent_table: whiteboards
+        parent_column: whiteboard_id
+        json_id_key: whiteboard_id
+      smart_link:
+        parent_table: smart_links
+        parent_column: smart_link_id
+        json_id_key: smart_link_id
 
 
 Task:
-From the SQL schema I will provide, extract:
-1) **All standard foreign key constraints** from `ALTER TABLE ... ADD FOREIGN KEY ... REFERENCES ...` statements into `foreign_keys:`.
-2) **All generic (typed) foreign keys** where a table contains a discriminator column (ENUM of table names like `class`, `reference_type`, etc.) plus a companion ID column (e.g., `reference_id`). For each enum value, emit a mapping entry whose `parent_table` is that enum value and whose `parent_column` is the actual PRIMARY KEY column of that parent table as defined in the CREATE TABLE statements (e.g., instruments → instrument_id, instrument_prices → price_id, nav_records → nav_id). Use the **correct IDs as per the database schema**—do not assume names.
+From the SQL schema provided, extract:
+1) **All standard foreign keys** from `ALTER TABLE ... ADD FOREIGN KEY ... REFERENCES ...`
+2) **All generic typed foreign keys** with ENUM discriminators and ID columns
+3) **All JSON-embedded generic foreign keys** where FK data is inside a JSON column
 
 Output rules:
-- Output **only** YAML in a single code block (no explanations, no extra text).
-- Table and column names must be lowercase and without backticks.
-- For each standard FK, include:
-  - `parent_table`: table containing the referenced PK
-  - `parent_column`: column in the parent table being referenced
-  - `child_table`: table containing the FK
-  - `child_column`: column in the child table that references the parent
-  - `type`: `"1:1"` if the FK column is also the child table’s PRIMARY KEY, otherwise `"1:N"`
-- Always include the `foreign_keys:` key (empty list if none).
-- Include `generic_foreign_keys:` **only if** at least one generic relationship is detected.
-- Preserve the order of enum values from SQL when producing `mapping:` keys.
+- Output **only** YAML in a single code block
+- Table and column names must be lowercase without backticks
+- For standard FKs, include: parent_table, parent_column, child_table, child_column, type
+- Type = "1:1" only if FK column is also the child PK; otherwise "1:N"
+- For generic FKs, if data is in JSON: include json_column and per-mapping json_id_key
+- Always include `foreign_keys:` key (empty list if none)
+- Include `generic_foreign_keys:` only if at least one generic relationship exists
+- Preserve enum value order from SQL
 
 **My schema:**
 <PASTE YOUR SQL SCHEMA HERE>
